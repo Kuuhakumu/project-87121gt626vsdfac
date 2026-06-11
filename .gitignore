@@ -1,0 +1,23 @@
+# ── Agent / build scratch (never commit) ─────────────────────────
+# fan-out agent working files, A* frontier state
+.agent/
+# my personal build todo (learner never sees this)
+BUILD-BACKLOG.md
+# in-progress research before it's verified & promoted
+research/_working/
+# any file mid-rewrite
+*.draft.md
+NOTES.local.md
+
+# ── Editor / OS cruft ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── Misc ─────────────────────────────────────────────────────────
+*.log
+.tmp/
