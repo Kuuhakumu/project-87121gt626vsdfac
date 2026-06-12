@@ -66,7 +66,7 @@ graph LR
 |---|---|---|---|---|
 | [OverTheWire — Bandit (Levels 0–15)](https://overthewire.org/wargames/bandit/) | OverTheWire | SSH into real Linux boxes; solve puzzles with `cat`, `grep`, `find`, `ssh`, `base64` | **Free** | ✅ live |
 | [Linux Fundamentals module](https://academy.hackthebox.com/) | HTB Academy | Guided bash, permissions, package mgmt against a live target | Free tier | ✅ live |
-| [Linux Journey](https://linuxjourney.com/) | Web | Self-paced text lessons + quizzes | **Free** | ✅ live |
+| [Linux Journey](https://labex.io/linuxjourney) | Web | Self-paced text lessons + quizzes | **Freemium** | ✅ live |
 
 **Practice gate:** Complete **OverTheWire Bandit levels 0–15** unaided. This single achievement proves real CLI competence.
 
@@ -95,7 +95,7 @@ graph LR
 | Lab | Platform | What you do | Cost | Status |
 |---|---|---|---|---|
 | [Introduction to Networking module](https://academy.hackthebox.com/) | HTB Academy | Interactive OSI, TCP/IP, subnetting, DNS, ARP questions | Free tier | ✅ live |
-| [SubnettingPractice.com](https://www.subnettingpractice.com/) | Web | Drill subnetting until automatic | **Free** | ✅ live |
+| [SubnettingPractice.com](https://subnetipv4.com/) | Web | Drill subnetting until automatic | **Free** | ⛔ dead |
 | [Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics) | TryHackMe | Load real packet captures, filter traffic, see protocols live | Free room | ✅ live (rate-limits bots) |
 
 **Practice gate:** You can narrate, step by step, what happens between pressing Enter on `https://example.com` and the page appearing.

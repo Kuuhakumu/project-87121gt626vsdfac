@@ -50,7 +50,7 @@ Networking is the highest-leverage knowledge in this field. It never goes stale,
 |---|---|---|---|
 | [Professor Messer Network+](https://www.professormesser.com) | Video | Full free Network+ course | **Free** |
 | [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) | Cisco | Build & simulate real networks | **Free** (free course) |
-| [subnetting practice](https://subnettingpractice.com) | Web | Drill subnet math until it's automatic | **Free** |
+| [subnetting practice](https://subnetipv4.com/) | Web | Drill subnet math until it's automatic | **Free** |
 
 **Practice gate:** subnet a /24 into 4 equal subnets on paper, and explain what happens (in order) when you type a URL and press Enter — DNS → TCP → HTTP. If you can do both, you're ahead of most T1 applicants.
 

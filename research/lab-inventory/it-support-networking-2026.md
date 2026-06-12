@@ -10,7 +10,7 @@
 | Cisco Packet Tracer | NetAcad | netacad.com/courses/packet-tracer | Build & simulate networks (CCNA-grade) | Free (w/ account) | ✅ |
 | GNS3 | GNS3 | gns3.com | Emulate real network device images | Free | ✅ |
 | Professor Messer N+ | Professor Messer | professormesser.com | Full free Network+ video course | Free | ✅ |
-| Subnetting practice | subnettingpractice.com | — | Drill subnet math | Free | ✅ |
+| Subnetting practice | subnetipv4.com | — | Drill subnet math | Free | ✅ |
 
 ### Help desk / OS troubleshooting / home lab
 | Lab | Platform | URL | What you do | Free | Status |

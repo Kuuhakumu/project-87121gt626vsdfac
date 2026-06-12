@@ -41,7 +41,7 @@
 
 > **2026 reality:** identity is now **hybrid** — learn on-prem Active Directory fundamentals (Kerberos, LDAP, GPOs) but know they sync to **Microsoft Entra ID** (Azure AD) in most real environments. Pure on-prem-only AD is a dated mental model.
 
-**Theory:** Professor Messer A+ 220-1202 + [TCM Security free Help Desk course](https://academy.tcm-sec.com/p/practical-help-desk-training).
+**Theory:** Professor Messer A+ 220-1202 + [TCM Security free Help Desk course](https://tcm-sec.com/academy/practical-help-desk/).
 
 **Labs:**
 
@@ -68,7 +68,7 @@
 |---|---|---|---|
 | [Intro to Networking](https://tryhackme.com/room/introtonetworking) | TryHackMe | OSI, ping, traceroute interactively | Free |
 | Intro to Networking module | [HTB Academy](https://academy.hackthebox.com/) | OSI/TCP-IP, subnetting, DNS, ARP | Free |
-| [SubnettingPractice.com](https://www.subnettingpractice.com/) | Web | `/24`–`/30` drills until automatic | **Free** |
+| [SubnettingPractice.com](https://subnetipv4.com/) | Web | `/24`–`/30` drills until automatic | **Free** |
 
 **Practice gate:** 80%+ on ExamCompass networking quizzes.
 
@@ -78,7 +78,7 @@
 
 | Resource | Cost | Gate |
 |---|---|---|
-| [Professor Messer practice exams](https://www.professormesser.com/practice-exams/) | ~$15 | **85%+ on 3 fresh attempts** |
+| [Professor Messer practice exams](https://www.professormesser.com/220-1202-success-bundle/) | ~$15 | **85%+ on 3 fresh attempts** |
 | Jason Dion A+ tests (Udemy) | ~$10–15 on sale | 80%+ on 2 fresh attempts |
 | [ExamCompass](https://www.examcompass.com/) | Free | Domain quizzes |
 

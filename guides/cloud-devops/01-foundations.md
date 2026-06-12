@@ -13,14 +13,14 @@ This is the single most important foundation. You'll spend your whole career in 
 
 **Cover:** filesystem hierarchy (`/etc`, `/var`, `/home`, `/proc`), navigation (`cd`, `ls`, `pwd`), file ops (`cp`, `mv`, `rm`, `mkdir`, `find`), viewing/editing (`cat`, `less`, `nano`, `vim` basics), permissions (`chmod`, `chown`, octal 755/644), users & groups (`sudo`, `/etc/passwd`), processes (`ps`, `top`, `htop`, `kill`, `&`, `jobs`), services (`systemctl` start/stop/enable/status), packages (`apt`/`yum`/`dnf`), text processing (`grep`, `awk`, `sed`, pipes `|`, redirection `>`/`>>`), `cron`, environment variables, SSH (`ssh`, keys, `scp`).
 
-**Theory:** [Linux Journey](https://linuxjourney.com/) (free) · [The Missing Semester (MIT)](https://missing.csail.mit.edu/) · NetworkChuck Linux series.
+**Theory:** [Linux Journey](https://labex.io/linuxjourney) (freemium) · [The Missing Semester (MIT)](https://missing.csail.mit.edu/) · NetworkChuck Linux series.
 
 ### Labs
 
 | Lab | Platform | What you do | Cost |
 |---|---|---|---|
 | [OverTheWire — Bandit](https://overthewire.org/wargames/bandit/) | Web | SSH into real boxes; learn the CLI by solving 30+ puzzles | **Free** |
-| [Linux Journey](https://linuxjourney.com/) | Web | Guided lessons + exercises, beginner → intermediate | **Free** |
+| [Linux Journey](https://labex.io/linuxjourney) | Web | Guided lessons + exercises, beginner → intermediate | **Freemium** |
 | Linux Fundamentals 1–3 | [TryHackMe](https://tryhackme.com/) | In-browser Linux VMs: filesystem, permissions, cron, SSH | Free tier |
 | [KillerCoda Linux scenarios](https://killercoda.com/) | Web | Live in-browser terminal playgrounds, no setup | **Free** |
 
@@ -40,7 +40,7 @@ You can't debug cloud infra if you don't understand the network underneath it.
 |---|---|---|---|
 | Intro to Networking | [TryHackMe](https://tryhackme.com/) | OSI, ping, traceroute interactively | Free tier |
 | Computer Networking (full course) | [freeCodeCamp YouTube](https://www.youtube.com/c/Freecodecamp) | Comprehensive networking fundamentals | **Free** |
-| [SubnettingPractice.com](https://www.subnettingpractice.com/) | Web | `/24`–`/30` drills until automatic | **Free** |
+| [SubnettingPractice.com](https://subnetipv4.com/) | Web | `/24`–`/30` drills until automatic | **Free** |
 
 **Practice gate:** you can subnet a CIDR block on paper, explain DNS resolution end-to-end, and describe what a load balancer and a reverse proxy each do.
 

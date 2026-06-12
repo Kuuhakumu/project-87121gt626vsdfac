@@ -23,7 +23,7 @@
 | [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) | Cisco | Build/simulate switched & routed networks (CCNA prep) | Free | ✅ |
 | [GNS3](https://www.gns3.com) | Local | Emulate real network device images | Free | ✅ |
 | [Wireshark](https://www.wireshark.org) | Local | Capture & analyze real packets (DNS, DHCP, TCP) | Free | ✅ (v4.6) |
-| subnetting drills | subnettingpractice.com / Professor Messer | Drill subnetting until automatic | Free | ✅ |
+| subnetting drills | subnetipv4.com / Professor Messer | Drill subnetting until automatic | Free | ✅ |
 
 > **Subnetting will trip you up if you haven't drilled it.** Practice daily until you can do it without a calculator.
 

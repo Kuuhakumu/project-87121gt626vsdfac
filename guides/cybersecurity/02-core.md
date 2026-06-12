@@ -50,7 +50,7 @@ Professor Messer N10-009 (free, full playlist) · PowerCert Animated Videos · S
 |---|---|---|---|
 | Intro to Networking series | TryHackMe | OSI, ping, traceroute in browser | Free tier |
 | Introduction to Networking | HTB Academy | OSI/TCP-IP, subnetting, DNS, ARP — interactive Qs | Free module |
-| [SubnettingPractice.com](https://subnettingpractice.com/) | Web | `/24`–`/30` drills until automatic | Free |
+| [SubnettingPractice.com](https://subnetipv4.com/) | Web | `/24`–`/30` drills until automatic | Free |
 | Wireshark: The Basics | TryHackMe | Filter live PCAPs, identify protocols | Free tier |
 | Packet Analysis | HTB Academy | Analyze captures for lateral movement / C2 | Free module |
 
