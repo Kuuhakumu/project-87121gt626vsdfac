@@ -8,7 +8,7 @@ Confidence: ✅ verified on official page · ⚠️ price not in page HTML (comm
 
 ## TL;DR — What to actually get
 
-- **Start free:** ISC2 **CC** (free exam + training). DoD 8140-approved. *New exam outline from Sept 1, 2026.*
+- **Fundamentals checkpoint:** ISC2 **CC** (DoD 8140-approved, best-mapped fundamentals — exam is ~$199, optional). *New exam outline from Sept 1, 2026.*
 - **The one that matters:** CompTIA **Security+ (SY0-701)** — the #1 HR filter for entry security roles.
 - **Then specialize** (Blue / Red / Cloud / GRC) — see paths below.
 - **Do NOT start AZ-500** — it **retires Aug 31, 2026**.
@@ -25,7 +25,7 @@ Confidence: ✅ verified on official page · ⚠️ price not in page HTML (comm
 | CompTIA Security+ | SY0-701 | ~$593 | MCQ+PBQ, ≤90q, 90m | 750/900 | 3 yr | ✅ |
 | CompTIA CySA+ | CS0-003 (V4 transition underway) | ~$464 | MCQ+PBQ, ≤85q, 165m | 750/900 | 3 yr | ✅ |
 | CompTIA PenTest+ | PT0-003 | ~$593 | MCQ+PBQ, ≤85q, 165m | 750/900 | 3 yr | ✅ |
-| ISC2 CC | CC | **Free** | 100 MCQ, 120m | 700/1000 | 3 yr (45 CPE) | ✅ |
+| ISC2 CC | CC | **~$199 + $50/yr AMF** | 100 MCQ, 120m | 700/1000 | 3 yr (45 CPE) | ✅ |
 | Microsoft SC-900 | SC-900 | ~$165 | MCQ+scenario, 45m | 700/1000 | No expiry | ✅ |
 | Microsoft SC-200 | SC-200 | ~$165 | MCQ+interactive, 100m | 700/1000 | 1 yr renew (free) | ✅ |
 | Microsoft AZ-500 | AZ-500 | ~$165 | — | — | **RETIRES Aug 31 2026** | ✅ |
@@ -45,7 +45,7 @@ Confidence: ✅ verified on official page · ⚠️ price not in page HTML (comm
 
 🔴 **Baseline filter** (employers screen for these):
 - **Security+ SY0-701** — #1 keyword, DoD 8140 required, government/contractor/MSP standard.
-- **ISC2 CC** — free, DoD 8140.03 approved, pairs with Security+.
+- **ISC2 CC** — DoD 8140.03 approved, fundamentals checkpoint (exam optional/~$199).
 - **CompTIA A+** — baseline *for IT-support entry roles* (a common on-ramp), not security roles directly.
 - **OSCP** — baseline filter *for dedicated pentest roles only*.
 
@@ -63,20 +63,20 @@ Confidence: ✅ verified on official page · ⚠️ price not in page HTML (comm
 ## Recommended paths
 
 **Universal beginner (cheapest → first job, ~4–6 months):**
-`ISC2 CC (free)` → `Google Cybersecurity Cert (~$294, optional)` → `Security+ SY0-701 ($593)`
-Total: **$593–$887**.
+`ISC2 CC study (exam optional/$199)` → `Google Cybersecurity Cert (~$294, optional)` → `Security+ SY0-701 ($593)`
+Total: **$593–$1,086** (or $593–$887 if skipping CC exam).
 
 **Blue Team / SOC:**
-`CC (free)` → `Security+ ($593)` → `BTL1 (~$505)` → `SC-200 (~$165)` *or* `CySA+ (~$464, for DoD)` → later `GSEC` (employer-sponsored).
+`CC study (exam optional/$199)` → `Security+ ($593)` → `BTL1 (~$505)` → `SC-200 (~$165)` *or* `CySA+ (~$464, for DoD)` → later `GSEC` (employer-sponsored).
 
 **Red Team / Pentest:**
 `eJPT (~$200)` → `PNPT ($499)` *or* `HTB CPTS (~$210)` → `Security+ ($593, for HR)` → `OSCP (~$1,649)` when lab-ready.
 
 **Cloud Security:**
-`CC (free)` → `SC-900 (~$165)` → `Security+ ($593)` → `SC-200 (~$165)` → AZ-500 successor (TBA post-Aug 2026) *or* AWS Security Specialty.
+`CC study (exam optional/$199)` → `SC-900 (~$165)` → `Security+ ($593)` → `SC-200 (~$165)` → AZ-500 successor (TBA post-Aug 2026) *or* AWS Security Specialty.
 
 **GRC / Compliance** (gates on experience — slower):
-`CC (free)` → `Security+ ($593)` → `SC-900 (~$165)` → `CISA`/`CISM` after ~5 yrs experience.
+`CC study (exam optional/$199)` → `Security+ ($593)` → `SC-900 (~$165)` → `CISA`/`CISM` after ~5 yrs experience.
 
 ---
 
@@ -92,7 +92,7 @@ Total: **$593–$887**.
 | AZ-500 (no caveat) | **Retires Aug 31 2026** |
 | CASP+ | renamed **SecurityX** |
 | CEH as differentiator | displaced by PNPT/CPTS/OSCP |
-| ISC2 CC missing | now established, DoD-approved, free |
+| ISC2 CC missing | now established, DoD-approved (~$199) |
 | BTL1 "niche" | 10,000+ certified, mainstream SOC cert |
 | Google Cert missing | dominant pre-Security+ on-ramp |
 | OSCP standalone voucher | now subscription (Learn One) |

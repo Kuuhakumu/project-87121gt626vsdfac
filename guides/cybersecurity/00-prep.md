@@ -50,7 +50,7 @@ You don't need to buy hardware — a free hypervisor on your existing machine is
 ## Free on-ramp courses (~6 hrs)
 
 Pick one to get your bearings before the cert grind:
-- [Google Cybersecurity Professional Certificate](https://www.coursera.org/professional-certificates/google-cybersecurity) — structured, beginner-first, financial aid available.
+- [Google Cybersecurity Professional Certificate](https://www.coursera.org/professional-certificates/google-cybersecurity) — structured, beginner-first (~$49/mo, financial aid available).
 - [HTB Academy — Pre-Security path](https://academy.hackthebox.com/) — free modules covering the web, networking, and Linux basics.
 - [TryHackMe — Pre-Security path](https://tryhackme.com/) — gentle in-browser intro.
 

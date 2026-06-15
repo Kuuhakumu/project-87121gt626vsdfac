@@ -13,7 +13,7 @@
 | CompTIA PenTest+ | PT0-003 | ~$593 | MCQ + PBQ, ≤85 q, 165 min | 750/900 | 3 yr | ✅ |
 | CompTIA Cloud+ | CV0-004 | — | ≤90 q, 90 min | 750/900 | 3 yr | ✅ |
 | CompTIA SecurityX | (formerly CASP+) | — | Expert level | — | 3 yr | ⚠️ rename confirmed, slug 404 |
-| ISC2 CC | CC | **Free** (new outline Sep 1 2026) | Pearson VUE proctored | — | 3 yr (45 CPE) | ✅ |
+| ISC2 CC | CC | **~$199 + $50/yr AMF** (free program ended 2026-05-20) | 100 MCQ, 120 min | 700/1000 | 3 yr (45 CPE) | ✅ |
 | Microsoft SC-900 | SC-900 | ~$165 | MCQ + scenario, 45 min | 700/1000 | No expiry | ✅ |
 | Microsoft SC-200 | SC-200 | ~$165 | MCQ + interactive, 100 min | 700/1000 | 12-mo renew | ✅ |
 | Microsoft AZ-500 | AZ-500 | ~$165 | **RETIRES AUG 31 2026 — DO NOT PURSUE** | — | — | ✅ |
@@ -38,7 +38,7 @@
 | Cert | Signal | Note |
 |---|---|---|
 | Security+ SY0-701 | 🔴 | #1 HR keyword; DoD 8140 baseline |
-| ISC2 CC | 🔴 | Free; DoD 8140.03; pairs with Sec+ |
+| ISC2 CC | 🔴 | DoD 8140.03; best-mapped fundamentals (exam ~$199, optional) |
 | CompTIA A+ | 🔴 (IT support entry only) | Helpdesk gateway into security |
 | Network+ N10-009 | 🟠 | Networking depth for SOC/netsec |
 | CySA+ CS0-003 | 🟠 | Blue-team analyst; DoD recognized |

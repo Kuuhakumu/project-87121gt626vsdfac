@@ -50,7 +50,7 @@ Each phase shows an approximate hour band — a budget, not a deadline. Go at wh
 ## 🏁 Certification Ladder (2026)
 
 ```
-[Free Start]   ISC2 CC (free, DoD-approved)
+[Fundamentals] ISC2 CC (study the domains — exam optional/~$199, DoD-approved)
 [Baseline]     CompTIA A+ (220-1201/1202) → Network+ (N10-009) → Security+ (SY0-701)
 [Blue Team]    BTL1 → SC-200 or CySA+
 [Red Team]     eJPT → PNPT or HTB CPTS → (OSCP, year 2)

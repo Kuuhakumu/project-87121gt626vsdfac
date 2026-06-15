@@ -1,13 +1,13 @@
 # Phase 2: Networking & Security Core
 
 > **~180 hrs total** · your pace, no deadline
-> Certs targeted: **CompTIA Network+ (N10-009)** → **ISC2 CC (free)** → **CompTIA Security+ (SY0-701)**
+> Certs targeted: **CompTIA Network+ (N10-009)** → **ISC2 CC (exam optional)** → **CompTIA Security+ (SY0-701)**
 
 [← Phase 1: Foundations](01-foundations.md) · [Hub](README.md) · [Phase 3: Scripting & CTF →](03-scripting-ctf.md)
 
 ---
 
-This is the most important phase for employability. **Security+ is the #1 baseline filter** in entry-level security job postings. Network+ makes Security+ a lot easier, and ISC2 CC is free, DoD-approved, and builds exam confidence at zero cost. See [certifications.md](certifications.md) for full exam data and ROI tiers.
+This is the most important phase for employability. **Security+ is the #1 baseline filter** in entry-level security job postings. Network+ makes Security+ a lot easier, and ISC2 CC material is the best-mapped fundamentals checkpoint (exam is optional/~$199 — the guide's own "can u explain it?" gates are your real checkpoint). See [certifications.md](certifications.md) for full exam data and ROI tiers.
 
 ---
 
@@ -59,16 +59,16 @@ Professor Messer N10-009 (free, full playlist) · PowerCert Animated Videos · S
 
 ---
 
-## ISC2 Certified in Cybersecurity (CC) — FREE (~30 hrs)
+## ISC2 Certified in Cybersecurity (CC) — exam optional (~30 hrs)
 
-> **Do this before Security+.** It's free, DoD 8140-approved, and a good way to build CAT exam confidence.
+> **Study this before Security+.** CC domains are the best-mapped fundamentals checkpoint — its 5 domains line up cleanly with Stallings + the guide structure. The exam itself (~$199 + $50/yr AMF) is optional; the real checkpoint is whether you can explain the mechanisms (see gates below).
 
 > [!IMPORTANT]
-> ISC2 CC exam is **free** (exam + first-year membership) under the One Million Certified initiative. **A new exam outline takes effect Sept 1, 2026** — if you test after that date, use post-Sept study material.
+> ISC2's "One Million Certified" free-exam program **ended 2026-05-20** (goal reached). Standard exam fee is now **~$199 + $50/yr AMF**. **A new exam outline takes effect Sept 1, 2026** — if you sit the exam after that date, verify the updated weights.
 
-### Exam at a glance
-- **Format:** 100 MCQ, 120 min, linear (not CAT for CC) · **Pass:** 700/1000 · **Price:** Free
-- **Maintenance:** ~$50/yr AMF + 45 CPEs over 3 years
+### Exam at a glance (if you choose to sit it)
+- **Format:** 100 MCQ, 120 min, linear (not CAT for CC) · **Pass:** 700/1000 · **Price:** ~$199 + $50/yr AMF
+- **Maintenance:** 45 CPEs over 3 years
 
 ### Domain weights
 
@@ -84,7 +84,7 @@ Professor Messer N10-009 (free, full playlist) · PowerCert Animated Videos · S
 CIA triad, risk management, governance, physical/logical access controls, authentication/authorization (AAA), firewalls, VPNs, OSI basics, BCP/DRP, incident response lifecycle, patch & configuration management.
 
 ### Resources
-- **[Official ISC2 free online training](https://www.isc2.org/certifications/cc)** (free self-paced course + exam voucher)
+- **[Official ISC2 online training](https://www.isc2.org/certifications/cc)** (self-paced course — check current pricing/access)
 - Prabh Nair (YouTube) for scenario walkthroughs
 - Free lab: [Intro to Cryptography](https://tryhackme.com/) (TryHackMe) — hashing, encryption, digital signatures
 
@@ -151,7 +151,7 @@ Use the objectives PDF as a strict checklist. Read questions twice — catch "LE
 
 ## Phase 2 exit checklist
 - [ ] (Optional) Network+ passed, or subnetting + OSI mastered
-- [ ] ISC2 CC passed (free)
+- [ ] ISC2 CC material studied + can explain all 5 domains (exam optional)
 - [ ] Security+ passed — **the key milestone**
 - [ ] Comfortable running SPL (Splunk) and KQL (Sentinel/KC7) basic queries
 - [ ] Can explain shared responsibility model, PICERL, CIA triad, PKI
