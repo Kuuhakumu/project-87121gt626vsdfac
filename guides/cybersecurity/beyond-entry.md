@@ -20,7 +20,7 @@ Once you land your first role and have 1–2 years of experience under your belt
 **Certifications:**
 - **BTL2** (~£499 / Centri) — advanced practical IR, threat hunting, malware analysis
 - **GIAC GCIH / GCFA** — gold-standard SANS certs, now with hands-on CyberLive format (~$949+ exam; *seek employer sponsorship*)
-- **Microsoft SC-200** if you went Microsoft-heavy
+- **Microsoft SC-200** (**2026-07-28 refresh** adds Security Copilot/Sentinel Data lake) if you went Microsoft-heavy
 
 ---
 

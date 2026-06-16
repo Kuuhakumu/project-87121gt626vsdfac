@@ -25,7 +25,7 @@
 The default entry path. You triage alerts, investigate incidents, hunt threats.
 
 ### Recommended cert
-**BTL1** (Centri, ~£399/~$505) — 24-hour practical, hands-on, lifetime validity. Rapidly growing recognition; technical hiring managers trust the practical format. **Alternative:** CySA+ (CS0-003, ~$464) if targeting DoD/government.
+**BTL1** (Centri, ~£399/~$505) — 24-hour practical, hands-on, lifetime validity. Rapidly growing recognition; technical hiring managers trust the practical format. **Alternative:** CySA+ (**CS0-004** current; CS0-003 retires 2026-12-22, ~$464) if targeting DoD/government.
 
 ### What to cover
 - **SIEM:** Splunk (SPL) + Microsoft Sentinel (KQL) — both appear constantly in postings
@@ -89,7 +89,7 @@ You simulate attacks to find weaknesses. Rarely hires true beginners — most st
 Cloud security is now **baseline**, not niche. Highest remote ceiling at entry level.
 
 ### Recommended cert
-**SC-900** (~$165, never expires) → **SC-200** (Sentinel/Defender SOC focus). 
+**SC-900** (~$165, never expires) → **SC-200** (Sentinel/Defender SOC focus; **2026-07-28 refresh** adds Security Copilot/Sentinel Data lake). 
 > ⛔ **Do NOT pursue AZ-500 — it retires August 31, 2026.** Wait for the announced successor, or pursue AWS Security paths if you're in an AWS shop.
 
 ### What to cover

@@ -23,11 +23,11 @@ Confidence: ✅ verified on official page · ⚠️ price not in page HTML (comm
 | CompTIA A+ | 220-1201 / 220-1202 (**new 2026**) | ~$246/exam | MCQ+PBQ, ≤90q, 90m | 675/900 (Core1) | 3 yr | ✅ |
 | CompTIA Network+ | N10-009 | ~$399 | MCQ+PBQ, ≤90q, 90m | 720/900 | 3 yr | ✅ |
 | CompTIA Security+ | SY0-701 | ~$593 | MCQ+PBQ, ≤90q, 90m | 750/900 | 3 yr | ✅ |
-| CompTIA CySA+ | CS0-003 (V4 transition underway) | ~$464 | MCQ+PBQ, ≤85q, 165m | 750/900 | 3 yr | ✅ |
+| CompTIA CySA+ | **CS0-004 (V4)** — CS0-003 retires 2026-12-22 | ~$464 | MCQ+PBQ, ≤85q, 165m | 750/900 | 3 yr | ✅ |
 | CompTIA PenTest+ | PT0-003 | ~$593 | MCQ+PBQ, ≤85q, 165m | 750/900 | 3 yr | ✅ |
 | ISC2 CC | CC | **~$199 + $50/yr AMF** | 100 MCQ, 120m | 700/1000 | 3 yr (45 CPE) | ✅ |
-| Microsoft SC-900 | SC-900 | ~$165 | MCQ+scenario, 45m | 700/1000 | No expiry | ✅ |
-| Microsoft SC-200 | SC-200 | ~$165 | MCQ+interactive, 100m | 700/1000 | 1 yr renew (free) | ✅ |
+| Microsoft SC-900 | SC-900 — **2026-07-28 refresh** (agentic-AI/agent ID) | ~$165 | MCQ+scenario, 45m | 700/1000 | No expiry | ✅ |
+| Microsoft SC-200 | SC-200 — **2026-07-28 refresh** (Security Copilot/Sentinel Data lake) | ~$165 | MCQ+interactive, 100m | 700/1000 | 1 yr renew (free) | ✅ |
 | Microsoft AZ-500 | AZ-500 | ~$165 | — | — | **RETIRES Aug 31 2026** | ✅ |
 | GIAC GSEC | GSEC | ~$949 ⚠️ | CyberLive labs, 106q, 4h | 72% (Apr 2026) | 4 yr | ✅ |
 | BTL1 (Centri) | BTL1 | £399 (~$505) | 24h practical | 70% | Lifetime | ✅ |
