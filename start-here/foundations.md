@@ -1,156 +1,231 @@
 # Shared Foundations — Hours 0–40
 
-> **Everyone starts here, no matter which field you pick.** These are the universal skills every IT career assumes you already have: how computers work, the command line, how the internet moves data, and how to actually learn technical material. Do this *before* you commit to a field — by the end, the right path is usually obvious, and you haven't lost anything if you change your mind.
+> **everyone starts here, no matter which field u pick.** these are the universal skills every IT career assumes u already have: how computers work, the command line, how the internet moves data, and how to actually learn technical material. do this *before* u commit to a field — by the end, the right path is usually obvious, and u havent lost anything if u change your mind meow
 
-**Total: ~40 hours.** Go at whatever pace fits your life — there's no deadline. Everything here is **free** and **verified live (June 2026)**.
-
-```mermaid
-graph LR
-    A[~8 hrs<br/>How Computers Work] --> B[~12 hrs<br/>Command Line + OS]
-    B --> C[~12 hrs<br/>How the Internet Works]
-    C --> D[~8 hrs<br/>Git + How to Learn]
-    D --> E{Pick your field}
-    classDef f fill:#1f2937,stroke:#6b7280,color:#f9fafb;
-    class A,B,C,D,E f;
-```
+**Total: ~40 hours** (≈ 3–4 weeks at 2h/day). go at whatever pace fits your life — theres no deadline. everything here is **free** and **verified live (July 2026)**.
 
 ---
 
-## Block 1 · How Computers Actually Work
+## how to track your progress meow
 
-**Why:** Every field — dev, security, cloud, data, support — assumes you know what a CPU, RAM, storage, and an operating system *do*. This is the bedrock.
+oki so u might notice all the `- [ ]` checkboxes below... heres the thing: **these boxes are display-only in this public repo** — u cant actually tick them here (youd have to commit to *our* repo which... doesnt make sense for your personal progress ;w;).
 
-**What to cover:**
-- Hardware: CPU (cores, clock speed), RAM vs storage (volatile vs persistent), SSD vs HDD, motherboard, GPU — what each part does and how they talk
-- Binary & data: bits/bytes, how text/images/numbers become 1s and 0s, why "8GB RAM" matters
-- What an operating system is: the layer between hardware and your apps; Windows vs macOS vs Linux at a high level
-- Software vs hardware; what "running a program" actually means (load into RAM, CPU executes)
+**so heres what to do instead:**
+- **fork this repo** into your own GitHub account (button at the top) — then u can tick boxes in your fork and commit your progress there, or
+- **copy the checklist into your own notes** — if youre using Obsidian or OneNote (we set those up in Block 4), just paste the checkbox tree into a page there and tick as u go, or
+- **download/print it** — old school but it works meow
 
-**Theory (free, named):**
-- [Branch Education](https://www.youtube.com/@BranchEducation) — 3D animations: "How does a CPU work?", "How do SSDs work?"
-- [CrashCourse Computer Science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) — episodes 1–10 for the big picture
-- [Harvard CS50 — Week 0 (Scratch) & Week 1](https://cs50.harvard.edu/x/) — the single best free "how computing works" intro (audit free)
+the `- [ ]` boxes in *this* repo are just the visual structure showing u the path. your *actual* progress is tracked by the **two-part gate system** that travels with u no matter where u keep your list:
 
-**Interactive lab:**
+1. **the measurable gate** (in each "do this" section) — real % on a named practice-test site, or a real interactive lab passed (like "clear Bandit 0–15" or "complete Week 1 problem set"). this is objective, unfoolable, external. either u hit the number or u didnt.
 
-| Lab | Platform | What you do | Cost | Status |
-|---|---|---|---|---|
-| [Intro to Cybersecurity / How computers work modules](https://www.codecademy.com/learn/introduction-to-cybersecurity) | Codecademy | Interactive lessons on OS layers & core concepts | Free tier | ✅ live |
-| [CS50x Week 0–1](https://cs50.harvard.edu/x/) | edX/Harvard | Browser IDE; build logic in Scratch then C | Free (audit) | ✅ live |
+2. **the "can u explain it?" gate** (at the end of each topic) — proves u *understand why*, not just that u did the steps. out loud or written, unaided.
 
-**Practice gate:** You can explain, out loud, the difference between RAM and storage, and what the OS does — without notes.
+**both must pass** before a topic is really done. the measurable gate is the hard bar (it keeps u honest); the explain gate catches "i passed the quiz but couldnt tell u why it works" — which is exactly the gap this guide exists to close qwq
+
+dw if that sounds intense — the gates are calibrated to hours-not-weeks, and the mechanism sections above each gate literally give u the map to pass the explain part. youve got this meow
 
 ---
 
-## Block 2 · Command Line + Operating System Literacy
+## the path (todo-tree)
 
-**Why:** The terminal is the universal tool. Devs, cloud engineers, security analysts, data folks, and sysadmins all live in it — get comfortable now and every field gets easier.
-
-**What to cover (Linux/macOS shell + Windows equivalents):**
-- Navigation: `pwd`, `ls`/`dir`, `cd`, paths (absolute vs relative), `~` home
-- Files: `cat`, `less`, `cp`, `mv`, `rm`, `mkdir`, `touch`, `find`
-- Text & search: `grep`, pipes `|`, redirects `>` `>>`, `wc`, `sort`, `head`/`tail`
-- Permissions: read/write/execute, `chmod`, `chown`, octal (755, 644)
-- Processes: `ps`, `top`, `kill`; environment variables; `sudo`
-- Windows side: PowerShell basics (`Get-ChildItem`, `Get-Content`, `Get-Process`), CMD (`ipconfig`, `dir`)
-- Package managers concept: `apt`, `brew`, `winget`
-
-**Theory (free, named):**
-- [Professor Messer — CompTIA basics](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) for OS overview
-- [The Missing Semester (MIT)](https://missing.csail.mit.edu/) — lectures 1–2 (shell + scripting), genuinely the best CLI intro
-- [NetworkChuck — "Linux for beginners"](https://www.youtube.com/@NetworkChuck) for an energetic walkthrough
-
-**Interactive labs:**
-
-| Lab | Platform | What you do | Cost | Status |
-|---|---|---|---|---|
-| [OverTheWire — Bandit (Levels 0–15)](https://overthewire.org/wargames/bandit/) | OverTheWire | SSH into real Linux boxes; solve puzzles with `cat`, `grep`, `find`, `ssh`, `base64` | **Free** | ✅ live |
-| [Linux Fundamentals module](https://academy.hackthebox.com/) | HTB Academy | Guided bash, permissions, package mgmt against a live target | Free tier | ✅ live |
-| [Linux Journey](https://labex.io/linuxjourney) | Web | Self-paced text lessons + quizzes | **Freemium** | ✅ live |
-
-**Practice gate:** Complete **OverTheWire Bandit levels 0–15** unaided. This single achievement proves real CLI competence.
+- [ ] **Block 1** — how computers actually work (~8h)
+- [ ] **Block 2** — command line + operating system literacy (~12h)
+- [ ] **Block 3** — how the internet works (~12h)
+- [ ] **Block 4** — git, GitHub & how to learn (~8h)
+- [ ] ✅ **Exit check** — pick your field
 
 ---
 
-## Block 3 · How the Internet Works
+## Block 1 · How Computers Actually Work (~8h)
 
-**Why:** Networking is the connective tissue of all of IT. You can't secure, deploy, debug, or support what you don't understand at the packet level — so it's worth getting right early.
+**the idea** — a running computer is a loop, not a magic box. the CPU repeats a fetch-decode-execute cycle; everything it touches lives in RAM (fast but clears on power loss), and gets loaded there from storage (slow but persistent).
 
-**What to cover:**
-- The request/response model: what *actually* happens when you type a URL and hit enter (DNS → TCP → TLS → HTTP → render)
-- IP addressing (IPv4/IPv6), ports, the difference between public/private IPs
-- DNS: how names become addresses; records (A, CNAME, MX)
-- HTTP/HTTPS: methods (GET/POST), status codes (200/404/500), headers, why HTTPS matters
-- The OSI model (7 layers) and TCP/IP model — at least conceptually
-- Key protocols & ports: HTTP 80, HTTPS 443, SSH 22, DNS 53, SMTP 25
-- LAN vs WAN, routers vs switches, what your home router does
+**how it actually works** — lets talk about whats really happening when u "run a program", bc this is the bedrock everything else sits on:
 
-**Theory (free, named):**
-- [PowerCert Animated Videos](https://www.youtube.com/@PowerCertAnimatedVideos) — OSI model, TCP/IP, DNS explained visually
-- [Professor Messer Network+ playlist](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) — Network Concepts section
-- ["How DNS works" — howdns.works](https://howdns.works/) — friendly comic
+A CPU repeats the **fetch–decode–execute cycle** from boot until shutdown:
+1. **Fetch** — the **program counter (PC)** holds the memory address of the next instruction. that address is copied to the **memory address register (MAR)**, the value at that RAM address is pulled into the **memory data register (MDR)** and then the **current instruction register (CIR)**; the PC increments to point at the next instruction.
+2. **Decode** — the **control unit** interprets the bits in the CIR: which operation, which operands/addresses.
+3. **Execute** — the **ALU** (arithmetic logic unit) does the math/logic, or data is moved, or the PC is set to a new address (a jump/branch). then the loop repeats. modern CPUs overlap these steps via an **instruction pipeline** (next fetch starts before the previous execute finishes).
 
-**Interactive labs:**
+why RAM vs storage matters, physically: **RAM is volatile** — fast electrical cells the CPU can address directly, but they lose state when power is cut. **storage (SSD/HDD) is persistent** but far slower and *not* directly executable by the CPU. so "running a program" = the OS copies the programs instructions from storage into RAM, creates a **process** (its own address space + PC + registers state), and the CPU begins the fetch–decode–execute loop on those in-RAM instructions. that copy-into-RAM step is the entire reason more RAM lets u run more/bigger programs at once, and why an SSD mainly speeds *launch/load*, not raw compute. everything the CPU touches is ultimately **binary** — bits grouped into bytes — because the hardware is switches that are on/off (1/0).
 
-| Lab | Platform | What you do | Cost | Status |
-|---|---|---|---|---|
-| [Introduction to Networking module](https://academy.hackthebox.com/) | HTB Academy | Interactive OSI, TCP/IP, subnetting, DNS, ARP questions | Free tier | ✅ live |
-| [SubnettingPractice.com](https://subnetipv4.com/) | Web | Drill subnetting until automatic | **Free** | ⛔ dead |
-| [Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics) | TryHackMe | Load real packet captures, filter traffic, see protocols live | Free room | ✅ live (rate-limits bots) |
+dw if this feels abstract rn — the CS50 lab below makes it concrete meow
 
-**Practice gate:** You can narrate, step by step, what happens between pressing Enter on `https://example.com` and the page appearing.
+**words u gotta be able to say:**
+- **CPU** — the chip that executes instructions in a fetch/decode/execute loop
+- **fetch–decode–execute cycle** — the CPUs core repeat-loop per instruction
+- **program counter (PC)** — register holding the address of the next instruction
+- **register** — tiny ultra-fast storage inside the CPU (PC, MAR, MDR, CIR, etc.)
+- **control unit** — decodes the instruction and directs the rest of the CPU
+- **ALU** — arithmetic logic unit; does the actual math/logic
+- **RAM (volatile)** — fast, directly-addressable memory that clears on power loss
+- **storage / SSD / HDD (persistent)** — slower memory that survives power off
+- **process** — a program loaded into RAM and running, with its own memory + register state
+- **bit / byte** — smallest unit (1/0) / group of 8 bits
+- **binary** — base-2; how all data/instructions are physically represented
+- **clock speed / core** — cycles per second / independent execution unit
 
----
+**do this** — [CS50x Week 0–1](https://cs50.harvard.edu/x/) — browser IDE, no install. build logic in Scratch (Week 0), then write + run your first compiled C program (Week 1) so u *see* source → compile → a running process. ✅ verified live 2026-07-01
 
-## Block 4 · Git, GitHub & How to Learn
+**measurable gate:** complete the **Week 1 problem set** (submit at least one working C program). this is the objective bar — either u built + ran a program or u didnt meow
 
-**Why:** Git is how the whole industry tracks work and collaborates. GitHub is your public portfolio — it's what gets you hired, especially without a degree. And knowing *how to learn* technical material is the meta-skill that determines whether you'll finish any of these guides.
+**read this + why** — Stallings, *Computer Security: Principles and Practice* — **Ch. 1 (Overview)** for the computer-as-system framing, and **Ch. 12 "OS Security"** for the deeper hardware/OS mechanics. why: security sits on top of how systems work — if u dont know what a process or memory is, u cant understand what an attack abuses.
 
-**What to cover (Git/GitHub):**
-- Why version control exists; what a repo, commit, branch, and remote are
-- Core flow: `git init`, `git add`, `git commit`, `git push`, `git pull`, `git clone`
-- Branching & merging basics; what a merge conflict is
-- GitHub: creating repos, writing a good README, pull requests, issues
-- Markdown (you're reading it) — headings, lists, code blocks, tables, links
+**can u explain it?** ✅ — out loud or written, unaided (no notes, no guide open): *"Trace one instruction through fetch, decode, execute — name which register holds the next address. then explain why a program must be copied from storage into RAM before the CPU can run it, and what makes RAM different from an SSD."*
 
-**What to cover (how to learn):**
-- **Active > passive:** doing labs beats watching videos. Aim for 70% hands-on.
-- **Spaced repetition:** use [Anki](https://apps.ankiweb.net/) for facts (ports, commands, acronyms)
-- **The "build to learn" loop:** learn a concept → immediately apply it in a tiny project → document it
-- **Note-taking:** keep a searchable second brain ([Obsidian](https://obsidian.md/) free) — future-you will thank you
-- Avoid tutorial hell: after a tutorial, rebuild the thing *without* following along
-
-**Theory (free, named):**
-- [The Odin Project — Git Basics](https://www.theodinproject.com/) — free, hands-on
-- [freeCodeCamp — "Git and GitHub for Beginners" (YouTube)](https://www.youtube.com/@freecodecamp)
-- [GitHub Skills](https://skills.github.com/) — interactive, in-platform exercises
-
-**Interactive labs:**
-
-| Lab | Platform | What you do | Cost | Status |
-|---|---|---|---|---|
-| [GitHub Skills](https://skills.github.com/) | GitHub | Guided real PRs/commits inside GitHub itself | **Free** | ✅ live |
-| [Learn Git Branching](https://learngitbranching.js.org/) | Web | Visual, interactive branching/merging game | **Free** | ✅ live |
-
-**Practice gate:** You have a **GitHub account** with at least one repo that has a real README, and you can commit + push from the command line without looking it up.
+if u can do the measurable gate but stumble here, thats the signal to re-read the mechanism section above — the bar is "i understand the chain and can say why each piece exists," not "i memorized the words" qwq
 
 ---
 
-## ✅ You're done with foundations. Now choose.
+## Block 2 · Command Line + Operating System Literacy (~12h)
 
-By now you can use a terminal, you understand how computers and the internet work, and you have a GitHub account. You've probably also noticed which blocks you actually *enjoyed*:
+**the idea** — the shell is a program that reads a line, parses it, and asks the OS kernel to do the work. learning to chain commands together (pipes, redirects, permissions) is how u actually control a system — and its the universal tool every IT field uses.
 
-- **Loved the CLI puzzles and "how could this break?"** → [Cybersecurity](../guides/cybersecurity/)
-- **Loved building logic in CS50** → Software Development
-- **Loved networking + wanting things to run reliably** → Cloud & DevOps, or IT Support
-- **Loved finding patterns in data** → Data, AI & Analytics
-- **Loved helping and explaining** → IT Support & Networking
-- **Cared most about how it *feels* to use** → [UI/UX Design](../guides/ux-design/)
-- **Liked deciding *what* to build and *why*, and coordinating people** → [Product Management](../guides/product-management/) *(usually a second job, not a first)*
+**how it actually works** — when u type `ls -l /etc` and press Enter: the shell splits the line into a **command + arguments**, resolves `ls` by searching each directory in your **`PATH`** environment variable, then calls the kernel to **`fork`** a new process and **`exec`** the `ls` binary into it. `ls` runs, writes to **standard output (stdout)**, and exits with a numeric **exit code** (0 = success).
 
-Still torn? Take the [Career-Match Quiz](career-quiz.md) or re-read [what each field actually is](what-is-each-field.md).
+the power comes from three OS mechanisms the shell wires together:
+- **Streams & pipes** — every process has stdin/stdout/stderr. a **pipe `|`** connects one processs stdout to the nexts stdin (`grep`, `sort`, `wc` chain into a data pipeline); **redirects** `>`/`>>` send stdout to a file instead of the screen.
+- **The filesystem is a tree** — one root `/`, **absolute paths** start at `/`, **relative paths** start from your current directory (`pwd`), `~` = home. everything (devices, config) is a file under it.
+- **Permissions** — each file has read/write/execute bits for owner/group/other, shown as `rwxr-xr-x`. `chmod 755` sets them via **octal** (r=4, w=2, x=1 → 7=rwx, 5=r-x). this is *the* access-control primitive an attacker abuses or a defender hardens, which is why its fundamentals-critical.
 
-> **Whichever you pick, none of this time was wasted.** Every field guide builds directly on these four blocks — they assume you can already do everything above.
+`sudo` runs one command as **root** (the all-powerful uid 0); `ps`/`top` list processes; `kill` sends a signal to one by PID. dw this clicks faster once u start the Bandit lab below — real puzzles make it stick better than watching meow
+
+**words u gotta be able to say:**
+- **shell** — program that reads commands and asks the kernel to run them
+- **kernel** — core of the OS that actually talks to hardware
+- **PATH** — env var listing dirs the shell searches for a command
+- **stdin / stdout / stderr** — a processs input / normal output / error output streams
+- **pipe `|`** — connect one commands stdout to the nexts stdin
+- **redirect `>` `>>`** — send output to a file (overwrite / append)
+- **absolute vs relative path** — from `/` vs from current dir; `~` = home
+- **permissions / `chmod` / octal (755, 644)** — read/write/execute bits per owner/group/other
+- **process / PID / `kill`** — a running program / its id / send it a signal
+- **root / `sudo`** — superuser / run one command with its privileges
+- **environment variable** — named value the shell passes to programs
+- **package manager (`apt`/`brew`/`winget`)** — installs software + dependencies
+
+**do this** — [OverTheWire — Bandit, Levels 0–15](https://overthewire.org/wargames/bandit/) — SSH into a real Linux box and solve each level with `ssh`, `ls`, `cat`, `find`, `grep`, `base64`, etc. real target, real skills. ✅ verified live 2026-07-01
+
+this is also your **first CTF experience** — capture-the-flag puzzles where u find a hidden "flag" (password) to unlock the next level. theyre genuinely fun and theyre how the industry actually practices, so starting here means ur building the right instincts from day one meow
+
+**measurable gate:** clear **levels 0–15 unaided.** that single run proves genuine CLI competence (nav, files, search, permissions, ssh). either u solved them or u didnt — this is the hard bar.
+
+**read this + why** — Stallings — **Ch. 4 "Access Control"** (the read/write/execute + owner model is exactly Unix file permissions) and **Ch. 12 "Operating System Security"** (privilege, root, hardening). why: `chmod`/`sudo` *is* access control in miniature — understand this and u can answer ISC2 CC access-control questions, bc youve seen the mechanism not just the acronym.
+
+**can u explain it?** ✅ — out loud or written, unaided: *"Type `cat notes.txt | grep TODO | wc -l` — explain what each `|` does to the data, what stdout is, and what `chmod 640 notes.txt` would let the owner vs others do."*
+
+if u can clear Bandit 0–15 but stumble here, re-read the streams/pipes/permissions part above. both gates must pass qwq
+
+---
+
+## Block 3 · How the Internet Works (~12h)
+
+**the idea** — typing a URL kicks off a fixed sequence: name→IP lookup, handshake to connect, encryption handshake to secure it, then the actual request/response — each step exists for a reason.
+
+**how it actually works** — lets trace what happens when u press Enter on **`https://example.com`**, bc every piece of this shows up in security/cloud/dev work later:
+
+1. **DNS resolution** — the name means nothing to the network; routing needs an IP. the OS asks a **recursive resolver**, which (if uncached) walks the hierarchy: **root** nameserver → **TLD** nameserver (`.com`) → **authoritative** nameserver for `example.com`, which returns the **A record** (IPv4) or **AAAA** (IPv6). results are **cached** with a **TTL** so its fast next time.
+
+2. **TCP three-way handshake** — before any data, the client and server establish a reliable, ordered connection on **port 443**: **SYN → SYN-ACK → ACK**. this synchronizes sequence numbers so lost/reordered packets can be detected and retransmitted — TCP gives *reliability* that IP alone doesnt.
+
+3. **TLS handshake** — now they secure the channel. client sends **ClientHello** (supported cipher suites, random); server replies **ServerHello** + its **digital certificate**. the client validates the cert against a trusted **certificate authority (CA)** — this authenticates *that the server is really example.com* and stops an impostor. they then agree on a shared **symmetric session key** (in TLS 1.3 via an ephemeral Diffie-Hellman key exchange, one round trip). all further traffic is encrypted+authenticated with that key. thats *why* HTTPS stops a **man-in-the-middle** from reading (confidentiality) or silently altering (integrity) the traffic. dw this clicks more when u hit the crypto block in cybersecurity meow
+
+4. **HTTP request/response** — over the encrypted channel the browser sends `GET / HTTP/1.1` (a **method** + path + **headers**); the server returns a **status code** (200 OK, 404, 500) + headers + the HTML body.
+
+5. **render** — the browser parses HTML, fetches referenced CSS/JS/images (often reusing the connection), builds the DOM, and paints the page.
+
+underneath, everything is **packets** routed hop-by-hop by IP; the **OSI/TCP-IP layers** just name who does what (app=HTTP, transport=TCP/port, network=IP, etc.). ports let one machine run many services (80 HTTP, 443 HTTPS, 22 SSH, 53 DNS, 25 SMTP).
+
+**words u gotta be able to say:**
+- **DNS / recursive resolver / root / TLD / authoritative** — name→IP lookup and its hierarchy
+- **A / AAAA / CNAME / MX record** — IPv4 / IPv6 / alias / mail-server records
+- **TTL / cache** — how long a DNS answer is reused
+- **IP address / IPv4 / IPv6 / public vs private** — the numeric address of a host
+- **port** — numeric channel id so one host runs many services (443, 80, 22, 53, 25)
+- **TCP three-way handshake (SYN/SYN-ACK/ACK)** — sets up a reliable connection
+- **packet** — the unit data is chopped into and routed
+- **TLS handshake / ClientHello / cipher suite** — negotiating a secure channel
+- **certificate / certificate authority (CA)** — proves the servers identity
+- **symmetric session key** — shared secret that encrypts the actual traffic
+- **man-in-the-middle (MITM)** — attacker between u and the server
+- **confidentiality / integrity** — cant-read / cant-alter guarantees of TLS
+- **HTTP method / status code / header** — GET/POST / 200-404-500 / metadata
+- **OSI model / TCP-IP model** — layered map of network responsibilities
+
+**do this** — run these two commands in your own terminal (works on Linux/Mac/WSL; Windows users can use Git Bash or WSL):
+- `curl -v https://example.com` — watch the whole chain happen live (DNSd IP, TCP connect to :443, TLS negotiation, GET request, 200 OK response)
+- `dig example.com` — see the A record DNS returns
+
+zero signup needed, u literally watch steps 1–4 happen in real time. ✅ verified live 2026-07-01
+
+**measurable gate:** run both commands successfully and **annotate the `curl -v` output line-by-line** — mark which lines are DNS, which are TCP handshake, which are TLS negotiation, which are the HTTP request/response. save this annotated copy (youll need it for the explain gate). this is the objective bar — either u can map the output or u cant meow
+
+**read this + why** — Stallings — **Ch. 22 "Internet Security Protocols and Standards"** (the TLS handshake *is* applied crypto — CA trust, symmetric vs asymmetric, integrity) and **Ch. 5/Part on cryptography** (symmetric keys, MITM). why: understand this chapter and the CC "network security / secure protocols" questions are answerable, bc youve seen the mechanism not just the acronyms.
+
+**can u explain it?** ✅ — this is the SECOND gate, on top of the measurable one above (both must pass). the annotated curl output proves u can *map* it; this proves u *understand why*:
+
+out loud or written, unaided: *"Narrate every step from pressing Enter on `https://example.com` to the page appearing — DNS resolution → TCP SYN/SYN-ACK/ACK → TLS handshake (what the certificate proves, what the session key does) → HTTP GET/200 → render. say **why** TLS stops a man-in-the-middle."*
+
+if u can do the measurable gate but stumble here, re-read the mechanism section above — the bar is "i understand the chain and can say why each piece exists" qwq
+
+---
+
+## Block 4 · Git, GitHub & How to Learn (~8h)
+
+**the idea** — Git is how the whole industry tracks work and collaborates; GitHub is your public portfolio (its what gets u hired, especially without a degree). and knowing *how to learn* technical material is the meta-skill that determines whether ull finish any of these guides.
+
+**how it actually works (Git)** — Git is a **content-addressed snapshot store**, not a diff tracker. key mechanism: every time you commit, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. and everything in Git is checksummed before it is stored using a **SHA-1 hash** — so the same content = same hash, and any tampering changes the hash → **integrity**.
+
+so the flow has a precise meaning:
+- Your files live in the **working directory**. `git add` copies a files current version into the **staging area (index)** — "marked to go into the next commit snapshot."
+- `git commit` writes a new **commit object**: a snapshot of the staged tree + author/message + a pointer to its **parent commit**. its identity is a SHA-1 hash of its contents. the chain of parent pointers *is* your history.
+- A **branch** is just a lightweight movable pointer to a commit; committing advances it. **HEAD** points at your current branch. **merging** two branches replays their histories to a common **base**; a **merge conflict** is Git saying "both branches changed the same lines — a human must choose."
+- A **remote** (e.g. GitHub) is another copy of the repo. `git push` uploads your new commit objects; `git pull` = `fetch` + `merge` others commits. because every commit carries its parent + hash, distributed copies can always be reconciled.
+
+**how to learn (the meta-skill)** — memory strengthens by **active retrieval** and **spaced repetition** — recalling a fact just before youd forget it resets the forgetting curve (why Anki works for ports/commands). **active > passive** because doing a lab forces retrieval + error-correction that watching cant. the **build-to-learn loop** (learn → immediately apply in a tiny project → document) converts fragile recognition into durable recall; rebuilding a tutorial *without* following along is the test that u actually encoded it (escaping "tutorial hell"). dw this is the pattern this whole guide already uses — the two-gate system is literally active retrieval meow
+
+**words u gotta be able to say:**
+- **repository (repo)** — the tracked project + its full history
+- **working directory / staging area (index)** — your live files / whats queued for the next commit
+- **commit** — an immutable snapshot + parent pointer, named by its hash
+- **SHA-1 hash / checksum** — content fingerprint giving Git its integrity
+- **branch / HEAD** — movable pointer to a commit / pointer to your current branch
+- **merge / merge conflict** — combine histories / when the same lines diverged
+- **remote / `push` / `pull` / `clone`** — another copy / upload / download+merge / copy a repo
+- **`add` / `commit` / `init`** — stage / snapshot / start a repo
+- **pull request (PR)** — proposed merge on GitHub, reviewable
+- **README / Markdown** — the repos front page / its lightweight markup
+- **spaced repetition / active recall** — retrieve-before-forgetting; the study mechanism
+- **build-to-learn / tutorial hell** — apply-immediately loop / passive-copy trap
+
+**do this** — [Learn Git Branching](https://learngitbranching.js.org/) — visual, interactive: u type real `git commit`/`branch`/`merge`/`rebase` and *watch* the commit graph + branch pointers move — makes the "branch = pointer, commit = snapshot with a parent" mechanism concrete. ✅ verified live 2026-07-01
+
+**measurable gate:** complete the main sequence (Introduction + Ramping Up sections), AND have a **GitHub account with ≥1 repo that has a real README**, and be able to `git add`/`commit`/`push` from the CLI without looking it up. these are the objective bars — either u did them or u didnt meow
+
+**read this + why** — Gits **integrity via hashing** connects to Stallings **cryptographic hash functions** chapter (**Ch. 3 / crypto part**): a SHA hash detecting tampering in a commit is the same idea as a hash verifying a message. why: cements "hash = tamper-evident fingerprint," a CC crypto concept. (Git maps weakly to Stallings bc its a tool not a security primitive — but this one connection is worth making.)
+
+**can u explain it?** ✅ — out loud or written, unaided: *"Explain what `git add` then `git commit` actually stores (staging → a hashed snapshot with a parent pointer), why two identical file states produce the same hash, and what a branch really is. then: what makes a merge conflict, and why is `push` safe across many copies?"*
+
+if u can do the measurable gate but stumble here, re-read the mechanism section above. both must pass qwq
+
+---
+
+## ✅ exit check — youre done with foundations. now choose.
+
+by now u can use a terminal, u understand how computers and the internet work, and u have a GitHub account. youve probably also noticed which blocks u actually *enjoyed*:
+
+- **loved the CLI puzzles and "how could this break?"** → [Cybersecurity](../guides/cybersecurity/)
+- **loved building logic in CS50** → [Software Development](../guides/software-development/)
+- **loved networking + wanting things to run reliably** → [Cloud & DevOps](../guides/cloud-devops/) or [IT Support & Networking](../guides/it-support-networking/)
+- **loved finding patterns in data** → [Data, AI & Analytics](../guides/data-ai-analytics/)
+- **loved helping and explaining** → [IT Support & Networking](../guides/it-support-networking/)
+- **cared most about how it *feels* to use** → [UI/UX Design](../guides/ux-design/)
+- **liked deciding *what* to build and *why*, and coordinating people** → [Product Management](../guides/product-management/) *(usually a second job, not a first)*
+
+still torn? take the [Career-Match Quiz](career-quiz.md) or re-read [what each field actually is](what-is-each-field.md).
+
+> **whichever u pick, none of this time was wasted.** every field guide builds directly on these four blocks — they assume u can already do everything above meow
 
 ---
 
