@@ -66,6 +66,11 @@ dw if this feels abstract rn — the CS50 lab below makes it concrete meow
 - **binary** — base-2; how all data/instructions are physically represented
 - **clock speed / core** — cycles per second / independent execution unit
 
+**study sources (pick what fits your style):**
+- [CS50x Week 0–1](https://cs50.harvard.edu/x/) — the single best free "how computing works" intro; browser IDE, audit free. Week 0 = logic in Scratch, Week 1 = your first C program (this is also the lab below)
+- [CrashCourse Computer Science playlist](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) — episodes 1–10 for the big-picture history + concepts; friendly, animated. **free**
+- [Branch Education — "How does a CPU work?"](https://www.youtube.com/@BranchEducation) + "How do SSDs work?" — 3D animations showing the physical hardware; makes the fetch-execute cycle visual. **free**
+
 **do this** — [CS50x Week 0–1](https://cs50.harvard.edu/x/) — browser IDE, no install. build logic in Scratch (Week 0), then write + run your first compiled C program (Week 1) so u *see* source → compile → a running process. ✅ verified live 2026-07-01
 
 **measurable gate:** complete the **Week 1 problem set** (submit at least one working C program). this is the objective bar — either u built + ran a program or u didnt meow
@@ -104,6 +109,12 @@ the power comes from three OS mechanisms the shell wires together:
 - **root / `sudo`** — superuser / run one command with its privileges
 - **environment variable** — named value the shell passes to programs
 - **package manager (`apt`/`brew`/`winget`)** — installs software + dependencies
+
+**study sources (pick what fits your style):**
+- [The Missing Semester (MIT) — Lecture 1 (The Shell)](https://missing.csail.mit.edu/2020/course-shell/) + [Lecture 2 (Shell Tools)](https://missing.csail.mit.edu/2020/shell-tools/) — genuinely the best CLI intro; text + video, with exercises. **free**
+- [Linux Journey](https://linuxjourney.com/) — self-paced interactive text lessons on command line, file system, permissions. **free**
+- [Professor Messer — CompTIA A+ 220-1102 playlist, OS sections](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video/220-1102-training-course/) — covers Windows + Linux OS basics; CompTIA-focused but solid fundamentals. **free**
+- [NetworkChuck — "you need to learn Linux RIGHT NOW!!"](https://www.youtube.com/watch?v=ROjZy1WbCIA) — energetic 30min walkthrough of essential commands. **free**
 
 **do this** — [OverTheWire — Bandit, Levels 0–15](https://overthewire.org/wargames/bandit/) — SSH into a real Linux box and solve each level with `ssh`, `ls`, `cat`, `find`, `grep`, `base64`, etc. real target, real skills. ✅ verified live 2026-07-01
 
@@ -153,6 +164,12 @@ underneath, everything is **packets** routed hop-by-hop by IP; the **OSI/TCP-IP 
 - **HTTP method / status code / header** — GET/POST / 200-404-500 / metadata
 - **OSI model / TCP-IP model** — layered map of network responsibilities
 
+**study sources (pick what fits your style):**
+- [Professor Messer — Network+ N10-009 playlist, "Network Concepts" section](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) — OSI model, TCP/IP, DNS, ports explained clearly; exam-focused but excellent fundamentals. **free**
+- [PowerCert Animated Videos — "OSI Model Explained"](https://www.youtube.com/watch?v=vv4y_uOneC0) + ["TCP/IP Model Explained"](https://www.youtube.com/watch?v=OTwp3xtd4dg) + ["DNS Explained"](https://www.youtube.com/watch?v=mpQZVYPuDGU) — short (5–10min), visual, gets the concepts across fast. **free**
+- [howdns.works](https://howdns.works/) — friendly comic walkthrough of DNS resolution; makes the root→TLD→authoritative chain concrete. **free**
+- [TryHackMe — "Wireshark: The Basics" room](https://tryhackme.com/room/wiresharkthebasics) — load real packet captures, filter traffic, see TCP handshakes + HTTP live (freemium, this specific room is free). **freemium**
+
 **do this** — run these two commands in your own terminal (works on Linux/Mac/WSL; Windows users can use Git Bash or WSL):
 - `curl -v https://example.com` — watch the whole chain happen live (DNSd IP, TCP connect to :443, TLS negotiation, GET request, 200 OK response)
 - `dig example.com` — see the A record DNS returns
@@ -198,6 +215,16 @@ so the flow has a precise meaning:
 - **README / Markdown** — the repos front page / its lightweight markup
 - **spaced repetition / active recall** — retrieve-before-forgetting; the study mechanism
 - **build-to-learn / tutorial hell** — apply-immediately loop / passive-copy trap
+
+**study sources (pick what fits your style):**
+- [GitHub Skills](https://skills.github.com/) — interactive guided exercises inside GitHub itself (real repos, real PRs); "Introduction to GitHub" is the starting module. **free**
+- [The Odin Project — Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics) — text-based walkthrough with exercises; also covers the why behind version control. **free**
+- [freeCodeCamp — "Git and GitHub for Beginners - Crash Course" (YouTube)](https://www.youtube.com/watch?v=RGOj5yH7evk) — 1hr video covering the essentials with live demos. **free**
+- [Learn Git Branching](https://learngitbranching.js.org/) — visual interactive game (this is also the lab below); makes branches + merges click. **free**
+
+for the "how to learn" part:
+- [Anki](https://apps.ankiweb.net/) — free spaced-repetition flashcard app; use it for memorizing ports, commands, acronyms
+- [Obsidian](https://obsidian.md/) — free markdown note-taking app with graph view; perfect for building a searchable second brain
 
 **do this** — [Learn Git Branching](https://learngitbranching.js.org/) — visual, interactive: u type real `git commit`/`branch`/`merge`/`rebase` and *watch* the commit graph + branch pointers move — makes the "branch = pointer, commit = snapshot with a parent" mechanism concrete. ✅ verified live 2026-07-01
 
