@@ -75,8 +75,6 @@ dw if this feels abstract rn — the CS50 lab below makes it concrete meow
 
 **measurable gate:** complete the **Week 1 problem set** (submit at least one working C program). this is the objective bar — either u built + ran a program or u didnt meow
 
-**read this + why** — Stallings, *Computer Security: Principles and Practice* — **Ch. 1 (Overview)** for the computer-as-system framing, and **Ch. 12 "OS Security"** for the deeper hardware/OS mechanics. why: security sits on top of how systems work — if u dont know what a process or memory is, u cant understand what an attack abuses.
-
 **can u explain it?** ✅ — out loud or written, unaided (no notes, no guide open): *"Trace one instruction through fetch, decode, execute — name which register holds the next address. then explain why a program must be copied from storage into RAM before the CPU can run it, and what makes RAM different from an SSD."*
 
 if u can do the measurable gate but stumble here, thats the signal to re-read the mechanism section above — the bar is "i understand the chain and can say why each piece exists," not "i memorized the words" qwq
@@ -121,8 +119,6 @@ the power comes from three OS mechanisms the shell wires together:
 this is also your **first CTF experience** — capture-the-flag puzzles where u find a hidden "flag" (password) to unlock the next level. theyre genuinely fun and theyre how the industry actually practices, so starting here means ur building the right instincts from day one meow
 
 **measurable gate:** clear **levels 0–15 unaided.** that single run proves genuine CLI competence (nav, files, search, permissions, ssh). either u solved them or u didnt — this is the hard bar.
-
-**read this + why** — Stallings — **Ch. 4 "Access Control"** (the read/write/execute + owner model is exactly Unix file permissions) and **Ch. 12 "Operating System Security"** (privilege, root, hardening). why: `chmod`/`sudo` *is* access control in miniature — understand this and u can answer ISC2 CC access-control questions, bc youve seen the mechanism not just the acronym.
 
 **can u explain it?** ✅ — out loud or written, unaided: *"Type `cat notes.txt | grep TODO | wc -l` — explain what each `|` does to the data, what stdout is, and what `chmod 640 notes.txt` would let the owner vs others do."*
 
@@ -178,8 +174,6 @@ zero signup needed, u literally watch steps 1–4 happen in real time. ✅ verif
 
 **measurable gate:** run both commands successfully and **annotate the `curl -v` output line-by-line** — mark which lines are DNS, which are TCP handshake, which are TLS negotiation, which are the HTTP request/response. save this annotated copy (youll need it for the explain gate). this is the objective bar — either u can map the output or u cant meow
 
-**read this + why** — Stallings — **Ch. 22 "Internet Security Protocols and Standards"** (the TLS handshake *is* applied crypto — CA trust, symmetric vs asymmetric, integrity) and **Ch. 5/Part on cryptography** (symmetric keys, MITM). why: understand this chapter and the CC "network security / secure protocols" questions are answerable, bc youve seen the mechanism not just the acronyms.
-
 **can u explain it?** ✅ — this is the SECOND gate, on top of the measurable one above (both must pass). the annotated curl output proves u can *map* it; this proves u *understand why*:
 
 out loud or written, unaided: *"Narrate every step from pressing Enter on `https://example.com` to the page appearing — DNS resolution → TCP SYN/SYN-ACK/ACK → TLS handshake (what the certificate proves, what the session key does) → HTTP GET/200 → render. say **why** TLS stops a man-in-the-middle."*
@@ -229,8 +223,6 @@ for the "how to learn" part:
 **do this** — [Learn Git Branching](https://learngitbranching.js.org/) — visual, interactive: u type real `git commit`/`branch`/`merge`/`rebase` and *watch* the commit graph + branch pointers move — makes the "branch = pointer, commit = snapshot with a parent" mechanism concrete. ✅ verified live 2026-07-01
 
 **measurable gate:** complete the main sequence (Introduction + Ramping Up sections), AND have a **GitHub account with ≥1 repo that has a real README**, and be able to `git add`/`commit`/`push` from the CLI without looking it up. these are the objective bars — either u did them or u didnt meow
-
-**read this + why** — Gits **integrity via hashing** connects to Stallings **cryptographic hash functions** chapter (**Ch. 3 / crypto part**): a SHA hash detecting tampering in a commit is the same idea as a hash verifying a message. why: cements "hash = tamper-evident fingerprint," a CC crypto concept. (Git maps weakly to Stallings bc its a tool not a security primitive — but this one connection is worth making.)
 
 **can u explain it?** ✅ — out loud or written, unaided: *"Explain what `git add` then `git commit` actually stores (staging → a hashed snapshot with a parent pointer), why two identical file states produce the same hash, and what a branch really is. then: what makes a merge conflict, and why is `push` safe across many copies?"*
 
