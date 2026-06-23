@@ -116,7 +116,7 @@ the power comes from three OS mechanisms:
 - [Professor Messer — A+ 220-1202 (Core 2) playlist, Domain 1 (Operating Systems)](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) — Windows + Linux + macOS coverage. **free** ✅
 - [The Missing Semester (MIT) — Lecture 1 (The Shell) + Lecture 2 (Shell Tools)](https://missing.csail.mit.edu/2020/course-shell/) — best CLI intro, text + video + exercises. **free** ✅
 - [TCM Security — Practical Help Desk course (YouTube)](https://www.youtube.com/playlist?list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47) — real help-desk Windows troubleshooting + Active Directory basics. **free** ✅
-- [Linux Journey](https://linuxjourney.com/) — self-paced text lessons on CLI, filesystem, permissions. **free** ✅
+- [LabEx Linux Journey](https://labex.io/linuxjourney) — self-paced text lessons on CLI, filesystem, permissions. **freemium** ✅
 
 **do this:**
 - [TryHackMe — Windows Fundamentals 1–3](https://tryhackme.com/room/windowsfundamentals1xbx) (free rooms) — filesystem, Registry, UAC, Defender in a live browser VM. **free** ⚠️ (loads fine in browser)
@@ -177,10 +177,10 @@ underneath: everything is **packets** routed hop-by-hop by IP. **ports** let one
 **do this:**
 - [HTB Academy — Introduction to Networking module](https://academy.hackthebox.com/) (free tier) — OSI, TCP/IP, subnetting, DNS, ARP interactive. **free** ✅
 - [TryHackMe — Intro to Networking room](https://tryhackme.com/room/introtonetworking) (free) — OSI, ping, traceroute. **free** ⚠️
-- **Subnetting drill:** [SubnettingPractice.com](https://subnetipv4.com/) — `/24` to `/30` until automatic. **free** ✅
+- **Subnetting drill:** [subnetipv4.com](https://subnetipv4.com/) — `/24` to `/30` until automatic. **free** ✅
 - run `curl -v https://example.com` + `dig example.com` in your terminal (from fundamentals Block 3) and **annotate which lines = DNS / TCP / TLS / HTTP**.
 
-**measurable gate:** score **80%+ on 3 fresh attempts** at ExamCompass A+ Core 1 Networking + Core 2 Security quizzes, AND correctly subnet 5 random `/25`–`/29` problems on paper unaided (use SubnettingPractice to generate them). both must pass meow
+**measurable gate:** score **80%+ on 3 fresh attempts** at ExamCompass A+ Core 1 Networking + Core 2 Security quizzes, AND correctly subnet 5 random `/25`–`/29` problems on paper unaided (use subnetipv4.com to generate/check them). both must pass meow
 
 **read this + why (cybersecurity depth only)** — Stallings **Ch. 22 "Internet Security Protocols and Standards"** (TLS/IPsec — the "why HTTPS" deep-dive) and **Ch. 6 "Malicious Software"** (malware taxonomy maps onto A+ Core 2 Domain 2). Stallings takes A+ security basics and shows *why* each control exists.
 
@@ -195,7 +195,7 @@ underneath: everything is **packets** routed hop-by-hop by IP. **ports** let one
 **the idea** — u dont book the exam until youre already passing practice tests. this block is the final confidence check + exam-day logistics.
 
 **do this:**
-- [Professor Messer A+ Practice Exams](https://www.professormesser.com/220-1202-success-bundle/) (~$15) — **gate: 85%+ on 3 fresh Core 1 attempts, 85%+ on 3 fresh Core 2 attempts**. ✅
+- Professor Messer A+ Success Bundles: [Core 1](https://www.professormesser.com/220-1201-success-bundle/) + [Core 2](https://www.professormesser.com/220-1202-success-bundle/) (paid optional; the old generic practice-exams page is dead) — **gate: 85%+ on 3 fresh Core 1 attempts, 85%+ on 3 fresh Core 2 attempts**. ✅
 - [Jason Dion A+ Practice Tests (Udemy)](https://www.udemy.com/course/comptia-a-exams/) (~$10–15 on sale) — **gate: 80%+ on 2 fresh attempts per core**. ✅
 - [ExamCompass A+ quizzes](https://www.examcompass.com/) (free) — domain-by-domain reinforcement. **free** ✅
 

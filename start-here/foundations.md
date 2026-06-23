@@ -110,8 +110,8 @@ the power comes from three OS mechanisms the shell wires together:
 
 **study sources (pick what fits your style):**
 - [The Missing Semester (MIT) — Lecture 1 (The Shell)](https://missing.csail.mit.edu/2020/course-shell/) + [Lecture 2 (Shell Tools)](https://missing.csail.mit.edu/2020/shell-tools/) — genuinely the best CLI intro; text + video, with exercises. **free**
-- [Linux Journey](https://linuxjourney.com/) — self-paced interactive text lessons on command line, file system, permissions. **free**
-- [Professor Messer — CompTIA A+ 220-1102 playlist, OS sections](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video/220-1102-training-course/) — covers Windows + Linux OS basics; CompTIA-focused but solid fundamentals. **free**
+- [LabEx Linux Journey](https://labex.io/linuxjourney) — self-paced interactive text lessons on command line, file system, permissions. **freemium**
+- [Professor Messer — CompTIA A+ 220-1202 playlist, OS sections](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) — covers Windows + Linux OS basics; CompTIA-focused but solid fundamentals. **free**
 - [NetworkChuck — "you need to learn Linux RIGHT NOW!!"](https://www.youtube.com/watch?v=ROjZy1WbCIA) — energetic 30min walkthrough of essential commands. **free**
 
 **do this** — [OverTheWire — Bandit, Levels 0–15](https://overthewire.org/wargames/bandit/) — SSH into a real Linux box and solve each level with `ssh`, `ls`, `cat`, `find`, `grep`, `base64`, etc. real target, real skills. ✅ verified live 2026-07-01
