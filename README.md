@@ -1,101 +1,109 @@
-# 🚀 IT Career Guides: Zero to First Job
+# IT Career Guides: zero to first job
 
-> Comprehensive, self-paced roadmaps for 8 IT career paths. Built for complete beginners with no degree or experience.
+> soft, hour-based learning paths for complete beginners.
+> start with shared foundations, then pick a field. no job-board lists, no salary tables, no vague "just practice" advice meow.
 
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE)
-[![Last Updated](https://img.shields.io/badge/Updated-June%202026-blue.svg)]()
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[License: CC BY-SA 4.0](LICENSE) | [Contributing](CONTRIBUTING.md)
 
-## 📚 Available Career Paths
+---
 
-| Field | Study Hours | Remote Friendly | Coding Intensity | Cert Cost | Status |
-|---|---|---|---|---|---|
-| [Software Development](guides/software-development/) | 400-600 | ✅ High | 🔴 Heavy | $0-300 | ✅ Complete |
-| [Cybersecurity](guides/cybersecurity/) | 500-700 | ⚠️ Medium | 🟡 Some | $0-1000 | ✅ Complete |
-| [Cloud & DevOps](guides/cloud-devops/) | 500-700 | ✅ High | 🟡 Some | $320-650 | ✅ Complete |
-| [Data, AI & Analytics](guides/data-ai-analytics/) | 500-750 | ✅ High | 🟡 Some | $300-800 | ✅ Complete |
-| [IT Support & Networking](guides/it-support-networking/) | 400-600 | ❌ Low | 🟢 Little | $510-870 | ✅ Complete |
-| [UI/UX Design](guides/ux-design/) | 350-500 | ✅ High | 🟢 Little | $0-300 | ✅ Complete |
-| [Product Management](guides/product-management/) | 300-500 | ✅ High | 🟢 Little | $0-300 | ✅ Complete |
-| [IT Management](guides/it-management/) | 300-500 | ⚠️ Medium | 🟢 Little | $0-1500 | ✅ Complete |
+## start here first
 
-## 🧭 New to IT? Start here first
+if youre new to IT, dont pick a field blind.
+do this order first:
 
-**Don't know which field fits you yet? That's fine.** Before picking a path, go through the shared front door:
+- [ ] **1. get oriented** - [what each field actually is](start-here/what-is-each-field.md)
+- [ ] **2. sanity-check the fit** - [career-match quiz](start-here/career-quiz.md)
+- [ ] **3. build the shared floor** - [shared foundations, hours 0-40](start-here/foundations.md)
+- [ ] **4. then pick one career guide** - cyber is the first full mechanism-deep rewrite; the other guides are still usable and are being lightly converted.
 
-👉 **[start-here/](start-here/)** — orientation for complete beginners:
-- **[What each field actually is](start-here/what-is-each-field.md)** — plain-language tour of all 8 paths (day-to-day work, job outlook, remote-ness, coding intensity, fit)
-- **[Career-match quiz](start-here/career-quiz.md)** — ~12 questions → points you to 1–2 fields
-- **[Shared foundations (Hours 0–40)](start-here/foundations.md)** — how computers/internet work, CLI, Git — the base *everyone* does before committing to a field
+the checkbox is just display in this public repo.
+fork the repo or copy the checklist into your own notes if u want boxes u can actually tick.
+the real progress signal is always the gate inside the guide: a measurable task passed + a `can u explain it?` answer given unaided.
 
-## 🚦 Quick Start
+---
 
-### Ready to start? Pick your path:
-1. Not sure which? → Do **[start-here/](start-here/)** first
-2. Browse the [comparison table above](#-available-career-paths)
-3. Click your chosen field → Opens detailed roadmap
-4. Start with **Phase 0: Pre-Flight Setup** (Day 1 — just sign up and install)
-5. Work through the phases at your own pace until **Phase 5: Job Hunt**
+## recommended ordering
 
-## 💡 How to Use This Guide
+```mermaid
+graph TD
+    A[Start Here<br/>field tour + quiz] --> B[Shared Foundations<br/>computers · CLI · internet · Git<br/>~40h]
+    B --> C[Pick one guide]
+    C --> D[Cybersecurity<br/>full todo-tree + mechanism-depth rewrite<br/>~500-700h]
+    C --> E[Other career guides<br/>todo-tree + voice conversion track<br/>~300-750h]
+    D --> F[Portfolio + job hunt proof]
+    E --> F
+    F --> G[Beyond entry-level]
+```
 
-Each roadmap includes:
-- **Phase 0-5 structure** (Setup → Foundations → Core Skills → Specialization → Job Hunt)
-- **Approximate hour bands** — a study-time budget, not a deadline; go at your own pace
-- **Practice gates** (measurable thresholds like "85%+ on practice exams")
-- **Interactive labs table** (specific sandbox names, not "learn Docker")
-- **Certification ladder** (exam codes, costs, domain weights, ROI analysis)
-- **Portfolio projects** (3-5 real-world projects with architecture)
-- **Interview prep** (field-specific technical + behavioral questions)
+why this order matters: every technical field assumes u can already use a terminal, explain how the internet moves data, and keep work in Git.
+cybersecurity especially sits on top of networking, operating systems, and scripting, so skipping the floor makes the rest feel like noise qwq.
 
-## 🤝 Contributing
+---
 
-Found a broken link? Know a better resource? Want to add a field?
+## available career paths
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for:
-- How to report issues
-- How to suggest resources
-- Content standards
-- Research methodology
+| Field | Guide | Study hours | Coding | Cert cost shape |
+|---|---|---:|---|---|
+| Cybersecurity | [guides/cybersecurity/](guides/cybersecurity/) | 500-700 | some | optional cert ladder; free/freemium labs first |
+| Software Development | [guides/software-development/](guides/software-development/) | 400-600 | heavy | mostly free |
+| Cloud & DevOps | [guides/cloud-devops/](guides/cloud-devops/) | 500-700 | some | vendor certs optional/paid |
+| Data, AI & Analytics | [guides/data-ai-analytics/](guides/data-ai-analytics/) | 500-750 | some | certs optional/paid |
+| IT Support & Networking | [guides/it-support-networking/](guides/it-support-networking/) | 400-600 | little | CompTIA/Cisco optional/paid |
+| UI/UX Design | [guides/ux-design/](guides/ux-design/) | 350-500 | little | mostly free |
+| Product Management | [guides/product-management/](guides/product-management/) | 300-500 | little | mostly free |
+| IT Management | [guides/it-management/](guides/it-management/) | 300-500 | little | optional paid certs |
 
-## 📊 Research Methodology
+hours are study budgets, not deadlines.
+at ~2h/day, 600 hours is about 10 months. go slower if life needs it; just keep the gates honest.
 
-All guides are built using:
-- **Job market analysis:** Skill demand and hiring patterns across many postings per field
-- **Skill frequency tracking:** Baseline vs differentiator skills identified
-- **Cert ROI research:** Cost, study hours, and employer signal by tier
-- **Lab verification:** Every sandbox tested for availability and quality
-- **Tooling currency:** Tool versions and exam codes verified against official sources
+---
 
-Last updated: **June 2026**
+## what each guide gives u
 
-## 🔗 External Resources
+- todo-tree structure, not vague phases.
+- specific hours, so u know the size of the work.
+- exact resources and labs, not bare channels or homepages.
+- measurable gates: scores, completed labs, shipped projects.
+- `can u explain it?` gates, so u know whether the mechanism actually clicked.
+- cert guidance that treats the exam as a checkpoint, not the reason to study.
+- portfolio and interview prep tied to what u built.
 
-- [Official CompTIA Exam Objectives](https://www.comptia.org/)
-- [AWS Training & Certification](https://aws.amazon.com/training/)
-- [Microsoft Learn](https://learn.microsoft.com/)
-- [Google Cloud Skills Boost](https://www.cloudskillsboost.google/)
+for cybersecurity, the rewrite goes deeper: each topic teaches the mechanism, the vocab, exact study sources, a specific lab, and an explanation gate.
+for the other guides, the current pass is lighter: todo-tree framing + Minnn voice + obvious source-specificity cleanup.
 
-## 📜 License
+---
 
-This work is licensed under [Creative Commons Attribution-ShareAlike 4.0 International](LICENSE).
+## contributing
 
-You are free to:
-- **Share** — copy and redistribute
-- **Adapt** — remix, transform, build upon
+found a broken link, stale exam code, or better exact lab?
+open an issue or PR using [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Under these terms:
-- **Attribution** — credit this project
-- **ShareAlike** — distribute under same license
+keep it specific:
 
-## 🙏 Acknowledgments
+- deep-link the exact module, playlist, lab, or practice test.
+- tag free / freemium / paid honestly.
+- avoid salary data and job-board lists.
+- keep HTTPS unless the resource is intentionally HTTP-only, like `flaws.cloud`.
+- dont add "just practice" without a measurable gate.
 
-Built with research from:
-- r/cscareerquestions, r/ITCareerQuestions, r/cybersecurity communities
-- CompTIA, ISC2, AWS, Microsoft, Linux Foundation certification bodies
-- TryHackMe, HackTheBox, LeetCode, DataCamp lab platforms
+---
 
-## 📬 Contact
+## research basis
 
-Questions? Feedback? Open an issue or discussion!
+the guides use:
+
+- job-market and role-type research, without salary tables.
+- cert-code and domain verification against official sources where possible.
+- lab/platform inventory with current free/freemium options.
+- tooling currency checks, because 2021 security advice gets stale fast.
+
+latest rewrite work is July 2026.
+prices, cert logistics, and vendor pages can change, so confirm with the provider before booking anything paid.
+
+---
+
+## license
+
+this work is licensed under [Creative Commons Attribution-ShareAlike 4.0 International](LICENSE).
 
