@@ -2,7 +2,7 @@
 
 > **goal:** build the network floor, then learn the security mechanisms on top of it: CIA, crypto/TLS, identity, access control, attacks, operations, IR, and risk.
 >
-> **cert checkpoints:** **CompTIA Network+ (N10-009)** -> **ISC2 CC** (optional paid exam) -> **CompTIA Security+ (SY0-701)**.
+> **cert checkpoints layered on top:** **CompTIA Network+ (N10-009)** -> **ISC2 CC** (optional paid exam) -> **CompTIA Security+ (SY0-701)**.
 
 [<- Goal 1: Foundations](01-foundations.md) | [Back to hub](README.md) | [Next: Scripting, Logs & CTF ->](03-scripting-ctf.md)
 
@@ -10,15 +10,15 @@
 
 ## read this first meow
 
-this file is not "study Network+, then study CC, then study Security+" as three separate silos.
+this file is not "study Network+, then study CC, then study Security+" as three separate piles.
 
 we study the **topics** in the order they depend on each other.
-the certs are checkpoints that fall out of understanding the topics.
-thats the whole anti-getting-lost trick here qwq
+the certs come after, as checkpoints for what already clicked.
+thats how u dont get lost qwq
 
-also: **no paid textbook is required for this file.** the research behind this rewrite used deeper references, but the learner-facing path below stands on the explanations here plus free/freemium resources and real labs.
+also: **u dont need a paid textbook for this file.** deeper references helped shape the rewrite, but the path below is enough: the explanations here, free/freemium resources, and real labs.
 
-**CC reality check:** the ISC2 "One Million Certified" free-voucher program closed on **2026-05-20**. the CC exam is now about **$199 + $50/yr AMF** if u choose to sit it. the free checkpoint is this guide's two-part gate system: measurable lab/practice score + `can u explain it?`.
+**CC money note:** the ISC2 "One Million Certified" free-voucher program closed on **2026-05-20**. the CC exam is now about **$199 + $50/yr AMF** if u choose to sit it. the free checkpoint is this guide's two-part gate system: measurable lab/practice score + `can u explain it?`.
 
 > if u test CC on or after **2026-09-01**, re-check the ISC2 outline first. ISC2 announced a new outline effective that date.
 
@@ -85,15 +85,15 @@ both must pass before the topic is really done. a checkbox by itself means nothi
 
 ### packets, ports, and protocols meow (~18h)
 
-**cert map** - Network+ D1/D5; CC D4; Security+ assumes this.
+**cert map** - Network+ D1/D5; CC D4; this is the floor Security+ leans on.
 
-**the idea** - networks are layered so each layer has one job: move bits, frame local traffic, route packets, connect processes, and carry app data.
+**the idea** - networks are layered so each layer gets one job: move bits, frame local traffic, route packets, connect processes, and carry app data.
 
 **how/why it actually works** - when your browser talks to a site, the app data becomes **HTTP**, then **TLS** protects it, then **TCP** gives reliable delivery with ports and sequence numbers, then **IP** routes packets hop-by-hop, then Ethernet/Wi-Fi moves frames on the local link.
 
 **DNS** turns names into IPs; **ports** tell the destination host which process should receive the traffic; **TCP** uses SYN -> SYN-ACK -> ACK before data flows; **UDP** skips that reliability for speed.
 
-the layer model matters because troubleshooting gets sane: if DNS fails, the app never finds an IP; if routing fails, packets never reach the network; if TCP fails, the service may be down or blocked; if TLS fails, identity/trust may be broken.
+the layer model matters because troubleshooting gets less scary: if DNS fails, the app never finds an IP; if routing fails, packets never reach the network; if TCP fails, the service may be down or blocked; if TLS fails, identity/trust may be broken.
 
 **words u gotta be able to say**
 - **OSI / TCP-IP model** - layered naming for network jobs
@@ -121,7 +121,7 @@ the layer model matters because troubleshooting gets sane: if DNS fails, the app
 
 **cert map** - Network+ D1/D2; CC D4; Security+ D3.2/4.5 security controls later.
 
-**the idea** - subnetting decides which IPs are local, routing decides where non-local packets go, switching moves local frames, and wireless adds radio + authentication problems.
+**the idea** - subnetting decides which IPs are local, routing decides where non-local packets go, switching moves local frames, and wireless adds radio + authentication problems. one sentence, lots of doors meow.
 
 **how/why it actually works** - an IPv4 address is split into **network bits** and **host bits** by the subnet mask/CIDR prefix. if two hosts share the same network ID, they talk locally through a switch; if not, they send traffic to a **default gateway** router.
 
@@ -155,11 +155,11 @@ the layer model matters because troubleshooting gets sane: if DNS fails, the app
 
 **cert map** - Network+ D3/D5; Security+ D4 operations later.
 
-**the idea** - operations means keeping the network observable and documented; troubleshooting means changing one thing at a time instead of guessing.
+**the idea** - operations means keeping the network observable and documented; troubleshooting means changing one thing at a time instead of panic-clicking.
 
 **how/why it actually works** - a network that cant be observed is basically a rumor. **syslog** records device events, **SNMP** polls device health, **NetFlow** summarizes who talked to whom, and diagrams/runbooks stop "tribal knowledge" from being the only map.
 
-the CompTIA 7-step method exists to stop panic changes: identify the problem, establish a theory, test the theory, make a plan, implement, verify, document. the order matters because a random "fix" can hide the root cause or cause a second outage.
+the CompTIA 7-step method exists to slow u down in a good way: identify the problem, establish a theory, test the theory, make a plan, implement, verify, document. the order matters because a random "fix" can hide the root cause or cause a second outage.
 
 tools each answer a narrow question: `ping` tests reachability, `tracert`/`traceroute` shows path, `nslookup`/`dig` tests DNS, `netstat`/`ss` shows sockets, `nmap` maps listening services.
 
@@ -193,9 +193,9 @@ tools each answer a narrow question: `ping` tests reachability, `tracert`/`trace
 
 **cert map** - CC D1; Security+ 1.0 and parts of 5.0; Network+ D4 vocabulary.
 
-**delta note** - CIA/controls/AAA are both CC and Security+. **ISC2 Code of Ethics is CC only.** Zero Trust, gap analysis, honeypots/honeytokens are Security+ emphasis.
+**heads up** - CIA/controls/AAA are both CC and Security+. **ISC2 Code of Ethics is CC only.** Zero Trust, gap analysis, honeypots/honeytokens are Security+ emphasis.
 
-**the idea** - security is not one property. **Confidentiality**, **Integrity**, and **Availability** are separate guarantees, and different controls protect each one.
+**the idea** - security is not one single "safe" sticker. **Confidentiality**, **Integrity**, and **Availability** are separate guarantees, and different controls protect each one.
 
 **how/why it actually works** - confidentiality fails when someone reads data they shouldnt, even if nothing changed. encryption and access control protect it.
 
@@ -242,9 +242,9 @@ availability fails when authorized users cant get service. redundancy, backups, 
 
 **cert map** - CC D5 and D4; Security+ 1.4 and 3.3.
 
-**delta note** - both certs test symmetric/asymmetric/hash/signatures. Security+ goes deeper on PKI, certificate status, data states, obfuscation, steganography, and blockchain.
+**heads up** - both certs test symmetric/asymmetric/hash/signatures. Security+ goes deeper on PKI, certificate status, data states, obfuscation, steganography, and blockchain.
 
-**the idea** - crypto gives three core tools: symmetric encryption for fast secrecy, public-key crypto for identity/key exchange/signatures, and hashes for tamper-evident fingerprints.
+**the idea** - crypto gives three core tools: symmetric encryption for fast secrecy, public-key crypto for identity/key exchange/signatures, and hashes for tamper-evident fingerprints. not magic, just carefully used math.
 
 **how/why it actually works** - **symmetric encryption** uses one shared key and is fast enough for bulk traffic, but key-sharing is the hard part.
 
@@ -281,9 +281,9 @@ availability fails when authorized users cant get service. redundancy, backups, 
 
 **cert map** - CC D3 and D1 AAA; Security+ 4.6 and 1.2; CC/Security+ D5 crypto overlap.
 
-**delta note** - both certs test auth factors and AAA. Security+ goes deeper on federation, SSO, Kerberos, 802.1X/EAP, and password-attack mitigations.
+**heads up** - both certs test auth factors and AAA. Security+ goes deeper on federation, SSO, Kerberos, 802.1X/EAP, and password-attack mitigations.
 
-**the idea** - **authentication** proves who u are; **authorization** decides what u can do; password storage is about surviving the day the database leaks.
+**the idea** - **authentication** proves who u are; **authorization** decides what u can do; password storage is about surviving the day the database leaks. grim, but realistic qwq.
 
 **how/why it actually works** - a login request authenticates the user once, but authorization has to happen on every sensitive action and every object. if the app checks "is logged in" but not "is this your object," u get IDOR/broken access control.
 
@@ -320,9 +320,9 @@ passwords must not be stored raw. a **salt** is a unique random value stored bes
 
 **cert map** - CC D3; Security+ 4.6 and 1.2.
 
-**delta note** - DAC/MAC/RBAC/least privilege/physical controls are both. Security+ goes deeper on federation, SSO, Kerberos, SAML/OAuth, and 802.1X.
+**heads up** - DAC/MAC/RBAC/least privilege/physical controls are both. Security+ goes deeper on federation, SSO, Kerberos, SAML/OAuth, and 802.1X.
 
-**the idea** - access control is the rule system that decides whether a subject can perform an operation on an object.
+**the idea** - access control is the rule system that decides whether a subject can perform an operation on an object. tiny sentence, huge job.
 
 **how/why it actually works** - **DAC** lets the owner decide permissions, like UNIX file permissions or NTFS ACLs. flexible, but malware running as the user inherits that user's access.
 
@@ -404,9 +404,9 @@ passwords must not be stored raw. a **salt** is a unique random value stored bes
 
 **cert map** - CC D4/D5; Security+ 2.0.
 
-**delta note** - malware, social engineering, DoS, and MITM are both. Security+ goes deeper on threat actors, motivations, SQLi, XSS, race conditions, buffer overflow, memory injection, and zero-day language.
+**heads up** - malware, social engineering, DoS, and MITM are both. Security+ goes deeper on threat actors, motivations, SQLi, XSS, race conditions, buffer overflow, memory injection, and zero-day language.
 
-**the idea** - a vulnerability is a condition that lets normal system behavior produce an unsafe result.
+**the idea** - a vulnerability is a condition that lets normal system behavior produce an unsafe result. thats the lens: "what assumption broke?"
 
 **how/why it actually works** - **malware** is categorized by how it spreads and what it does: viruses attach to files, worms self-propagate, trojans masquerade as legit, ransomware encrypts/extorts, rootkits hide control, botnets coordinate many machines.
 
@@ -455,9 +455,9 @@ passwords must not be stored raw. a **salt** is a unique random value stored bes
 
 **cert map** - CC D5; Security+ D4 (the heaviest SY0-701 domain).
 
-**delta note** - hardening, logging, data handling, and patching are both. Security+ goes deeper on SIEM, asset management, vulnerability management, and automation/orchestration.
+**heads up** - hardening, logging, data handling, and patching are both. Security+ goes deeper on SIEM, asset management, vulnerability management, and automation/orchestration.
 
-**the idea** - security operations turns controls into daily habits: reduce exposed services, keep systems patched, collect logs, detect weird behavior, and document what changed.
+**the idea** - security operations turns controls into daily habits: reduce exposed services, keep systems patched, collect logs, detect weird behavior, and document what changed. very unglamorous, very real.
 
 **how/why it actually works** - **hardening** removes default risk: unused services, default credentials, permissive firewall rules, weak TLS settings, unnecessary admin rights.
 
@@ -492,9 +492,9 @@ passwords must not be stored raw. a **salt** is a unique random value stored bes
 
 **cert map** - CC D2; Security+ 4.8, 3.4, 5.2.
 
-**delta note** - IR lifecycle, BC/DR, backups, RTO/RPO are both. Security+ goes deeper on forensics, order of volatility, chain of custody, and architecture-level resilience.
+**heads up** - IR lifecycle, BC/DR, backups, RTO/RPO are both. Security+ goes deeper on forensics, order of volatility, chain of custody, and architecture-level resilience.
 
-**the idea** - incidents are handled by a repeatable lifecycle; disasters are handled by continuity and recovery plans with measurable time/data-loss targets.
+**the idea** - incidents are handled by a repeatable lifecycle; disasters are handled by continuity and recovery plans with measurable time/data-loss targets. boring plans matter when things are on fire.
 
 **how/why it actually works** - **PICERL** is the IR loop: Prepare, Identify, Contain, Eradicate, Recover, Lessons Learned. containment stops spread; eradication removes the cause; recovery restores service; lessons learned feeds prevention.
 
@@ -527,9 +527,9 @@ forensics adds evidence discipline: preserve volatile data first when needed, ma
 
 **cert map** - CC D1; Security+ D5.
 
-**delta note** - risk/governance/awareness are both. Security+ goes deeper on third-party risk, audits/assessments, compliance, and named frameworks. ISC2 Code of Ethics remains CC only.
+**heads up** - risk/governance/awareness are both. Security+ goes deeper on third-party risk, audits/assessments, compliance, and named frameworks. ISC2 Code of Ethics remains CC only.
 
-**the idea** - GRC is how an org decides what risk matters, which controls are required, and how to prove the controls exist.
+**the idea** - GRC is how an org decides what risk matters, which controls are required, and how to prove the controls exist. its the "show me evidence" layer mhm.
 
 **how/why it actually works** - risk is usually framed as likelihood x impact. treatment choices are **avoid**, **mitigate**, **transfer**, or **accept**.
 
@@ -565,7 +565,7 @@ audits and assessments compare reality to a requirement. awareness training redu
 
 this is where u decide whether to book exams.
 dont book because u watched videos.
-book because the gates say u are ready meow
+book when the gates say u are ready meow
 
 ### Network+ N10-009 readiness
 
@@ -580,7 +580,7 @@ book because the gates say u are ready meow
 
 ### ISC2 CC readiness (optional paid exam)
 
-**exam reality:** about **$199 + $50/yr AMF** now. no new free 1MCC vouchers after **2026-05-20**. use the exam only if u want that checkpoint; dont treat it as a resume miracle.
+**exam money note:** about **$199 + $50/yr AMF** now. no new free 1MCC vouchers after **2026-05-20**. use the exam only if u want that checkpoint; dont treat it like it magically fixes a thin resume.
 
 **free checkpoint before paying:**
 - [ ] can explain all 5 CC domains: Security Principles, BC/DR & IR, Access Controls, Network Security, Security Operations.
@@ -593,7 +593,7 @@ book because the gates say u are ready meow
 ### Security+ SY0-701 readiness
 
 **book only if all are true:**
-- [ ] watched or reviewed the relevant [Professor Messer SY0-701 course sections](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) by weak domain, not by bingeing.
+- [ ] watched or reviewed the relevant [Professor Messer SY0-701 course sections](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) by weak domain, not by marathon-watching.
 - [ ] **85%+ on 3 fresh** [ExamCompass SY0-701 practice tests](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests).
 - [ ] if buying practice, use the current [Messer SY0-701 Success Bundle](https://www.professormesser.com/sy0-701-success-bundle/) or [Dion SY0-701 Practice Exam Pack](https://www.diontraining.com/products/comptia-security-sy0-007-unlimited-practice-exam). dont use old generic Messer practice-exam links.
 - [ ] can label whether each weak area is D1 concepts, D2 threats, D3 architecture, D4 operations, or D5 program management.

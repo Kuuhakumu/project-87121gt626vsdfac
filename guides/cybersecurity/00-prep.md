@@ -26,7 +26,7 @@
 
 heres the *why* tho: an attack is just someone abusing a system thats working exactly as designed. so if u dont know how the system works normally (how a TCP handshake goes, how the OS hands out memory, what a cookie is), u literally cant tell whats abuse and whats normal. thats why **fundamentals first** — if u already cleared the [Shared Foundations](../../start-here/foundations.md) (command line, networking, Git), youre golden. if not, go do that now and come back. this guide assumes u can already navigate a terminal, explain how DNS→TCP→TLS→HTTP works, and push to GitHub meow
 
-**the market is real but competitive at the bottom.** the reliable path is usually *help desk / NOC → SOC analyst*, not *cert dump → SOC*. build something demonstrable (a GitHub with CTF writeups, a home lab, real troubleshooting stories). see [job market notes](05-job-hunt.md) for the honest version.
+**the market is real, but the bottom is crowded.** the usual path is *help desk / NOC → SOC analyst*, not *cert dump → SOC*. build something u can actually show: a GitHub with CTF writeups, a home lab, real troubleshooting stories. see [job market notes](05-job-hunt.md) for the honest version.
 
 **consistency beats intensity.** two focused hours a day beats a 14-hour weekend once a month. dw if 2h/day sounds like a lot — the guide is measured in study hours, not weeks, so it works at any pace. total to job-ready: **~500–700 hours**.
 
@@ -50,11 +50,11 @@ and its legal + sandboxed so u literally cant break anything real. its just... a
 
 **so we dont save CTF for the end.** we start OverTheWire Bandit level 0 basically day one (its literally aimed at absolute beginners — the site says so), right next to the linux stuff, and keep a lil CTF thread going the whole way. each study topic gets a matching challenge from the running CTF ladder below, so the puzzle reinforces what u just learned.
 
-why this works (real pedagogy, not hype):
+why this works, without making it weird:
 - **active recall > passive video** — being forced to produce the answer builds way more durable memory than rewatching (this is "the testing effect," one of the most replicated findings in learning science). a CTF is retrieval practice with a scoreboard.
-- **a solved flag is proof of understanding** — it maps exactly onto this guides `can u explain it?` gate. u literally cannot capture the flag without the mechanism working in your head. so CTF = built-in checkpoint, not extra work.
+- **a solved flag is proof of understanding** — it maps onto this guides `can u explain it?` gate. u cant capture the flag unless the mechanism is at least partly working in your head. so CTF = built-in checkpoint, not extra work.
 - **low-stakes + fun = momentum** — the dopamine of a captured flag is what carries a self-learner through the boring floor (subnetting, permissions). momentum is the #1 predictor of a self-study plan surviving qwq
-- **its the fields native training format** — picoCTF (now **CyLab Security Academy**, CMU-run) exists specifically to teach beginners this way: 1M+ learners, 14,000+ classrooms, "no experience needed." the on-ramps are designed for day one; theres no reason to wait.
+- **the field already learns this way** — picoCTF (now **CyLab Security Academy**, CMU-run) exists specifically to teach beginners this way: 1M+ learners, 14,000+ classrooms, "no experience needed." the on-ramps are designed for day one; theres no reason to wait.
 
 dw if "break stuff" sounds scary rn — the first challenge is literally just `ls` and `cat` on a server u SSH into. youve got this meow
 
@@ -80,9 +80,9 @@ u dont need to buy hardware — a free hypervisor on your existing machine is en
 └─────────────────────────────────────────────┘
 ```
 
-**measurable gate:** both VMs boot, they can ping each other (test with `ping <ip>`), and they CANNOT reach the internet (test with `ping 8.8.8.8` — it should fail). this proves isolation. write down the steps u took in your notes (youll rebuild this setup later for different scenarios) meow
+**measurable gate:** both VMs boot, they can ping each other (test with `ping <ip>`), and they CANNOT reach the internet (test with `ping 8.8.8.8` — it should fail). thats how u know the lab is isolated. write down the steps u took in your notes (youll rebuild this setup later for different scenarios) meow
 
-> **cloud alternative:** if your machine cant spare the RAM (~8GB for both VMs), most early labs in this guide run **in-browser** (TryHackMe AttackBox, HTB Academy Pwnbox, PortSwigger labs) and need no local VM at all. the local lab is recommended but not required until later phases.
+> **cloud alternative:** if your machine cant spare the RAM (~8GB for both VMs), most early labs in this guide run **in-browser** (TryHackMe AttackBox, HTB Academy Pwnbox, PortSwigger labs) and need no local VM at all. the local lab is recommended but not required until later goals.
 
 ---
 
@@ -119,15 +119,15 @@ skim [../../research/lab-inventory/tooling-trends-2026.md](../../research/lab-in
 - [TryHackMe](https://tryhackme.com/) — free account ⚠️
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security) — free account, needed for the labs ✅
 
-ull start hitting these in the next phase (Foundations), so getting accounts now means no friction later meow
+ull start hitting these in the next goal (Foundations), so getting accounts now means no friction later meow
 
-**measurable gate:** notes system is running (create a test note, link it to another note, search works), youve joined ≥1 community (lurking counts), and u have accounts on OverTheWire + CyLab + PortSwigger. these are the objective bars — either u did them or u didnt.
+**measurable gate:** notes system is running (create a test note, link it to another note, search works), youve joined ≥1 community (lurking counts), and u have accounts on OverTheWire + CyLab + PortSwigger. simple check: either those pieces exist or they dont.
 
 ---
 
 ## your running CTF ladder (the whole journey)
 
-this is your **"whats my next challenge?"** spine — each rung maps to a study phase, so u always have a CTF at your level. dont rush the rungs; stay on easy till easy is boring, THEN climb mhm
+this is your **"whats my next challenge?"** spine — each rung maps to a study goal, so u always have a CTF at your level. dont rush the rungs; stay on easy till easy is boring, THEN climb mhm
 
 ### Rung 0 — absolute beginner (week 1, alongside "what even is a terminal")
 - **OverTheWire Bandit 0 → 5** — SSH in, `ls`, `cat`, `file`, hidden files, `find` by size/type. this is the single best day-one on-ramp. ✅
@@ -172,7 +172,7 @@ by now u have:
 - [ ] read the "why CTF day one" section and the anti-stall rules
 
 **both must pass:**
-1. **measurable gate** — the checklist above is all ticked (objective, external, unfoolable)
+1. **measurable gate** — the checklist above is all ticked. the lab/accounts/notes either exist or they dont.
 2. **can u explain it?** — out loud or written, unaided: *"why is cybersecurity called a 'specialization' and not an entry point? what does 'an attack is abusing a system working as designed' mean? why do we start CTF early instead of saving it for the end?"*
 
 if u can tick the boxes but stumble on the explain gate, re-read the "what even is cybersecurity" + "why CTF day one" sections above. both must pass before moving on meow

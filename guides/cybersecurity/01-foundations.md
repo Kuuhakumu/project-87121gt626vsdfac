@@ -1,10 +1,10 @@
-# Phase 1: Foundations — Hardware & Operating Systems (~140h)
+# Goal 1: Foundations — Hardware & Operating Systems meow (~140h)
 
 > **goal:** the IT bedrock security sits on — if u dont know how computers/OS/networking work normally, u cant tell whats abuse and whats normal meow
 
-**Total: ~140 hours** (≈ 10–12 weeks at 2h/day). this phase maps to **CompTIA A+ (220-1201 / 220-1202)** domains. if u already work in IT support, u can test out fast and jump to [Phase 2](02-core.md).
+**Total: ~140 hours** (≈ 10–12 weeks at 2h/day). this goal maps to **CompTIA A+ (220-1201 / 220-1202)** domains. if u already work in IT support, u can test out fast and jump to [Goal 2](02-core.md).
 
-[← Prep](00-prep.md) · [Back to hub](README.md) · [Next: Phase 2 →](02-core.md)
+[← Prep](00-prep.md) · [Back to hub](README.md) · [Next: Goal 2 →](02-core.md)
 
 ---
 
@@ -16,10 +16,10 @@ this is the same system from the shared foundations — the `- [ ]` checkboxes b
 
 ## should u take the A+?
 
-- **yes, if** u have no IT background. its the baseline filter for help-desk roles, which are the most common on-ramp into security.
-- **skip the exam (study the content only), if** u already have IT/help-desk experience. dont pay ~$492 to prove what your resume already shows — jump to Network+ and Security+.
+- **yes, if** u have no IT background. it can help with help-desk screens, which are the most common on-ramp into security.
+- **skip the exam (study the content only), if** u already have IT/help-desk experience. dont pay ~$492 to prove what your resume already shows — put that money toward Network+ or Security+ instead.
 
-> 💰 **dont waste the money:** dont book until youre scoring **85%+ on fresh practice tests** from 2+ sources. take **Core 1 (220-1201) first, then Core 2 (220-1202)** — never both at once. (~$246 each in 2026. see [certifications.md](../../references/certifications.md) for the full cost breakdown.)
+> 💰 **dont waste the money:** dont book until youre scoring **85%+ on fresh practice tests** from 2+ sources. take **Core 1 (220-1201) first, then Core 2 (220-1202)** — one at a time, please. (~$246 each in 2026. see [certifications.md](../../references/certifications.md) for the full cost breakdown.)
 
 ---
 
@@ -39,7 +39,7 @@ this is the same system from the shared foundations — the `- [ ]` checkboxes b
 
 **the idea** — a running computer is a loop (fetch-decode-execute), not a magic box. understanding what the CPU/RAM/storage/motherboard *do* is the floor — an attacker abuses the same hardware mechanisms u need to know for troubleshooting.
 
-**how it actually works** — (pulled from R3 fundamentals mechanism, same as start-here/foundations.md Block 1):
+**how it actually works** — same mechanism as Shared Foundations, just with the A+ parts layered on top:
 
 a CPU repeats the **fetch–decode–execute cycle** from boot until shutdown:
 1. **fetch** — the **program counter (PC)** holds the memory address of the next instruction. that address is copied to the **memory address register (MAR)**, the value at that RAM address is pulled into the **memory data register (MDR)** and then the **current instruction register (CIR)**; the PC increments.
@@ -50,7 +50,7 @@ modern CPUs overlap these steps via an **instruction pipeline** (next fetch star
 
 why RAM vs storage matters, physically: **RAM is volatile** — fast electrical cells the CPU addresses directly, but they clear on power loss. **storage (SSD/HDD) is persistent** but far slower and *not* directly executable. so "running a program" = the OS copies it from storage into RAM, creates a **process** (its own address space + PC + registers), and the CPU runs the fetch-decode-execute loop on those in-RAM instructions. more RAM = more/bigger programs at once; an SSD speeds *launch/load*, not raw compute.
 
-**A+ also wants u to know:** CPU sockets/generations (Intel LGA vs AMD AM4/AM5), cores vs threads, cache (L1/L2/L3), **RAM** (DDR4/DDR5, dual-channel, ECC), **storage** (HDD vs SSD, SATA vs NVMe/M.2, RAID 0/1/5/10), **motherboard** (BIOS/UEFI, CMOS battery, PCIe slots, chipset), **PSU** (wattage, 80+ ratings, connectors), **ports** (USB 2/3/C, HDMI, DisplayPort, Thunderbolt), mobile devices (iOS/Android, screen/battery/charge ports), printers. dw this is mostly vocab — the mechanism above is the core qwq
+**A+ also checks this vocab:** CPU sockets/generations (Intel LGA vs AMD AM4/AM5), cores vs threads, cache (L1/L2/L3), **RAM** (DDR4/DDR5, dual-channel, ECC), **storage** (HDD vs SSD, SATA vs NVMe/M.2, RAID 0/1/5/10), **motherboard** (BIOS/UEFI, CMOS battery, PCIe slots, chipset), **PSU** (wattage, 80+ ratings, connectors), **ports** (USB 2/3/C, HDMI, DisplayPort, Thunderbolt), mobile devices (iOS/Android, screen/battery/charge ports), printers. dw this part is mostly naming things — the mechanism above is the core qwq
 
 **words u gotta be able to say:**
 - **CPU / core / thread / clock speed** — executes instructions / independent execution unit / logical core via SMT / GHz cycles/sec
@@ -69,9 +69,7 @@ why RAM vs storage matters, physically: **RAM is volatile** — fast electrical 
 
 **do this** — [HTB Academy — "Introduction to Cybersecurity" module (free tier)](https://academy.hackthebox.com/) + [Codecademy — "Intro to Cybersecurity"](https://www.codecademy.com/learn/introduction-to-cybersecurity) (OS layers, virtualization basics). both are free and browser-based. ✅
 
-**measurable gate:** score **75%+ on 3 fresh attempts** at [ExamCompass A+ Core 1 — Hardware quizzes](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-core-1-practice-tests) (domains 1+3+4). this is the objective bar — either u hit the % or u didnt meow
-
-**read this + why (cybersecurity depth only)** — Stallings **Ch. 1 (Overview)** for the computer-as-system framing (threats sit on top of hardware), and **Ch. 12 "Operating System Security"** for OS-level mechanics under attack. (dw if u dont have Stallings — the study sources above cover A+ hardware; Stallings is the go-deeper book for cyber-specific framing later.)
+**measurable gate:** score **75%+ on 3 fresh attempts** at [ExamCompass A+ Core 1 — Hardware quizzes](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-core-1-practice-tests) (domains 1+3+4). thats the real check — either u hit the % or u didnt meow
 
 **can u explain it?** ✅ — out loud or written, unaided: *"trace one instruction through fetch, decode, execute — name which register holds the next address. explain why a program must be copied from storage into RAM before the CPU can run it, and what makes RAM different from an SSD."*
 
@@ -85,7 +83,7 @@ why RAM vs storage matters, physically: **RAM is volatile** — fast electrical 
 
 **the idea** — the shell is a program that reads a line, parses it, and asks the OS kernel to do the work. the OS is the layer between hardware and your apps — if u dont know how it hands out memory, manages processes, and enforces permissions, u cant understand what an exploit abuses.
 
-**how it actually works** — (pulled from R3 CLI/OS mechanism):
+**how it actually works** — same shell/OS mechanism as Shared Foundations, now with Windows + Linux exam coverage layered on top:
 
 when u type `ls -l /etc` and press Enter: the shell splits the line into **command + arguments**, resolves `ls` by searching each directory in your **`PATH`** environment variable, then calls the kernel to **`fork`** a new process and **`exec`** the `ls` binary into it. `ls` runs, writes to **stdout**, exits with a numeric **exit code** (0 = success).
 
@@ -99,7 +97,7 @@ the power comes from three OS mechanisms:
 **A+ Core 2 Domain 1 also wants:**
 - **Windows:** editions (Home/Pro/Enterprise), **NTFS permissions** (read/write/modify/full control) + inheritance, **Registry** (`HKLM`, `HKCU`), CLI (`ipconfig`, `ping`, `tracert`, `netstat`, `tasklist`, `sfc /scannow`), Task Manager, Event Viewer, Windows Defender/Firewall, **UAC** (User Account Control).
 - **Linux:** filesystem hierarchy (`/etc`, `/var/log`, `/home`, `/bin`, `/usr`), core commands (`ls`, `grep`, `find`, `chmod`, `chown`, `ps`, `kill`, `top`, `apt`/`yum`), octal permissions (755/644/700), users & groups (`sudo`, `/etc/shadow`, `useradd`).
-- **Hybrid identity (2026 reality):** on-prem **Active Directory** (Kerberos, LDAP, GPOs, domain/forest) syncs to **Microsoft Entra ID** (was Azure AD) in most real environments. pure on-prem-only AD is a dated mental model — learn the fundamentals but know theyre now cloud-integrated.
+- **Hybrid identity (2026 reality):** on-prem **Active Directory** (Kerberos, LDAP, GPOs, domain/forest) syncs to **Microsoft Entra ID** (was Azure AD) in most real environments. learn classic AD, yes — just know it usually lives beside cloud identity now, not alone in a museum meow
 
 **words u gotta be able to say:**
 - **shell / kernel / PATH** — command-line program / OS core / dirs searched for a command
@@ -126,8 +124,6 @@ the power comes from three OS mechanisms:
 
 **measurable gate:** complete **OverTheWire Bandit levels 0–15 unaided** (the "Bandit" thread from prep) AND score **78%+ on 3 fresh attempts** at [ExamCompass A+ Core 2 — Operating Systems quizzes](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-core-2-practice-tests). both must pass — Bandit proves real CLI skill, ExamCompass proves A+ vocab coverage meow
 
-**read this + why (cybersecurity depth only)** — Stallings **Ch. 4 "Access Control"** (read/write/execute + owner model = Unix file permissions) and **Ch. 12 "Operating System Security"** (privilege, root, hardening, virtualization security). why: `chmod`/`sudo` *is* access control in miniature — this chapter maps the A+ permissions model onto the formal security primitives.
-
 **can u explain it?** ✅ — out loud, unaided: *"type `cat notes.txt | grep TODO | wc -l` — explain what each `|` does to the data, what stdout is, and what `chmod 640 notes.txt` would let the owner vs group vs others do."*
 
 **CTF thread:** Bandit 0–15 completion *is* your CTF for this block (gate above). by level 15 youve used SSH keys, `nc`, pipes, `find` by perms — youre building the "navigate + search + permissions" instinct the field runs on meow
@@ -139,9 +135,9 @@ the power comes from three OS mechanisms:
 ### A+ Core 1 coverage: Domain 2 (Networking 23%) + Domain 5 (Troubleshooting 28% networking portion)
 ### A+ Core 2 coverage: Domain 2 (Security 28%)
 
-**the idea** — typing a URL kicks off a fixed sequence (DNS → TCP → TLS → HTTP), and every piece of that chain is either a hardening point or an attack surface. A+ teaches the mechanisms; security (next phase) teaches what breaks them.
+**the idea** — typing a URL kicks off a fixed sequence (DNS → TCP → TLS → HTTP), and every piece of that chain is either a hardening point or an attack surface. A+ teaches the mechanisms; security (next goal) teaches what breaks them.
 
-**how it actually works** — (pulled from R3 internet mechanism, trimmed to A+ scope):
+**how it actually works** — same internet chain as Shared Foundations, trimmed to what A+ cares about rn:
 
 pressing Enter on `https://example.com` runs:
 1. **DNS resolution** — the OS asks a **recursive resolver**, which walks **root → TLD (`.com`) → authoritative** nameserver, which returns the **A record** (IPv4). cached with a **TTL**.
@@ -182,24 +178,22 @@ underneath: everything is **packets** routed hop-by-hop by IP. **ports** let one
 
 **measurable gate:** score **80%+ on 3 fresh attempts** at ExamCompass A+ Core 1 Networking + Core 2 Security quizzes, AND correctly subnet 5 random `/25`–`/29` problems on paper unaided (use subnetipv4.com to generate/check them). both must pass meow
 
-**read this + why (cybersecurity depth only)** — Stallings **Ch. 22 "Internet Security Protocols and Standards"** (TLS/IPsec — the "why HTTPS" deep-dive) and **Ch. 6 "Malicious Software"** (malware taxonomy maps onto A+ Core 2 Domain 2). Stallings takes A+ security basics and shows *why* each control exists.
-
 **can u explain it?** ✅ — out loud, unaided: *"narrate the steps from pressing Enter on `https://example.com` to the page appearing: DNS resolution → TCP SYN/SYN-ACK/ACK → TLS handshake (what the certificate proves, what the session key does) → HTTP GET/200. then say why TLS stops a man-in-the-middle."*
 
-**CTF thread:** after Bandit 15, try **CyLab Security Academy (picoCTF) — General Skills beginner challenges** (e.g. "Obedient Cat", "strings it", "Nice netcat...") — these reinforce ports (`nc`), file forensics (`strings`), and basic tooling. **gate:** solve 5 General Skills challenges. this keeps the CTF thread alive between Bandit and the web-exploitation phase meow
+**CTF thread:** after Bandit 15, try **CyLab Security Academy (picoCTF) — General Skills beginner challenges** (e.g. "Obedient Cat", "strings it", "Nice netcat...") — these reinforce ports (`nc`), file forensics (`strings`), and basic tooling. **gate:** solve 5 General Skills challenges. this keeps the CTF thread alive between Bandit and the web-exploitation goal meow
 
 ---
 
 ## Block 4 · Practice-Exam Sprint (~10h)
 
-**the idea** — u dont book the exam until youre already passing practice tests. this block is the final confidence check + exam-day logistics.
+**the idea** — u dont book the exam until practice tests already say youre ready. this block is the calm final check so exam day doesnt feel mysterious.
 
 **do this:**
 - Professor Messer A+ Success Bundles: [Core 1](https://www.professormesser.com/220-1201-success-bundle/) + [Core 2](https://www.professormesser.com/220-1202-success-bundle/) (paid optional; the old generic practice-exams page is dead) — **gate: 85%+ on 3 fresh Core 1 attempts, 85%+ on 3 fresh Core 2 attempts**. ✅
 - [Jason Dion A+ Practice Tests (Udemy)](https://www.udemy.com/course/comptia-a-exams/) (~$10–15 on sale) — **gate: 80%+ on 2 fresh attempts per core**. ✅
 - [ExamCompass A+ quizzes](https://www.examcompass.com/) (free) — domain-by-domain reinforcement. **free** ✅
 
-**measurable gate:** hit the % gates above on FRESH attempts (not retakes of the same test). if youre not hitting 85%+ on Messer, **do NOT book yet** — go back to the weak domain and re-study meow
+**measurable gate:** hit the % gates above on FRESH attempts (not retakes of the same test). if youre not hitting 85%+ on Messer, dont book yet — go back to the weak domain and patch it up meow
 
 **exam-day tips:**
 - **flag PBQs** (performance-based questions — sims/drag-drop), answer all multiple-choice first, then return to PBQs with remaining time. PBQ terminals: type `help` to list valid commands.
@@ -208,7 +202,7 @@ underneath: everything is **packets** routed hop-by-hop by IP. **ports** let one
 
 ---
 
-## ✅ exit check — youre done with Phase 1
+## ✅ exit check — youre done with Goal 1
 
 by now u have:
 - [ ] completed Bandit 0–15 + solved 5 CyLab General Skills challenges (CTF thread alive)
@@ -221,10 +215,10 @@ by now u have:
 1. **measurable** — the checklist above is all ticked
 2. **can u explain it?** — out loud, unaided: *"trace one instruction through fetch-decode-execute. explain what `cat notes.txt | grep TODO | wc -l` does at each pipe. narrate DNS → TCP → TLS → HTTP for `https://example.com` and say why TLS stops a MITM."*
 
-if u can tick the boxes but stumble on the explain gate, re-read the mechanism sections in Blocks 1–3. both must pass before Phase 2 meow
+if u can tick the boxes but stumble on the explain gate, re-read the mechanism sections in Blocks 1–3. both must pass before Goal 2 meow
 
 ---
 
-**next up:** [Phase 2 — Networking & Security Core](02-core.md) — Network+, ISC2 CC + Security+ merged study (CIA triad, crypto/PKI, access control, threats, network security, SOC operations). the certifications are checkpoints; the *topics* are what transfer to the job qwq
+**next up:** [Goal 2 — Networking & Security Core](02-core.md) — Network+, ISC2 CC + Security+ merged study (CIA triad, crypto/PKI, access control, threats, network security, SOC operations). the certs are checkpoints; the *topics* are what transfer to the job qwq
 
-[← Prep](00-prep.md) · [Back to hub](README.md) · [Next: Phase 2 →](02-core.md)
+[← Prep](00-prep.md) · [Back to hub](README.md) · [Next: Goal 2 →](02-core.md)

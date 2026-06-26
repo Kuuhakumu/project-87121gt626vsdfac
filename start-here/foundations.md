@@ -17,13 +17,13 @@ oki so u might notice all the `- [ ]` checkboxes below... heres the thing: **the
 
 the `- [ ]` boxes in *this* repo are just the visual structure showing u the path. your *actual* progress is tracked by the **two-part gate system** that travels with u no matter where u keep your list:
 
-1. **the measurable gate** (in each "do this" section) — real % on a named practice-test site, or a real interactive lab passed (like "clear Bandit 0–15" or "complete Week 1 problem set"). this is objective, unfoolable, external. either u hit the number or u didnt.
+1. **the measurable gate** (in each "do this" section) — real % on a named practice-test site, or a real interactive lab passed (like "clear Bandit 0–15" or "complete Week 1 problem set"). this is the outside check: either the lab/score passed or it didnt. no vibes, no guessing.
 
 2. **the "can u explain it?" gate** (at the end of each topic) — proves u *understand why*, not just that u did the steps. out loud or written, unaided.
 
-**both must pass** before a topic is really done. the measurable gate is the hard bar (it keeps u honest); the explain gate catches "i passed the quiz but couldnt tell u why it works" — which is exactly the gap this guide exists to close qwq
+**both must pass** before a topic is really done. the measurable gate keeps u honest; the explain gate catches "i passed the quiz but couldnt tell u why it works" — which is exactly the gap this guide exists to close qwq
 
-dw if that sounds intense — the gates are calibrated to hours-not-weeks, and the mechanism sections above each gate literally give u the map to pass the explain part. youve got this meow
+dw if that sounds intense — the gates are small enough for hours-not-weeks, and the mechanism sections above each gate give u the map to pass the explain part meow
 
 ---
 
@@ -41,9 +41,9 @@ dw if that sounds intense — the gates are calibrated to hours-not-weeks, and t
 
 **the idea** — a running computer is a loop, not a magic box. the CPU repeats a fetch-decode-execute cycle; everything it touches lives in RAM (fast but clears on power loss), and gets loaded there from storage (slow but persistent).
 
-**how it actually works** — lets talk about whats really happening when u "run a program", bc this is the bedrock everything else sits on:
+**how it actually works** — okok lets trace whats really happening when u "run a program", bc this is the bedrock everything else sits on:
 
-A CPU repeats the **fetch–decode–execute cycle** from boot until shutdown:
+a CPU repeats the **fetch–decode–execute cycle** from boot until shutdown:
 1. **Fetch** — the **program counter (PC)** holds the memory address of the next instruction. that address is copied to the **memory address register (MAR)**, the value at that RAM address is pulled into the **memory data register (MDR)** and then the **current instruction register (CIR)**; the PC increments to point at the next instruction.
 2. **Decode** — the **control unit** interprets the bits in the CIR: which operation, which operands/addresses.
 3. **Execute** — the **ALU** (arithmetic logic unit) does the math/logic, or data is moved, or the PC is set to a new address (a jump/branch). then the loop repeats. modern CPUs overlap these steps via an **instruction pipeline** (next fetch starts before the previous execute finishes).
@@ -73,11 +73,11 @@ dw if this feels abstract rn — the CS50 lab below makes it concrete meow
 
 **do this** — [CS50x Week 0–1](https://cs50.harvard.edu/x/) — browser IDE, no install. build logic in Scratch (Week 0), then write + run your first compiled C program (Week 1) so u *see* source → compile → a running process. ✅ verified live 2026-07-01
 
-**measurable gate:** complete the **Week 1 problem set** (submit at least one working C program). this is the objective bar — either u built + ran a program or u didnt meow
+**measurable gate:** complete the **Week 1 problem set** (submit at least one working C program). thats the real check — either u built + ran a program or u didnt meow
 
 **can u explain it?** ✅ — out loud or written, unaided (no notes, no guide open): *"Trace one instruction through fetch, decode, execute — name which register holds the next address. then explain why a program must be copied from storage into RAM before the CPU can run it, and what makes RAM different from an SSD."*
 
-if u can do the measurable gate but stumble here, thats the signal to re-read the mechanism section above — the bar is "i understand the chain and can say why each piece exists," not "i memorized the words" qwq
+if u can do the measurable gate but stumble here, thats the signal to re-read the mechanism section above — the target is "i understand the chain and can say why each piece exists," not "i memorized the words" qwq
 
 ---
 
@@ -118,7 +118,7 @@ the power comes from three OS mechanisms the shell wires together:
 
 this is also your **first CTF experience** — capture-the-flag puzzles where u find a hidden "flag" (password) to unlock the next level. theyre genuinely fun and theyre how the industry actually practices, so starting here means ur building the right instincts from day one meow
 
-**measurable gate:** clear **levels 0–15 unaided.** that single run proves genuine CLI competence (nav, files, search, permissions, ssh). either u solved them or u didnt — this is the hard bar.
+**measurable gate:** clear **levels 0–15 unaided.** that single run proves genuine CLI competence (nav, files, search, permissions, ssh). either u solved them or u didnt — nice and clean.
 
 **can u explain it?** ✅ — out loud or written, unaided: *"Type `cat notes.txt | grep TODO | wc -l` — explain what each `|` does to the data, what stdout is, and what `chmod 640 notes.txt` would let the owner vs others do."*
 
@@ -172,21 +172,21 @@ underneath, everything is **packets** routed hop-by-hop by IP; the **OSI/TCP-IP 
 
 zero signup needed, u literally watch steps 1–4 happen in real time. ✅ verified live 2026-07-01
 
-**measurable gate:** run both commands successfully and **annotate the `curl -v` output line-by-line** — mark which lines are DNS, which are TCP handshake, which are TLS negotiation, which are the HTTP request/response. save this annotated copy (youll need it for the explain gate). this is the objective bar — either u can map the output or u cant meow
+**measurable gate:** run both commands successfully and **annotate the `curl -v` output line-by-line** — mark which lines are DNS, which are TCP handshake, which are TLS negotiation, which are the HTTP request/response. save this annotated copy (youll need it for the explain gate). thats the real check — either u can map the output or u cant meow
 
-**can u explain it?** ✅ — this is the SECOND gate, on top of the measurable one above (both must pass). the annotated curl output proves u can *map* it; this proves u *understand why*:
+**can u explain it?** ✅ — yep, this is the second gate on top of the measurable one above. the annotated curl output proves u can *map* it; this proves u *understand why*:
 
 out loud or written, unaided: *"Narrate every step from pressing Enter on `https://example.com` to the page appearing — DNS resolution → TCP SYN/SYN-ACK/ACK → TLS handshake (what the certificate proves, what the session key does) → HTTP GET/200 → render. say **why** TLS stops a man-in-the-middle."*
 
-if u can do the measurable gate but stumble here, re-read the mechanism section above — the bar is "i understand the chain and can say why each piece exists" qwq
+if u can do the measurable gate but stumble here, re-read the mechanism section above — the target is "i understand the chain and can say why each piece exists" qwq
 
 ---
 
 ## Block 4 · Git, GitHub & How to Learn (~8h)
 
-**the idea** — Git is how the whole industry tracks work and collaborates; GitHub is your public portfolio (its what gets u hired, especially without a degree). and knowing *how to learn* technical material is the meta-skill that determines whether ull finish any of these guides.
+**the idea** — Git is how the whole industry tracks work and collaborates; GitHub is your public portfolio (its what gets u noticed, especially without a degree). and knowing *how to learn* technical material is the quiet meta-skill that decides whether ull finish any of these guides.
 
-**how it actually works (Git)** — Git is a **content-addressed snapshot store**, not a diff tracker. key mechanism: every time you commit, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. and everything in Git is checksummed before it is stored using a **SHA-1 hash** — so the same content = same hash, and any tampering changes the hash → **integrity**.
+**how it actually works (Git)** — Git is a **content-addressed snapshot store**, not a diff tracker. fancy phrase, simple idea: every time u commit, Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. and everything in Git is checksummed before it is stored using a **SHA-1 hash** — so the same content = same hash, and any tampering changes the hash → **integrity**.
 
 so the flow has a precise meaning:
 - Your files live in the **working directory**. `git add` copies a files current version into the **staging area (index)** — "marked to go into the next commit snapshot."
@@ -222,7 +222,7 @@ for the "how to learn" part:
 
 **do this** — [Learn Git Branching](https://learngitbranching.js.org/) — visual, interactive: u type real `git commit`/`branch`/`merge`/`rebase` and *watch* the commit graph + branch pointers move — makes the "branch = pointer, commit = snapshot with a parent" mechanism concrete. ✅ verified live 2026-07-01
 
-**measurable gate:** complete the main sequence (Introduction + Ramping Up sections), AND have a **GitHub account with ≥1 repo that has a real README**, and be able to `git add`/`commit`/`push` from the CLI without looking it up. these are the objective bars — either u did them or u didnt meow
+**measurable gate:** complete the main sequence (Introduction + Ramping Up sections), AND have a **GitHub account with ≥1 repo that has a real README**, and be able to `git add`/`commit`/`push` from the CLI without looking it up. these are the real checks — either u did them or u didnt meow
 
 **can u explain it?** ✅ — out loud or written, unaided: *"Explain what `git add` then `git commit` actually stores (staging → a hashed snapshot with a parent pointer), why two identical file states produce the same hash, and what a branch really is. then: what makes a merge conflict, and why is `push` safe across many copies?"*
 
