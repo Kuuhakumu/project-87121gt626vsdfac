@@ -41,16 +41,13 @@ both must pass before the topic is really done. a checkbox by itself means nothi
 ## the path (todo-tree)
 
 - [ ] **Block 1 - networking floor** (~55h): packets, ports, subnetting, implementation, operations, troubleshooting.
-- [ ] **Block 2 - security foundations** (~15h): CIA, controls, AAA, Zero Trust, CC-only ethics note.
-- [ ] **Block 3 - crypto + identity + access control** (~40h): TLS/PKI, password hashing, authn/authz, DAC/MAC/RBAC/ABAC.
-- [ ] **Block 4 - attacks + CTF thread** (~30h): network attacks, malware, web vuln classes, Natas + PortSwigger.
-- [ ] **Block 5 - operations + IR + GRC** (~30h): hardening, logging, monitoring, BC/DR, risk, governance.
+- [ ] **Blocks 2-5 - merged CC + Security+ security-fundamentals study group** (~115h): A -> D -> B -> C -> E -> F -> G -> H.
 - [ ] **Block 6 - cert readiness sprint** (~10h): Network+ gate, CC optional gate, Security+ gate.
 - [ ] **exit check** - can explain the whole chain: normal network -> control -> attack -> detection -> response.
 
 ---
 
-## cert-domain map so u know why each block exists
+## cert-domain map so u know why each block/cluster exists
 
 ### Network+ N10-009 map
 
@@ -66,14 +63,18 @@ both must pass before the topic is really done. a checkbox by itself means nothi
 
 | Study cluster | ISC2 CC domain(s) | SY0-701 domain(s) | delta so ur not guessing |
 |---|---|---|---|
-| security foundations | D1 Security Principles | 1.0, parts of 5.0 | both; ISC2 Code of Ethics is **CC only** |
-| crypto + PKI | D5 Security Operations | 1.4, 3.3 | both; Security+ goes deeper on PKI/certs/data states |
-| access control + IAM | D3 Access Controls, D1 AAA | 4.6, 1.2 | both; Security+ goes deeper on SSO/federation/Kerberos/802.1X |
-| networking + network security | D4 Network Security | 3.2, 4.5 | CC tests networking fundamentals; Security+ assumes them |
-| threats + vulnerabilities | D4 attacks, D5 awareness | 2.0 | Security+ goes deeper on threat actors and vuln classes |
-| security operations | D5 Security Operations | 4.0 | Security+ goes deeper on SIEM, vuln mgmt, automation |
-| IR + BC/DR | D2 BC/DR & IR | 4.8, 3.4, 5.2 | Security+ goes deeper on forensics/resilience metrics |
-| GRC + program mgmt | D1 risk/governance | 5.0 | Security+ goes deeper on third-party risk, audits, frameworks |
+| **A. Security Foundations & Governance Concepts** | D1 | 1.0, 5.0 | mostly **both**; ISC2 Code of Ethics = **CC only**; Zero Trust / gap analysis = **Security+ emphasis** |
+| **D. Networking & Network Security** | D4 | 3.2, 4.5 (+ prereq) | **CC tests networking fundamentals explicitly (OSI/TCP/ports)**; Security+ **assumes** them and tests the security controls |
+| **B. Cryptography & PKI** | D5 | 1.4, 3.3 | **both** at concept level; **Security+ deeper** on PKI/certs; obfuscation/blockchain/steganography = **Security+ only** |
+| **C. Access Control & Identity (IAM)** | D3, D1 | 4.6, 1.2 | **both**; federation/SSO/Kerberos/802.1X/EAP = **Security+ deeper** |
+| **E. Threats, Attacks, Vulnerabilities & Malware** | D4, D5 | 2.0 | **both** on malware/social-eng/DoS/MITM; threat-actor taxonomy + specific vuln types = **Security+ only/deeper** |
+| **F. Security Operations (monitoring, hardening, automation)** | D5 | 4.0 | **both** on hardening/logging/data-handling; SIEM, vuln mgmt, asset mgmt, automation/scripting = **Security+ only/deeper** |
+| **G. Incident Response, BC/DR & Resilience** | D2 | 4.8, 3.4, 5.2 | **both** on IR lifecycle + BC/DR; digital forensics + architecture-level resilience = **Security+ deeper** |
+| **H. GRC & Security Program Management** | D1 | 5.0 | **both** on risk/governance/awareness; third-party risk, audits/assessments, NIST CSF/ISO frameworks = **Security+ only/deeper**; ISC2 Code of Ethics = **CC only** |
+
+study order for this file: **A -> D -> B -> C -> E -> F -> G -> H**.
+we study the superset first.
+then CC or Security+ becomes a checkpoint, not a separate pile of flashcards meow.
 
 ---
 
@@ -185,379 +186,348 @@ tools each answer a narrow question: `ping` tests reachability, `tracert`/`trace
 
 ---
 
-## Block 2 - security foundations (~15h)
+## Blocks 2-5 - merged CC + Security+ security-fundamentals study group (~115h)
 
-- [ ] CIA, controls, AAA, and Zero Trust (~15h)
+this is one study group, not two cert silos.
+u study the **superset** because the real mechanisms overlap, then u decide which exam checkpoint is worth paying for.
+CC is optional proof now, not the free path itself meow.
 
-### CIA, controls, AAA, and Zero Trust meow (~15h)
+**exact resource spine from RC1**
+- [Professor Messer SY0-701 free course index](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) - 121-video free course, organized by SY0-701 domains. **free**
+- [Professor Messer SY0-701 YouTube playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv) - same course if YouTube is easier. **free**
+- [ExamCompass Security+ SY0-701 practice tests](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) - use the current **SY0-701 Tests 1-24**, not retired SY0-601 sets. **free**
+- [Professor Messer SY0-701 Pop Quiz: It's Pretty at Night](https://www.professormesser.com/security-plus/sy0-701/sy0-701-pop-quiz/its-pretty-at-night/) - verified singular `sy0-701-pop-quiz` slug example; dont use the plural pop-quizzes index. **free**
+- [Messer SY0-701 Success Bundle](https://www.professormesser.com/sy0-701-success-bundle/) - current paid Messer practice bundle; this replaces old generic practice-exam links. **paid optional**
+- [Dion Training SY0-701 Practice Exam Pack](https://www.diontraining.com/products/comptia-security-sy0-007-unlimited-practice-exam) - verified Dion link even though the slug says `sy0-007`; page content is SY0-701. **paid optional**
+- [ISC2 CC Self-Study Resources](https://www.isc2.org/certifications/cc/cc-self-study-resources), [CC Practice Quiz](https://cloud.connect.isc2.org/cc-quiz), and [CC Flash Cards](https://cloud.connect.isc2.org/cc-flashcards) - free CC study aids, likely signup-gated. **free with signup**
 
-**cert map** - CC D1; Security+ 1.0 and parts of 5.0; Network+ D4 vocabulary.
+**CC money note again:** the free-voucher program closed on **2026-05-20**.
+the exam is now about **$199 + $50/yr AMF**.
+use the free CC hub/quiz/flashcards plus these explain gates before u pay.
 
-**heads up** - CIA/controls/AAA are both CC and Security+. **ISC2 Code of Ethics is CC only.** Zero Trust, gap analysis, honeypots/honeytokens are Security+ emphasis.
+study order: **A -> D -> B -> C -> E -> F -> G -> H**.
+that order is on purpose: foundations first, then network/security controls, then crypto and identity, then attacks, then operations, IR, and GRC.
 
-**the idea** - security is not one single "safe" sticker. **Confidentiality**, **Integrity**, and **Availability** are separate guarantees, and different controls protect each one.
+- [ ] **Cluster A - Security Foundations & Governance Concepts** (~15h)
+- [ ] **Cluster D - Networking & Network Security** (~14h)
+- [ ] **Cluster B - Cryptography & PKI** (~14h)
+- [ ] **Cluster C - Access Control & Identity (IAM)** (~16h)
+- [ ] **Cluster E - Threats, Attacks, Vulnerabilities & Malware** (~16h)
+- [ ] **Cluster F - Security Operations (monitoring, hardening, automation)** (~14h)
+- [ ] **Cluster G - Incident Response, BC/DR & Resilience** (~12h)
+- [ ] **Cluster H - GRC & Security Program Management** (~14h)
 
-**how/why it actually works** - confidentiality fails when someone reads data they shouldnt, even if nothing changed. encryption and access control protect it.
+### Cluster A - Security Foundations & Governance Concepts meow (~15h)
 
-integrity fails when data changes without detection, even if nobody can read it. hashes, MACs, signatures, and audit logs protect it.
+**cert map** - CC **D1 Security Principles**; SY0-701 **1.0 General Security Concepts** + **5.0 Security Program Management & Oversight**.
 
-availability fails when authorized users cant get service. redundancy, backups, rate limits, failover, and DDoS defenses protect it.
+**deltas** - CIA/controls/AAA/governance = **both**. **CC only:** ISC2 **Code of Ethics** canons (memorize the 4 in order). **Security+ emphasis:** Zero Trust (control/data planes, PEP/PDP), gap analysis, honeypots/honeytokens.
 
-**AAA** keeps identity decisions orderly: authentication proves who u are, authorization decides what u can do, and accounting records what happened. **Zero Trust** is the design rule that no network location is automatically trusted; each request is evaluated using identity, device posture, context, and least privilege.
+**the idea** - security starts with knowing what promise a control is trying to protect: confidentiality, integrity, availability, identity, accountability, or risk reduction.
+
+**how/why it actually works** - **Confidentiality** fails when someone reads data they shouldnt; encryption and access control reduce that.
+
+**Integrity** fails when data changes without detection; hashes, MACs, signatures, approvals, and logs make tampering visible.
+
+**Availability** fails when authorized users cant get service; redundancy, backups, rate limits, and recovery plans keep the service reachable.
+
+**AAA** keeps identity decisions in order: authentication proves who u are, authorization decides what u may do, accounting records what happened.
+
+**Zero Trust** says location is not trust. every request is evaluated through identity, device posture, context, policy, and least privilege. dw, this is just "verify the request every time," not spooky magic.
 
 **words u gotta be able to say**
-- **confidentiality** - only authorized reading
-- **integrity** - unauthorized changes detectable
-- **availability** - service reachable when needed
-- **authenticity** - identity/source is genuine
-- **non-repudiation** - action cant be credibly denied
-- **threat / vulnerability / risk / exploit** - actor/capability / weakness / likelihood x impact / use of weakness
-- **preventive / detective / corrective control** - stops / notices / fixes
+- **confidentiality / integrity / availability** - read control / change control / uptime
+- **authenticity / non-repudiation** - genuine source / cannot deny action
+- **threat / vulnerability / risk / exploit** - actor or event / weakness / likelihood x impact / use of weakness
+- **control category** - managerial, operational, technical, physical
+- **control type** - preventive, deterrent, detective, corrective, compensating, directive
 - **AAA** - authentication, authorization, accounting
+- **Zero Trust** - verify each request continuously
+- **PEP / PDP** - enforcement point / decision point
 
-**study sources**
-- [Professor Messer: Security Controls - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/security-controls-sy0-701/) - control categories/types. **free**
-- [Professor Messer: The CIA Triad - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/the-cia-triad-sy0-701/) - CIA + examples. **free**
+**study sources (pick what fits your style)**
+- [Professor Messer: Security Controls - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/security-controls-sy0-701/) - control categories and types. **free**
+- [Professor Messer: The CIA Triad - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/the-cia-triad-sy0-701/) - confidentiality, integrity, availability. **free**
 - [Professor Messer: Non-repudiation - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/non-repudiation-sy0-701/) - accountability property. **free**
 - [Professor Messer: Zero Trust - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/zero-trust-sy0-701/) - Security+ emphasis. **free**
-- [ISC2 CC Exam Outline](https://www.isc2.org/certifications/cc/cc-certification-exam-outline) + [CC self-study resources](https://www.isc2.org/certifications/cc/cc-self-study-resources) - CC blueprint and free study aids; exam itself is paid. **free/freemium**
+- [Professor Messer: Authentication, Authorization, and Accounting - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/authentication-authorization-and-accounting-sy0-701/) - AAA before IAM gets deeper. **free**
 
-**do this** - solve these two PortSwigger labs:
-- [Unprotected admin functionality](https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality)
-- [User ID controlled by request parameter](https://portswigger.net/web-security/access-control/lab-user-id-controlled-by-request-parameter)
+**do this** - take 3 fresh ExamCompass SY0-701 attempts from current Tests 1-24 that hit general security concepts. good starting picks from RC1 are [Test 1](https://www.examcompass.com/comptia-security-plus-practice-test-1-exam-sy0-701), [Test 8](https://www.examcompass.com/comptia-security-plus-practice-test-8-exam-sy0-701), and [Test 15](https://www.examcompass.com/comptia-security-plus-practice-test-15-exam-sy0-701). if sitting CC, also review the [ISC2 CC Self-Study Resources](https://www.isc2.org/certifications/cc/cc-self-study-resources).
 
-**measurable gate:** both labs show **Solved**, and u can label which CIA property each lab violated. then score **85%+ on 3 fresh ExamCompass SY0-701 attempts** that include general-security/concepts questions.
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** AND recite the 4 ISC2 Code-of-Ethics canons in order unaided.
 
-**can u explain it?** - unaided: give one attack that breaks only integrity and one that breaks only availability. for each, name a control that would have reduced the risk.
+**can u explain it?** ✅ - say out loud the difference between a *vulnerability*, *threat*, and *risk* with one concrete example each. then name which CIA property is being protected by encryption, a hash, and a failover cluster.
 
----
+### Cluster D - Networking & Network Security meow (~14h)
 
-## Block 3 - crypto + identity + access control (~40h)
+**cert map** - CC **D4 Network Security**; SY0-701 **3.2 Security Architecture** + **4.5 Security Operations**.
 
-- [ ] cryptography, TLS, and PKI (~14h)
-- [ ] authentication + password hashing (~12h)
-- [ ] access-control models + IAM (~14h)
+**deltas** - **Big one:** **CC explicitly tests networking fundamentals** (OSI, TCP handshake, ports) because it has no Network+ prerequisite; Security+ **assumes** them and tests the *security controls* on top.
 
-### cryptography, TLS, and PKI meow (~14h)
+**the idea** - network security is the control layer on top of normal networking: filtering, segmentation, encrypted tunnels, wireless protection, and monitoring around packets that still have to route normally.
 
-**cert map** - CC D5 and D4; Security+ 1.4 and 3.3.
+**how/why it actually works** - a **stateful firewall** tracks connection state, so an outbound TCP session can receive return traffic while an unrelated inbound SYN is blocked.
 
-**heads up** - both certs test symmetric/asymmetric/hash/signatures. Security+ goes deeper on PKI, certificate status, data states, obfuscation, steganography, and blockchain.
+**Segmentation** splits trust zones so one compromised user machine does not sit in the same flat network as servers, admin tools, and guest Wi-Fi.
 
-**the idea** - crypto gives three core tools: symmetric encryption for fast secrecy, public-key crypto for identity/key exchange/signatures, and hashes for tamper-evident fingerprints. not magic, just carefully used math.
+**IDS/IPS** watches traffic patterns or signatures; IDS alerts, IPS can block. placement matters because a sensor only sees traffic that passes through its view.
 
-**how/why it actually works** - **symmetric encryption** uses one shared key and is fast enough for bulk traffic, but key-sharing is the hard part.
+**VPN/IPsec/TLS** protect traffic over untrusted paths by authenticating peers and encrypting payloads. the network still routes packets; crypto makes the contents and peer identity safer.
 
-**asymmetric crypto** uses a public/private keypair. a public key can verify something signed by the private key, or help establish a shared secret without sending that secret directly.
+**words u gotta be able to say**
+- **OSI / TCP-IP** - layer models for network jobs
+- **TCP handshake** - SYN, SYN-ACK, ACK setup
+- **port / protocol** - service number / communication rule
+- **stateful firewall** - allows traffic based on flow state
+- **IDS / IPS** - detect only / detect and block
+- **VLAN / segmentation / DMZ** - split broadcast/trust zones
+- **VPN / IPsec / TLS** - encrypted tunnels or sessions
+- **WPA3 / DNSSEC** - Wi-Fi protection / signed DNS records
 
-**hashes** are one-way fixed-length fingerprints. change one bit, and the digest changes wildly. hashes support integrity checks, MACs, signatures, and password storage when wrapped in a slow KDF.
+**study sources (pick what fits your style)**
+- [Professor Messer: Firewall Types - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/firewall-types-sy0-701/) - packet, stateful, next-gen, WAF. **free**
+- [Professor Messer: Firewalls - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/firewalls-sy0-701/) - placement and policy. **free**
+- [Professor Messer: Segmentation and Access Control - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/segmentation-and-access-control-sy0-701/) - VLANs, screened subnets, NAC ideas. **free**
+- [TryHackMe: Intro to Networking](https://tryhackme.com/room/introtonetworking) - CC networking-fundamentals half if Block 1 was shaky. **freemium**
+- [TryHackMe: Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics) - packet-capture practice for the TCP gate. **freemium**
 
-**TLS 1.3** combines them: ClientHello and ServerHello exchange supported suites and ephemeral key shares; both sides derive session keys; the server presents a certificate chain binding its domain to a public key; CertificateVerify proves it owns the matching private key; Finished messages MAC the handshake transcript. after that, AEAD encrypts and authenticates traffic. thats why proper HTTPS gives confidentiality, integrity, and server authentication even on a hostile network.
+**do this** - use the current [ExamCompass Security+ SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) for network-security questions, then capture or inspect one TCP connection in Wireshark and label SYN -> SYN-ACK -> ACK.
+
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** AND correctly label the TCP 3-way handshake from a live or saved Wireshark capture.
+
+**can u explain it?** ✅ - explain why a stateful firewall can allow the return traffic of an outbound connection but block an unsolicited inbound one. then say why segmentation reduces blast radius but does not encrypt traffic.
+
+### Cluster B - Cryptography & PKI meow (~14h)
+
+**cert map** - CC **D5 Security Operations**; SY0-701 **1.4 Cryptographic Solutions** + **3.3 Data Protection**.
+
+**deltas** - sym/asym/hash/signatures/data-states = **both**. **Security+ deeper:** full PKI/certificate mechanics, cipher modes. **Security+ only:** obfuscation, steganography, blockchain, key stretching/salting detail.
+
+**the idea** - crypto gives tools for secrecy, tamper detection, identity proof, and safe key agreement. the hard part is knowing which tool gives which property.
+
+**how/why it actually works** - **symmetric encryption** uses one shared key and is fast enough for bulk data, but both sides need the same secret.
+
+**Asymmetric crypto** uses a public/private keypair. a public key can verify a signature from the private key, or help establish a shared secret without sending that secret directly.
+
+**Hashing** makes a fixed-size fingerprint. it does not hide data; it detects change. keyed hashes and signatures add authenticity.
+
+**PKI** binds an identity to a public key through certificates. your browser trusts a root CA, verifies the intermediate chain, checks the server leaf certificate, then verifies the server owns the matching private key during the handshake.
 
 **words u gotta be able to say**
 - **cipher / key** - algorithm / secret parameter
 - **symmetric / asymmetric** - shared key / keypair
-- **hash / MAC / HMAC** - fingerprint / keyed integrity check / hash-based MAC
+- **hash / HMAC** - fingerprint / keyed integrity check
 - **digital signature** - private-key sign, public-key verify
-- **certificate / CA / PKI** - identity-key binding / issuer / trust system
-- **AEAD** - encryption plus integrity tag
-- **Diffie-Hellman** - shared secret over public channel
-- **forward secrecy** - old sessions survive future key theft
+- **certificate / CA / PKI** - identity binding / issuer / trust system
+- **chain of trust** - root to intermediate to leaf
+- **OCSP / CRL** - revocation status checks
+- **data at rest / in transit / in use** - stored / moving / being processed
 
-**study sources**
-- [Professor Messer: Public Key Infrastructure - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/public-key-infrastructure-sy0-701/) - PKI overview. **free**
+**study sources (pick what fits your style)**
+- [Professor Messer: Public Key Infrastructure - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/public-key-infrastructure-sy0-701/) - CA and trust model. **free**
 - [Professor Messer: Encrypting Data - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/encrypting-data-sy0-701/) - symmetric/asymmetric/data protection. **free**
-- [Professor Messer: Certificates - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/certificates-sy0-701/) - leaf/intermediate/root certs. **free**
-- [CryptoHack: Introduction to CryptoHack](https://cryptohack.org/courses/intro/) - beginner encoding/XOR crypto course. **free**
-- [CryptoHack: Hash Functions challenges](https://cryptohack.org/challenges/hashes/) - hashes by doing. **free**
+- [Professor Messer: Certificates - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/certificates-sy0-701/) - certificate fields and chains. **free**
+- [Professor Messer: Blockchain Technology - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/blockchain-technology-sy0-701/) - **Security+ only** extra. **free**
+- [Professor Messer: States of Data - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/states-of-data-sy0-701/) - at rest, in transit, in use. **free**
 
-**do this** - complete **CryptoHack: Introduction to CryptoHack** and the first **3 Hash Functions** challenges. then run [SSL Labs Server Test](https://www.ssllabs.com/ssltest/) against one HTTPS site and compare cert behavior against [badssl.com](https://badssl.com/).
+**do this** - use the current [ExamCompass Security+ SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) for crypto/PKI/data-state questions. while reviewing misses, write one sentence for which property the control gives: confidentiality, integrity, authentication, or non-repudiation.
 
-**measurable gate:** CryptoHack intro shows complete, 3 hash challenges solved, and your SSL Labs notes identify the certificate chain, negotiated TLS version, and whether forward secrecy is present.
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** for crypto/PKI/data-protection questions.
 
-**can u explain it?** - unaided: walk the TLS 1.3 handshake and say which step gives confidentiality, which step gives integrity, which step gives authentication, and why stealing the server key later should not decrypt captured past sessions.
+**can u explain it?** ✅ - walk the PKI chain: root CA -> intermediate CA -> leaf certificate -> signature checks -> browser trust decision. then say what OCSP/CRL are checking and why a hash alone is not encryption.
 
-### authentication + password hashing meow (~12h)
+### Cluster C - Access Control & Identity (IAM) meow (~16h)
 
-**cert map** - CC D3 and D1 AAA; Security+ 4.6 and 1.2; CC/Security+ D5 crypto overlap.
+**cert map** - CC **D3 Access Controls** + **D1 AAA**; SY0-701 **4.6 Identity and Access Management** + **1.2 Physical Security**.
 
-**heads up** - both certs test auth factors and AAA. Security+ goes deeper on federation, SSO, Kerberos, 802.1X/EAP, and password-attack mitigations.
+**deltas** - models + least-privilege + SoD + physical = **both**. **Security+ deeper:** federation/SSO protocols, Kerberos, 802.1X/EAP.
 
-**the idea** - **authentication** proves who u are; **authorization** decides what u can do; password storage is about surviving the day the database leaks. grim, but realistic qwq.
+**the idea** - identity says who the subject is; access control decides whether that subject can do this action to that object right now.
 
-**how/why it actually works** - a login request authenticates the user once, but authorization has to happen on every sensitive action and every object. if the app checks "is logged in" but not "is this your object," u get IDOR/broken access control.
+**how/why it actually works** - access decisions always have pieces: **subject**, **object**, **operation**, and **policy**. if the app only checks "logged in" but not "allowed for this object," access control breaks.
 
-MFA requires different factor categories: something u know, have, are, somewhere u are, or something u do. two passwords are not MFA. FIDO2/WebAuthn is stronger because the authenticator signs an origin-bound challenge, so a fake site cant easily reuse it elsewhere.
+**DAC** lets owners grant permissions. **MAC** enforces labels the user cannot override. **RBAC** maps people to roles, then roles to permissions. **ABAC** evaluates attributes like device, location, time, object label, and action.
 
-passwords must not be stored raw. a **salt** is a unique random value stored beside the hash, so identical passwords produce different hashes and rainbow tables stop scaling. a slow adaptive KDF like **bcrypt**, **scrypt**, or **Argon2** makes every guess expensive; a **pepper** is an optional secret kept outside the database.
+identity lifecycle matters because stale accounts are access bugs with usernames. provisioning gives access, deprovisioning removes it, reviews catch drift, and least privilege keeps roles small.
 
-**words u gotta be able to say**
-- **authentication / authorization** - who u are / what u may do
-- **accounting** - record of what happened
-- **MFA factor** - know/have/are/location/behavior category
-- **TOTP / FIDO2 / WebAuthn** - time code / phishing-resistant challenge signing
-- **hash / KDF** - fast fingerprint / deliberately slow password hash
-- **salt / pepper** - unique public random / secret app-wide value
-- **rainbow table** - precomputed hash lookup
-- **rate limiting / lockout** - slows or blocks guesses
-
-**study sources**
-- [Professor Messer: Authentication, Authorization, and Accounting - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/authentication-authorization-and-accounting-sy0-701/) - AAA cleanly explained. **free**
-- [Professor Messer: Multifactor Authentication - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/multifactor-authentication-sy0-701/) - factor categories. **free**
-- [PortSwigger: Authentication vulnerabilities](https://portswigger.net/web-security/authentication) - auth bug explanations + labs. **free**
-- [TryHackMe: Crack the Hash](https://tryhackme.com/room/crackthehash) - hash identification/cracking room. **freemium** (exact room verified; needs login)
-
-**do this** - solve these:
-- [PortSwigger: Username enumeration via different responses](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses)
-- [PortSwigger: Password brute-force via password change](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-brute-force-via-password-change)
-- [TryHackMe: Crack the Hash](https://tryhackme.com/room/crackthehash), Task 1 Level 1
-
-**measurable gate:** both PortSwigger labs show **Solved**, TryHackMe Task 1 answers are accepted, and u can identify whether a given example hash is unsalted fast hash vs salted password hash.
-
-**can u explain it?** - unaided: explain why a stolen DB of salted bcrypt hashes is harder to crack than unsalted SHA-256. name both effects: no shared rainbow table and each guess is slow. then state the difference between authn and authz in one sentence.
-
-### access-control models + IAM meow (~14h)
-
-**cert map** - CC D3; Security+ 4.6 and 1.2.
-
-**heads up** - DAC/MAC/RBAC/least privilege/physical controls are both. Security+ goes deeper on federation, SSO, Kerberos, SAML/OAuth, and 802.1X.
-
-**the idea** - access control is the rule system that decides whether a subject can perform an operation on an object. tiny sentence, huge job.
-
-**how/why it actually works** - **DAC** lets the owner decide permissions, like UNIX file permissions or NTFS ACLs. flexible, but malware running as the user inherits that user's access.
-
-**MAC** uses centrally enforced labels the user cant override, like classified systems or SELinux/AppArmor policy. rigid, but strong when policy must beat user preference.
-
-**RBAC** assigns permissions to roles, then users to roles. this scales in businesses because "help desk technician" or "billing admin" is easier to manage than one-off permissions for everyone.
-
-**ABAC** decides from attributes: subject, object, action, and environment. "doctor can read this chart only during shift from a managed device for a patient on their ward" is ABAC, not simple RBAC.
+federation and SSO move trust between systems: one identity provider authenticates the user, then tokens/assertions let another app trust that result. useful, but now token handling and trust boundaries matter a lot qwq.
 
 **words u gotta be able to say**
-- **subject / object / operation** - actor / thing / action
-- **ACL / capability** - per-object permissions / per-subject token
-- **DAC** - owner-controlled permissions
-- **MAC** - mandatory labels/policy
-- **RBAC** - permissions through roles
-- **ABAC** - attributes/context decide
-- **least privilege** - only the access needed
-- **separation of duties** - split risky powers across people
+- **subject / object / operation** - actor / target / action
+- **DAC / MAC / RBAC / ABAC** - owner / label / role / attribute model
+- **least privilege** - only needed access
+- **segregation of duties** - split risky powers
+- **provisioning / deprovisioning** - grant / remove identity access
+- **MFA factors** - know, have, are, where, behavior
+- **federation / SSO** - trust identity across systems
+- **Kerberos / LDAP / SAML / OAuth / 802.1X/EAP** - auth directory, token, and network-access protocols
 
-**study sources**
-- [Professor Messer: Access Controls - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/access-controls-sy0-701/) - Security+ IAM/access-control coverage. **free**
-- [PortSwigger: Access control vulnerabilities](https://portswigger.net/web-security/access-control) - broken access-control mechanisms + labs. **free**
-- [OverTheWire: Natas](https://overthewire.org/wargames/natas/) - browser-only web security wargame; starts with view-source/cookies/auth. **free**
+**study sources (pick what fits your style)**
+- [Professor Messer: Multifactor Authentication - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/multifactor-authentication-sy0-701/) - factor categories and MFA risk. **free**
+- [Professor Messer: Access Controls - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/access-controls-sy0-701/) - models, rights, IAM terms. **free**
+- [Professor Messer: Authentication, Authorization, and Accounting - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/authentication-authorization-and-accounting-sy0-701/) - AAA recap before the D3-heavy gate. **free**
+- [ISC2 CC Practice Quiz](https://cloud.connect.isc2.org/cc-quiz) - CC-flavored identity/access check; likely signup-gated. **free with signup**
 
-**do this** - solve these:
-- [PortSwigger: User role controlled by request parameter](https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter)
-- [PortSwigger: URL-based access control can be circumvented](https://portswigger.net/web-security/access-control/lab-url-based-access-control-can-be-circumvented)
-- [OverTheWire Natas](https://overthewire.org/wargames/natas/) levels **0-6**
+**do this** - use the current [ExamCompass Security+ SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) for access-control and IAM questions. make a tiny table with one real scenario each for DAC, MAC, RBAC, and ABAC.
 
-**measurable gate:** both PortSwigger labs show **Solved** and Natas level 6 is cleared. write one note naming the intended access model and the failed enforcement point for each PortSwigger lab.
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** for access control/IAM.
 
-**can u explain it?** - unaided: choose an access model for a hospital records system and justify it. then change the rule to "only during shift, only assigned ward, only managed device" and explain why the answer becomes ABAC.
+**can u explain it?** ✅ - explain when youd choose RBAC vs MAC vs DAC and why, with a one-line real scenario each. then take one RBAC scenario and add time/device/location conditions until it becomes ABAC.
 
----
+### Cluster E - Threats, Attacks, Vulnerabilities & Malware meow (~16h)
 
-## Block 4 - attacks + CTF thread (~30h)
+**cert map** - CC **D4 Network Security** + **D5 Security Operations**; SY0-701 **2.0 Threats, Vulnerabilities, and Mitigations**.
 
-- [ ] network attacks + defenses (~16h)
-- [ ] threats, malware, and web vulnerability classes (~14h)
+**deltas** - malware/social-eng/DoS/MITM = **both**. **Security+ only/deeper:** the full **threat-actor taxonomy** (nation-state, hacktivist, insider, etc. + motivations) and **specific named vulnerability classes** (buffer overflow, SQLi, race conditions, zero-day) - CC stays at "know the category," Security+ wants the mechanism.
 
-### network attacks + defenses meow (~16h)
+**the idea** - an attack is normal system behavior pushed into an unsafe path. the job is to name which assumption broke.
 
-**cert map** - CC D4; Security+ 2.0, 3.2, 4.5; Network+ D4.
+**how/why it actually works** - **malware** is grouped by spread and payload: worms self-propagate, trojans pretend to be legit, ransomware encrypts/extorts, rootkits hide control, botnets coordinate many compromised hosts.
 
-**the idea** - network attacks abuse trust assumptions in protocols: who owns this MAC, who answered DNS, who is really in the middle, and whether this message is fresh.
+**Social engineering** attacks the human trust path: phishing, vishing, smishing, pretexting, urgency, authority, scarcity, and brand impersonation.
 
-**how/why it actually works** - **ARP spoofing** works because ARP replies are not authenticated; a host can cache "gateway IP is at my MAC" and send traffic to the attacker.
+**DoS/DDoS** attacks availability by exhausting state, bandwidth, CPU, app workers, or upstream capacity. mitigation works by reducing state, filtering earlier, rate-limiting, or absorbing traffic.
 
-**MITM/on-path** attacks relay traffic between two parties. TLS is the fix because the certificate chain authenticates the server, CertificateVerify proves private-key possession, and AEAD/Finished MACs detect tampering.
-
-**replay** attacks resend a valid captured message. nonces, timestamps, sequence numbers, and session binding stop old messages from being accepted as new.
-
-**DoS/DDoS** attacks availability. SYN floods fill half-open connection state; SYN cookies avoid keeping state until the final ACK. amplification attacks spoof the victim as source and make reflectors send bigger replies at the victim.
+**Buffer overflow** happens when code writes past a memory boundary. if overwritten memory influences control flow, the attacker may redirect execution. dw, later red-team material goes deeper; here u need the mechanism shape.
 
 **words u gotta be able to say**
-- **spoofing** - forged identity a protocol trusts
-- **ARP poisoning** - fake MAC mapping on a LAN
-- **MITM/on-path** - attacker relays/reads/alters traffic
-- **replay** - resend captured valid message
-- **nonce / timestamp / sequence** - freshness controls
-- **DoS / DDoS** - one-source / many-source availability attack
-- **SYN flood / SYN cookies** - half-open exhaustion / stateless defense
-- **HSTS / DNSSEC / DAI** - HTTPS-only / signed DNS / switch ARP defense
-
-**study sources**
-- [Professor Messer: Denial of Service - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/denial-of-service-sy0-701/) - DoS/DDoS exam framing. **free**
-- [Professor Messer: Firewall Types - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/firewall-types-sy0-701/) - packet/state/app firewalls. **free**
-- [Professor Messer: Firewalls - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/firewalls-sy0-701/) - placement and policy. **free**
-- [Professor Messer: Segmentation and Access Control - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/segmentation-and-access-control-sy0-701/) - VLANs/segmentation/security zones. **free**
-- [CyberDefenders: PacketMaze](https://www.cyberdefenders.org/blueteam-ctf-challenges/packetmaze/) - packet-analysis blue-team CTF. **free**
-
-**do this** - complete **CyberDefenders PacketMaze**, then use [badssl.com](https://badssl.com/) to predict which bad certificate cases your browser blocks and why.
-
-**measurable gate:** PacketMaze challenge questions are accepted by the platform, and your badssl notes correctly classify expired, self-signed, wrong-host, and revoked-style certificate failures.
-
-**can u explain it?** - unaided: walk an ARP-spoof -> MITM chain end to end, then explain why proper TLS still protects the session even if the attacker sees every packet.
-
-### threats, malware, and web vulnerability classes meow (~14h)
-
-**cert map** - CC D4/D5; Security+ 2.0.
-
-**heads up** - malware, social engineering, DoS, and MITM are both. Security+ goes deeper on threat actors, motivations, SQLi, XSS, race conditions, buffer overflow, memory injection, and zero-day language.
-
-**the idea** - a vulnerability is a condition that lets normal system behavior produce an unsafe result. thats the lens: "what assumption broke?"
-
-**how/why it actually works** - **malware** is categorized by how it spreads and what it does: viruses attach to files, worms self-propagate, trojans masquerade as legit, ransomware encrypts/extorts, rootkits hide control, botnets coordinate many machines.
-
-**SQL injection** happens when untrusted input becomes part of a query instead of data. the database obeys a query that the developer didnt mean to build.
-
-**XSS** happens when untrusted input becomes executable script in another user's browser. the browser runs it because it came from a trusted site context.
-
-**buffer overflow** happens when a program writes past a memory boundary and overwrites adjacent state; if that state controls execution flow, the attacker may redirect execution. dw this gets deeper later - rn u just need the mechanism shape.
-
-**words u gotta be able to say**
-- **threat actor / vector / surface** - who / path / exposed area
-- **malware family** - grouped by spread/payload behavior
+- **threat actor / motivation** - who is attacking and why
+- **attack vector / attack surface** - path in / exposed area
+- **malware family** - grouped by spread or payload
 - **phishing / vishing / smishing** - email / voice / SMS social engineering
-- **SQLi** - input becomes database query syntax
-- **XSS** - input becomes browser-executed script
-- **buffer overflow** - write past memory boundary
-- **zero-day** - unknown/unpatched vuln in use
-- **mitigation** - control that reduces likelihood or impact
+- **DoS / DDoS** - one-source / many-source availability attack
+- **MITM/on-path** - attacker relays or alters traffic
+- **buffer overflow / race condition** - memory boundary / timing bug
+- **SQLi / XSS / zero-day** - query injection / browser script injection / unknown or unpatched vuln
 
-**study sources**
-- [Professor Messer: Threat Actors - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/threat-actors-sy0-701/) - actors and motivations. **free**
+**study sources (pick what fits your style)**
+- [Professor Messer: Threat Actors - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/threat-actors-sy0-701/) - actor taxonomy and motivations. **free**
 - [Professor Messer: Phishing - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/phishing-sy0-701/) - social engineering types. **free**
-- [Professor Messer: An Overview of Malware - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/an-overview-of-malware-sy0-701/) - malware taxonomy. **free**
-- [PortSwigger: SQL injection labs](https://portswigger.net/web-security/sql-injection) - CTF-style SQLi targets. **free**
-- [PortSwigger: Cross-site scripting labs](https://portswigger.net/web-security/cross-site-scripting) - CTF-style XSS targets. **free**
+- [Professor Messer: An Overview of Malware - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/an-overview-of-malware-sy0-701/) - malware families. **free**
+- [Professor Messer: Denial of Service - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/denial-of-service-sy0-701/) - DoS/DDoS mechanisms. **free**
 
-**do this** - solve:
-- [PortSwigger: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
-- [PortSwigger: SQL injection vulnerability allowing login bypass](https://portswigger.net/web-security/sql-injection/lab-login-bypass)
-- [PortSwigger: Reflected XSS into HTML context with nothing encoded](https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded)
-- [OverTheWire Natas](https://overthewire.org/wargames/natas/) levels **7-15**
+**do this** - use the current [ExamCompass Security+ SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) for threats/vulnerabilities/mitigations. after each miss, write whether it was actor, vector, vulnerability type, malware type, or mitigation.
 
-**measurable gate:** all 3 PortSwigger labs show **Solved**, Natas level 15 is cleared, and u can classify 5 short scenarios by malware/vuln type without notes.
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** AND name the malware type + likely delivery vector from 5 short scenarios unaided.
 
-**can u explain it?** - unaided: explain the difference between SQLi and XSS by naming where the attack executes (database vs browser). then explain, at a high level, how a buffer overflow can affect control flow.
+**can u explain it?** ✅ - explain in one breath how a buffer overflow can hand control to an attacker. then explain how phishing can lead to a valid login that still becomes a security incident.
 
----
+### Cluster F - Security Operations (monitoring, hardening, automation) meow (~14h)
 
-## Block 5 - operations + IR + GRC (~30h)
+**cert map** - CC **D5 Security Operations**; SY0-701 **4.0 Security Operations**.
 
-- [ ] hardening, logging, and monitoring (~12h)
-- [ ] incident response, BC/DR, and resilience (~10h)
-- [ ] risk, governance, and program management (~8h)
+**deltas** - hardening/logging/data-handling = **both**. **Security+ only/deeper:** **SIEM**, formal **vulnerability management** cycle, **asset management**, **automation/orchestration (scripting)** - these are why SY0-701 D4 is 28% while CC D5 is only 18%.
 
-### hardening, logging, and monitoring meow (~12h)
+**the idea** - security operations is the daily control loop: know what exists, harden it, patch it, log it, detect weirdness, and fix drift before it becomes an incident.
 
-**cert map** - CC D5; Security+ D4 (the heaviest SY0-701 domain).
+**how/why it actually works** - **asset management** starts the loop because u cant secure what u dont know exists.
 
-**heads up** - hardening, logging, data handling, and patching are both. Security+ goes deeper on SIEM, asset management, vulnerability management, and automation/orchestration.
+**Secure baselines** reduce default risk by removing unused services, weak settings, default credentials, unnecessary admin rights, and permissive firewall rules.
 
-**the idea** - security operations turns controls into daily habits: reduce exposed services, keep systems patched, collect logs, detect weird behavior, and document what changed. very unglamorous, very real.
+**Vulnerability management** scans, prioritizes by risk, remediates, then verifies. a scan finding is not fixed until the fix is proven.
 
-**how/why it actually works** - **hardening** removes default risk: unused services, default credentials, permissive firewall rules, weak TLS settings, unnecessary admin rights.
-
-**patch/config management** keeps known bugs from staying exploitable and keeps systems from drifting away from a baseline.
-
-**logging** records events; a **SIEM** normalizes and correlates logs across systems so one weird login, DNS query, and endpoint alert can become one investigation instead of three isolated lines.
+**SIEM** normalizes and correlates logs so one odd login, endpoint alert, and DNS query can become one investigation instead of three isolated lines. automation can enrich or route alerts, but bad automation just moves mistakes faster.
 
 **words u gotta be able to say**
+- **asset inventory** - what exists and who owns it
 - **baseline / drift** - approved config / config moving away
 - **patch management** - fixing known vulnerable code
-- **asset inventory** - what exists and who owns it
-- **vulnerability management** - find, prioritize, remediate, verify
-- **log source** - system producing events
-- **SIEM** - log collection/correlation/search platform
-- **SOAR** - workflow automation around alerts
-- **data classification** - label by sensitivity/handling need
+- **vulnerability management** - find, prioritize, fix, verify
+- **log source** - system producing event data
+- **SIEM** - log collection, search, correlation
+- **SOAR / automation** - orchestrated response workflows
+- **data classification / retention / destruction** - sensitivity, storage time, disposal
 
-**study sources**
+**study sources (pick what fits your style)**
 - [Professor Messer: Secure Baselines - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/secure-baselines-sy0-701/) - baseline concept. **free**
-- [Professor Messer: Hardening Techniques - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/hardening-techniques-sy0-701/) - reduce attack surface. **free**
 - [Professor Messer: Vulnerability Scanning - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/vulnerability-scanning-sy0-701/) - scan/triage cycle. **free**
+- [Professor Messer: Penetration Testing - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/penetration-testing-sy0-701/) - where pentests fit in operations. **free**
 - [Professor Messer: Security Monitoring - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/security-monitoring-sy0-701/) - monitoring/SIEM terms. **free**
-- [ExamCompass Security+ SY0-701 practice tests](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) - domain practice. **free**
+- [Professor Messer: Hardening Techniques - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/hardening-techniques-sy0-701/) - reduce attack surface. **free**
 
-**do this** - make a one-page hardening checklist for a fresh Windows or Linux VM: disable one unused service, enable/update firewall policy, list local admin/root-equivalent users, confirm updates, and identify where auth/system logs live.
+**do this** - use the current [ExamCompass Security+ SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) for SecOps questions. also make a 6-row mini baseline for one Windows or Linux VM: accounts, services, firewall, updates, logs, backups.
 
-**measurable gate:** complete the checklist on one VM and score **85%+ on 3 fresh ExamCompass SY0-701 attempts** that include SecOps questions.
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** for SecOps.
 
-**can u explain it?** - unaided: describe what a SIEM does that plain log files do not, and name one risky default a secure baseline removes.
+**can u explain it?** ✅ - describe what a SIEM does that plain log files dont, and name one thing a secure baseline removes from a fresh OS install.
 
-### incident response, BC/DR, and resilience meow (~10h)
+### Cluster G - Incident Response, BC/DR & Resilience meow (~12h)
 
-**cert map** - CC D2; Security+ 4.8, 3.4, 5.2.
+**cert map** - CC **D2 BC/DR & Incident Response**; SY0-701 **4.8 Incident Response**, **3.4 Resilience**, and **5.2 Risk Metrics**.
 
-**heads up** - IR lifecycle, BC/DR, backups, RTO/RPO are both. Security+ goes deeper on forensics, order of volatility, chain of custody, and architecture-level resilience.
+**deltas** - IR lifecycle + BC/DR + backups + RTO/RPO = **both**. **Security+ deeper:** **digital forensics** and **architecture-level resilience** (hot/warm/cold sites, load balancing, clustering).
 
-**the idea** - incidents are handled by a repeatable lifecycle; disasters are handled by continuity and recovery plans with measurable time/data-loss targets. boring plans matter when things are on fire.
+**the idea** - incidents are handled through a lifecycle; disasters are handled through continuity and recovery plans with measurable time and data-loss targets.
 
-**how/why it actually works** - **PICERL** is the IR loop: Prepare, Identify, Contain, Eradicate, Recover, Lessons Learned. containment stops spread; eradication removes the cause; recovery restores service; lessons learned feeds prevention.
+**how/why it actually works** - **PICERL** is the IR loop: Prepare, Identify, Contain, Eradicate, Recover, Lessons Learned.
 
-**BC** keeps the business operating during disruption. **DR** restores systems after disruption. **RTO** is how long u can be down; **RPO** is how much data u can lose. backup design follows from those numbers, not vibes.
+containment stops spread. eradication removes the cause. recovery restores service. lessons learned feeds new controls so the same incident does not repeat.
 
-forensics adds evidence discipline: preserve volatile data first when needed, maintain chain of custody, and dont "clean up" before u know what happened.
+**BCP** keeps the business operating during disruption; **DRP** restores technology after disruption.
+
+**RTO** is max downtime. **RPO** is max data loss. backup design follows those numbers, not vibes. forensics adds evidence discipline: collect volatile evidence first when needed, preserve chain of custody, and dont clean up before u understand what happened.
 
 **words u gotta be able to say**
-- **event / incident / breach** - observed activity / harmful security event / confirmed data exposure
+- **event / incident / breach** - observed activity / harmful security event / confirmed exposure
 - **PICERL** - prepare, identify, contain, eradicate, recover, lessons
 - **BCP / DRP** - continuity plan / recovery plan
 - **RTO / RPO** - max downtime / max data loss
 - **MTTR / MTBF** - repair time / failure interval
+- **hot / warm / cold site** - ready now / partial / basic recovery site
 - **chain of custody** - evidence handling record
 - **order of volatility** - collect most fragile evidence first
 
-**study sources**
+**study sources (pick what fits your style)**
 - [Professor Messer: Incident Response - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/incident-response-sy0-701/) - IR phases. **free**
 - [Professor Messer: Digital Forensics - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/digital-forensics-sy0-701/) - evidence and process. **free**
-- [Professor Messer: Resiliency - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/resiliency-sy0-701/) - HA/resilience. **free**
+- [Professor Messer: Resiliency - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/resiliency-sy0-701/) - HA and architecture resilience. **free**
 - [Professor Messer: Backups - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/backups-sy0-701/) - backup types and strategy. **free**
 
-**do this** - write a mini IR runbook for "phishing email led to one user credential being used from a new country." include PICERL phase headings, first 5 actions, what logs u need, and one containment action.
+**do this** - use the current [ExamCompass Security+ SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) for IR/BCDR/resilience questions. write a 6-heading mini runbook for "phished user, credential used from a new country."
 
-**measurable gate:** runbook has all 6 PICERL phases, correctly states RTO vs RPO, and u score **85%+ on 3 fresh ExamCompass attempts** that include IR/resilience questions.
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** AND put the 6 PICERL phases in order and state RTO vs RPO in one sentence each.
 
-**can u explain it?** - unaided: given an incident scenario, name the phase, next action, and what evidence u must preserve before changing the system.
+**can u explain it?** ✅ - given an incident scenario, name which PICERL phase youre in and the next action. then say what evidence u preserve before changing the affected system.
 
-### risk, governance, and program management meow (~8h)
+### Cluster H - GRC & Security Program Management meow (~14h)
 
-**cert map** - CC D1; Security+ D5.
+**cert map** - CC **D1 Security Principles**; SY0-701 **5.0 Security Program Management & Oversight**.
 
-**heads up** - risk/governance/awareness are both. Security+ goes deeper on third-party risk, audits/assessments, compliance, and named frameworks. ISC2 Code of Ethics remains CC only.
+**deltas** - risk/governance/awareness = **both**. **Security+ only/deeper:** third-party risk, formal audits/assessments, named frameworks. **CC only:** ISC2 Code of Ethics (already gated in Cluster A).
 
-**the idea** - GRC is how an org decides what risk matters, which controls are required, and how to prove the controls exist. its the "show me evidence" layer mhm.
+**the idea** - GRC is how an org decides which risks matter, what controls are required, and what evidence proves the controls actually exist.
 
-**how/why it actually works** - risk is usually framed as likelihood x impact. treatment choices are **avoid**, **mitigate**, **transfer**, or **accept**.
+**how/why it actually works** - **risk management** starts by identifying the asset, threat, vulnerability, likelihood, and impact. treatment choices are avoid, mitigate, transfer, or accept.
 
-governance documents form a stack: **policies** state intent, **standards** define mandatory requirements, **procedures** say how to do it, **guidelines** suggest good practice.
+governance documents form a stack: **policies** state intent, **standards** define mandatory requirements, **procedures** give steps, and **guidelines** suggest good practice.
 
-audits and assessments compare reality to a requirement. awareness training reduces human-risk patterns like phishing, credential reuse, and bypassing certificate warnings.
+third-party risk exists because vendors become part of your trust boundary. audits and assessments compare reality to requirements and produce evidence.
+
+frameworks like **NIST CSF 2.0** and **ISO/IEC 27001:2022** give shared language so controls, risks, owners, and evidence dont float around as vibes mhm.
 
 **words u gotta be able to say**
 - **risk appetite / tolerance** - how much risk org accepts
 - **avoid / mitigate / transfer / accept** - four treatment choices
 - **policy / standard / procedure / guideline** - intent / requirement / steps / advice
 - **BIA** - business impact analysis
-- **third-party risk** - vendor/supply-chain risk
-- **audit / assessment** - formal check / evaluation
-- **NIST CSF 2.0 / ISO 27001:2022** - common framework / ISMS standard
+- **third-party risk** - vendor or supply-chain risk
+- **audit / assessment / attestation** - formal check / evaluation / evidence statement
+- **NIST CSF 2.0** - govern, identify, protect, detect, respond, recover
+- **ISO/IEC 27001:2022** - information security management system standard
 
-**study sources**
-- [Professor Messer: Security Policies - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/security-policies-sy0-701/) - governance doc stack. **free**
-- [Professor Messer: Risk Management - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/risk-management-sy0-701/) - risk vocabulary. **free**
+**study sources (pick what fits your style)**
+- [Professor Messer: Security Policies - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/security-policies-sy0-701/) - policy/standard/procedure stack. **free**
+- [Professor Messer: Risk Management - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/risk-management-sy0-701/) - risk vocabulary and treatment. **free**
 - [Professor Messer: Third-party Risk Assessment - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/third-party-risk-assessment-sy0-701/) - vendor risk. **free**
 - [Professor Messer: Business Impact Analysis - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/business-impact-analysis-sy0-701/) - BIA/RTO/RPO tie-in. **free**
-- [ISC2 CC Practice Quiz](https://cloud.connect.isc2.org/cc-quiz) + [CC Flash Cards](https://cloud.connect.isc2.org/cc-flashcards) - free with likely signup; useful if sitting CC. **free with signup**
+- [Professor Messer: Audits and Assessments - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/audits-and-assessments-sy0-701/) - evidence and assessments. **free**
+- [Professor Messer: Security Awareness - SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/security-awareness-sy0-701/) - awareness and human-risk controls. **free**
 
-**do this** - pick one risk from your lab, like "Windows VM has RDP exposed to the host-only network." write: asset, threat, vulnerability, impact, likelihood, risk rating, treatment choice, and control.
+**do this** - use the current [ExamCompass Security+ SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) for governance/risk/program-management questions. then write one mini risk note: asset, threat, vulnerability, impact, likelihood, treatment, control, evidence.
 
-**measurable gate:** complete the risk note and score **85%+ on 3 fresh ExamCompass attempts** that include governance/risk questions. if sitting CC, recite the 4 ISC2 Code of Ethics canons in order.
+**measurable gate:** **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** for governance/risk.
 
-**can u explain it?** - unaided: for one risk, justify whether u would avoid, mitigate, transfer, or accept it. then explain the difference between a policy and a procedure.
+**can u explain it?** ✅ - for a given risk, pick a treatment (avoid/mitigate/transfer/accept) and justify it in one sentence. then explain the difference between a policy and a procedure.
 
 ---
 
@@ -583,7 +553,7 @@ book when the gates say u are ready meow
 **exam money note:** about **$199 + $50/yr AMF** now. no new free 1MCC vouchers after **2026-05-20**. use the exam only if u want that checkpoint; dont treat it like it magically fixes a thin resume.
 
 **free checkpoint before paying:**
-- [ ] can explain all 5 CC domains: Security Principles, BC/DR & IR, Access Controls, Network Security, Security Operations.
+- [ ] clusters **A, D, B, C, F, G, H** are explainable without notes and map to all 5 CC domains: Security Principles, BC/DR & IR, Access Controls, Network Security, Security Operations.
 - [ ] completed [ISC2 CC Practice Quiz](https://cloud.connect.isc2.org/cc-quiz) and reviewed [CC Flash Cards](https://cloud.connect.isc2.org/cc-flashcards).
 - [ ] can recite the ISC2 Code of Ethics canons in order if sitting the exam.
 - [ ] if testing on/after **2026-09-01**, re-check the [CC Exam Outline](https://www.isc2.org/certifications/cc/cc-certification-exam-outline).
@@ -593,10 +563,12 @@ book when the gates say u are ready meow
 ### Security+ SY0-701 readiness
 
 **book only if all are true:**
-- [ ] watched or reviewed the relevant [Professor Messer SY0-701 course sections](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) by weak domain, not by marathon-watching.
-- [ ] **85%+ on 3 fresh** [ExamCompass SY0-701 practice tests](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests).
+- [ ] all 8 merged-study clusters (**A, D, B, C, E, F, G, H**) have both gates passed: **85%+ on 3 fresh ExamCompass SY0-701 attempts on the domain-relevant sets** + the cluster's `can u explain it?`.
+- [ ] reviewed weak areas through the relevant [Professor Messer SY0-701 course sections](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) and per-episode deep links above, not by marathon-watching the whole course again.
+- [ ] for final mixed practice, **85%+ on 3 fresh** [ExamCompass SY0-701 Tests 1-24](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests).
 - [ ] if buying practice, use the current [Messer SY0-701 Success Bundle](https://www.professormesser.com/sy0-701-success-bundle/) or [Dion SY0-701 Practice Exam Pack](https://www.diontraining.com/products/comptia-security-sy0-007-unlimited-practice-exam). dont use old generic Messer practice-exam links.
-- [ ] can label whether each weak area is D1 concepts, D2 threats, D3 architecture, D4 operations, or D5 program management.
+- [ ] if using Messer free pop quizzes, use the singular `sy0-701-pop-quiz` posts linked from episode pages, like the verified example above; avoid the old plural index.
+- [ ] can label whether each weak area is SY0-701 **1.0 concepts**, **2.0 threats**, **3.0 architecture**, **4.0 operations**, or **5.0 program management**.
 
 **can u explain it?** - explain one complete story: attacker phishes creds -> logs in from unusual country -> accesses a forbidden object -> SIEM alert fires -> IR contains account -> risk owner updates policy/control. name the mechanism at each step.
 
@@ -605,10 +577,11 @@ book when the gates say u are ready meow
 ## exit check - done with Goal 2
 
 - [ ] Network+ gate passed, or u already had CCNA-level networking and can prove it with the subnet/troubleshooting explain gates.
+- [ ] merged CC + Security+ clusters **A, D, B, C, E, F, G, H** all passed both gates: the ExamCompass measurable gate and the `can u explain it?` gate.
 - [ ] CC domains are explainable; paid CC exam is optional and correctly understood as ~$199 + AMF, not free.
-- [ ] Security+ readiness gate passed, or u know exactly which SY0-701 domain is still weak.
-- [ ] completed Natas 0-15, CryptoHack intro + 3 hash challenges, TryHackMe Crack the Hash Task 1, PacketMaze, and the listed PortSwigger Apprentice labs.
-- [ ] can explain CIA, TLS/PKI, salted password hashing, authn vs authz, DAC/MAC/RBAC/ABAC, ARP-spoof -> MITM, SYN flood, SIEM basics, PICERL, RTO/RPO, and risk treatment choices.
+- [ ] Security+ readiness gate passed, or u know exactly which SY0-701 domain and cluster are still weak.
+- [ ] completed the hands-on artifacts inside this file: Wireshark TCP handshake labels, one VM baseline, one IR runbook, and one risk note.
+- [ ] can explain CIA, Zero Trust, stateful firewalls, TLS/PKI, authn vs authz, DAC/MAC/RBAC/ABAC, malware and vulnerability classes, SIEM basics, PICERL, RTO/RPO, and risk treatment choices.
 
 **final can u explain it?** - unaided, write or say a 10-minute walkthrough:
 
