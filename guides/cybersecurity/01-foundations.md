@@ -1,224 +1,187 @@
-# Goal 1: Foundations — Hardware & Operating Systems meow (~140h)
+# Goal 1: Foundations - A+ hardware, OS, networking meow (~140h)
 
-> **goal:** the IT bedrock security sits on — if u dont know how computers/OS/networking work normally, u cant tell whats abuse and whats normal meow
+> **goal:** build the IT floor security sits on: hardware, operating systems, networking, basic security, and troubleshooting. the A+ exam is optional; the knowledge is not qwq
 
-**Total: ~140 hours** (≈ 10–12 weeks at 2h/day). this goal maps to **CompTIA A+ (220-1201 / 220-1202)** domains. if u already work in IT support, u can test out fast and jump to [Goal 2](02-core.md).
+**Total: ~140 hours** (about 10 weeks at 2h/day). this goal maps to **CompTIA A+ Core 1 (220-1201)** + **Core 2 (220-1202)**. if u already work in IT support, use the gates as a fast diagnostic and jump to [Goal 2](02-core.md) when both cores are clean.
 
-[← Prep](00-prep.md) · [Back to hub](README.md) · [Next: Goal 2 →](02-core.md)
+[<- Prep](00-prep.md) · [Back to hub](README.md) · [Next: Goal 2 ->](02-core.md)
 
 ---
 
 ## how to track your progress meow
 
-this is the same system from the shared foundations — the `- [ ]` checkboxes below are display-only in this public repo. **fork** the repo to tick them in your own copy, OR **copy the checklist into your notes** (Obsidian/OneNote). your *actual* progress is the **two-part gate** at the end of each topic: (1) measurable (lab passed / % hit), (2) explain (u understand why). both must pass meow
+the `- [ ]` boxes below are display-only in this public repo. fork the repo if u want to tick them in your own copy, or copy this checklist into Obsidian/OneNote and track it there.
+
+your real progress is the **two-part gate**:
+
+1. **measurable gate** - the required score/lab result. for A+ here, that means fresh ExamCompass attempts, not vibes.
+2. **can u explain it?** - u can say why the mechanism works, unaided.
+
+both must pass before u count a topic done. the checkbox is just a map, not proof meow
 
 ---
 
 ## should u take the A+?
 
-- **yes, if** u have no IT background. it can help with help-desk screens, which are the most common on-ramp into security.
-- **skip the exam (study the content only), if** u already have IT/help-desk experience. dont pay ~$492 to prove what your resume already shows — put that money toward Network+ or Security+ instead.
+- **take it if** u have no IT background and want the help-desk / desktop-support door open.
+- **study it but skip the paid exam if** u already have IT support experience, or if cash is tight and cybersecurity is the main goal.
 
-> 💰 **dont waste the money:** dont book until youre scoring **85%+ on fresh practice tests** from 2+ sources. take **Core 1 (220-1201) first, then Core 2 (220-1202)** — one at a time, please. (~$246 each in 2026. see [certifications.md](../../references/certifications.md) for the full cost breakdown.)
+real talk: you dun really need A+ if you going into cybersecurity, you can save it for another certificate. the reason we still study the content is bc A+ teaches the normal system: hardware, OS, networking, accounts, malware basics, and troubleshooting. security is just "what happens when that normal system gets abused."
 
----
-
-## the path (todo-tree)
-
-- [ ] **Block 1** — hardware + how computers work (~40h) · **A+ Core 1: domains 1+3+4**
-- [ ] **Block 2** — operating systems (Windows + Linux) (~50h) · **A+ Core 2: domain 1**
-- [ ] **Block 3** — networking basics + security intro (~40h) · **A+ Core 1: domain 2 + Core 2: domain 2**
-- [ ] **Block 4** — practice-exam sprint (~10h)
-- [ ] ✅ **exit check** — comfortable in both Windows and Linux shell, can subnet on paper, ready for Network+
+if u do sit the exam, book one core at a time: **Core 1 first**, then **Core 2**. current pass scores: **Core 1 = 675/900**, **Core 2 = 700/900**. check [certifications.md](certifications.md) before paying, because prices move.
 
 ---
 
-## Block 1 · Hardware + How Computers Work (~40h)
+## the A+ study group map
 
-### A+ Core 1 coverage: Domain 1 (Mobile Devices 13%), Domain 3 (Hardware 25%), Domain 4 (Virtualization & Cloud 11%)
+the clean trick: **Professor Messer section number == CompTIA domain number**.
 
-**the idea** — a running computer is a loop (fetch-decode-execute), not a magic box. understanding what the CPU/RAM/storage/motherboard *do* is the floor — an attacker abuses the same hardware mechanisms u need to know for troubleshooting.
+so Core 1 Domain 3.0 Hardware = Messer Core 1 Section 3. Core 2 Domain 2.0 Security = Messer Core 2 Section 2. no guessing through a giant channel, dw.
 
-**how it actually works** — same mechanism as Shared Foundations, just with the A+ parts layered on top:
+- [ ] **Core 1 (220-1201)** - mobile, networking, hardware, virtualization/cloud, troubleshooting (~70h)
+- [ ] **Core 2 (220-1202)** - operating systems, security, software troubleshooting, operations (~60h)
+- [ ] **practice calibration** - ExamCompass fresh-test gates + optional paid confidence checks (~10h)
+- [ ] **exit check** - both core gates pass, both explain gates pass, ready for Goal 2
 
-a CPU repeats the **fetch–decode–execute cycle** from boot until shutdown:
-1. **fetch** — the **program counter (PC)** holds the memory address of the next instruction. that address is copied to the **memory address register (MAR)**, the value at that RAM address is pulled into the **memory data register (MDR)** and then the **current instruction register (CIR)**; the PC increments.
-2. **decode** — the **control unit** interprets the bits in the CIR: which operation, which operands.
-3. **execute** — the **ALU** (arithmetic logic unit) does the math/logic, or data is moved, or the PC jumps. then the loop repeats.
+### Core 1 domain map - 220-1201
 
-modern CPUs overlap these steps via an **instruction pipeline** (next fetch starts before the previous execute finishes).
+| Domain | Weight | What it means in this guide | Messer section |
+|---|---:|---|---|
+| 1.0 Mobile Devices | 13% | laptops, phones, tablets, mobile connectivity | Section 1: Mobile Devices |
+| 2.0 Networking | 23% | ports, protocols, IP, Wi-Fi, tools | Section 2: Networking |
+| 3.0 Hardware | 25% | CPU, RAM, storage, motherboards, printers | Section 3: Hardware |
+| 4.0 Virtualization & Cloud Computing | 11% | VMs, hypervisors, cloud basics | Section 4: Virtualization and Cloud Computing |
+| 5.0 Hardware & Network Troubleshooting | 28% | diagnose, test, fix, verify, document | Section 5: Hardware and Network Troubleshooting |
 
-why RAM vs storage matters, physically: **RAM is volatile** — fast electrical cells the CPU addresses directly, but they clear on power loss. **storage (SSD/HDD) is persistent** but far slower and *not* directly executable. so "running a program" = the OS copies it from storage into RAM, creates a **process** (its own address space + PC + registers), and the CPU runs the fetch-decode-execute loop on those in-RAM instructions. more RAM = more/bigger programs at once; an SSD speeds *launch/load*, not raw compute.
+### Core 2 domain map - 220-1202
 
-**A+ also checks this vocab:** CPU sockets/generations (Intel LGA vs AMD AM4/AM5), cores vs threads, cache (L1/L2/L3), **RAM** (DDR4/DDR5, dual-channel, ECC), **storage** (HDD vs SSD, SATA vs NVMe/M.2, RAID 0/1/5/10), **motherboard** (BIOS/UEFI, CMOS battery, PCIe slots, chipset), **PSU** (wattage, 80+ ratings, connectors), **ports** (USB 2/3/C, HDMI, DisplayPort, Thunderbolt), mobile devices (iOS/Android, screen/battery/charge ports), printers. dw this part is mostly naming things — the mechanism above is the core qwq
+| Domain | Weight | What it means in this guide | Messer section |
+|---|---:|---|---|
+| 1.0 Operating Systems | 28% | Windows, Linux, macOS, command line | Section 1: Operating Systems |
+| 2.0 Security | 28% | malware, auth, physical/logical controls, hardening | Section 2: Security |
+| 3.0 Software Troubleshooting | 23% | fix OS/app/security symptoms | Section 3: Software Troubleshooting |
+| 4.0 Operational Procedures | 21% | documentation, change, backups, safety, scripting | Section 4: Operational Procedures |
+
+---
+
+## Core 1 - hardware, networking, virtualization, troubleshooting meow (~70h)
+
+**cert map** - **A+ Core 1 (220-1201)** Domains 1.0-5.0. use [Professor Messer's A+ 220-1201 Core 1 free training course](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/) as the spine: Section 1 = Domain 1, Section 2 = Domain 2, and so on.
+
+**the idea** - Core 1 teaches the machine as a physical + networked system: what the parts do, how they connect, how data moves, and how to troubleshoot when the chain breaks.
+
+**how/why it actually works** - a computer is a loop wrapped in layers:
+
+1. the **CPU** runs a fetch-decode-execute cycle: the **program counter** points to the next instruction in RAM, the control unit decodes it, and the **ALU** or another CPU unit executes it.
+2. **RAM** is fast and volatile, so the OS copies programs from persistent **storage** into RAM before the CPU can run them. more RAM helps concurrency; faster SSD storage helps loading and paging.
+3. the **motherboard** is the interconnect: CPU socket, RAM slots, PCIe lanes, chipset, firmware, power delivery, and connectors all decide what can talk to what.
+4. networking adds another chain: DNS names become IP addresses, TCP sessions use ports, Wi-Fi/Ethernet carry frames, and routers move packets between networks.
+5. virtualization works by a **hypervisor** presenting virtual hardware to guest OSs, then scheduling real CPU/RAM/storage underneath. cloud is basically someone elses virtualized infrastructure plus managed services.
+6. troubleshooting works because u narrow the failure point: identify the problem, form a theory, test it, plan/implement the fix, verify full function, then document. thats not ceremony - it stops u from randomly swapping parts until lucky.
 
 **words u gotta be able to say:**
-- **CPU / core / thread / clock speed** — executes instructions / independent execution unit / logical core via SMT / GHz cycles/sec
-- **fetch–decode–execute cycle** — the CPUs loop per instruction
-- **program counter / register / ALU / control unit** — next-instruction address / tiny CPU storage / math unit / decode+direct unit
-- **RAM (volatile) / storage (persistent)** — fast/clears on power loss / slow/survives power off
-- **process** — a program loaded into RAM and running
-- **BIOS/UEFI** — firmware that boots the OS
-- **RAID 0/1/5/10** — striping/mirroring/parity/both
-- **NVMe / M.2 / PCIe** — fast SSD protocol / physical form factor / expansion bus
+- **CPU / core / thread / clock speed** - instruction engine / execution unit / logical execution path / cycles per second
+- **fetch-decode-execute** - CPU loop for each instruction
+- **program counter / register / ALU / control unit** - next address / tiny CPU storage / math logic / decode-direct unit
+- **RAM / storage** - fast volatile working memory / persistent data storage
+- **DDR4 / DDR5 / ECC / dual-channel** - RAM generations / error correction / paired bandwidth mode
+- **SSD / HDD / NVMe / SATA / M.2** - flash drive / spinning disk / fast protocol / older bus / form factor
+- **motherboard / UEFI / PCIe / PSU** - main board / boot firmware / expansion bus / power supply
+- **port / protocol / DNS / DHCP / gateway** - service number / rules / name lookup / IP assignment / router out
+- **hypervisor / VM / snapshot** - virtualization layer / guest machine / saved VM state
+- **troubleshooting method** - structured diagnose -> fix -> verify -> document flow
 
 **study sources (pick what fits your style):**
-- [Professor Messer — A+ 220-1201 (Core 1) playlist](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-training-course/) — full free video course covering all Core 1 domains. **free** ✅
-- [CS50x Week 0–1](https://cs50.harvard.edu/x/) — build logic in Scratch then write your first C program; see the fetch-execute cycle in action. **free** ✅
-- [Branch Education — "How does a CPU work?"](https://www.youtube.com/watch?v=cNN_tTXABUA) + ["How do SSDs work?"](https://www.youtube.com/watch?v=5Mh3o886qpg) — 3D animations of the actual hardware. **free** ✅
+- [Professor Messer - A+ 220-1201 Core 1 free training course, V15](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/) - primary course; watch Sections 1-5 because they map exactly to Domains 1.0-5.0. **free**
+- [ExamCompass - A+ Core 1 Practice Test 1 (Exam 220-1201)](https://www.examcompass.com/comptia-a-plus-certification-practice-test-1-exam-220-1201) - free practice spine; use fresh 220-1201 test numbers for the gate. **free**
+- [ExamCompass - A+ 220-1201 Acronyms Quiz Part 1](https://www.examcompass.com/comptia-a-plus-220-1201-exam-acronyms-quiz-part-1) - acronym drill so terms like `DIMM`, `NVMe`, `DHCP`, and `UEFI` stop feeling random. **free**
+- explore more -> [PowerCert - "RAM Explained - Random Access Memory"](https://www.youtube.com/watch?v=PVad0c2cljo) - visual supplement for Core 1 D3.3 memory. **free**
+- explore more -> [Branch Education - "How do SSDs Work?"](https://www.youtube.com/watch?v=5Mh3o886qpg) - deeper visual supplement for Core 1 D3.4 storage; heavier than exam depth, useful for mechanism intuition. **free**
 
-**do this** — [HTB Academy — "Introduction to Cybersecurity" module (free tier)](https://academy.hackthebox.com/) + [Codecademy — "Intro to Cybersecurity"](https://www.codecademy.com/learn/introduction-to-cybersecurity) (OS layers, virtualization basics). both are free and browser-based. ✅
+**do this** - work through Messer Core 1 Sections 1-5, then use ExamCompass as the free practice spine. when u miss a question, tag it to the matching domain number: Domain 3 miss -> rewatch Messer Section 3. this is why the section==domain mapping matters meow
 
-**measurable gate:** score **75%+ on 3 fresh attempts** at [ExamCompass A+ Core 1 — Hardware quizzes](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-core-1-practice-tests) (domains 1+3+4). thats the real check — either u hit the % or u didnt meow
+**measurable gate:** **≥85% on 3 fresh ExamCompass Core 1 (220-1201) practice tests**, with **no Core 1 domain <75%** when u group the misses by domain. fresh means different test numbers, not retaking the same set until u memorize it.
 
-**can u explain it?** ✅ — out loud or written, unaided: *"trace one instruction through fetch, decode, execute — name which register holds the next address. explain why a program must be copied from storage into RAM before the CPU can run it, and what makes RAM different from an SSD."*
+**paid confidence gate (optional):** if u are actually booking Core 1, add one paid fresh practice attempt from [Jason Dion - A+ Core 1 (220-1201) 6 Practice Exams](https://www.udemy.com/course/comptia-a-core-1-220-1201-6-practice-exams/) or [Professor Messer - Core 1 Success Bundle](https://www.professormesser.com/220-1201-success-bundle/). aim for **≥85%** before paying for the real exam. this is confidence, not required for learning.
 
-**CTF thread (running from 00-prep):** if youve started **OverTheWire Bandit** (levels 0–5 from prep), keep going — reach **level 10** by the end of this block. each level reinforces the "files live in a filesystem the OS manages" mental model. no new CTF intro needed here; just keep the thread alive meow
+**can u explain it?** ✅ - out loud or written, unaided: *"walk one instruction through fetch-decode-execute; explain why a program has to load from storage into RAM before the CPU can run it; explain the real difference between RAM and SSD storage; then recite the A+ troubleshooting method and show how youd use it for a no-boot or no-network case."*
 
 ---
 
-## Block 2 · Operating Systems — Windows + Linux (~50h)
+## Core 2 - operating systems, security, software troubleshooting, operations meow (~60h)
 
-### A+ Core 2 coverage: Domain 1 (Operating Systems 28%)
+**cert map** - **A+ Core 2 (220-1202)** Domains 1.0-4.0. use [Professor Messer's A+ 220-1202 Core 2 free training course](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) as the spine: Section 1 = Domain 1, Section 2 = Domain 2, Section 3 = Domain 3, Section 4 = Domain 4.
 
-**the idea** — the shell is a program that reads a line, parses it, and asks the OS kernel to do the work. the OS is the layer between hardware and your apps — if u dont know how it hands out memory, manages processes, and enforces permissions, u cant understand what an exploit abuses.
+**the idea** - Core 2 teaches the OS and support layer: users, files, permissions, commands, malware, hardening, symptoms, procedures, and the habits that keep changes from making things worse.
 
-**how it actually works** — same shell/OS mechanism as Shared Foundations, now with Windows + Linux exam coverage layered on top:
+**how/why it actually works** - the OS is the broker between apps and hardware:
 
-when u type `ls -l /etc` and press Enter: the shell splits the line into **command + arguments**, resolves `ls` by searching each directory in your **`PATH`** environment variable, then calls the kernel to **`fork`** a new process and **`exec`** the `ls` binary into it. `ls` runs, writes to **stdout**, exits with a numeric **exit code** (0 = success).
-
-the power comes from three OS mechanisms:
-- **streams & pipes** — every process has stdin/stdout/stderr. a **pipe `|`** connects one processs stdout to the nexts stdin; **redirects** `>`/`>>` send stdout to a file.
-- **the filesystem is a tree** — one root `/`, **absolute paths** start at `/`, **relative paths** start from `pwd`, `~` = home. everything (devices, config) is a file under it.
-- **permissions** — each file has read/write/execute bits for owner/group/other, shown as `rwxr-xr-x`. `chmod 755` sets them via **octal** (r=4, w=2, x=1 → 7=rwx, 5=r-x). this is *the* access-control primitive an attacker abuses or a defender hardens.
-
-`sudo` runs one command as **root** (uid 0, all-powerful); `ps`/`top` list processes; `kill` sends a signal by PID.
-
-**A+ Core 2 Domain 1 also wants:**
-- **Windows:** editions (Home/Pro/Enterprise), **NTFS permissions** (read/write/modify/full control) + inheritance, **Registry** (`HKLM`, `HKCU`), CLI (`ipconfig`, `ping`, `tracert`, `netstat`, `tasklist`, `sfc /scannow`), Task Manager, Event Viewer, Windows Defender/Firewall, **UAC** (User Account Control).
-- **Linux:** filesystem hierarchy (`/etc`, `/var/log`, `/home`, `/bin`, `/usr`), core commands (`ls`, `grep`, `find`, `chmod`, `chown`, `ps`, `kill`, `top`, `apt`/`yum`), octal permissions (755/644/700), users & groups (`sudo`, `/etc/shadow`, `useradd`).
-- **Hybrid identity (2026 reality):** on-prem **Active Directory** (Kerberos, LDAP, GPOs, domain/forest) syncs to **Microsoft Entra ID** (was Azure AD) in most real environments. learn classic AD, yes — just know it usually lives beside cloud identity now, not alone in a museum meow
+1. a **process** is a running program with memory, handles, registers, and permissions. the kernel schedules processes onto CPU time and mediates their access to files, network, and devices.
+2. a shell command is parsed into command + arguments; the OS searches **`PATH`**, starts the executable, connects stdin/stdout/stderr, and returns an exit code.
+3. permissions are enforcement points: Windows uses NTFS ACLs, inheritance, UAC, and identities; Linux uses owner/group/other bits plus root/sudo. attackers love mis-set permissions bc the OS will obey them exactly.
+4. malware is just code running with some level of privilege. removal is about stopping execution, killing persistence, cleaning files/settings, patching the entry point, and verifying it doesnt restart.
+5. operational procedures exist because real systems have humans around them: documentation, change management, backups, safety, privacy, and incident notes make fixes repeatable instead of lucky.
+6. software troubleshooting is symptom -> scope -> likely layer: user profile, app, OS, driver, network, security control, or hardware. u test the smallest likely cause first so u dont break five things trying to fix one.
 
 **words u gotta be able to say:**
-- **shell / kernel / PATH** — command-line program / OS core / dirs searched for a command
-- **stdin / stdout / stderr / pipe `|` / redirect `>`** — input / normal output / error output / connect streams / send to file
-- **absolute vs relative path / `~`** — from `/` vs from `pwd` / home shortcut
-- **permissions / `chmod` / octal (755, 644)** — read/write/execute bits / change them / numeric notation
-- **process / PID / `kill` / `ps` / `top`** — running program / its id / send signal / list / live monitor
-- **root / `sudo`** — superuser (uid 0) / run one command with root privs
-- **NTFS / inheritance / Registry / UAC** — Windows filesystem / perm propagation / system config DB / privilege escalation prompt
-- **Active Directory / Kerberos / LDAP / GPO** — domain identity system / ticket-based auth / directory protocol / group policy
-- **Entra ID (Azure AD)** — Microsofts cloud identity (AD syncs to it)
+- **kernel / process / service / driver** - OS core / running program / background program / hardware interface code
+- **PATH / environment variable / exit code** - command search list / process setting / success-failure number
+- **stdin / stdout / stderr / pipe** - input / normal output / error output / stream connector
+- **NTFS ACL / inheritance / UAC** - Windows permissions / child object permission flow / admin approval prompt
+- **root / sudo / chmod / chown** - Linux superuser / run as root / change mode / change owner
+- **Registry / HKLM / HKCU** - Windows configuration database / machine hive / user hive
+- **malware / persistence / quarantine** - malicious code / survives reboot / isolate suspected file
+- **MFA / least privilege / encryption** - more than one factor / minimum access / protect data with keys
+- **change management / rollback / backup** - controlled change / undo path / restorable copy
+- **script / variable / loop / conditional** - automation file / named value / repeat / branch
 
-**study sources:**
-- [Professor Messer — A+ 220-1202 (Core 2) playlist, Domain 1 (Operating Systems)](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) — Windows + Linux + macOS coverage. **free** ✅
-- [The Missing Semester (MIT) — Lecture 1 (The Shell) + Lecture 2 (Shell Tools)](https://missing.csail.mit.edu/2020/course-shell/) — best CLI intro, text + video + exercises. **free** ✅
-- [TCM Security — Practical Help Desk course (YouTube)](https://www.youtube.com/playlist?list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47) — real help-desk Windows troubleshooting + Active Directory basics. **free** ✅
-- [LabEx Linux Journey](https://labex.io/linuxjourney) — self-paced text lessons on CLI, filesystem, permissions. **freemium** ✅
+**study sources (pick what fits your style):**
+- [Professor Messer - A+ 220-1202 Core 2 free training course, V15](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) - primary course; watch Sections 1-4 because they map exactly to Domains 1.0-4.0. **free**
+- [ExamCompass - A+ Core 2 Practice Test 1 (Exam 220-1202)](https://www.examcompass.com/comptia-a-plus-certification-practice-test-1-exam-220-1202) - free practice spine; use fresh 220-1202 test numbers for the gate. **free**
+- [ExamCompass - A+ 220-1202 Acronyms Quiz Part 1](https://www.examcompass.com/comptia-a-plus-220-1202-exam-acronyms-quiz-part-1) - acronym drill for OS, security, procedure, and troubleshooting terms. **free**
 
-**do this:**
-- [TryHackMe — Windows Fundamentals 1–3](https://tryhackme.com/room/windowsfundamentals1xbx) (free rooms) — filesystem, Registry, UAC, Defender in a live browser VM. **free** ⚠️ (loads fine in browser)
-- [HTB Academy — Windows Fundamentals module](https://academy.hackthebox.com/) (free tier) — CLI/PowerShell against live targets. **free** ✅
-- [HTB Academy — Linux Fundamentals module](https://academy.hackthebox.com/) (free tier) — nav, permissions, package mgmt. **free** ✅
-- **OverTheWire Bandit levels 0–15** (from prep) — SSH into Linux boxes, solve with `ls`, `cat`, `find`, `grep`, `ssh`, `base64`. **free** ✅
+**do this** - work through Messer Core 2 Sections 1-4, then use ExamCompass as the free practice spine. tag misses by the domain number they belong to: Domain 2 miss -> rewatch Messer Section 2. Core 2 Domain 1 and Domain 2 matter extra for cyber because they become the OS/security floor in Goal 2.
 
-**measurable gate:** complete **OverTheWire Bandit levels 0–15 unaided** (the "Bandit" thread from prep) AND score **78%+ on 3 fresh attempts** at [ExamCompass A+ Core 2 — Operating Systems quizzes](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-core-2-practice-tests). both must pass — Bandit proves real CLI skill, ExamCompass proves A+ vocab coverage meow
+**measurable gate:** **≥85% on 3 fresh ExamCompass Core 2 (220-1202) practice tests**, with **no Core 2 domain <75%** when u group the misses by domain. fresh means different test numbers, not a memorized retake.
 
-**can u explain it?** ✅ — out loud, unaided: *"type `cat notes.txt | grep TODO | wc -l` — explain what each `|` does to the data, what stdout is, and what `chmod 640 notes.txt` would let the owner vs group vs others do."*
+**paid confidence gate (optional):** if u are actually booking Core 2, add one paid fresh practice attempt from [Jason Dion - A+ Core 2 (220-1202) 6 Practice Exams](https://www.udemy.com/course/comptia-a-core-2-220-1202-6-practice-exams/) or [Professor Messer - Core 2 Success Bundle](https://www.professormesser.com/220-1202-success-bundle/). aim for **≥85%** before the real exam.
 
-**CTF thread:** Bandit 0–15 completion *is* your CTF for this block (gate above). by level 15 youve used SSH keys, `nc`, pipes, `find` by perms — youre building the "navigate + search + permissions" instinct the field runs on meow
+**can u explain it?** ✅ - out loud or written, unaided: *"explain what `PATH` does when u type a command, what stdout/stderr are, why least privilege limits malware damage, name 3 malware types, and walk how youd remove one without letting it persist after reboot."*
 
 ---
 
-## Block 3 · Networking Basics + Security Intro (~40h)
+## practice calibration - dont book on hope meow (~10h)
 
-### A+ Core 1 coverage: Domain 2 (Networking 23%) + Domain 5 (Troubleshooting 28% networking portion)
-### A+ Core 2 coverage: Domain 2 (Security 28%)
+this is not a separate cert silo. its the same topic study with a clean readiness check at the end.
 
-**the idea** — typing a URL kicks off a fixed sequence (DNS → TCP → TLS → HTTP), and every piece of that chain is either a hardening point or an attack surface. A+ teaches the mechanisms; security (next goal) teaches what breaks them.
+- [ ] **Core 1 free hard gate** - ≥85% on 3 fresh ExamCompass Core 1 (220-1201) tests, no Core 1 domain <75%.
+- [ ] **Core 1 explain gate** - can explain CPU/RAM/storage + troubleshooting, unaided.
+- [ ] **Core 2 free hard gate** - ≥85% on 3 fresh ExamCompass Core 2 (220-1202) tests, no Core 2 domain <75%.
+- [ ] **Core 2 explain gate** - can explain OS command execution + malware removal/persistence, unaided.
+- [ ] **optional paid confidence** - ≥85% on one fresh Dion or Messer Success Bundle practice exam for each core u plan to sit.
 
-**how it actually works** — same internet chain as Shared Foundations, trimmed to what A+ cares about rn:
+if u fail one domain, dont restart the whole goal. use the clean map: weak Core 1 Domain 2 means rewatch Core 1 Section 2. weak Core 2 Domain 4 means rewatch Core 2 Section 4. patch the exact leak, then retest with a fresh ExamCompass set.
 
-pressing Enter on `https://example.com` runs:
-1. **DNS resolution** — the OS asks a **recursive resolver**, which walks **root → TLD (`.com`) → authoritative** nameserver, which returns the **A record** (IPv4). cached with a **TTL**.
-2. **TCP three-way handshake** — **SYN → SYN-ACK → ACK** on **port 443**. establishes a reliable connection (sequence numbers, retransmit on loss).
-3. **TLS handshake** — ClientHello, ServerHello + **certificate** (proves identity via **CA**), agree on a **session key**, encrypt all further traffic. stops a **man-in-the-middle** from reading (**confidentiality**) or altering (**integrity**).
-4. **HTTP request/response** — `GET / HTTP/1.1` → `200 OK` + HTML.
-
-underneath: everything is **packets** routed hop-by-hop by IP. **ports** let one machine run many services (80 HTTP, 443 HTTPS, 22 SSH, 53 DNS, 445 SMB, 3389 RDP). the **OSI/TCP-IP models** name who does what (app/transport/network/data-link/physical layers).
-
-**A+ Core 1 Domain 2 also wants:** IPv4/IPv6 addressing, **subnetting** (CIDR `/24` `/30`, subnet masks), private vs public IPs (RFC 1918: 10.x, 172.16–31.x, 192.168.x), **DHCP/DNS/NTP**, **routing/switching/VLANs**, Wi-Fi (WPA2/WPA3, 2.4GHz/5GHz), cabling (Cat5e/6/6a, fiber), and the 7-step troubleshooting method (identify→theory→test→plan→implement→verify→document).
-
-**A+ Core 2 Domain 2 (Security) intro:** malware types (virus/worm/trojan/ransomware/rootkit), **social engineering** (phishing/vishing/tailgating), **physical security** (badge/biometric/mantrap), **logical security** (ACLs, MFA, principle of least privilege), encryption basics (at-rest vs in-transit), **hardening** (disable unused services, patch, firewall rules).
-
-**words u gotta be able to say:**
-- **DNS / A record / CNAME / MX / TTL** — name→IP / IPv4 record / alias / mail server / cache lifetime
-- **IP / IPv4 / IPv6 / subnet mask / CIDR / gateway** — network address / 32-bit / 128-bit / which bits = network / slash notation / router to other networks
-- **port / well-known ports** — service id (22 SSH, 53 DNS, 80 HTTP, 443 HTTPS, 445 SMB, 3389 RDP, 25 SMTP)
-- **TCP handshake (SYN/SYN-ACK/ACK) / packet** — reliable connection setup / unit data is routed in
-- **TLS / certificate / CA / session key** — secure channel / identity proof / trusted issuer / symmetric key after handshake
-- **confidentiality / integrity / man-in-the-middle** — cant-read / cant-alter / attacker between u and server
-- **OSI model (7 layers) / TCP-IP model (4 layers)** — physical/data-link/network/transport/session/presentation/app vs link/internet/transport/app
-- **DHCP / DNS / NTP** — auto IP assignment / name resolution / time sync
-- **malware: virus / worm / trojan / ransomware / rootkit** — self-replicates (needs host) / self-propagates / masquerades as legit / encrypts+demands / hides in kernel
-- **social engineering: phishing / vishing / tailgating** — fake email / voice scam / follow someone through a door
-- **principle of least privilege / MFA / ACL** — minimal access needed / multi-factor auth / access control list
-
-**study sources:**
-- [Professor Messer — A+ 220-1201 Domain 2 (Networking)](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/) + [A+ 220-1202 Domain 2 (Security)](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) — core coverage. **free** ✅
-- [PowerCert Animated Videos — "OSI Model"](https://www.youtube.com/watch?v=vv4y_uOneC0) + ["TCP/IP"](https://www.youtube.com/watch?v=OTwp3xtd4dg) + ["DNS"](https://www.youtube.com/watch?v=mpQZVYPuDGU) — 5–10min visuals. **free** ✅
-- [NetworkChuck — "you need to learn Subnetting RIGHT NOW!!"](https://www.youtube.com/watch?v=5WfiTHiU4x8) — energetic walkthrough. **free** ✅
-- [howdns.works](https://howdns.works/) — comic walkthrough of DNS resolution. **free** ✅
-
-**do this:**
-- [HTB Academy — Introduction to Networking module](https://academy.hackthebox.com/) (free tier) — OSI, TCP/IP, subnetting, DNS, ARP interactive. **free** ✅
-- [TryHackMe — Intro to Networking room](https://tryhackme.com/room/introtonetworking) (free) — OSI, ping, traceroute. **free** ⚠️
-- **Subnetting drill:** [subnetipv4.com](https://subnetipv4.com/) — `/24` to `/30` until automatic. **free** ✅
-- run `curl -v https://example.com` + `dig example.com` in your terminal (from fundamentals Block 3) and **annotate which lines = DNS / TCP / TLS / HTTP**.
-
-**measurable gate:** score **80%+ on 3 fresh attempts** at ExamCompass A+ Core 1 Networking + Core 2 Security quizzes, AND correctly subnet 5 random `/25`–`/29` problems on paper unaided (use subnetipv4.com to generate/check them). both must pass meow
-
-**can u explain it?** ✅ — out loud, unaided: *"narrate the steps from pressing Enter on `https://example.com` to the page appearing: DNS resolution → TCP SYN/SYN-ACK/ACK → TLS handshake (what the certificate proves, what the session key does) → HTTP GET/200. then say why TLS stops a man-in-the-middle."*
-
-**CTF thread:** after Bandit 15, try **CyLab Security Academy (picoCTF) — General Skills beginner challenges** (e.g. "Obedient Cat", "strings it", "Nice netcat...") — these reinforce ports (`nc`), file forensics (`strings`), and basic tooling. **gate:** solve 5 General Skills challenges. this keeps the CTF thread alive between Bandit and the web-exploitation goal meow
+**CTF thread:** keep the beginner CTF thread from [Prep](00-prep.md) alive while u study this. A+ gives u the normal-system vocabulary; CTF keeps asking "ok but how could this break?" they work together, not separately.
 
 ---
 
-## Block 4 · Practice-Exam Sprint (~10h)
-
-**the idea** — u dont book the exam until practice tests already say youre ready. this block is the calm final check so exam day doesnt feel mysterious.
-
-**do this:**
-- Professor Messer A+ Success Bundles: [Core 1](https://www.professormesser.com/220-1201-success-bundle/) + [Core 2](https://www.professormesser.com/220-1202-success-bundle/) (paid optional; the old generic practice-exams page is dead) — **gate: 85%+ on 3 fresh Core 1 attempts, 85%+ on 3 fresh Core 2 attempts**. ✅
-- [Jason Dion A+ Practice Tests (Udemy)](https://www.udemy.com/course/comptia-a-exams/) (~$10–15 on sale) — **gate: 80%+ on 2 fresh attempts per core**. ✅
-- [ExamCompass A+ quizzes](https://www.examcompass.com/) (free) — domain-by-domain reinforcement. **free** ✅
-
-**measurable gate:** hit the % gates above on FRESH attempts (not retakes of the same test). if youre not hitting 85%+ on Messer, dont book yet — go back to the weak domain and patch it up meow
-
-**exam-day tips:**
-- **flag PBQs** (performance-based questions — sims/drag-drop), answer all multiple-choice first, then return to PBQs with remaining time. PBQ terminals: type `help` to list valid commands.
-- **Core 1 pass: 675/900**. **Core 2 pass: 700/900**. take Core 1 first (hardware/networking foundation makes Core 2 easier).
-- both exams: ≤90 questions, 90 minutes, 3-year validity. book via [CompTIA store](https://www.comptia.org/) or Pearson VUE.
-
----
-
-## ✅ exit check — youre done with Goal 1
+## ✅ exit check - youre done with Goal 1
 
 by now u have:
-- [ ] completed Bandit 0–15 + solved 5 CyLab General Skills challenges (CTF thread alive)
-- [ ] scored 75%+ on ExamCompass Core 1 Hardware, 78%+ on Core 2 OS, 80%+ on Core 1 Networking + Core 2 Security (all on fresh attempts)
-- [ ] can subnet `/25`–`/29` on paper unaided
-- [ ] comfortable in both a Windows and Linux shell (can navigate, change perms, search files, manage processes)
-- [ ] either **passed A+** OR scoring **85%+ on Messer/Dion practice exams** (if skipping the paid exam)
 
-**both gates must pass:**
-1. **measurable** — the checklist above is all ticked
-2. **can u explain it?** — out loud, unaided: *"trace one instruction through fetch-decode-execute. explain what `cat notes.txt | grep TODO | wc -l` does at each pipe. narrate DNS → TCP → TLS → HTTP for `https://example.com` and say why TLS stops a MITM."*
+- [ ] passed the **Core 1 measurable gate**: ≥85% on 3 fresh ExamCompass 220-1201 tests, no domain <75%
+- [ ] passed the **Core 2 measurable gate**: ≥85% on 3 fresh ExamCompass 220-1202 tests, no domain <75%
+- [ ] passed the **Core 1 explain gate**: CPU/RAM/storage + troubleshooting method
+- [ ] passed the **Core 2 explain gate**: OS command execution + malware removal/persistence
+- [ ] decided honestly whether the paid A+ exam is worth it for your situation
 
-if u can tick the boxes but stumble on the explain gate, re-read the mechanism sections in Blocks 1–3. both must pass before Goal 2 meow
+**final explain gate:** out loud, unaided: *"trace one instruction through fetch-decode-execute; explain why RAM and SSD storage solve different problems; narrate what happens when a shell runs a command through `PATH`; explain how malware persists and how least privilege limits damage; then say which Messer section youd revisit for each weak A+ domain."*
+
+if the scores pass but the explanation is foggy, slow down and patch the mechanism. the cert is downstream of understanding, not the other way around meow
 
 ---
 
-**next up:** [Goal 2 — Networking & Security Core](02-core.md) — Network+, ISC2 CC + Security+ merged study (CIA triad, crypto/PKI, access control, threats, network security, SOC operations). the certs are checkpoints; the *topics* are what transfer to the job qwq
+**next up:** [Goal 2 - Networking & Security Core](02-core.md) - Network+, ISC2 CC + Security+ merged study. A+ gave u the floor; now we turn that floor into security thinking.
 
-[← Prep](00-prep.md) · [Back to hub](README.md) · [Next: Goal 2 →](02-core.md)
+[<- Prep](00-prep.md) · [Back to hub](README.md) · [Next: Goal 2 ->](02-core.md)
