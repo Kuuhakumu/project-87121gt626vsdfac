@@ -49,7 +49,7 @@ both must pass before the topic is really done. a checkbox by itself means nothi
 
 ## cert-domain map so u know why each block/cluster exists
 
-### Network+ N10-009 map
+### Network+ N10-009 study group
 
 | N10-009 domain | Weight | Covered in this file |
 |---|---:|---|
@@ -58,6 +58,24 @@ both must pass before the topic is really done. a checkbox by itself means nothi
 | 3.0 Network Operations | 19% | monitoring, syslog/SNMP/NetFlow, documentation, SLAs |
 | 4.0 Network Security | 14% | segmentation, IDS/IPS concepts, firewalls, zero trust, hardening |
 | 5.0 Network Troubleshooting | 24% | 7-step method, `ping`, `tracert`, `nslookup`, `dig`, `ipconfig`/`ip`, `netstat`, `nmap` |
+
+use [Professor Messer's N10-009 course index](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) as the spine, bc the sections map cleanly to the CompTIA domains:
+
+| Messer section | N10-009 domain | Weight | Study focus |
+|---|---|---:|---|
+| [Section 1: Networking Concepts](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#section-1-networking-concepts) | 1.0 Networking Concepts | 23% | OSI/TCP-IP, ports, IPv4/IPv6, DNS/DHCP/NTP, subnetting |
+| [Section 2: Network Implementation](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#1d643e1) | 2.0 Network Implementation | 20% | cabling, Wi-Fi/WPA3, VLANs, switching/routing, NAT/PAT |
+| [Section 3: Network Operations](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#ced8446) | 3.0 Network Operations | 19% | monitoring, documentation, SNMP/syslog/NetFlow, SLAs, DR basics |
+| [Section 4: Network Security](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#012c566) | 4.0 Network Security | 14% | segmentation, zero trust, IDS/IPS concepts, hardening |
+| [Section 5: Network Troubleshooting](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#c80f0f9) | 5.0 Network Troubleshooting | **24%** | **biggest domain**: 7-step method + CLI troubleshooting tools |
+
+heads up meow: **Troubleshooting is the biggest Network+ domain at 24%**.
+dont treat it like cleanup at the end.
+the CompTIA **7-step troubleshooting method** is the skeleton: identify the problem -> establish a theory -> test the theory -> make a plan -> implement -> verify -> document.
+
+**practice spine:** use [ExamCompass Network+ N10-009 practice tests](https://www.examcompass.com/comptia/network-plus-certification/free-network-plus-practice-tests) for free current-code practice, not retired legacy sets. if buying practice, use the [Jason Dion N10-009 Practice Exam Pack](https://www.diontraining.com/products/comptia-network-n10-009-practice-exam), not a generic/legacy Network+ pack.
+
+**CCNA-deeper delta:** Network+ teaches what switching, routing, VLANs, NAT, wireless, OSPF/BGP, DHCP, and troubleshooting tools *do*. **CCNA 200-301 goes deeper** by making u configure Cisco IOS interfaces, VLAN trunks, inter-VLAN routing, OSPFv2, static/default routes, ACLs, NAT/PAT, DHCP, port security, and automation basics. for this cyber path, Network+ is enough unless your target work is router/switch-heavy.
 
 ### merged CC + Security+ map
 
@@ -78,11 +96,14 @@ then CC or Security+ becomes a checkpoint, not a separate pile of flashcards meo
 
 ---
 
-## Block 1 - networking floor (~55h)
+## Block 1 - CERT-2 networking floor / Network+ N10-009 study group (~55h)
 
 - [ ] packets, ports, and protocols (~18h)
 - [ ] subnetting, switching, routing, and wireless (~22h)
 - [ ] network operations + troubleshooting (~15h)
+
+this sits beside the merged CC + Security+ study group below, not inside it.
+finish this first if networking still feels foggy; Security+ assumes a lot of it, and CC tests some of it directly qwq.
 
 ### packets, ports, and protocols meow (~18h)
 
@@ -107,7 +128,7 @@ the layer model matters because troubleshooting gets less scary: if DNS fails, t
 - **stateful firewall** - tracks connection state, not just packets
 
 **study sources (pick what fits your style)**
-- [Professor Messer N10-009 course, Section 1: Networking Concepts](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) - exact Network+ course index; Section 1 maps to D1. **free**
+- [Professor Messer N10-009 course, Section 1: Networking Concepts](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#section-1-networking-concepts) - exact Network+ section for Domain 1.0. **free**
 - [TryHackMe: Intro to Networking](https://tryhackme.com/room/introtonetworking) - guided OSI/ping/traceroute room. **freemium** (bot-blocked in checks, works in browser)
 - [TryHackMe: Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics) - packet-capture practice. **freemium** (bot-blocked in checks, works in browser)
 - [Professor Messer N10-009 YouTube playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl_tQe3kvnmeMid0mjF8Le8) - same course if YouTube is easier. **free**
@@ -144,7 +165,9 @@ the layer model matters because troubleshooting gets less scary: if DNS fails, t
 - [Professor Messer: Calculating IPv4 Subnets and Hosts - N10-009 1.7](https://www.professormesser.com/network-plus/n10-009/n10-009-video/calculating-ipv4-subnets-and-hosts-n10-009/) - subnetting worked examples. **free**
 - [subnetipv4.com](https://subnetipv4.com/) - free IPv4 subnetting drill generator. **free**
 - [Practical Networking: Subnetting Mastery playlist](https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE) - method-first subnetting series by the same creator. **free**
-- [Professor Messer N10-009 course, Section 2: Network Implementation](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) - cabling, Wi-Fi, routing/switching, NAT/PAT. **free**
+- [Professor Messer N10-009 course, Section 2: Network Implementation](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#1d643e1) - cabling, Wi-Fi, routing/switching, NAT/PAT. **free**
+
+**CCNA-deeper delta:** Network+ asks u to recognize and reason about VLANs, trunks, routing, NAT/PAT, DHCP, and wireless security. **CCNA 200-301 goes deeper** by making u configure them on Cisco gear and troubleshoot the config live. skip CCNA for now unless networking itself is the job target.
 
 **do this** - drill at [subnetipv4.com](https://subnetipv4.com/) until `/26`, `/27`, and `/28` feel boring. draw a tiny network with three VLANs (users, servers, guest Wi-Fi), one router/firewall, and NAT at the edge.
 
@@ -173,14 +196,15 @@ tools each answer a narrow question: `ping` tests reachability, `tracert`/`trace
 - **listening service** - process waiting on a port
 
 **study sources**
-- [Professor Messer N10-009 course, Section 3: Network Operations](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) - monitoring, documentation, operations. **free**
-- [Professor Messer N10-009 course, Section 5: Network Troubleshooting](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) - biggest N10-009 domain. **free**
+- [Professor Messer N10-009 course, Section 3: Network Operations](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#ced8446) - monitoring, documentation, operations. **free**
+- [Professor Messer N10-009 course, Section 4: Network Security](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#012c566) - Network+ security controls before the CC/Security+ network-security cluster. **free**
+- [Professor Messer N10-009 course, Section 5: Network Troubleshooting](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/#c80f0f9) - biggest N10-009 domain. **free**
 - [ExamCompass Network+ N10-009 practice tests](https://www.examcompass.com/comptia/network-plus-certification/free-network-plus-practice-tests) - free practice tests + ports/acronym/topic quizzes. **free**
 - [Jason Dion N10-009 Practice Exam Pack](https://www.diontraining.com/products/comptia-network-n10-009-practice-exam) - harder paid practice if u want exam confidence. **paid**
 
 **do this** - run `ping`, `tracert`/`traceroute`, `nslookup` or `dig`, `netstat`/`ss`, and `nmap` against your own lab VM or a legal target you control. write one sentence for what each command proves and what it does **not** prove.
 
-**measurable gate:** score **85%+ on 3 fresh ExamCompass N10-009 practice exams**, score **90%+** on the ports + OSI quizzes, and recite the 7-step troubleshooting method in order.
+**measurable gate:** score **85%+ on 3 fresh ExamCompass N10-009 practice exams**, score **90%+** on the ports + OSI quizzes, and recite the CompTIA 7-step troubleshooting method in order. remember: D5 Troubleshooting is **24%**, the biggest Network+ domain, so this is not optional cleanup meow.
 
 **can u explain it?** - unaided: explain why "establish a theory of probable cause" comes before "test the theory," and give one example where DNS is broken but IP routing still works.
 
@@ -543,7 +567,7 @@ book when the gates say u are ready meow
 - [ ] `/26`, `/27`, `/28` subnet drills pass under 60s each on paper, checked with [subnetipv4.com](https://subnetipv4.com/).
 - [ ] **85%+ on 3 fresh** [ExamCompass N10-009 practice exams](https://www.examcompass.com/comptia/network-plus-certification/free-network-plus-practice-tests).
 - [ ] **90%+** on OSI + TCP/UDP ports quizzes.
-- [ ] can recite the 7-step troubleshooting method in order.
+- [ ] can recite the CompTIA 7-step troubleshooting method in order.
 - [ ] if using Dion, **85%+ on 2 fresh** [Jason Dion N10-009 practice exams](https://www.diontraining.com/products/comptia-network-n10-009-practice-exam).
 
 **can u explain it?** - explain OSI layers with one protocol per layer, why `/26` gives 62 usable hosts, and why a stateful firewall can allow return traffic while blocking unsolicited inbound traffic.

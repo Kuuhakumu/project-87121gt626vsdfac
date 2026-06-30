@@ -40,7 +40,7 @@ You can't debug cloud infra if you don't understand the network underneath it.
 |---|---|---|---|
 | Intro to Networking | [TryHackMe](https://tryhackme.com/) | OSI, ping, traceroute interactively | Free tier |
 | Computer Networking (full course) | [freeCodeCamp YouTube](https://www.youtube.com/c/Freecodecamp) | Comprehensive networking fundamentals | **Free** |
-| [SubnettingPractice.com](https://subnetipv4.com/) | Web | `/24`–`/30` drills until automatic | **Free** |
+| [subnetipv4.com](https://subnetipv4.com/) | Web | `/24`-`/30` drills until automatic | **Free** |
 
 **Practice gate:** you can subnet a CIDR block on paper, explain DNS resolution end-to-end, and describe what a load balancer and a reverse proxy each do.
 

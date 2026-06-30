@@ -22,7 +22,7 @@
 
 | Old link / claim | Current status | Use this instead |
 |---|---|---|
-| `subnettingpractice.com` | broken / rotted to unrelated staging host | [subnetipv4.com](https://subnetipv4.com/) plus [Practical Networking - Subnetting Mastery](https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE) |
+| old subnetting drill site | broken / rotted to unrelated staging host | [subnetipv4.com](https://subnetipv4.com/) plus [Practical Networking - Subnetting Mastery](https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE) |
 | `professormesser.com/practice-exams/` and "~$15 exams" | dead/soft-404; products moved | current per-course Professor Messer Success Bundles: [A+ Core 1](https://www.professormesser.com/220-1201-success-bundle/), [A+ Core 2](https://www.professormesser.com/220-1202-success-bundle/), [Network+](https://www.professormesser.com/n10-009-success-bundle/), [Security+](https://www.professormesser.com/sy0-701-success-bundle/) |
 | `securityblue.team` / old BTL1 URLs | redirects after rebrand | [Centri - Blue Team Level 1](https://www.centri.org/certifications/blue-team-level-1) |
 | "AZ-500 successor TBA" | stale | Azure security path is now [SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500); AZ-500 retires 2026-08-31 |
@@ -57,7 +57,7 @@ these are not "labs" in the VM sense, but they are still objective gates. use th
 | Exact resource | Cost | Use it for | Gate |
 |---|---:|---|---|
 | [ExamCompass A+ practice tests](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-practice-tests) | free | A+ Core 1/2 topic checks | 80%+ on 3 fresh current-code attempts for the domain u just studied |
-| [ExamCompass Network+ practice tests](https://www.examcompass.com/comptia/network-plus-certification/free-network-plus-practice-tests) | free | N10-009 networking checks | 85%+ on 3 fresh N10-009 attempts; ignore retired N10-008 sets |
+| [ExamCompass Network+ practice tests](https://www.examcompass.com/comptia/network-plus-certification/free-network-plus-practice-tests) | free | N10-009 networking checks | 85%+ on 3 fresh N10-009 attempts; ignore retired legacy sets |
 | [ExamCompass Security+ practice tests](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) | free | SY0-701 security checks | 85%+ on 3 fresh SY0-701 attempts; ignore retired SY0-601 sets |
 | [ISC2 CC Practice Quiz](https://cloud.connect.isc2.org/cc-quiz) | free, lead-gated | CC-style fundamentals checkpoint | pass the quiz, then use the guide's `can u explain it?` gates as the real free fundamentals checkpoint before any paid CC exam |
 | [ISC2 CC Flash Cards](https://cloud.connect.isc2.org/cc-flashcards) | free, lead-gated | CC vocab reinforcement | only use after mechanisms make sense; dont memorize first |
@@ -166,7 +166,7 @@ these are not "labs" in the VM sense, but they are still objective gates. use th
 
 | Resource | Status | Use instead |
 |---|---|---|
-| `subnettingpractice.com` | broken | [subnetipv4.com](https://subnetipv4.com/) |
+| old subnetting drill site | broken | [subnetipv4.com](https://subnetipv4.com/) |
 | `professormesser.com/practice-exams/` | soft-404 / page-not-found | per-course Success Bundles listed above |
 | `securityblue.team` / old BTL1 pages | redirected after rebrand | [Centri BTL1](https://www.centri.org/certifications/blue-team-level-1) |
 | INE Penetration Testing Student as "free" | stale; paywalled | free prep stack: [TryHackMe Jr Pentester](https://tryhackme.com/path/outline/jrpenetrationtester), [PortSwigger labs](https://portswigger.net/web-security/all-labs), [HTB Starting Point](https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point) |
