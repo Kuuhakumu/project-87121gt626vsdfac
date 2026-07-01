@@ -23,7 +23,7 @@
 | Old link / claim | Current status | Use this instead |
 |---|---|---|
 | old subnetting drill site | broken / rotted to unrelated staging host | [subnetipv4.com](https://subnetipv4.com/) plus [Practical Networking - Subnetting Mastery](https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE) |
-| `professormesser.com/practice-exams/` and "~$15 exams" | dead/soft-404; products moved | current per-course Professor Messer Success Bundles: [A+ Core 1](https://www.professormesser.com/220-1201-success-bundle/), [A+ Core 2](https://www.professormesser.com/220-1202-success-bundle/), [Network+](https://www.professormesser.com/n10-009-success-bundle/), [Security+](https://www.professormesser.com/sy0-701-success-bundle/) |
+| old Professor Messer generic practice-exams page and "~$15 exams" | dead/soft-404; products moved | current per-course Professor Messer Success Bundles: [A+ Core 1](https://www.professormesser.com/220-1201-success-bundle/), [A+ Core 2](https://www.professormesser.com/220-1202-success-bundle/), [Network+](https://www.professormesser.com/n10-009-success-bundle/), [Security+](https://www.professormesser.com/sy0-701-success-bundle/) |
 | `securityblue.team` / old BTL1 URLs | redirects after rebrand | [Centri - Blue Team Level 1](https://www.centri.org/certifications/blue-team-level-1) |
 | "AZ-500 successor TBA" | stale | Azure security path is now [SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500); AZ-500 retires 2026-08-31 |
 | AWS Security `SCS-C02` PDFs | retired / stale | [AWS Certified Security - Specialty exam page](https://aws.amazon.com/certification/certified-security-specialty/) and [official SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) |
@@ -167,7 +167,7 @@ these are not "labs" in the VM sense, but they are still objective gates. use th
 | Resource | Status | Use instead |
 |---|---|---|
 | old subnetting drill site | broken | [subnetipv4.com](https://subnetipv4.com/) |
-| `professormesser.com/practice-exams/` | soft-404 / page-not-found | per-course Success Bundles listed above |
+| old Professor Messer generic practice-exams page | soft-404 / page-not-found | per-course Success Bundles listed above |
 | `securityblue.team` / old BTL1 pages | redirected after rebrand | [Centri BTL1](https://www.centri.org/certifications/blue-team-level-1) |
 | INE Penetration Testing Student as "free" | stale; paywalled | free prep stack: [TryHackMe Jr Pentester](https://tryhackme.com/path/outline/jrpenetrationtester), [PortSwigger labs](https://portswigger.net/web-security/all-labs), [HTB Starting Point](https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point) |
 | SCS-C02 exam guide PDFs | retired | [SCS-C03 HTML exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) |

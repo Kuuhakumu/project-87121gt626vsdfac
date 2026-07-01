@@ -291,9 +291,9 @@ dont resurrect these in future edits meow:
 | Old link/claim | Status from R5 | Use this instead |
 |---|---|---|
 | old subnetting drill site | dead/rotted to a staging host | [subnetipv4.com](https://subnetipv4.com/) + [Subnetting Mastery](https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE) |
-| `linuxjourney.com` as fully free | moved to LabEx and is now freemium | [LabEx Linux Journey](https://labex.io/linuxjourney), tagged **freemium** |
-| `academy.tcm-sec.com/p/practical-help-desk-training` | old Teachable URL redirects | [TCM Practical Help Desk](https://tcm-sec.com/academy/practical-help-desk/) |
-| `professormesser.com/practice-exams/` and old "~$15" wording | dead/soft-404; bundles moved | current per-course Success Bundles linked above |
+| old Linux Journey domain as fully free | moved to LabEx and is now freemium | [LabEx Linux Journey](https://labex.io/linuxjourney), tagged **freemium** |
+| old TCM Practical Help Desk Teachable URL | old Teachable URL redirects | [TCM Practical Help Desk](https://tcm-sec.com/academy/practical-help-desk/) |
+| old Professor Messer generic practice-exams page and old "~$15" wording | dead/soft-404; bundles moved | current per-course Success Bundles linked above |
 
 ---
 
