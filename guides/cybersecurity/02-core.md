@@ -2,7 +2,7 @@
 
 > **goal:** build the network floor, then learn the security mechanisms on top of it: CIA, crypto/TLS, identity, access control, attacks, operations, IR, and risk.
 >
-> **cert checkpoints layered on top:** **CompTIA Network+ (N10-009)** -> **ISC2 CC** (optional paid exam) -> **CompTIA Security+ (SY0-701)**.
+> **optional checkpoints layered on top:** **CompTIA Network+ (N10-009)** -> **ISC2 CC** (optional paid exam) -> **CompTIA Security+ (SY0-701)**.
 
 [<- Goal 1: Foundations](01-foundations.md) | [Back to hub](README.md) | [Next: Scripting, Logs & CTF ->](03-scripting-ctf.md)
 
@@ -41,15 +41,15 @@ both must pass before the topic is really done. a checkbox by itself means nothi
 ## the path (todo-tree)
 
 - [ ] **Block 1 - networking floor** (~55h): packets, ports, subnetting, implementation, operations, troubleshooting.
-- [ ] **Blocks 2-5 - merged CC + Security+ security-fundamentals study group** (~115h): A -> D -> B -> C -> E -> F -> G -> H.
-- [ ] **Block 6 - cert readiness sprint** (~10h): Network+ gate, CC optional gate, Security+ gate.
+- [ ] **Blocks 2-5 - security fundamentals through labs + practice gates** (~115h): A -> D -> B -> C -> E -> F -> G -> H.
+- [ ] **Block 6 - optional exam checkpoint sprint** (~10h): Network+ gate, CC optional gate, Security+ gate.
 - [ ] **exit check** - can explain the whole chain: normal network -> control -> attack -> detection -> response.
 
 ---
 
-## cert-domain map so u know why each block/cluster exists
+## optional checkpoint map so u know what the learning covers
 
-### Network+ N10-009 study group
+### Network+ N10-009 coverage
 
 | N10-009 domain | Weight | Covered in this file |
 |---|---:|---|
@@ -96,7 +96,7 @@ then CC or Security+ becomes a checkpoint, not a separate pile of flashcards meo
 
 ---
 
-## Block 1 - CERT-2 networking floor / Network+ N10-009 study group (~55h)
+## Block 1 - networking floor meow (~55h)
 
 - [ ] packets, ports, and protocols (~18h)
 - [ ] subnetting, switching, routing, and wireless (~22h)
@@ -107,7 +107,7 @@ finish this first if networking still feels foggy; Security+ assumes a lot of it
 
 ### packets, ports, and protocols meow (~18h)
 
-**cert map** - Network+ D1/D5; CC D4; this is the floor Security+ leans on.
+**optional checkpoint map** - Network+ D1/D5; CC D4; this is the floor Security+ leans on.
 
 **the idea** - networks are layered so each layer gets one job: move bits, frame local traffic, route packets, connect processes, and carry app data.
 
@@ -141,7 +141,7 @@ the layer model matters because troubleshooting gets less scary: if DNS fails, t
 
 ### subnetting, switching, routing, and wireless meow (~22h)
 
-**cert map** - Network+ D1/D2; CC D4; Security+ D3.2/4.5 security controls later.
+**optional checkpoint map** - Network+ D1/D2; CC D4; Security+ D3.2/4.5 security controls later.
 
 **the idea** - subnetting decides which IPs are local, routing decides where non-local packets go, switching moves local frames, and wireless adds radio + authentication problems. one sentence, lots of doors meow.
 
@@ -177,7 +177,7 @@ the layer model matters because troubleshooting gets less scary: if DNS fails, t
 
 ### network operations + troubleshooting meow (~15h)
 
-**cert map** - Network+ D3/D5; Security+ D4 operations later.
+**optional checkpoint map** - Network+ D3/D5; Security+ D4 operations later.
 
 **the idea** - operations means keeping the network observable and documented; troubleshooting means changing one thing at a time instead of panic-clicking.
 
@@ -210,9 +210,9 @@ tools each answer a narrow question: `ping` tests reachability, `tracert`/`trace
 
 ---
 
-## Blocks 2-5 - merged CC + Security+ security-fundamentals study group (~115h)
+## Blocks 2-5 - security fundamentals through labs + practice gates (~115h)
 
-this is one study group, not two cert silos.
+this is one learning path, not two cert silos.
 u study the **superset** because the real mechanisms overlap, then u decide which exam checkpoint is worth paying for.
 CC is optional proof now, not the free path itself meow.
 
@@ -243,7 +243,7 @@ that order is on purpose: foundations first, then network/security controls, the
 
 ### Cluster A - Security Foundations & Governance Concepts meow (~15h)
 
-**cert map** - CC **D1 Security Principles**; SY0-701 **1.0 General Security Concepts** + **5.0 Security Program Management & Oversight**.
+**optional checkpoint map** - CC **D1 Security Principles**; SY0-701 **1.0 General Security Concepts** + **5.0 Security Program Management & Oversight**.
 
 **deltas** - CIA/controls/AAA/governance = **both**. **CC only:** ISC2 **Code of Ethics** canons (memorize the 4 in order). **Security+ emphasis:** Zero Trust (control/data planes, PEP/PDP), gap analysis, honeypots/honeytokens.
 
@@ -284,7 +284,7 @@ that order is on purpose: foundations first, then network/security controls, the
 
 ### Cluster D - Networking & Network Security meow (~14h)
 
-**cert map** - CC **D4 Network Security**; SY0-701 **3.2 Security Architecture** + **4.5 Security Operations**.
+**optional checkpoint map** - CC **D4 Network Security**; SY0-701 **3.2 Security Architecture** + **4.5 Security Operations**.
 
 **deltas** - **Big one:** **CC explicitly tests networking fundamentals** (OSI, TCP handshake, ports) because it has no Network+ prerequisite; Security+ **assumes** them and tests the *security controls* on top.
 
@@ -323,7 +323,7 @@ that order is on purpose: foundations first, then network/security controls, the
 
 ### Cluster B - Cryptography & PKI meow (~14h)
 
-**cert map** - CC **D5 Security Operations**; SY0-701 **1.4 Cryptographic Solutions** + **3.3 Data Protection**.
+**optional checkpoint map** - CC **D5 Security Operations**; SY0-701 **1.4 Cryptographic Solutions** + **3.3 Data Protection**.
 
 **deltas** - sym/asym/hash/signatures/data-states = **both**. **Security+ deeper:** full PKI/certificate mechanics, cipher modes. **Security+ only:** obfuscation, steganography, blockchain, key stretching/salting detail.
 
@@ -362,7 +362,7 @@ that order is on purpose: foundations first, then network/security controls, the
 
 ### Cluster C - Access Control & Identity (IAM) meow (~16h)
 
-**cert map** - CC **D3 Access Controls** + **D1 AAA**; SY0-701 **4.6 Identity and Access Management** + **1.2 Physical Security**.
+**optional checkpoint map** - CC **D3 Access Controls** + **D1 AAA**; SY0-701 **4.6 Identity and Access Management** + **1.2 Physical Security**.
 
 **deltas** - models + least-privilege + SoD + physical = **both**. **Security+ deeper:** federation/SSO protocols, Kerberos, 802.1X/EAP.
 
@@ -400,7 +400,7 @@ federation and SSO move trust between systems: one identity provider authenticat
 
 ### Cluster E - Threats, Attacks, Vulnerabilities & Malware meow (~16h)
 
-**cert map** - CC **D4 Network Security** + **D5 Security Operations**; SY0-701 **2.0 Threats, Vulnerabilities, and Mitigations**.
+**optional checkpoint map** - CC **D4 Network Security** + **D5 Security Operations**; SY0-701 **2.0 Threats, Vulnerabilities, and Mitigations**.
 
 **deltas** - malware/social-eng/DoS/MITM = **both**. **Security+ only/deeper:** the full **threat-actor taxonomy** (nation-state, hacktivist, insider, etc. + motivations) and **specific named vulnerability classes** (buffer overflow, SQLi, race conditions, zero-day) - CC stays at "know the category," Security+ wants the mechanism.
 
@@ -438,7 +438,7 @@ federation and SSO move trust between systems: one identity provider authenticat
 
 ### Cluster F - Security Operations (monitoring, hardening, automation) meow (~14h)
 
-**cert map** - CC **D5 Security Operations**; SY0-701 **4.0 Security Operations**.
+**optional checkpoint map** - CC **D5 Security Operations**; SY0-701 **4.0 Security Operations**.
 
 **deltas** - hardening/logging/data-handling = **both**. **Security+ only/deeper:** **SIEM**, formal **vulnerability management** cycle, **asset management**, **automation/orchestration (scripting)** - these are why SY0-701 D4 is 28% while CC D5 is only 18%.
 
@@ -477,7 +477,7 @@ federation and SSO move trust between systems: one identity provider authenticat
 
 ### Cluster G - Incident Response, BC/DR & Resilience meow (~12h)
 
-**cert map** - CC **D2 BC/DR & Incident Response**; SY0-701 **4.8 Incident Response**, **3.4 Resilience**, and **5.2 Risk Metrics**.
+**optional checkpoint map** - CC **D2 BC/DR & Incident Response**; SY0-701 **4.8 Incident Response**, **3.4 Resilience**, and **5.2 Risk Metrics**.
 
 **deltas** - IR lifecycle + BC/DR + backups + RTO/RPO = **both**. **Security+ deeper:** **digital forensics** and **architecture-level resilience** (hot/warm/cold sites, load balancing, clustering).
 
@@ -515,7 +515,7 @@ containment stops spread. eradication removes the cause. recovery restores servi
 
 ### Cluster H - GRC & Security Program Management meow (~14h)
 
-**cert map** - CC **D1 Security Principles**; SY0-701 **5.0 Security Program Management & Oversight**.
+**optional checkpoint map** - CC **D1 Security Principles**; SY0-701 **5.0 Security Program Management & Oversight**.
 
 **deltas** - risk/governance/awareness = **both**. **Security+ only/deeper:** third-party risk, formal audits/assessments, named frameworks. **CC only:** ISC2 Code of Ethics (already gated in Cluster A).
 
@@ -555,7 +555,7 @@ frameworks like **NIST CSF 2.0** and **ISO/IEC 27001:2022** give shared language
 
 ---
 
-## Block 6 - cert readiness sprint (~10h)
+## Block 6 - optional exam checkpoint sprint (~10h)
 
 this is where u decide whether to book exams.
 dont book because u watched videos.

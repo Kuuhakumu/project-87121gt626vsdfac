@@ -57,7 +57,7 @@ a checkbox alone doesnt mean anything meow
 
 ---
 
-## cert-domain map so u know why this exists
+## optional checkpoint map so u know why this exists
 
 this goal is mostly skill-building, but it still maps to exam domains so ur not wondering why it matters.
 

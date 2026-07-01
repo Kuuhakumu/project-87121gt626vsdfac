@@ -27,7 +27,7 @@ the move here is:
 - try a tiny sample of each lane
 - pick the one whose boring parts u can stand
 - go deep enough to build a portfolio artifact
-- use the cert group as a checkpoint, not a silo
+- use certs only as later checkpoints after the labs prove the skill
 
 dw, u dont marry your first track meow.
 
@@ -53,22 +53,26 @@ a checkbox alone doesnt mean anything meow
 - [ ] **Goal 4 - choose one specialization lane** (~160h total): pick one primary lane, build one signature project, and add the GRC layer.
   - [ ] **Chooser - run the good-Tuesday self-test** (~8h): spend one evening sampling each lane before committing.
   - [ ] **Pick ONE primary depth lane** (~120-140h): blue, red, or cloud. GRC-first is allowed if the layer is the work u want.
-    - [ ] **CERT-D1 - Blue / SOC**: SIEM, detection engineering, ATT&CK, Sigma, triage, IR.
-    - [ ] **CERT-D2 - Red / pentest**: recon, exploit, privesc, AD, pivoting, report.
-    - [ ] **CERT-D3 - Cloud security**: shared responsibility, IAM, CSPM, misconfig remediation, cloud detection.
-  - [ ] **Add CERT-D4 - GRC layer** (~25-40h): risk assessment, SLE/ALE, control crosswalks, audit evidence.
+    - [ ] **Blue / SOC lane**: SIEM, detection engineering, ATT&CK, Sigma, triage, IR.
+    - [ ] **Red / pentest lane**: recon, exploit, privesc, AD, pivoting, report.
+    - [ ] **Cloud security lane**: shared responsibility, IAM, CSPM, misconfig remediation, cloud detection.
+  - [ ] **Add the GRC layer** (~25-40h): risk assessment, SLE/ALE, control crosswalks, audit evidence.
   - [ ] **exit check**: one signature artifact exists, the two gates pass, and u can explain why this lane fits your next job target.
 
 ---
 
-## cert groups so u know what the topics cover
+## optional cert checkpoints after the labs
 
-| Group | Lane | Certs / checkpoints layered on top | what the group proves |
-|---|---|---|---|
-| **CERT-D1** | Blue / SOC | BTL1 (Centri), CySA+ **CS0-004**, SC-200 | u can investigate alerts, query logs, map detections, and write IR notes |
-| **CERT-D2** | Red / pentest | eJPT v2, HTB CPTS, PNPT; OSCP later | u can follow the attack chain and write the report |
-| **CERT-D3** | Cloud security | SC-900 -> **SC-500**; AWS Security Specialty **SCS-C03** | u can secure customer-side cloud config and prove posture improved |
-| **CERT-D4** | GRC layer | Security+ **SY0-701** Domain 5, SC-900 compliance; CISA/CISM later after experience | u can turn technical facts into risk, controls, evidence, and decisions |
+dont start here.
+start with the interactive labs and project gates below.
+this table just tells u which exam becomes realistic **after** the lane feels normal meow.
+
+| Lane | Optional checkpoints layered on top | what the lab path proves first |
+|---|---|---|
+| **Blue / SOC** | BTL1 (Centri), CySA+ **CS0-004**, SC-200 | u can investigate alerts, query logs, map detections, and write IR notes |
+| **Red / pentest** | eJPT v2, HTB CPTS, PNPT; OSCP later | u can follow the attack chain and write the report |
+| **Cloud security** | SC-900 -> **SC-500**; AWS Security Specialty **SCS-C03** | u can secure customer-side cloud config and prove posture improved |
+| **GRC layer** | Security+ **SY0-701** Domain 5, SC-900 compliance; CISA/CISM later after experience | u can turn technical facts into risk, controls, evidence, and decisions |
 
 heads up: **AZ-500 retires August 31, 2026**, so if youre starting Azure security now, use **SC-500** as the Microsoft cloud-security target.
 for AWS, use **SCS-C03**. **SCS-C02 is retired**, and old SCS-C02 PDFs are stale.
@@ -116,27 +120,20 @@ that signal beats a personality quiz because depth beats breadth, and youll only
 
 ---
 
-## CERT-D1 - Blue / SOC meow (~120-140h if primary)
+## Blue / SOC lane meow (~120-140h if primary)
 
 ### SIEM detection and incident triage meow (~120-140h)
 
 **the idea** - blue team work is turning messy telemetry into a defensible answer: "is this an attacker, what happened, and what do we do next?"
 
-**cert group layered on top** - **CERT-D1** maps to BTL1, CySA+ **CS0-004**, and SC-200.
-study the SOC craft once, then pick the cert that matches your target: BTL1 for practical proof, CySA+ for vendor-neutral/DoD-style SOC coverage, SC-200 for Microsoft Sentinel/Defender shops.
+**certs later, learning first** - BTL1, CySA+ **CS0-004**, and SC-200 all sit on top of this same SOC craft.
+dont aim at the exam first.
+do the labs, write the reports, build the detection muscle, and only then decide which checkpoint is worth paying for.
 
-heads up: CySA+ owns more vulnerability management and reporting.
-SC-200 is Microsoft-heavy: KQL, Sentinel, Defender XDR.
-BTL1 is the hands-on pressure test.
+heads up: CySA+ checks more vulnerability management and reporting.
+SC-200 checks Microsoft Sentinel / Defender / KQL.
+BTL1 checks whether u can actually investigate under a 24h practical exam.
 same craft, different checkpoint.
-
-**domain map** - this block covers the shared SOC core:
-
-| cert | domains / modules this block serves |
-|---|---|
-| **CySA+ CS0-004** | Security Operations, Incident Response, Reporting; Vulnerability Management is a CySA+-heavy add-on after the SOC core |
-| **SC-200** | Manage the security operations environment; respond to incidents; perform threat hunting with Sentinel/Defender |
-| **BTL1** | SIEM, Incident Response, Threat Intelligence, Digital Forensics, Phishing Analysis |
 
 **how/why it actually works** - a SIEM does not magically "know bad."
 it runs a pipeline:
@@ -194,13 +191,13 @@ if u cant say why it is a true positive or false positive, the block isnt done y
 
 ---
 
-## CERT-D2 - Red / Pentest meow (~140-160h if primary)
+## Red / Pentest lane meow (~140-160h if primary)
 
 ### the attack chain and the report meow (~140-160h)
 
 **the idea** - red team / pentest work is a legal, scoped simulation of an attacker: find the way in, prove impact, and write the fix clearly enough that defenders can act.
 
-**cert group layered on top** - **CERT-D2** maps to eJPT v2, HTB CPTS, and PNPT.
+**certs later, learning first** - eJPT v2, HTB CPTS, and PNPT sit on top of this attack-chain practice.
 eJPT proves the beginner methodology under low pressure.
 CPTS goes broad and deep technically.
 PNPT is Active Directory plus report plus live debrief.
@@ -212,7 +209,7 @@ CPTS grades a report.
 PNPT makes u defend the report out loud.
 thats not extra; thats the job.
 
-**domain map** - this block covers the offensive superset:
+**checkpoint map** - after the labs, this is what each optional cert checks:
 
 | cert | domains / modules this block serves |
 |---|---|
@@ -278,13 +275,13 @@ then explain why a reverse shell beats a bind shell through NAT, and explain Ker
 
 ---
 
-## CERT-D3 - Cloud Security meow (~120-140h if primary)
+## Cloud Security lane meow (~120-140h if primary)
 
 ### shared responsibility and CSPM meow (~120-140h)
 
 **the idea** - cloud security is mostly securing the customer's half of the cloud: identity, data, network exposure, logging, and configuration at scale.
 
-**cert group layered on top** - **CERT-D3** maps to SC-900 -> **SC-500** for Microsoft cloud security, and AWS Security Specialty **SCS-C03** for AWS.
+**certs later, learning first** - SC-900 -> **SC-500** for Microsoft cloud security, and AWS Security Specialty **SCS-C03** for AWS sit on top of this cloud-lab path.
 SC-900 is fundamentals.
 SC-500 is the Azure/AI cloud-security successor path.
 SCS-C03 is the current AWS Security Specialty.
@@ -293,7 +290,7 @@ do **not** start AZ-500 now unless an employer explicitly requires it before ret
 it retires **August 31, 2026**.
 do **not** study from SCS-C02 exam guides; SCS-C02 is retired, and **SCS-C03** is current.
 
-**domain map** - this block covers cloud-security fundamentals plus implementer-level posture work:
+**checkpoint map** - after the labs, this is what each optional cert checks:
 
 | cert | domains / modules this block serves |
 |---|---|
@@ -361,13 +358,13 @@ then explain a public-S3 exposure: what setting exposed it, why IAM/resource pol
 
 ---
 
-## CERT-D4 - GRC Layer meow (~25-40h beside any lane, ~100h if GRC-first)
+## GRC Layer meow (~25-40h beside any lane, ~100h if GRC-first)
 
 ### risk, SLE/ALE, and control crosswalks meow (~25-40h)
 
 **the idea** - GRC is the layer that asks: are we doing the right controls, can we prove they work, and does the cost match the risk?
 
-**cert group layered on top** - **CERT-D4** maps to Security+ **SY0-701** Domain 5 and SC-900 compliance.
+**certs later, learning first** - Security+ **SY0-701** Domain 5 and SC-900 compliance sit on top of this risk/evidence work.
 CISA/CISM are later-career signals because they require years of experience to hold.
 dont try to shortcut that with study time.
 for entry, the signal is framework fluency plus clean risk/evidence artifacts.
@@ -377,7 +374,7 @@ blue uses it when an incident becomes a risk and a control improvement.
 red uses it when a finding becomes a business-prioritized remediation.
 cloud uses it when a CSPM finding maps to CIS/NIST/ISO evidence.
 
-**domain map** - this block covers the governance layer that certs mostly test as program management:
+**checkpoint map** - after the artifacts, this is what each optional cert checks:
 
 | cert | domains / modules this block serves |
 |---|---|
@@ -467,7 +464,7 @@ then explain the difference between a framework, a control catalog, and an ISMS,
   - [ ] Red: HTB Starting Point Meow/Fawn/Dancing + Kioptrix Level 1 + report.
   - [ ] Cloud: flaws.cloud level 1-3 + CSPM scan + one remediated finding + re-scan.
   - [ ] GRC-first: SP 800-30 risk register + 5 CSF Reference Tool mappings.
-- [ ] u added the CERT-D4 layer to your primary lane: risk, control, evidence, remediation.
+- [ ] u added the GRC layer to your primary lane: risk, control, evidence, remediation.
 - [ ] u can explain the mechanism of your lane unaided, not just list tools.
 - [ ] u have one portfolio-ready artifact for Goal 5:
   - [ ] Blue: alert timeline + Sigma/KQL/SPL detection writeup.
@@ -477,7 +474,7 @@ then explain the difference between a framework, a control catalog, and an ISMS,
 
 **final can u explain it?** - unaided, tell this story:
 
-> "i chose this lane because the day-job loop fits me. here is the mechanism: raw signal or finding -> analysis -> decision -> artifact -> remediation. here is the cert group it maps to, here is the lab i passed, and here is the evidence that proves i understand why it works."
+> "i chose this lane because the day-job loop fits me. here is the mechanism: raw signal or finding -> analysis -> decision -> artifact -> remediation. here is the lab i passed, here is the evidence that proves i understand why it works, and only after that, here is the cert checkpoint i might take if it helps."
 
 if u can do that, ur ready for [Portfolio & Job Hunt](05-job-hunt.md).
 if not, the part u stumble on tells u exactly which block to redo.

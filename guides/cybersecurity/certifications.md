@@ -92,25 +92,25 @@ dont build separate cert silos qwq.
 
 for this map:
 
-- **CERT-2** = [Goal 2 - Networking & Security Core](02-core.md): Network+, CC/Security+ superset, crypto, IAM, attacks, SecOps, IR, GRC.
-- **CERT-3** = [Goal 3 - Scripting, Logs & CTF](03-scripting-ctf.md): Python, PowerShell, KQL/SPL, regex, log parsing, CTF reps.
-- **CERT-4** = [Goal 4 - Specialization](04-specialization.md): **CERT-D1** Blue, **CERT-D2** Red, **CERT-D3** Cloud, **CERT-D4** GRC layer.
+- **Goal 2** = [Networking & Security Core](02-core.md): Network+, CC/Security+ superset, crypto, IAM, attacks, SecOps, IR, GRC.
+- **Goal 3** = [Scripting, Logs & CTF](03-scripting-ctf.md): Python, PowerShell, KQL/SPL, regex, log parsing, CTF reps.
+- **Goal 4** = [Specialization](04-specialization.md): Blue / SOC lane, Red / pentest lane, Cloud security lane, and the GRC layer.
 
 | Cert checkpoint | do these topic groups, in order | u are ready when... |
 |---|---|---|
 | **A+ 220-1201 / 220-1202** | [Goal 1](01-foundations.md) Blocks 1-4: hardware -> OS -> networking/security intro -> practice sprint | Core 1 + Core 2 practice gates pass, and u can explain hardware/OS/network basics unaided |
-| **Network+ N10-009** | Goal 1 Block 3 networking intro -> **CERT-2 Block 1 - networking floor** -> **CERT-2 Block 6 - Network+ readiness sprint** | subnetting `/26`-`/28` is automatic, troubleshooting tools make sense, and ExamCompass/Dion gates pass |
-| **ISC2 CC** | **CERT-2 Block 2 - security foundations** -> **Block 3 - crypto + identity + access control** -> **Block 5 - operations + IR + GRC** -> **Block 6 - CC readiness** | all 5 CC domains are explainable; if testing on/after **2026-09-01**, re-check the ISC2 outline first |
-| **Security+ SY0-701** | **CERT-2 Block 1 - networking floor** -> **Block 2 - security foundations** -> **Block 3 - crypto + identity + access control** -> **Block 4 - attacks + CTF thread** -> **Block 5 - operations + IR + GRC** -> **Block 6 - Security+ readiness** | 85%+ fresh SY0-701 practice gates pass and u can tell one full attack/detect/respond story |
-| **CySA+ CS0-004** | Security+ readiness -> **CERT-3 Blocks 3-5 - KQL/SPL/regex + log parsing** -> **CERT-4 CERT-D1 - Blue / SOC** | u can triage alerts, query logs, explain vuln management, and write the report/comms side |
-| **BTL1 (Centri)** | Security+ readiness -> **CERT-3 Blocks 3-6 - log tooling + CTF reps** -> **CERT-4 CERT-D1 - Blue / SOC** | u can complete blue-team cases, build timelines, and justify IR decisions under time pressure |
-| **SC-200** | Security+ readiness -> **CERT-3 Block 3 - KQL** -> **CERT-4 CERT-D1 - Blue / SOC**, Microsoft-flavored | Sentinel/Defender incident flow, hunting, KQL, and detection tuning feel normal |
-| **eJPT v2** | **CERT-2 Block 1 networking + Block 4 attacks** -> **CERT-3 Block 6 CTF level-up hub** -> **CERT-4 CERT-D2 - Red / pentest** beginner boxes | u can enumerate services, get a shell legally, and explain what each step proved |
-| **HTB CPTS / PNPT** | eJPT-level comfort -> **CERT-4 CERT-D2 - Red / pentest** full report path | u can chain recon -> exploit -> privesc -> AD/pivoting -> report without living in walkthroughs |
-| **OSCP** | CPTS/PNPT-style report discipline -> more **CERT-D2** lab reps under time pressure | u can solve boxes consistently under time pressure and write clean evidence/remediation |
-| **SC-900** | **CERT-4 CERT-D3 - Cloud security** intro -> **CERT-D4 - GRC layer** basics | Entra, Defender, Sentinel, Purview, compliance, and identity terms are clear |
-| **Cloud security successor path** | Security+ -> SC-900 -> **CERT-4 CERT-D3 - Cloud security** | shared responsibility, IAM, CSPM, logging, and misconfig remediation are portfolio-visible |
-| **GRC / compliance path** | Security+ Domain 5 -> **CERT-4 CERT-D4 - GRC layer** | u can produce a risk register, control crosswalk, and evidence appendix; CISA/CISM wait until experience |
+| **Network+ N10-009** | Goal 1 Block 3 networking intro -> Goal 2 Block 1 networking floor -> Goal 2 Block 6 Network+ readiness sprint | subnetting `/26`-`/28` is automatic, troubleshooting tools make sense, and ExamCompass/Dion gates pass |
+| **ISC2 CC** | Goal 2 Block 2 security foundations -> Block 3 crypto + identity + access control -> Block 5 operations + IR + GRC -> Block 6 CC readiness | all 5 CC domains are explainable; if testing on/after **2026-09-01**, re-check the ISC2 outline first |
+| **Security+ SY0-701** | Goal 2 Block 1 networking floor -> Block 2 security foundations -> Block 3 crypto + identity + access control -> Block 4 attacks + CTF thread -> Block 5 operations + IR + GRC -> Block 6 Security+ readiness | 85%+ fresh SY0-701 practice gates pass and u can tell one full attack/detect/respond story |
+| **CySA+ CS0-004** | Security+ readiness -> Goal 3 Blocks 3-5 KQL/SPL/regex + log parsing -> Goal 4 Blue / SOC lane | u can triage alerts, query logs, explain vuln management, and write the report/comms side |
+| **BTL1 (Centri)** | Security+ readiness -> Goal 3 Blocks 3-6 log tooling + CTF reps -> Goal 4 Blue / SOC lane | u can complete blue-team cases, build timelines, and justify IR decisions under time pressure |
+| **SC-200** | Security+ readiness -> Goal 3 Block 3 KQL -> Goal 4 Blue / SOC lane, Microsoft-flavored | Sentinel/Defender incident flow, hunting, KQL, and detection tuning feel normal |
+| **eJPT v2** | Goal 2 Block 1 networking + Block 4 attacks -> Goal 3 Block 6 CTF level-up hub -> Goal 4 Red / pentest lane beginner boxes | u can enumerate services, get a shell legally, and explain what each step proved |
+| **HTB CPTS / PNPT** | eJPT-level comfort -> Goal 4 Red / pentest lane full report path | u can chain recon -> exploit -> privesc -> AD/pivoting -> report without living in walkthroughs |
+| **OSCP** | CPTS/PNPT-style report discipline -> more Red / pentest lane lab reps under time pressure | u can solve boxes consistently under time pressure and write clean evidence/remediation |
+| **SC-900** | Goal 4 Cloud security lane intro -> GRC layer basics | Entra, Defender, Sentinel, Purview, compliance, and identity terms are clear |
+| **Cloud security successor path** | Security+ -> SC-900 -> Goal 4 Cloud security lane | shared responsibility, IAM, CSPM, logging, and misconfig remediation are portfolio-visible |
+| **GRC / compliance path** | Security+ Domain 5 -> Goal 4 GRC layer | u can produce a risk register, control crosswalk, and evidence appendix; CISA/CISM wait until experience |
 
 ---
 
@@ -160,7 +160,7 @@ do **not** start AZ-500 now unless an employer explicitly requires it before **2
 
 ### GRC / compliance
 
-`Security+ (~$439)` -> `SC-900 (~$99)` -> Goal 4 **CERT-D4 GRC layer** artifacts -> `CISA` / `CISM` only after the experience requirement is real
+`Security+ (~$439)` -> `SC-900 (~$99)` -> Goal 4 **GRC layer** artifacts -> `CISA` / `CISM` only after the experience requirement is real
 
 optional before Security+: `CC (~$199 + $50 AMF)`.
 
