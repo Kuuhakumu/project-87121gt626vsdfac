@@ -1,109 +1,98 @@
-# 🎯 Interview Prep — Cloud & DevOps (2026)
+# Interview prep - Cloud & DevOps meow
 
-> Technical + behavioral question bank for **entry cloud/DevOps roles** (Cloud Support, Junior Cloud Engineer, Junior DevOps).
-> Don't memorize answers — understand them well enough to whiteboard or talk through them out loud.
+> technical + behavioral question bank for entry cloud/DevOps roles.
+> dont memorize answers. understand them well enough to talk through out loud.
 
-[← Hub](README.md) · [Job Hunt](05-job-hunt.md) · [Beyond Entry →](beyond-entry.md)
-
----
-
-## How entry cloud/DevOps interviews actually run
-
-Typical loop for a first role:
-1. **Recruiter screen** — why cloud, what you've built, salary/logistics.
-2. **Technical screen** — Linux + networking + cloud fundamentals, often a few "how would you debug…" scenarios.
-3. **Hands-on / scenario** — sometimes a live troubleshooting task (a broken pod, a Dockerfile that won't build) or a take-home.
-4. **Behavioral** — ownership, incidents, learning fast, working with developers.
-
-For Cloud Support roles specifically, expect **heavy troubleshooting + customer-communication** weighting. For Junior DevOps, expect **more pipeline/IaC depth**.
-
-> You will be asked things you don't know. The right move: **reason out loud, state your assumptions, say how you'd find the answer.** "I'd check the pod events with `kubectl describe`, then the logs" beats silence or a bluff.
+[Hub](README.md) - [Job Hunt](05-job-hunt.md) - [Beyond Entry](beyond-entry.md)
 
 ---
 
-## Linux & general
+- [ ] **know the interview loop**
+- [ ] **practice Linux + networking questions**
+- [ ] **practice cloud + Docker + Kubernetes questions**
+- [ ] **practice CI/CD + IaC + observability questions**
+- [ ] **prepare STAR stories**
+- [ ] **ask good questions**
+- [ ] **finish the final-week checklist**
 
-1. **What happens when you run a command in the shell?** — PATH lookup → fork/exec → process runs → exit code. Bonus: stdin/stdout/stderr.
-2. **A server is slow — how do you investigate?** — `top`/`htop` (CPU/mem), `df -h` (disk full?), `free -m`, `iostat`, check logs in `/var/log`, `dmesg`. Narrow CPU vs memory vs disk vs network.
-3. **File permissions: what does `755` mean?** — owner rwx, group r-x, others r-x. `chmod`/`chown`.
-4. **Hard link vs symlink?** — hard = same inode; symlink = pointer to a path.
-5. **How do you find what's listening on a port?** — `ss -tulpn` (or `netstat -tulpn`), `lsof -i :PORT`.
+## how entry interviews run
 
-## Networking
+- [ ] **Recruiter screen:** why cloud, what youve built, logistics.
+- [ ] **Technical screen:** Linux, networking, cloud fundamentals, troubleshooting.
+- [ ] **Hands-on / scenario:** broken pod, broken Dockerfile, or take-home.
+- [ ] **Behavioral:** ownership, incidents, learning fast, working with developers.
 
-6. **Walk me through what happens when you type a URL and hit enter.** — DNS resolve → TCP handshake → TLS → HTTP request → response → render. Mention each layer.
-7. **TCP vs UDP?** — TCP reliable/ordered/connection-based; UDP fire-and-forget, lower latency (DNS, streaming).
-8. **What's a subnet / CIDR?** — `/24` = 256 addresses. Be able to explain public vs private subnets in a VPC.
-9. **Reverse proxy vs load balancer?** — Reverse proxy fronts servers (TLS, routing, caching); LB distributes traffic across instances. Overlap in practice (nginx, ALB).
-10. **What's the difference between a security group and a NACL (AWS)?** — SG = stateful, instance-level; NACL = stateless, subnet-level.
+Cloud Support roles lean troubleshooting + customer communication. Junior DevOps leans pipeline/IaC depth.
 
-## Cloud
+u will be asked things u dont know. reason out loud, state assumptions, say how youd find the answer. that beats bluffing.
 
-11. **IAM users vs IAM roles — when each?** — Users = long-lived humans/credentials; roles = temporary, assumed by services/instances. **Prefer roles**; avoid long-lived keys.
-12. **How do you give an EC2 instance access to an S3 bucket — securely?** — Attach an **IAM role** to the instance (instance profile), not access keys baked into code.
-13. **What's a VPC?** — Isolated virtual network: subnets, route tables, gateways, security groups.
-14. **Object storage (S3) vs block storage (EBS) vs file storage (EFS)?** — Object = HTTP API, infinitely scalable, not a filesystem; block = a disk for one instance; file = shared POSIX filesystem.
-15. **How do you keep cloud costs down?** — Right-size, auto-scale, spot/reserved, billing alarms, tag resources, tear down unused infra. (Cloud Support loves this.)
+## Linux and networking
 
-## Docker
+- [ ] what happens when u run a command in the shell?
+- [ ] server is slow - how do u investigate?
+- [ ] file permissions: what does `755` mean?
+- [ ] hard link vs symlink?
+- [ ] how do u find whats listening on a port?
+- [ ] what happens when u type a URL and hit Enter?
+- [ ] TCP vs UDP?
+- [ ] what is subnet/CIDR?
+- [ ] reverse proxy vs load balancer?
+- [ ] AWS security group vs NACL?
 
-16. **Image vs container?** — Image = immutable template; container = running instance of it.
-17. **A container exits immediately — how do you debug?** — `docker logs`, check the `CMD`/`ENTRYPOINT`, run it interactively (`docker run -it … sh`), verify the foreground process doesn't exit.
-18. **What's a multi-stage build and why use it?** — Build in one stage, copy only artifacts to a slim final image → smaller, fewer CVEs.
-19. **Where do you put secrets in a container?** — **Not** in the image or env baked at build. Inject at runtime via secrets manager / orchestrator secrets.
+## cloud, Docker, and Kubernetes
 
-## Kubernetes
+- [ ] IAM users vs IAM roles - when each?
+- [ ] how do u give EC2 access to S3 securely?
+- [ ] what is a VPC?
+- [ ] S3 vs EBS vs EFS?
+- [ ] how do u keep cloud costs down?
+- [ ] image vs container?
+- [ ] container exits immediately - how debug?
+- [ ] multi-stage build and why use it?
+- [ ] where do secrets go in containers?
+- [ ] pod in `CrashLoopBackOff` - diagnose it.
+- [ ] Pod vs Deployment vs Service?
+- [ ] how does a Service find pods?
+- [ ] liveness vs readiness probe?
+- [ ] ConfigMap vs Secret?
 
-20. **A pod is in `CrashLoopBackOff` — walk me through diagnosing it.** — `kubectl describe pod` (events), `kubectl logs` (+ `--previous`), check liveness/readiness probes, resource limits (OOMKilled?), image/command errors, config/secret mounts.
-21. **Pod vs Deployment vs Service?** — Pod = smallest unit; Deployment = manages replicas/rollouts; Service = stable network endpoint for pods.
-22. **How does a Service find its pods?** — Label selectors → endpoints. Types: ClusterIP, NodePort, LoadBalancer.
-23. **What's a liveness vs readiness probe?** — Liveness = restart if unhealthy; readiness = remove from Service until ready.
-24. **ConfigMap vs Secret?** — Both inject config; Secrets are base64 (not encrypted by default — enable encryption at rest / external secrets).
+## CI/CD, IaC, and observability
 
-## CI/CD & IaC
+- [ ] describe CI/CD from `git push` to production.
+- [ ] `terraform plan` vs `apply` - why plan first?
+- [ ] what is Terraform state and what breaks it?
+- [ ] what is GitOps?
+- [ ] blue-green vs canary deployment?
+- [ ] three pillars of observability?
+- [ ] SLO vs SLI vs error budget?
 
-25. **Describe a CI/CD pipeline from `git push` to production.** — Trigger → lint → test → build image → push to registry → deploy to staging → smoke test → promote/approve → prod. Mention rollback.
-26. **`terraform plan` vs `apply` — why always plan first?** — Plan shows the diff before changing real infra; apply executes it. Plan = your safety review.
-27. **What is Terraform state and what breaks it?** — State maps config → real resources. Breaks: manual console changes (drift), local state without locking, lost/corrupt state. Fix: **remote state + locking** (S3+DynamoDB / TF Cloud).
-28. **What is GitOps?** — Git is the source of truth for infra/deploys; a controller (ArgoCD/Flux) continuously syncs the cluster to the repo. Change = a PR, not a manual `kubectl apply`.
-29. **Blue-green vs canary deployment?** — Blue-green = two full envs, switch traffic at once; canary = shift a small % first, watch, then ramp.
+## behavioral prompts
 
-## Observability
+use STAR: Situation, Task, Action, Result.
 
-30. **What are the three pillars of observability?** — Metrics, logs, traces. (OpenTelemetry → Prometheus → Grafana is the modern stack.)
-31. **What's an SLO/SLI/error budget?** — SLI = a measured signal (e.g. latency); SLO = target (99.9%); error budget = allowed failure before you stop shipping and fix reliability.
+- [ ] something u deployed broke in production - what did u do?
+- [ ] manual process u automated - what was the impact?
+- [ ] time u learned a new tool fast.
+- [ ] disagreed with a developer about a deploy/process.
+- [ ] tell me about a hard bug.
+
+## questions to ask them
+
+- [ ] what does your deployment pipeline look like today?
+- [ ] how is on-call structured for someone junior?
+- [ ] how much is IaC vs clicked in the console?
+- [ ] what would my first 90 days look like?
+
+## final-week checklist
+
+- [ ] can explain DNS -> TCP -> TLS -> HTTP out loud
+- [ ] can debug `CrashLoopBackOff` and a dead container step by step
+- [ ] can explain IAM roles vs users and why roles
+- [ ] can describe CI/CD + rollback strategy
+- [ ] can explain Terraform state + remote state/locking
+- [ ] 3-4 STAR stories rehearsed
+- [ ] one portfolio project ready to screen-share end to end
 
 ---
 
-## Behavioral (use STAR: Situation, Task, Action, Result)
-
-- **"Something you deployed broke in production — what did you do?"** — Show calm triage: detect → mitigate (rollback) → root-cause → prevent (postmortem, no blame).
-- **"A manual process you automated — what was the impact?"** — Quantify ("cut deploy from 30 min manual to a 3-min pipeline").
-- **"A time you had to learn a new tool fast."** — Show your learning method (docs-first, build a small project).
-- **"You disagreed with a developer about a deploy/process."** — Show you collaborate, not gatekeep. DevOps is a culture, not a wall.
-- **"Tell me about a hard bug."** — Structured debugging, how you narrowed it down.
-
----
-
-## Questions to ask *them* (you're being judged on these too)
-
-- "What does your deployment pipeline look like today?"
-- "On-call rotation — how's it structured for someone junior?"
-- "How much is run on IaC vs clicked in the console?"
-- "What would my first 90 days look like?"
-
----
-
-## Final-week checklist
-
-- [ ] Can explain DNS → TCP → TLS → HTTP out loud
-- [ ] Can debug a `CrashLoopBackOff` and a dead container step by step
-- [ ] Can explain IAM roles vs users and *why roles*
-- [ ] Can describe a full CI/CD pipeline + a rollback strategy
-- [ ] Can explain Terraform state + remote state/locking
-- [ ] 3–4 STAR stories rehearsed (incident, automation, fast learning, collaboration)
-- [ ] One portfolio project you can screen-share and walk through end to end
-
----
-
-*Last verified: June 2026. Tooling/versions in answers reflect the 2026 stack — see [resources.md](resources.md).*
+*Last verified: June 2026. Tooling/versions reflect the 2026 stack - see [resources.md](resources.md).*

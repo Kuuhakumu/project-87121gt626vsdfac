@@ -1,128 +1,142 @@
-# 🏅 Certification Guide — Product Management (2026)
+# Certification guide: Product Management (2026) meow
 
-> Verified via official sources and community data, June 2026. Prices in USD; **confirm on the official site before booking** — codes and prices shift.
+> verified via official sources and community data, June 2026.
+> prices are in USD. confirm on the official site before booking, bc codes and prices shift.
 
-Confidence: ✅ verified on official page · ⚠️ price rendered via JS or Cloudflare-blocked (community-verified estimate) · ⛔ blocked automated checks.
-
----
-
-## TL;DR — What to actually get
-
-**In tech and startups, PM hiring largely ignores certifications.** Product sense, a portfolio of thinking artifacts, and shipped work are what actually move the needle. Certs aren't a hiring filter at most product-led companies.
-
-**The one exception:** the **PMP** is the only PM cert with real gatekeeping power — in enterprise, government, consulting, and federal-adjacent environments, it appears on job descriptions as a requirement. If you're targeting those environments, PMP is worth pursuing.
-
-**For everyone else:** one Scrum cert (PSPO I or CSPO) gives you credible Agile vocabulary at low cost. That's enough cert investment for most PM job searches. Anything beyond that is diminishing returns vs. time spent on your portfolio.
+Confidence labels: `verified`, `price estimate / blocked`, `skip`.
 
 ---
 
-## Cert data sheet
+- [ ] **understand cert reality**
+- [ ] **choose PSPO I / CSPO only if it helps**
+- [ ] **use PMP only for enterprise/gov path**
+- [ ] **skip certs that dont move hiring**
 
-| Cert | Issuer | Price | Format | Valid | ✓ |
+## TL;DR: what to actually get
+
+in tech and startups, PM hiring largely ignores certifications.
+product sense, thinking artifacts, and shipped work are what move the needle.
+certs are not a hiring filter at most product-led companies.
+
+one exception: **PMP** has real gatekeeping power in enterprise, government, consulting, and federal-adjacent environments.
+if u target those environments, PMP can matter.
+
+for everyone else, one Scrum cert like **PSPO I** or **CSPO** gives credible Agile vocabulary.
+thats enough cert investment for most PM searches.
+anything beyond that usually loses to portfolio time.
+
+## cert data sheet
+
+| Cert | Issuer | Price | Format | Valid | Signal |
 |---|---|---|---|---|---|
-| PSPO I (Professional Scrum Product Owner I) | Scrum.org | ~$250/attempt | 80 MCQ, 60 min, 85% pass, online | Lifetime | ⚠️ |
-| PSM I (Professional Scrum Master I) | Scrum.org | ~$250/attempt | 80 MCQ, 60 min, 85% pass, online | Lifetime | ⚠️ |
-| CSPO (Certified Scrum Product Owner) | Scrum Alliance | ~$1,200–2,000 (trainer-set) | 2-day course, attendance-based (no exam) | 2 yr (renew $100) | ⚠️ |
-| CAPM (Certified Associate in Project Management) | PMI | $370 member / $470 non-member | 150 MCQ, 3 hrs, Pearson VUE | 3 yr (PDUs) | ⚠️ |
-| PMP (Project Management Professional) | PMI | $405 member / $555 non-member | 180 Q, 230 min, Pearson VUE | 3 yr / 60 PDUs | ⚠️ |
-| PMI-ACP (Agile Certified Practitioner) | PMI | $435 member / $495 non-member | 120 MCQ, 3 hrs, Pearson VUE | 3 yr (PDUs) | ⚠️ |
-| Pragmatic PMC — Foundations/Focus/Build | Pragmatic Institute | $1,295/course (bundle saves ~$200) | Completion-based, self-paced | No expiry noted | ✅ |
-| AIPMM CPM / CPMM | AIPMM | ~$695 each | Exam-based | — | ⛔ |
-| Product School PM Certificate | Product School | ~$4,000–5,000 | Bootcamp completion cert | — | ⛔ |
+| PSPO I | Scrum.org | ~$250/attempt | 80 MCQ, 60 min, 85% pass, online | lifetime | price estimate |
+| PSM I | Scrum.org | ~$250/attempt | 80 MCQ, 60 min, 85% pass, online | lifetime | price estimate |
+| CSPO | Scrum Alliance | ~$1,200-2,000 trainer-set | 2-day course, attendance-based | 2 yr, renew $100 | price estimate |
+| CAPM | PMI | $370 member / $470 non-member | 150 MCQ, 3 hrs, Pearson VUE | 3 yr PDUs | price estimate |
+| PMP | PMI | $405 member / $555 non-member | 180 Q, 230 min, Pearson VUE | 3 yr / 60 PDUs | price estimate |
+| PMI-ACP | PMI | $435 member / $495 non-member | 120 MCQ, 3 hrs, Pearson VUE | 3 yr PDUs | price estimate |
+| Pragmatic PMC Foundations/Focus/Build | Pragmatic Institute | $1,295/course, bundle saves ~$200 | completion-based, self-paced | no expiry noted | verified |
+| AIPMM CPM / CPMM | AIPMM | ~$695 each | exam-based | unknown | skip |
+| Product School PM Certificate | Product School | ~$4,000-5,000 | bootcamp completion cert | unknown | skip |
 
-> **Registration note:** PMI exams (PMP, CAPM, PMI-ACP) are delivered via **Pearson VUE** (in-person test centers or online proctored). Scrum.org assessments are taken online directly on the Scrum.org platform — no proctor required.
+registration note:
+PMI exams are delivered via **Pearson VUE** in test centers or online proctored.
+Scrum.org assessments are taken online directly through Scrum.org, no proctor required.
 
-> ⚠️ All Scrum.org prices are community-verified (scrum.org uses Cloudflare, curl-blocked June 2026). CSPO training price is trainer-set — confirm with your specific trainer. All PMI prices are community-verified (pmi.org returned 403, June 2026). **Confirm all prices on the official site before booking.**
+Scrum.org and PMI pricing was community-verified because official pages were blocked or JS-rendered in June 2026.
+confirm all prices on official sites before booking.
 
----
+## PSPO I vs CSPO
 
-## PSPO I vs CSPO — which one?
-
-| | PSPO I (Scrum.org) | CSPO (Scrum Alliance) |
+| | PSPO I | CSPO |
 |---|---|---|
-| Format | Online exam, anytime | 2-day instructor-led course |
-| Pass requirement | 85% — an actual test | Attendance-based (no exam) |
-| Cost | ~$250 | ~$1,200–2,000 |
-| Validity | Lifetime | 2 yr, $100 renewal |
-| Employer signal | Slightly stronger — it has a real exam | Widely recognized; preferred by some enterprises |
-| Verdict | Better value; demonstrates you passed something | Better networking; if your employer pays, take CSPO |
+| Format | online exam, anytime | 2-day instructor-led course |
+| Pass requirement | 85%, actual test | attendance-based |
+| Cost | ~$250 | ~$1,200-2,000 |
+| Validity | lifetime | 2 yr, $100 renewal |
+| Employer signal | slightly stronger because it has an exam | widely recognized, preferred by some enterprises |
+| Verdict | better self-funded value | take it if employer pays |
 
-**Recommendation:** If you're self-funding, take PSPO I. Study the Scrum Guide (free), take a few practice assessments (free on Scrum.org), pass on the first attempt.
+recommendation: if youre self-funding, take **PSPO I**.
+study the Scrum Guide, take free practice assessments, pass on first attempt.
 
----
+## PMP prereqs
 
-## PMP prereqs (don't start if you don't qualify)
+PMP is the only PM cert with real gatekeeping power in enterprise/government hiring.
+but prereqs are significant:
 
-The PMP is the only PM cert with real gatekeeping power in enterprise/government hiring. But the prerequisites are significant:
+- [ ] 4-year degree, or secondary education with more experience
+- [ ] 36 months leading projects with 4-year degree, or 60 months without
+- [ ] 35 contact hours of PM education
 
-- **Education:** 4-year degree (or secondary education with more experience)
-- **Experience:** 36 months leading projects (with 4-year degree) or 60 months (without)
-- **Education in PM:** 35 contact hours of PM education
+if u dont have 3 years leading projects, target **CAPM** first.
+CAPM needs 23 contact hours and no experience beyond high school diploma.
 
-If you don't yet have 3 years of leading projects, target CAPM first (23 contact hours, no experience requirement beyond a high school diploma). CAPM signals "I'm learning PM" at the entry/switcher level.
+## Pragmatic Institute certs
 
----
+the Pragmatic Framework is used in B2B SaaS and enterprise software PM teams.
+if u target those companies, Pragmatic PMC can carry recognition.
 
-## Pragmatic Institute certs (B2B / SaaS context)
+relevant courses:
 
-The Pragmatic Framework is widely used in B2B SaaS and enterprise software PM teams. If you're targeting those companies, Pragmatic PMC certs carry real recognition.
+- [ ] **Foundations** (~$1,295): overview of Pragmatic Framework
+- [ ] **Focus** (~$1,295): market intelligence, problem definition, strategic input
+- [ ] **Build** (~$1,295): product planning, roadmaps, requirements
 
-The three relevant courses:
-- **Foundations** (~$1,295): overview of the Pragmatic Framework
-- **Focus** (~$1,295): market intelligence, problem definition, strategic input
-- **Build** (~$1,295): product planning, roadmaps, requirements
+these are completion-based, no pass/fail exam, but substantial coursework.
+prices were verified on Pragmatic Institute in June 2026.
 
-The bundle discount saves ~$200. These are completion-based — no pass/fail exam, but substantial coursework. ✅ Prices verified on the official Pragmatic Institute site, June 2026.
+## employer signal ranking
 
----
+### baseline filter: enterprise/gov only
 
-## Employer signal ranking
+- [ ] **PMP** - literal requirement on some enterprise, government, consulting, and federal-adjacent postings.
 
-🔴 **Baseline filter (enterprise/gov only):**
-- **PMP** — appears as a literal requirement on enterprise, government, consulting, and federal-adjacent PM postings. If you're targeting these, you eventually need it. Not relevant for tech/startup hiring.
+### differentiators
 
-🟠 **Differentiator:**
-- **PSPO I** — credible Scrum signal with a real exam; recognized at Scrum-using companies
-- **CSPO** — widely recognized; some enterprise shops prefer it
-- **PMI-ACP** — agile-focused PMI cert; differentiator at PMI-centric organizations
-- **Pragmatic PMC** — recognized at B2B SaaS and enterprise software companies using the Pragmatic Framework
+- [ ] **PSPO I** - credible Scrum signal with an exam.
+- [ ] **CSPO** - widely recognized, some enterprise shops prefer it.
+- [ ] **PMI-ACP** - useful at PMI-centric organizations.
+- [ ] **Pragmatic PMC** - recognized in B2B SaaS / enterprise software using Pragmatic Framework.
 
-🟡 **Nice-to-have / entry signal:**
-- **CAPM** — entry/career-switcher signal; shows you're learning PM seriously
-- **Product School PM Certificate** — brand recognition in tech circles; not a hiring filter
+### nice-to-have / entry signal
 
-⛔ **Skip:**
-- **AIPMM CPM/CPMM** — low employer recognition; only relevant if you're targeting product marketing overlap roles
-- **Any cert before you have a portfolio** — no cert substitutes for demonstrated product thinking
+- [ ] **CAPM** - entry/career-switcher signal.
+- [ ] **Product School PM Certificate** - brand recognition in tech circles, not a hiring filter.
 
----
+### skip
 
-## Recommended paths
+- [ ] **AIPMM CPM/CPMM** - low employer recognition, mostly product marketing overlap.
+- [ ] **Any cert before portfolio** - no cert substitutes for demonstrated product thinking.
 
-**Breaking in (no certs yet):**
-Focus entirely on the portfolio. One PSPO I cert (~$250) for credibility when you start applying to Scrum-using companies. That's the ceiling of cert investment at this stage.
+## recommended paths
 
-**Targeting enterprise / government PM (~$800–1,000):**
-`CAPM` (entry signal, while building experience) → `PMP` (once you have 3 yrs leading projects)
+**breaking in:**
+focus on portfolio.
+one PSPO I cert (~$250) can help with Scrum-using companies.
+stop there unless a target role asks for more.
 
-**Targeting B2B SaaS PM (~$1,295–3,885):**
-`PSPO I (~$250)` → `Pragmatic Foundations (~$1,295)` once you're employed and your company covers it. The Pragmatic cert ROI is much better when employer-paid.
+**enterprise / government PM (~$800-1,000):**
+`CAPM` while building experience -> `PMP` once u have 3 years leading projects.
+
+**B2B SaaS PM (~$1,295-3,885):**
+`PSPO I (~$250)` -> `Pragmatic Foundations (~$1,295)` after employment or employer sponsorship.
 
 **Agile-heavy environment (~$250):**
-`PSPO I` is sufficient. `PSM I` adds scrum-master vocabulary. `PMI-ACP` if the company asks for it.
+`PSPO I` is enough.
+`PSM I` adds Scrum Master vocabulary.
+`PMI-ACP` only if company asks.
 
----
-
-## What's dated in a 2021-era list
+## whats dated in a 2021-era list
 
 | Outdated advice | 2026 reality |
 |---|---|
-| "Get a PM cert to break in" | Portfolios + APM programs are the real entry levers; certs don't substitute |
-| "Product School is a strong signal" | Mixed employer reception; recognized but not a hiring filter |
-| "PMP is too hard" | PMP remains the one cert worth the effort — in the environments where it matters |
-| "Scrum.org vs Scrum Alliance doesn't matter" | PSPO I has a real exam; CSPO is attendance-based — matters for credibility |
-| "No PM-specific certs exist" | Pragmatic, AIPMM, Product School, and others exist; employer weight varies widely |
+| "Get a PM cert to break in" | portfolio + APM programs are the real entry levers |
+| "Product School is a strong signal" | recognized, but not a hiring filter |
+| "PMP is too hard" | PMP remains worth it where enterprise/gov requires it |
+| "Scrum.org vs Scrum Alliance doesnt matter" | PSPO I has an exam; CSPO is attendance-based |
+| "No PM-specific certs exist" | Pragmatic, AIPMM, Product School exist, but employer weight varies |
 
 ---
 
-*Sources: official cert pages (scrum.org, scrumalliance.org, pmi.org, pragmaticinstitute.com), community-verified pricing, curl-checked June 2026. pmi.org and scrum.org returned 403/Cloudflare blocks — prices from community sources. Confirm all prices and eligibility on the official site before booking.*
+*Sources: official cert pages, community-verified pricing, curl-checked June 2026. pmi.org and scrum.org returned 403/Cloudflare blocks, so prices came from community sources. Confirm prices and eligibility before booking.*

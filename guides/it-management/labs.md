@@ -1,103 +1,102 @@
-# 🧪 Interactive Lab & Tool Inventory — IT Management (2026)
+# Interactive lab and tool inventory: IT Management (2026) meow
 
-> Every platform **verified June 2026**. Free-first. IT management practice is about *producing artifacts and running processes* in real tools — not reading about them.
-> ✅ live (200 OK) · ⚠️ live but bot-blocked (403/JS, works in browser) · ❌ dead.
+> every platform was verified June 2026.
+> IT management practice means producing artifacts and running processes in real tools, not just reading.
 
-Use this as your menu — each phase file points back here. The portfolio you build in [Phase 4](04-projects.md) lives in these tools. Set up the free tiers early so the artifacts have somewhere to go.
+Status labels: `live`, `bot-blocked but works in browser`, `dead`.
+
+use this as your menu.
+the portfolio in [Goal 4](04-projects.md) lives in these tools, so set up the free tiers early.
 
 ---
 
-## Service management & ticketing
+- [ ] **service management and ticketing**
+- [ ] **project and work management**
+- [ ] **templates and frameworks**
+- [ ] **roadmapping**
+- [ ] **governance, risk, frameworks**
+- [ ] **case studies and simulations**
+- [ ] **dead or changed resources**
 
-| Lab | Platform | What you do | Cost | Status |
+## service management and ticketing
+
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Jira Free](https://www.atlassian.com/software/jira/free) | Atlassian | Run an IT backlog, build sprints, move tickets through a board, track velocity | **Free** (≤10 users) | ✅ |
-| [Jira Service Management](https://www.atlassian.com/software/jira/service-management) | Atlassian | Configure a service desk, request types, and SLA timers | **Free** tier | ✅ |
-| [ServiceNow Developer (PDI)](https://developer.servicenow.com/devdo) | ServiceNow | Provision a free personal dev instance; build an incident workflow with categories, assignment rules, SLA timers | **Free** (personal dev instance) | ✅ |
-| [PagerDuty Free](https://www.pagerduty.com/pricing) | PagerDuty | Set up on-call rotations, escalation policies, and incident response | **Free** (≤5 users) | ✅ |
-| [Confluence Free](https://www.atlassian.com/software/confluence/free) | Atlassian | Build a service catalog, runbooks, and a team wiki | **Free** (≤10 users) | ✅ |
+| [Jira Free](https://www.atlassian.com/software/jira/free) | Atlassian | run backlog, sprints, tickets, velocity | **Free** up to 10 users | live |
+| [Jira Service Management](https://www.atlassian.com/software/jira/service-management) | Atlassian | configure service desk, request types, SLA timers | **Free** tier | live |
+| [ServiceNow Developer PDI](https://developer.servicenow.com/devdo) | ServiceNow | build incident workflow with categories, assignment rules, SLA timers | **Free** personal dev instance | live |
+| [PagerDuty Free](https://www.pagerduty.com/pricing) | PagerDuty | on-call rotations, escalation policies, incident response | **Free** up to 5 users | live |
+| [Confluence Free](https://www.atlassian.com/software/confluence/free) | Atlassian | service catalog, runbooks, team wiki | **Free** up to 10 users | live |
 
-**Practice gate:** provision a ServiceNow PDI *or* a Jira Service Management project, configure one incident workflow with categories, an assignment rule, and at least one SLA timer. Screenshot the configuration and write a paragraph explaining your category and routing decisions.
+**practice gate:** provision ServiceNow PDI or Jira Service Management, configure one incident workflow with categories, an assignment rule, and an SLA timer. screenshot it and explain routing choices.
 
----
+## project and work management
 
-## Project & work management
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Asana Free](https://asana.com/pricing) | Asana | Project charter, timeline view, risk register from templates | **Free** tier | ✅ |
-| [Trello Free](https://trello.com/pricing) | Atlassian | Lightweight kanban for personal roadmap and action-item tracking | **Free** tier | ✅ |
-| [Monday.com Free](https://monday.com/pricing) | monday.com | Work boards, dependency tracking | **Free** (≤2 seats) | ✅ |
-| [Linear Free](https://linear.app/pricing) | Linear | Modern issue tracking + roadmap; good for IT-as-product framing | **Free** tier | ✅ |
-| [Notion Free](https://www.notion.com/pricing) | Notion | Service catalog, 90-day plan, OKRs, business cases, portfolio index | **Free** tier | ✅ |
+| [Asana Free](https://asana.com/pricing) | Asana | project charter, timeline, risk register templates | **Free** tier | live |
+| [Trello Free](https://trello.com/pricing) | Atlassian | lightweight kanban and action tracking | **Free** tier | live |
+| [Monday.com Free](https://monday.com/pricing) | monday.com | work boards and dependency tracking | **Free** up to 2 seats | live |
+| [Linear Free](https://linear.app/pricing) | Linear | issue tracking and roadmap | **Free** tier | live |
+| [Notion Free](https://www.notion.com/pricing) | Notion | catalog, 90-day plan, OKRs, business cases, portfolio index | **Free** tier | live |
 
-**Practice gate:** build a project charter and a full RACI matrix for a fictional IT project (e.g., "migrate the team to SSO") in Asana or Notion. Every task has exactly one Accountable owner.
+**practice gate:** build a project charter and RACI for "migrate team to SSO." every task has exactly one Accountable owner.
 
----
+## templates and frameworks
 
-## Templates & frameworks
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Atlassian Team Playbook](https://www.atlassian.com/team-playbook/plays) | Atlassian | Run facilitated plays solo or with a group: health monitors, DACI decisions, retrospectives | **Free** | ✅ |
-| [Asana Templates](https://asana.com/templates) | Asana | Project charter, risk register, IT roadmap, sprint planning, RACI | **Free** | ✅ |
-| [Miro Templates](https://miro.com/templates) | Miro | Service blueprints, RACI, retrospectives, roadmaps | **Free** (3 boards) | ✅ |
-| [OKR framework repo](https://github.com/joelparkerhenderson/objectives-and-key-results) | GitHub | Extensive OKR examples, templates, and anti-patterns in Markdown | **Free** | ✅ |
-| [Awesome SRE](https://github.com/dastergon/awesome-sre) | GitHub | Post-mortem templates, incident runbooks, SLI/SLO resources | **Free** | ✅ |
-| [PagerDuty Incident Response](https://response.pagerduty.com) | PagerDuty | Full incident command process, roles, runbooks — read and role-play | **Free** | ✅ |
-| [PagerDuty Post-mortems](https://postmortems.pagerduty.com) | PagerDuty | Blameless post-mortem guide + template | **Free** | ✅ |
+| [Atlassian Team Playbook](https://www.atlassian.com/team-playbook/plays) | Atlassian | health monitors, DACI, retrospectives | **Free** | live |
+| [Asana Templates](https://asana.com/templates) | Asana | charter, risk register, roadmap, sprint planning, RACI | **Free** | live |
+| [Miro Templates](https://miro.com/templates) | Miro | service blueprints, RACI, retrospectives, roadmaps | **Free** 3 boards | live |
+| [OKR framework repo](https://github.com/joelparkerhenderson/objectives-and-key-results) | GitHub | OKR examples, templates, anti-patterns | **Free** | live |
+| [Awesome SRE](https://github.com/dastergon/awesome-sre) | GitHub | post-mortems, runbooks, SLI/SLO resources | **Free** | live |
+| [PagerDuty Incident Response](https://response.pagerduty.com) | PagerDuty | incident command process, roles, runbooks | **Free** | live |
+| [PagerDuty Post-mortems](https://postmortems.pagerduty.com) | PagerDuty | blameless post-mortem guide and template | **Free** | live |
 
-**Practice gate:** simulate a P1 incident (e.g., auth service outage) and complete a full blameless post-mortem using PagerDuty's template: timeline, contributing factors, and 5+ action items with owners and due dates.
+**practice gate:** simulate a P1 incident and complete a blameless post-mortem with timeline, contributing factors, and 5+ action items.
 
----
+## roadmapping and visualization
 
-## Roadmapping & visualization
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Miro Free](https://miro.com/pricing) | Miro | Service blueprints, 12-month IT roadmap with swimlanes, retro boards | **Free** (3 boards) | ✅ |
-| [Linear Free](https://linear.app/pricing) | Linear | Visual roadmap by initiative/theme | **Free** tier | ✅ |
-| [Notion](https://www.notion.com/pricing) | Notion | Roadmap tables, quarterly planning | **Free** tier | ✅ |
+| [Miro Free](https://miro.com/pricing) | Miro | service blueprints, 12-month roadmap, retro boards | **Free** 3 boards | live |
+| [Linear Free](https://linear.app/pricing) | Linear | visual roadmap by initiative/theme | **Free** tier | live |
+| [Notion](https://www.notion.com/pricing) | Notion | roadmap tables, quarterly planning | **Free** tier | live |
 
-**Practice gate:** build a 12-month IT roadmap for a fictional growing startup — swimlanes by theme (infrastructure, security, tooling, team), each initiative annotated with rationale and dependencies.
+**practice gate:** build a 12-month IT roadmap for a fictional startup with swimlanes by infrastructure, security, tooling, and team.
 
----
+## governance, risk, and frameworks
 
-## Governance, risk & frameworks (reading + practice)
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [ITIL 4 overview](https://www.axelos.com/certifications/itil-service-management) | Axelos / PeopleCert | Read the ITIL 4 service value system and four-dimensions model | **Free** overview | ✅ |
-| [COBIT resources](https://www.isaca.org/resources/cobit) | ISACA | Free intro content + whitepapers on governance and IT risk | **Free** intro | ✅ |
-| [TOGAF Standard](https://www.opengroup.org/togaf) | The Open Group | Read the enterprise architecture framework overview | **Free** overview | ✅ |
-| [ISACA IT Risk Fundamentals](https://www.isaca.org/resources/it-risk) | ISACA | Free whitepapers and intro content on IT risk and governance | **Free** | ✅ |
-| [SFIA 9 framework](https://sfia-online.org/en/sfia-9) | SFIA Foundation | Self-assess your skills against the global IT skills framework (Levels 1–7) | **Free** | ✅ |
+| [ITIL 4 overview](https://www.axelos.com/certifications/itil-service-management) | Axelos / PeopleCert | service value system and four dimensions | **Free** overview | live |
+| [COBIT resources](https://www.isaca.org/resources/cobit) | ISACA | governance and IT risk intro content | **Free** intro | live |
+| [TOGAF Standard](https://www.opengroup.org/togaf) | The Open Group | enterprise architecture overview | **Free** overview | live |
+| [ISACA IT Risk Fundamentals](https://www.isaca.org/resources/it-risk) | ISACA | IT risk and governance intro content | **Free** | live |
+| [SFIA 9 framework](https://sfia-online.org/en/sfia-9) | SFIA Foundation | self-assess skills Levels 1-7 | **Free** | live |
 
-**Practice gate:** self-assess against SFIA 9 — pick the 5 skills most relevant to your target track (e.g., ITMG, SLMO, GOVN, BURM, RLMT) and honestly rate your current level 1–7. This becomes your personal development map.
+**practice gate:** self-assess against SFIA 9. pick 5 skills relevant to your target track and rate current level 1-7.
 
----
+## case studies and simulations
 
-## Case studies & simulations
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Atlassian Team Playbook](https://www.atlassian.com/team-playbook/plays) | Atlassian | Facilitated exercises run solo or with a study group | **Free** | ✅ |
-| [PagerDuty Incident Response](https://response.pagerduty.com) | PagerDuty | Role-play incident command: IC, comms lead, subject-matter expert | **Free** | ✅ |
-| [Google Project Management Certificate](https://www.coursera.org/professional-certificates/google-project-management) | Coursera | Graded artifacts you keep: stakeholder registers, project plans, risk registers | **Free** audit / ~$49/mo cert | ✅ |
-| [Harvard Business Publishing cases](https://hbsp.harvard.edu/cases) | HBP | IT strategy and org-change case studies used in MBA programs | ~$4–9/case ⚠️ paywalled | ⚠️ |
-| [AXELOS ITIL practice guides](https://www.axelos.com/certifications/itil-service-management) | Axelos | ITIL scenario exercises and practice questions | **Free** overview; paid full guides | ✅ |
+| [Atlassian Team Playbook](https://www.atlassian.com/team-playbook/plays) | Atlassian | facilitated exercises solo or group | **Free** | live |
+| [PagerDuty Incident Response](https://response.pagerduty.com) | PagerDuty | role-play incident command | **Free** | live |
+| [Google Project Management Certificate](https://www.coursera.org/professional-certificates/google-project-management) | Coursera | graded artifacts: stakeholders, project plans, risk registers | **Free** audit / ~$49/mo cert | live |
+| [Harvard Business Publishing cases](https://hbsp.harvard.edu/cases) | HBP | IT strategy and org-change MBA cases | ~$4-9/case paywalled | bot-blocked/paywalled |
+| [AXELOS ITIL practice guides](https://www.axelos.com/certifications/itil-service-management) | Axelos | ITIL scenario exercises and practice questions | **Free** overview; paid full guides | live |
 
----
-
-## Dead / changed since 2021
+## dead or changed since 2021
 
 | Old resource | Status | Replacement |
 |---|---|---|
-| `projectmanagement.com/templates/` | 403, crawler-blocked | Use PMI.org with a free account, or Asana/Miro templates |
-| `notion.com/templates/category/project-management` | 404, URL restructured | Use `notion.com/templates` root |
-| Patrick Lencioni `tablegroup.com/topics/meetings/` | 404, site restructured | The Team Playbook (Atlassian) for meeting/decision plays |
-| Katacoda (interactive infra labs) | Shut down (2022) | ServiceNow PDI, Jira Free for hands-on tooling |
+| `projectmanagement.com/templates/` | 403 crawler-blocked | PMI.org with free account, or Asana/Miro templates |
+| `notion.com/templates/category/project-management` | 404, URL changed | `notion.com/templates` root |
+| Patrick Lencioni `tablegroup.com/topics/meetings/` | 404, restructured | Atlassian Team Playbook |
+| Katacoda | shut down 2022 | ServiceNow PDI, Jira Free |
 
 ---
 
-*URLs status-checked June 2026. ⚠️ = live but bot-blocked or paywalled (works in a browser / with an account). Pricing marked ⚠️ where the official page uses JavaScript rendering — confirm on the official site before subscribing. Sources in [/research](../../research/).*
+*URLs status-checked June 2026. Bot-blocked/paywalled means works in browser or with account. Confirm JS-rendered pricing on official sites before subscribing. Sources in [/research](../../research/).*

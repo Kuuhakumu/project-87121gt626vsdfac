@@ -1,131 +1,125 @@
-# 🎯 Phase 4: Specialization Paths
+# Goal 4: specialization paths meow
 
-> **~80 hrs total** · your pace, no deadline
-> Pick **ONE** track and go deep. A focused full-stack-leaning portfolio beats a shallow tour of everything.
+> **~80h total** - your pace, no deadline.
+> pick **one** track and go deep.
+> a focused full-stack-leaning portfolio beats a shallow tour of everything.
 
-[← Phase 3](03-dsa-interview.md) · [Hub](README.md) · [Next: Phase 5 →](05-portfolio.md)
-
----
-
-## Choosing your track
-
-| Track | Best if you like… | Core stack (2026) | Market note |
-|---|---|---|---|
-| 🎨 **Frontend** | Visual polish, UX, immediate feedback | TS, React, Next.js, Tailwind | Most saturated at junior level — go deep to stand out |
-| ⚙️ **Backend** | Data, logic, systems, APIs | Python/FastAPI or Node, PostgreSQL, Docker | Less crowded than frontend; strong demand |
-| 🔗 **Full-Stack** | Building whole products end-to-end | Next.js + API + DB + auth | Most common title at startups/SMBs |
-| 📱 **Mobile** | Shipping apps to real devices | Kotlin / Swift / React Native / Flutter | Narrower but less competition |
-
-> **Most junior roles are "full-stack" at small companies** — usually frontend-heavy with some backend. Full-stack is the safest default if you're unsure.
+[Previous: Goal 3](03-dsa-interview.md) - [Hub](README.md) - [Next: Goal 5](05-portfolio.md)
 
 ---
 
-## 🎨 Track A: Frontend
+- [ ] **choose one track** (~5h)
+- [ ] **Track A: frontend** (~80h if chosen)
+- [ ] **Track B: backend** (~80h if chosen)
+- [ ] **Track C: full-stack** (~80h if chosen)
+- [ ] **Track D: mobile** (~80h if chosen)
+- [ ] **exit check** - one track chosen, signature project built, deployed, tested
 
-You own the UI layer — what users see and interact with.
+## choose one track (~5h)
 
-### What to cover
-- **TypeScript** beyond basics: types, interfaces, generics, strict mode (the professional default now — plain JS signals 2019)
-- **React** with hooks (functional components only — class components are legacy at this point)
-- **Next.js** (App Router — the current default; Pages Router is maintenance-mode)
-- **Tailwind CSS** (the dominant utility framework; Bootstrap is dated)
-- **State management** (React Context, then a library if needed)
-- **Accessibility** (WCAG 2.2 basics, keyboard nav, ARIA), responsive design, **Core Web Vitals**
-- **Fetch/async** data from APIs (not jQuery AJAX)
-
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Track | Best if u like... | Core stack (2026) | Market note |
 |---|---|---|---|
-| Learn React | [Scrimba](https://scrimba.com/) | Build notes app, quiz app — edit instructor code live | Freemium |
+| **Frontend** | visual polish, UX, immediate feedback | TS, React, Next.js, Tailwind | saturated at junior level - go deep |
+| **Backend** | data, logic, systems, APIs | Python/FastAPI or Node, PostgreSQL, Docker | less crowded than frontend |
+| **Full-Stack** | building whole products end-to-end | Next.js + API + DB + auth | common at startups/SMBs |
+| **Mobile** | shipping apps to real devices | Kotlin / Swift / React Native / Flutter | narrower, less competition |
+
+most junior roles at small companies are "full-stack" in practice: frontend-heavy with some backend. full-stack is the safest default if youre unsure.
+
+## Track A: frontend (~80h)
+
+u own the UI layer - what users see and interact with.
+
+- [ ] **TypeScript beyond basics:** types, interfaces, generics, strict mode.
+- [ ] **React:** hooks and functional components. class components are legacy.
+- [ ] **Next.js:** App Router. Pages Router is mostly maintenance mode.
+- [ ] **Tailwind CSS:** dominant utility framework.
+- [ ] **State management:** React Context first, then a library if needed.
+- [ ] **Accessibility:** WCAG 2.2 basics, keyboard nav, ARIA.
+- [ ] **Performance:** responsive design, Core Web Vitals.
+- [ ] **API data:** `fetch`, async flows, real JSON APIs.
+
+### labs
+
+| Lab | Platform | What u do | Cost |
+|---|---|---|---|
+| Learn React | [Scrimba](https://scrimba.com/) | Build notes app, quiz app - edit instructor code live | Freemium |
 | Front End Libraries cert | [freeCodeCamp](https://www.freecodecamp.org/learn) | React + 5 projects | **Free** |
 | Real UI challenges | [Frontend Mentor](https://www.frontendmentor.io/) | Implement real designs pixel-accurately, peer review | Freemium |
 | Frontend roadmap | [roadmap.sh/frontend](https://roadmap.sh/frontend) | Ordered topic graph | **Free** |
 
-### Build
-A polished, deployed frontend app (Vercel/Netlify) consuming a real API — with an accessibility audit (Lighthouse score in the README).
+**build gate:** a polished, deployed frontend app on Vercel/Netlify consuming a real API, with an accessibility audit and Lighthouse score in the README.
 
----
+## Track B: backend (~80h)
 
-## ⚙️ Track B: Backend
+u build server logic, APIs, and the data layer.
 
-You build the server logic, APIs, and data layer.
+- [ ] **Language + framework:** Python + FastAPI/Django, or Node + Express/Fastify.
+- [ ] **REST API design:** resource names, HTTP methods/status, versioning, pagination.
+- [ ] **Databases:** PostgreSQL, schema design, relationships, indexes, transactions.
+- [ ] **ORM:** SQLAlchemy, Prisma, Django ORM, or equivalent.
+- [ ] **Auth:** JWT vs sessions, password hashing, OAuth basics.
+- [ ] **Validation and errors**
+- [ ] **Docker:** `docker compose` for local dev.
+- [ ] **Testing:** pytest, Vitest, or Jest.
 
-### What to cover
-- **Your language + framework:** Python + **FastAPI** (modern, async, auto-docs) or Django (batteries-included); or Node + Express/Fastify
-- **REST API design:** resource naming, HTTP methods & status codes, versioning, pagination
-- **Databases:** **PostgreSQL** (the default), schema design, relationships, indexes, transactions; an ORM (SQLAlchemy/Prisma/Django ORM)
-- **Auth:** JWT vs sessions, password hashing, OAuth basics
-- **Validation & error handling**, environment/secrets management
-- **Docker** for local dev (`docker compose`) — now a baseline expectation
-- **Testing:** pytest (Python) or Vitest/Jest (Node)
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Backend path | [Boot.dev](https://www.boot.dev/) | HTTP servers, REST, SQL, Docker (Python→Go) | Freemium |
+| Backend path | [Boot.dev](https://www.boot.dev/) | HTTP servers, REST, SQL, Docker (Python -> Go) | Freemium |
 | Relational DB cert | [freeCodeCamp](https://www.freecodecamp.org/learn) | SQL + PostgreSQL, 5 projects | **Free** |
 | SQL fundamentals | [SQLBolt](https://sqlbolt.com/) | 19 interactive lessons: joins, aggregations | **Free** |
 | Backend roadmap | [roadmap.sh/backend](https://roadmap.sh/backend) | Ordered topic graph | **Free** |
 
-### Build
-A REST API from scratch with auth, a PostgreSQL database, input validation, OpenAPI docs, Dockerized, tested, and deployed (Railway/Render/Fly.io free tiers).
+**build gate:** REST API from scratch with auth, PostgreSQL, validation, OpenAPI docs, Docker, tests, and deployment to Railway/Render/Fly.io free tiers.
 
----
+## Track C: full-stack (~80h)
 
-## 🔗 Track C: Full-Stack
+frontend + backend competence. this is the most common junior title at startups.
 
-Frontend + backend competence. The most common junior title at startups.
+- [ ] frontend basics from Track A
+- [ ] backend basics from Track B
+- [ ] **Next.js:** React + API routes/server actions
+- [ ] **real database:** PostgreSQL via Supabase/Railway
+- [ ] **auth:** NextAuth/Auth.js or Clerk
+- [ ] **deployment + CI/CD:** GitHub Actions -> Vercel/Railway
 
-### What to cover
-Everything in Frontend **and** Backend basics, plus:
-- A **full-stack metaframework:** Next.js (React + API routes/server actions) is the default
-- Connecting a real database (PostgreSQL via Supabase/Railway)
-- End-to-end **auth** (NextAuth/Auth.js or Clerk) — the #1 thing juniors fumble
-- Basic **deployment & CI/CD** (GitHub Actions → Vercel/Railway)
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Full Stack Open | [fullstackopen.com](https://fullstackopen.com/en/) | React, Node, REST, GraphQL, TS — free certificate | **Free** |
+| Full Stack Open | [fullstackopen.com](https://fullstackopen.com/en/) | React, Node, REST, GraphQL, TS - free certificate | **Free** |
 | Full-stack path | [The Odin Project](https://www.theodinproject.com/) | Build full apps to GitHub, local-first | **Free** |
 | Full-stack roadmap | [roadmap.sh/full-stack](https://roadmap.sh/full-stack) | Ordered topic graph | **Free** |
 
-### Build
-A useful full-stack app (habit tracker, recipe manager, finance dashboard) with auth, a real DB, CI/CD, and real users — even 5 friends counts.
+**build gate:** a useful full-stack app with auth, real DB, CI/CD, and real users - even 5 friends counts.
 
----
+## Track D: mobile (~80h)
 
-## 📱 Track D: Mobile
+u ship apps to real devices and stores.
 
-You ship apps to real devices and stores.
+- [ ] **Android:** Kotlin + Jetpack Compose
+- [ ] **iOS:** Swift + SwiftUI
+- [ ] **Cross-platform:** React Native or Flutter
+- [ ] app lifecycle, navigation, local storage, REST APIs, store submission
 
-### What to cover
-- **Android:** Kotlin + Jetpack Compose
-- **iOS:** Swift + SwiftUI
-- **Cross-platform:** React Native (reuses your React/TS skills) or Flutter (Dart)
-- App lifecycle, navigation, local storage, calling REST APIs, store submission
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
 | Android roadmap | [roadmap.sh/android](https://roadmap.sh/android) | Kotlin-first ordered syllabus | **Free** |
 | iOS roadmap | [roadmap.sh/ios](https://roadmap.sh/ios) | Swift/SwiftUI ordered syllabus | **Free** |
 | React Native roadmap | [roadmap.sh/react-native](https://roadmap.sh/react-native) | Cross-platform from web React | **Free** |
 
-### Build
-A real app published to the App Store or Play Store (even a free one). Shipping to a store is a significant differentiator.
+**build gate:** a real app published to the App Store or Play Store, even a free one. shipping to a store is a strong differentiator.
 
----
+## exit check
 
-## Phase 4 exit checklist
-- [ ] Chosen ONE track and built its signature project
-- [ ] Comfortable with the track's core stack (current 2026 tools, not legacy)
-- [ ] At least one project deployed with a live URL
-- [ ] Tests written for non-trivial logic
-- [ ] Ready to assemble the portfolio in Phase 5
+- [ ] chosen **one** track and built its signature project
+- [ ] comfortable with the track's core stack
+- [ ] at least one project deployed with a live URL
+- [ ] tests written for non-trivial logic
+- [ ] ready to assemble the portfolio in Goal 5
 
-Next: [Phase 5 — Portfolio & Job Hunt →](05-portfolio.md)
+[Next: Goal 5 - Portfolio](05-portfolio.md)

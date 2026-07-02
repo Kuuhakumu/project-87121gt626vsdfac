@@ -1,98 +1,107 @@
-# 📁 Phase 1: Foundations — First Language, CLI & Git
+# Goal 1: foundations - first language, CLI, Git meow
 
-> **~140 hrs total** · your pace, no deadline
-> Goal: real fluency in one language, comfort in the terminal, and Git as second nature. This is the bedrock everything else sits on.
+> **~140h total** - your pace, no deadline.
+> goal: real fluency in one language, comfort in the terminal, and Git as second nature.
+> this is the floor everything else sits on.
 
-[← Phase 0](00-prep.md) · [Hub](README.md) · [Next: Phase 2 →](02-core.md)
+[Previous: Goal 0](00-prep.md) - [Hub](README.md) - [Next: Goal 2](02-core.md)
 
 ---
 
-## How to work this phase
+- [ ] **choose one learning spine** (~5h setup)
+- [ ] **core programming in your first language** (~70h)
+- [ ] **command line + Git/GitHub** (~30h)
+- [ ] **ship your first tiny projects** (~40h)
+- [ ] **exit check** - language fluency, terminal comfort, Git reps, 2+ small repos
 
-Pick **one** structured path as your spine and stick with it. Don't hop between five tutorials — pick one and finish it.
+## choose one learning spine
+
+pick **one** structured path and stick with it. dont hop between five tutorials every time one gets hard qwq.
 
 | Path | Best for | Format | Cost |
 |---|---|---|---|
-| [The Odin Project](https://www.theodinproject.com/) | Full-stack JS (or Ruby), local-first | Project-based, builds to GitHub | **Free** |
+| [The Odin Project](https://www.theodinproject.com/) | Full-stack JS or Ruby, local-first | Project-based, builds to GitHub | **Free** |
 | [freeCodeCamp](https://www.freecodecamp.org/) | Browser-based start, JS/Python/SQL | ~300 challenges + projects | **Free** |
-| [CS50x (Harvard)](https://cs50.harvard.edu/x/) | Strongest CS fundamentals | Lectures + problem sets (C→Python→SQL→JS) | **Free** + free cert |
+| [CS50x (Harvard)](https://cs50.harvard.edu/x/) | Strongest CS fundamentals | Lectures + problem sets (C -> Python -> SQL -> JS) | **Free** + free cert |
 | [Full Stack Open](https://fullstackopen.com/en/) | Modern JS after basics | React/Node/REST, free certificate | **Free** |
-| [Boot.dev](https://www.boot.dev/) | Backend (Python→Go) | In-browser, gamified | Freemium |
+| [Boot.dev](https://www.boot.dev/) | Backend (Python -> Go) | In-browser, gamified | Freemium |
 
-> **CS50x is the single best fundamentals on-ramp** even if you plan to do web. The C weeks teach you what memory and the call stack actually are — knowledge that makes every later language click.
+CS50x is the strongest fundamentals on-ramp even if u plan web. the C weeks make memory and the call stack less mysterious later.
 
----
+## core programming in your first language (~70h)
 
-## Core programming in your first language (~70 hrs)
+master these **before** a framework:
 
-Whichever language you chose, master these **before** touching a framework:
+- [ ] variables and data types
+- [ ] operators, conditionals, loops
+- [ ] functions and scope
+- [ ] arrays/lists, objects/dictionaries, strings
+- [ ] error handling (`try`/`catch` or language equivalent)
+- [ ] reading and writing files
+- [ ] importing modules/packages
+- [ ] debugging with stack traces, a debugger, or deliberate `print`/`console.log`
+- [ ] regex basics with [regex101](https://regex101.com/)
 
-**Cover:** variables & data types, operators, conditionals, loops, functions, scope, arrays/lists, objects/dictionaries, strings & string methods, error handling (try/catch), reading & writing files, importing modules, and basic debugging (reading stack traces, using a debugger or `print`/`console.log` deliberately).
+then learn the beginner-to-hireable habits:
 
-**Then the concepts that separate beginners from hireable:**
-- How to break a problem into functions
-- Reading errors and debugging methodically (not random changes)
-- Writing readable code: naming, small functions, no copy-paste duplication
-- **Regex basics** — [regex101](https://regex101.com/) (free, interactive)
+- [ ] break a problem into functions
+- [ ] read errors before changing code randomly
+- [ ] use clear names and small functions
+- [ ] avoid copy-paste duplication when a function would do
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
 | Full curriculum | [freeCodeCamp](https://www.freecodecamp.org/learn) | ~300 in-browser challenges, JS or Python | Free |
-| Language track | [Exercism](https://exercism.org/) | Exercises in 70+ languages with **free human mentorship** | Free |
-| Kata practice | [Codewars](https://www.codewars.com/) | Bite-sized puzzles, read others' solutions after | Free |
+| Language track | [Exercism](https://exercism.org/) | Exercises in 70+ languages with free human mentorship | Free |
+| Kata practice | [Codewars](https://www.codewars.com/) | Bite-sized puzzles, read others solutions after | Free |
 | Beginner challenges | [Edabit](https://edabit.com/) | Gamified micro-challenges before LeetCode | Freemium |
 
-**Practice gate:** you can solve a Codewars 7–6 kyu kata without a tutorial, and write a 50-line program (e.g. a CLI calculator or a text-based game) from scratch.
+**practice gate:** solve a Codewars 7-6 kyu kata without a tutorial, and write a 50-line program from scratch, like a CLI calculator or text-based game.
 
----
+## command line + Git/GitHub (~30h)
 
-## The command line & Git/GitHub (~30 hrs)
+not optional. gaps here are red flags in interviews.
 
-Not optional. Gaps here are red flags in interviews.
+- [ ] **CLI:** `cd`, `ls`/`dir`, `pwd`, `mkdir`, `cp`, `mv`, `rm`, `cat`, `less`, `grep`, pipes, redirection, `ssh`, environment variables.
+- [ ] **Git:** `init`, `add`, `commit`, `push`/`pull`, branches, merges, merge conflicts, `.gitignore`, pull requests, forks.
+- [ ] **Git vs GitHub:** know the tool vs the hosted service.
 
-**CLI cover:** navigation (`cd`, `ls`/`dir`, `pwd`), file ops (`mkdir`, `cp`, `mv`, `rm`), viewing files (`cat`, `less`), `grep`, pipes & redirection, `ssh` basics, environment variables.
+### labs
 
-**Git cover:** `init`, `add`, `commit` (with good messages), `push`/`pull`, branching, merging, **resolving merge conflicts**, `.gitignore`, pull requests, forking. Understand the difference between Git (the tool) and GitHub (the host).
-
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
 | [Learn Git Branching](https://learngitbranching.js.org/) | Web | ~50 visual puzzles: commit, branch, merge, rebase | **Free** |
-| [GitHub Skills](https://skills.github.com/) | GitHub | Guided courses inside real repos (PRs, Actions) | **Free** |
-| [The Missing Semester](https://missing.csail.mit.edu/) | MIT | Shell, vim, git, debugging — the "stuff school skips" | **Free** |
-| [OverTheWire — Bandit](https://overthewire.org/wargames/bandit/) | Web | SSH into real Linux boxes, learn CLI by solving puzzles | **Free** |
+| [GitHub Skills](https://skills.github.com/) | GitHub | Guided courses inside real repos | **Free** |
+| [The Missing Semester](https://missing.csail.mit.edu/) | MIT | Shell, vim, git, debugging - the stuff school skips | **Free** |
+| [OverTheWire - Bandit](https://overthewire.org/wargames/bandit/) | Web | SSH into real Linux boxes, learn CLI by solving puzzles | **Free** |
 
-**Practice gate:** you can create a repo, branch, open a PR, resolve a merge conflict, and explain what a commit is — all without looking it up.
+**practice gate:** create a repo, branch, open a PR, resolve a merge conflict, and explain what a commit is without looking it up.
 
----
+## ship your first tiny projects (~40h)
 
-## Apply it — your first real projects (~40 hrs)
+stop consuming and start building. two small projects, both on GitHub with a README.
 
-Stop consuming and start building. Two small projects, both on GitHub with a README.
+- [ ] **CLI tool:** to-do manager, unit converter, password generator, file organizer.
+- [ ] **small data script:** read a CSV, transform it, output a summary or chart.
+- [ ] **text-based game:** hangman, tic-tac-toe, quiz.
+- [ ] **simple API client:** fetch from a public API and display results.
 
-**Project ideas (pick 2):**
-- A **CLI tool**: a to-do manager, a unit converter, a password generator, a file organizer
-- A **small data script**: read a CSV, transform it, output a summary or chart
-- A **text-based game**: hangman, tic-tac-toe, a quiz
-- A **simple API client**: fetch from a free public API (weather, GitHub, pokémon) and display results
+each repo needs:
 
-**Each repo must have:**
-- A `README.md`: what it does, how to run it, what you learned
-- Clean commit history (not one giant "final" commit)
-- A `.gitignore`
+- [ ] `README.md`: what it does, how to run it, what u learned
+- [ ] clean commit history, not one giant `final` commit
+- [ ] `.gitignore`
 
-> These won't be your portfolio centerpieces — they prove you can finish and ship. The portfolio projects come in [Phase 5](05-portfolio.md).
+these arent your portfolio centerpieces. they prove u can finish and ship. portfolio projects come in [Goal 5](05-portfolio.md).
 
----
+## exit check
 
-## Phase 1 exit checklist
-- [ ] Fluent in one language: can write functions, handle errors, manipulate data structures without a tutorial
-- [ ] Comfortable in the terminal
-- [ ] Git/GitHub is second nature (branch, PR, conflict resolution)
+- [ ] fluent in one language: functions, errors, data structures without a tutorial
+- [ ] comfortable in the terminal
+- [ ] Git/GitHub is second nature: branch, PR, conflict resolution
 - [ ] 2+ small projects on GitHub with READMEs
-- [ ] Can read a stack trace and debug methodically
+- [ ] can read a stack trace and debug methodically
 
-Next: [Phase 2 — Core Web & Data Skills →](02-core.md)
+[Next: Goal 2 - Core Web & Data Skills](02-core.md)

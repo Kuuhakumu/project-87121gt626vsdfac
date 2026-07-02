@@ -1,117 +1,121 @@
-# 🧪 Interactive Lab Inventory — Product Management (2026)
+# Interactive lab inventory: Product Management (2026) meow
 
-> Every lab **verified June 2026**. Free-first. Concrete actions, not "explore the tool."
-> ✅ live (200 OK) · ⚠️ live but bot-blocked (403/JS, works in browser) · ❌ dead.
+> every lab was verified in June 2026.
+> free-first. concrete actions, not "explore the tool."
 
-Use this as your menu — each phase file points here. Do the labs — reading about product without practicing is the fastest way to stay stuck.
+Status labels: `live`, `bot-blocked but works in browser`, `dead`.
+
+use this as your menu.
+the goal files point here, but product only clicks when u practice the artifacts.
 
 ---
 
-## Frameworks & thinking practice
+- [ ] **frameworks + thinking practice**
+- [ ] **writing PRDs and specs**
+- [ ] **Agile / Scrum tools**
+- [ ] **product analytics**
+- [ ] **roadmapping**
+- [ ] **wireframing**
+- [ ] **user research**
+- [ ] **interview practice**
+- [ ] **dead or changed resources**
 
-| Lab | Platform | What you do | Cost | Status |
+## frameworks and thinking practice
+
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Exponent PM Interview Practice](https://www.tryexponent.com) | Exponent | Product sense drills, mock interviews, PM question bank | Freemium (~$12–20/mo ⚠️) | ⚠️ |
-| [RocketBlocks PM Cases](https://www.rocketblocks.me) | RocketBlocks | Structured PM case practice (estimation, product design) | Paid + trial (⚠️) | ⚠️ |
-| [Lenny's Newsletter](https://www.lennysnewsletter.com) | Newsletter/Web | Free PM frameworks, teardowns, and case studies | **Free** (paid tier exists) | ✅ |
-| [SVPG Articles](https://www.svpg.com/articles/) | SVPG | Marty Cagan's canonical product thinking essays | **Free** | ✅ |
+| [Exponent PM Interview Practice](https://www.tryexponent.com) | Exponent | product sense drills, mock interviews, PM question bank | Freemium (~$12-20/mo) | bot-blocked but works in browser |
+| [RocketBlocks PM Cases](https://www.rocketblocks.me) | RocketBlocks | structured PM case practice: estimation, product design | Paid + trial | bot-blocked but works in browser |
+| [Lenny's Newsletter](https://www.lennysnewsletter.com) | Newsletter/Web | PM frameworks, teardowns, case studies | **Free** with paid tier | live |
+| [SVPG Articles](https://www.svpg.com/articles/) | SVPG | Marty Cagan's product thinking essays | **Free** | live |
 
----
+## writing PRDs and specs
 
-## Writing PRDs and specs
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Notion](https://www.notion.so) | Notion | Write PRDs, one-pagers, roadmaps — free personal tier | **Free** | ✅ |
-| [Google Docs](https://docs.google.com) | Google | Collaborative spec writing; share artifacts in portfolio | **Free** | ✅ |
-| [Confluence free tier](https://www.atlassian.com/software/confluence) | Atlassian | Team wiki / spec tool; free up to 10 users | **Free** (≤10 users) | ✅ |
+| [Notion](https://www.notion.so) | Notion | write PRDs, one-pagers, roadmaps | **Free** | live |
+| [Google Docs](https://docs.google.com) | Google | collaborative spec writing and portfolio sharing | **Free** | live |
+| [Confluence free tier](https://www.atlassian.com/software/confluence) | Atlassian | team wiki / spec tool, free up to 10 users | **Free** | live |
 
-**Practice gate:** write a full PRD for a real feature on an app you use daily. Include: problem statement, user stories, success metrics, non-goals, and open questions. Share it with a peer for feedback.
-
----
+**practice gate:** write a full PRD for a real feature on an app u use daily.
+include problem statement, user stories, success metrics, non-goals, and open questions.
+share it with a peer.
 
 ## Agile / Scrum tool practice
 
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Jira free tier](https://www.atlassian.com/software/jira) | Atlassian | Create a backlog, write stories with acceptance criteria, run a sprint, manage a board | **Free** (≤10 users) | ✅ |
-| [Trello free tier](https://trello.com) | Atlassian | Lightweight kanban; good for personal roadmap practice | **Free** | ✅ |
-| [Scrum Guide](https://scrumguides.org) | Scrum.org | The authoritative 13-page Scrum reference — read it | **Free** | ✅ |
-| [Scrum.org practice assessments](https://www.scrum.org/open-assessments) | Scrum.org | Free open PSPO/PSM practice tests | **Free** | ⚠️ |
+| [Jira free tier](https://www.atlassian.com/software/jira) | Atlassian | create backlog, stories, sprint, board | **Free** up to 10 users | live |
+| [Trello free tier](https://trello.com) | Atlassian | lightweight kanban and personal roadmap practice | **Free** | live |
+| [Scrum Guide](https://scrumguides.org) | Scrum.org | authoritative Scrum reference | **Free** | live |
+| [Scrum.org practice assessments](https://www.scrum.org/open-assessments) | Scrum.org | free PSPO/PSM practice tests | **Free** | bot-blocked but works in browser |
 
-**Practice gate:** set up a Jira project, write 5 user stories with acceptance criteria, create a sprint, and move cards through Done.
+**practice gate:** set up Jira, write 5 stories with acceptance criteria, create a sprint, and move cards through Done.
 
----
+## product analytics
 
-## Product analytics
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Amplitude free tier](https://amplitude.com) | Amplitude | Connect a demo dataset; build a funnel, retention chart, and user path | **Free** (10K MTUs/mo) | ✅ |
-| [Mixpanel free tier](https://mixpanel.com) | Mixpanel | Event analytics; track flows, build cohorts | **Free** (1M events/mo) | ✅ |
-| [Google Analytics 4](https://analytics.google.com) | Google | Page/event analytics on any website you control | **Free** | ✅ |
-| [DataLemur SQL](https://datalemur.com) | DataLemur | SQL interview practice — PMs need to pull their own data | **Free** | ✅ |
-| [Mode Analytics](https://mode.com) | Mode | Free individual workspace; SQL + charts | **Free** individual (⚠️ pricing JS) | ⚠️ |
+| [Amplitude free tier](https://amplitude.com) | Amplitude | connect demo data, build funnel, retention chart, user path | **Free** 10K MTUs/mo | live |
+| [Mixpanel free tier](https://mixpanel.com) | Mixpanel | event analytics, cohorts, flows | **Free** 1M events/mo | live |
+| [Google Analytics 4](https://analytics.google.com) | Google | page/event analytics on any site u control | **Free** | live |
+| [DataLemur SQL](https://datalemur.com) | DataLemur | SQL interview practice for PMs | **Free** | live |
+| [Mode Analytics](https://mode.com) | Mode | SQL + charts in individual workspace | **Free** individual, pricing JS | bot-blocked but works in browser |
 
-**Practice gate:** given a funnel (e.g., sign-up → activate → retain), build that funnel in Amplitude or Mixpanel on a demo dataset and explain what the drop-off numbers mean.
+**practice gate:** build a funnel in Amplitude or Mixpanel and explain the drop-off numbers.
 
----
+## roadmapping tools
 
-## Roadmapping tools
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Productboard Spark (starter)](https://www.productboard.com) | Productboard | Feature prioritization, user feedback capture, roadmap view | **Free** (150 credits) | ✅ |
-| [Aha! Roadmaps trial](https://www.aha.io) | Aha! | Full roadmap/strategy tool; no permanent free tier | Trial only (~$20/user/mo ✅) | ✅ |
-| [Notion roadmap template](https://www.notion.so/templates/product-roadmap) | Notion | Build a 2-quarter roadmap in a free Notion page | **Free** | ✅ |
+| [Productboard Spark](https://www.productboard.com) | Productboard | feature prioritization, feedback capture, roadmap view | **Free** 150 credits | live |
+| [Aha! Roadmaps trial](https://www.aha.io) | Aha! | full roadmap/strategy tool, no permanent free tier | Trial only (~$20/user/mo) | live |
+| [Notion roadmap template](https://www.notion.so/templates/product-roadmap) | Notion | build a 2-quarter roadmap in Notion | **Free** | live |
 
-> **Aha! and Productboard** are the pro tools — worth a trial to understand what enterprise PMs use. For practice and portfolio work, Notion is sufficient and free.
+Aha! and Productboard are pro tools.
+worth a trial to understand enterprise PM tooling.
+for practice and portfolio work, Notion is enough.
 
----
+## wireframing and prototyping
 
-## Wireframing and prototyping
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Balsamiq trial](https://balsamiq.com) | Balsamiq | Lo-fi wireframes; 14-day free trial (~$16/editor/mo after) | Trial | ✅ |
-| [Figma free tier](https://www.figma.com) | Figma | Mid/hi-fi prototyping; free for individuals | **Free** | ✅ |
-| [Whimsical free tier](https://whimsical.com) | Whimsical | Flowcharts, wireframes, mind maps | **Free** tier | ✅ |
+| [Balsamiq trial](https://balsamiq.com) | Balsamiq | lo-fi wireframes | Trial | live |
+| [Figma free tier](https://www.figma.com) | Figma | mid/hi-fi prototype reading and light sketching | **Free** | live |
+| [Whimsical free tier](https://whimsical.com) | Whimsical | flowcharts, wireframes, mind maps | **Free** tier | live |
 
-> PMs don't need to be designers. The goal is enough fidelity to communicate an idea to a designer, not pixel-perfect screens. Lo-fi sketches (even paper) are often better for early discovery.
+PMs dont need to be designers.
+the goal is enough fidelity to communicate an idea to a designer.
+lo-fi sketches are often better early.
 
----
+## user research / discovery
 
-## User research / discovery
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Maze free tier](https://maze.co) | Maze | Run usability tests on a Figma prototype | **Free** tier | ✅ |
-| [Hotjar free tier](https://www.hotjar.com) | Hotjar | Session recordings, heatmaps on any site | **Free** tier | ✅ |
-| [Google Forms](https://forms.google.com) | Google | Build and distribute user surveys | **Free** | ✅ |
-| [Calendly free](https://calendly.com) | Calendly | Schedule user interviews — free 1 calendar | **Free** | ✅ |
+| [Maze free tier](https://maze.co) | Maze | usability tests on a Figma prototype | **Free** tier | live |
+| [Hotjar free tier](https://www.hotjar.com) | Hotjar | session recordings, heatmaps | **Free** tier | live |
+| [Google Forms](https://forms.google.com) | Google | user surveys | **Free** | live |
+| [Calendly free](https://calendly.com) | Calendly | schedule user interviews | **Free** | live |
 
-**Practice gate:** recruit 3 people to give you 20-minute feedback on a product you're studying. Write a synthesis doc: top 3 themes, top 3 quotes, one recommendation you'd make based on the research.
+**practice gate:** recruit 3 people for 20-minute feedback on a product youre studying.
+write synthesis: top 3 themes, top 3 quotes, one recommendation.
 
----
+## interview and case practice
 
-## Interview and case practice
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Exponent](https://www.tryexponent.com) | Exponent | PM interview drills: product design, metrics, estimation | Freemium | ⚠️ |
-| [ADPList](https://adplist.org) | ADPList | Free 1:1 mentorship sessions with working PMs | **Free** | ✅ |
-| [Lenny's Podcast](https://www.lennysnewsletter.com/podcast) | Podcast | Interview-prep by osmosis — real PMs explaining how they think | **Free** | ✅ |
+| [Exponent](https://www.tryexponent.com) | Exponent | PM interview drills: product design, metrics, estimation | Freemium | bot-blocked but works in browser |
+| [ADPList](https://adplist.org) | ADPList | free 1:1 mentorship with working PMs | **Free** | live |
+| [Lenny's Podcast](https://www.lennysnewsletter.com/podcast) | Podcast | real PMs explaining how they think | **Free** | live |
 
----
-
-## Dead / changed since 2021
+## dead or changed since 2021
 
 | Old resource | Status | Replacement |
 |---|---|---|
-| ProductHunt Ship (product launch tool) | Repositioned — focus is PH launches, not PM practice | Productboard or Aha! for roadmapping |
-| Various "PM certificate" Coursera courses (outdated) | Some have been updated; check publication date before enrolling | Prefer SVPG articles + Lenny's Newsletter for current thinking |
-| Pivotal Tracker | Acquired / repositioned | Jira free tier or Linear |
+| ProductHunt Ship | repositioned toward PH launches, not PM practice | Productboard or Aha! |
+| outdated Coursera PM cert courses | some updated, check publication date | SVPG articles + Lenny's Newsletter |
+| Pivotal Tracker | acquired / repositioned | Jira free tier or Linear |
 
 ---
 
-*URLs status-checked June 2026. 403/⚠️ = live but bot-blocked (works in a browser). Pricing marked ⚠️ where the official page uses JavaScript rendering — confirm on the official site before subscribing.*
+*URLs status-checked June 2026. 403/JS means live but bot-blocked. Confirm JS-rendered pricing on official sites before subscribing.*

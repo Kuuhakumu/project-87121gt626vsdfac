@@ -1,128 +1,157 @@
-# ⚙️ Phase 0: Pre-Flight Setup
+# Goal 0: prep your IT management setup meow
 
-> **Day 1 — non-negotiable.** Just sign up and install — no learning to finish, do it before Phase 1.
-> The honest career reality, the four on-ramps, the mindset shift that trips up every new manager, and the free tools you'll practice with.
+> **Day 1 setup** - no learning gate yet.
+> understand the role, choose an on-ramp, and set up the free tools ull practice with.
 
-[Hub](README.md) · [Next: Phase 1 — Foundations →](01-foundations.md)
-
----
-
-## The honest career reality (read this before anything else)
-
-**"IT Manager" is a destination role, not an entry-level one.** You won't be hired to manage an IT function with zero experience — and any guide that tells you otherwise is selling something. The reason is structural, not gatekeeping:
-
-- An IT manager owns **budget** — real money, signed off to the business.
-- An IT manager owns **people** — hiring, performance, careers, morale.
-- An IT manager owns **risk** — when systems fail or a vendor underdelivers, it lands on them.
-- An IT manager owns **vendors and contracts** — negotiations the company is legally bound by.
-
-Organizations hand that authority to people who've *earned credibility* by doing the work first. A weak IT manager doesn't just underperform — they slow down an entire team and put the business at risk. So companies hire defensively, almost always promoting from a track or transferring someone with a proven record.
-
-> This is the same dynamic as Product Management: it's a role you grow *into*, not one you break *into* cold. The good news — the on-ramps are well-defined, and you can start building the skills and artifacts today so you're the obvious choice when the opening appears.
+[Hub](README.md) - [Next: Goal 1](01-foundations.md)
 
 ---
 
-## The four on-ramps
+- [ ] **read the destination-role reality**
+- [ ] **choose a likely on-ramp**
+- [ ] **understand the IC -> manager shift**
+- [ ] **set up free tools**
+- [ ] **exit check** - Notion + Jira ready, on-ramp chosen, no manager-title fantasy
 
-There is no single "become an IT manager" path. There are four, and the one you take depends on where you're starting.
+## the honest career reality
 
-### On-ramp 1: The Service/Operations track (most common)
+**IT Manager is a destination role, not an entry-level one.**
+u wont be hired to manage an IT function with zero experience.
+any guide saying otherwise is selling something.
 
-```
+the reason is structural:
+
+- [ ] an IT manager owns **budget**: real money signed off to the business.
+- [ ] an IT manager owns **people**: hiring, performance, careers, morale.
+- [ ] an IT manager owns **risk**: outages, vendor failures, compliance gaps.
+- [ ] an IT manager owns **vendors and contracts**: legal commitments the company must live with.
+
+organizations hand that authority to people whove earned credibility by doing the work.
+a weak IT manager can slow a team and put the business at risk.
+so companies hire defensively, usually by promoting from a track or transferring someone proven.
+
+same dynamic as Product Management: u grow into it.
+good news: the on-ramps are clear, and u can start building the skills and artifacts now.
+
+## the four on-ramps
+
+### on-ramp 1: Service / Operations
+
+```text
 Service Desk Analyst / IT Support Technician
-  → Senior Support / Tier 2–3
-  → Team Lead (first line management)
-  → IT Service Delivery Manager / IT Operations Manager
-  → Head of IT / IT Director
+  -> Senior Support / Tier 2-3
+  -> Team Lead
+  -> IT Service Delivery Manager / IT Operations Manager
+  -> Head of IT / IT Director
 ```
 
-This is the most-travelled road. You start on a help desk, get good at the technical work, then start owning process — escalation paths, runbooks, SLAs — and eventually people. If you're early in your career or coming from IT support, **this is your path.** The [IT Support & Networking guide](../it-support-networking/) is the natural feeder.
+most common road.
+u start in help desk or support, get good technically, then own process: escalation paths, runbooks, SLAs, and eventually people.
+if youre early in IT support, this is likely your path.
+the [IT Support & Networking guide](../it-support-networking/) is the feeder.
 
-**Key early credential:** ITIL 4 Foundation.
+**key early credential:** ITIL 4 Foundation.
 
-### On-ramp 2: The Project track
+### on-ramp 2: Project track
 
-```
+```text
 Business Analyst / Project Coordinator
-  → Project Manager (CAPM → PMP)
-  → Senior PM / Program Manager
-  → PMO Director / Head of Delivery
+  -> Project Manager (CAPM -> PMP)
+  -> Senior PM / Program Manager
+  -> PMO Director / Head of Delivery
 ```
 
-If you're organized, good with stakeholders, and you'd rather *deliver defined outcomes* (a migration, a rollout, a system implementation) than run ongoing operations, the project track fits. Projects have a start and an end; you hand off the result and move to the next one.
+fits people who like defined outcomes: migrations, rollouts, implementations.
+projects start and end.
+u hand off the result and move to the next one.
 
-**Key early credential:** CAPM or CompTIA Project+ (PMP comes later — it requires real experience).
+**key early credential:** CAPM or CompTIA Project+. PMP comes later because it requires experience.
 
-### On-ramp 3: The Technical/Architecture track
+### on-ramp 3: Technical / Architecture
 
-```
+```text
 Systems Administrator / Engineer / Network Engineer
-  → Senior Technical Role
-  → Technical Lead / Architect
-  → Enterprise Architect / IT Governance / IT Strategy
+  -> Senior Technical Role
+  -> Technical Lead / Architect
+  -> Enterprise Architect / IT Governance / IT Strategy
 ```
 
-If you're already technical — a sysadmin, cloud engineer, or developer — and you want to move up without leaving technical decision-making behind, this track leads toward architecture, governance, and strategy rather than people-management first.
+fits technical people who want to lead without abandoning technical decision-making.
+this track leads toward architecture, governance, and strategy more than people-management first.
 
-**Key credentials:** TOGAF (architecture), COBIT (governance), eventually CGEIT (senior governance).
+**key credentials:** TOGAF, COBIT, eventually CGEIT.
 
-### On-ramp 4: The Business/MBA track
+### on-ramp 4: Business / MBA
 
-Some enter IT management from the business side — an MBA, a management consulting background, or a business analyst role — then specialize into IT governance, vendor management, or IT strategy. This path is lighter on hands-on technology and heavier on finance, portfolio management, and stakeholder governance.
+some enter from the business side: MBA, consulting, business analyst.
+this path is lighter on hands-on technology and heavier on finance, portfolio management, vendor management, and governance.
 
-**Key credentials:** COBIT, portfolio/program management, PMP.
+**key credentials:** COBIT, portfolio/program management, PMP.
 
-> **Which on-ramp is yours?** Most readers of this guide are on ramp 1 (coming from support/ops) or ramp 3 (already technical, wanting to lead). Pick the one that matches where you are *now* — you can switch tracks later, and senior IT leaders usually have touched several.
+most readers are on ramp 1 or ramp 3.
+pick the one matching where u are now.
+u can switch later.
 
----
+## the mindset shift that breaks new managers
 
-## The mindset shift that breaks new managers
+the hardest transition is **individual contributor -> manager**.
+its a different job, not a better version of your old job.
 
-The single hardest transition in this field is **individual contributor → manager.** It's a *change of job*, not a promotion to a better version of your old job.
-
-| As an individual contributor | As a manager |
+| As an IC | As a manager |
 |---|---|
-| Your output is your own work | Your output is your *team's* work |
-| Success = you solved the problem | Success = your team solved it (without you) |
-| You're rewarded for doing | You're rewarded for enabling, deciding, removing blockers |
-| Deep focus time | Fragmented day: 1:1s, meetings, escalations, context-switching |
-| Technical depth is the goal | Technical depth is now a *tool*, used to make decisions and earn trust — not the work itself |
+| output is your own work | output is your team's work |
+| success = u solved the problem | success = the team solved it without u |
+| rewarded for doing | rewarded for enabling, deciding, removing blockers |
+| deep focus time | fragmented day: 1:1s, meetings, escalations |
+| technical depth is the goal | technical depth is a tool for decisions and trust |
 
-The classic failure mode: a brilliant engineer becomes a manager and keeps *doing the engineering* — grabbing the hard tickets, rewriting their team's code, being the hero in every incident. The team stays dependent, never grows, and the manager burns out. **Letting go of being the best technical doer is the price of admission to management.**
+classic failure mode: brilliant engineer becomes manager and keeps doing the engineering.
+they grab the hard tickets, rewrite the team's work, hero every incident.
+the team stays dependent and the manager burns out.
 
-You don't lose your technical knowledge — you repurpose it. You use it to ask the right questions, sanity-check estimates, earn engineers' trust, and translate between the technical floor and the executive boardroom. That translation is, increasingly, the job.
+letting go of being the best technical doer is the price of management, dw.
+u dont lose technical knowledge.
+u repurpose it to ask better questions, sanity-check estimates, earn trust, and translate between technical teams and leadership.
 
----
+## free tool setup
 
-## Free tool setup (what you'll practice with)
+everything here can be practiced on free tiers.
 
-Everything in this guide can be practiced on free tiers. Set these up now so the phase files can point straight at them.
-
-| Tool | What it's for | Setup |
+| Tool | What its for | Setup |
 |---|---|---|
-| [Notion](https://www.notion.com) | Service catalogs, OKRs, 90-day plans, your portfolio site | Free personal plan |
-| [Jira Free](https://www.atlassian.com/software/jira/free) | Sprint simulation, backlog and board practice | Free up to 10 users |
-| [Confluence Free](https://www.atlassian.com/software/confluence/free) | Team wiki, service catalog, documentation | Free up to 10 users |
-| [Trello Free](https://trello.com) | Lightweight kanban, action-item tracking | Free tier |
-| [Miro Free](https://miro.com) | RACI matrices, service blueprints, roadmaps, retrospectives | Free (3 boards) |
-| [ServiceNow Developer Instance](https://developer.servicenow.com/devdo) | Hands-on ITSM workflow configuration | Free personal dev instance (PDI) |
+| [Notion](https://www.notion.com) | service catalogs, OKRs, 90-day plans, portfolio site | free personal plan |
+| [Jira Free](https://www.atlassian.com/software/jira/free) | sprint simulation, backlog, board practice | free up to 10 users |
+| [Confluence Free](https://www.atlassian.com/software/confluence/free) | team wiki, service catalog, documentation | free up to 10 users |
+| [Trello Free](https://trello.com) | lightweight kanban, action-item tracking | free tier |
+| [Miro Free](https://miro.com) | RACI matrices, service blueprints, roadmaps, retrospectives | free, 3 boards |
+| [ServiceNow Developer Instance](https://developer.servicenow.com/devdo) | hands-on ITSM workflow configuration | free personal dev instance |
 
-> You don't need all six on day one. Notion and Jira cover most of the early practice. Add the others as the phase files call for them.
+u dont need all six on day one.
+Notion and Jira cover most early practice.
+add others when the goal files ask for them.
 
-**Practice gate:** you have a Notion workspace and a Jira Free project created, and you've created one page and one board in each. That's it — you're set up.
+**practice gate:** u have a Notion workspace and Jira Free project, with one page and one board created in each.
 
----
+## how to use this guide
 
-## How to use this guide
+1. dont skip the candor. "destination not entry" is strategy, not discouragement.
+2. pick your on-ramp early so [Goal 3](03-specialization.md) makes sense.
+3. do the artifacts, dont just read. the [Goal 4 portfolio](04-projects.md) is what hiring managers evaluate.
+4. treat hours as flexible. study hours build readiness; job experience unlocks the title.
+5. use [labs](labs.md) and [resources](resources.md) as your menu.
 
-1. **Don't skip the candor.** The "destination not entry" framing isn't discouragement — it's strategy. Knowing the real on-ramps stops you wasting months applying to manager roles you can't yet land.
-2. **Pick your on-ramp early** (this file) so the specialization phase makes sense for you.
-3. **Do the artifacts, don't just read.** The [portfolio in Phase 4](04-projects.md) is what hiring managers actually evaluate. Reading about RACI matrices teaches you nothing; building one for a real scenario teaches you everything.
-4. **Treat hours as flexible.** The [hour system](README.md#-how-the-hour-system-works) works at any pace. The numbers are knowledge-building hours — the *experience* that unlocks the title is earned on the job.
-5. **Use the [labs](labs.md) and [resources](resources.md) files as your menu** — every phase points back to them.
+reality check: ~500 study hours can make u ready to step into management.
+the calendar time to get the title depends on your on-ramp and org, often 2-5 years from first IT role.
+thats normal.
+build readiness now, take the opening when it comes.
 
-> **Reality check on timelines:** this guide's ~500 study hours make you *ready* to step into management. The calendar time to actually get the title depends on your on-ramp and your organization — often 2–5 years from your first IT role. That's normal. Build the readiness now; take the opening when it comes.
+## exit check
 
----
+- [ ] i understand IT Manager is a destination role, not a zero-experience entry role
+- [ ] i chose my likely on-ramp: service/ops, project, technical/architecture, or business/MBA
+- [ ] i can explain the IC -> manager mindset shift
+- [ ] Notion workspace created
+- [ ] Jira Free project created
+- [ ] i know the Goal 4 portfolio artifacts are the proof, not passive reading
 
-Next: [Phase 1 — Foundations →](01-foundations.md)
+[Next: Goal 1 - Foundations](01-foundations.md)

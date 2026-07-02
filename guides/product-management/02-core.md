@@ -1,288 +1,319 @@
-# ⚙️ Phase 2: Core PM Skills
+# Goal 2: core PM skills - discovery, priority, PRDs, metrics meow
 
-> **~160 hrs total** · your pace, no deadline
-> Discovery vs delivery, prioritization frameworks, PRDs, metrics, OKRs, and stakeholder management.
+> **~160h total** - your pace, no deadline.
+> goal: practice the skills PM interviews and real PM work both test: discovery, tradeoffs, writing, metrics, and stakeholders.
 
-[← Phase 1](01-foundations.md) · [Hub](README.md) · [Next: Phase 3 — Specialization →](03-specialization.md)
+[Previous: Goal 1](01-foundations.md) - [Hub](README.md) - [Next: Goal 3](03-specialization.md)
 
 ---
 
-## Product Discovery vs Delivery (~40 hrs)
+- [ ] **product discovery vs delivery** (~40h)
+- [ ] **prioritization frameworks** (~50h)
+- [ ] **PRDs and user stories** (~30h)
+- [ ] **metrics, North Star, OKRs** (~20h)
+- [ ] **JTBD and stakeholder management** (~20h)
+- [ ] **exit check** - discovery plan, RICE, PRD, metrics tree, JTBD, stakeholder update
 
-This is the most important conceptual distinction in modern PM practice. Get it wrong and you'll spend your career building the wrong things really well.
+## product discovery vs delivery (~40h)
 
-### What discovery is
+this is the most important conceptual distinction in modern PM practice.
+get it wrong and ull build the wrong things really well.
 
-**Discovery** is the work you do *before* building to determine:
-- Is this actually a problem worth solving?
-- Do users experience this problem the way we think they do?
-- Is our proposed solution actually something they'd use?
-- Is it technically feasible without a huge lift?
-- Does it make business sense?
+### what discovery is
 
-Discovery outputs: user interview findings, opportunity assessments, problem statements, solution prototypes tested with users.
+**Discovery** is the work before building to determine:
 
-**Delivery** is the work of building and shipping a solution that's already been validated. Delivery output: shipped features, deployed code, release notes.
+- [ ] is this a real problem worth solving?
+- [ ] do users experience it the way we think?
+- [ ] is our proposed solution something theyd use?
+- [ ] is it technically feasible without a huge lift?
+- [ ] does it make business sense?
 
-> The failure mode most PM teams fall into: treating every idea as ready for delivery, and only discovering the problems *after* it's built. Marty Cagan calls this the "build trap" — Melissa Perri's book of the same name is required reading.
+discovery outputs: interview findings, opportunity assessments, problem statements, solution prototypes tested with users.
 
-### Continuous discovery (Teresa Torres)
+**Delivery** is building and shipping a solution that has been validated.
+delivery output: shipped features, deployed code, release notes.
 
-Teresa Torres's *Continuous Discovery Habits* framework argues that discovery should not be a phase — it should be a weekly habit. The core practice: talk to at least one customer per week, consistently, and connect what you learn to a structured opportunity solution tree.
+common failure mode: treating every idea as ready for delivery, then discovering problems after it ships.
+Marty Cagan calls this the build trap, and Melissa Perri's book uses the same idea.
 
-This doesn't require a formal research budget. It just takes discipline and a habit of keeping 3–5 users you can reach out to.
+### continuous discovery
 
-### Labs
+Teresa Torres argues discovery should be a weekly habit, not a one-time stage.
+the core practice: talk to at least one customer per week and connect what u learn to an opportunity solution tree.
+it doesnt require a formal research budget.
+it requires discipline and a habit of keeping 3-5 reachable users.
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Map a discovery opportunity tree | Notion or paper | Take your running-example product, identify the outcome you want, and map the assumptions underneath it | **Free** |
-| Write a user interview guide | Notion | 5–7 questions that explore a problem space (not validate your solution) | **Free** |
-| Conduct 3 user interviews | Video call or in person | Talk to real users of your chosen product; synthesize what you heard | **Free** |
-| Read "Dual-Track Agile" | SVPG article | Understand how discovery and delivery run in parallel on empowered teams | **Free** |
+| Map a discovery opportunity tree | Notion or paper | take your running product, identify the outcome, and map assumptions underneath it | **Free** |
+| Write a user interview guide | Notion | write 5-7 questions that explore a problem space, not validate your solution | **Free** |
+| Conduct 3 user interviews | video call or in person | talk to real users of your chosen product and synthesize what u heard | **Free** |
+| Read "Dual-Track Agile" | SVPG article | understand discovery and delivery in parallel - ⚠️ TODO verify exact SVPG article link | **Free** |
 
-**Practice gate:** you can explain the difference between discovery and delivery, describe what outputs belong to each, and identify one example where skipping discovery caused a real product failure.
+**practice gate:** u can explain discovery vs delivery, name outputs for each, and identify one real product failure caused by skipping discovery.
 
----
+## prioritization frameworks (~50h)
 
-## Prioritization Frameworks (~50 hrs)
-
-Prioritization is the skill interviewers dig into hardest because it reveals whether you can make real tradeoffs. You need fluency with the major frameworks — but more importantly, you need to be able to explain *why* you chose one over another for a given context.
+prioritization shows whether u can make real tradeoffs.
+know the frameworks, but more importantly, explain why u chose one for a context.
 
 ### RICE
 
-**R**each · **I**mpact · **C**onfidence · **E**ffort
+**R**each, **I**mpact, **C**onfidence, **E**ffort
 
-Score = (Reach × Impact × Confidence) / Effort
+```text
+Score = (Reach x Impact x Confidence) / Effort
+```
 
-- **Reach:** how many users affected per time period (number, not percentage)
-- **Impact:** estimated impact per user (1 = low, 2 = medium, 3 = high, 0.5 = minimal — use a multiplier scale)
-- **Confidence:** how confident are you in your estimates? (100% = high, 80% = medium, 50% = low)
-- **Effort:** person-months of work across all functions
+- [ ] **Reach:** users affected per time period, as a number.
+- [ ] **Impact:** estimated impact per user. common scale: 0.5, 1, 2, 3.
+- [ ] **Confidence:** how confident u are in the estimates: 100%, 80%, 50%.
+- [ ] **Effort:** person-months across all functions.
 
-Use RICE when you have multiple features to compare and need a defensible ranking to bring to stakeholders. Weakness: the inputs are estimates, so RICE can give you false precision if you're not careful about it.
+use RICE when features have different audience sizes and effort levels.
+weakness: estimated inputs can create false precision.
 
 ### MoSCoW
 
-**M**ust have · **S**hould have · **C**ould have · **W**on't have (this time)
+**M**ust have, **S**hould have, **C**ould have, **W**ont have this time.
 
-Used primarily for **release planning** — deciding what goes into a specific launch or sprint. Works best when paired with a deadline and a constrained scope. Weakness: everything gets labeled "Must" if you're not disciplined.
+best for release planning against a deadline.
+weakness: everyone tries to mark their feature "Must" unless u are disciplined.
 
-### Kano Model
+### Kano
 
-Classifies features into three buckets based on how they affect user satisfaction:
-- **Basic/threshold features:** users are angry if absent, indifferent if present (expected)
-- **Performance features:** more = more satisfaction (linear)
-- **Delighters:** unexpected features that disproportionately increase satisfaction
+classifies features by user satisfaction:
 
-Use Kano for **deciding what kind of features to invest in**, not for ranking a backlog. Especially useful when you're trying to understand whether you're working on hygiene vs growth vs delight.
+- [ ] **Basic / threshold:** users are angry if absent, indifferent if present.
+- [ ] **Performance:** more equals more satisfaction.
+- [ ] **Delighters:** unexpected features that disproportionately increase satisfaction.
+
+use Kano to understand the kind of feature, not just rank a backlog.
 
 ### ICE
 
-**I**mpact · **C**onfidence · **E**ase
+**I**mpact, **C**onfidence, **E**ase
 
-Score = (Impact × Confidence × Ease) / 3 (or averaged)
+```text
+Score = (Impact x Confidence x Ease) / 3
+```
 
-Simpler than RICE — no Reach factor. Used in growth/experimentation contexts. Fast to apply across many ideas. Weakness: more subjective, no volume signal.
+simpler than RICE, with no Reach factor.
+common in growth and experimentation.
+weakness: subjective and missing volume signal.
 
-### When to use which
+### when to use which
 
 | Framework | Best for |
 |---|---|
-| **RICE** | Comparing features with different audience sizes and effort levels |
-| **MoSCoW** | Release scope decisions against a fixed deadline |
-| **Kano** | Understanding the nature of what you're building, not just ranking it |
-| **ICE** | Quick growth-experiment triage; many ideas, fast scoring |
+| **RICE** | comparing features with different audience sizes and effort |
+| **MoSCoW** | release scope against a fixed deadline |
+| **Kano** | understanding hygiene vs growth vs delight |
+| **ICE** | fast growth-experiment triage |
 
-The framework isn't the answer — your research, stakeholder context, and judgment are. Frameworks structure the conversation.
+frameworks structure the conversation.
+your research, stakeholder context, and judgment are still the answer.
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| RICE score 5 features | Google Sheets | Take 5 hypothetical features for your running product; score each with RICE; defend your estimates | **Free** |
-| MoSCoW a release | Notion | Given a fixed 2-week sprint, sort a 12-item backlog into must/should/could/won't | **Free** |
-| Kano analysis exercise | Notion or paper | For your product, classify 10 features into Basic / Performance / Delighter and explain why | **Free** |
-| Read "How to Prioritize" (Lenny's) | lennysnewsletter.com | Practitioner breakdown of how real PMs prioritize | **Free** tier |
+| RICE score 5 features | Google Sheets | score 5 features for your running product and defend the estimates | **Free** |
+| MoSCoW a release | Notion | sort a 12-item backlog into must/should/could/wont for a fixed 2-week sprint | **Free** |
+| Kano analysis | Notion or paper | classify 10 features into Basic / Performance / Delighter and explain why | **Free** |
+| Read "How to Prioritize" | Lenny's Newsletter | practitioner breakdown of PM prioritization - ⚠️ TODO verify exact article link | **Free** tier |
 
-**Practice gate:** you can score a set of features using RICE, explain each input, and articulate why RICE might mislead you on a specific item.
+**practice gate:** u can score features with RICE, explain each input, and name one case where RICE might mislead u.
 
----
+## writing PRDs and user stories (~30h)
 
-## Writing PRDs and User Stories (~30 hrs)
-
-Phase 1 introduced writing. Phase 2 is where you get the reps in.
+Goal 1 introduced writing.
+Goal 2 is where u get reps.
 
 ### PRD structure
 
-There's no single canonical PRD format. Different companies use different templates. The consistent elements:
+there is no single canonical PRD format.
+companies use different templates.
+the consistent elements:
 
-1. **Problem statement** — what problem exists, for whom, and why it matters now
-2. **Goals and success metrics** — what does success look like? What numbers change?
-3. **Non-goals** — what you are explicitly *not* solving (important to prevent scope creep)
-4. **User stories / requirements** — what the system should do, from the user's perspective
-5. **Open questions** — things you don't yet know that could affect the solution
-6. **Out of scope / future work** — related work intentionally deferred
-7. **Dependencies** — other teams, systems, or features this depends on
-8. **Timeline / phasing** — rough phases or milestones (not a Gantt chart)
+1. **Problem statement** - what problem exists, for whom, and why now.
+2. **Goals and success metrics** - what numbers change if this works?
+3. **Non-goals** - what u are explicitly not solving.
+4. **User stories / requirements** - what the system should do from the user's perspective.
+5. **Open questions** - things u dont know yet.
+6. **Out of scope / future work** - related work intentionally deferred.
+7. **Dependencies** - other teams, systems, or features needed.
+8. **Timeline / milestones** - rough sequencing, not a fantasy Gantt chart.
 
-> The most important PRD element that beginners skip: **Non-goals.** Stating what you won't solve is as important as stating what you will. It's the primary tool for scope management.
+beginners skip **non-goals**.
+dont.
+stating what u wont solve is the main tool for scope control.
 
-### User story format
+### user story format
 
-**Template:** As a [persona], I want [action] so that [benefit].
+```text
+As a [persona], I want [action] so that [benefit].
+```
 
-**Acceptance criteria:** A list of specific, testable conditions that must be true for the story to be "done."
+acceptance criteria are specific, testable conditions that must be true for the story to be done.
 
-Example:
+example:
+
 > **Story:** As a returning customer, I want to see my last 5 orders on the account page so that I can quickly reorder or check status.
 >
 > **Acceptance criteria:**
-> - Last 5 orders shown in reverse chronological order
-> - Each shows: order date, total, status, and a "Reorder" CTA
-> - Status reflects real-time state (pending / shipped / delivered)
-> - If fewer than 5 orders exist, show all of them
-> - Works on mobile and desktop
+> - last 5 orders shown in reverse chronological order
+> - each shows order date, total, status, and "Reorder" CTA
+> - status reflects real-time state
+> - if fewer than 5 orders exist, show all of them
+> - works on mobile and desktop
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Write a full PRD | Notion | PRD for one feature of your running product — all 7 sections | **Free** |
-| Pressure-test your PRD | With a friend or online PM community | Have someone ask "but what about X?" for 20 minutes; revise accordingly | **Free** |
-| Write 10 user stories with acceptance criteria | Jira | Enter them in Jira and simulate sprint planning | **Free** |
-| Read 3 real-world PRDs | Public PM blogs / GitHub | Find and analyze real PRDs — what does this company care about that yours doesn't cover? | **Free** |
+| Full PRD | Notion | write all core PRD sections for one feature of your running product | **Free** |
+| Pressure-test PRD | friend or PM community | have someone ask "but what about X?" for 20 minutes, then revise | **Free** |
+| 10 user stories | Jira | enter 10 stories with acceptance criteria and simulate sprint planning | **Free** |
+| Read 3 real-world PRDs | public PM blogs / GitHub | find real PRDs and compare structure - ⚠️ TODO verify exact examples | **Free** |
 
-**Practice gate:** you can write a PRD that a developer could begin scoping from — problem stated clearly, success metrics defined, non-goals listed, and acceptance criteria specific enough to be testable.
+**practice gate:** u can write a PRD a developer could begin scoping from: clear problem, success metrics, non-goals, and testable acceptance criteria.
 
----
-
-## Metrics, North Star, and OKRs (~20 hrs)
+## metrics, North Star, and OKRs (~20h)
 
 ### North Star metric
 
-A North Star metric is the single metric that best captures whether users are getting value from your product. Every team in the company should be able to see how their work connects to it.
+a North Star metric is the single metric that best captures whether users are getting value.
+it should connect team work to product value.
 
-Examples:
-- Spotify: time spent listening
-- Airbnb: nights booked
-- Slack: daily active users who sent a message
-- Duolingo: days of streak (debatable — a good PM question: is retention the right proxy for learning?)
+examples:
 
-The North Star is not the business metric (revenue, ARR). It's the leading indicator that *precedes* the business outcome.
+- [ ] Spotify: time spent listening
+- [ ] Airbnb: nights booked
+- [ ] Slack: daily active users who sent a message
+- [ ] Duolingo: days of streak, with the PM caveat that retention may not equal learning
 
-### Supporting metrics tree
+the North Star is not the business metric like revenue or ARR.
+its the leading indicator that precedes business outcome.
 
-Every North Star breaks down into inputs:
-```
+### supporting metrics tree
+
+```text
 North Star: Daily Active Users
-  ├── Acquisition: new users per day
-  ├── Activation: % of new users who complete onboarding
-  ├── Retention: % of users active day 7, day 30
-  └── Resurrection: % of churned users who return
+  Acquisition: new users per day
+  Activation: % of new users who complete onboarding
+  Retention: % active day 7 and day 30
+  Resurrection: % of churned users who return
 ```
 
-Understanding this tree is what makes PM analytics work. When a metric drops, you navigate the tree to diagnose where.
+when a metric drops, u navigate the tree to diagnose where.
 
 ### OKRs
 
 **O**bjectives and **K**ey **R**esults
 
-- **Objective:** qualitative direction. Ambitious, memorable, motivating. Not a number.
-- **Key Results:** 2–4 specific, measurable outcomes that indicate you hit the objective.
+- [ ] **Objective:** qualitative direction. memorable, ambitious, not a number.
+- [ ] **Key Results:** 2-4 measurable outcomes proving progress.
 
-Example:
-> **Objective:** Make the mobile onboarding experience fast and delightful
+example:
+
+> **Objective:** Make mobile onboarding fast and delightful
 >
 > **KR1:** Mobile Day-1 activation rate increases from 42% to 60%
 > **KR2:** Onboarding completion time decreases from 4:20 to under 2:30
 > **KR3:** Onboarding NPS increases from 32 to 50
 
-OKRs set at the team level should connect to company-level OKRs. A PM's job is to translate company objectives into product team outcomes.
-
 ### A/B testing literacy
 
-You don't need to be a statistician. You need to know:
-- What a control and variant are
-- Why you need a sufficient sample size before reading results
-- What p-value means (probability the result is due to chance) and what 95% significance means
-- What novelty effect is and why it can mislead early results
-- Why you should define success metrics *before* running the experiment
+u dont need to be a statistician.
+u do need to know:
 
-### Labs
+- [ ] control vs variant
+- [ ] why sample size matters
+- [ ] what p-value and 95% significance mean at a basic level
+- [ ] novelty effect
+- [ ] why success metrics must be defined before the experiment
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Define a North Star for your product | Notion | Choose the metric, justify it, and build a 3-level input tree | **Free** |
-| Write a set of OKRs | Notion | One objective with 3 key results for a hypothetical product team | **Free** |
-| Amplitude funnel analysis | Amplitude free tier | Set up a funnel for your product or a demo dataset; identify the biggest drop-off | **Free** |
-| Read "Metrics for PMs" (Lenny's) | lennysnewsletter.com | Current practitioner view on product metrics | **Free** tier |
+| Define a North Star | Notion | choose the metric, justify it, and build a 3-level input tree | **Free** |
+| Write OKRs | Notion | one objective with 3 key results for a product team | **Free** |
+| Amplitude funnel analysis | Amplitude free tier | set up a funnel for your product or demo dataset and identify drop-off | **Free** |
+| Read "Metrics for PMs" | Lenny's Newsletter | practitioner view on product metrics - ⚠️ TODO verify exact article link | **Free** tier |
 
-**Practice gate:** you can define a North Star metric for a given product, explain why it's better than revenue as a daily signal, and sketch a 3-level input tree underneath it.
+**practice gate:** u can define a North Star metric, explain why its better than revenue as a daily signal, and sketch a 3-level input tree.
 
----
+## JTBD and stakeholder management (~20h)
 
-## Jobs-to-be-Done and Stakeholder Management (~20 hrs)
+### Jobs-to-be-Done
 
-### Jobs-to-be-Done (JTBD)
+JTBD explains why customers use a product, not just what they click.
+people "hire" products to do a job.
 
-JTBD is a framework for understanding why customers use a product, not just what they do with it. The core insight: people don't buy products — they "hire" products to do a job.
+Clayton Christensen's milkshake example: morning milkshake = long commute, one-handed, not messy.
+afternoon milkshake = treat for a kid.
+same product, different jobs.
 
-Clayton Christensen's original framing: a milkshake sold in the morning is being hired for a different job (a long commute, one-handed, not messy) than one sold in the afternoon (something fun for my kid). Same product, completely different jobs.
+PM takeaway: when u understand the job, u can prioritize features that make the product better at that job.
 
-For PM: when you understand the job a user is hiring your product for, you can prioritize features that make the product *better at that job*, rather than features that look interesting in isolation.
+```text
+When [situation], I want to [motivation / job], so I can [expected outcome].
+```
 
-**JTBD format:** When [situation], I want to [motivation / job], so I can [expected outcome].
+JTBD is more specific than a user story bc it includes the situation that triggers the need.
 
-This is more specific than a user story because it focuses on the *situation* that triggers the need, not just the action.
+### stakeholder management
 
-### Stakeholder management
+stakeholders include:
 
-This is the skill most PM frameworks don't teach explicitly. It's also the one that breaks most PMs.
+- [ ] engineering lead / tech lead
+- [ ] design lead
+- [ ] data / analytics
+- [ ] legal, compliance, security
+- [ ] sales, customer success
+- [ ] marketing
+- [ ] executives
+- [ ] customers, partners, regulators
 
-**Who stakeholders are:**
-- Engineering lead / tech lead
-- Design lead
-- Data / analytics
-- Legal, compliance, security
-- Sales, customer success
-- Marketing
-- Executives (your manager, their manager, sometimes CEO)
-- External: customers, partners, regulators
+the hard part: they have different goals, incentives, and information.
+your job is to build enough shared context that everyone can move in the same direction, without authority over them.
 
-**The core problem:** stakeholders have different goals, different incentives, and different information. Your job is to build enough shared context that everyone is pulling in the same direction — without having authority over any of them.
+what works:
 
-**What works:**
-- Regular, brief written updates (a weekly PM update that goes to all stakeholders saves 3 alignment meetings)
-- Involve stakeholders early in discovery, not just at spec review (so they don't feel ambushed)
-- Surface tradeoffs explicitly: "We can ship X by Q2 or Y by Q2, not both — here's my recommendation"
-- Know what each stakeholder cares about and connect your work to it
+- [ ] brief written updates every week
+- [ ] involve stakeholders early in discovery, not just at spec review
+- [ ] surface tradeoffs explicitly
+- [ ] know what each stakeholder cares about and connect your work to it
 
-**What doesn't work:**
-- Presenting a fully-formed solution and asking for "buy-in" (they'll add requirements or block it)
-- Going around a stakeholder when they slow you down (it will come back)
-- Promising timelines you don't control
+what doesnt work:
 
-### Labs
+- [ ] presenting a finished solution and asking for "buy-in"
+- [ ] going around stakeholders when they slow u down
+- [ ] promising timelines u dont control
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Write 5 JTBD statements | Notion | For your running product; for each, identify what the user is *actually* hiring it for | **Free** |
-| Map your stakeholders | Notion | List 6 hypothetical stakeholders for your product team; for each: their goal, their concern, and how you'd keep them aligned | **Free** |
-| Write a stakeholder update | Notion | One-page weekly PM update covering: what shipped, what's in progress, what's blocked, key decisions needed | **Free** |
+| 5 JTBD statements | Notion | for your running product, identify what users are hiring it for | **Free** |
+| Stakeholder map | Notion | list 6 stakeholders, their goals, concerns, and alignment plan | **Free** |
+| Stakeholder update | Notion | one-page weekly PM update: shipped, in progress, blocked, decisions needed | **Free** |
 
-**Practice gate:** you can write a JTBD statement for a real product feature and explain how understanding the "job" changes the prioritization decision.
+**practice gate:** u can write a JTBD statement for a real product feature and explain how the job changes the prioritization decision.
 
----
+## exit check
 
-## Phase 2 exit checklist
+- [ ] i can explain discovery vs delivery and name 2 discovery techniques
+- [ ] i can score features using RICE and explain each input's limitation
+- [ ] i can write a complete PRD with problem statement, success metrics, non-goals, and acceptance criteria
+- [ ] i defined a North Star metric and input tree for my running product
+- [ ] i can write specific, measurable OKRs
+- [ ] i can write a JTBD statement and explain how it differs from a user story
+- [ ] i understand stakeholder management and have a basic alignment strategy
 
-- [ ] I can explain the difference between discovery and delivery, and name 2 discovery techniques
-- [ ] I can score features using RICE and explain each input's limitations
-- [ ] I can write a complete PRD with problem statement, success metrics, non-goals, and acceptance criteria
-- [ ] I have defined a North Star metric and input tree for my running product
-- [ ] I can write a set of OKRs that are specific and measurable
-- [ ] I can write a JTBD statement and explain how it differs from a user story
-- [ ] I understand what makes stakeholder management hard and have a basic alignment strategy
-
-Next: [Phase 3 — Specialization →](03-specialization.md)
+[Next: Goal 3 - Specialization](03-specialization.md)

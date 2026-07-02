@@ -1,116 +1,121 @@
-# 🧪 Lab Inventory — Cloud & DevOps (2026)
+# Lab inventory - Cloud & DevOps meow
 
-> Every platform here was **curl status-checked on 2026-06-13**.
-> ✅ live · ⚠️ likely live (bot-blocked but reachable) · ❌ dead (do not use).
-> Free-first. You can do ~90% of this roadmap without spending a cent.
+> platform status was curl-checked on 2026-06-13.
+> free-first. u can do most of this roadmap without spending money.
 
-[← Hub](README.md) · [Resources →](resources.md)
-
----
-
-## How to use this page
-
-Each phase of the guide tells you *what* to practice. This page tells you *where*.
-Find the topic you're on, do it hands-on, then commit the result to GitHub. **A lab you didn't reproduce yourself doesn't count.**
+[Hub](README.md) - [Resources](resources.md)
 
 ---
 
-## By topic
+- [ ] **use this page by topic**
+- [ ] **build labs into portfolio proof**
+- [ ] **avoid dead old resources**
 
-### Linux & CLI
-| Lab | Platform | URL | What you do | Cost | Status |
+## how to use this page
+
+each goal tells u *what* to practice. this page tells u *where*.
+find the topic, do it hands-on, then commit the result to GitHub.
+
+a lab u didnt reproduce yourself doesnt count, meow.
+
+## by topic
+
+### Linux and CLI
+
+| Lab | Platform | URL | What u do | Cost | Status |
 |---|---|---|---|---|---|
-| Bandit wargame | OverTheWire | overthewire.org/wargames/bandit/ | SSH into real boxes, CLI puzzles level by level | Free | ✅ |
-| Linux scenarios | KillerCoda | killercoda.com | Browser terminal, guided Linux tasks | Free | ✅ |
+| Bandit wargame | OverTheWire | overthewire.org/wargames/bandit/ | SSH into real boxes, CLI puzzles | Free | live |
+| Linux scenarios | KillerCoda | killercoda.com | browser terminal, guided Linux tasks | Free | live |
 
-### Cloud provider free tiers
-| Lab | Platform | URL | What you do | Cost | Status |
+### cloud provider free tiers
+
+| Lab | Platform | URL | What u do | Cost | Status |
 |---|---|---|---|---|---|
-| AWS Free Tier | AWS | aws.amazon.com/free/ | Build real infra (EC2, S3, IAM, VPC), 12-mo free | Free tier | ✅ |
-| AWS Skill Builder | AWS | explore.skillbuilder.aws | Self-paced labs, some free | Freemium | ⚠️ |
-| MS Learn sandboxes | Microsoft | learn.microsoft.com/training/ | Free Azure sandbox, **no credit card** | Free | ✅ |
-| Google Cloud Skills Boost | Google | cloudskillsboost.google | Hands-on GCP labs (ex-Qwiklabs) | Freemium/credits | ⚠️ |
+| AWS Free Tier | AWS | aws.amazon.com/free/ | EC2, S3, IAM, VPC | Free tier | live |
+| AWS Skill Builder | AWS | explore.skillbuilder.aws | self-paced labs, some free | Freemium | likely live |
+| MS Learn sandboxes | Microsoft | learn.microsoft.com/training/ | Azure sandbox, no card | Free | live |
+| Google Cloud Skills Boost | Google | cloudskillsboost.google | GCP hands-on labs | Freemium/credits | likely live |
 
-> 💡 **Set a billing alarm at $1 on day one.** The free tier is generous but not infinite — an unattended resource is the classic beginner mistake.
+set a billing alarm at $1 on day one. free tier is generous, not infinite.
 
-### Docker & containers
-| Lab | Platform | URL | What you do | Cost | Status |
+### Docker and containers
+
+| Lab | Platform | URL | What u do | Cost | Status |
 |---|---|---|---|---|---|
-| Play with Docker | Docker | labs.play-with-docker.com | Browser Docker host, 4-hr throwaway sessions | Free | ✅ |
-| Docker scenarios | KillerCoda | killercoda.com | Guided container labs | Free | ✅ |
+| Play with Docker | Docker | labs.play-with-docker.com | browser Docker host | Free | live |
+| Docker scenarios | KillerCoda | killercoda.com | guided container labs | Free | live |
 
 ### Kubernetes
-| Lab | Platform | URL | What you do | Cost | Status |
-|---|---|---|---|---|---|
-| Play with Kubernetes | Docker | labs.play-with-k8s.com | Browser k8s cluster | Free | ✅ |
-| K8s scenarios | KillerCoda | killercoda.com/kubernetes | Guided kubectl/cluster labs | Free | ✅ |
-| Kube by Example | KodeKloud | kubebyexample.com | Structured k8s lessons | Free | ⚠️ |
-| Official tutorials | Kubernetes | kubernetes.io/docs/tutorials/ | minikube / kind hands-on | Free | ✅ |
-| killer.sh | killer.sh | killer.sh | CKA/CKAD exam simulator | Bundled w/ exam | ✅ |
 
-> 🏠 **Run a cluster locally first.** Install **k3s**, **kind**, or **minikube** on your own machine before touching a managed cloud cluster (EKS/AKS/GKE) — local is free, fast, and forgiving.
+| Lab | Platform | URL | What u do | Cost | Status |
+|---|---|---|---|---|---|
+| Play with Kubernetes | Docker | labs.play-with-k8s.com | browser k8s cluster | Free | live |
+| K8s scenarios | KillerCoda | killercoda.com/kubernetes | kubectl/cluster labs | Free | live |
+| Kube by Example | KodeKloud | kubebyexample.com | structured k8s lessons | Free | likely live |
+| Official tutorials | Kubernetes | kubernetes.io/docs/tutorials/ | minikube/kind hands-on | Free | live |
+| killer.sh | killer.sh | killer.sh | CKA/CKAD simulator | bundled w/ exam | live |
+
+run a local cluster first: **k3s**, **kind**, or **minikube** before managed EKS/AKS/GKE.
 
 ### Terraform / IaC
-| Lab | Platform | URL | What you do | Cost | Status |
-|---|---|---|---|---|---|
-| Terraform tutorials | HashiCorp | developer.hashicorp.com/terraform/tutorials | Guided provisioning, real providers | Free | ✅ |
-| Terraform/DevOps labs | KodeKloud | kodekloud.com | Browser labs, free community tier | Freemium | ⚠️ |
 
-> HCL skills transfer 1:1 to **OpenTofu** (the open MPL-2 fork). Learn one, you know both — `terraform apply` ↔ `tofu apply`.
-
-### CI/CD & GitOps
-| Lab | Platform | URL | What you do | Cost | Status |
+| Lab | Platform | URL | What u do | Cost | Status |
 |---|---|---|---|---|---|
-| GitHub Skills | GitHub | skills.github.com | Build Actions pipelines in real repos | Free | ✅ |
-| GitLab CI | GitLab | docs.gitlab.com/ee/ci/ | Pipeline YAML, free-tier minutes | Free tier | ⚠️ |
+| Terraform tutorials | HashiCorp | developer.hashicorp.com/terraform/tutorials | provisioning, real providers | Free | live |
+| Terraform/DevOps labs | KodeKloud | kodekloud.com | browser labs | Freemium | likely live |
+
+HCL skills transfer 1:1 to **OpenTofu**.
+
+### CI/CD and GitOps
+
+| Lab | Platform | URL | What u do | Cost | Status |
+|---|---|---|---|---|---|
+| GitHub Skills | GitHub | skills.github.com | Actions pipelines in repos | Free | live |
+| GitLab CI | GitLab | docs.gitlab.com/ee/ci/ | pipeline YAML | Free tier | likely live |
 
 ### Observability
-| Lab | Platform | URL | What you do | Cost | Status |
+
+| Lab | Platform | URL | What u do | Cost | Status |
 |---|---|---|---|---|---|
-| Grafana scenarios | KillerCoda | killercoda.com/grafana-labs | Prometheus + Grafana hands-on | Free | ✅ |
+| Grafana scenarios | KillerCoda | killercoda.com/grafana-labs | Prometheus + Grafana hands-on | Free | live |
 
 ### Git
-| Lab | Platform | URL | What you do | Cost | Status |
+
+| Lab | Platform | URL | What u do | Cost | Status |
 |---|---|---|---|---|---|
-| Learn Git Branching | — | learngitbranching.js.org | Visual git branch/merge puzzles | Free | ✅ |
+| Learn Git Branching | - | learngitbranching.js.org | branch/merge puzzles | Free | live |
 
----
-
-## Platform quick reference
+## platform quick reference
 
 | Platform | Best for | Cost |
 |---|---|---|
-| **KillerCoda** | Browser scenarios: Linux, Docker, k8s, Grafana, Terraform | Free |
-| **Play with Docker / K8s** | Throwaway Docker / k8s sandboxes | Free |
-| **KodeKloud** | Structured DevOps labs + courses | Freemium |
-| **killer.sh** | CKA/CKAD/CKS exam simulator | Bundled with LF exam |
-| **AWS Free Tier** | Real AWS infra, 12 months | Free tier |
-| **MS Learn** | Azure sandboxes, no card | Free |
-| **Google Cloud Skills Boost** | GCP hands-on labs | Freemium/credits |
-| **HashiCorp tutorials** | Terraform / Vault guided | Free |
-| **GitHub Skills** | Actions / CI/CD in real repos | Free |
+| **KillerCoda** | Linux, Docker, k8s, Grafana, Terraform | Free |
+| **Play with Docker / K8s** | throwaway Docker/k8s sandboxes | Free |
+| **KodeKloud** | structured DevOps labs | Freemium |
+| **killer.sh** | CKA/CKAD/CKS simulator | bundled |
+| **AWS Free Tier** | real AWS infra | Free tier |
+| **MS Learn** | Azure sandboxes | Free |
+| **Google Cloud Skills Boost** | GCP hands-on labs | Freemium |
+| **HashiCorp tutorials** | Terraform/Vault guided | Free |
+| **GitHub Skills** | Actions / CI/CD | Free |
 
----
-
-## ❌ Dead or paywalled since ~2021 (don't waste time)
+## dead or paywalled old picks
 
 | Old resource | What happened | Use instead |
 |---|---|---|
-| **Katacoda** | Shut down Jun 2023 (tombstone page only) | **KillerCoda** (same founders) |
-| **A Cloud Guru** | Acquired → redirects to Pluralsight (paid) | AWS Skill Builder, KodeKloud free tier, freeCodeCamp |
-| **Qwiklabs** | Rebranded | **Google Cloud Skills Boost** (same labs, new name) |
-| **learn.hashicorp.com** | Moved | **developer.hashicorp.com/tutorials** |
+| **Katacoda** | shut down Jun 2023 | **KillerCoda** |
+| **A Cloud Guru** | acquired -> Pluralsight paid | AWS Skill Builder, KodeKloud free tier, freeCodeCamp **⚠️ TODO verify exact current course** |
+| **Qwiklabs** | rebranded | Google Cloud Skills Boost |
+| **learn.hashicorp.com** | moved | developer.hashicorp.com/tutorials |
+
+## lab-to-portfolio pipeline
+
+- [ ] local k8s with kind/k3s -> deploy sample app -> commit manifests
+- [ ] AWS Free Tier -> rebuild infra in Terraform/OpenTofu
+- [ ] GitHub Actions -> build -> test -> deploy pipeline
+- [ ] KillerCoda Grafana -> OTel -> Prometheus -> Grafana + one SLO alert
+- [ ] README with architecture diagram
 
 ---
 
-## Suggested lab-to-portfolio pipeline
-
-1. **Local k8s** (kind/k3s) → deploy a sample app → commit manifests.
-2. **AWS Free Tier** → rebuild that app's infra in **Terraform/OpenTofu**, zero console clicks.
-3. **GitHub Actions** → add a build → test → deploy pipeline to the repo.
-4. **KillerCoda Grafana** → wire **OTel → Prometheus → Grafana** + one SLO alert.
-5. Write the README with an architecture diagram. That makes it a portfolio project, not just a lab.
-
----
-
-*Last verified: 2026-06-13. Platforms come and go — if a link 404s, check [resources.md](resources.md) for the current equivalent. Raw status checks in `research/lab-inventory/cloud-devops-2026.md`.*
+*Last verified: 2026-06-13. Raw status checks in `research/lab-inventory/cloud-devops-2026.md`.*

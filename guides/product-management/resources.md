@@ -1,86 +1,96 @@
-# 📚 Resources — Product Management (2026)
+# Resources: Product Management (2026) meow
 
-> Curated, current, mostly free. Quality over quantity — going deep on a few sources beats skimming dozens.
-
----
-
-## Start-here picks (if you only use a few)
-
-- **Theory:** [SVPG articles](https://www.svpg.com/articles/) — Marty Cagan's essays are the canonical source on modern product thinking; start with "Product vs. Feature Teams" and "The Root Causes of Product Failure"
-- **Daily reading:** [Lenny's Newsletter](https://www.lennysnewsletter.com) — free tier gives you frameworks, case studies, and interviews with working PMs
-- **Books:** *Inspired* (Cagan) → *Escaping the Build Trap* (Perri) — read in this order
-- **Interview prep:** [Exponent](https://www.tryexponent.com) — structured PM interview drills
+> curated, current, mostly free.
+> going deep on a few sources beats skimming 30 tabs.
 
 ---
 
-## Free courses and learning tracks
+- [ ] **start-here picks**
+- [ ] **free courses and tracks**
+- [ ] **books worth owning**
+- [ ] **podcasts and video**
+- [ ] **communities**
+- [ ] **stay current**
+
+## start-here picks
+
+- [ ] **Theory:** [SVPG articles](https://www.svpg.com/articles/). start with "Product vs. Feature Teams" and "The Root Causes of Product Failure" - ⚠️ TODO verify exact article links.
+- [ ] **Daily reading:** [Lenny's Newsletter](https://www.lennysnewsletter.com). free tier has frameworks, case studies, interviews.
+- [ ] **Books:** *Inspired* by Marty Cagan -> *Escaping the Build Trap* by Melissa Perri.
+- [ ] **Interview prep:** [Exponent](https://www.tryexponent.com). structured PM interview drills.
+
+## free courses and learning tracks
 
 | Resource | Covers | Cost |
 |---|---|---|
-| [SVPG Articles](https://www.svpg.com/articles/) | Product thinking, discovery vs delivery, team topology | **Free** |
-| [Lenny's Newsletter](https://www.lennysnewsletter.com) | Frameworks, metrics, prioritization, growth, career | **Free** (paid tier) |
-| [Google Project Management Certificate](https://www.coursera.org/professional-certificates/google-project-management) | Project / program management fundamentals | ~$49/mo (financial aid available) |
-| [Product School free resources](https://productschool.com/resources) | PM frameworks, templates, webinars | **Free** |
-| [Scrum Guide](https://scrumguides.org) | The authoritative 13-page Scrum reference | **Free** |
+| [SVPG Articles](https://www.svpg.com/articles/) | product thinking, discovery vs delivery, team topology | **Free** |
+| [Lenny's Newsletter](https://www.lennysnewsletter.com) | frameworks, metrics, prioritization, growth, career | **Free** with paid tier |
+| [Google Project Management Certificate](https://www.coursera.org/professional-certificates/google-project-management) | project/program management fundamentals | ~$49/mo, financial aid available |
+| [Product School free resources](https://productschool.com/resources) | PM frameworks, templates, webinars - ⚠️ TODO verify exact starter resources | **Free** |
+| [Scrum Guide](https://scrumguides.org) | authoritative Scrum reference | **Free** |
 | [Scrum.org open assessments](https://www.scrum.org/open-assessments) | PSPO/PSM practice tests | **Free** |
-| [dbt Fundamentals](https://courses.getdbt.com) | For Technical PMs who want data pipeline literacy | **Free** |
-| [Reforge](https://www.reforge.com) | Advanced PM / growth strategy cohorts | Paid (employer often covers) |
+| [dbt Fundamentals](https://courses.getdbt.com) | data pipeline literacy for Technical PMs - ⚠️ TODO verify exact course link | **Free** |
+| [Reforge](https://www.reforge.com) | advanced PM / growth strategy cohorts | Paid, employer often covers |
 
-> **Reforge** is expensive and designed for working PMs with 2+ years of experience. It's not appropriate as a starting point; it's the right investment once you're in a PM role and want to accelerate.
+Reforge is expensive and designed for working PMs with 2+ years experience.
+its not a starting point.
+use it after u are in a PM role and want to accelerate.
 
----
-
-## Books worth owning
+## books worth owning
 
 | Book | For | Why |
 |---|---|---|
-| *Inspired: How to Create Tech Products Customers Love* — Marty Cagan | Everyone | The defining book on modern product management; chapters on discovery, team structure, and product culture |
-| *Escaping the Build Trap* — Melissa Perri | Everyone | Explains the failure mode of PM-as-ticket-writer; the best diagnosis of why companies build the wrong things |
-| *Continuous Discovery Habits* — Teresa Torres | Discovery-focused PMs | Weekly customer touchpoints, opportunity solution trees — a practical system for discovery |
-| *The Lean Startup* — Eric Ries | Startup PMs / anyone new to validated learning | Validated learning and the build-measure-learn loop; dated in places but the mental model holds |
-| *Cracking the PM Interview* — Gayle McDowell & Jackie Bavaro | Interview prep | The standard PM interview prep book; product design, estimation, and behavioral frameworks |
-| *Intercom on Product Management* — Intercom | Working PMs | Short, practical essays on prioritization, roadmaps, shipping features |
-| *Measure What Matters* — John Doerr | OKR implementation | The accessible OKR book; use alongside your work experience to understand how OKRs work in practice |
-| *The Mom Test* — Rob Fitzpatrick | Anyone doing user research | How to run user interviews without leading witnesses; one of the most practical PM reads available |
+| *Inspired* by Marty Cagan | everyone | defining book on modern PM, discovery, team structure, product culture |
+| *Escaping the Build Trap* by Melissa Perri | everyone | explains PM-as-ticket-writer failure mode |
+| *Continuous Discovery Habits* by Teresa Torres | discovery-focused PMs | weekly customer touchpoints and opportunity solution trees |
+| *The Lean Startup* by Eric Ries | startup PMs | validated learning and build-measure-learn loop |
+| *Cracking the PM Interview* by Gayle McDowell and Jackie Bavaro | interview prep | standard PM interview prep book |
+| *Intercom on Product Management* by Intercom | working PMs | short practical essays on prioritization and shipping |
+| *Measure What Matters* by John Doerr | OKRs | accessible OKR book |
+| *The Mom Test* by Rob Fitzpatrick | user research | how to interview without leading witnesses |
 
-> You don't need all of these. *Inspired* + *Escaping the Build Trap* cover 80% of the conceptual foundation. Add *Cracking the PM Interview* when you're actively job hunting.
+u dont need all of these.
+*Inspired* + *Escaping the Build Trap* cover most of the conceptual foundation.
+add *Cracking the PM Interview* when actively job hunting.
 
----
+## podcasts and video
 
-## YouTube and podcasts
+these are broad ongoing resources, so use them as **explore more** unless a goal names an exact episode.
 
-- **Lenny's Podcast** — in-depth interviews with working PMs, founders, and product leaders; consistently current and high signal (✅ verified active 2026)
-- **Exponent** — PM interview prep content; product design walkthroughs and estimation examples (✅ verified active 2026)
-- **Product School** — webinars and short-form PM content; verify the channel is active before relying on it (⚠️ check publication dates)
+- [ ] **Lenny's Podcast** - interviews with PMs, founders, product leaders. verified active 2026. ⚠️ TODO verify exact starter episodes.
+- [ ] **Exponent** - PM interview prep content, product design walkthroughs, estimation examples. ⚠️ TODO verify exact beginner playlist/video.
+- [ ] **Product School** - webinars and short PM content. verify publication dates before relying on it. ⚠️ TODO verify exact webinar/module.
 
-> Most PM YouTube content ages poorly — frameworks published in 2019 reference outdated processes. Prioritize podcasts (Lenny's, in particular) over video courses for staying current.
+most PM YouTube content ages poorly.
+frameworks from 2019 often describe old processes.
+prioritize current podcasts and essays, especially Lenny's, for market signal.
 
----
+## communities
 
-## Communities
-
-| Community | What it's for | Cost |
+| Community | What its for | Cost |
 |---|---|---|
 | [r/ProductManagement](https://www.reddit.com/r/ProductManagement/) | Q&A, career discussions, reality checks | **Free** |
-| [Mind the Product](https://www.mindtheproduct.com) | Global PM community; events, articles, Slack | **Free** (events vary) |
-| [Lenny's Newsletter Community](https://www.lennysnewsletter.com) | Slack community tied to the newsletter; PM-specific discussion | Paid (newsletter subscription) |
-| [ADPList](https://adplist.org) | Free 1:1 mentorship with working PMs globally | **Free** |
+| [Mind the Product](https://www.mindtheproduct.com) | global PM community, events, articles, Slack | **Free** with paid events |
+| [Lenny's Newsletter Community](https://www.lennysnewsletter.com) | PM-specific Slack tied to newsletter | Paid subscription |
+| [ADPList](https://adplist.org) | free 1:1 mentorship with working PMs | **Free** |
 | [Product Led Alliance](https://www.productledalliance.com) | PLG-focused PM community | **Free** |
 
-> **ADPList is underused.** Free 1:1 sessions with senior PMs. Come with specific questions (not "can you review my resume?") — ask about how they made a specific product decision, how they handle a specific stakeholder type, what they wish they'd known at your stage.
+ADPList is underused.
+come with specific questions, not "can u review my resume?"
+ask how they made a product decision, handled a stakeholder, or moved into PM.
+
+## staying current
+
+PM moves through fads fast.
+the durable stuff is discovery craft, user empathy, prioritization under constraints, metrics literacy, and communication.
+
+worth following in 2026:
+
+- [ ] **SVPG / Marty Cagan** - empowered product team model and feature-factory critique.
+- [ ] **AI in PM** - Lenny's covers this regularly. the useful question is which PM work AI handles and what that frees u to do.
+- [ ] **Teresa Torres** - continuous discovery and opportunity solution tree methodology.
+- [ ] **Product-led growth** - for SaaS, understand activation, free-to-paid conversion, and PLG vs sales-led strategy.
 
 ---
 
-## Staying current
-
-The PM field moves through fads quickly. The things that don't fade: discovery craft, user empathy, prioritization under constraints, metrics literacy, and communication.
-
-What's worth following in 2026:
-- **SVPG / Marty Cagan** — the "empowered product team" model continues to be the aspirational standard; his criticism of "feature factories" is still necessary reading
-- **AI in PM** — Lenny's Newsletter covers this regularly; the practical PM question is not "will AI replace PMs?" but "which PM work does AI handle, and what does that free me to do?"
-- **Teresa Torres** — continuous discovery / opportunity solution tree methodology is increasingly mainstream
-- **Product-led growth (PLG)** — if you're targeting SaaS companies, understand the PLG motion: how free-to-paid conversion works, what the activation metric is, and how PM strategy differs in a PLG company vs. a sales-led one
-
----
-
-*Links checked June 2026. If something has moved, search the name — these are all well-known, stable projects.*
+*Links checked June 2026. If something moved, search the name. These are stable, well-known projects.*

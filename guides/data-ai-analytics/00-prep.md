@@ -1,69 +1,67 @@
-# 🚀 Phase 0: Pre-Flight Setup
+# Goal 0: pre-flight setup meow
 
-> **Day 1 — non-negotiable.** Just sign up and install — no learning to finish, do it before Phase 1.
-> Before any SQL or Python, get your head straight and your tools installed.
+> **Day 1 - non-negotiable.**
+> sign up and install. no SQL/Python learning block yet.
 
-[Hub](README.md) · [Next: Phase 1 — Foundations →](01-foundations.md)
+[Hub](README.md) - [Next: Goal 1 - Foundations](01-foundations.md)
 
 ---
 
-## The honest career reality (read this first)
+- [ ] **understand the honest career reality**
+- [ ] **set up accounts and tools**
+- [ ] **learn how to use the guide**
+- [ ] **exit check** - realistic target picked, Python/Colab, GitHub/Kaggle, BigQuery sandbox, SQL client
 
-The data field has a marketing problem: every bootcamp sells "Data Scientist" because it sounds prestigious. Here's what's actually true in 2026:
+## honest career reality
+
+the data field has a marketing problem. every bootcamp sells "Data Scientist" because it sounds prestigious. heres what is actually true in 2026:
 
 | Title | Truly entry-level? | Reality |
 |---|---|---|
-| **Data Analyst / BI Analyst** | ✅ Yes | The real entry door. SQL + one BI tool gets you a phone screen. Hires career-switchers. |
-| **Analytics Engineer** | ✅ Increasingly | Second true entry point if you have SQL depth + dbt. |
-| **Data Engineer** | ⚠️ Borderline | Accessible but expects Python + SQL + cloud fluency. Fresh-grad hiring is rarer. |
-| **Data Scientist** | ❌ Mostly not | "Junior DS" usually means "strong analyst." Real DS roles want a master's or experience. |
-| **ML Engineer** | ❌ No | SWE skills + ML depth. Enter as DS/SWE first, then specialize. |
-| **AI Engineer** | ❌ Thin | Most postings are ML/backend roles with LLM work bolted on. Not a clean first job. |
+| **Data Analyst / BI Analyst** | yes | real entry door; SQL + one BI tool gets screens |
+| **Analytics Engineer** | increasingly | junior roles exist if u have SQL depth + dbt |
+| **Data Engineer** | borderline | accessible, but expects Python + SQL + cloud fluency |
+| **Data Scientist** | mostly not | "Junior DS" usually means strong analyst + some ML |
+| **ML Engineer** | no | SWE skills + ML depth |
+| **AI Engineer** | thin | usually ML/backend roles with LLM work bolted on |
 
-**Target Data Analyst or Analytics Engineer for your first job.** It's not a consolation prize — it's the standard entry door employers actually hire into. You pivot to DE/DS/ML *after* 1–2 years in-role.
+target **Data Analyst** or **Analytics Engineer** for your first job. its not a consolation prize; its the standard entry door.
 
----
+## mindset
 
-## Mindset
+- **SQL is non-negotiable.** every track, every interview, every day on the job.
+- **communication beats algorithms at entry level.** turn business questions into clear answers.
+- **use AI tools, but understand output.** draft SQL, clean data, debug errors, then verify.
+- **portfolio over credentials.** an end-to-end analysis beats certs with no proof.
 
-- **SQL is the one non-negotiable skill.** Every track, every interview, every day on the job. Get comfortable with it before anything fancy.
-- **Communication beats algorithms at entry level.** A junior who can turn a business question into a clear answer beats one who memorized 50 ML models.
-- **Use AI tools, but understand the output.** In 2026 you're expected to use an LLM to draft SQL or clean data — but you need to be able to read, debug, and trust what it produces. Judgment > generation.
-- **Portfolio over credentials.** A repo with an end-to-end analysis beats a stack of certs with nothing to show.
-
----
-
-## Accounts & tools to set up (all free)
+## accounts and tools to set up
 
 | Tool | Why | Setup |
 |---|---|---|
-| **Python 3.13** | The single language you'll use | [python.org](https://www.python.org/downloads/) or [Anaconda](https://www.anaconda.com/download) |
-| **VS Code** | Editor for code + notebooks | [code.visualstudio.com](https://code.visualstudio.com/) |
-| **Jupyter / Google Colab** | Interactive data exploration | [colab.research.google.com](https://colab.research.google.com) (zero install) |
-| **DBeaver** | Universal SQL client | [dbeaver.io](https://dbeaver.io) |
-| **DuckDB** | "SQL on your laptop" — analytics on files | [duckdb.org](https://duckdb.org) |
-| **GitHub account** | Version control + portfolio home | [github.com](https://github.com) |
-| **Kaggle account** | Free datasets, notebooks, micro-courses | [kaggle.com](https://www.kaggle.com) |
-| **Google BigQuery sandbox** | Free cloud warehouse, no credit card | [cloud.google.com/bigquery/docs/sandbox](https://cloud.google.com/bigquery/docs/sandbox) |
+| **Python 3.13** | main language | [python.org](https://www.python.org/downloads/) or [Anaconda](https://www.anaconda.com/download) |
+| **VS Code** | editor | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **Jupyter / Google Colab** | interactive data exploration | [colab.research.google.com](https://colab.research.google.com) |
+| **DBeaver** | universal SQL client | [dbeaver.io](https://dbeaver.io) |
+| **DuckDB** | SQL on local files | [duckdb.org](https://duckdb.org) |
+| **GitHub** | portfolio home | [github.com](https://github.com) |
+| **Kaggle** | datasets, notebooks, micro-courses | [kaggle.com](https://www.kaggle.com) |
+| **BigQuery sandbox** | free cloud warehouse | [cloud.google.com/bigquery/docs/sandbox](https://cloud.google.com/bigquery/docs/sandbox) |
 
-> **Don't install everything at once.** Start with Colab (browser-only) + a Kaggle account. Add local tools when Phase 1 needs them.
+dont install everything at once. start with Colab + Kaggle, then add local tools when Goal 1 needs them.
 
----
+## how to use this guide
 
-## How to use this guide
+- [ ] work the goals in order
+- [ ] do the labs; reading SQL is not knowing SQL
+- [ ] build portfolio pieces as u go
+- [ ] pick your specialization in [Goal 3](03-specialization.md)
 
-1. Work the phases in order — each builds on the last.
-2. **Do the labs.** Reading SQL is not knowing SQL. Type every query.
-3. Build portfolio pieces *as you go*, not at the end (see [05-job-hunt.md](05-job-hunt.md)).
-4. Pick your specialization track in [Phase 3](03-specialization.md) once you know what you enjoy.
+## exit check
 
----
-
-## Phase 0 exit checklist
-- [ ] I understand Data Analyst/Analytics Engineer is my realistic first-job target
-- [ ] Python 3.13 installed (or Colab bookmarked)
+- [ ] i understand Data Analyst/Analytics Engineer is my realistic first-job target
+- [ ] Python 3.13 installed or Colab bookmarked
 - [ ] GitHub + Kaggle accounts created
 - [ ] BigQuery sandbox activated
 - [ ] DBeaver or a SQL client installed
 
-Next: [Phase 1 — Foundations (SQL, Python, Git, Stats) →](01-foundations.md)
+[Next: Goal 1 - Foundations](01-foundations.md)

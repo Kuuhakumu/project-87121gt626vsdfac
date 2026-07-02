@@ -1,134 +1,148 @@
-# 🏅 Certification Guide — IT Management & Strategy (2026)
+# Certification guide: IT Management & Strategy (2026) meow
 
-> Verified via official cert-body pages, June 2026. Prices in USD where available; **confirm on the official site before booking** — codes and prices shift, and most issuers in this field render pricing via JavaScript or behind a portal.
+> verified via official cert-body pages, June 2026.
+> prices are in USD where available. confirm on official sites before booking, bc codes and prices shift.
 
-Confidence: ✅ verified on official page · ⚠️ JS-rendered / community-verified estimate · ⛔ blocked (pricing portal / Cloudflare / 403).
-
----
-
-## TL;DR — What to actually get
-
-**Certs matter more here than in most IT fields.** Unlike software development (where a portfolio does the talking) or product management (where tech-company hiring ignores certs), IT management and especially IT *governance* roles often list certs as literal requirements. The frameworks — ITIL, PMP, COBIT, TOGAF — are the shared vocabulary of the discipline.
-
-**But sequence them to your track and your experience.** The single highest-leverage move at the start is **one entry framework cert that needs no experience** — ITIL 4 Foundation (service track) or CAPM / CompTIA Project+ (project track). It signals you speak the language without overstating a seniority you don't have yet.
-
-**Don't chase the senior credentials early.** PMP, CISM, CGEIT, and TOGAF Practitioner all require years of qualifying experience (PMP, CISM, CGEIT) or are genuinely senior in scope (TOGAF). They're employer-paid, mid-career moves — not entry tickets.
+Confidence labels: `verified`, `JS/community estimate`, `blocked`.
 
 ---
 
-## ⚠️ A 2026 note: ITIL is mid-transition
+- [ ] **understand cert reality**
+- [ ] **choose one early baseline cert by track**
+- [ ] **avoid senior certs before qualifying**
+- [ ] **sequence certs to the job, not the trophy shelf**
 
-PeopleCert (which owns the ITIL IP) has begun rolling out **ITIL Version 5**, restructuring the framework around five streams (Product, Service, Experience, Strategy, Transformation). **ITIL 4 Foundation is still offered and actively sold** as of this writing, and ITIL Foundation (Version 5) is now listed alongside it, with a bridge path for existing v4 holders.
+## TL;DR: what to actually get
 
-**Practical guidance:** ITIL 4 Foundation is still a completely valid, widely-recognized credential. If you're certifying today, either is defensible — but check which version your target employers and training providers are standardizing on before booking, since v5 detail pages were still very new (and JS-rendered) at research time.
+certs matter more here than in many IT fields.
+IT management and governance roles often list framework certs as literal requirements.
+ITIL, PMP, COBIT, and TOGAF are shared vocabulary.
 
----
+but sequence them to your track and experience.
+early high-leverage move: one entry framework cert with no experience requirement:
 
-## Cert data sheet
+- [ ] **ITIL 4 Foundation** for service/ops
+- [ ] **CAPM** or **CompTIA Project+** for project track
 
-| Cert | Issuer | Format (verified) | Price | ✓ |
+dont chase senior credentials early.
+PMP, CISM, CGEIT, and some TOGAF paths are mid-career or senior-scope moves.
+often employer-paid.
+
+## 2026 ITIL transition note
+
+PeopleCert has begun rolling out **ITIL Version 5**, with five streams: Product, Service, Experience, Strategy, Transformation.
+**ITIL 4 Foundation is still offered and actively sold** as of this writing, and ITIL Foundation v5 is listed alongside it.
+
+practical guidance:
+ITIL 4 Foundation is still valid and recognized.
+if certifying today, either ITIL 4 or v5 can be defensible, but check what your target employers and training providers are standardizing on before booking.
+v5 detail pages were new and JS-rendered at research time.
+
+## cert data sheet
+
+| Cert | Issuer | Format | Price | Confidence |
 |---|---|---|---|---|
-| ITIL 4 Foundation | PeopleCert | 40 MCQ · 65% to pass (26/40) · ~60 min · online or ATO | Not in static HTML — confirm on PeopleCert | ✅ format / ⛔ price |
-| ITIL Foundation (v5) | PeopleCert | New 2026; spec pages JS-rendered | Confirm on PeopleCert | ⚠️ |
-| CAPM | PMI | 150 Q (135 scored) · 180 min · Pearson VUE · 8 languages | Confirm on PMI (JS/login-walled) | ✅ format / ⛔ price |
-| CompTIA Project+ (PK0-005) | CompTIA | 165 Q max · 90 min · 720/900 to pass | Confirm on CompTIA (JS SPA) | ✅ format / ⛔ price |
-| PRINCE2 Foundation | PeopleCert | Foundation level · no prereq | Confirm (Laravel SPA, JS-rendered) | ⛔ |
-| PRINCE2 Practitioner | PeopleCert | Requires Foundation (or PMP/CAPM/IPMA) | Confirm (JS-rendered) | ⛔ |
-| PSM I | Scrum.org | MCQ · lifetime · no prereq · online | Confirm (JS shell) | ⛔ |
-| COBIT Foundation | ISACA | COBIT 2019 framework · no prereq | Confirm (Salesforce portal) | ⛔ |
-| PMP | PMI | 180 Q (175 scored) · 230 min · Pearson VUE or online | Confirm on PMI (JS/login-walled) | ✅ format / ⛔ price |
-| CISM | ISACA | 4 domains · 5 yrs exp required | Confirm (Salesforce portal) | ⛔ |
-| CGEIT | ISACA | IT governance · 5 yrs exp required | Confirm (Salesforce portal) | ⛔ |
-| TOGAF (Foundation + Practitioner) | The Open Group | Two-part; Foundation has no prereq | Confirm (403 to curl) | ⛔ |
+| ITIL 4 Foundation | PeopleCert | 40 MCQ, 65% pass, ~60 min, online or ATO | confirm on PeopleCert | verified format / blocked price |
+| ITIL Foundation (v5) | PeopleCert | new 2026, spec pages JS-rendered | confirm on PeopleCert | JS/community estimate |
+| CAPM | PMI | 150 Q, 180 min, Pearson VUE, 8 languages | confirm on PMI | verified format / blocked price |
+| CompTIA Project+ (PK0-005) | CompTIA | 165 Q max, 90 min, 720/900 pass | confirm on CompTIA | verified format / blocked price |
+| PRINCE2 Foundation | PeopleCert | Foundation, no prereq | confirm | blocked |
+| PRINCE2 Practitioner | PeopleCert | requires Foundation or eligible equivalent | confirm | blocked |
+| PSM I | Scrum.org | MCQ, lifetime, no prereq, online | confirm | blocked |
+| COBIT Foundation | ISACA | COBIT 2019 framework, no prereq | confirm | blocked |
+| PMP | PMI | 180 Q, 230 min, Pearson VUE or online | confirm on PMI | verified format / blocked price |
+| CISM | ISACA | 4 domains, 5 yrs exp required | confirm | blocked |
+| CGEIT | ISACA | IT governance, 5 yrs exp required | confirm | blocked |
+| TOGAF Foundation + Practitioner | The Open Group | two-part, Foundation has no prereq | confirm | blocked |
 
-> **Why so many ⛔ on price:** Nearly every issuer in this field hides pricing behind JavaScript, a login, or a Salesforce commerce portal (ISACA), or Cloudflare-blocks automated checks (PMI returned 403; Scrum.org and PRINCE2 are full SPAs). The **exam formats** above were verified from official objectives/spec pages where they served static content. Treat all prices as "check the official site" and budget conservatively — these are not cheap exams.
+why so many blocked prices:
+most issuers hide pricing behind JavaScript, login portals, Salesforce commerce, or Cloudflare.
+formats were verified from official objectives/spec pages where static content was available.
+budget conservatively and confirm live pricing.
 
----
+## verified exam details
 
-## Verified exam details (what curl confirmed)
+- [ ] **ITIL 4 Foundation:** 40 MCQ, 65% pass (26/40), no prerequisites.
+- [ ] **CompTIA Project+ PK0-005:** 165 questions max, 90 minutes, 720 on 100-900 scale to pass. domains: project management concepts 33%, life-cycle phases 30%, tools/documentation 19%, IT/governance basics 18%.
+- [ ] **CAPM:** 150 questions, 180 minutes, 8 languages. prereq: high-school diploma + 23 hours PM education. retake every 3 years.
+- [ ] **PMP:** 180 questions, 230 minutes, Pearson VUE or online proctored. no published numeric cut score. prereq: 35 hours PM education plus 36 months leading projects with bachelor's or 60 months without. renew with 60 PDUs every 3 years.
 
-These came straight off official pages and are worth trusting:
-
-- **ITIL 4 Foundation** — 40 multiple-choice questions, **65% to pass (26/40)**, no prerequisites. (PeopleCert objectives page ✅)
-- **CompTIA Project+ (PK0-005)** — 165 questions max, 90 minutes, **720 on a 100–900 scale** to pass. Domain weights: Project management concepts 33% · Life-cycle phases 30% · Tools & documentation 19% · IT & governance basics 18%. No required prereq (A+ or IT Fundamentals+ recommended). (CompTIA objectives ✅)
-- **CAPM** — 150 questions (135 scored + 15 pretest), 180 minutes, offered in 8 languages. Prereq: high-school diploma + **23 hours of PM education**. Must be retaken every 3 years (no PDU path). (PMI ✅)
-- **PMP** — 180 questions (175 scored + 5 pretest), 230 minutes, Pearson VUE or online proctored. **No published numeric cut score** — PMI uses psychometric pass/fail. Prereq: 35 hours PM education **plus** 36 months leading projects (with a bachelor's) or 60 months (without). Renew with 60 PDUs every 3 years. (PMI ✅)
-
----
-
-## Tier and track map
+## tier and track map
 
 | Cert | Track | Tier | Experience needed? |
 |---|---|---|---|
-| ITIL 4 / v5 Foundation | Service management (ITSM) | **Baseline** | No |
-| CAPM | Project management | **Baseline** | No (23 hrs training) |
-| CompTIA Project+ | Project management | **Baseline** | No |
-| PRINCE2 Foundation | Project (UK/EU/APAC) | **Baseline** | No |
-| PSM I | Agile / team | **Baseline** | No |
-| COBIT Foundation | Governance | **Baseline** | No |
-| PMP | Project management | **Core / differentiator** | Yes (36–60 mo) |
-| PRINCE2 Practitioner | Project (UK/EU/APAC) | **Core / differentiator** | Foundation first |
-| CISM | Security management | **Core / differentiator** | Yes (5 yrs) |
-| CGEIT | IT governance | **Destination / senior** | Yes (5 yrs) |
-| TOGAF Practitioner | Enterprise architecture | **Destination / senior** | No formal req (senior in scope) |
+| ITIL 4 / v5 Foundation | ITSM | baseline | no |
+| CAPM | project management | baseline | no, 23 hrs training |
+| CompTIA Project+ | project management | baseline | no |
+| PRINCE2 Foundation | project UK/EU/APAC | baseline | no |
+| PSM I | agile / team | baseline | no |
+| COBIT Foundation | governance | baseline | no |
+| PMP | project management | core / differentiator | yes, 36-60 mo |
+| PRINCE2 Practitioner | project UK/EU/APAC | core / differentiator | Foundation first |
+| CISM | security management | core / differentiator | yes, 5 yrs |
+| CGEIT | governance | destination / senior | yes, 5 yrs |
+| TOGAF Practitioner | architecture | destination / senior | no formal req, senior scope |
 
----
+## employer signal ranking
 
-## Employer signal ranking
+### baseline filter
 
-🔴 **Baseline filter (often a literal requirement):**
-- **ITIL 4 Foundation** — the most widely-requested ITSM credential worldwide. For service-desk-to-management tracks, it appears constantly on job descriptions.
-- **PMP** — the dominant project-management filter in enterprise, government, consulting, and federal-adjacent hiring. If you're on the project track in those environments, you eventually need it.
+- [ ] **ITIL 4 Foundation** - most requested ITSM credential worldwide.
+- [ ] **PMP** - dominant project-management filter in enterprise, government, consulting, federal-adjacent hiring.
 
-🟠 **Differentiator (recognized, helps you stand out):**
-- **PRINCE2 (Foundation + Practitioner)** — strong filter in UK, Europe, Australia, and the Middle East; less recognized in North America.
-- **CISM** — the bridge from technical security into security *management*; commonly required for IT Security Manager / CISO tracks.
-- **PMI-ACP / PSM I** — agile credibility for managers leading Scrum teams.
-- **COBIT Foundation** — recognized on governance and audit tracks; often paired with CGEIT later.
+### differentiators
 
-🟡 **Entry signal (shows you're learning, not a filter):**
-- **CAPM** — the career-switcher's project-management signal while building the experience PMP requires.
-- **CompTIA Project+** — lighter, no-experience project cert; better recognized in North America than internationally.
+- [ ] **PRINCE2 Foundation + Practitioner** - strong in UK, Europe, Australia, Middle East.
+- [ ] **CISM** - bridge from technical security into security management.
+- [ ] **PMI-ACP / PSM I** - agile credibility.
+- [ ] **COBIT Foundation** - governance and audit tracks, often before CGEIT.
 
-🟣 **Destination (senior, high-authority, low-volume):**
-- **CGEIT** — narrow, high-signal governance credential aimed at CIOs, governance leads, and enterprise architects. Requires 5 years' experience.
-- **TOGAF Practitioner** — the enterprise-architecture credential for IT strategy and EA-titled roles.
+### entry signal
 
-⛔ **Don't bother (at the entry stage):**
-- **Any senior cert before you qualify** — PMP/CISM/CGEIT all gate on experience; applying early wastes money and signals nothing.
-- **Expensive bootcamp "IT management certificates"** with no recognized issuer behind them — the framework certs above carry the real weight.
+- [ ] **CAPM** - career-switcher project-management signal.
+- [ ] **CompTIA Project+** - lighter no-experience project cert, stronger in North America.
 
----
+### destination
 
-## Recommended paths
+- [ ] **CGEIT** - senior governance credential for CIOs, governance leads, enterprise architects.
+- [ ] **TOGAF Practitioner** - enterprise architecture credential.
 
-**Breaking in — service / operations track (~1 cert):**
-`ITIL 4 Foundation` is enough to start. It signals service-management literacy, needs no experience, and is the most-requested cert on the most common on-ramp. Add CompTIA A+ only if you're coming via the help-desk door (covered in the [IT Support guide](../it-support-networking/)).
+### dont bother at entry
 
-**Breaking in — project track (~1 cert):**
-`CAPM` **or** `CompTIA Project+` (pick by region — CAPM is global/PMI-aligned, Project+ skews North America). Either signals "I'm learning project delivery." Target `PMP` later, once you have enough project-leadership experience (36 months with a bachelor's degree, 60 months without).
+- [ ] senior certs before u qualify
+- [ ] expensive bootcamp "IT management certificates" without a recognized issuer
 
-**Targeting governance / strategy (long game):**
-`COBIT Foundation` (entry signal, no experience) → build 5 years of governance experience → `CGEIT`. Add `TOGAF Foundation` if you're moving toward enterprise architecture.
+## recommended paths
 
-**Agile-heavy environment (~1 cert):**
-`PSM I` for Scrum vocabulary. Sufficient for most agile-IT management contexts.
+**service / operations track:**
+`ITIL 4 Foundation` is enough to start.
+add CompTIA A+ only if coming through help desk, covered in [IT Support](../it-support-networking/).
 
-**Security-leaning management track:**
-`ITIL 4 Foundation` for service grounding → `CISM` once you have 5 years of security-management experience. (For the technical security path itself, see the [Cybersecurity guide](../cybersecurity/).)
+**project track:**
+`CAPM` or `CompTIA Project+`, based on region.
+target `PMP` later after qualifying project-leadership experience.
 
----
+**governance / strategy long game:**
+`COBIT Foundation` -> build 5 years governance experience -> `CGEIT`.
+add `TOGAF Foundation` for enterprise architecture.
 
-## What's dated in a 2021-era list
+**Agile-heavy environment:**
+`PSM I` is sufficient for Scrum vocabulary.
+
+**security-leaning management:**
+`ITIL 4 Foundation` -> `CISM` after 5 years security-management experience.
+for technical security path, see [Cybersecurity](../cybersecurity/).
+
+## whats dated in a 2021-era list
 
 | Outdated advice | 2026 reality |
 |---|---|
-| "Get ITIL v3 Foundation" | v3 is retired; ITIL 4 is current and **v5 is now rolling out** — check which version your market uses |
-| "PMP is the only cert that matters" | PMP dominates project hiring, but ITIL leads service-management hiring and COBIT/TOGAF own governance/architecture — match the cert to the track |
-| "COBIT 5 Foundation" | COBIT **2019** is the current framework version |
-| "TOGAF 9 certified" | The Open Group restructured to a Foundation + Practitioner "Enterprise Architecture" credential |
-| "Certs don't matter, just experience" | True in tech/startup product roles — but **false for IT governance, ITSM, and enterprise/government project management**, where certs are literal filters |
+| "Get ITIL v3 Foundation" | v3 retired; ITIL 4 current and v5 rolling out |
+| "PMP is the only cert that matters" | PMP dominates project hiring, but ITIL, COBIT, TOGAF matter by track |
+| "COBIT 5 Foundation" | COBIT 2019 is current |
+| "TOGAF 9 certified" | The Open Group moved to Foundation + Practitioner Enterprise Architecture credentials |
+| "Certs dont matter, just experience" | false for IT governance, ITSM, enterprise/government project management |
 
 ---
 
-*Sources: official cert pages — peoplecert.org (ITIL/PRINCE2), pmi.org (PMP/CAPM), comptia.org (Project+), isaca.org (COBIT/CISM/CGEIT), opengroup.org (TOGAF), scrum.org (PSM). Formats verified from objectives/spec pages June 2026; most prices were JS-rendered, login-walled, or Cloudflare/Salesforce-blocked and could not be confirmed by automated check. **Confirm all prices and eligibility on the official site before booking.** Full source-confidence log in [/research](../../research/).*
+*Sources: official cert pages from PeopleCert, PMI, CompTIA, ISACA, The Open Group, Scrum.org. Formats verified from objectives/spec pages June 2026; most prices were JS-rendered, login-walled, or blocked. Confirm all prices and eligibility before booking. Full source-confidence log in [/research](../../research/).*

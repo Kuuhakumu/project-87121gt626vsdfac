@@ -1,70 +1,77 @@
-# Beyond Entry-Level: Growing as a Developer (Years 2+)
+# Beyond entry-level: growing as a developer meow
 
-Once you land your first role and ship real code for 1–2 years, the goal shifts from "get hired" to "grow into a strong engineer." Promotion comes from impact and depth — not collecting credentials.
+once u land the first role and ship real code for 1-2 years, the goal shifts from "get hired" to "grow into a strong engineer."
 
-[← Phase 5: Portfolio](05-portfolio.md) · [Hub](README.md)
+[Previous: Goal 5 - Portfolio](05-portfolio.md) - [Hub](README.md)
 
 > [!NOTE]
-> Unlike cert-driven fields, software dev rewards **demonstrated impact**: systems you shipped, problems you solved, people you unblocked. Let your work — not a wall of certificates — be the evidence.
+> software dev rewards **demonstrated impact**: systems u shipped, problems u solved, people u unblocked.
+> let the work be the evidence, not a wall of certificates.
 
 ---
 
-## The junior → mid-level shift
+- [ ] **make the junior -> mid-level shift**
+- [ ] **compound technical skills**
+- [ ] **choose a depth direction**
+- [ ] **keep the principle clear**
 
-What changes as you move from junior to mid-level:
+## make the junior -> mid-level shift
 
-- **From "close the ticket" to "own the feature"** — you scope, design, and ship whole features, not just assigned tasks.
-- **From writing code to writing code others can maintain** — tests, docs, readable PRs.
-- **From asking "how" to asking "why"** — you question requirements and push for better approaches.
-- **You review others' code** and help newer juniors get up to speed.
-- **You understand the system**, not just your corner of it.
+what changes:
 
----
+- [ ] from "close the ticket" to "own the feature"
+- [ ] from writing code to writing code others can maintain
+- [ ] from asking "how" to asking "why"
+- [ ] review others code and help newer juniors
+- [ ] understand the system, not just your corner of it
 
-## Skills that compound
+## compound technical skills
 
-### 1. 🏗️ System design & architecture
-The biggest gap between junior and senior. Learn:
-- Designing scalable APIs, caching strategies, queues, load balancing
-- Database design at scale: indexing, normalization, replication, sharding
-- Trade-offs: consistency vs availability, monolith vs services
-- **Resource:** *Designing Data-Intensive Applications* (Kleppmann), [System Design Primer](https://github.com/donnemartin/system-design-primer), [roadmap.sh system-design](https://roadmap.sh/system-design)
+### system design and architecture
 
-### 2. 🧪 Testing & quality
-- Unit, integration, and end-to-end tests; test-driven development
-- CI/CD pipelines (GitHub Actions → automated test + deploy)
-- Code review skills — giving and receiving feedback
+the biggest gap between junior and senior:
 
-### 3. ☁️ Cloud & DevOps fundamentals
-- One cloud provider deeply (AWS is the market leader): compute, storage, networking, IAM
-- Docker → orchestration (Kubernetes) when scale demands it
-- Infrastructure as Code (Terraform)
-- **This is where certs do help** — AWS Solutions Architect / Developer Associate carry weight for cloud-leaning roles. See the [Cloud & DevOps guide](../cloud-devops/) when available.
+- scalable APIs, caching, queues, load balancing
+- database design at scale: indexes, normalization, replication, sharding
+- trade-offs: consistency vs availability, monolith vs services
+- resources: *Designing Data-Intensive Applications* (Kleppmann), [System Design Primer](https://github.com/donnemartin/system-design-primer), [roadmap.sh system-design](https://roadmap.sh/system-design)
 
-### 4. 🤝 The non-code skills that drive promotion
-- **Communication:** writing clear design docs, explaining trade-offs to non-engineers
-- **Collaboration:** unblocking teammates, productive code review, mentoring
-- **Product sense:** understanding *why* you're building something, pushing back on bad requirements
-- **Estimation & delivery:** breaking big work into shippable pieces, hitting commitments
+### testing and quality
 
----
+- unit, integration, and end-to-end tests
+- test-driven development when it fits
+- CI/CD with GitHub Actions
+- code review skills: giving and receiving feedback
 
-## Specialization directions (Years 2–5)
+### cloud and DevOps fundamentals
 
-| Direction | What you go deep on |
+- one cloud provider deeply, usually AWS
+- compute, storage, networking, IAM
+- Docker -> Kubernetes when scale demands it
+- Infrastructure as Code with Terraform
+- this is where certs can help: AWS Solutions Architect / Developer Associate can carry weight for cloud-leaning roles. see the [Cloud & DevOps guide](../cloud-devops/) when ready.
+
+### non-code skills that drive promotion
+
+- communication: clear design docs and trade-offs
+- collaboration: unblocking teammates, code review, mentoring
+- product sense: understanding why youre building something
+- estimation and delivery: breaking work into shippable pieces
+
+## choose a depth direction (years 2-5)
+
+| Direction | What u go deep on |
 |---|---|
-| **Backend / Distributed systems** | Scale, data, reliability, services |
-| **Frontend / Design systems** | Performance, accessibility, component architecture, DX |
-| **Full-stack / Product engineering** | End-to-end feature ownership, rapid iteration |
-| **DevOps / Platform / SRE** | CI/CD, infra, observability, reliability — see Cloud & DevOps guide |
-| **Data / ML engineering** | Pipelines, model serving — see Data, AI & Analytics guide |
-| **Mobile** | Native depth (Swift/Kotlin) or cross-platform (React Native/Flutter) |
-| **Engineering management** | People, process, delivery — a different track entirely (see IT Management guide) |
+| **Backend / Distributed systems** | scale, data, reliability, services |
+| **Frontend / Design systems** | performance, accessibility, component architecture, DX |
+| **Full-stack / Product engineering** | end-to-end feature ownership, rapid iteration |
+| **DevOps / Platform / SRE** | CI/CD, infra, observability, reliability |
+| **Data / ML engineering** | pipelines, model serving |
+| **Mobile** | native depth or cross-platform depth |
+| **Engineering management** | people, process, delivery |
 
----
+## the principle
 
-## The principle
+pick problems that stretch u, ship things that matter, and make the people around u better.
 
-Pick problems that stretch you, ship things that matter, and make the people around you better. A developer with two years of real shipped impact and the ability to design a system out-earns and out-grows one who spent that time collecting certificates.
-
-The strongest career move in software is almost always **build something real and hard, then be able to explain every decision you made.**
+the strongest career move in software is still: **build something real and hard, then explain every decision u made**.

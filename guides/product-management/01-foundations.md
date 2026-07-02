@@ -1,172 +1,169 @@
-# 🧱 Phase 1: Foundations
+# Goal 1: foundations - role, lifecycle, Agile, writing meow
 
-> **~120 hrs total** · your pace, no deadline
-> What PM actually is, how products are built, core Agile/Scrum mechanics, and why writing is the job.
+> **~120h total** - your pace, no deadline.
+> goal: understand what PM actually is, how products get built, and why writing is the job.
 
-[← Phase 0](00-prep.md) · [Hub](README.md) · [Next: Phase 2 — Core Skills →](02-core.md)
+[Previous: Goal 0](00-prep.md) - [Hub](README.md) - [Next: Goal 2](02-core.md)
 
 ---
 
-## What PM Actually Is (~40 hrs)
+- [ ] **what PM actually is** (~40h)
+- [ ] **product development lifecycle** (~30h)
+- [ ] **Agile and Scrum fundamentals** (~30h)
+- [ ] **communication and writing** (~20h)
+- [ ] **exit check** - PM role, lifecycle, Scrum, PRD draft, writing fluency
 
-Before diving into any framework, you need an accurate model of what PMs do — and what they don't.
+## what PM actually is (~40h)
 
-### The PM job in plain language
+before frameworks, u need an accurate model of what PMs do and dont do.
 
-A Product Manager is responsible for:
-1. **Discovery** — figuring out what problems are worth solving (talking to users, analyzing data, understanding the market)
-2. **Definition** — articulating the problem and proposed solution clearly enough that a team can build it
-3. **Delivery** — working with engineering and design to ship it
-4. **Learning** — measuring whether it actually worked and deciding what to do next
+### the PM job in plain language
 
-What PMs are not responsible for (in well-run teams):
-- Writing code or designing UI
-- Making unilateral product decisions
-- Managing engineers (PMs have no direct reports on the product team)
-- Guaranteeing a project timeline
+a Product Manager is responsible for:
 
-### Labs
+1. **Discovery** - figure out what problems are worth solving through users, data, and market context.
+2. **Definition** - state the problem and proposed solution clearly enough that a team can build.
+3. **Delivery** - work with engineering and design to ship.
+4. **Learning** - measure whether it worked and decide what to do next.
 
-| Lab | Platform | What you do | Cost |
+what PMs are not responsible for in well-run teams:
+
+- [ ] writing code or designing UI
+- [ ] making unilateral product decisions
+- [ ] managing engineers
+- [ ] guaranteeing project timelines they dont control
+
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Read SVPG "The Kind of PM We're Looking For" | [svpg.com](https://www.svpg.com/the-kind-of-product-manager-we-are-looking-for/) | Absorb the canonical definition of the empowered PM role | **Free** |
-| Read Marty Cagan's "Product vs Feature Teams" | [svpg.com](https://www.svpg.com/product-vs-feature-teams/) | Understand the feature-team vs product-team distinction that shapes most job realities | **Free** |
-| Lenny's Newsletter "What is a PM" | [lennysnewsletter.com](https://www.lennysnewsletter.com) | Modern practitioner take on the role | **Free** tier |
-| Watch 3 episodes of Lenny's Podcast | [lennyspodcast.com](https://www.lennyspodcast.com) | Listen to working PMs describe their actual day | **Free** |
+| [SVPG "The Kind of Product Manager We're Looking For"](https://www.svpg.com/the-kind-of-product-manager-we-are-looking-for/) | SVPG | absorb the canonical empowered-PM definition | **Free** |
+| [Marty Cagan "Product vs Feature Teams"](https://www.svpg.com/product-vs-feature-teams/) | SVPG | understand feature-team vs product-team reality | **Free** |
+| [Lenny's Newsletter](https://www.lennysnewsletter.com) | Newsletter | read the "What is a PM" practitioner take - ⚠️ TODO verify exact article link | **Free** tier |
+| [Lenny's Podcast](https://www.lennysnewsletter.com/podcast) | Podcast | listen to 3 working PM episodes - ⚠️ TODO verify exact starter episodes | **Free** |
 
-**Practice gate:** you can explain in two sentences what a PM does, what they don't do, and how that differs from a Product Owner — without using the phrase "CEO of the product."
+**practice gate:** u can explain in two sentences what a PM does, what they dont do, and how that differs from a Product Owner, without saying "CEO of the product."
 
----
+## product development lifecycle (~30h)
 
-## The Product Development Lifecycle (~30 hrs)
+the product lifecycle is the loop from idea to data.
+everything else hangs on this frame.
 
-Understanding how products actually get built — the full loop from idea to data — is the frame everything else hangs on.
-
-### The loop
-
-```
-Discover → Define → Design → Build → Measure → Learn → (repeat)
+```text
+Discover -> Define -> Design -> Build -> Measure -> Learn -> repeat
 ```
 
-**Discover:** user research, competitive analysis, data analysis, stakeholder conversations.
-**Define:** problem framing, opportunity sizing, success metrics, PRD writing.
-**Design:** wireframes, prototypes, design reviews (PMs participate, don't own).
-**Build:** sprint planning, backlog grooming, stand-ups, unblocking engineers.
-**Measure:** instrumentation, dashboards, qualitative feedback, A/B test results.
-**Learn:** did it work? Why or why not? What's next?
+- [ ] **Discover:** user research, competitive analysis, data analysis, stakeholder conversations.
+- [ ] **Define:** problem framing, opportunity sizing, success metrics, PRD writing.
+- [ ] **Design:** wireframes, prototypes, design reviews. PMs participate, designers own.
+- [ ] **Build:** sprint planning, backlog grooming, stand-ups, unblocking engineers.
+- [ ] **Measure:** instrumentation, dashboards, qualitative feedback, A/B test results.
+- [ ] **Learn:** did it work, why or why not, whats next?
 
-### What makes this loop break
+### what makes the loop break
 
-Most of the PM failures you'll encounter come from one of three places:
-- **Discovery skipped** — building features that don't solve real user problems because no one asked users
-- **Definition vague** — engineers building different things than what was intended because the spec was ambiguous
-- **Measurement absent** — no metrics defined upfront, so there's no way to know if it worked
+- [ ] **Discovery skipped** - building features that dont solve real user problems.
+- [ ] **Definition vague** - engineers build different things than intended.
+- [ ] **Measurement absent** - no metrics defined upfront, so nobody knows if it worked.
 
-These aren't abstract concepts. When you read product postmortems (Reforge has good ones; so does FirstRound Review), almost every failure traces back to one of these three.
+when u read product postmortems, many failures trace to one of those three.
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Pick one app you use and map its lifecycle | Paper + Notion | Sketch the discover → measure loop for one feature you know well | **Free** |
-| Read 2–3 product postmortems | [firstround.com/review](https://review.firstround.com) | Identify which part of the loop broke | **Free** |
-| Notion product lifecycle template | Notion | Clone a product lifecycle doc, fill it in for your chosen product | **Free** |
+| Map one app's lifecycle | paper + Notion | sketch the discover -> measure loop for one feature u know well | **Free** |
+| Read 2-3 product postmortems | [First Round Review](https://review.firstround.com) | identify which part of the loop broke - ⚠️ TODO verify exact starter postmortems | **Free** |
+| Notion product lifecycle template | Notion | clone a lifecycle doc and fill it for your chosen product - ⚠️ TODO verify exact template link | **Free** |
 
-**Practice gate:** you can walk through the full product lifecycle loop for a real product you know, identifying where discovery, definition, or measurement looks weak.
+**practice gate:** u can walk through the lifecycle loop for a real product and identify where discovery, definition, or measurement looks weak.
 
----
+## Agile and Scrum fundamentals (~30h)
 
-## Agile and Scrum Fundamentals (~30 hrs)
+most PM jobs operate inside some flavor of Agile.
+u dont need to become a Scrum Master, but u do need the vocabulary and ceremonies.
 
-Most PM jobs operate inside some flavor of Agile. You don't need to become a Scrum Master, but you do need to know the vocabulary and ceremonies well enough to participate on day one.
+### core vocabulary
 
-### Core vocabulary
-
-**Sprint:** a time-boxed work period, typically 1–2 weeks, in which a team commits to completing a set of work items.
-
-**Backlog:** the prioritized list of everything the team might work on. The **product backlog** is the PM's responsibility. The **sprint backlog** is what the team commits to for a given sprint.
-
-**User story:** a requirement written from the user's perspective. Format: *"As a [user type], I want [action] so that [benefit]."* Acceptance criteria define when it's done.
-
-**Sprint planning:** the ceremony at the start of a sprint where the team pulls stories from the backlog and commits to what they'll complete.
-
-**Daily stand-up (daily scrum):** 15-minute daily sync. What did I do yesterday? What am I doing today? Any blockers?
-
-**Sprint review / demo:** end of sprint, team demos what was built, stakeholders give feedback.
-
-**Sprint retrospective:** team-only, reflects on process — what went well, what to improve.
-
-**Definition of Done (DoD):** agreed criteria for what "done" means (coded, tested, deployed, accessible, documented?).
-
-**Velocity:** the amount of work a team completes per sprint, measured in story points or items. Used for forecasting, not judging individuals.
+- [ ] **Sprint:** time-boxed work period, usually 1-2 weeks.
+- [ ] **Backlog:** prioritized list of possible work. product backlog belongs to the PM/PO. sprint backlog belongs to the sprint.
+- [ ] **User story:** requirement from the user's perspective. `As a [user], I want [action] so that [benefit].`
+- [ ] **Acceptance criteria:** testable conditions that define done.
+- [ ] **Sprint planning:** team selects and sizes work for the sprint.
+- [ ] **Daily stand-up / daily scrum:** 15-minute sync on progress and blockers.
+- [ ] **Sprint review / demo:** built work is shown to stakeholders.
+- [ ] **Sprint retrospective:** team reflects on process.
+- [ ] **Definition of Done (DoD):** agreed criteria for what "done" means.
+- [ ] **Velocity:** work completed per sprint, used for forecasting, not judging individuals.
 
 ### PM's role in Scrum
 
-You are not the Scrum Master (that's a different role). Your Scrum responsibilities are:
-- Own and prioritize the product backlog
-- Write clear user stories with acceptance criteria before sprint planning
-- Be available during the sprint to answer clarifying questions quickly
-- Participate in reviews and retrospectives
-- Shield the team from scope changes mid-sprint (mostly)
+- [ ] own and prioritize the product backlog
+- [ ] write clear stories with acceptance criteria before sprint planning
+- [ ] answer clarifying questions quickly during the sprint
+- [ ] participate in reviews and retrospectives
+- [ ] shield the team from mid-sprint scope changes where possible
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Jira free workspace: create a backlog | [atlassian.com/jira](https://www.atlassian.com/software/jira) | Set up a project, write 10 user stories for your chosen product, prioritize them | **Free** |
-| Scrum.org Scrum Guide (read) | [scrum.org/resources/scrum-guide](https://www.scrum.org/resources/scrum-guide) | Read the canonical 13-page Scrum Guide | **Free** |
-| Run a simulated sprint planning | Jira + Notion | Take your backlog, "plan" a 2-week sprint by selecting and sizing stories | **Free** |
-| Write 5 user stories with acceptance criteria | Notion | For your chosen product — practice the format until it's fluent | **Free** |
+| Jira free workspace: create a backlog | [Atlassian Jira](https://www.atlassian.com/software/jira) | set up a project, write 10 user stories, prioritize them | **Free** |
+| [Scrum Guide](https://www.scrum.org/resources/scrum-guide) | Scrum.org | read the canonical Scrum Guide | **Free** |
+| Simulated sprint planning | Jira + Notion | plan a 2-week sprint by selecting and sizing stories | **Free** |
+| 5 user stories with acceptance criteria | Notion | write 5 stories for your chosen product until the format feels fluent | **Free** |
 
-> **Kanban vs Scrum:** many teams (especially in startups) use Kanban (continuous flow, no sprints) rather than Scrum. The difference matters less than you think. Know both exist; know your team's process.
+Kanban exists too, especially in startups.
+continuous flow vs sprint cadence matters less than knowing the team's actual process.
 
-**Practice gate:** you can explain the difference between a product backlog and a sprint backlog, write a user story with acceptance criteria, and describe what happens in each of the four main Scrum ceremonies.
+**practice gate:** u can explain product backlog vs sprint backlog, write a user story with acceptance criteria, and describe the four main Scrum ceremonies.
 
----
+## communication and writing (~20h)
 
-## Communication and Writing as the Core Skill (~20 hrs)
+this gets less glamorous billing than discovery frameworks or prioritization.
+but its the most important part of Goal 1, maybe the whole guide.
 
-This section gets less glamorous billing than "discovery frameworks" or "prioritization techniques," but it's the most important section in Phase 1. Possibly in the entire guide.
+### why writing is the PM job
 
-### Why writing is the PM job
+every PM output is a document:
 
-Every PM output is a document:
-- PRDs and specs communicate what to build
-- Roadmaps communicate what's coming and why
-- Strategy memos communicate direction to leadership
-- Stakeholder updates build alignment without meetings
-- Interview answers that are written-quality thinking get offers
+- [ ] PRDs and specs explain what to build
+- [ ] roadmaps explain whats coming and why
+- [ ] strategy memos align leadership
+- [ ] stakeholder updates reduce meetings
+- [ ] interview answers reveal written-quality thinking
 
-PMs who write clearly make their teams faster. Vague specs create rework. Unclear reasoning creates endless alignment meetings. The quality of your writing is a direct proxy for the quality of your thinking, and every PM interview knows this.
+PMs who write clearly make teams faster.
+vague specs create rework.
+unclear reasoning creates endless alignment meetings.
+the quality of your writing is a proxy for the quality of your thinking.
 
-### What good PM writing looks like
+### what good PM writing looks like
 
-- **Starts with the problem, not the solution.** "Users can't find their recent orders on mobile" before "add a recent orders widget to the mobile homepage."
-- **States assumptions explicitly.** "This assumes our primary persona is a mobile-first user making repeat purchases."
-- **Separates what from why.** The "why" (the problem and its importance) should be clear before any "what" (the solution) appears.
-- **Has a clear "so what."** Every document should end with a decision, a next step, or a recommendation.
-- **Is shorter than you think.** A one-page problem statement beats a 10-page spec nobody reads.
+- [ ] starts with the problem, not the solution
+- [ ] states assumptions explicitly
+- [ ] separates what from why
+- [ ] has a clear "so what": decision, next step, or recommendation
+- [ ] is shorter than u think. a one-page problem statement beats a 10-page unread spec
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Write a one-page problem statement | Notion | For your chosen product: state the problem, who has it, why it matters, what success looks like | **Free** |
-| Read 3 real PRD examples | Public PRDs on GitHub or product blogs | Search GitHub/product blogs for public PRDs; analyze structure, not content | **Free** |
-| First draft PRD | Notion | Write a full PRD for one feature of your chosen product — it will be rough, that's fine | **Free** |
-| Rewrite a vague requirement | Notion | Take a vague spec ("improve search") and rewrite it to be specific and measurable | **Free** |
+| One-page problem statement | Notion | state the problem, who has it, why it matters, and success criteria | **Free** |
+| Read 3 real PRD examples | GitHub / product blogs | analyze structure, not content - ⚠️ TODO verify exact examples | **Free** |
+| First draft PRD | Notion | write a full PRD for one feature of your chosen product | **Free** |
+| Rewrite a vague requirement | Notion | turn "improve search" into something specific and measurable | **Free** |
 
-**Practice gate:** you can write a one-page problem statement that starts with the user problem (not the solution), states the success metric, and makes its assumptions explicit — in under 30 minutes.
+**practice gate:** u can write a one-page problem statement that starts with the user problem, states success metric, and makes assumptions explicit in under 30 minutes.
 
----
+## exit check
 
-## Phase 1 exit checklist
+- [ ] i can explain what a PM does and doesnt do, and distinguish PM from Product Owner
+- [ ] i can map the product lifecycle loop for a real product
+- [ ] i know Scrum ceremonies, artifacts, and vocabulary well enough to participate on day one
+- [ ] i wrote 5+ user stories with acceptance criteria in Jira
+- [ ] i drafted a one-page problem statement and first PRD for my chosen product
+- [ ] i can explain why communication/writing is the core PM skill
 
-- [ ] I can explain what a PM does and doesn't do, and distinguish PM from Product Owner
-- [ ] I can map the full product lifecycle loop (discover → define → design → build → measure → learn) for a real product
-- [ ] I know Scrum ceremonies, artifacts, and vocabulary well enough to participate on day one
-- [ ] I've written 5+ user stories with acceptance criteria in Jira
-- [ ] I've drafted a one-page problem statement and a first PRD for my chosen product
-- [ ] I can explain why communication/writing is the core PM skill
-
-Next: [Phase 2 — Core PM Skills →](02-core.md)
+[Next: Goal 2 - Core PM Skills](02-core.md)

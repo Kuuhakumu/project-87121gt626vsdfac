@@ -1,86 +1,97 @@
-# 🚀 Beyond Entry-Level — IT Support & Networking (Years 2+)
+# Beyond entry-level - IT Support & Networking meow
 
-> You're in the door (help desk / desktop / NOC). This is where the field branches — and IT support has **more pivot routes than almost any other IT field.**
+> youre in the door: help desk, desktop, or NOC.
+> this is where the field branches.
 
-[← Job Hunt](05-job-hunt.md) · [Hub](README.md)
+[Job Hunt](05-job-hunt.md) - [Hub](README.md)
 
 ---
 
-## The reality: support is a launchpad, not a ceiling
+- [ ] **remember support is a launchpad**
+- [ ] **choose a pivot track**
+- [ ] **build promotable habits**
+- [ ] **pick certs by destination**
 
-Help desk is the most common entry point in all of IT *because* it touches everything — networks, servers, identity, security, cloud. After 1–2 years you'll know which of those you actually enjoy, and you can pivot from there.
+## support is a launchpad
 
+help desk touches networks, servers, identity, security, and cloud. after 1-2 years, ull know which of those u actually enjoy.
+
+```text
+Help Desk / Desktop / NOC
+  -> Network Engineer
+  -> Systems Administrator -> Cloud Engineer
+  -> Cloud / Identity Admin
+  -> Cybersecurity Analyst
+  -> DevOps / Automation
+  -> MSP Senior / Team Lead -> IT Manager
 ```
-                          ┌─→ Network Engineer (CCNA → CCNP)
-                          ├─→ Systems Administrator → Cloud Engineer
-Help Desk (T1) ──→ T2/    ├─→ Cloud / Identity Admin (Azure, Intune, Entra)
-Desktop/NOC ──────────────┼─→ Cybersecurity Analyst (SOC)
-                          ├─→ DevOps / Automation (PowerShell → IaC)
-                          └─→ MSP Senior / Team Lead → IT Manager
-```
 
----
+## Track 1: networking
 
-## Track 1: Networking
+**path:** CCNA -> CCNP -> network architect.
 
-**Path:** CCNA → CCNP → (CCIE / network architect)
-- Routing & switching depth, then specialize (enterprise, data center, security, wireless)
-- SD-WAN, network automation (Python + Netmiko/Nornir, Ansible for network)
-- **2026 shift:** networking is increasingly software-defined and automated — pure CLI work is giving way to engineers who script.
+- [ ] routing and switching depth
+- [ ] enterprise, data center, security, wireless
+- [ ] SD-WAN and network automation
+- [ ] Python + Netmiko/Nornir, Ansible for network
 
-## Track 2: Systems Administration → Cloud
+networking is increasingly software-defined and automated. scripting matters.
 
-**Path:** Junior Sysadmin → Sysadmin → Cloud Engineer
-- Deepen Windows Server, AD/Entra, Group Policy, virtualization (Hyper-V/VMware)
-- Move workloads to cloud — this is the natural bridge to **[Cloud & DevOps](../cloud-devops/README.md)**
-- Learn IaC (Terraform), automation (PowerShell → Python)
+## Track 2: systems administration -> cloud
 
-## Track 3: Cloud / Identity Admin
+**path:** Junior Sysadmin -> Sysadmin -> Cloud Engineer.
 
-**Path:** M365 admin → Azure Administrator (AZ-104) → Cloud/Identity specialist
-- Entra ID, Conditional Access, Intune/endpoint management at scale
-- Identity is a hot, durable specialization — every company needs it
-- Certs: AZ-104 → SC-300 (Identity & Access Administrator)
+- [ ] Windows Server, AD/Entra, Group Policy
+- [ ] virtualization: Hyper-V/VMware
+- [ ] cloud migration path into [Cloud & DevOps](../cloud-devops/README.md)
+- [ ] Terraform, PowerShell, Python
 
-## Track 4: Cybersecurity
+## Track 3: cloud / identity admin
 
-**Path:** Support → SOC Analyst → Security Engineer
-- Support teaches you how systems actually break — perfect security grounding
-- See the **[Cybersecurity guide](../cybersecurity/README.md)** for the full path
-- Certs: Security+ → CySA+ / blue-team training
+**path:** M365 admin -> Azure Administrator -> cloud/identity specialist.
 
-## Track 5: Automation / DevOps
+- [ ] Entra ID
+- [ ] Conditional Access
+- [ ] Intune at scale
+- [ ] certs: AZ-104 -> SC-300
 
-**Path:** PowerShell scripting → infrastructure automation → DevOps
-- If you found yourself automating tickets and loving it, this is your route
-- PowerShell → Python → CI/CD → IaC
+## Track 4: cybersecurity
 
-## Track 6: MSP senior / Management
+**path:** Support -> SOC Analyst -> Security Engineer.
 
-**Path:** Senior tech → Team Lead → Service Delivery Manager → IT Manager
-- See **[IT Management guide](../it-management/README.md)** when it lands
+- [ ] support teaches how systems break
+- [ ] see [Cybersecurity guide](../cybersecurity/README.md)
+- [ ] certs: Security+ -> CySA+ / blue-team training
 
----
+## Track 5: automation / DevOps
 
-## What makes you promotable
+**path:** PowerShell scripting -> infrastructure automation -> DevOps.
 
-- **Document and automate** — turn repeated fixes into runbooks and scripts
-- **Own escalations** — be the person T1 escalates *to*, not just another ticket-closer
-- **Pick a specialization** by year 2 and cert toward it deliberately
-- **Soft skills compound** — the tech who communicates clearly gets promoted over the sharper one who doesn't
+- [ ] automate tickets
+- [ ] PowerShell -> Python -> CI/CD -> IaC
 
----
+## Track 6: MSP senior / management
 
-## Certs by destination
+**path:** Senior tech -> Team Lead -> Service Delivery Manager -> IT Manager.
 
-| Pivot target | Next cert(s) |
+see [IT Management guide](../it-management/README.md) when ready.
+
+## promotable habits
+
+- [ ] document and automate repeated fixes
+- [ ] own escalations
+- [ ] pick a specialization by year 2
+- [ ] cert toward that specialization deliberately
+- [ ] keep soft skills sharp
+
+## certs by destination
+
+| Pivot target | Next certs |
 |---|---|
-| Networking | CCNA → CCNP |
-| Cloud/Sysadmin | AZ-104 → AZ-305 |
+| Networking | CCNA -> CCNP |
+| Cloud/Sysadmin | AZ-104 -> AZ-305 |
 | Identity | SC-300 |
-| Security | Security+ → CySA+ |
+| Security | Security+ -> CySA+ |
 | Cloud platform | AWS SAA / Azure Administrator |
 
----
-
-*The biggest trap at this stage: staying on T1 too long. Once you've learned the role (12–18 months), pick a track and move — don't let comfort become a ceiling.*
+biggest trap: staying on T1 too long. after 12-18 months, pick a track and move.

@@ -1,79 +1,87 @@
-# 🔧 Phase 3: Infrastructure as Code & CI/CD
+# Goal 3: Infrastructure as Code and CI/CD meow
 
-> **~120 hrs total** · your pace, no deadline
-> This is the heart of DevOps: stop clicking in consoles, start defining everything as code. IaC + CI/CD is the #1 hireable DevOps skill combination.
+> **~120h total** - your pace, no deadline.
+> this is the heart of DevOps: stop clicking in consoles, start defining everything as code.
+> IaC + CI/CD is the #1 hireable DevOps skill combo.
 
-[← Phase 2: Cloud Core](02-core.md) · [Hub](README.md) · [Next: Phase 4 →](04-kubernetes-specialization.md)
+[Previous: Goal 2](02-core.md) - [Hub](README.md) - [Next: Goal 4](04-kubernetes-specialization.md)
 
 ---
 
-## Infrastructure as Code (Terraform / OpenTofu) (~70 hrs)
+- [ ] **Infrastructure as Code with Terraform/OpenTofu** (~70h)
+- [ ] **CI/CD pipelines** (~50h)
+- [ ] **exit check** - modules, remote state, GitHub Actions, end-to-end pipeline
 
-IaC means your infrastructure (servers, networks, databases) is defined in version-controlled files — not hand-built by clicking through a console. It's reproducible, reviewable, and the backbone of every DevOps role.
+## Infrastructure as Code - Terraform / OpenTofu (~70h)
 
-### Terraform vs OpenTofu — what to know in 2026
-- **Terraform** (HashiCorp, now IBM) is the dominant tool in enterprise. Current v1.15. Uses the BSL license since 2023.
-- **OpenTofu** is the fully open-source (MPL-2) fork, now CNCF-adopted and at feature parity (v1.12). It's a drop-in replacement — the language (HCL) is identical.
-- **For learning, they're interchangeable.** Learn the concepts on either; most tutorials work for both. OpenTofu is the safe open default; Terraform is what most job postings still name.
+IaC means your infrastructure is defined in version-controlled files, not hand-built by clicking around a console.
+its reproducible, reviewable, and the backbone of DevOps work.
 
-### What to cover
-- HCL syntax: providers, resources, variables, outputs, data sources
-- **State**: what `terraform.tfstate` is, why it matters, remote state (S3 + DynamoDB lock), never commit state to Git
-- The core workflow: `init` → `plan` → `apply` → `destroy` (**always `plan` before `apply`**)
-- **Modules**: reusable infrastructure components
-- Provisioners, `count`/`for_each`, dependencies
-- Secrets handling (don't hardcode — use variables + a secrets manager)
+### Terraform vs OpenTofu in 2026
 
-> **Also know configuration management exists:** **Ansible** (the top tool — agentless, YAML playbooks) configures servers *after* they exist, where Terraform *provisions* them. Learn Ansible basics after Terraform.
+- [ ] **Terraform** is dominant in enterprise. current v1.15. BSL license since 2023.
+- [ ] **OpenTofu** is the fully open-source MPL-2 fork, CNCF-adopted, feature-parity v1.12.
+- [ ] **for learning, theyre interchangeable.** HCL is the same. OpenTofu is the safe open default; Terraform is what postings still name.
 
-### Labs
+### what to cover
 
-| Lab | Platform | What you do | Cost |
+- [ ] HCL syntax: providers, resources, variables, outputs, data sources
+- [ ] **state:** `terraform.tfstate`, remote state, S3 + DynamoDB lock, never committing state
+- [ ] workflow: `init` -> `plan` -> `apply` -> `destroy`
+- [ ] modules: reusable infrastructure components
+- [ ] provisioners, `count`, `for_each`, dependencies
+- [ ] secrets handling with variables and a secrets manager
+
+always `plan` before `apply`. thats not a superstition; its how u avoid surprise infrastructure changes.
+
+also know Ansible exists: Terraform provisions servers; Ansible configures servers after they exist.
+
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [HashiCorp Tutorials](https://developer.hashicorp.com/terraform/tutorials) | Official | Guided Terraform from zero to modules + remote state | **Free** |
-| Terraform labs | [KodeKloud](https://kodekloud.com/) | Hands-on HCL, state, modules (free tier) | Freemium |
-| [KillerCoda Terraform](https://killercoda.com/) | Web | Live-terminal Terraform scenarios | **Free** |
+| [HashiCorp Tutorials](https://developer.hashicorp.com/terraform/tutorials) | Official | Terraform from zero to modules + remote state | **Free** |
+| Terraform labs | [KodeKloud](https://kodekloud.com/) | HCL, state, modules | Freemium |
+| [KillerCoda Terraform](https://killercoda.com/) | Web | live-terminal Terraform scenarios | **Free** |
 
-**Cert:** **HashiCorp Terraform Associate (TA-004, ~$70)** — cheap, high-signal, IaC fluency proof. Strongly recommended.
+**cert gate:** **HashiCorp Terraform Associate (TA-004, ~$70)** is cheap, high-signal IaC proof. strongly recommended.
 
-**Project:** provision a complete environment with Terraform — VPC + subnets + an EC2 instance (or equivalent) + security groups — using **modules** and **remote state**. Zero console clicks. Put it on GitHub.
+**project gate:** provision VPC + subnets + EC2 or equivalent + security groups using modules and remote state. zero console clicks. put it on GitHub.
 
----
+## CI/CD pipelines (~50h)
 
-## CI/CD pipelines (~50 hrs)
+CI/CD automates the path from `git push` to running software: build -> test -> deploy.
 
-CI/CD automates the path from `git push` to running software — build → test → deploy — so humans aren't in the loop for every release.
+- [ ] **CI:** lint, build, and test on every push
+- [ ] **CD:** ship to staging/prod with gates
+- [ ] pipeline stages, jobs, runners, artifacts, caching
+- [ ] secrets in pipelines
+- [ ] **GitHub Actions:** workflow YAML, triggers, jobs, marketplace actions
+- [ ] GitLab CI as alternative; Jenkins as legacy-but-common enterprise tool
+- [ ] deployment strategies: blue-green, canary, rolling
+- [ ] Docker image build -> registry push -> deploy
 
-### What to cover
-- **CI (Continuous Integration):** on every push, automatically lint, build, and run tests
-- **CD (Continuous Delivery/Deployment):** automatically ship to staging/prod (with gates)
-- Pipeline stages, jobs, runners, artifacts, caching, secrets in pipelines
-- **GitHub Actions** (the entry-level standard — learn this first): workflow YAML, triggers, jobs, marketplace actions
-- GitLab CI as the main alternative; Jenkins exists in enterprise (legacy but common)
-- Deployment strategies: blue-green, canary, rolling
-- Integrating it all: pipeline builds a Docker image → pushes to registry → deploys
+GitHub Actions is the best first CI/CD tool. recognize Jenkins, but dont start there unless your target roles demand it.
 
-> **2026 note:** GitHub Actions is the default for new projects and the best first thing to learn. Jenkins is worth recognizing (lots of enterprise uses it) but don't start there.
+### labs / theory
 
-### Labs / theory
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [GitHub Skills](https://skills.github.com/) | GitHub | Guided Actions courses inside real repos | **Free** |
-| [GitHub Actions docs](https://docs.github.com/actions) | Official | Build your first workflow step by step | **Free** |
-| GitLab CI/CD tutorials | [GitLab Docs](https://docs.gitlab.com/ee/ci/) | Build a `.gitlab-ci.yml` pipeline | **Free** |
+| [GitHub Skills](https://skills.github.com/) | GitHub | guided Actions courses inside real repos | **Free** |
+| [GitHub Actions docs](https://docs.github.com/actions) | Official | build your first workflow step by step | **Free** |
+| GitLab CI/CD tutorials | [GitLab Docs](https://docs.gitlab.com/ee/ci/) | build a `.gitlab-ci.yml` pipeline | **Free** |
 
-**Project (portfolio centerpiece):** build a full pipeline for your containerized app from Phase 2:
-`push → lint → test → build Docker image → push to registry → deploy to a cloud service or k8s namespace → smoke test`. Document it with a diagram in the README.
+**project gate:** build a full pipeline for your containerized app from Goal 2:
+`push -> lint -> test -> build Docker image -> push to registry -> deploy to a cloud service or k8s namespace -> smoke test`.
+document it with a diagram in the README.
 
----
+## exit check
 
-## Phase 3 exit checklist
-- [ ] Can write Terraform/OpenTofu to provision real infrastructure using modules + remote state
-- [ ] Terraform Associate cert passed (recommended)
-- [ ] Understand the difference between provisioning (Terraform) and config management (Ansible)
-- [ ] Can write a working GitHub Actions pipeline from scratch
-- [ ] Built an end-to-end pipeline: push → test → build image → deploy
-- [ ] Both projects on GitHub with architecture diagrams
+- [ ] can write Terraform/OpenTofu for real infrastructure using modules + remote state
+- [ ] Terraform Associate passed or scheduled
+- [ ] understand provisioning vs configuration management
+- [ ] can write a working GitHub Actions pipeline from scratch
+- [ ] built end-to-end pipeline: push -> test -> build image -> deploy
+- [ ] both projects on GitHub with architecture diagrams
 
-Next: [Phase 4 — Specialization (Kubernetes & beyond) →](04-kubernetes-specialization.md)
+[Next: Goal 4 - Kubernetes & Specialization](04-kubernetes-specialization.md)

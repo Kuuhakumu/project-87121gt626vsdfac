@@ -1,103 +1,100 @@
-# 🛠️ Phase 2: Core Skills
+# Goal 2: core analyst skills meow
 
-> **~160 hrs total** · your pace, no deadline
-> Turn raw SQL + Python into employable analytics: a BI tool, cloud warehouses, real-world data cleaning, and storytelling.
+> **~160h total** - your pace, no deadline.
+> turn raw SQL + Python into employable analytics: BI, warehouses, cleaning, and storytelling.
 
-[← Phase 1](01-foundations.md) · [Hub](README.md) · [Next: Phase 3 — Track Specialization →](03-specialization.md)
-
----
-
-## A BI / visualization tool (~70 hrs)
-
-Pick **one** and go deep — a dashboard you can actually show beats three tools you half-know.
-
-### Which to learn first
-- **Power BI** — learn this first for employability; Microsoft dominates enterprise. Cert: **PL-300**.
-- **Tableau** — strong second, common in US tech / analytics-heavy shops.
-- **Looker** — Google Cloud-native, LookML is a real but niche skill (a differentiator, not a baseline).
-
-### What to cover
-- Connecting to data (files, databases, warehouses)
-- Data modeling: relationships, star schema basics
-- **Power BI:** DAX measures, calculated columns; **Tableau:** calculated fields, LOD expressions
-- Visual best practices: pick the right chart, avoid chartjunk, design for the reader
-- Interactivity: filters, slicers, drill-down, parameters
-- Publishing & sharing dashboards
-
-### Labs
-
-| Lab | Platform | What you do | Cost |
-|---|---|---|---|
-| [MS Learn: Power BI (PL-300 path)](https://learn.microsoft.com/en-us/training/powerplatform/power-bi) | Official | Full guided Power BI track | **Free** |
-| [Tableau Public](https://public.tableau.com) | Official | Build + publish dashboards to a public portfolio | **Free** |
-| [Maven Analytics Data Playground](https://www.mavenanalytics.io/data-playground) | Web | Real datasets to visualize | **Free** |
-
-> **Tableau Public doubles as portfolio hosting** — every dashboard you build gets a shareable link. Use it.
+[Previous: Goal 1](01-foundations.md) - [Hub](README.md) - [Next: Goal 3](03-specialization.md)
 
 ---
 
-## Cloud data warehouses (~50 hrs)
+- [ ] **BI / visualization tool** (~70h)
+- [ ] **cloud data warehouse** (~50h)
+- [ ] **real-world cleaning + EDA** (~40h)
+- [ ] **AI-assisted workflow literacy** (~40h parallel)
+- [ ] **exit check** - dashboards, warehouse query, messy dataset, business summary, AI verification
 
-Modern data work happens in a cloud warehouse, not on your laptop. Pick one and get comfortable in it.
+## BI / visualization tool (~70h)
 
-### What to cover
-- What a columnar warehouse is and why it's fast for analytics
-- **BigQuery** (free sandbox, no card) **or** **Snowflake** (30-day free trial) — pick one
-- Loading data, running SQL at scale, partitioning/clustering basics
-- Cost awareness: why `SELECT *` on a huge table is expensive
-- Connecting your BI tool to the warehouse
+pick **one** and go deep. a dashboard u can show beats three tools u half-know.
 
-### Labs
+- **Power BI** - learn first for employability; Microsoft dominates enterprise. cert: **PL-300**.
+- **Tableau** - strong second, common in US tech / analytics-heavy shops.
+- **Looker** - Google Cloud-native, LookML is niche but useful.
 
-| Lab | Platform | What you do | Cost |
+cover:
+
+- [ ] connecting to files, databases, warehouses
+- [ ] data modeling and star schema basics
+- [ ] Power BI DAX or Tableau calculated fields/LOD expressions
+- [ ] chart choice and visual clarity
+- [ ] filters, slicers, drill-down, parameters
+- [ ] publishing and sharing dashboards
+
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [BigQuery Sandbox](https://cloud.google.com/bigquery/docs/sandbox) | Google | Query big public datasets, no credit card | **Free** |
+| [MS Learn: Power BI (PL-300 path)](https://learn.microsoft.com/en-us/training/powerplatform/power-bi) | Official | guided Power BI track | **Free** |
+| [Tableau Public](https://public.tableau.com) | Official | build + publish dashboards | **Free** |
+| [Maven Analytics Data Playground](https://www.mavenanalytics.io/data-playground) | Web | real datasets to visualize | **Free** |
+
+Tableau Public doubles as portfolio hosting.
+
+## cloud data warehouse (~50h)
+
+modern data work happens in a cloud warehouse, not only on your laptop.
+
+- [ ] what a columnar warehouse is and why analytics queries are fast
+- [ ] BigQuery sandbox or Snowflake trial
+- [ ] loading data and running SQL at scale
+- [ ] partitioning/clustering basics
+- [ ] cost awareness; why `SELECT *` can be expensive
+- [ ] connecting BI to the warehouse
+
+### labs
+
+| Lab | Platform | What u do | Cost |
+|---|---|---|---|
+| [BigQuery Sandbox](https://cloud.google.com/bigquery/docs/sandbox) | Google | query public datasets, no card | **Free** |
 | [Snowflake Free Trial](https://signup.snowflake.com) | Snowflake | $400 credits, 30 days | **Free** trial |
-| [Google Cloud Skills Boost](https://www.cloudskillsboost.google) | Google | Guided BigQuery labs | Freemium |
+| [Google Cloud Skills Boost](https://www.cloudskillsboost.google) | Google | guided BigQuery labs | Freemium |
 
----
+## real-world data cleaning and EDA (~40h)
 
-## Real-world data cleaning & EDA (~40 hrs)
+clean data is most of the job. this is where judgment starts showing.
 
-Clean data is 80% of the job — this is where you build real judgment.
+- [ ] missing values: drop vs impute
+- [ ] outliers
+- [ ] type conversions, dates, encodings
+- [ ] deduplication, messy joins, pivot/melt
+- [ ] exploratory data analysis
+- [ ] write-up: business answer for a non-technical stakeholder
 
-### What to cover
-- Handling missing values (drop vs impute — and when each is wrong)
-- Detecting & treating outliers
-- Type conversions, parsing dates, fixing encodings
-- Deduplication, joining messy datasets, reshaping (pivot/melt)
-- **Exploratory Data Analysis (EDA):** systematically understanding a dataset before modeling
-- **The write-up:** turning findings into a business answer a non-technical stakeholder understands
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Kaggle: Data Cleaning](https://www.kaggle.com/learn/data-cleaning) | Kaggle | Hands-on cleaning micro-course | **Free** |
-| [Kaggle Datasets](https://www.kaggle.com/datasets) | Kaggle | Messy real data to practice on | **Free** |
-| [data.gov](https://data.gov) / [Our World in Data](https://ourworldindata.org) | Web | Public datasets for projects | **Free** |
+| [Kaggle: Data Cleaning](https://www.kaggle.com/learn/data-cleaning) | Kaggle | hands-on cleaning micro-course | **Free** |
+| [Kaggle Datasets](https://www.kaggle.com/datasets) | Kaggle | messy real data | **Free** |
+| [data.gov](https://data.gov) / [Our World in Data](https://ourworldindata.org) | Web | public datasets for projects | **Free** |
 
----
+## AI-assisted workflow literacy (~40h parallel)
 
-## AI-assisted workflow literacy (~40 hrs, parallel)
+in 2026, juniors are expected to use LLM tools and check them.
 
-In 2026, juniors are expected to *use* LLM tools to accelerate work — and to check their output.
+- [ ] use an LLM to write/debug SQL and explain errors
+- [ ] prompt with schema + question, then verify the query
+- [ ] understand RAG/vector DBs at a high level
+- [ ] keep judgment, validation, and communication as your job
 
-### What to cover
-- Using an LLM to write/debug SQL and explain errors
-- Prompting for data tasks: give schema + question, get a query, **then verify it**
-- High-level RAG concept: what a vector DB does, why it matters (awareness only)
-- The line: AI accelerates mechanical tasks; **judgment, validation, and communication are yours**
+dont over-invest here. fine-tuning, production RAG, and LangChain internals are senior/ML-engineering territory.
 
-> **Don't over-invest here.** Fine-tuning, production RAG pipelines, and LangChain internals are senior/ML-Eng territory. A junior needs *awareness* and *good usage habits*, not depth.
+## exit check
 
----
+- [ ] built + published at least 2 dashboards in your chosen BI tool
+- [ ] loaded data into BigQuery or Snowflake and queried it
+- [ ] cleaned a genuinely messy public dataset end-to-end
+- [ ] wrote a plain-language business question -> data answer summary
+- [ ] used an LLM to draft SQL, then caught/fixed at least one thing it got wrong
 
-## Phase 2 exit checklist
-- [ ] Built + published at least 2 dashboards in your chosen BI tool
-- [ ] Loaded data into BigQuery or Snowflake and queried it
-- [ ] Cleaned a genuinely messy public dataset end-to-end
-- [ ] Wrote a plain-language "business question → data answer" summary
-- [ ] Used an LLM to draft a SQL query, then caught/fixed at least one thing it got wrong
-
-Next: [Phase 3 — Pick your track (Analyst / Analytics Eng / Data Eng / DS) →](03-specialization.md)
+[Next: Goal 3 - Pick Your Track](03-specialization.md)

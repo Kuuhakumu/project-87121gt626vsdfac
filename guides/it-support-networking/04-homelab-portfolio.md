@@ -1,67 +1,71 @@
-# 🛠️ Phase 4: Home Lab & Portfolio
+# Goal 4: home lab and portfolio meow
 
-> **~100 hrs total** · your pace, no deadline
-> In IT support, **a documented home lab is your portfolio.** You have no production access yet, so you build your own environment and prove you can run it.
+> **~100h total** - your pace, no deadline.
+> in IT support, a documented home lab is your portfolio.
 
-[← Phase 3](03-specialization.md) · [Hub](README.md) · [Next: Phase 5 — Job Hunt →](05-job-hunt.md)
-
----
-
-## Why a home lab beats a certificate alone
-
-Anyone can pass A+. The candidate who says *"I built a Windows domain with a Server 2025 DC, joined three Windows 11 clients, set up group policy, and automated user creation with PowerShell"* has already done the job. Certs get you past the filter; the lab is what gets you the offer.
-
-> **Document everything.** A lab nobody can see doesn't count. Screenshots, a short write-up per project, and a public GitHub repo turn "I practiced" into proof.
+[Previous: Goal 3](03-specialization.md) - [Hub](README.md) - [Next: Goal 5](05-job-hunt.md)
 
 ---
 
-## The core build: a Windows domain lab
+- [ ] **understand why home lab beats cert alone**
+- [ ] **build the Windows domain lab**
+- [ ] **build your track project**
+- [ ] **document it for GitHub**
+- [ ] **exit check** - AD lab, PowerShell script, track project, subnetting, README/screenshots
 
-This single project covers most of what a help-desk/sysadmin interview probes. Build it in VirtualBox, VMware Workstation Player, or Proxmox — all free.
+## why a home lab beats cert alone
 
-| Step | What you build | Skill proven |
+anyone can pass A+. the candidate who built a Windows domain with a Server 2025 DC, Windows 11 clients, GPO, and PowerShell user creation has already practiced the job.
+
+certs get u past filters. the lab gets u the offer.
+
+document everything. screenshots, write-ups, and GitHub turn "i practiced" into proof.
+
+## core build: Windows domain lab
+
+build it in VirtualBox, VMware Workstation Player, or Proxmox.
+
+| Step | What u build | Skill proven |
 |---|---|---|
-| 1 | Install Windows Server 2025 as a VM | Server install, VM management |
-| 2 | Promote it to a Domain Controller (AD DS) | Active Directory setup |
-| 3 | Join 2–3 Windows 11 client VMs to the domain | DNS, domain join, networking |
-| 4 | Create OUs, users, and groups | AD administration |
-| 5 | Apply Group Policy (password policy, desktop lockdown) | GPO management |
-| 6 | Automate bulk user creation with PowerShell | Scripting / automation |
-| 7 | Add a hybrid twist: connect to a free Entra ID dev tenant | Modern hybrid identity |
+| 1 | Windows Server 2025 VM | server install, VM management |
+| 2 | promote to Domain Controller | AD setup |
+| 3 | join 2-3 Windows 11 clients | DNS, domain join, networking |
+| 4 | create OUs, users, groups | AD administration |
+| 5 | apply Group Policy | GPO management |
+| 6 | automate bulk users with PowerShell | scripting |
+| 7 | connect to free Entra ID dev tenant | hybrid identity |
 
-**Lab platform:** [VirtualBox](https://www.virtualbox.org) (free) · [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html) (free) · [Proxmox](https://www.proxmox.com) (free, bare-metal). Free Microsoft 365 dev tenant: [developer.microsoft.com/microsoft-365/dev-program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
+**lab platforms:** [VirtualBox](https://www.virtualbox.org), [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [Proxmox](https://www.proxmox.com), and [Microsoft 365 dev tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
 
----
-
-## Portfolio projects by track
+## portfolio projects by track
 
 | Track | Signature project |
 |---|---|
-| **Help Desk / Support** | Windows domain lab above + a documented "ticket lifecycle" write-up (intake → triage → resolution → closure) |
-| **Networking** | Multi-VLAN network in [Packet Tracer](https://www.netacad.com/courses/packet-tracer) or GNS3: subnetting, inter-VLAN routing, DHCP, ACLs |
-| **Sysadmin** | The domain lab + PowerShell automation scripts (bulk users, disk/health reports) on GitHub |
-| **Cloud / Identity** | Intune device enrollment in a free M365 dev tenant: enroll a Windows 11 VM, push a compliance policy + app |
+| **Help Desk / Support** | Windows domain lab + ticket lifecycle write-up |
+| **Networking** | multi-VLAN network in Packet Tracer or GNS3 |
+| **Sysadmin** | domain lab + PowerShell scripts |
+| **Cloud / Identity** | Intune device enrollment in free M365 tenant |
 
-> **Subnetting is interview gold.** Be able to subnet on a whiteboard from memory — it's the single most common networking screen for support and network-tech roles.
+subnetting is interview gold. be able to subnet on a whiteboard from memory.
 
----
+## document it for GitHub
 
-## Document it for GitHub
+each project repo needs:
 
-Each project repo needs:
-- A clear `README`: what it is, a network/architecture diagram, how you built it, what you'd do next
-- Screenshots of the working result (domain joined, GPO applied, ping succeeding across VLANs)
-- Any scripts (PowerShell) with comments explaining what they do
-- A short "what I learned / what broke and how I fixed it" note — that troubleshooting narrative is exactly what employers want to see
+- [ ] clear `README`: what it is, diagram, how u built it, what next
+- [ ] screenshots: domain join, GPO applied, VLAN ping, etc.
+- [ ] scripts with comments
+- [ ] "what broke and how i fixed it" note
 
----
+that troubleshooting narrative is exactly what employers want.
 
-## Phase 4 exit checklist
-- [ ] Built and documented a Windows AD domain lab (DC + clients + GPO)
-- [ ] Automated at least one task with PowerShell, script on GitHub
-- [ ] Built your track's signature project (VLAN network / Intune enrollment / sysadmin automation)
-- [ ] Can subnet by hand on a whiteboard
-- [ ] Every project has a README with diagram + screenshots
-- [ ] Connected at least one lab to a free Entra ID dev tenant (hybrid identity)
+## exit check
 
-Next: [Phase 5 — Job Hunt →](05-job-hunt.md)
+- [ ] built and documented Windows AD domain lab
+- [ ] automated at least one task with PowerShell
+- [ ] built track signature project
+- [ ] can subnet by hand on a whiteboard
+- [ ] every project has README with diagram + screenshots
+- [ ] connected at least one lab to free Entra ID dev tenant
+
+[Next: Goal 5 - Job Hunt](05-job-hunt.md)

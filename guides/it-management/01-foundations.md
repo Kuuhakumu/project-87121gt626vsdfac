@@ -1,175 +1,193 @@
-# 📁 Phase 1: Foundations
+# Goal 1: foundations - IT management map, ITIL, Agile, communication meow
 
-> **~120 hrs total** · your pace, no deadline
-> What IT management actually is, the five sub-tracks and how they diverge, ITIL 4 service-management basics, Agile/Scrum vocabulary, and the core skill nobody warns you about: communication.
+> **~120h total** - your pace, no deadline.
+> goal: understand what IT management is, which track fits u, and why communication is the real core skill.
 
-[← Phase 0](00-prep.md) · [Hub](README.md) · [Next: Phase 2 — Core Skills →](02-core.md)
+[Previous: Goal 0](00-prep.md) - [Hub](README.md) - [Next: Goal 2](02-core.md)
 
 ---
 
-## What IT Management & Strategy actually is (~25 hrs)
+- [ ] **what IT management and strategy actually is** (~25h)
+- [ ] **ITIL 4 service-management foundation** (~40h)
+- [ ] **Agile, Scrum, and Kanban** (~30h)
+- [ ] **communication** (~25h)
+- [ ] **exit check** - five tracks, ITIL basics, sprint vocabulary, executive comms
 
-"IT Management & Strategy" is an umbrella over five distinct but overlapping disciplines. Understanding how they diverge is the most important framing decision you'll make — it determines which on-ramp, which certs, and which specialization in [Phase 3](03-specialization.md) are right for you.
+## what IT Management & Strategy actually is (~25h)
 
-### The five sub-tracks
+IT Management & Strategy is an umbrella over five related disciplines.
+understanding the split matters because it determines your on-ramp, certs, and [Goal 3](03-specialization.md) specialization.
+
+### the five sub-tracks
 
 **1. IT Service Management (ITSM)**
-Delivering and supporting IT services to the business. Rooted in ITIL 4. The work is operational and process-driven: incident management, change management, problem management, SLAs, service desks, continual improvement. Senior destination: Service Delivery Manager, IT Operations Manager.
-*The question ITSM answers: "Are our services running well and improving?"*
+delivering and supporting IT services to the business.
+rooted in ITIL 4.
+daily work: incident, change, problem, SLAs, service desks, continual improvement.
+senior destination: Service Delivery Manager, IT Operations Manager.
+question: **are our services running well and improving?**
 
 **2. IT Project & Program Management**
-Delivering defined outcomes on time and budget — system implementations, migrations, infrastructure rollouts, transformation initiatives. Governed by PMI (PMP, CAPM) and PRINCE2. Distinct from ITSM because projects *end* — you don't own the service after go-live. Senior destination: Program Manager, PMO Director.
-*The question: "Are we delivering this change successfully?"*
+delivering defined outcomes on time and budget: implementations, migrations, rollouts.
+governed by PMI and PRINCE2.
+projects end; u dont necessarily own the service after go-live.
+senior destination: Program Manager, PMO Director.
+question: **are we delivering this change successfully?**
 
 **3. IT Governance & Strategy**
-Ensuring IT decisions align with organizational goals, risk is managed, and IT investment generates value. COBIT 2019 is the dominant framework; TOGAF addresses enterprise architecture. Senior destination: CIO, IT Director, Enterprise Architect, Governance Lead.
-*The question: "Is IT serving the organization's long-term interests and managing its risks?"*
+making sure IT decisions align with org goals, manage risk, and generate value.
+COBIT 2019 is the main governance framework.
+TOGAF addresses enterprise architecture.
+senior destination: CIO, IT Director, Enterprise Architect.
+question: **is IT serving long-term interests and managing risk?**
 
 **4. People & Team Management**
-The line-management track: hiring, performance reviews, team structure, budget ownership, 1:1s, career development. Less framework-driven, more leadership-competency-driven. This is the track a senior engineer or sysadmin enters when they move into management. It overlaps with all the others — every IT manager does some of this.
-*The question: "Is my team healthy, growing, and delivering?"*
+hiring, reviews, team structure, budget ownership, 1:1s, career growth.
+less framework-driven, more leadership-craft driven.
+overlaps with every track.
+question: **is my team healthy, growing, and delivering?**
 
 **5. IT Operations**
-The day-to-day running of infrastructure, platforms, and systems — networks, servers, cloud, monitoring, incident response. Operationally adjacent to ITSM but more technically focused. Senior destination: Infrastructure Manager, Head of Platform.
-*The question: "Is everything up, performing, and secure?"*
+running infrastructure, platforms, systems, networks, cloud, monitoring, incident response.
+adjacent to ITSM but more technical.
+senior destination: Infrastructure Manager, Head of Platform.
+question: **is everything up, performing, and secure?**
 
-### Where they overlap and diverge
+### overlap and divergence
 
 | Dimension | ITSM | Project Mgmt | Governance/Strategy | People Mgmt | IT Ops |
 |---|---|---|---|---|---|
-| Time horizon | Ongoing | Fixed end-date | Multi-year | Ongoing | Ongoing |
-| Primary output | Service quality | Delivered change | Risk/value alignment | Team performance | System uptime |
-| Key framework | ITIL 4 | PMP / PRINCE2 | COBIT / TOGAF | None (leadership) | ITIL / SRE |
-| Typical entry | Service desk | Junior PM / BA | Audit / architecture | Tech lead | Sysadmin / NOC |
+| Time horizon | ongoing | fixed end-date | multi-year | ongoing | ongoing |
+| Primary output | service quality | delivered change | risk/value alignment | team performance | system uptime |
+| Key framework | ITIL 4 | PMP / PRINCE2 | COBIT / TOGAF | leadership craft | ITIL / SRE |
+| Typical entry | service desk | junior PM / BA | audit / architecture | tech lead | sysadmin / NOC |
 
-- ITSM and IT Operations share incident and problem management heavily; in a small org, one person covers both.
-- Governance uses ITSM's process metrics as evidence for audit and compliance.
-- Project Management *executes* the changes that IT Strategy *defines*.
-- People Management is a layer on top of every track.
+- [ ] ITSM and IT Ops share incident and problem management.
+- [ ] Governance uses ITSM metrics as audit evidence.
+- [ ] Project Management executes changes that IT Strategy defines.
+- [ ] People Management sits on top of every track.
 
-> **Don't try to master all five.** Foundations and core skills (Phases 1–2) are shared across all of them. In [Phase 3](03-specialization.md) you'll pick one to go deep. For now, just learn the map.
+dont try to master all five rn.
+Goals 1-2 are shared.
+Goal 3 is where u pick one to go deep.
 
-### The scope boundary (what this guide is *not*)
+### scope boundary
 
-This guide covers **managing and governing IT** — not building products, not writing code, not doing hands-on technical support.
+this guide covers **managing and governing IT**.
+it is not building products, writing code, or doing hands-on support.
 
-- **Not Product Management** ([that guide](../product-management/)): a PM manages *a product* (its features, market position, users). An IT manager manages *an IT function* (services, teams, budgets, risk) for the whole organization internally.
-- **Not IT Support** ([that guide](../it-support-networking/)): IT Support does the hands-on troubleshooting. IT Management *leads the function* that does it — setting process, owning the budget, reporting to leadership.
+- [ ] **Not Product Management**: PM manages a product; IT manager manages an internal IT function.
+- [ ] **Not IT Support**: support troubleshoots; IT management leads the function that does it.
 
-> In one sentence: **this guide takes you from team lead to CIO — leading the people, processes, and governance of IT, not doing the technical work yourself.**
+one sentence: this guide takes u from team lead toward CIO, leading people, processes, and governance of IT.
 
-**Practice gate:** you can name the five sub-tracks, state the question each one answers, and explain in your own words how IT Management differs from both Product Management and IT Support.
+**practice gate:** u can name the five sub-tracks, state the question each answers, and explain how IT Management differs from Product Management and IT Support.
 
----
+## ITIL 4 service-management foundation (~40h)
 
-## ITIL 4 — the service-management foundation (~40 hrs)
+ITIL 4 is the most recognized framework in IT service management.
+even if u never sit the exam, its vocabulary is the language of IT operations.
 
-ITIL 4 is the most widely recognized framework in IT service management worldwide. Even if you never sit the exam, its vocabulary is the lingua franca of IT operations — you need fluency.
+2026 note: PeopleCert has begun rolling out ITIL Version 5 around five streams: Product, Service, Experience, Strategy, Transformation.
+**ITIL 4 Foundation is still actively offered and recognized** as of mid-2026.
+see [certifications.md](certifications.md) and confirm the live exam version before booking.
 
-> **2026 note:** PeopleCert (which owns the ITIL IP) has begun rolling out a newer ITIL version restructured around five streams (Product, Service, Experience, Strategy, Transformation). **ITIL 4 Foundation is still actively offered and recognized** as of mid-2026, and its concepts below remain the core. See [certifications.md](certifications.md) for the current exam picture and confidence tags — and confirm the live exam version on the official site before booking.
+### core concepts
 
-### The core concepts
+- [ ] **Services and value:** IT is a service provider to the business. email is a service; staff get communication without managing mail servers.
+- [ ] **Four dimensions:** organizations and people, information and technology, partners and suppliers, value streams and processes.
+- [ ] **Service value chain:** Plan, Improve, Engage, Design & Transition, Obtain/Build, Deliver & Support.
 
-**Services and value.** ITIL frames IT as a *service provider* to the business. A service delivers value by enabling outcomes the customer wants, without the customer owning the specific costs and risks. (Example: "email" is a service — staff get reliable communication without managing mail servers themselves.)
-
-**The four dimensions of service management:**
-1. Organizations and people
-2. Information and technology
-3. Partners and suppliers
-4. Value streams and processes
-
-A healthy service balances all four. Ignore "organizations and people" and the best tooling still fails.
-
-**The service value chain** — six activities that turn demand into value: Plan · Improve · Engage · Design & Transition · Obtain/Build · Deliver & Support.
-
-**The key practices an entry-level manager must know cold:**
+entry-level manager practices:
 
 | Practice | What it is |
 |---|---|
-| **Incident Management** | Restore normal service as fast as possible after an unplanned disruption |
-| **Problem Management** | Find and fix the *root cause* behind recurring incidents (incident = symptom, problem = cause) |
-| **Change Enablement** | Assess, authorize, and schedule changes to minimize risk (the Change Advisory Board lives here) |
-| **Service Request Management** | Handle routine, pre-approved requests (new laptop, access grant) — distinct from incidents |
-| **Service Level Management** | Define, monitor, and report on SLAs |
-| **Continual Improvement** | The ongoing discipline of making services measurably better over time |
+| **Incident Management** | restore normal service fast after disruption |
+| **Problem Management** | find and fix root causes behind recurring incidents |
+| **Change Enablement** | assess, authorize, and schedule changes to reduce risk |
+| **Service Request Management** | handle routine pre-approved requests |
+| **Service Level Management** | define, monitor, and report SLAs |
+| **Continual Improvement** | make services measurably better over time |
 
-> The distinction interviewers probe most: **incident vs. problem.** An incident is "the website is down — restore it now." A problem is "the website has gone down four times this month — why, and how do we stop it permanently?" Incident management is reactive and speed-focused; problem management is investigative and prevention-focused.
+the interview distinction: **incident vs problem**.
+incident = website is down, restore it now.
+problem = website went down four times, why and how do we stop it?
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Read the ITIL 4 overview | [Axelos ITIL page](https://www.axelos.com/certifications/itil-service-management) | Get the official framing of services, value, and the four dimensions | **Free** |
-| Configure an incident workflow | [ServiceNow Developer Instance](https://developer.servicenow.com/devdo) | Provision a free PDI; set up incident categories, assignment rules, and SLA timers | **Free** |
-| Map incident vs. problem | Notion or paper | Take a recurring outage scenario; write the incident response *and* the problem investigation separately | **Free** |
-| Explore the Atlassian Team Playbook | [Team Playbook](https://www.atlassian.com/team-playbook/plays) | Run a "health monitor" or "incident response" play to see ITSM practices in action | **Free** |
+| ITIL 4 overview | [Axelos ITIL page](https://www.axelos.com/certifications/itil-service-management) | get official framing of services, value, four dimensions | **Free** |
+| Incident workflow | [ServiceNow Developer Instance](https://developer.servicenow.com/devdo) | provision PDI and set incident categories, assignment rules, SLA timers | **Free** |
+| Incident vs problem map | Notion or paper | take a recurring outage and write incident response + problem investigation separately | **Free** |
+| Atlassian Team Playbook | [Team Playbook](https://www.atlassian.com/team-playbook/plays) | run a health monitor or incident response play | **Free** |
 
-**Practice gate:** you can explain incident vs. problem vs. change with a concrete example of each, and you've configured one incident workflow (even a basic one) in a ServiceNow developer instance.
+**practice gate:** u can explain incident vs problem vs change with concrete examples, and u configured one basic incident workflow in ServiceNow.
 
----
+## Agile, Scrum, and how IT teams work (~30h)
 
-## Agile, Scrum, and how IT teams actually work (~30 hrs)
+modern IT teams often run on Agile rhythms.
+u dont need to be a Scrum Master, but u need the vocabulary and the why.
 
-Modern IT teams — even operations teams — increasingly run on Agile rhythms. You don't need to be a certified Scrum Master, but you need the vocabulary and the *why*.
+Agile is a mindset: iterative delivery, short feedback loops, responding to change.
+Scrum is a framework that implements it.
 
-### The essentials
+### Scrum in 90 seconds
 
-**Agile** is a mindset (iterative delivery, responding to change, working in short feedback loops) — not a process. **Scrum** is the most common *framework* that implements it.
+- [ ] work is organized into **sprints**, usually 2 weeks.
+- [ ] a prioritized **product backlog** holds possible work.
+- [ ] **sprint planning** pulls work into the sprint backlog.
+- [ ] **daily standup** surfaces progress and blockers.
+- [ ] **review** shows completed work.
+- [ ] **retrospective** improves how the team works.
+- [ ] roles: Product Owner, Scrum Master, Developers.
 
-**Scrum in 90 seconds:**
-- Work is organized into **sprints** (usually 2 weeks).
-- A prioritized **product backlog** holds everything that might get done.
-- At **sprint planning**, the team pulls a slice of the backlog into the **sprint backlog**.
-- A short **daily standup** keeps everyone aligned and surfaces blockers.
-- At sprint end, a **review** shows what was completed and a **retrospective** improves how the team works.
-- Three roles: **Product Owner** (owns the backlog/priorities), **Scrum Master** (facilitates the process, removes blockers), **Developers** (do the work).
+Kanban is lighter: continuous flow, WIP limits, no fixed sprints.
+IT operations teams often prefer Kanban because incidents and requests arrive unpredictably.
 
-**Kanban** is the lighter alternative — continuous flow, work-in-progress limits, no fixed sprints. Many IT operations teams prefer Kanban because operational work (incidents, requests) arrives unpredictably and doesn't fit neat two-week boxes.
+as an IT manager, u may act like a Product-Owner-style prioritizer and Scrum-Master-style blocker remover, even if nobody uses those titles.
 
-> As an IT manager, you'll often act as a Product-Owner-like prioritizer for your team's work *and* a Scrum-Master-like blocker-remover — even if no one has those titles. Knowing both lenses lets you choose the right rhythm for the work in front of you.
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Read the Scrum Guide | [scrumguides.org](https://scrumguides.org) | The authoritative ~13-page reference — read it end to end | **Free** |
-| Build a backlog and sprint | [Jira Free](https://www.atlassian.com/software/jira/free) | Create 10+ IT tickets, write acceptance criteria, run a 2-week sprint, move cards to Done | **Free** |
-| Run a retrospective | [Miro Free](https://miro.com) | Use a Start/Stop/Continue template; capture action items | **Free** |
+| Scrum Guide | [scrumguides.org](https://scrumguides.org) | read the authoritative reference end to end | **Free** |
+| Backlog and sprint | [Jira Free](https://www.atlassian.com/software/jira/free) | create 10+ IT tickets, acceptance criteria, run a 2-week sprint | **Free** |
+| Retrospective | [Miro Free](https://miro.com) | use Start/Stop/Continue, capture action items | **Free** |
 
-**Practice gate:** you can run a sprint in Jira from planning to retrospective, explain when Kanban beats Scrum for operational work, and define the three Scrum roles without notes.
+**practice gate:** u can run a sprint in Jira from planning to retro, explain when Kanban beats Scrum for ops work, and define the three Scrum roles.
 
----
+## communication: the real core skill (~25h)
 
-## Communication — the real core skill (~25 hrs)
+the day-to-day work of an IT manager is overwhelmingly communication.
+u translate technical reality for executives, explain outages to departments, write business cases, give feedback, and say no without burning trust.
 
-Here's what no framework tells you: **the day-to-day work of an IT manager is overwhelmingly communication.** Translating technical reality for non-technical executives. Explaining an outage to frustrated department heads. Writing a business case that gets budget approved. Giving feedback that lands. Saying "no" to a stakeholder without burning the relationship.
+technical managers who cant do this plateau.
 
-Technical managers who can't do this plateau — usually right at the point where they need to influence people who don't report to them ("influence without authority").
+### skills to build now
 
-### The communication skills to start building now
+- [ ] **Translating up:** lead with business impact, not technical trivia.
+- [ ] **Writing for decisions:** recommendation first, reasoning second, detail in appendix.
+- [ ] **Managing up and across:** influence people who dont report to u.
+- [ ] **Hard messages:** outages, delays, budget cuts, performance feedback. direct and respectful.
 
-**Translating up.** Executives don't care about the certificate that expired; they care that "all staff lost access to email for two hours, here's the business impact, and here's what we're changing so it can't recur." Practice stripping jargon and leading with impact.
+### labs
 
-**Writing for decisions.** A good IT manager's writing is structured for a busy reader: the recommendation first, the reasoning second, the detail in an appendix. The business case and post-mortem you'll write in [Phase 4](04-projects.md) are exactly this skill.
-
-**Managing up and across.** You'll spend enormous energy on stakeholders who don't report to you — other department heads, vendors, your own boss. Influence comes from credibility, clarity, and reliability, not authority.
-
-**Delivering hard messages.** Outage notifications, project delays, budget cuts, performance feedback. The skill is being direct *and* respectful — stating the reality plainly while preserving the relationship.
-
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Write an outage comms note | Google Docs or Notion | Take the SSO-outage scenario from [Phase 4](04-projects.md); write the all-staff update *and* the executive summary | **Free** |
-| Rewrite jargon for executives | Notion | Take a technical incident description; rewrite it leading with business impact, zero acronyms | **Free** |
-| Read *The Manager's Path* (intro chapters) | Library / [O'Reilly](https://www.oreilly.com/library/view/the-managers-path/9781491973882/) | Camille Fournier on the management transition and communication — see [resources.md](resources.md) | Varies |
+| Outage comms note | Google Docs or Notion | use the SSO outage from [Goal 4](04-projects.md); write staff update + executive summary | **Free** |
+| Rewrite jargon for executives | Notion | take a technical incident and rewrite it with business impact, no unexplained acronyms | **Free** |
+| *The Manager's Path* intro chapters | Library / [O'Reilly](https://www.oreilly.com/library/view/the-managers-path/9781491973882/) | read Camille Fournier on management transition and communication | Varies |
 
-**Practice gate:** you can take a purely technical incident and produce two versions of the same message — one for engineers, one for executives — where the executive version leads with business impact and contains no unexplained jargon.
+**practice gate:** u can produce engineer and executive versions of the same incident message, where the executive version leads with business impact and has no unexplained jargon.
 
----
+## exit check
 
-## Phase 1 complete
+- [ ] i can name the five IT management sub-tracks and the question each answers
+- [ ] i can explain IT Management vs Product Management vs IT Support
+- [ ] i can explain incident, problem, and change management with examples
+- [ ] i configured a basic incident workflow in ServiceNow or equivalent
+- [ ] i can explain Scrum roles and when Kanban fits operations better
+- [ ] i wrote an outage message for engineers and an executive summary for leadership
 
-You now have the map (five sub-tracks), the service-management foundation (ITIL 4), the team-rhythm vocabulary (Agile/Scrum/Kanban), and an honest appreciation that communication is the core skill. Next, the heavier core skills: running service management for real, project delivery, metrics, budgeting, vendors, and risk.
-
-Next: [Phase 2 — Core Skills →](02-core.md)
+[Next: Goal 2 - Core Skills](02-core.md)

@@ -1,124 +1,119 @@
-# 🎯 Phase 3: Pick Your Track
+# Goal 3: pick your track meow
 
-> **~150 hrs total** · your pace, no deadline
-> You now have the shared base. Pick **one** track and learn its signature tooling. Don't spread thin — depth in one track is what gets you hired.
+> **~150h total** - your pace, no deadline.
+> u have the shared base now. pick **one** track and learn its signature tooling.
+> dont spread thin; depth in one track is what gets u hired.
 
-[← Phase 2](02-core.md) · [Hub](README.md) · [Next: Phase 4 — Portfolio →](04-projects.md)
+[Previous: Goal 2](02-core.md) - [Hub](README.md) - [Next: Goal 4](04-projects.md)
 
 ---
 
-## Which track? (honest entry reality)
+- [ ] **choose the right track**
+- [ ] **Track A: Data / BI Analyst**
+- [ ] **Track B: Analytics Engineer**
+- [ ] **Track C: Data Engineer**
+- [ ] **Track D: Data Scientist long game**
+- [ ] **exit check** - one track chosen, tool competence, labs done, cert identified, portfolio idea ready
+
+## choose the right track
 
 | Track | Entry difficulty | First-job reality |
 |---|---|---|
-| **Data / BI Analyst** | 🟢 Lowest barrier | The genuine entry point — SQL + a BI tool gets a screen |
-| **Analytics Engineer** | 🟡 Emerging entry | Real junior roles if you have SQL depth + dbt |
-| **Data Engineer** | 🟠 Harder entry | Accessible but expects Python + cloud fluency |
-| **Data Scientist** | 🔴 Rarely true-entry | "Junior DS" usually wants a strong analyst + some ML; real ML roles want a master's or experience |
+| **Data / BI Analyst** | lowest barrier | genuine entry point: SQL + BI gets screens |
+| **Analytics Engineer** | emerging entry | real junior roles with SQL depth + dbt |
+| **Data Engineer** | harder entry | accessible, expects Python + cloud fluency |
+| **Data Scientist** | rarely true-entry | often means strong analyst + some ML; real ML roles want more |
 
-> **Like "DevOps," the "Data Scientist" title inflates entry expectations.** Most people enter as an **Analyst** or **Analytics/Data Engineer**, then pivot into DS after 1–2 years. **ML Engineer is not an entry role** — it's SWE + ML depth.
+like "DevOps," the "Data Scientist" title inflates entry expectations. most people enter as **Analyst** or **Analytics/Data Engineer**, then pivot after 1-2 years.
 
-**Recommendation for most beginners:** start on the **Data Analyst** track. It's the realistic first job, and every other track builds on the same SQL + Python foundation.
-
----
+recommendation for most beginners: start on **Data Analyst**. every other track builds on the same SQL + Python foundation.
 
 ## Track A: Data / BI Analyst
 
-**Goal:** answer business questions with data and communicate the findings clearly.
+**goal:** answer business questions with data and communicate findings clearly.
 
-### What to cover
-- Advanced SQL: window functions, complex CTEs, query optimization
-- Statistical literacy: A/B test basics, significance, correlation vs causation
-- Deep dashboarding in your BI tool (DAX or LOD expressions)
-- Stakeholder communication: turning analysis into decisions
+- [ ] advanced SQL: windows, complex CTEs, query optimization
+- [ ] stats: A/B basics, significance, correlation vs causation
+- [ ] dashboarding in Power BI or Tableau
+- [ ] stakeholder communication
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
 | [DataLemur](https://datalemur.com) | Web | SQL + analytics interview questions | **Free** |
-| [StrataScratch](https://www.stratascratch.com) | Web | Real company data questions | Freemium |
-| [Mode SQL Tutorial](https://mode.com/sql-tutorial/) | Mode | Analytics-focused SQL + case studies | **Free** |
+| [StrataScratch](https://www.stratascratch.com) | Web | real company data questions | Freemium |
+| [Mode SQL Tutorial](https://mode.com/sql-tutorial/) | Mode | analytics SQL + case studies | **Free** |
 
-**Cert:** Google Data Analytics + PL-300 (Power BI).
-
----
+**cert:** Google Data Analytics + PL-300.
 
 ## Track B: Analytics Engineer
 
-**Goal:** build clean, tested, documented data models — the bridge between raw data and the analysts who use it.
+**goal:** build clean, tested, documented data models - the bridge between raw data and analysts.
 
-### What to cover
-- **dbt** (the defining tool): staging → marts layering, models, refs, sources
-- dbt tests, documentation, and CI (run `dbt test` on pull requests)
-- Dimensional modeling (star schema, slowly-changing dimensions)
-- Git workflow for data: PRs, code review on SQL
-- Warehouse depth (BigQuery/Snowflake)
+- [ ] **dbt:** staging -> marts layering, models, refs, sources
+- [ ] dbt tests, docs, and CI with `dbt test`
+- [ ] dimensional modeling: star schema, slowly-changing dimensions
+- [ ] Git workflow for data: PRs, code review on SQL
+- [ ] warehouse depth: BigQuery or Snowflake
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [dbt Fundamentals](https://courses.getdbt.com) | dbt Labs | Official free dbt course | **Free** |
-| [dbt + DuckDB local](https://duckdb.org) | Local | Build a dbt project with no cloud cost | **Free** |
+| [dbt Fundamentals](https://courses.getdbt.com) | dbt Labs | official free dbt course | **Free** |
+| [dbt + DuckDB local](https://duckdb.org) | Local | dbt project with no cloud cost | **Free** |
 
-**Cert:** dbt Analytics Engineering Certification ($200) + SnowPro Core (if Snowflake-focused).
-
----
+**cert:** dbt Analytics Engineering Certification ($200) + SnowPro Core if Snowflake-focused.
 
 ## Track C: Data Engineer
 
-**Goal:** build reliable pipelines that move and transform data at scale — the plumbing that keeps everything else running.
+**goal:** build reliable pipelines that move and transform data at scale.
 
-### What to cover
-- Python depth: APIs, file formats (Parquet), error handling
-- **Orchestration:** pick one — **Prefect** (easiest), Airflow (most common in postings), or Dagster
-- Batch processing with **Spark / PySpark** (large-scale)
-- Streaming *awareness*: Kafka / Pub/Sub concepts (batch vs real-time)
-- Docker basics for packaging pipelines
-- Cloud warehouse + storage
+- [ ] Python depth: APIs, Parquet, error handling
+- [ ] orchestration: Prefect, Airflow, or Dagster
+- [ ] batch processing with Spark / PySpark
+- [ ] streaming awareness: Kafka / Pub/Sub
+- [ ] Docker basics for packaging pipelines
+- [ ] cloud warehouse + storage
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Prefect docs + tutorials](https://docs.prefect.io) | Official | Build + run your first flows | **Free** |
+| [Prefect docs + tutorials](https://docs.prefect.io) | Official | build + run first flows | **Free** |
 | [Airflow tutorials](https://airflow.apache.org/docs/) | Official | DAGs, operators, scheduling | **Free** |
-| [Start Data Engineering](https://www.startdataengineering.com) | Blog | End-to-end pipeline walkthroughs | **Free** |
+| [Start Data Engineering](https://www.startdataengineering.com) | Blog | end-to-end pipeline walkthroughs | **Free** |
 
-**Cert:** AWS Data Engineer Associate (DEA-C01) or Databricks Data Engineer Associate.
+**cert:** AWS Data Engineer Associate (DEA-C01) or Databricks Data Engineer Associate.
 
----
+## Track D: Data Scientist long game
 
-## Track D: Data Scientist (the long game)
+**goal:** model, predict, and explain - but expect to come through the Analyst door first.
 
-**Goal:** model, predict, and explain — just expect to come in through the Analyst door first.
+- [ ] scikit-learn workflow: split -> train -> evaluate -> tune
+- [ ] model evaluation: precision/recall, ROC, imbalanced accuracy
+- [ ] feature engineering
+- [ ] PyTorch basics if going deep learning
+- [ ] communicating model results to non-technical audiences
 
-### What to cover
-- **scikit-learn**: the full workflow (split → train → evaluate → tune)
-- Model evaluation: precision/recall, ROC, why accuracy lies on imbalanced data
-- Feature engineering
-- **PyTorch** basics if going deep-learning (it won the practitioner war over TensorFlow)
-- Communicating model results to non-technical audiences
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Kaggle Learn: ML](https://www.kaggle.com/learn) | Kaggle | Intro → intermediate ML micro-courses | **Free** |
-| [scikit-learn getting started](https://scikit-learn.org/stable/getting_started.html) | Official | The canonical sklearn workflow | **Free** |
-| [fast.ai](https://www.fast.ai) | fast.ai | Practical deep learning | **Free** |
-| [Kaggle Competitions](https://www.kaggle.com/competitions) | Kaggle | Real ML problems + leaderboard | **Free** |
+| [Kaggle Learn: ML](https://www.kaggle.com/learn) | Kaggle | intro -> intermediate ML micro-courses | **Free** |
+| [scikit-learn getting started](https://scikit-learn.org/stable/getting_started.html) | Official | canonical sklearn workflow | **Free** |
+| [fast.ai](https://www.fast.ai) | fast.ai | practical deep learning | **Free** |
+| [Kaggle Competitions](https://www.kaggle.com/competitions) | Kaggle | real ML problems + leaderboard | **Free** |
 
-**Cert:** AWS ML Engineer Associate (MLA-C01) — note the old MLS-C01 **retired March 2026**.
+**cert:** AWS ML Engineer Associate (MLA-C01). old MLS-C01 retired March 2026.
 
----
+## exit check
 
-## Phase 3 exit checklist
-- [ ] Chose **one** track and can explain why it fits you
-- [ ] Learned that track's signature tool to working competence (dbt / Prefect / sklearn / advanced BI)
-- [ ] Completed the track's hands-on labs
-- [ ] Identified the cert that matches your track
-- [ ] Have a concrete idea for your track's portfolio centerpiece (built in Phase 4)
+- [ ] chose **one** track and can explain why it fits u
+- [ ] learned that track's signature tool to working competence: dbt / Prefect / sklearn / advanced BI
+- [ ] completed the track's hands-on labs
+- [ ] identified the cert that matches your track
+- [ ] have a concrete idea for your track's portfolio centerpiece in Goal 4
 
-Next: [Phase 4 — Build your portfolio →](04-projects.md)
+[Next: Goal 4 - Build Your Portfolio](04-projects.md)

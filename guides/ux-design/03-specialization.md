@@ -1,143 +1,161 @@
-# 🎯 Phase 3: Pick Your Track
+# Goal 3: pick your UX track meow
 
-> **~110 hrs total** · your pace, no deadline
-> You have the shared base. Now go deep on one track. Depth in one specialization is what gets you hired — not a shallow sample of all four.
+> **~110h total** - your pace, no deadline.
+> goal: go deep on one track after u have the shared base.
+> depth in one path gets u hired more than a shallow sample of all four.
 
-[← Phase 2](02-core.md) · [Hub](README.md) · [Next: Phase 4 — Portfolio →](04-projects.md)
+[Previous: Goal 2](02-core.md) - [Hub](README.md) - [Next: Goal 4](04-projects.md)
 
 ---
 
-## Which track? (honest entry reality)
+- [ ] **choose a track honestly**
+- [ ] **Track A: Product Designer**
+- [ ] **Track B: UI / Visual Designer**
+- [ ] **Track C: UX Researcher**
+- [ ] **Track D: Content Designer / UX Writer**
+- [ ] **exit check** - chosen track, labs done, signature deliverable ready
+
+## choose a track honestly
 
 | Track | Entry difficulty | First-job reality |
 |---|---|---|
-| **Product Designer** | 🟢 Most common entry | The dominant title. Generalist role: research + UI + handoff. Most junior postings are here. |
-| **UI / Visual Designer** | 🟢 Agency-friendly entry | Strong emphasis on craft and visual polish. Fewer pure UI roles, but agencies hire juniors. |
-| **UX Researcher** | 🟡 Competitive | Junior researcher roles exist but are fewer and often prefer a research/psych background. More AI-resilient long-term. |
-| **Content Designer / UX Writer** | 🟠 Small field | Real entry-accessible track if your writing is genuinely strong. Fewer total roles than product design. |
+| **Product Designer** | most common entry | dominant title. generalist role: research + UI + handoff. most junior postings are here. |
+| **UI / Visual Designer** | agency-friendly entry | strong craft and visual polish. fewer pure UI roles, but agencies hire juniors. |
+| **UX Researcher** | competitive | junior roles exist but are fewer and often prefer research/psych background. more AI-resilient long term. |
+| **Content Designer / UX Writer** | small field | real entry-accessible track if your writing is genuinely strong. fewer total roles than product design. |
 
-**For most beginners: start on the Product Designer track.** It's the broadest first-job opening. The other tracks branch off from there — pivot sideways after your first role once you know what you prefer.
-
----
+for most beginners, start on **Product Designer**.
+its the broadest first-job opening.
+the other tracks branch from there, and u can pivot sideways after your first role once u know what u prefer.
 
 ## Track A: Product Designer
 
-**What it is:** the generalist UX role. Product designers own the end-to-end design process for a feature or product area — from research through final UI to developer handoff. Most junior design roles carry this title.
+**what it is:** the generalist UX role.
+product designers own the end-to-end design process for a feature or product area: research, final UI, and developer handoff.
+most junior design roles carry this title.
 
-**What to go deep on:**
-- The full design process as a single cohesive narrative: discovery → define → ideate → prototype → test → iterate
-- Facilitating design critique and taking feedback without defending every decision
-- Stakeholder communication: presenting your rationale to PMs and engineers
-- Developer handoff: clean Figma files with components, annotations, specs, and a working prototype
-- Product thinking: understanding business goals and technical constraints, not just user needs in isolation
-- Iterative design: showing v1 → v2 → v3 with clear reasons for each change is gold in a portfolio
+### go deep on this
 
-**Signature deliverable:** A complete case study walking through the full process for one product feature — research → insight → wireframes → tested prototype → hi-fi → what changed after testing. The story behind the decisions matters as much as the final screens.
+- [ ] full design process as one cohesive story: discovery -> define -> ideate -> prototype -> test -> iterate
+- [ ] design critique and taking feedback without defending every decision
+- [ ] stakeholder communication with PMs and engineers
+- [ ] developer handoff: clean Figma files, components, annotations, specs, prototype
+- [ ] product thinking: business goals and technical constraints, not just user needs alone
+- [ ] iterative design: v1 -> v2 -> v3 with clear reasons each version changed
 
-### Labs
+**signature deliverable:** a complete case study walking through one product feature: research -> insight -> wireframes -> tested prototype -> hi-fi -> what changed after testing.
+the story behind the decisions matters as much as the screens.
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| End-to-end product design sprint | Figma + FigJam | Pick a real problem (your own pain point or a public brief from designercize.com); run a mini design sprint: problem framing → user flow → wireframes → hi-fi → 3-person usability test → iteration | **Free** |
-| Developer handoff exercise | Figma Dev Mode | Take a hi-fi file and prepare it for handoff: clean layer names, component instances, annotations, spacing specs, interactive prototype | **Free** |
-| [AJ&Smart on YouTube](https://www.youtube.com/@AJSmart) | YouTube | Watch the Design Sprint 2.0 series and run the ideation exercises on your current project | **Free** |
-| Design critique practice | Figma + peer | Share your work-in-progress with another learner; give and receive critique using the "I like / I wish / what if" framework | **Free** |
+| End-to-end product design sprint | Figma + FigJam | pick a real problem or public brief from [designercize.com](https://designercize.com); run problem framing, user flow, wireframes, hi-fi, 3-person usability test, and iteration | **Free** |
+| Developer handoff exercise | Figma Dev Mode | prepare a hi-fi file for handoff: layer names, component instances, annotations, spacing specs, interactive prototype | **Free** |
+| [AJ&Smart on YouTube](https://www.youtube.com/@AJSmart) | YouTube | watch the Design Sprint 2.0 series and run the ideation exercises on your current project - ⚠️ TODO verify exact playlist/video | **Free** |
+| Design critique practice | Figma + peer | share work-in-progress with another learner; give and receive critique using "I like / I wish / what if" | **Free** |
 
-**Practice gate:** you can walk through a complete case study verbally — problem, research method, key insight, design decision, outcome — in under 5 minutes before moving on.
-
----
+**practice gate:** u can walk through a complete case study verbally: problem, research method, key insight, design decision, outcome, in under 5 minutes.
 
 ## Track B: UI / Visual Designer
 
-**What it is:** a craft-focused role centered on visual execution — layouts, typography, iconography, motion, and brand systems. Common in agencies, studios, and companies with a strong design brand. Sometimes titled "Brand Designer" or "Digital Designer."
+**what it is:** a craft-focused role centered on visual execution: layouts, typography, iconography, motion, and brand systems.
+common in agencies, studios, and companies with a strong design brand.
+sometimes titled **Brand Designer** or **Digital Designer**.
 
-**What to go deep on:**
-- Advanced layout and grid systems: 8-point grids, baseline grids, complex multi-column layouts
-- Iconography: designing a consistent icon set from scratch (not just downloading one)
-- Illustration and data visualization: adding a visual signature to your work
-- Motion and animation: Figma smart-animate, Framer (free hobby tier) for realistic prototypes
-- Brand systems: how to extend a visual identity across multiple touchpoints
-- UI consistency at scale: maintaining visual quality across 50+ screens, not just 5
+### go deep on this
 
-**Signature deliverable:** A 20-screen redesign of a real app or website, showing a consistent design system, an icon set, and a motion-annotated prototype. Published to Behance with before/after comparisons.
+- [ ] advanced layout and grid systems: 8-point grids, baseline grids, complex multi-column layouts
+- [ ] iconography: design a consistent icon set from scratch
+- [ ] illustration and data visualization
+- [ ] motion and animation: Figma smart animate, Framer free hobby tier
+- [ ] brand systems: extend a visual identity across multiple touchpoints
+- [ ] UI consistency at scale across 50+ screens, not just 5
 
-### Labs
+**signature deliverable:** a 20-screen redesign of a real app or website, showing a consistent design system, an icon set, and a motion-annotated prototype.
+publish it to Behance with before/after comparisons.
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Icon set design | Figma | Design a cohesive 24-icon set for a single app (consistent stroke weight, corner radius, and metaphor family) | **Free** |
-| [Daily UI](https://www.dailyui.co) continuation | Figma (email challenge) | Complete Days 11–50 with a consistent visual style across all 40 prompts — this builds a visual signature | **Free** |
-| Framer prototype | [Framer](https://www.framer.com) | Build a 5-screen hi-fi prototype with real motion transitions in the free hobby tier | Free (hobby) |
-| Brand extension exercise | Figma | Take any open-source brand (Wikipedia, an open-source project) and design a mobile app that extends the brand system | **Free** |
+| Icon set design | Figma | design a cohesive 24-icon set for one app, with consistent stroke weight, corner radius, and metaphor family | **Free** |
+| [Daily UI](https://www.dailyui.co) continuation | Figma/email | complete Days 11-50 with a consistent visual style across all 40 prompts | **Free** |
+| Framer prototype | [Framer](https://www.framer.com) | build a 5-screen hi-fi prototype with real motion transitions in the free hobby tier | Free (hobby) |
+| Brand extension exercise | Figma | take an open-source brand, like Wikipedia or an open-source project, and design a mobile app that extends the system | **Free** |
 
-**Practice gate:** you can describe the visual principles (grid, type scale, color, motion) of your current project and identify at least 3 places where you deliberately broke or bent a rule and why before moving on.
-
----
+**practice gate:** u can describe the grid, type scale, color, and motion principles of your current project, and identify 3 places where u deliberately bent a rule.
 
 ## Track C: UX Researcher
 
-**What it is:** a specialist role focused entirely on understanding users — planning studies, running research, synthesizing findings, and communicating insights that shape product direction. More common at larger companies. Smaller companies fold research into the Product Designer role.
+**what it is:** a specialist role focused on understanding users: planning studies, running research, synthesizing findings, and communicating insights.
+larger companies have this role more often.
+smaller companies fold research into Product Designer work.
 
-> **Honest entry note:** most junior researcher roles prefer candidates with a social science, psychology, or HCI background. That's not a hard wall — a strong portfolio of research artifacts can compensate — but know that the competition skews academic. Long-term demand for skilled researchers is solid because it's the hardest part to automate.
+**honest entry note:** most junior researcher roles prefer social science, psychology, or HCI background.
+thats not a hard wall, bc strong research artifacts can compensate, but competition skews academic.
+long-term demand is solid because this is the hardest part to automate.
 
-**What to go deep on:**
-- Research methodology: when to use qual vs quant, exploratory vs evaluative research, generative vs validation studies
-- Survey design: sampling strategy, question wording, analysis of Likert-scale data
-- Advanced usability testing: think-aloud protocol, eye-tracking basics (concept-level), remote vs in-person trade-offs
-- Data synthesis: thematic analysis, affinity mapping at scale, writing actionable insights (not just observations)
-- Research repositories: how teams share and reuse research findings
-- Communicating to skeptics: how to present qualitative findings to stakeholders who want numbers
+### go deep on this
 
-**Signature deliverable:** A research report for a real product — participant recruitment plan, study protocol, session recordings/notes (anonymized), affinity map, 5 prioritized insights with supporting evidence, and design recommendations. This is your research portfolio piece.
+- [ ] methodology: qual vs quant, exploratory vs evaluative, generative vs validation studies
+- [ ] survey design: sampling strategy, question wording, Likert-scale analysis
+- [ ] advanced usability testing: think-aloud protocol, eye-tracking basics, remote vs in-person trade-offs
+- [ ] synthesis: thematic analysis, affinity mapping at scale, actionable insights
+- [ ] research repositories: how teams share and reuse findings
+- [ ] communicating to skeptics who want numbers
 
-### Labs
+**signature deliverable:** a research report for a real product: participant recruitment plan, study protocol, anonymized notes, affinity map, 5 prioritized insights with supporting evidence, and design recommendations.
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Moderated usability study | Video call + FigJam | Conduct a 5-participant study on any real app; write a full report with methodology, synthesis, and 5 recommendations | **Free** |
-| Survey study | Google Forms | Design and run a 10-question survey (n≥20); analyze and present results — including what the survey *can't* tell you | **Free** |
-| Research report writing | Notion | Write a polished research report following the structure: background → method → participants → findings → recommendations | **Free** |
-| [Nielsen Norman Group free articles](https://www.nngroup.com/articles/) | Web | Read: "How to Analyze Qualitative Data," "Usability Testing 101," and "Survey Design" | **Free** |
+| Moderated usability study | video call + FigJam | run a 5-participant study on a real app and write a full report with methodology, synthesis, and 5 recommendations | **Free** |
+| Survey study | Google Forms | design and run a 10-question survey with n>=20, then analyze results and state what the survey cant tell u | **Free** |
+| Research report writing | Notion | write a polished report: background -> method -> participants -> findings -> recommendations | **Free** |
+| [Nielsen Norman Group free articles](https://www.nngroup.com/articles/) | Web | read "How to Analyze Qualitative Data," "Usability Testing 101," and "Survey Design" | **Free** |
 
-**Practice gate:** you can write a research report that a PM or designer could act on — with a clear methodology section, at least 5 supported insights, and explicit design recommendations — before moving on.
-
----
+**practice gate:** u can write a research report a PM or designer could act on, with clear method, 5 supported insights, and explicit recommendations.
 
 ## Track D: Content Designer / UX Writer
 
-**What it is:** a writing-focused UX role. Content designers write the words inside products — button labels, empty states, error messages, onboarding flows, tooltips, microcopy. The best content design is invisible: when the words are right, users just understand.
+**what it is:** a writing-focused UX role.
+content designers write the words inside products: button labels, empty states, error messages, onboarding flows, tooltips, microcopy.
+when the words are right, users just understand.
 
-> **Honest entry note:** this is a smaller field than product design. Fewer total roles, but less competition from bootcamp graduates because strong writing is genuinely rare. If writing is your native strength, this is a high-leverage path.
+**honest entry note:** this field is smaller than product design.
+there are fewer roles, but less competition from bootcamp graduates because strong writing is genuinely rare.
+if writing is your native strength, this can be a high-leverage path.
 
-**What to go deep on:**
-- Voice and tone: how a product's personality comes through in its words; the difference between voice (consistent) and tone (varies by context — onboarding ≠ error message)
-- Microcopy patterns: button labels (action-oriented, specific), error messages (what happened + what to do), empty states (clear CTA), confirmation dialogs (specific, not generic "Are you sure?")
-- Plain language: Flesch-Kincaid readability, writing for a 6th-grade reading level without being condescending
-- Content strategy basics: information hierarchy, progressive disclosure
-- Working with designers: annotating Figma files with copy, participating in design critique, proposing word changes in context
-- Inclusive language: writing that doesn't assume gender, ability, or geography
+### go deep on this
 
-**Signature deliverable:** A content audit and rewrite of a real product's onboarding flow — before/after screenshots in Figma with annotations explaining every copy change and the reasoning behind it.
+- [ ] voice and tone: voice stays consistent, tone changes by context
+- [ ] microcopy patterns: specific button labels, useful errors, clear empty states, non-generic confirmations
+- [ ] plain language: readable without being condescending
+- [ ] content strategy basics: information hierarchy and progressive disclosure
+- [ ] working with designers: annotate Figma files with copy, critique in context, propose word changes
+- [ ] inclusive language: avoid assumptions about gender, ability, or geography
 
-### Labs
+**signature deliverable:** a content audit and rewrite of a real product's onboarding flow, with before/after screenshots in Figma and annotations explaining every copy change.
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Error message rewrite | Figma | Find 10 real app error messages that are bad; redesign each in Figma with improved microcopy and a brief annotation | **Free** |
-| Onboarding flow audit | Figma | Sign up for any SaaS product; document the onboarding flow, audit every string for clarity and tone, and propose rewrites | **Free** |
-| Voice and tone guide | Notion | Write a 1-page voice and tone guide for an imaginary product: 3 personality traits, 3 do/don't word pairs, 3 tone examples by context | **Free** |
-| [Google's UX Writing Fundamentals](https://design.google/library) | Web | Read the UX writing articles in Google's design library | **Free** |
+| Error message rewrite | Figma | find 10 bad real app error messages and redesign each with better microcopy + annotation | **Free** |
+| Onboarding flow audit | Figma | sign up for any SaaS product, document onboarding, audit every string, and propose rewrites | **Free** |
+| Voice and tone guide | Notion | write a 1-page guide for an imaginary product: 3 traits, 3 do/dont pairs, 3 tone examples | **Free** |
+| [Google UX writing articles](https://design.google/library) | Web | read the UX writing articles in Google's design library | **Free** |
 
-**Practice gate:** you can rewrite 5 bad error messages into specific, actionable, plain-language alternatives and explain the reasoning for each word choice before moving on.
+**practice gate:** u can rewrite 5 bad error messages into specific, actionable plain-language alternatives and explain each word choice.
 
----
+## exit check
 
-## Phase 3 exit checklist
+- [ ] chose one track and can explain why it fits your strengths
+- [ ] completed all four labs for your chosen track
+- [ ] produced the signature deliverable for your track
+- [ ] can walk through your track's work verbally and clearly
+- [ ] identified the 2-3 portfolio case studies youll polish in Goal 4
 
-- [ ] Chose one track and can explain why it fits your strengths
-- [ ] Completed all four labs for your chosen track
-- [ ] Produced the signature deliverable for your track
-- [ ] Can walk through your track's work verbally and confidently
-- [ ] Identified the 2–3 portfolio case studies you'll polish in Phase 4
-
-Next: [Phase 4 — The Portfolio (the real hiring filter) →](04-projects.md)
+[Next: Goal 4 - Build Your Portfolio](04-projects.md)

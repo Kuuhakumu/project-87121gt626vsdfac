@@ -1,87 +1,89 @@
-# 📚 Resources — Cloud & DevOps (2026)
+# Resources - Cloud & DevOps meow
 
-> Free-first, current as of June 2026. Channels, courses, books, communities, and roadmaps.
-> No paid course is *required* to get hired — the free column covers the whole roadmap.
+> free-first, current as of June 2026.
+> no paid course is required to get hired; the free path covers the roadmap.
 
-[← Hub](README.md) · [Labs](labs.md) · [Interview Prep →](interview-prep.md)
+[Hub](README.md) - [Labs](labs.md) - [Interview Prep](interview-prep.md)
 
 ---
 
-## Free courses & learning paths
+- [ ] **use official docs as truth**
+- [ ] **use broad courses as backup**
+- [ ] **read optional books when useful**
+- [ ] **join communities carefully**
+- [ ] **stay current without chasing everything**
+- [ ] **skip dated advice**
+
+## broad free courses and learning paths
+
+these are broad resources. use them as backup or extra explanation, not as vague primary instructions unless a goal names an exact lesson.
 
 | Resource | Covers | Why |
 |---|---|---|
-| **freeCodeCamp (YouTube)** | AWS, Docker, K8s, Terraform, Linux — full multi-hour courses | The single best free firehose; full cert-prep courses |
-| **MS Learn** | Azure, fundamentals → associate | Official, free, with built-in sandboxes |
-| **AWS Skill Builder** | AWS services, some free digital courses | Straight from the source |
-| **Google Cloud Skills Boost** | GCP hands-on | Official GCP labs |
-| **KodeKloud (free tier)** | Docker, K8s, Terraform, CI/CD with browser labs | Lab-driven, beginner-friendly |
-| **The Net Ninja / TechWorld with Nana (YouTube)** | DevOps end-to-end, K8s, Docker, CI/CD | Nana's DevOps bootcamp video is a classic starting point |
-| **Roadmap.sh** | DevOps / Cloud / K8s visual roadmaps | Sanity-check what to learn next |
+| **freeCodeCamp YouTube** | AWS, Docker, K8s, Terraform, Linux | full free courses; **⚠️ TODO verify exact video before primary use** |
+| **MS Learn** | Azure fundamentals -> associate | official, free, sandboxed |
+| **AWS Skill Builder** | AWS services | source-of-truth AWS courses |
+| **Google Cloud Skills Boost** | GCP hands-on | official GCP labs |
+| **KodeKloud free tier** | Docker, K8s, Terraform, CI/CD | lab-driven |
+| **The Net Ninja / TechWorld with Nana YouTube** | DevOps, K8s, Docker, CI/CD | useful explainers; **⚠️ TODO verify exact playlist/video before primary use** |
+| **Roadmap.sh** | DevOps / Cloud / K8s maps | sanity-check whats next |
 
----
+## official docs
 
-## Official docs (your real source of truth)
+- [ ] **AWS:** docs.aws.amazon.com
+- [ ] **Azure:** learn.microsoft.com
+- [ ] **GCP:** cloud.google.com/docs
+- [ ] **Kubernetes:** kubernetes.io/docs
+- [ ] **Docker:** docs.docker.com
+- [ ] **Terraform:** developer.hashicorp.com/terraform
+- [ ] **OpenTofu:** opentofu.org
+- [ ] **Prometheus:** prometheus.io
+- [ ] **Grafana:** grafana.com/docs
+- [ ] **OpenTelemetry:** opentelemetry.io
+- [ ] **ArgoCD:** argo-cd.readthedocs.io
 
-- **AWS** — docs.aws.amazon.com · **Azure** — learn.microsoft.com · **GCP** — cloud.google.com/docs
-- **Kubernetes** — kubernetes.io/docs (the tutorials are excellent)
-- **Docker** — docs.docker.com
-- **Terraform** — developer.hashicorp.com/terraform · **OpenTofu** — opentofu.org
-- **Prometheus** — prometheus.io · **Grafana** — grafana.com/docs · **OpenTelemetry** — opentelemetry.io
-- **ArgoCD** — argo-cd.readthedocs.io
+when YouTube and docs disagree, trust docs. videos go stale fast in cloud.
 
-> When a YouTube tutorial and the official docs disagree, trust the docs — videos go stale, especially on fast-moving tools (Helm v3→v4, Vault v1→v2).
-
----
-
-## Books (optional, high-signal)
+## books
 
 | Book | For |
 |---|---|
-| *The Phoenix Project* (Kim et al.) | **Why** DevOps exists — narrative, read it early |
-| *The DevOps Handbook* | The practices behind the story |
-| *Site Reliability Engineering* (Google, **free online**) | SRE mindset — sre.google/books |
-| *Terraform: Up & Running* (Brikman) | IaC depth once you know basics |
+| *The Phoenix Project* | why DevOps exists |
+| *The DevOps Handbook* | practices behind the story |
+| *Site Reliability Engineering* | free Google SRE mindset book |
+| *Terraform: Up & Running* | IaC depth after basics |
 | *Kubernetes Up & Running* | K8s mental model |
 
----
+## communities
 
-## Communities
+- [ ] **r/devops**, **r/aws**, **r/kubernetes**
+- [ ] **CNCF Slack**
+- [ ] **HashiCorp Discuss**
+- [ ] **DevOps / Platform Engineering Discords**
+- [ ] **Dev.to / Hashnode** for project writeups
 
-- **r/devops**, **r/aws**, **r/kubernetes** (Reddit) — real job-market talk, "is this cert worth it" threads
-- **CNCF Slack** — Kubernetes/cloud-native, where maintainers hang out
-- **HashiCorp Discuss** — Terraform/Vault questions
-- **DevOps / Platform Engineering Discords** — pairing, project feedback
-- **Dev.to / Hashnode** — write up your projects; a public build log is portfolio signal
+referrals beat cold applications. answer questions, share labs, and be specific.
 
-> Referrals beat cold applications. Being active in these communities — answering questions, sharing your labs — is how those referrals happen.
-
----
-
-## Stay current (2026 stack)
-
-The field moves fast. Keep an eye on these so your knowledge stays current:
+## stay current
 
 | Topic | What changed recently |
 |---|---|
-| **IaC** | OpenTofu (MPL-2 fork) is now a real choice alongside Terraform (BSL) |
-| **Helm** | **v4** has breaking changes — avoid v3-era tutorials |
-| **Observability** | **OpenTelemetry** is the standard now, not "rising" — de-emphasize ELK-default |
-| **Secrets** | Cloud-native first (Secrets Manager / Key Vault); Vault **v2.0** for self-hosted |
-| **Platform Engineering** | "Internal developer platforms" (Backstage) replacing "the DevOps team does everything" |
-| **AIOps** | Use AI to generate/explain config — but be able to read & debug it. Judgment > generation |
+| **IaC** | OpenTofu is real alongside Terraform |
+| **Helm** | v4 has breaking changes |
+| **Observability** | OpenTelemetry is standard now |
+| **Secrets** | cloud-native first; Vault v2.0 for self-hosted |
+| **Platform Engineering** | internal developer platforms replacing ticket-driven DevOps |
+| **AIOps** | use AI for config/log help, but keep debugging judgment |
+
+## skip dated advice
+
+- [ ] Jenkins-first -> start with GitHub Actions
+- [ ] raw CloudFormation first -> Terraform/OpenTofu transfers better
+- [ ] ELK as default observability -> OTel -> Prometheus -> Grafana
+- [ ] Nagios first -> Prometheus + Grafana
+- [ ] Chef/Puppet primary -> Ansible + IaC
+- [ ] full cloud K8s before local -> kind/k3s/minikube first
 
 ---
 
-## What to skip (dated advice you'll still see online)
-
-- **Jenkins-first** → start with **GitHub Actions**
-- **Raw CloudFormation over Terraform** for learning → Terraform/OpenTofu transfers across clouds
-- **ELK as the default observability stack** → OTel → Prometheus → Grafana
-- **Nagios** → Prometheus + Grafana
-- **Chef/Puppet as your primary config tool** → Ansible (and IaC)
-- **Standing up full cloud k8s clusters before local** → kind/k3s/minikube first
-
----
-
-*Last verified: June 2026. Links and versions drift — confirm on the official site. Sources in [/research](../../research/).*
+*Last verified: June 2026. Links and versions drift - confirm on the official site. Sources in [/research](../../research/).*

@@ -1,142 +1,169 @@
-# 💼 Phase 5: Breaking Into IT Management
+# Goal 5: breaking into IT management meow
 
-> **ongoing** · the most strategic phase of this guide
-> There is no "entry-level IT manager" door. Read this before you apply anywhere.
+> **ongoing** - the most strategic goal in this guide.
+> there is no "entry-level IT manager" door. read this before applying anywhere.
 
-[← Phase 4](04-projects.md) · [Hub](README.md) · [Beyond Entry-Level →](beyond-entry.md)
-
----
-
-## The hard truth about breaking in (read this first)
-
-**IT Manager is a destination, not an entry point.** Almost no one gets hired as an IT manager with zero experience — the role exists to lead people, own budgets, and carry accountability for services and risk. You earn it by demonstrating capability in an adjacent role first, then stepping up.
-
-> This isn't gatekeeping for its own sake. A weak IT manager can stall an entire function, blow a budget, or mishandle a major incident. Companies hire defensively for these roles — they want evidence you can carry the accountability before they hand it to you.
-
-The good news: the path is well-trodden and predictable. You don't need to "break in" so much as **build toward** the role from one of four on-ramps.
+[Previous: Goal 4](04-projects.md) - [Hub](README.md) - [Beyond Entry-Level](beyond-entry.md)
 
 ---
 
-## The four on-ramps (ranked by how most people actually get there)
+- [ ] **choose the right on-ramp**
+- [ ] **position the transition**
+- [ ] **target the right employers**
+- [ ] **prepare application materials**
+- [ ] **prep management interviews**
+- [ ] **understand the timeline**
 
-### 1. The Service / Operations track (most common)
+## the hard truth
 
-```
+IT Manager is a destination, not an entry point.
+almost no one gets hired as an IT manager with zero experience.
+the role leads people, owns budgets, and carries service/risk accountability.
+u earn it by demonstrating capability in an adjacent role first.
+
+this is not gatekeeping for its own sake.
+a weak IT manager can stall a function, blow a budget, or mishandle a major incident.
+companies want evidence before handing over accountability.
+
+the path is predictable.
+u dont "break in" cold as much as **build toward** the role from one of four on-ramps.
+
+## on-ramp 1: Service / Operations
+
+```text
 Service Desk Analyst / IT Support Technician
-    → Senior Support / Tier 2–3
-    → Team Lead (first line management)
-    → IT Service Delivery Manager / IT Operations Manager
-    → Head of IT / IT Director
+  -> Senior Support / Tier 2-3
+  -> Team Lead
+  -> IT Service Delivery Manager / IT Operations Manager
+  -> Head of IT / IT Director
 ```
 
-This is the most-travelled path into IT management. You enter via a [help-desk or support role](../it-support-networking/), prove you can own problems (not just close tickets), and get handed a team lead role — your first management rung.
+most-traveled path.
+enter via [IT Support & Networking](../it-support-networking/), prove u can own problems, then become team lead.
 
-**How to set it up from a support role:**
-- Volunteer to own a process (the onboarding checklist, the major-incident comms, the asset inventory)
-- Be the person who writes the runbook nobody else will
-- Track and present a metric (ticket trends, MTTR) to your manager unprompted
-- Say explicitly that you want to move into management, and ask what gaps to close
+how to set it up:
 
-**Entry credential:** ITIL 4 Foundation (or v5) signals you speak the service-management language.
+- [ ] own a process: onboarding checklist, incident comms, asset inventory
+- [ ] write the runbook nobody else will
+- [ ] track and present a metric unprompted
+- [ ] tell your manager u want management and ask what gaps to close
 
-### 2. The Project track
+entry credential: ITIL 4 Foundation or v5.
 
-```
+## on-ramp 2: Project track
+
+```text
 Business Analyst / Project Coordinator
-    → Project Manager (CAPM → PMP)
-    → Senior PM / Program Manager
-    → PMO Director / Head of Delivery
+  -> Project Manager (CAPM -> PMP)
+  -> Senior PM / Program Manager
+  -> PMO Director / Head of Delivery
 ```
 
-If you like delivery over operations, you can enter via a project coordinator or BA role and grow into project management. This track has the clearest credential ladder (CAPM then PMP) and the most transferable skill set across industries.
+fits delivery-minded people.
+get onto a project team, learn the methodology, ask to own a small workstream.
+CAPM signals intent while u build PMP experience months.
 
-**How to set it up:** get onto a project team in any capacity, learn the delivery methodology your org uses, and ask to own a small workstream. CAPM (no experience prerequisite) signals intent while you accumulate the project-leadership months PMP requires.
+## on-ramp 3: Technical / Architecture
 
-### 3. The Technical / Architecture track
-
-```
+```text
 Sysadmin / Developer / Network Engineer
-    → Senior Technical Role
-    → Technical Lead / Architect
-    → Enterprise Architect (TOGAF) → IT Governance / Strategy Lead
+  -> Senior Technical Role
+  -> Technical Lead / Architect
+  -> Enterprise Architect
+  -> IT Governance / Strategy Lead
 ```
 
-Strong technical individual contributors move into management two ways: into **people management** (leading the team they were on) or into **architecture/governance** (TOGAF, COBIT). This path trades some hands-on depth for breadth and influence.
+technical ICs move into people management or architecture/governance.
+take tech-lead responsibilities before the title: mentoring, design review, planning.
+if governance pulls u, start with COBIT and TOGAF overview.
 
-**How to set it up:** take the tech-lead responsibilities (mentoring, design review, planning) before the title. If you lean governance, start with the COBIT 2019 intro and a TOGAF overview.
+## on-ramp 4: Business / Graduate
 
-### 4. The Business / Graduate track (less technical)
+MBA, consulting, or business analyst into IT governance, vendor management, or strategy.
+lighter on deep technical work, heavier on portfolio management.
+pair business credibility with enough IT literacy to be taken seriously.
 
-Some enter via an MBA, a management-consulting background, or a business-analyst role, then specialize into IT governance, vendor management, or IT strategy. This path often skips deep technical work and moves toward portfolio management and governance.
+## positioning a transition
 
-**How to set it up:** pair business credibility with enough IT literacy to be taken seriously — the foundations and core phases of this guide are designed exactly for that.
+whatever your on-ramp, management is a repositioning, not a cold application.
 
----
+1. **Do the work before the title.** own process, lead initiative, mentor someone.
+2. **Make intent known.** tell your manager and skip-level u want management. ask what would make them say yes.
+3. **Build artifacts.** bring the [Goal 4 portfolio](04-projects.md): service catalog, post-mortem, 90-day plan, business case.
+4. **Target internal first.** internal promotion is highest probability because trust already exists.
 
-## Positioning a transition (the universal move)
+internal transfer dominates because u already have domain knowledge, relationships, and credibility.
+an external first-time manager is a risk.
+an internal proven performer is safer.
 
-Whatever your on-ramp, the move into management is a **repositioning**, not a cold application. The pattern that works:
+## targeting employers
 
-1. **Do the work before the title.** Own a process, lead an initiative, mentor someone — accumulate evidence you're already operating a level up.
-2. **Make your intent known.** Tell your manager and skip-level you want to move into management. Ask what specifically would make them say yes. Most internal promotions start with this conversation.
-3. **Build the artifacts.** Your [Phase 4 portfolio](04-projects.md) — service catalog, post-mortem, 90-day plan, business case — is the proof. Bring it to the conversation.
-4. **Target the internal move first.** The single highest-probability path to a first management role is being promoted on a team that already trusts you. Internal beats external for the first step almost every time.
+region-agnostic strategy:
 
-> **Why internal transfer dominates:** you already have the domain knowledge, the relationships, and the credibility. An external IT-manager hire is a big risk for a company; an internal promotion of a proven performer is a safe one. Optimize for being that safe choice where you already are.
+- [ ] **MSPs:** many IT management roles, fast exposure, good stepping-stone.
+- [ ] **Mid-size companies (100-1,000 staff):** sweet spot for first IT manager role.
+- [ ] **Enterprise:** more specialized and credential-gated.
+- [ ] **Startups:** possible early Head of IT, huge ownership, little mentorship.
 
----
+referrals beat cold applications for leadership roles.
+build relationships in [r/ITManagers](https://www.reddit.com/r/ITManagers/), PMI/ISACA chapters, ITIL forums, and your current org.
 
-## Targeting the right employers
+this guide does not list job boards or salary figures.
+those go stale fast and vary by country.
 
-Region-agnostic strategy — adapt to your own local market:
+## application materials
 
-- **MSPs (Managed Service Providers):** high volume of IT management roles; fast exposure to many environments; common stepping-stone to a senior internal role.
-- **Mid-size companies (100–1,000 staff):** the sweet spot for a *first* IT manager role — big enough to need management, small enough that you wear several hats and get broad ownership.
-- **Enterprise:** more specialized roles (you'll manage one slice — service desk, or a project portfolio, or a platform), more credential-gated (PMP, ITIL, CGEIT show up as requirements).
-- **Startups:** you might become "Head of IT" early with a tiny team — huge ownership, little mentorship, fast learning.
+### resume
 
-**Finding openings (works anywhere):** referrals from your network beat cold applications by a wide margin for management roles — leadership hires lean heavily on trust. Build relationships in communities ([r/ITManagers](https://www.reddit.com/r/ITManagers/), local PMI/ISACA chapters, ITIL forums). Treat your existing employer as the warmest lead.
+- [ ] lead with outcomes and scope, not tasks
+- [ ] show management signals: processes owned, people mentored, budgets influenced, projects led
+- [ ] put portfolio URL under a Portfolio heading
+- [ ] call out frameworks/certs the target role asks for
 
-> This guide does not list specific job boards or salary figures — those vary by country and go stale fast. Use your local job boards and salary surveys, and lean on referrals and internal moves regardless of region.
+example:
+`Reduced P1 MTTR 30% by introducing an on-call rotation`
+beats:
+`responsible for incident response`
 
----
+### cover letter / pitch
 
-## Your application materials
+state which on-ramp youre coming from and why youre ready.
+include one concrete piece of evidence: initiative, artifact, process, or outcome.
 
-**Resume for a management transition:**
-- Lead with **outcomes and scope**, not tasks: "Reduced P1 MTTR 30% by introducing an on-call rotation" beats "responsible for incident response."
-- Show the management signals even before the title: processes you owned, people you mentored, budgets you influenced, projects you led.
-- Put your **portfolio URL** under a Portfolio heading — a single link to your Notion/Confluence index.
-- Call out the relevant frameworks and certs (ITIL, PMP, COBIT) the target role asks for.
+## interview overview
 
-**Cover letter / pitch:** state which on-ramp you're coming from and why you're ready for the step up, with one concrete piece of evidence (an initiative you led, an artifact you'll show).
+IT management interviews are behavioral and scenario-heavy, not trivia.
 
----
+expect:
 
-## Interview overview
+- [ ] **Behavioral / STAR:** conflict, missed deadline, underperformer.
+- [ ] **Scenario / incident:** P1 outage during first week.
+- [ ] **Budget / prioritization:** one budget, three initiatives.
+- [ ] **30/60/90:** how u approach first 90 days.
+- [ ] **Why management?:** especially from technical IC background.
 
-IT management interviews are **behavioral and scenario-heavy**, not technical trivia. Expect:
-- **Behavioral / STAR:** "Tell me about a time you handled a conflict / a missed deadline / an underperformer."
-- **Scenario / incident:** "A P1 outage hits during your first week — walk me through what you do."
-- **Budget / prioritization cases:** "You have budget for one of three initiatives — how do you decide?"
-- **The 30/60/90 question:** "How would you approach your first 90 days?" (your Phase 4 plan is the answer)
-- **"Why management?":** especially if you're coming from a technical IC role — they're probing whether you understand the shift.
+full question bank: [interview-prep.md](interview-prep.md).
 
-Full formats, a question bank, and STAR prompts are in **[interview-prep.md](interview-prep.md)**.
-
----
-
-## A realistic timeline
+## realistic timeline
 
 | From | To first management role | Notes |
 |---|---|---|
-| Support / service desk | 2–4 years | Team lead is the first rung |
-| Project coordinator / BA | 2–4 years | CAPM early, PMP once you qualify |
-| Technical IC (sysadmin/dev) | 3–5 years | Tech lead before manager |
-| Career switcher (no IT) | Do the foundations first | Land an adjacent role, then follow one of the above |
+| Support / service desk | 2-4 years | Team lead is first rung |
+| Project coordinator / BA | 2-4 years | CAPM early, PMP later |
+| Technical IC | 3-5 years | Tech lead before manager |
+| Career switcher with no IT | foundations first | land adjacent role, then on-ramp |
 
-> If you're switching into IT entirely, your first move isn't "IT manager" — it's landing an adjacent role (support, coordinator, analyst) and then following the on-ramp. The foundations and core phases of this guide prepare you for that adjacent role and accelerate the climb once you're in.
+if youre switching into IT entirely, first move is not "IT manager."
+land an adjacent role, then follow the on-ramp.
+the foundations and core goals accelerate the climb once youre in.
 
----
+## exit check
 
-Next: [Beyond Entry-Level — the climb to Director and CIO →](beyond-entry.md)
+- [ ] i chose my on-ramp and can explain why it fits my current background
+- [ ] i identified one internal or adjacent-role move that could start the path
+- [ ] i have at least 4 portfolio artifacts from Goal 4
+- [ ] my resume shows outcomes and scope, not just tasks
+- [ ] i can explain "why management?" without sounding like im escaping IC work
+- [ ] i prepared at least 6 STAR stories for management interviews
+
+[Next: Beyond Entry-Level](beyond-entry.md)

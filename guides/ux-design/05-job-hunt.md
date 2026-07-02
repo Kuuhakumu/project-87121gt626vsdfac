@@ -1,136 +1,146 @@
-# 💼 Phase 5: Portfolio & Job Hunt
+# Goal 5: portfolio site and job hunt meow
 
-> **ongoing** · your pace, no deadline
-> Build the portfolio *as you learn* — don't wait until the end to start applying. The last 50 hours of this guide and every hour after go here.
+> **ongoing** - your pace, no deadline.
+> goal: make the portfolio readable, practice the interview formats, and target roles strategically.
+> dont wait until everything feels perfect. UX job hunt is iteration too.
 
-[← Phase 4](04-projects.md) · [Hub](README.md) · [Beyond Entry-Level →](beyond-entry.md)
+[Previous: Goal 4](04-projects.md) - [Hub](README.md) - [Beyond Entry-Level](beyond-entry.md)
 
 ---
 
-## The honest entry reality (read this first)
+- [ ] **understand the entry reality**
+- [ ] **tighten the portfolio site**
+- [ ] **write case studies that get read**
+- [ ] **practice interview formats**
+- [ ] **target roles instead of spraying**
+- [ ] **keep building while applying**
+- [ ] **exit check** - portfolio live, walkthrough practiced, targeted applications started
 
-> The 2020–2022 UX bootcamp boom produced a large cohort of graduates at once. Tech layoffs in 2022–2024 pushed experienced designers back into the junior pool. The result: entry-level UX is genuinely competitive. That's not a reason to bail — it's a reason to have a portfolio that's actually good, not just complete.
+## the honest entry reality
 
-Realistic on-ramps in 2026:
+the 2020-2022 UX bootcamp boom produced a large cohort of graduates at once.
+tech layoffs in 2022-2024 pushed experienced designers back into the junior pool.
+entry-level UX is genuinely competitive.
+thats not a reason to bail.
+it means your portfolio needs to be actually good, not just complete.
 
+realistic on-ramps in 2026:
+
+```text
+internal transfer: customer support, QA, PM, writing -> UX. fastest if youre already employed.
+agency / studio: real project volume, mentorship, faster portfolio building.
+in-house at non-tech companies: healthcare, finance, retail, gov. less glamorous, real work.
+direct entry via exceptional portfolio: harder but real if the case studies show genuine process.
 ```
-Internal transfer (customer support, QA, PM, writing → UX) — fastest path if you're already employed
-Agency / studio (volume of real projects, mentorship, faster portfolio building)
-In-house at non-tech companies (healthcare, finance, retail, gov — less glamorous, real work, less competition)
-Direct entry via exceptional portfolio (harder but real — the bar is 3+ case studies that show genuine process)
-```
 
-> **"Entry-level" is not what the posting says.** Many postings titled "Junior Designer" ask for 2–3 years of experience. This is industry-wide dishonesty — don't treat it as rejection data. Apply anyway if your portfolio is strong. Target roles where the *work* is clearly scoped for a junior (1 product team, defined mentorship, clear feedback loops).
+"entry-level" is not always what the posting says.
+many junior postings ask for 2-3 years of experience.
+apply anyway if your portfolio is strong and the work itself is junior-scoped: one product team, mentorship, clear feedback loops.
 
----
+## your portfolio site
 
-## Your portfolio site
+this is your application.
+get it clear before u get fancy.
 
-This is your application. Get it right.
+### what it needs
 
-**What it needs:**
-- A clear headline: who you are and what you do (`Product Designer | UX Research & Systems · Based in [city] · Open to remote`)
-- 3–4 case studies — linked from the homepage with a thumbnail and a one-sentence description of the problem you solved
-- An "About" page that's a real person, not a LinkedIn summary
-- A working contact method (email, LinkedIn, or a form)
-- Fast load time and mobile-readable layout
+- [ ] clear headline: `Product Designer | UX Research & Systems | Based in [city] | Open to remote`
+- [ ] 3-4 case studies linked from the homepage with a thumbnail and one-sentence problem
+- [ ] an About page that sounds like a real person, not a LinkedIn summary
+- [ ] working contact method: email, LinkedIn, or form
+- [ ] fast load time and mobile-readable layout
 
-**What to avoid:**
-- Auto-playing animations that block the case study
-- Password-protecting your work without providing the password in the application
-- Listing tools as your personality (every junior portfolio says "Figma · Figjam · Miro · Notion")
-- A portfolio that only works on desktop
+### what to avoid
 
-**Hosting options (recap from Phase 4):**
-- [Behance](https://www.behance.net) — free, SEO-friendly, case-study format built-in
-- [Framer](https://www.framer.com) — free hobby tier with enough for a portfolio; ~$10/mo for a custom domain
-- Notion (with super.so or notion.site) — works for text-heavy researchers
+- [ ] auto-playing animations that block the case study
+- [ ] password-protecting work without giving the password in the application
+- [ ] listing tools as your personality
+- [ ] desktop-only portfolio layouts
 
----
+### hosting options
 
-## Writing case studies that get read
+- [Behance](https://www.behance.net) - free, SEO-friendly, built-in case-study format.
+- [Framer](https://www.framer.com) - free hobby tier; custom domain costs extra.
+- Notion with super.so or notion.site - works for text-heavy researchers.
 
-Hiring managers spend 2–4 minutes on a portfolio before deciding whether to move forward. Structure case studies so the first screen answers: *what problem, what role, what outcome.*
+## writing case studies that get read
 
-**The structure that works:**
-1. **Hero shot** — the finished design (yes, show the end first — it earns the scroll)
-2. **TL;DR block** — problem / my role / outcome in 3 bullets
-3. **The problem** — where did it come from? What were you trying to solve?
-4. **Research** — what you did, what you found (show artifacts: affinity maps, quotes, test clips)
-5. **Design decisions** — show 2–3 key decision moments with alternatives you considered and why you chose what you chose
-6. **Outcome / results** — usability test results, a before/after comparison, a metric, or honest reflection
-7. **What's next** — what would you tackle in the next iteration?
+hiring managers often spend **2-4 minutes** on a portfolio before deciding whether to continue.
+the first screen should answer: what problem, what role, what outcome.
 
-> **Write in plain English.** "I leveraged human-centered design methodologies to ideate solutions" says nothing. "I ran 5 usability tests and found that users couldn't find the checkout button" says something.
+structure that works:
 
----
+1. **Hero shot** - the finished design. yes, show the end first. it earns the scroll.
+2. **TL;DR block** - problem, your role, outcome.
+3. **The problem** - where did it come from? what were u solving?
+4. **Research** - what u did, what u found. show affinity maps, quotes, clips.
+5. **Design decisions** - 2-3 key decision moments, alternatives considered, why u chose this direction.
+6. **Outcome / results** - usability test results, before/after, metric, or honest reflection.
+7. **Whats next** - what the next iteration would tackle.
 
-## Interview formats you'll face
+write in plain English.
+"i ran 5 usability tests and found users couldnt find checkout" says more than "i leveraged human-centered design methodologies."
+
+## interview formats youll face
 
 | Format | What it is | How to prepare |
 |---|---|---|
-| **Portfolio review** | You walk through 1–2 case studies; interviewer asks follow-up questions | Practice your 5-minute case study walkthrough until it's effortless. Prepare for "why did you choose X over Y?" on every decision. |
-| **App critique / whiteboard** | "Walk us through how you'd improve [product]" | Use a structure: clarify the problem → identify user type → pick one problem area → propose one solution → trade-offs. See [interview-prep.md](interview-prep.md). |
-| **Take-home design exercise** | 48–72 hours to solve a design brief | Time-box it. A focused 6-hour solution with clear rationale beats a sprawling 20-hour one with no decisions. Show process in your submission, not just output. |
-| **Design systems / component exercise** | Build or extend a component in Figma live or take-home | Show variants, states, tokens, and accessibility compliance — not just the visual. |
-| **Behavioral / culture fit** | STAR-format questions | See [interview-prep.md](interview-prep.md) for the full question bank. |
+| **Portfolio review** | walk through 1-2 case studies and answer follow-ups | practice a 5-minute walkthrough. prepare for "why X over Y?" on every decision. |
+| **App critique / whiteboard** | improve or critique a product | clarify problem -> identify user -> pick one problem -> propose one solution -> name trade-offs. see [interview-prep.md](interview-prep.md). |
+| **Take-home design exercise** | 48-72 hours to solve a brief | time-box it. focused 6-hour solution with clear rationale beats a 20-hour sprawl. |
+| **Design systems / component exercise** | build or extend a component in Figma | show variants, states, tokens, and accessibility compliance. |
+| **Behavioral / culture fit** | STAR-format questions | use [interview-prep.md](interview-prep.md) for the question bank. |
 
----
+## finding and targeting roles
 
-## Finding and targeting roles (region-agnostic)
+same strategic approach works anywhere:
 
-The same strategic approach works anywhere:
+- [ ] **widen the company list** - SaaS, fintech, healthcare, e-commerce, government digital services, NGOs, agencies.
+- [ ] **use employer fit** - agencies are junior-friendlier; enterprise has mentorship but more competition; non-tech in-house can be less crowded.
+- [ ] **referrals beat cold applications** - stay visible in ADPList, r/UXDesign, LinkedIn, local meetups.
+- [ ] **filter for remote when local market is thin** - product design can be remote-friendly at junior level.
+- [ ] **target, dont spray** - 20 tailored applications beat 200 cold submissions.
 
-**1. Every company with a product hires designers** — not just tech. SaaS, fintech, healthcare, e-commerce, government digital services, NGOs, agencies. Widen your target list.
-
-**2. Employer types by profile:**
-
-| Employer type | Junior-friendliness | What you'll work on |
+| Employer type | Junior-friendliness | What youll work on |
 |---|---|---|
-| **Agencies / studios** | High — volume of client work, faster portfolio building | Multiple projects, varied domains, less product depth |
-| **Early-stage startups** | High — will hire junior if you fill a gap | Broad scope, minimal mentorship, high risk/reward |
-| **Mid-size product companies** | Medium — varies by team maturity | Real product, some mentorship, more process |
-| **Large enterprise** | Lower — more competition, often wants experience | Clear process, mentorship programs, slower pace |
-| **Non-tech in-house** | Medium — less competition from bootcamp grads | Real users, real constraints, often more interesting problems |
-| **Government / civic tech** | Medium — often formal, sometimes slow hiring | Accessibility-critical, meaningful impact |
+| **Agencies / studios** | high | multiple projects, varied domains, less product depth |
+| **Early-stage startups** | high | broad scope, minimal mentorship, high risk/reward |
+| **Mid-size product companies** | medium | real product, some mentorship, more process |
+| **Large enterprise** | lower | clear process, mentorship programs, slower pace |
+| **Non-tech in-house** | medium | real users, real constraints, less bootcamp competition |
+| **Government / civic tech** | medium | accessibility-critical work, formal hiring |
 
-**3. Referrals beat cold applications.** Stay visible in communities (ADPList, r/UXDesign, LinkedIn, local design meetups). Share work-in-progress on Behance/Dribbble. Connect with designers doing the work you want.
+## when youre not getting responses
 
-**4. Filter for remote** if your local market is thin — product design is fairly remote-friendly at junior level, especially at distributed startups.
+- [ ] audit your portfolio first with [ADPList](https://adplist.org) mentors
+- [ ] check whether each case study has a clear problem and outcome
+- [ ] review whether the roles are truly junior, or all asking for 3+ years
+- [ ] consider adjacent roles: UX writing, UX research assistant, associate PM, design operations
 
-**5. Target, don't spray.** 20 tailored applications with a portfolio piece relevant to each employer beat 200 cold submissions.
+dont stop building while job hunting.
+a new case study or Daily UI streak gives u fresh work to show and fresh things to say in interviews.
 
----
+## the AI tools question in 2026
 
-## What to do when you're not getting responses
+u will be asked: **"How do you use AI in your design work?"**
 
-- Audit your portfolio first: get honest feedback from [ADPList](https://adplist.org) mentors (free 1:1s with working designers)
-- Check if your case studies have a clear problem statement and a clear outcome (most early portfolios don't)
-- Look at the roles you're applying to — are they genuinely junior, or do they all list 3+ years?
-- Consider adjacent roles: UX writing, UX research assistant, associate PM, or design operations — and pivot once inside
+good answer:
 
-> **Don't stop building.** The best thing you can do while job hunting is a new case study or a Daily UI streak. Active learning signals are visible on Behance/Dribbble and give you something to talk about in interviews.
+> "I use generative tools to explore visual directions faster: reference images, color palette starting points, icon variations. I use LLMs to draft copy for error states and empty states, then edit for the product's voice. I treat AI output as a starting point, not a final answer. Design decisions still need user evidence behind them."
 
----
+dont claim deep prompt engineering mastery unless youve actually done it.
+dont pretend AI doesnt exist.
+every design team uses these tools in 2026.
+the real skill is judgment: knowing when AI output is good enough and when its wrong.
 
-## The AI tools question (2026)
+## exit check
 
-You will be asked: *"How do you use AI in your design work?"*
+- [ ] portfolio site live with 3-4 case studies
+- [ ] each case study shows problem -> research -> decisions -> outcome on the first scroll
+- [ ] practiced 5-minute walkthrough of your strongest case study
+- [ ] practiced app-critique format with [interview-prep.md](interview-prep.md)
+- [ ] applied to at least 20 targeted roles across employer types
+- [ ] got at least one ADPList mentor review of your portfolio
+- [ ] active on Behance or Dribbble with recent work
 
-Good answer: *"I use generative tools to explore visual directions faster — reference images, color palette starting points, icon variations. I use LLMs to draft copy for error states and empty states, then edit for the product's voice. I treat AI output as a starting point, not a final answer — design decisions still need user evidence behind them."*
-
-Don't claim deep prompt engineering mastery unless you've actually done it. Don't pretend AI doesn't exist — every design team uses these tools in 2026. The real skill is judgment: knowing when AI output is good enough and when it's wrong.
-
----
-
-## Phase 5 exit checklist
-
-- [ ] Portfolio site live with 3–4 case studies
-- [ ] Each case study: problem → research → decisions → outcome on the first scroll
-- [ ] Practiced 5-minute walkthrough of your strongest case study
-- [ ] Practiced app-critique format (see [interview-prep.md](interview-prep.md))
-- [ ] Applied to at least 20 targeted roles across employer types
-- [ ] At least one ADPList mentor review of your portfolio
-- [ ] Active on Behance or Dribbble with recent work
-
-Next: [Beyond Entry-Level — Senior tracks, design systems, research leads →](beyond-entry.md)
+[Next: Beyond Entry-Level](beyond-entry.md)

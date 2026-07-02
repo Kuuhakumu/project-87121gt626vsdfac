@@ -1,89 +1,88 @@
-# 🧱 Phase 1: Foundations
+# Goal 1: foundations meow
 
-> **~140 hrs total** · your pace, no deadline
-> Hardware, operating systems, the network stack, and the command line. This is the bedrock every help-desk and networking role is built on — and most of CompTIA A+.
+> **~140h total** - your pace, no deadline.
+> hardware, operating systems, network stack, and command line.
+> this is most of CompTIA A+ and the bedrock for help desk/networking.
 
-[← Phase 0](00-prep.md) · [Hub](README.md) · [Next: Phase 2 →](02-core.md)
+[Previous: Goal 0](00-prep.md) - [Hub](README.md) - [Next: Goal 2](02-core.md)
 
 ---
 
-## Hardware & operating systems (~40 hrs)
+- [ ] **hardware and operating systems** (~40h)
+- [ ] **networking fundamentals** (~50h)
+- [ ] **command line and scripting first steps** (~50h)
+- [ ] **exit check** - hardware, Windows/Linux, troubleshooting method, subnet/DNS/DHCP, PowerShell basics
 
-If you can't take it apart mentally, you can't support it. This block is the heart of **A+ Core 1**.
+## hardware and operating systems (~40h)
 
-### What to cover
-- **PC internals:** CPU, RAM, storage (HDD vs SSD vs NVMe), motherboard, PSU, GPU — what each does and common failure symptoms
-- **Peripherals & connectors:** USB-C/Thunderbolt, HDMI/DisplayPort, RJ45, the modern port zoo
-- **Mobile & laptop:** field-replaceable parts, docking, display issues
-- **Operating systems:** Windows 11 (primary), macOS, and a first taste of Linux — install, update, user accounts, permissions
-- **Printers & peripherals:** the classic help-desk ticket — drivers, queues, connectivity
-- **The troubleshooting method:** identify → theory → test → plan → resolve → document. Memorize the CompTIA 6 steps; interviewers ask.
+if u cant take it apart mentally, u cant support it. this is the heart of **A+ Core 1**.
 
-### Labs
+- [ ] PC internals: CPU, RAM, storage, motherboard, PSU, GPU
+- [ ] connectors: USB-C/Thunderbolt, HDMI/DisplayPort, RJ45
+- [ ] mobile/laptop parts, docking, display issues
+- [ ] Windows 11, macOS, and first Linux install/update/user/permission basics
+- [ ] printers: drivers, queues, connectivity
+- [ ] CompTIA troubleshooting method: identify -> theory -> test -> plan -> resolve -> document
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Professor Messer A+ Core 1](https://www.professormesser.com) | Video | Full free A+ Core 1 course | **Free** |
-| [VirtualBox](https://www.virtualbox.org) | Local | Install Windows/Linux VMs, break & fix safely | **Free** |
-| PC build simulator | Web | Practice assembling a PC without hardware | **Free** |
+| Professor Messer A+ Core 1 | Web/video | full free A+ Core 1 course | **Free** - **⚠️ TODO verify exact V15 Core 1 link** |
+| [VirtualBox](https://www.virtualbox.org) | Local | install Windows/Linux VMs, break and fix safely | **Free** |
+| PC build simulator | Web | practice assembling a PC without hardware | **Free** - **⚠️ TODO verify exact simulator** |
 
-> **No spare PC?** A $0 VirtualBox VM teaches 80% of OS troubleshooting. A junked desktop from anywhere teaches the hardware half — ask around, people give them away.
+no spare PC? VirtualBox teaches most OS troubleshooting. a junk desktop teaches the hardware half.
 
----
+## networking fundamentals (~50h)
 
-## Networking fundamentals (TCP/IP) (~50 hrs)
+networking is the highest-leverage knowledge in support. it never goes stale.
 
-Networking is the highest-leverage knowledge in this field. It never goes stale, and it's what separates a button-pusher from a real technician. This is **A+ Core + most of Network+**.
+- [ ] OSI and TCP/IP models
+- [ ] IPv4, subnets, CIDR, private/public IPs
+- [ ] subnetting by hand
+- [ ] DNS, DHCP, HTTP/HTTPS, SSH, RDP
+- [ ] ports: 53, 80, 443, 22, 3389, 25, 143
+- [ ] switch vs router vs firewall vs access point
+- [ ] Wi-Fi 6/6E/7, channels, interference
+- [ ] `ping`, `ipconfig`, `nslookup`, `tracert`, `netstat`
 
-### What to cover
-- **The OSI & TCP/IP models:** what each layer does, where problems live
-- **IP addressing:** IPv4, subnets, CIDR, private vs public, **subnetting by hand** (interviewers love this)
-- **Core protocols:** DNS (how name resolution actually works), DHCP (how a device gets an IP), HTTP/HTTPS, SSH, RDP
-- **Ports & protocols:** the common-port list (53, 80, 443, 22, 3389, 25, 143…) — memorize it
-- **Network hardware:** switch vs router vs firewall vs access point — what each does
-- **Wi-Fi:** standards (Wi-Fi 6/6E/7), channels, common interference issues
-- **Command-line networking:** `ping`, `ipconfig`/`ifconfig`, `nslookup`/`dig`, `tracert`, `netstat`
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Professor Messer Network+](https://www.professormesser.com) | Video | Full free Network+ course | **Free** |
-| [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) | Cisco | Build & simulate real networks | **Free** (free course) |
-| [subnetting practice](https://subnetipv4.com/) | Web | Drill subnet math until it's automatic | **Free** |
+| Professor Messer Network+ | Web/video | full Network+ course | **Free** - **⚠️ TODO verify exact N10-009 link** |
+| [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) | Cisco | build and simulate networks | **Free** |
+| [subnetting practice](https://subnetipv4.com/) | Web | drill subnet math | **Free** |
 
-**Practice gate:** subnet a /24 into 4 equal subnets on paper, and explain what happens (in order) when you type a URL and press Enter — DNS → TCP → HTTP. If you can do both, you're ahead of most T1 applicants.
+**practice gate:** subnet a `/24` into 4 equal subnets on paper, and explain DNS -> TCP -> HTTP after typing a URL.
 
----
+## command line and scripting first steps (~50h)
 
-## Command line & scripting first steps (~50 hrs)
+terminal comfort sets candidates apart, even at T1.
 
-The terminal isn't optional anymore — even at T1, what sets candidates apart is comfort with the command line.
+- [ ] Windows `cmd` basics
+- [ ] PowerShell cmdlets, pipeline, `Get-Help`
+- [ ] read and run scripts: variables, loops, `Get-`/`Set-` verbs
+- [ ] Linux CLI: `cd`, `ls`, `pwd`, `cp`, `mv`, `rm`, `cat`, `chmod`
+- [ ] first automation: disk space, large files, or basic report
 
-### What to cover
-- **Windows command line:** `cmd` basics, then **PowerShell** — cmdlets, the pipeline, `Get-Help`
-- **Reading & running PowerShell:** run a script, understand variables, loops, `Get-`/`Set-` verbs (don't fear it)
-- **Linux CLI basics:** navigation (`cd`, `ls`, `pwd`), files (`cp`, `mv`, `rm`, `cat`), permissions (`chmod`), package basics
-- **Why scripting matters:** a task done once by hand is fine; a task done 50 times should be a script — that mindset is your ticket up the ladder
-- **First automation:** a PowerShell one-liner that does something real (list disk space, find large files)
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Microsoft Learn: PowerShell](https://learn.microsoft.com/en-us/training/) | Official | Guided PowerShell from zero | **Free** |
-| [VirtualBox Linux VM](https://www.virtualbox.org) | Local | A safe Linux box to practice CLI | **Free** |
-| [OverTheWire: Bandit](https://overthewire.org/wargames/bandit/) | SSH | Linux CLI puzzles, real boxes | **Free** |
+| [Microsoft Learn: PowerShell](https://learn.microsoft.com/en-us/training/) | Official | guided PowerShell from zero | **Free** |
+| [VirtualBox Linux VM](https://www.virtualbox.org) | Local | safe Linux CLI practice | **Free** |
+| [OverTheWire: Bandit](https://overthewire.org/wargames/bandit/) | SSH | Linux CLI puzzles | **Free** |
 
----
+## exit check
 
-## Phase 1 exit checklist
-- [ ] Can identify PC components and diagnose common hardware failures
-- [ ] Can install and troubleshoot Windows 11 (and install a Linux VM)
-- [ ] Know the troubleshooting methodology cold (the CompTIA 6 steps)
-- [ ] Can subnet by hand and explain DNS/DHCP from memory
-- [ ] Comfortable with `ping`/`ipconfig`/`nslookup`/`tracert`
-- [ ] Can read and run a basic PowerShell script without fear
-- [ ] On track for (or passed) **CompTIA A+ Core 1**
+- [ ] can identify PC components and common failure symptoms
+- [ ] can install/troubleshoot Windows 11 and install a Linux VM
+- [ ] know CompTIA 6-step troubleshooting cold
+- [ ] can subnet by hand and explain DNS/DHCP
+- [ ] comfortable with `ping`, `ipconfig`, `nslookup`, `tracert`
+- [ ] can read and run a basic PowerShell script
+- [ ] on track for or passed **CompTIA A+ Core 1**
 
-Next: [Phase 2 — Core Support Skills →](02-core.md)
+[Next: Goal 2 - Core Support Skills](02-core.md)

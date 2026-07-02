@@ -1,228 +1,221 @@
-# 🎤 Interview Prep — Product Management
+# Interview prep: Product Management meow
 
-> Format guide + question bank. PM interviews are unlike any other technical field — you're being assessed on judgment, not correctness. Worth reading before your first mock.
+> PM interviews assess judgment, not correctness.
+> structure, tradeoffs, and honest reasoning matter more than guessing the interviewer's favorite answer.
 
-[← Job Hunt](05-job-hunt.md) · [Hub](README.md)
+[Previous: Goal 5](05-job-hunt.md) - [Hub](README.md)
 
 ---
 
-## Interview formats by role
+- [ ] **product sense**
+- [ ] **metrics**
+- [ ] **estimation**
+- [ ] **technical**
+- [ ] **behavioral**
+- [ ] **strategy and roadmap**
+- [ ] **AI / LLM answer**
+- [ ] **APM prep**
 
-| Format | What's actually being tested |
+## interview formats
+
+| Format | Whats tested |
 |---|---|
-| **Product sense / product design** | Can you frame a user problem, prioritize, and propose a measurable solution? |
-| **Analytical / metrics** | Can you define the right metric, diagnose a drop, and design a fair experiment? |
-| **Estimation / market sizing** | Can you reason from first principles to a defensible number? |
-| **Technical** | Can you work credibly with engineers? Do you understand basic system concepts? |
-| **Behavioral / leadership** | Have you demonstrated influence without authority, cross-functional collaboration, and recovery from failure? |
-| **Strategy / roadmap** | Can you make and defend a prioritization call with incomplete information? |
+| **Product sense / product design** | frame a user problem, prioritize, propose measurable solution |
+| **Analytical / metrics** | define metric, diagnose drop, design fair experiment |
+| **Estimation / market sizing** | reason from assumptions to a defensible number |
+| **Technical** | work credibly with engineers, understand basic systems |
+| **Behavioral / leadership** | influence without authority, collaboration, recovery from failure |
+| **Strategy / roadmap** | defend prioritization with incomplete information |
 
-> There's no universally "right" answer in PM interviews. Interviewers are evaluating **how you think**, not whether you landed on the "correct" feature or metric. Structure and honesty about tradeoffs matter more than matching whatever answer the interviewer had in mind.
+there is no universal right answer.
+interviewers evaluate how u think.
 
----
+## product sense / product design
 
-## Format 1: Product sense / product design
+prompts:
 
-The most common PM interview format. You'll get a prompt like:
-- *"Design a product for elderly users who want to stay connected with family."*
-- *"How would you improve Google Maps?"*
-- *"Design an alarm clock for the blind."*
+- [ ] "Design a product for elderly users who want to stay connected with family."
+- [ ] "How would you improve Google Maps?"
+- [ ] "Design an alarm clock for blind users."
 
-### The framework (CIRCLES-adjacent — adapt it, don't recite it)
+### framework
 
-1. **Clarify scope** — ask one or two scoping questions before diving in. Is this mobile or desktop? Are we optimizing an existing product or designing net-new?
-2. **Define the user** — pick a specific user segment and describe them concretely. Don't say "all users." Say "working parents who want to share daily moments with grandparents."
-3. **State user goals and pain points** — what are they trying to accomplish? Where does the current experience break down?
-4. **Brainstorm solutions** — generate 3–5 possible solutions. Don't just pick one immediately; interviewers want to see breadth.
-5. **Prioritize and justify** — pick your top 1–2 solutions and explain why: impact, feasibility, alignment with user need.
-6. **Define success** — what metric would tell you this worked? What's your North Star for this feature?
-7. **Acknowledge trade-offs** — what are the downsides of your recommendation? What would you watch for?
+1. **Clarify scope** - ask 1-2 questions before diving in.
+2. **Define the user** - pick a specific segment, not "all users."
+3. **State goals and pain points** - what are they trying to do? where does it break?
+4. **Brainstorm solutions** - generate 3-5 options before choosing.
+5. **Prioritize** - pick top 1-2 and justify with impact, feasibility, need.
+6. **Define success** - metric, North Star, or leading indicator.
+7. **Acknowledge tradeoffs** - downsides, risks, what to watch.
 
-**Practice gate:** you can walk through a product design prompt for an unfamiliar product in under 8 minutes with clear structure, without being prompted by the interviewer.
+**practice gate:** u can handle an unfamiliar product design prompt in under 8 minutes with clear structure.
 
----
+## analytical / metrics
 
-## Format 2: Analytical / metrics
+prompts:
 
-Prompts:
-- *"DAU on our messaging feature dropped 15% last Tuesday. Walk me through how you'd investigate."*
-- *"We're launching a new onboarding flow. What metric would you use to measure success?"*
-- *"How would you define the North Star metric for Spotify?"*
+- [ ] "DAU on messaging dropped 15% last Tuesday. investigate."
+- [ ] "New onboarding flow launched. what metric measures success?"
+- [ ] "Define the North Star metric for Spotify."
 
-### Diagnosing a metric drop — the structured approach
+### diagnosing a metric drop
 
-1. **Confirm the data** — is this a real drop or a logging/instrumentation issue? Check for code changes, tracking bugs, or A/B test misconfiguration deployed around that time.
-2. **Segment the drop** — is it across all platforms/regions/user cohorts, or isolated? iOS vs Android, new users vs retained users, specific geography?
-3. **Check for external events** — holiday, competitor launch, media event, app store policy change?
-4. **Trace the funnel** — where exactly does the drop occur? Top of funnel (acquisition), activation, engagement, retention?
-5. **Form hypotheses** — list 3–5 plausible root causes ranked by likelihood.
-6. **Propose investigation steps** — which query or experiment would confirm/refute each hypothesis?
-7. **Recommend a response** — once you know the cause, what do you do?
+1. **Confirm data** - real drop or instrumentation issue?
+2. **Segment** - platform, region, cohort, new vs retained users.
+3. **Check external events** - holiday, competitor, media, store policy.
+4. **Trace the funnel** - acquisition, activation, engagement, retention.
+5. **Form hypotheses** - 3-5 plausible causes ranked by likelihood.
+6. **Propose investigation** - query or experiment for each hypothesis.
+7. **Recommend response** - what to do once cause is known.
 
-### Defining a good metric
+### good PM metric
 
-A good PM metric is:
-- **Measurable** — you can actually pull this number
-- **Leading, not lagging** — it moves before the business outcome, not after
-- **Sensitive to what you're building** — a feature that improves activation shouldn't be measured by LTV on day 1
-- **Not gameable** — team shouldn't be able to hit the number by changing user behavior in harmful ways
+- [ ] measurable
+- [ ] leading, not lagging
+- [ ] sensitive to what youre building
+- [ ] not gameable in harmful ways
 
-**Practice gate:** you can take a "metric dropped X%" prompt and run a coherent structured investigation without prompting, ending with a prioritized hypothesis list and a recommended next step.
+**practice gate:** u can run a coherent "metric dropped X%" investigation and end with prioritized hypotheses plus next step.
 
----
+## estimation
 
-## Format 3: Estimation
+prompts:
 
-Prompts:
-- *"How many Uber rides happen in New York City on a Friday night?"*
-- *"Estimate the market size for a subscription dog-food service."*
-- *"How many iPhones are sold globally per year?"*
+- [ ] "How many Uber rides happen in New York City on a Friday night?"
+- [ ] "Estimate market size for subscription dog food."
+- [ ] "How many iPhones are sold globally per year?"
 
-Estimation is not about the right number. It's about **structured decomposition** and **calibrated assumptions**.
+estimation is about decomposition and assumptions, not the exact number.
 
-### The approach
+approach:
 
-1. **State your approach** before calculating — "I'll estimate this by breaking the US adult population into relevant segments."
-2. **Make assumptions explicit** — "I'm assuming X% of adults own a dog" — say the number and defend it briefly.
-3. **Do the math out loud** — use round numbers, show your work.
-4. **Sanity-check the result** — does it feel plausible? If the answer is "500 billion rides per day," something's wrong.
-5. **Acknowledge uncertainty** — "my biggest assumption here is X; if that's off by 2x, the answer changes significantly."
+1. state the approach before calculating.
+2. make assumptions explicit.
+3. do math out loud with round numbers.
+4. sanity-check the result.
+5. name the biggest uncertainty.
 
-**Practice gate:** you can estimate the number of "how many X" prompts end-to-end in under 5 minutes with explicit assumptions and a sanity check.
+**practice gate:** u can estimate "how many X" end to end in under 5 minutes with assumptions and sanity check.
 
----
+## technical
 
-## Format 4: Technical
+PM-level technical questions do not require code.
+they test whether u can work with engineers.
 
-PM-level technical questions don't require you to write code. They test whether you can work credibly with engineers.
+topics:
 
-### Topics to be fluent in
+- [ ] APIs: REST endpoints, failure modes, client calls
+- [ ] databases: relational SQL vs NoSQL, when each fits
+- [ ] system architecture: client -> server -> database, microservices, CDN
+- [ ] latency vs throughput, p99 latency
+- [ ] A/B testing infrastructure, randomization, holdouts
+- [ ] SQL basics: `SELECT`, `GROUP BY`, `JOIN`
 
-- **APIs:** what is an API, what's a REST endpoint, what happens when a client calls an API and it fails? (PMs write PRDs with API specs regularly.)
-- **Databases:** the difference between a relational DB (SQL) and a NoSQL store; when you'd use each.
-- **Basic system architecture:** client → server → database; what a microservice is; what a CDN does.
-- **Latency vs throughput:** what a p99 latency is; why it matters for user experience.
-- **A/B testing infrastructure:** how an experiment is randomized; what a holdout group is.
-- **SQL basics:** you should be able to write a basic SELECT/GROUP BY/JOIN — many PM jobs now require it.
+common prompts:
 
-### Common technical PM questions
+- [ ] "What happens when a user clicks Post on Instagram?"
+- [ ] "Feature works for 99% of users but times out for 1%. how do u prioritize?"
+- [ ] "Synchronous vs asynchronous processing. why choose each?"
+- [ ] "Our API is slow under load. what questions do u ask engineering?"
 
-- "Walk me through what happens when a user clicks 'Post' on Instagram."
-- "We have a feature that works well for 99% of users but causes timeouts for 1%. How do you prioritize fixing it?"
-- "What's the difference between synchronous and asynchronous processing? Why would you choose each?"
-- "Our API is slow under load. What questions would you ask the engineering team to understand the problem?"
+**practice gate:** u can explain what happens between a click and data appearing on screen without handwaving "the computer just does it."
 
-**Practice gate:** you can explain what happens between a user clicking a button and data appearing on screen without using the phrase "the computer just does it."
+## behavioral / leadership
 
----
+PM behavioral questions test influence without authority, collaboration, and ambiguity.
 
-## Format 5: Behavioral / leadership (STAR)
+use STAR: **Situation -> Task -> Action -> Result**.
+lead with result if strong.
 
-PM behavioral questions probe for **influence without authority**, **cross-functional collaboration**, and **judgment under ambiguity**.
+### question bank
 
-### The STAR structure
+- [ ] "Tell me about a time you got engineering to prioritize something they didnt want to build."
+- [ ] "Tell me about a time you had to cut scope. how did u decide?"
+- [ ] "Tell me about a time you disagreed with a designer, engineer, or stakeholder."
+- [ ] "Tell me about a time you pushed back on leadership for the user."
+- [ ] "Tell me about a product decision that didnt work out."
+- [ ] "Tell me about a time u made a decision with incomplete information."
 
-**S**ituation → **T**ask → **A**ction → **R**esult. Lead with the result if it's strong.
+what interviewers want: evidence, tradeoffs, communication, whether u changed your mind when the data said to.
 
-### Question bank with what interviewers want to hear
+## strategy and roadmap
 
-**Influence without authority:**
-- *"Tell me about a time you got an engineering team to prioritize something they didn't want to build."*
-  — Interviewers want: data you used to make the case, how you addressed their concerns, outcome.
+prompts:
 
-**Prioritization under pressure:**
-- *"Tell me about a time you had to cut scope. How did you decide what to cut?"*
-  — Interviewers want: your prioritization framework, how you communicated the decision, what you shipped.
+- [ ] "Youre PM for Gmail. what would you work on next quarter and why?"
+- [ ] "We have 20 enterprise requests and 6 weeks of engineering time. what do we build?"
 
-**Cross-functional conflict:**
-- *"Tell me about a time you disagreed with a designer/engineer/stakeholder about the direction."*
-  — Interviewers want: how you gathered data or user evidence, whether you updated your view, outcome.
+approach:
 
-**User advocacy:**
-- *"Tell me about a time you pushed back on something leadership wanted because you believed it was wrong for users."*
-  — Interviewers want: what evidence you used, how you framed it, what happened.
+1. frame strategy: what is the product trying to accomplish in this horizon?
+2. segment ideas: growth, activation, retention, monetization, infrastructure/debt.
+3. apply a framework: RICE or ICE, and say what u would score.
+4. show tradeoffs: what gets deprioritized and why.
+5. define success metric.
 
-**Failure and learning:**
-- *"Tell me about a product decision that didn't work out. What did you do and what did you learn?"*
-  — Interviewers want: honest acknowledgment of what went wrong, specific learning, what you'd change.
+## AI / LLM question
 
-**Ambiguity:**
-- *"Tell me about a time you had to make a decision with incomplete information."*
-  — Interviewers want: how you reduced uncertainty, what you did to move forward, how you monitored.
+u will be asked:
+**"How do you see AI changing product management?"**
+or:
+**"How do you use AI in your PM work?"**
 
----
+strong answer signals:
 
-## Format 6: Strategy and roadmap
+- [ ] u use AI now for drafts, user research summaries, acceptance criteria drafts
+- [ ] u verify and own the output
+- [ ] u understand tactical Product Owner work is most exposed
+- [ ] u understand durable PM value: discovery, empathy, prioritization judgment, stakeholder influence
+- [ ] if interested in AI PM, u understand non-deterministic outputs, evaluation, responsible AI, model drift
 
-Prompts:
-- *"You're the PM for Gmail. What would you work on next quarter and why?"*
-- *"We have 20 feature requests from enterprise customers and 6 weeks of engineering time. How do you decide what to build?"*
-
-### How to approach a roadmap question
-
-1. **Frame the strategy first** — what is this product trying to accomplish in this time horizon? What's the company's North Star?
-2. **Segment the ideas** — growth/acquisition, activation, retention, monetization, infrastructure/debt
-3. **Apply a framework** — RICE (Reach × Impact × Confidence ÷ Effort) or ICE is useful here; state what you'd score and why
-4. **Show trade-offs** — what are you deprioritizing, and why? Interviewers want to see that you can say no.
-5. **Define success** — what metric moves if you're right?
-
----
-
-## The AI / LLM question (all PM roles, 2026)
-
-You will be asked: *"How do you see AI changing product management?"* or *"How do you use AI in your daily PM work?"*
-
-Strong answer signals:
-- You use AI tools in your workflow now (drafting PRDs, summarizing user research, generating acceptance criteria drafts) — but you own and verify the output
-- You understand that tactical Product Owner work (ticket-writing, story grooming) is most exposed to automation
-- You understand the differentiated value PMs bring: discovery, user empathy, prioritization judgment, stakeholder influence — things AI amplifies but doesn't replace
-- If you're interested in AI PM as a specialization: you understand the unique challenges (non-deterministic outputs, evaluation, responsible AI requirements, model drift)
-
-**Don't overclaim.** "I use Claude to help draft user stories and then review them carefully" is a better answer than "I've built a full LLM pipeline for PM work."
-
----
+dont overclaim.
+"i use Claude to draft user stories and then review carefully" is better than pretending u built a full LLM pipeline.
 
 ## APM-specific prep
 
-APM program interviews differ from standard PM loops. Expect:
+APM interviews differ from standard PM loops.
+expect:
 
-- **Product design questions** — same format as above; you're assessed on structured thinking, not domain knowledge
-- **Analytical thinking cases** — "here's a chart showing user drop-off; what do you think is happening?" — they want to see systematic decomposition
-- **Why PM / why this company** — they're building a pipeline; they want to know your commitment and your reasoning are genuine
-- **Estimation** — common in APM screens to assess quantitative reasoning
-- **Behavioral** — emphasize experiences that demonstrate cross-functional influence, user empathy, and intellectual curiosity
+- [ ] product design questions
+- [ ] analytical cases from charts or drop-off data
+- [ ] why PM / why this company
+- [ ] estimation
+- [ ] behavioral examples showing influence, user empathy, curiosity
 
-**APM prep resource:** Exponent (tryexponent.com) has an APM-specific question bank — worth the free tier at minimum.
+APM prep resource: [Exponent](https://www.tryexponent.com) has an APM question bank. use the free tier at minimum.
+
+## quick-drill list
+
+run 2-3 per day.
+
+**product sense**
+
+- [ ] improve YouTube home feed
+- [ ] design a product for chronic illness management
+- [ ] choose a health metric for Slack
+
+**metrics**
+
+- [ ] define "active user" for B2B SaaS
+- [ ] retention dropped 8% month over month. investigate.
+- [ ] onboarding sign-ups rose 12% but day-7 retention dropped 5%. what now?
+
+**estimation**
+
+- [ ] pizzas ordered in the US on Super Bowl Sunday
+- [ ] TAM for grocery delivery
+
+**technical**
+
+- [ ] what happens when a user searches on Google?
+- [ ] whats a webhook, and when use it instead of polling?
+
+**behavioral**
+
+- [ ] a time u said no to a customer request
+- [ ] a time u changed your mind based on data
+- [ ] a feature u shipped that youre proud of and one youd redo
 
 ---
 
-## Quick-drill question list
-
-Bookmark this and run through 2–3 per day:
-
-**Product sense:**
-- How would you improve the YouTube home feed?
-- Design a product that helps people manage chronic illness.
-- What metric would you use to measure the health of Slack?
-
-**Metrics:**
-- How do you define "active user" for a B2B SaaS product?
-- Retention for our mobile app dropped 8% month-over-month. Walk me through your investigation.
-- We A/B tested a new onboarding flow and sign-ups went up 12% but day-7 retention dropped 5%. What do you do?
-
-**Estimation:**
-- How many pizzas are ordered in the US on Super Bowl Sunday?
-- Estimate the total addressable market for a grocery delivery service.
-
-**Technical:**
-- What happens when a user searches on Google? (Walk through the full system.)
-- What's a webhook and when would you use it instead of polling?
-
-**Behavioral:**
-- A time you had to say no to a customer request.
-- A time you changed your mind based on data.
-- A feature you shipped that you're proud of and one you'd do differently.
-
----
-
-[← Job Hunt](05-job-hunt.md) · [Hub](README.md) · [Certifications](certifications.md)
+[Previous: Goal 5](05-job-hunt.md) - [Hub](README.md) - [Certifications](certifications.md)

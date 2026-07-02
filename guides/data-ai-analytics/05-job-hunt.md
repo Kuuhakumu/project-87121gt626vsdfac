@@ -1,90 +1,99 @@
-# 💼 Phase 5: Resume & Job Hunt
+# Goal 5: resume and job hunt meow
 
-> **~70 hrs total** · your pace, no deadline
-> Build the portfolio *as you learn* — don't wait until the end to start applying.
+> **~70h total** - your pace, no deadline.
+> build portfolio as u learn. dont wait until the end to start applying.
 
-[← Phase 4](04-projects.md) · [Hub](README.md) · [Beyond Entry-Level →](beyond-entry.md)
+[Previous: Goal 4](04-projects.md) - [Hub](README.md) - [Beyond Entry-Level](beyond-entry.md)
 
 ---
 
-## The honest entry reality (read this first)
+- [ ] **understand the entry reality**
+- [ ] **write the resume**
+- [ ] **search realistic role titles**
+- [ ] **target roles without relying on local job-board lists**
+- [ ] **prep interviews**
+- [ ] **exit check** - resume, dashboard/GitHub links, target list, interview stories
 
-The realistic on-ramp into data:
+## honest entry reality
 
+```text
+Data / BI Analyst - Junior Analytics Engineer - Reporting Analyst
+  -> Analytics Engineer / Data Engineer / Senior Data Analyst
+  -> Data Scientist / Senior Data Engineer / ML Engineer
 ```
-Data / BI Analyst  ·  Junior Analytics Engineer  ·  Reporting Analyst
-   (the genuine first job — SQL + a BI tool + clear communication)
-        ↓
-Analytics Engineer  ·  Data Engineer  ·  Data Analyst (senior)
-   (1–2 yr: dbt, pipelines, cloud warehouse, deeper modeling)
-        ↓
-Data Scientist  ·  Senior Data Engineer  ·  ML Engineer  (2–4 yr)
-```
 
-**Target the first row for your first job.** Most "Junior Data Scientist" postings are really analyst roles with a fancier title, and genuine ML Engineer roles want SWE + ML depth. Entering as an Analyst isn't settling — it's the standard door in.
+target the first row for your first job. most "Junior Data Scientist" postings are analyst roles with a fancier title. entering as an Analyst isnt settling; its the standard door.
 
----
+## resume
 
-## Resume
+- [ ] lead with projects, then skills, then any experience
+- [ ] quantify: "Analyzed 2M rows to find X"
+- [ ] mirror posting keywords honestly: SQL, Python, Power BI, dbt
+- [ ] link GitHub + public dashboard
+- [ ] headline example: `Data Analyst | SQL - Python - Power BI | Google DA Certified`
 
-- **Lead with projects**, then skills, then any experience (even unrelated — frame transferable skills)
-- **Quantify everything:** "Analyzed 2M rows to find X", "Built a dashboard cutting reporting time from X to Y"
-- **Mirror the posting's keywords** for ATS — if it says "SQL, Python, Power BI, dbt", those words need to appear (honestly)
-- Link your GitHub + your public dashboard
-- **Headline example:** `Data Analyst | SQL · Python · Power BI | Google DA Certified`
+## roles to search for
 
----
+true-entry targets:
 
-## Roles to search for
-
-True-entry (target these):
-- Data Analyst · BI Analyst · Reporting Analyst
-- Junior Analytics Engineer · Junior Data Engineer
+- Data Analyst
+- BI Analyst
+- Reporting Analyst
+- Junior Analytics Engineer
+- Junior Data Engineer
 - Business / Operations Analyst (data-heavy)
 
-Borderline (after the above, or with strong projects):
-- Data Engineer · Analytics Engineer (unleveled)
+borderline after stronger projects or first experience:
 
-> Avoid anchoring on "Data Scientist", "ML Engineer", or "AI Engineer" for a *first* job — those almost always want a degree or experience.
+- Data Engineer
+- Analytics Engineer
 
----
+avoid anchoring on Data Scientist, ML Engineer, or AI Engineer for a first job.
 
-## How to find and target roles (region-agnostic)
+## find and target roles
 
-Job boards are mostly local, so use a strategy that travels:
+job boards are local, so use a strategy that travels:
 
-1. **Every company with data hires analysts** — not just tech. Finance, healthcare, retail, logistics, government, non-profits all need data people. Widen your target list well beyond "tech companies."
-2. **Company-direct.** List 20–40 target employers across industries, check their careers pages directly.
-3. **Referrals beat cold applications.** Stay active in data communities (see [resources.md](resources.md)), share your projects, and connect with people doing the work.
-4. **Filter for remote** if your local market is thin — analytics is fairly remote-friendly.
-5. **Tailor every application** — attach the one project most relevant to that role and industry.
+- [ ] widen beyond tech: finance, healthcare, retail, logistics, government, nonprofits
+- [ ] list 20-40 target employers
+- [ ] check careers pages directly
+- [ ] seek referrals through data communities
+- [ ] filter remote if local market is thin
+- [ ] tailor every application with the most relevant project
 
----
+## interview prep
 
-## Interview prep
-
-See the full **[Interview Prep Q&A bank →](interview-prep.md)** — SQL, Python, stats, and track-specific questions + behavioral prompts.
-
-### The formats you'll face
+see [interview-prep.md](interview-prep.md) for SQL, Python, stats, track questions, and behavioral prompts.
 
 | Role | Typical pipeline |
 |---|---|
-| Data / BI Analyst | SQL screen → take-home analysis → stakeholder presentation |
-| Analytics Engineer | SQL screen → dbt/modeling exercise → data-modeling discussion |
-| Data Engineer | Python/SQL coding screen → pipeline design → data architecture |
-| Data Scientist | SQL screen → stats/probability → ML take-home → explain to non-tech audience |
+| Data / BI Analyst | SQL screen -> take-home analysis -> stakeholder presentation |
+| Analytics Engineer | SQL screen -> dbt/modeling exercise -> data-modeling discussion |
+| Data Engineer | Python/SQL screen -> pipeline design -> architecture |
+| Data Scientist | SQL screen -> stats/probability -> ML take-home -> explain to non-tech audience |
 
-### Quick hits — questions you *will* be asked
-- Write a query with a window function to rank rows within a group
-- Difference between `WHERE` and `HAVING`
-- How would you find and handle missing/duplicate data?
-- Explain a project end to end — what was the question, what did you find?
-- Correlation vs causation — give a real example
-- (DS) Precision vs recall — when does each matter?
+questions u will see:
 
-### Behavioral (STAR)
-- "Tell me about an analysis that changed a decision"
-- "A time your data contradicted what stakeholders expected"
-- "How do you explain a technical finding to a non-technical person?"
+- [ ] window function to rank rows within a group
+- [ ] `WHERE` vs `HAVING`
+- [ ] missing/duplicate data handling
+- [ ] explain a project end to end
+- [ ] correlation vs causation with real example
+- [ ] precision vs recall for DS/ML
 
-Next: [Beyond Entry-Level — Years 2+ →](beyond-entry.md)
+behavioral prompts:
+
+- [ ] analysis that changed a decision
+- [ ] data contradicted stakeholder expectation
+- [ ] explain technical finding to non-technical person
+
+## exit check
+
+- [ ] resume leads with projects and links proof
+- [ ] GitHub and dashboard links work
+- [ ] 20-40 employer target list exists
+- [ ] role titles are realistic for first job
+- [ ] 3 project stories rehearsed
+- [ ] SQL screen practice is active
+
+[Beyond Entry-Level - Years 2+](beyond-entry.md)

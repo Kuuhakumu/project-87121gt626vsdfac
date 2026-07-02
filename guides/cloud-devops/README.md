@@ -1,24 +1,34 @@
-# ☁️ Cloud & DevOps Career Roadmap: Zero to First Job
+# Cloud & DevOps Career Roadmap: zero to first cloud role meow
 
 > [!IMPORTANT]
-> **Read this first: "DevOps" is rarely a true entry-level job.** The honest on-ramp is **Cloud Support / Cloud Ops → Junior Cloud Engineer → DevOps Engineer**. This guide gets you hired into that *first* cloud role, then sets you up to grow into DevOps/SRE. Anyone promising you a "Junior DevOps Engineer" title from zero is selling something.
+> **read this first: "DevOps" is rarely a true entry-level job.**
+> the honest on-ramp is **Cloud Support / Cloud Ops -> Junior Cloud Engineer -> DevOps Engineer**.
+> this guide gets u hired into that first cloud role, then sets u up to grow into DevOps/SRE.
 
-## 🗺️ Roadmap at a Glance
+## how to track your progress meow
 
-```mermaid
-graph TD
-    P0[Phase 0: Pre-Flight Setup<br/>Day 1 setup] --> P1[Phase 1: Foundations<br/>Linux · Networking · Git · Scripting<br/>~140 hrs]
-    P1 --> P2[Phase 2: Cloud Core + Docker<br/>one provider · containers<br/>~180 hrs]
-    P2 --> P3[Phase 3: IaC & CI/CD<br/>Terraform/OpenTofu · Pipelines<br/>~120 hrs]
-    P3 --> P4[Phase 4: Kubernetes & Specialization<br/>K8s · pick one track<br/>~160 hrs]
-    P4 --> P5[Phase 5: Portfolio & Job Hunt<br/>~80 hrs]
-    classDef phase fill:#0d1b2a,stroke:#415a77,stroke-width:2px,color:#e0e1dd;
-    class P0,P1,P2,P3,P4,P5 phase;
-```
+oki so u might notice all the `- [ ]` checkboxes in this guide... heres the thing: **these boxes are display-only in this public repo** - u cant actually tick them here.
 
-## ⏱️ How the Hour System Works
+**so use your own copy:**
+- **fork this repo** and tick boxes in your fork, or
+- **copy the checklist into Obsidian/OneNote/Notion**, or
+- **download/print it** if paper works better.
 
-Timelines are in **study hours**, not weeks — so they work at any pace.
+the real progress signal is not the checkbox anyway. its whether the lab works, the project is reproducible, and u can explain what broke when cloud does cloud things qwq.
+
+## todo map at a glance
+
+- [ ] **Goal 0 - prep** - [00-prep.md](00-prep.md) (Day 1): honest path, accounts, free-tier setup.
+- [ ] **Goal 1 - foundations** - [01-foundations.md](01-foundations.md) (~140h): Linux, networking, Git, scripting.
+- [ ] **Goal 2 - cloud core + Docker** - [02-core.md](02-core.md) (~180h): one provider, IAM, VPC, compute, storage, containers.
+- [ ] **Goal 3 - IaC + CI/CD** - [03-iac-cicd.md](03-iac-cicd.md) (~120h): Terraform/OpenTofu, pipelines, GitHub Actions.
+- [ ] **Goal 4 - Kubernetes + specialization** - [04-kubernetes-specialization.md](04-kubernetes-specialization.md) (~160h): K8s, observability, one depth track.
+- [ ] **Goal 5 - portfolio + job hunt** - [05-job-hunt.md](05-job-hunt.md) (~80h): proof projects, resume, role targeting.
+- [ ] **After entry-level** - [beyond-entry.md](beyond-entry.md): SRE, platform, architecture, DevSecOps.
+
+## how the hour system works
+
+timelines are in **study hours**, not weeks.
 
 | Your pace | 600 hours takes |
 |---|---|
@@ -27,44 +37,44 @@ Timelines are in **study hours**, not weeks — so they work at any pace.
 | 4 hrs/day | ~5 months |
 | 6 hrs/day (full-time) | ~3.5 months |
 
-Each phase shows an approximate hour band — a budget, not a deadline. Go at whatever pace fits your life.
+each goal is a budget, not a deadline. at **2 h/day**, this is roughly **10 months**. thats normal for cloud; the stack is wide.
 
-## 📚 Guide Contents
+## guide contents
 
-| File | What's inside |
+| File | whats inside |
 |---|---|
-| [00-prep.md](00-prep.md) | Mindset, the honest career path, accounts, free-tier setup |
-| [01-foundations.md](01-foundations.md) | Linux, networking, Git, Bash & Python scripting |
-| [02-core.md](02-core.md) | One cloud provider deep (AWS-led): compute, storage, networking, IAM |
-| [03-iac-cicd.md](03-iac-cicd.md) | Docker, Terraform & OpenTofu, CI/CD pipelines, GitHub Actions, GitOps |
-| [04-kubernetes-specialization.md](04-kubernetes-specialization.md) | Kubernetes (local clusters), observability (Prometheus/Grafana/OTel), specialization tracks |
-| [05-job-hunt.md](05-job-hunt.md) | Portfolio projects, resume, finding & targeting roles |
-| [beyond-entry.md](beyond-entry.md) | SRE, platform engineering, advanced tracks (Years 2+) |
-| [certifications.md](certifications.md) | Full cert matrix, ROI tiers, recommended paths |
-| [labs.md](labs.md) | Verified interactive lab inventory |
-| [resources.md](resources.md) | Channels, books, communities, roadmaps |
-| [interview-prep.md](interview-prep.md) | Technical + behavioral question bank |
+| [00-prep.md](00-prep.md) | mindset, honest career path, accounts, free-tier setup |
+| [01-foundations.md](01-foundations.md) | Linux, networking, Git, Bash/Python scripting |
+| [02-core.md](02-core.md) | one cloud provider deep, AWS-led: compute, storage, networking, IAM |
+| [03-iac-cicd.md](03-iac-cicd.md) | Docker, Terraform/OpenTofu, CI/CD, GitHub Actions, GitOps |
+| [04-kubernetes-specialization.md](04-kubernetes-specialization.md) | Kubernetes, observability, specialization tracks |
+| [05-job-hunt.md](05-job-hunt.md) | portfolio projects, resume, finding and targeting roles |
+| [beyond-entry.md](beyond-entry.md) | SRE, platform engineering, advanced tracks |
+| [certifications.md](certifications.md) | cert matrix, ROI tiers, recommended paths |
+| [labs.md](labs.md) | interactive lab inventory |
+| [resources.md](resources.md) | channels, books, communities, roadmaps |
+| [interview-prep.md](interview-prep.md) | technical + behavioral question bank |
 
-## 🏁 Certification Ladder (2026)
+## certification ladder
 
+```text
+[Foundation]      AWS Cloud Practitioner (CLF-C02) - or AZ-900 / GCP CDL
+[Baseline]        AWS Solutions Architect Associate (SAA-C03) - the real hiring filter
+[Differentiator]  Terraform Associate (TA-004) + CKA
+[Later]           AWS DevOps Pro / specialty certs - after youre in-role
 ```
-[Foundation]   AWS Cloud Practitioner (CLF-C02) — or AZ-900 / GCP CDL
-[Baseline]     AWS Solutions Architect Associate (SAA-C03) — the real hiring filter
-[Differentiator] Terraform Associate (TA-004, $70) + CKA (Kubernetes, hands-on)
-[Later]        AWS DevOps Pro / specialty certs — after you're in-role
-```
 
-> ⚠️ **Do NOT pursue AZ-204** (retiring July 2026) or **Docker DCA** (discontinued). See [certifications.md](certifications.md).
+> **do not pursue AZ-204** (retiring July 2026) or **Docker DCA** (discontinued). see [certifications.md](certifications.md).
 
-## ✅ What Makes This Guide Different
+## what makes this guide different
 
-- **Honest about the on-ramp** — cloud support/ops first, DevOps later. No hype.
-- **Hour-based** — fits any schedule, not rigid weeks.
-- **Verified June 2026** — exam codes, prices, and tool versions checked against official sources.
-- **Region-agnostic** — no salary tables, no local job-board lists; strategy that travels.
-- **Free-first** — AWS Free Tier, KillerCoda, Play with Docker, KodeKloud free tier, k3s/kind local labs.
-- **Current stack** — Kubernetes v1.36, Terraform v1.15 **+ OpenTofu**, Helm v4, ArgoCD v3, OpenTelemetry — not 2021 tooling.
+- **honest on-ramp** - cloud support/ops first, DevOps later.
+- **hour-based** - fits any schedule.
+- **verified June 2026** - exam codes, prices, and tool versions checked against official sources.
+- **region-agnostic** - no salary tables, no local job-board lists.
+- **free-first** - AWS Free Tier, KillerCoda, Play with Docker, KodeKloud free tier, k3s/kind local labs.
+- **current stack** - Kubernetes v1.36, Terraform v1.15 + OpenTofu, Helm v4, ArgoCD v3, OpenTelemetry.
 
 ---
 
-*Last verified: June 2026. Prices, exam codes, and tool versions change — confirm with the provider before booking. Sources in [/research](../../research/).*
+*Last verified: June 2026. Prices, exam codes, and tool versions change - confirm with the provider before booking. Sources in [/research](../../research/).*

@@ -1,29 +1,43 @@
-# 🎨 UI/UX Design Career Roadmap: Zero to First Job
+# UI/UX Design Career Roadmap: zero to first job meow
 
-> Hour-based, research-backed (June 2026), region-agnostic. Every topic points to a **specific, verified, free or freemium tool or lab** — never "go figure it out." Built for complete beginners with no degree.
+> hour-based, research-backed (June 2026), region-agnostic.
+> every topic points at a specific free/freemium tool, lab, or practice task when the old guide had one.
+> built for complete beginners with no degree, but honest about the 2026 portfolio bar.
 
 [![Updated](https://img.shields.io/badge/Updated-June%202026-blue.svg)]()
-[![Total Hours](https://img.shields.io/badge/Study%20Hours-350–500-green.svg)]()
+[![Total Hours](https://img.shields.io/badge/Study%20Hours-350-500-green.svg)]()
 
 > [!IMPORTANT]
-> **Read this first: "UX Designer" is a portfolio-driven field, and the entry bar rose after 2022.** The 2020–2022 bootcamp boom flooded the market; tech layoffs put senior designers back in the pool competing for junior roles. Many "entry-level" postings quietly expect 2–3 years of experience. This is still a real direct-entry path — unlike product management — but you get in with **a strong case-study portfolio**, not a cert. This guide gets you to that portfolio, then to the first offer.
+> **read this first: UX is a portfolio-driven field, and the entry bar rose after 2022.**
+> the 2020-2022 bootcamp boom flooded the market, and layoffs put senior designers back in the pool competing for junior roles.
+> this is still a real direct-entry path, unlike product management, but u get in with **strong case studies**, not a cert. dw, thats what this guide is building toward.
 
-## 🗺️ Roadmap at a Glance
+## how to track your progress meow
 
-```mermaid
-graph TD
-    P0[Phase 0: Pre-Flight Setup<br/>Day 1 setup] --> P1[Phase 1: Foundations<br/>Visual design · Color · Typography · Figma<br/>~130 hrs]
-    P1 --> P2[Phase 2: Core UX Skills<br/>Research · IA · Wireframes · Accessibility<br/>~170 hrs]
-    P2 --> P3[Phase 3: Pick a Track<br/>Product · Researcher · UI · Content<br/>~110 hrs]
-    P3 --> P4[Phase 4: Build Your Portfolio<br/>3–5 case studies<br/>~70 hrs]
-    P4 --> P5[Phase 5: Portfolio Site & Job Hunt<br/>Case-study writing · Interviews<br/>ongoing]
-    classDef phase fill:#0d1b2a,stroke:#415a77,stroke-width:2px,color:#e0e1dd;
-    class P0,P1,P2,P3,P4,P5 phase;
-```
+all the `- [ ]` boxes in this guide are display-only in this public repo.
+u cant really tick them here unless u commit to our repo, which is not how personal progress should work ;w;
 
-## ⏱️ How the Hour System Works
+**use one of these instead:**
+- **fork this repo** into your own GitHub account and tick boxes in your fork.
+- **copy the checklist into your notes** in Obsidian, OneNote, Notion, or whatever u already use.
+- **download or print it** if paper helps your brain.
 
-Timelines are in **study hours**, not weeks — so they work at any pace.
+the checkbox only shows where u are.
+the real progress signal is the gate: a design made, a test run, a portfolio artifact published, or an explanation u can give without hiding behind a tutorial.
+
+## todo map at a glance
+
+- [ ] **Goal 0 - prep your UX setup** - [00-prep.md](00-prep.md) (Day 1): career reality, accounts, Figma, Behance, Stark.
+- [ ] **Goal 1 - foundations** - [01-foundations.md](01-foundations.md) (~130h): visual design, color, typography, Figma.
+- [ ] **Goal 2 - core UX skills** - [02-core.md](02-core.md) (~170h): research, IA, wireframes, accessibility, design systems.
+- [ ] **Goal 3 - pick your track** - [03-specialization.md](03-specialization.md) (~110h): product, UI/visual, research, or content design.
+- [ ] **Goal 4 - build your portfolio** - [04-projects.md](04-projects.md) (~70h): 3-4 case studies with real process.
+- [ ] **Goal 5 - portfolio site + job hunt** - [05-job-hunt.md](05-job-hunt.md) (ongoing): case-study writing, interviews, role targeting.
+- [ ] **After entry-level** - [beyond-entry.md](beyond-entry.md): years 2+ tracks, systems, research, leadership.
+
+## how the hour system works
+
+timelines are in **study hours**, not weeks, so they work at any pace.
 
 | Your pace | 500 hours takes |
 |---|---|
@@ -32,47 +46,50 @@ Timelines are in **study hours**, not weeks — so they work at any pace.
 | 4 hrs/day | ~4 months |
 | 6 hrs/day (full-time) | ~3 months |
 
-Each phase shows an approximate hour band — a budget, not a deadline. Go at whatever pace fits your life.
+each goal shows an approximate hour band.
+thats a budget, not a deadline.
+at the default **2 h/day**, this path is roughly **8 months** before job hunt becomes the main work.
 
-## 📚 Guide Contents
+## guide contents
 
-| File | What's inside |
+| File | whats inside |
 |---|---|
-| [00-prep.md](00-prep.md) | Mindset, the honest career reality, accounts, free tooling setup |
-| [01-foundations.md](01-foundations.md) | Visual design principles, color theory, typography, Figma fundamentals |
-| [02-core.md](02-core.md) | User research, information architecture, wireframing, accessibility (WCAG 2.2), design systems |
-| [03-specialization.md](03-specialization.md) | Pick a track: Product Designer, UX Researcher, UI/Visual Designer, Content Designer |
-| [04-projects.md](04-projects.md) | Portfolio case studies — what gets hired vs what gets rejected |
-| [05-job-hunt.md](05-job-hunt.md) | Portfolio site, case-study writing, interview formats, role-targeting |
-| [beyond-entry.md](beyond-entry.md) | Senior tracks, design systems, research lead, design management (Years 2+) |
-| [certifications.md](certifications.md) | Full cert matrix, ROI tiers, recommended paths |
-| [labs.md](labs.md) | Verified interactive tool and practice inventory |
-| [resources.md](resources.md) | Courses, YouTube channels, books, communities |
-| [interview-prep.md](interview-prep.md) | Portfolio review walkthrough, app critique, design process Q&A, behavioral prompts |
+| [00-prep.md](00-prep.md) | mindset, honest career reality, accounts, free tooling setup |
+| [01-foundations.md](01-foundations.md) | visual design principles, color theory, typography, Figma fundamentals |
+| [02-core.md](02-core.md) | user research, information architecture, wireframing, WCAG 2.2, design systems |
+| [03-specialization.md](03-specialization.md) | choose Product Designer, UX Researcher, UI/Visual Designer, or Content Designer |
+| [04-projects.md](04-projects.md) | portfolio case studies: what gets hired vs rejected |
+| [05-job-hunt.md](05-job-hunt.md) | portfolio site, case-study writing, interview formats, role targeting |
+| [beyond-entry.md](beyond-entry.md) | senior tracks, design systems, research lead, design management |
+| [certifications.md](certifications.md) | cert matrix, ROI tiers, recommended paths |
+| [labs.md](labs.md) | verified interactive tool and practice inventory |
+| [resources.md](resources.md) | courses, books, channels, communities |
+| [interview-prep.md](interview-prep.md) | portfolio walkthroughs, app critique, process Q&A, behavioral prompts |
 
-## 🏁 Certification Reality (2026)
+## certification reality in 2026
 
+```text
+[Optional]      Google UX Design Professional Certificate (~$294, ~6 mo): ATS keyword help
+[Self-directed] IxDF Membership (~$156/yr): 40+ courses, ongoing learning signal
+[Senior only]   NN/g UX Certification (~$6,400): respected, skip until experienced
+[Skip]          Adobe Certified Professional: tool cert, not a UX-practice signal
+                Figma has no formal certification
 ```
-[Optional]     Google UX Design Professional Certificate (~$294, ~6 mo) — ATS keyword help
-[Self-directed] IxDF Membership (~$156/yr) — 40+ courses, signals genuine learning
-[Senior only]  NN/g UX Certification (~$6,400) — respected, skip until experienced
-[Skip]         Adobe Certified Professional — tool cert, not a UX-practice signal
-               Figma has no formal certification (cert page 404)
-```
 
-> ⚠️ **Portfolio is the real filter.** Certs appear in fewer than 10% of UX job postings. Three strong case studies outweigh any certificate at the entry level. See [certifications.md](certifications.md) for the full picture.
+> portfolio is the real filter meow.
+> certs appear in fewer than 10% of UX job postings.
+> three strong case studies beat any entry-level certificate.
+> see [certifications.md](certifications.md) before paying for anything.
 
-## ✅ What Makes This Guide Different
+## what makes this guide different
 
-- **Honest about the entry bar** — portfolio-first, not cert-first. No false promises about bootcamp-to-job timelines.
-- **Portfolio-driven** — every phase builds toward case studies, not just skill accumulation.
-- **Hour-based** — fits any schedule, not rigid weeks.
-- **Verified June 2026** — tool versions, cert prices, and dead resources checked. Adobe XD discontinued; flagged.
-- **Region-agnostic** — no salary tables, no local job-board lists; strategy that works anywhere.
-- **Free-first** — Figma Starter, Penpot, FigJam, Behance, Sharpen.design, Daily UI, Stark plugin.
-- **Accessibility built in** — WCAG 2.2 woven through Phase 2, not bolted on at the end.
-- **Honest on AI** — generative UI tools raise the visual floor; juniors need to show research and strategy depth to differentiate.
+- **portfolio-first** - no fake bootcamp-to-job promise.
+- **hour-based** - fits any schedule, not rigid weeks.
+- **verified June 2026** - tool versions, cert prices, and dead resources were checked in the research pass.
+- **free-first** - Figma Starter, Penpot, FigJam, Behance, Sharpen.design, Daily UI, Stark, WebAIM.
+- **accessibility built in** - WCAG 2.2 appears before the portfolio, not as a late add-on.
+- **AI-realistic** - generative UI tools raise the visual floor, so juniors need to show research and judgment.
 
 ---
 
-*Last verified: June 2026. Tool pricing and cert details change — confirm with the provider before booking. Sources in [/research](../../research/).*
+*Last verified: June 2026. Tool pricing and cert details change, so confirm with the provider before paying. Sources in [/research](../../research/).*

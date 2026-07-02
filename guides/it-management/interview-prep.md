@@ -1,163 +1,185 @@
-# 🎤 Interview Prep — IT Management & Strategy (2026)
+# Interview prep: IT Management & Strategy (2026) meow
 
-> IT management interviews are **behavioral-heavy and scenario-driven**, not technical trivia. They probe judgment, communication, and how you handle people and pressure — because that's the actual job. This file gives you the formats, a question bank, and a way to structure answers.
+> IT management interviews are behavioral-heavy and scenario-driven.
+> they probe judgment, communication, people leadership, and pressure handling, because thats the job.
 
-[← Job Hunt](05-job-hunt.md) · [Hub](README.md)
-
----
-
-## What IT management interviews actually test
-
-You're not being tested on whether you can configure a server. You're being tested on:
-
-1. **Judgment under ambiguity** — can you make a defensible decision with incomplete information?
-2. **Communication** — can you explain a technical situation to a non-technical executive, and a business constraint to an engineer?
-3. **People leadership** — how do you handle conflict, underperformance, and motivation?
-4. **Prioritization** — when everything is on fire, what do you do first, and why?
-5. **Ownership** — do you take accountability for outcomes, including failures?
-
-> The single biggest tell interviewers listen for: do you talk about **"I"** (individual contributor mindset) or **"we / the team / I enabled them to…"** (manager mindset)? First-time-manager candidates who still describe themselves doing all the technical work signal they haven't made the transition. Frame your answers around enabling outcomes, not doing the tasks.
+[Previous: Goal 5](05-job-hunt.md) - [Hub](README.md)
 
 ---
 
-## The interview formats you'll face
+- [ ] **understand what interviews test**
+- [ ] **prepare STAR stories**
+- [ ] **practice incident scenarios**
+- [ ] **answer "why management?"**
+- [ ] **refresh track-specific vocabulary**
+- [ ] **prepare questions for them**
 
-| Format | What it looks like | What they're assessing |
+## what interviews test
+
+u are not being tested on whether u can configure a server.
+u are being tested on:
+
+1. **Judgment under ambiguity** - can u decide with incomplete information?
+2. **Communication** - can u explain technical reality to executives and business constraints to engineers?
+3. **People leadership** - conflict, underperformance, motivation.
+4. **Prioritization** - when everything is urgent, what comes first?
+5. **Ownership** - do u take accountability for outcomes and failures?
+
+big tell: do u talk only about **i fixed it**, or do u talk about **the team, the process, and what u enabled**?
+first-time manager candidates who still describe themselves doing all technical work sound like they havent crossed the IC -> manager bridge yet.
+
+## formats youll face
+
+| Format | What it looks like | What they assess |
 |---|---|---|
-| **Behavioral** | "Tell me about a time you…" | Past behavior as predictor; leadership, conflict, ownership |
-| **Scenario / situational** | "An outage hits at 9 AM and three teams are blaming each other. What do you do?" | Incident handling, calm under pressure, process instinct |
-| **Prioritization case** | "You have a security patch, a CEO laptop issue, and a project deadline — all urgent. Walk me through it." | Tradeoff reasoning, business-risk weighting |
-| **Budget / business case** | "Walk us through a business case you've built" or "How would you justify a tooling spend?" | Financial literacy, executive communication |
-| **People-management** | "How do you handle an underperformer?" / "How do you motivate a burned-out team?" | Coaching, accountability, empathy + standards |
-| **Strategy / vision** | "What would your first 90 days look like?" / "How do you align IT with business goals?" | Strategic thinking, governance awareness |
+| **Behavioral** | "Tell me about a time..." | leadership, conflict, ownership |
+| **Scenario / situational** | outage at 9 AM, teams blaming each other | incident handling, calm, process |
+| **Prioritization case** | security patch, CEO laptop, project deadline | business-risk weighting |
+| **Budget / business case** | justify tooling spend | financial literacy |
+| **People management** | underperformer, burned-out team | coaching, standards, empathy |
+| **Strategy / vision** | first 90 days, align IT to business | strategic thinking |
 
-Most loops mix several of these. Smaller companies lean toward scenario + behavioral; enterprise/government adds governance, compliance, and PMP-style project questions.
+small companies lean scenario + behavioral.
+enterprise/government adds governance, compliance, and project questions.
 
----
+## STAR for management answers
 
-## STAR: the structure for every behavioral answer
+STAR = **Situation -> Task -> Action -> Result**.
+for management interviews, weight Action and Result.
 
-**S**ituation → **T**ask → **A**ction → **R**esult. For management interviews, weight **Action** (what *you* decided and why) and **Result** (measurable outcome + what you learned).
+in Action, include the people dimension:
+who u talked to, how u communicated, how u brought the team along.
+a technically correct decision delivered badly is still a management failure.
 
-> The management upgrade to STAR: in the Action step, always include the *people* dimension — who you talked to, how you communicated the decision, how you brought the team along. A technically correct decision delivered badly is a management failure.
+weak:
+> "we had an outage so i fixed the server and it came back up."
 
-**Weak:** "We had an outage so I fixed the server and it came back up."
-**Strong:** "SSO went down at 9 AM (S). As the lead, I owned the response (T). I assigned one engineer to diagnose while I ran comms — a status note to all staff within 15 minutes and updates every 30 (A). We restored in 2.5 hours, and in the post-mortem we found the root cause was an unmonitored cert expiry, so I added expiry alerting and a runbook. P1 cert incidents went to zero after that (R)."
+strong:
+> "SSO went down at 9 AM. as the lead, i owned response. i assigned one engineer to diagnose while i ran comms: all-staff status within 15 minutes and updates every 30. we restored in 2.5 hours. post-mortem found unmonitored cert expiry, so i added expiry alerting and a runbook. P1 cert incidents went to zero after that."
 
----
+## behavioral question bank
 
-## Behavioral question bank (prep a STAR story for each)
+prepare 6-8 distinct stories u can flex.
 
-**Leadership & people**
-- Tell me about a time you led a team through a difficult change.
-- Describe a conflict between two team members. How did you handle it?
-- Tell me about a time you had to manage an underperformer.
-- How have you developed someone on your team?
-- Tell me about a time you had to deliver hard feedback.
-- Describe a time you motivated a team through a stressful period.
+### leadership and people
 
-**Ownership & failure**
-- Tell me about a project that failed or went badly. What did you do?
-- Describe a decision you made that turned out to be wrong.
-- Tell me about a time you took accountability for a team member's mistake.
+- [ ] led a team through difficult change
+- [ ] handled conflict between team members
+- [ ] managed an underperformer
+- [ ] developed someone on your team
+- [ ] delivered hard feedback
+- [ ] motivated a team through stress
 
-**Stakeholders & communication**
-- Tell me about a time you had to say no to an executive or important stakeholder.
-- Describe explaining a complex technical issue to a non-technical audience.
-- Tell me about a time you had to influence without authority.
+### ownership and failure
 
-**Prioritization & pressure**
-- Tell me about a time everything was urgent. How did you decide what to do first?
-- Describe a major incident you managed.
-- Tell me about a time you had to cut scope or push back on a deadline.
+- [ ] project failed or went badly
+- [ ] decision turned out wrong
+- [ ] took accountability for a team member's mistake
 
-**Strategy & judgment**
-- Tell me about a process you improved.
-- Describe a time you made a data-driven decision.
-- Tell me about a vendor or tool decision you owned.
+### stakeholders and communication
 
-> Prepare **6–8 distinct stories** that you can flex across these questions. One strong incident story, one conflict story, one failure story, one stakeholder-pushback story, one process-improvement story, and one cross-functional-influence story will cover the majority of behavioral prompts.
+- [ ] said no to an executive or important stakeholder
+- [ ] explained technical issue to non-technical audience
+- [ ] influenced without authority
 
----
+### prioritization and pressure
 
-## Scenario questions — how to structure the answer
+- [ ] everything was urgent, what came first
+- [ ] managed a major incident
+- [ ] cut scope or pushed back on deadline
 
-When given a scenario ("an outage hits, teams are blaming each other"), don't jump to a fix. Follow a visible process:
+### strategy and judgment
 
-1. **Stabilize first** — "My first priority is service restoration, not root cause. I'd establish an incident commander (me, if no one's assigned), get one person diagnosing, and stop the cross-team blame by focusing everyone on impact."
-2. **Communicate** — "I'd send a status update to affected users within minutes, set an update cadence, and keep leadership informed so they're not surprised."
-3. **Resolve, then learn** — "Once restored, I'd run a blameless post-mortem — the blaming you described is exactly the culture problem a good post-mortem process fixes."
-4. **Prevent** — "Action items with owners and due dates, and a check on whether monitoring should have caught this earlier."
+- [ ] improved a process
+- [ ] made a data-driven decision
+- [ ] owned vendor or tool decision
 
-This shows you know ITIL incident-management instinct *and* the people/comms dimension without reciting definitions.
+one incident story, one conflict story, one failure story, one stakeholder-pushback story, one process-improvement story, and one cross-functional influence story cover most prompts.
 
-### The prioritization scenario
+## scenario questions
 
-For "security patch vs. CEO laptop vs. project deadline," show you weigh by **business risk and blast radius**, not by who's shouting loudest:
+when given an outage or blame scenario, dont jump to a fix.
+show a visible process:
 
-- "I'd assess blast radius and reversibility first. A critical security patch with an active exploit affects everyone and is hard to undo if breached — that usually wins. The CEO's laptop affects one person; I'd delegate it to a team member in parallel rather than drop everything myself. The project deadline I'd assess: is it truly fixed, or can I negotiate a short slip with the stakeholder? I'd communicate the tradeoff to everyone affected rather than silently deprioritize."
+1. **Stabilize first** - restore service before root cause. assign incident commander, stop blame, focus on impact.
+2. **Communicate** - update affected users fast, set cadence, keep leadership informed.
+3. **Resolve, then learn** - after restoration, run blameless post-mortem.
+4. **Prevent** - action items with owners/dates, monitoring/runbook checks.
 
-The content of the decision matters less than showing structured reasoning + communication.
+this shows ITIL instinct plus people/comms, without reciting definitions.
 
----
+### prioritization scenario
 
-## The "why management?" question (critical for first-timers)
+for "security patch vs CEO laptop vs project deadline," weigh **business risk and blast radius**, not who shouts loudest.
 
-If you're moving from an IC role (sysadmin, engineer, support lead), you *will* get asked why you want to manage. Bad answers: "it's the next step," "more money," "I'm tired of coding." These signal you're escaping, not choosing.
+good structure:
 
-**Strong framing:** you get more leverage and satisfaction from multiplying a team's output than from your own — and you have evidence (you mentored, you led a project, you improved a process). Make it about impact through others, grounded in a concrete example of you already doing management-shaped work.
+- [ ] assess blast radius and reversibility first
+- [ ] critical active-exploit patch likely wins because it affects everyone
+- [ ] CEO laptop affects one person, delegate in parallel if possible
+- [ ] project deadline: decide whether fixed or negotiable
+- [ ] communicate tradeoff to everyone affected
 
-> Interviewers know the IC→manager transition is where people fail. They want to see you understand the job changes fundamentally — your output becomes your team's output — and that you're running *toward* that, with proof you've started already.
+decision content matters less than structured reasoning + communication.
 
----
+## the "why management?" question
 
-## Track-specific angles
+if moving from IC role, u will be asked why u want to manage.
 
-| If you're targeting… | Expect extra questions on… |
+bad answers:
+
+- [ ] "its the next step"
+- [ ] "more money"
+- [ ] "im tired of coding"
+
+strong framing:
+u get more leverage and satisfaction from multiplying a team's output than from your own.
+ground it in proof: mentoring, leading a project, improving a process.
+
+interviewers know IC -> manager is where people fail.
+they want evidence u understand that your output becomes the team's output.
+
+## track-specific angles
+
+| Target | Extra questions |
 |---|---|
-| **ITSM / Service Delivery** | ITIL processes (incident/change/problem), SLA management, CAB, continual improvement |
-| **Project/Program Mgmt** | Methodology choice (Agile vs. waterfall vs. PRINCE2), scope/risk management, stakeholder governance, earned value |
-| **Governance/Strategy** | COBIT/risk frameworks, audit readiness, aligning IT spend to business strategy, board communication |
-| **People/Eng Management** | Hiring, performance management, team topology, career development, retention |
-| **IT Operations** | Uptime/reliability, on-call and incident command, capacity planning, infra cost management |
+| **ITSM / Service Delivery** | incident/change/problem, SLA management, CAB, continual improvement |
+| **Project/Program** | Agile vs waterfall vs PRINCE2, scope/risk, governance, earned value |
+| **Governance/Strategy** | COBIT, audit readiness, IT spend alignment, board communication |
+| **People/Eng Management** | hiring, performance, team topology, career development, retention |
+| **IT Operations** | uptime, on-call, incident command, capacity planning, infra cost |
 
----
+## questions to ask them
 
-## Questions to ask them (you're interviewing them too)
+asking sharp questions signals seniority.
 
-Asking sharp questions signals seniority. Pick a few:
+- [ ] "How is IT perceived here: cost center or strategic partner? what would change that?"
+- [ ] "What does success look like at 90 days and one year?"
+- [ ] "How does the team handle incidents and post-mortems today?"
+- [ ] "Whats the biggest friction between IT and the business rn?"
+- [ ] "How are IT priorities and budgets set, and who is at the table?"
+- [ ] "Whats the tenure and morale of the team id inherit?"
 
-- "How is IT perceived here — as a cost center or a strategic partner? What would change that?"
-- "What does success in this role look like at 90 days? At one year?"
-- "How does the team currently handle incidents and post-mortems?"
-- "What's the biggest source of friction between IT and the rest of the business right now?"
-- "How are IT priorities and budgets set — and who's at the table when they are?"
-- "What's the tenure and morale of the team I'd be inheriting?"
+## practice resources
 
----
-
-## Practice resources
-
-| Resource | What you do | Cost | Status |
+| Resource | What u do | Cost | Status |
 |---|---|---|---|
-| [ADPList](https://adplist.org) | Free 1:1 mock interviews / mentorship with IT & eng managers | **Free** | ✅ |
-| [Atlassian Team Playbook](https://www.atlassian.com/team-playbook/plays) | Run the exercises to build real management vocabulary | **Free** | ✅ |
-| [PagerDuty Incident Response](https://response.pagerduty.com) | Internalize incident-command language for scenario questions | **Free** | ✅ |
-| [r/ITManagers](https://www.reddit.com/r/ITManagers/) | Real interview debriefs and "what they asked me" threads | **Free** | ✅ |
+| [ADPList](https://adplist.org) | mock interviews / mentorship with IT and engineering managers | **Free** | live |
+| [Atlassian Team Playbook](https://www.atlassian.com/team-playbook/plays) | exercises for management vocabulary | **Free** | live |
+| [PagerDuty Incident Response](https://response.pagerduty.com) | incident-command language for scenarios | **Free** | live |
+| [r/ITManagers](https://www.reddit.com/r/ITManagers/) | real debriefs and interview threads | **Free** | live |
+
+## final prep checklist
+
+- [ ] 6-8 STAR stories written with measurable result and lesson learned
+- [ ] one incident/outage story in 90 seconds
+- [ ] one failure story where u took accountability and changed something
+- [ ] crisp 60-second "why management?" answer with real example
+- [ ] 90-day plan artifact from [Goal 4](04-projects.md) ready
+- [ ] 4-5 sharp questions to ask them
+- [ ] track-specific vocabulary refreshed
+- [ ] answers frame the team's outcomes, not individual heroics
 
 ---
 
-## Final prep checklist
-
-- [ ] 6–8 STAR stories written out, each with a measurable result and a lesson learned
-- [ ] One strong **incident / outage** story you can tell in 90 seconds
-- [ ] One **failure** story where you took accountability and changed something
-- [ ] A crisp 60-second answer to **"why management?"** backed by a real example
-- [ ] Your **90-day plan** artifact (from [04-projects.md](04-projects.md)) ready to reference
-- [ ] 4–5 sharp questions to ask them
-- [ ] Track-specific framework vocabulary refreshed (ITIL / PMBOK / COBIT as relevant)
-- [ ] You consistently frame answers around **the team's outcomes**, not your individual heroics
-
----
-
-*Last verified: June 2026. Practice-platform availability changes — confirm before relying on a tool. Sources in [/research](../../research/).*
+*Last verified: June 2026. Practice-platform availability changes, so confirm before relying on a tool. Sources in [/research](../../research/).*

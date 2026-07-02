@@ -1,178 +1,217 @@
-# What Each Field Actually Is
+# What each field actually is meow
 
-> A plain-language tour of all 8 IT career paths. No jargon, no hype. Read this before picking a direction. If a field sounds dull when described honestly, you probably don't want that job — better to know now than 200 hours in.
+> a plain-language tour of all 8 IT career paths.
+> no hype, no jargon wall.
+> if a field sounds dull when described honestly, better to learn that now than 200 hours in.
 
-For each field: **what you actually do all day**, who you work with, the pay, how remote-friendly it is, how much math and coding it really needs, who tends to like it, and the honest downsides.
+for each field, look at: what u do all day, who u work with, remote fit, coding/math level, who tends to like it, downsides, and whether certs matter.
 
 ---
 
 ## 1. Software Development & Engineering
 
-**What you do all day:** Write code that builds apps, websites, and services. Read other people's code, fix bugs, add features, review teammates' work, and sit in planning meetings. A lot of the job is *reading* code and working out *why* something breaks — not just typing new code.
+**what u do all day:** write code that builds apps, websites, and services.
+read other peoples code, fix bugs, add features, review work, sit in planning.
+a lot of the job is reading code and figuring out why something breaks, not just typing new code.
 
-**Work with:** Other developers, product managers, designers. Mostly small teams.
+**work with:** developers, product managers, designers.
 
-- **Job outlook:** Large, established market; entry level is competitive — a strong portfolio matters more than a degree.
-- **Remote:** ✅ High — one of the most remote-friendly fields
-- **Coding:** 🔴 Heavy — it's the entire job
-- **Math:** 🟢 Light for most web/app work (algebra-level logic). Heavy only in graphics, ML, or games.
+- **job outlook:** large market, but entry-level is competitive. portfolio matters more than degree.
+- **remote:** high.
+- **coding:** heavy. its the job.
+- **math:** light for most web/app work. heavy only in graphics, ML, games.
 
-**You'll probably like it if:** you enjoy building things, can sit with a frustrating problem for hours, and like seeing something work that didn't exist before.
+**u might like it if:** u enjoy building things, can sit with frustrating bugs, and like seeing something work that didnt exist before.
 
-**Honest downsides:** Can be isolating. Constant learning treadmill — new frameworks every year. Debugging can be maddening. Interviews are notoriously tough (live coding / LeetCode).
+**downsides:** isolating sometimes. constant learning treadmill. debugging can be maddening. interviews can be tough: live coding and LeetCode.
 
-**Certs matter?** ❌ Barely. A strong GitHub portfolio and projects beat certs almost everywhere.
+**certs matter?** barely. GitHub projects beat certs almost everywhere.
 
 ---
 
 ## 2. Cybersecurity
 
-**What you do all day:** Depends on the side. **Blue team (defense):** watch alerts, investigate suspicious activity, respond to incidents, harden systems. **Red team (offense):** simulate attacks, find vulnerabilities, write reports on what you broke. Entry roles are mostly **SOC Analyst** — triaging security alerts in a monitoring queue.
+**what u do all day:** depends on side.
+blue team watches alerts, investigates suspicious activity, responds to incidents, hardens systems.
+red team simulates attacks, finds vulnerabilities, writes reports.
+entry is usually **SOC Analyst**, triaging alerts.
 
-**Work with:** Security teams, IT, sometimes legal/compliance.
+**work with:** security teams, IT, sometimes legal/compliance.
 
-- **Job outlook:** strong demand, but genuinely competitive at the entry level (it's a popular target)
-- **Remote:** ⚠️ Medium — many SOC roles are on-site or shift-based; GRC and cloud security are more remote-friendly
-- **Coding:** 🟡 Some — scripting (Python/PowerShell) helps a lot but you're not building apps
-- **Math:** 🟢 Light
+- **job outlook:** strong demand, but entry-level is crowded.
+- **remote:** medium. SOC roles may be on-site or shift-based; GRC/cloud security are more remote-friendly.
+- **coding:** some. Python/PowerShell scripting helps a lot.
+- **math:** light.
 
-**You'll probably like it if:** you're curious about how things break, enjoy investigation/puzzle-solving, and don't mind reading logs.
+**u might like it if:** u are curious about how things break, like investigation, and dont mind reading logs.
 
-**Honest downsides:** **It's not truly entry-level.** Most people get in *after* some IT support or networking experience. The "1 million open jobs" headline is misleading — the bottom rung is crowded with cert-holders who don't have hands-on skill. Shift work is common in SOCs.
+**downsides:** not truly entry-level for many people.
+lots enter after support or networking.
+the "open jobs" headline is misleading at the bottom rung.
+shift work is common in SOCs.
 
-**Certs matter?** ✅ Yes — Security+ is a near-mandatory baseline. (See the [cybersecurity guide](../guides/cybersecurity/).)
+**certs matter?** yes. Security+ is a common baseline. see [Cybersecurity](../guides/cybersecurity/).
 
 ---
 
 ## 3. Cloud & DevOps
 
-**What you do all day:** Build and run the infrastructure that apps live on — servers, networks, databases, deployment pipelines — mostly on AWS, Azure, or Google Cloud. Automate everything with code (Infrastructure as Code). Keep systems running, fast, and cheap. "DevOps" is about making development and operations flow smoothly together.
+**what u do all day:** build and run infrastructure that apps live on: servers, networks, databases, deployment pipelines, mostly AWS/Azure/GCP.
+automate with Infrastructure as Code.
+keep systems running, fast, reliable, and cheap.
 
-**Work with:** Developers, infrastructure teams. Often the bridge between "writing software" and "running it."
+**work with:** developers and infrastructure teams.
 
-- **Job outlook:** high demand; one of the strongest-paying entry tracks, but expects real hands-on skill
-- **Remote:** ✅ High
-- **Coding:** 🟡 Some — scripting and config (YAML, Terraform, Bash/Python), not usually app-building
-- **Math:** 🟢 Light
+- **job outlook:** high demand, but expects hands-on skill.
+- **remote:** high.
+- **coding:** some. scripting, YAML, Terraform, Bash/Python.
+- **math:** light.
 
-**You'll probably like it if:** you like systems thinking, automation, and the satisfaction of making messy things reliable and repeatable.
+**u might like it if:** systems thinking, automation, and reliability sound satisfying.
 
-**Honest downsides:** **Rarely a true entry point** — most cloud/DevOps engineers come from dev or sysadmin first. On-call rotations (you get paged when things break at 3am). Huge surface area to learn.
+**downsides:** rarely a true first job.
+many cloud/DevOps people come from dev or sysadmin.
+on-call can mean 3 AM pages.
+surface area is huge.
 
-**Certs matter?** ✅ Yes — AWS/Azure certs are strong door-openers, paired with hands-on projects.
+**certs matter?** yes, if paired with projects. AWS/Azure certs can open doors.
 
 ---
 
 ## 4. Data, AI & Analytics
 
-**What you do all day:** Depends on the role. **Data Analyst:** write SQL queries, build dashboards, answer business questions with data. **Data Engineer:** build pipelines that move and clean data. **ML/Data Scientist:** build predictive models. Entry usually means **Analyst** — SQL, spreadsheets, and a BI tool like Power BI or Tableau.
+**what u do all day:** depends on role.
+Data Analyst writes SQL, builds dashboards, answers business questions.
+Data Engineer builds pipelines.
+ML/Data Scientist builds predictive models.
+entry usually means analyst: SQL, spreadsheets, BI tool.
 
-**Work with:** Business stakeholders, analysts, engineers.
+**work with:** business stakeholders, analysts, engineers.
 
-- **Job outlook:** Strong — demand for data skills is broad and growing across industries
-- **Remote:** ✅ High
-- **Coding:** 🟡 Some — SQL is essential; Python grows as you advance
-- **Math:** 🟡 Medium for analytics, 🔴 Heavy for ML/data science (statistics)
+- **job outlook:** strong across industries.
+- **remote:** high.
+- **coding:** some. SQL is essential; Python grows as u advance.
+- **math:** medium for analytics, heavy for ML/data science.
 
-**You'll probably like it if:** you like finding patterns, answering "why did this happen," and communicating findings clearly.
+**u might like it if:** u like patterns, "why did this happen?", and explaining findings clearly.
 
-**Honest downsides:** A lot of analyst work is cleaning messy data and fielding stakeholder requests. "Learn ML first" is a trap — you need SQL and fundamentals first. Job titles are inconsistent and overlapping.
+**downsides:** lots of data cleaning and stakeholder requests.
+"learn ML first" is a trap.
+titles are inconsistent.
 
-**Certs matter?** 🟡 Somewhat — but SQL skill + a portfolio of analyses beats certs.
+**certs matter?** somewhat, but SQL skill + analysis portfolio beats certs.
 
 ---
 
 ## 5. IT Support & Networking
 
-**What you do all day:** Keep people and systems working. **Help Desk / Desktop Support:** fix users' computer/account/software problems via tickets. **Network Admin:** configure and maintain the network (routers, switches, Wi-Fi, VPNs). This is the **most common true entry point into IT** with no experience.
+**what u do all day:** keep people and systems working.
+help desk fixes user computer/account/software problems.
+network admins configure networks: routers, switches, Wi-Fi, VPNs.
+this is the most common true entry point into IT.
 
-**Work with:** Everyone in the company — lots of human interaction.
+**work with:** everyone in the company.
 
-- **Job outlook:** Steady — a reliable, high-volume entry door into all of IT
-- **Remote:** ❌ Low — often on-site (you're touching hardware and helping in-person)
-- **Coding:** 🟢 Little — scripting (PowerShell/Bash) helps you advance and automate
-- **Math:** 🟢 Light
+- **job outlook:** steady, high-volume entry door.
+- **remote:** low. often on-site.
+- **coding:** little. scripting helps u advance.
+- **math:** light.
 
-**You'll probably like it if:** you like helping people, solving concrete problems, and want the **fastest realistic way into the industry** without a degree.
+**u might like it if:** u like helping people, solving concrete problems, and want the fastest realistic way into IT without a degree.
 
-**Honest downsides:** Lowest starting pay of the 8. Can be repetitive ("have you tried restarting?"). Sometimes treated as a stepping stone — but that's also its strength: it's the launchpad into security, cloud, and sysadmin.
+**downsides:** lowest starting level among these paths.
+can be repetitive.
+sometimes treated as a stepping stone, but thats also its strength.
 
-**Certs matter?** ✅ Yes — CompTIA A+ is the classic entry cert; Network+ and CCNA for networking.
+**certs matter?** yes. A+ is classic entry; Network+ and CCNA for networking.
 
 ---
 
 ## 6. UI/UX Design
 
-**What you do all day:** Research what users need, sketch and prototype interfaces (mostly in Figma), and test designs with real users. A lot of the job is *iterating* — reworking a flow after feedback, maintaining a design system, and writing specs so engineers can build what you designed. Less "making things pretty," more solving usability problems with evidence.
+**what u do all day:** research users, sketch and prototype interfaces in Figma, test designs, iterate after feedback, maintain design systems, write specs for engineers.
+less "make it pretty," more solve usability problems with evidence.
 
-**Work with:** Product managers, engineers, and users. Highly collaborative.
+**work with:** product managers, engineers, users.
 
-- **Job outlook:** A real direct-entry path, but **competitive** — the 2020–2022 bootcamp boom flooded the junior market, and many "entry-level" postings quietly expect 2–3 years
-- **Remote:** ✅ High
-- **Coding:** 🟢 Little — HTML/CSS literacy helps for handoff, but you don't build apps
-- **Math:** 🟢 Light
+- **job outlook:** direct-entry path, but competitive after the 2020-2022 bootcamp boom.
+- **remote:** high.
+- **coding:** little. HTML/CSS helps for handoff.
+- **math:** light.
 
-**You'll probably like it if:** you care about how things *feel* to use, like talking to users, and can take heavy critique without taking it personally.
+**u might like it if:** u care how products feel to use, like talking to users, and can take critique without taking it personally.
 
-**Honest downsides:** Very competitive at entry — your **portfolio is everything** and it takes months to build. Lots of revision cycles and stakeholder politics. Generative-AI tools now produce passable UI, so juniors need to show *research and strategy* depth, not just nice screens.
+**downsides:** portfolio is everything and takes months.
+stakeholder politics and revisions are normal.
+AI raises the visual floor, so juniors need research and strategy depth.
 
-**Certs matter?** ❌ No — a strong case-study portfolio beats any certificate. (See the [UI/UX Design guide](../guides/ux-design/).)
+**certs matter?** no. case-study portfolio wins. see [UI/UX Design](../guides/ux-design/).
 
 ---
 
 ## 7. Product Management
 
-**What you do all day:** Decide *what* to build and *why* — talk to users, write requirements (PRDs), prioritize features, define success metrics, and coordinate engineers and designers. Most of the work is communication, alignment, and decision-making under ambiguity. You have responsibility for outcomes but **no direct authority** over the people who build them.
+**what u do all day:** decide what to build and why.
+talk to users, write PRDs, prioritize features, define success metrics, coordinate engineers and designers.
+u are accountable for outcomes but have no direct authority over the people building them.
 
-**Work with:** Engineers, designers, executives, and stakeholders across the business.
+**work with:** engineers, designers, executives, business stakeholders.
 
-- **Job outlook:** Strong demand, but **rarely a true first job** — even "junior PM" postings usually want 2–5 years of relevant experience
-- **Remote:** ✅ High (but relationship-heavy; many teams prefer hybrid)
-- **Coding:** 🟢 Little — you need enough technical literacy to talk credibly with engineers; SQL helps a lot
-- **Math:** 🟡 Some — metrics, A/B test literacy, and prioritization scoring matter
+- **job outlook:** strong demand, but rarely a true first job.
+- **remote:** high, though relationship-heavy and often hybrid.
+- **coding:** little. technical literacy and SQL help.
+- **math:** some. metrics, A/B tests, prioritization scoring.
 
-**You'll probably like it if:** you like leading through influence, holding the big picture and the details at once, and you're comfortable making calls without perfect information.
+**u might like it if:** u like leading through influence, holding big picture + details, and making calls without perfect information.
 
-**Honest downsides:** **Not a true entry-level field.** The realistic doors are APM programs (competitive) or an internal transfer from engineering/design/data/support. Meeting-heavy. You carry accountability without authority — blamed when things go wrong, often uncredited when they go right.
+**downsides:** not truly entry-level.
+real doors are APM programs or internal transfer from engineering/design/data/support.
+meeting-heavy.
+accountability without authority can be rough.
 
-**Certs matter?** ❌ Mostly not — shipped artifacts and product sense win. PMP carries weight only in enterprise/government. (See the [Product Management guide](../guides/product-management/).)
+**certs matter?** mostly no in tech. PMP matters more in enterprise/government. see [Product Management](../guides/product-management/).
 
 ---
 
 ## 8. IT Management & Strategy
 
-**What you do all day:** Lead IT teams, manage budgets and vendors, align technology with business goals, handle risk and compliance. Frameworks like ITIL (service management) and project management (PMP). Less hands-on tech, more people, process, and planning.
+**what u do all day:** lead IT teams, manage budgets and vendors, align technology with business goals, handle risk and compliance.
+less hands-on tech, more people, process, planning, and communication.
 
-**Work with:** Teams you manage, executives, vendors.
+**work with:** teams u manage, executives, vendors, business stakeholders.
 
-- **Job outlook:** Steady — usually reached after years in another IT field, not entered directly
-- **Remote:** ⚠️ Medium
-- **Coding:** 🟢 None typically
-- **Math:** 🟢 Light (budgets, basic ROI)
+- **job outlook:** steady, usually reached after years in another IT role.
+- **remote:** medium.
+- **coding:** little to none.
+- **math:** light: budgets, ROI, basic finance.
 
-**You'll probably like it if:** you like leading, organizing, and translating between technical and business worlds.
+**u might like it if:** u like leading, organizing, and translating between technical and business worlds.
 
-**Honest downsides:** **Not an entry-level field.** You almost always need years of prior IT experience (often from support, sysadmin, or a technical track) before managing. Listed here so you know it exists as a *destination*, not a starting point.
+**downsides:** not entry-level.
+u almost always need prior IT experience from support, sysadmin, project, or technical track.
+listed here as a destination, not a starting point.
 
-**Certs matter?** ✅ Yes — ITIL 4, PMP, and at senior levels CISSP/CISM for security management.
+**certs matter?** yes. ITIL, PMP, COBIT/TOGAF by track. see [IT Management](../guides/it-management/).
 
 ---
 
-## Quick reality check: which are realistic *first* jobs?
+## quick reality check: realistic first jobs
 
 | Field | True entry-level? | Typical real path in |
 |---|---|---|
-| IT Support & Networking | ✅ Yes | Direct — best no-experience entry |
-| Software Development | ✅ Yes | Direct, with a strong portfolio |
-| Data & Analytics | ✅ Yes (Analyst) | Direct, with SQL + portfolio |
-| UI/UX Design | ⚠️ Hard | Direct but very competitive; needs portfolio |
-| Cybersecurity | ⚠️ Usually not | Often via IT Support → SOC |
-| Cloud & DevOps | ⚠️ Usually not | Often via Dev or SysAdmin → Cloud |
-| Product Management | ❌ No | APM program or transfer after experience |
-| IT Management | ❌ No | After years in another IT role |
+| IT Support & Networking | yes | direct, best no-experience entry |
+| Software Development | yes | direct with strong portfolio |
+| Data & Analytics | yes, analyst | direct with SQL + portfolio |
+| UI/UX Design | hard | direct but competitive, needs portfolio |
+| Cybersecurity | usually not | often IT Support -> SOC |
+| Cloud & DevOps | usually not | often dev or sysadmin -> cloud |
+| Product Management | no | APM program or transfer |
+| IT Management | no | after years in another IT role |
 
-> **Takeaway:** If you want *into the industry fastest*, IT Support is the proven on-ramp. If you have a clear passion (building → dev, data → analytics), go straight for it. Security, cloud, and management are usually **second** jobs — plan a stepping-stone.
+takeaway: if u want into the industry fastest, IT Support is the proven on-ramp.
+if u have a clear pull toward building, data, or design, go straight for that.
+security, cloud, product, and management are often second jobs, so plan a stepping stone meow.
 
 ---
 
-*Next: [Take the Career-Match Quiz →](career-quiz.md) · or go straight to [Shared Foundations →](foundations.md)*
+*Next: [Career-Match Quiz](career-quiz.md) or [Shared Foundations](foundations.md)*

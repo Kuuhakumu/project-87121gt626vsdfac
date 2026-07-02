@@ -1,46 +1,59 @@
-# 🧭 Start Here — Never Touched IT? Read This First
+# Start here: never touched IT? read this first meow
 
-> You don't need to know what field you want yet. That's what this section is for. Spend your first **0–40 hours** here before committing to any single career path.
+> u dont need to know what field u want yet.
+> thats what this section is for.
+> spend your first **0-40 hours** here before committing to one career path.
 
-## The problem this solves
+## what problem this solves
 
-Most "learn IT" guides assume you already know you want to be a developer, a security analyst, or a cloud engineer. But if you're starting from scratch, you don't know what those jobs actually *are* yet — let alone which one fits how your brain works or how you want to spend your days.
+most "learn IT" guides assume u already know whether u want dev, security, cloud, data, support, design, PM, or management.
+but if youre starting from scratch, u dont know what those jobs actually feel like yet.
 
-Picking a field blind is the #1 way beginners waste months. So take one step back first.
+picking blind is how beginners waste months.
+so we slow down first.
+dw, its still useful time.
 
-## How to use this section
+## how to track progress
 
-Work through these **in order**:
+this section is short, but the same rule applies everywhere in the repo:
+checkboxes in public markdown are display-only.
+fork the repo or copy the checklist into your own notes if u want boxes u can tick.
 
-| Step | File | Time | What you get |
+the real signal is not the box.
+its whether u can pass the foundation gates and explain what u learned without notes.
+
+## do this order
+
+| Step | File | Time | What u get |
 |---|---|---|---|
-| 1 | [What Each Field Actually Is](what-is-each-field.md) | 1–2 hrs | A plain-language tour of all 8 paths — the real day-to-day, pay, remote-friendliness, and how much math/coding each needs. |
-| 2 | [Career-Match Quiz](career-quiz.md) | 15 min | ~12 questions about your interests and work style → points you at 1–2 fields to look at first. |
-| 3 | [Shared Foundations (Hours 0–40)](foundations.md) | 30–40 hrs | The base every IT worker needs *regardless of field*: how computers and the internet work, command-line literacy, and Git. Free, hands-on. |
+| 1 | [What Each Field Actually Is](what-is-each-field.md) | 1-2 hrs | plain-language tour of all 8 paths: day-to-day, remote fit, math/coding, downsides |
+| 2 | [Career-Match Quiz](career-quiz.md) | 15 min | ~12 questions about interests and work style, pointing at 1-2 fields to inspect first |
+| 3 | [Shared Foundations](foundations.md) | 30-40 hrs | the base every IT worker needs: computers, internet, CLI, Git |
 
-After step 3, you'll have enough context **and** hands-on experience to pick a field with confidence. Then open that field's guide and start its Phase 0.
+after step 3, ull have enough context and hands-on experience to pick a field with more confidence.
+then open that field guide and start **Goal 0**.
 
-## The 8 fields at a glance
+## the 8 fields at a glance
 
-| Field | One-line | Remote | Coding? |
+| Field | One-line | Remote | Coding |
 |---|---|---|---|
-| Software Development | Build apps & websites | ✅ High | 🔴 Heavy |
-| Cybersecurity | Defend / attack systems | ⚠️ Medium | 🟡 Some |
-| Cloud & DevOps | Run infrastructure at scale | ✅ High | 🟡 Some |
-| Data, AI & Analytics | Turn data into decisions | ✅ High | 🟡 Some |
-| IT Support & Networking | Keep systems & users running | ❌ Low | 🟢 Little |
-| UI/UX Design | Shape how products look & feel | ✅ High | 🟢 Little |
-| Product Management | Decide what gets built & why | ✅ High | 🟢 Little |
-| IT Management | Lead teams & strategy | ⚠️ Medium | 🟢 Little |
+| Software Development | build apps and websites | high | heavy |
+| Cybersecurity | defend and attack systems | medium | some |
+| Cloud & DevOps | run infrastructure at scale | high | some |
+| Data, AI & Analytics | turn data into decisions | high | some |
+| IT Support & Networking | keep systems and users running | low | little |
+| UI/UX Design | shape how products look and feel | high | little |
+| Product Management | decide what gets built and why | high | little |
+| IT Management | lead teams and IT strategy | medium | little |
 
-> Full breakdown of each in [what-is-each-field.md](what-is-each-field.md).
+full breakdown: [what-is-each-field.md](what-is-each-field.md).
 
-## Honest expectations
+## honest expectations
 
-- **This takes real time.** Zero-to-first-job is typically **400–800 study hours** depending on field. At 10 hrs/week that's 9–18 months. There's no 30-day shortcut that actually works.
-- **Hands-on beats watching.** You'll get more out of one hour in a lab than three hours of videos. Every guide here points to specific interactive labs, not "go explore."
-- **You can switch.** Plenty of people start in IT Support or Help Desk and move into security, cloud, or dev once they're inside. The fields overlap a lot at the base — which is exactly why the [shared foundations](foundations.md) matter.
+- **this takes real time** - zero-to-first-job is usually **400-800 study hours** depending on field. at 10 hrs/week, thats around 9-18 months.
+- **hands-on beats watching** - one hour in a lab beats three hours of passive video.
+- **u can switch** - plenty of people start in support and move into security, cloud, or sysadmin. the base overlaps a lot, which is why [shared foundations](foundations.md) matters.
 
 ---
 
-*Next: [What Each Field Actually Is →](what-is-each-field.md)*
+*Next: [What Each Field Actually Is](what-is-each-field.md)*

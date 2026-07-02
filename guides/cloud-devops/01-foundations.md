@@ -1,93 +1,92 @@
-# 📁 Phase 1: Foundations — Linux, Networking, Git & Scripting
+# Goal 1: foundations - Linux, networking, Git, scripting meow
 
-> **~140 hrs total** · your pace, no deadline
-> Goal: real comfort in a Linux shell, solid networking mental model, Git fluency, and one scripting language. Cloud and DevOps tools all sit on top of these. Skip this and everything later feels like magic you can't debug.
+> **~140h total** - your pace, no deadline.
+> goal: Linux shell comfort, networking mental model, Git fluency, and one scripting language.
+> cloud and DevOps tools sit on top of this. skip it and later tools feel like magic u cant debug.
 
-[← Phase 0](00-prep.md) · [Hub](README.md) · [Next: Phase 2 →](02-core.md)
+[Previous: Goal 0](00-prep.md) - [Hub](README.md) - [Next: Goal 2](02-core.md)
 
 ---
 
-## Linux (~50 hrs)
+- [ ] **Linux** (~50h)
+- [ ] **networking** (~35h)
+- [ ] **Git + GitHub** (~20h)
+- [ ] **Bash or Python scripting** (~35h)
+- [ ] **exit check** - Linux, subnetting/DNS, Git, automation scripts
 
-This is the single most important foundation. You'll spend your whole career in a Linux shell.
+## Linux (~50h)
 
-**Cover:** filesystem hierarchy (`/etc`, `/var`, `/home`, `/proc`), navigation (`cd`, `ls`, `pwd`), file ops (`cp`, `mv`, `rm`, `mkdir`, `find`), viewing/editing (`cat`, `less`, `nano`, `vim` basics), permissions (`chmod`, `chown`, octal 755/644), users & groups (`sudo`, `/etc/passwd`), processes (`ps`, `top`, `htop`, `kill`, `&`, `jobs`), services (`systemctl` start/stop/enable/status), packages (`apt`/`yum`/`dnf`), text processing (`grep`, `awk`, `sed`, pipes `|`, redirection `>`/`>>`), `cron`, environment variables, SSH (`ssh`, keys, `scp`).
+this is the single most important foundation. youll spend your whole career in a Linux shell.
 
-**Theory:** [Linux Journey](https://labex.io/linuxjourney) (freemium) · [The Missing Semester (MIT)](https://missing.csail.mit.edu/) · NetworkChuck Linux series.
+**cover:** filesystem hierarchy, navigation, file ops, viewing/editing, permissions, users/groups, processes, services, packages, text processing, `cron`, environment variables, SSH.
 
-### Labs
+**theory:** [Linux Journey](https://labex.io/linuxjourney) (freemium), [The Missing Semester (MIT)](https://missing.csail.mit.edu/), NetworkChuck Linux series. **⚠️ TODO verify exact NetworkChuck Linux video/playlist before using it as a primary instruction.**
 
-| Lab | Platform | What you do | Cost |
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [OverTheWire — Bandit](https://overthewire.org/wargames/bandit/) | Web | SSH into real boxes; learn the CLI by solving 30+ puzzles | **Free** |
-| [Linux Journey](https://labex.io/linuxjourney) | Web | Guided lessons + exercises, beginner → intermediate | **Freemium** |
-| Linux Fundamentals 1–3 | [TryHackMe](https://tryhackme.com/) | In-browser Linux VMs: filesystem, permissions, cron, SSH | Free tier |
-| [KillerCoda Linux scenarios](https://killercoda.com/) | Web | Live in-browser terminal playgrounds, no setup | **Free** |
+| [OverTheWire - Bandit](https://overthewire.org/wargames/bandit/) | Web | SSH into real boxes; learn CLI by solving puzzles | **Free** |
+| [Linux Journey](https://labex.io/linuxjourney) | Web | guided lessons + exercises | **Freemium** |
+| Linux Fundamentals 1-3 | [TryHackMe](https://tryhackme.com/) | in-browser Linux VMs | Free tier |
+| [KillerCoda Linux scenarios](https://killercoda.com/) | Web | live browser terminal playgrounds | **Free** |
 
-**Practice gate:** you can navigate, manage permissions and processes, write a `cron` job, and SSH into a remote box — without looking things up.
+**practice gate:** navigate, manage permissions/processes, write a `cron` job, and SSH into a remote box without looking things up.
 
----
+## networking (~35h)
 
-## Networking
+u cant debug cloud infra if u dont understand the network underneath it.
 
-You can't debug cloud infra if you don't understand the network underneath it.
+**cover:** OSI/TCP-IP, IP addressing, CIDR, public/private IPs, DNS, DHCP, HTTP/HTTPS, TLS/SSL, SSH, ports 22/53/80/443/3389, NAT, firewalls/security groups, load balancers, forward vs reverse proxy, VPN basics.
 
-**Cover:** OSI & TCP/IP models, IP addressing & subnetting (CIDR — `/24`, `/16`), public vs private IPs, DNS (records, resolution flow), DHCP, HTTP/HTTPS, TLS/SSL (certs, handshake), SSH, key ports (22, 53, 80, 443, 3389), NAT, firewalls & security groups, **load balancers**, **forward vs reverse proxy**, VPN basics. These map directly onto cloud VPCs.
+**theory:** PowerCert, Practical Networking, NetworkChuck. **⚠️ TODO verify exact videos/playlists before making these primary instructions.**
 
-**Theory:** [PowerCert](https://www.youtube.com/@PowerCertAnimatedVideos) · [Practical Networking](https://www.practicalnetworking.net/) · NetworkChuck.
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
 | Intro to Networking | [TryHackMe](https://tryhackme.com/) | OSI, ping, traceroute interactively | Free tier |
-| Computer Networking (full course) | [freeCodeCamp YouTube](https://www.youtube.com/c/Freecodecamp) | Comprehensive networking fundamentals | **Free** |
+| Computer Networking full course | freeCodeCamp YouTube **⚠️ TODO verify exact video** | comprehensive networking fundamentals | **Free** |
 | [subnetipv4.com](https://subnetipv4.com/) | Web | `/24`-`/30` drills until automatic | **Free** |
 
-**Practice gate:** you can subnet a CIDR block on paper, explain DNS resolution end-to-end, and describe what a load balancer and a reverse proxy each do.
+**practice gate:** subnet a CIDR block on paper, explain DNS resolution end-to-end, and describe what a load balancer and reverse proxy each do.
 
----
+## Git and GitHub (~20h)
 
-## Git & GitHub
+everything-as-code means everything lives in Git. no getting around it.
 
-Everything-as-code means everything lives in Git. There's no getting around it.
+**cover:** `init`, `add`, `commit`, `push`/`pull`, branching, merging, conflicts, `.gitignore`, pull requests, forking, tags, `rebase` basics, Git vs GitHub/GitLab, GitOps basics.
 
-**Cover:** `init`, `add`, `commit` (good messages), `push`/`pull`, branching, merging, **resolving merge conflicts**, `.gitignore`, pull requests, forking, tags, `rebase` basics. Understand Git (tool) vs GitHub/GitLab (host). Bonus: what a GitOps workflow is (you'll use it in Phase 4).
+### labs
 
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Learn Git Branching](https://learngitbranching.js.org/) | Web | ~50 visual puzzles: commit, branch, merge, rebase | **Free** |
-| [GitHub Skills](https://skills.github.com/) | GitHub | Guided courses inside real repos (PRs, Actions) | **Free** |
+| [Learn Git Branching](https://learngitbranching.js.org/) | Web | visual puzzles: commit, branch, merge, rebase | **Free** |
+| [GitHub Skills](https://skills.github.com/) | GitHub | guided courses inside real repos | **Free** |
 
-**Practice gate:** create a repo, branch, open a PR, resolve a merge conflict, and explain rebase vs merge.
+**practice gate:** create a repo, branch, open a PR, resolve a merge conflict, and explain rebase vs merge.
 
----
+## Bash or Python scripting (~35h)
 
-## A scripting language (Python or Bash)
+automation is the heart of the job. u need to read and write scripts.
 
-Automation is the heart of the job — you need to be able to *read* and *write* scripts.
+- [ ] **Bash:** variables, loops, conditionals, functions, exit codes, arguments, pipes, `if`/`case`.
+- [ ] **Python:** variables, data types, control flow, functions, file I/O, `requests`, JSON, `boto3` basics.
 
-**Bash** (start here): variables, loops, conditionals, functions, exit codes, arguments (`$1`, `$@`), pipes, `if`/`case`, writing a script that automates a real task (backup, log rotation, health check).
+### labs
 
-**Python** (the top recommendation for anything beyond glue): variables, data types, control flow, functions, file I/O, `requests` (call APIs), JSON parsing, `boto3` (the AWS SDK) basics. Python is what you'll use for real cloud automation.
-
-### Labs
-
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Language track | [Exercism](https://exercism.org/) | Bash & Python exercises with **free human mentorship** | **Free** |
+| Language track | [Exercism](https://exercism.org/) | Bash and Python exercises with free mentorship | **Free** |
 | [freeCodeCamp](https://www.freecodecamp.org/learn) | Web | Python fundamentals, in-browser | **Free** |
-| Shell scripting | [The Missing Semester](https://missing.csail.mit.edu/) | Real-world shell scripting & automation | **Free** |
+| Shell scripting | [The Missing Semester](https://missing.csail.mit.edu/) | real-world shell scripting and automation | **Free** |
 
-**Project:** write a Bash or Python script that automates something real — e.g. checks a list of URLs and reports which are down, or parses a log file and summarizes errors. Put it on GitHub with a README.
+**project gate:** write a Bash or Python script that automates something real, like checking URLs or parsing logs. put it on GitHub with a README.
 
----
+## exit check
 
-## Phase 1 exit checklist
-- [ ] Comfortable in a Linux shell: permissions, processes, services, cron, text processing
-- [ ] Can subnet, explain DNS, and describe load balancers / reverse proxies
+- [ ] comfortable in Linux shell: permissions, processes, services, cron, text processing
+- [ ] can subnet, explain DNS, and describe load balancers / reverse proxies
 - [ ] Git/GitHub fluent: branch, PR, conflict resolution
-- [ ] Can write a useful Bash or Python automation script
-- [ ] 1–2 small automation scripts on GitHub with READMEs
+- [ ] can write a useful Bash or Python automation script
+- [ ] 1-2 small automation scripts on GitHub with READMEs
 
-Next: [Phase 2 — Cloud Core & Containers →](02-core.md)
+[Next: Goal 2 - Cloud Core & Containers](02-core.md)

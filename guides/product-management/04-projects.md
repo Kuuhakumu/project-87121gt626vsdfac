@@ -1,155 +1,171 @@
-# 📁 Phase 4: The PM Portfolio
+# Goal 4: the PM portfolio meow
 
-> **~70 hrs total** · your pace, no deadline
-> PM portfolios are thinking artifacts, not visual work. What you write reveals whether you can do the job.
+> **~70h total** - your pace, no deadline.
+> goal: build thinking artifacts that show judgment.
+> PM portfolios are documents, not pretty screenshots.
 
-[← Phase 3](03-specialization.md) · [Hub](README.md) · [Next: Phase 5 — Job Hunt →](05-job-hunt.md)
-
----
-
-## What a PM portfolio actually is
-
-PM portfolios aren't design portfolios. You won't create a beautiful Figma or website gallery of screenshots. You'll create a set of documents that demonstrate:
-
-1. **You can identify real problems** — not just implement requests
-2. **You can structure and communicate complex tradeoffs** — in writing, clearly
-3. **You can define measurable success** — not just describe features
-4. **You can think at the right altitude** — not too tactical (just a ticket), not too vague (just a vision)
-5. **You understand the full loop** — discovery through metrics, not just delivery
-
-> The hiring bar for PM portfolios is: *would I trust this person to own a product area?* That means showing judgment, not just process knowledge. Anyone can fill in a PRD template. Fewer can write a PRD where the problem framing is actually correct.
+[Previous: Goal 3](03-specialization.md) - [Hub](README.md) - [Next: Goal 5](05-job-hunt.md)
 
 ---
 
-## What makes PM portfolio pieces strong
+- [ ] **understand what a PM portfolio is**
+- [ ] **write the 6 portfolio artifacts**
+- [ ] **host them publicly**
+- [ ] **exit check** - teardown, PRD, metrics case, sizing, competitive analysis, roadmap
+
+## what a PM portfolio actually is
+
+PM portfolios are not design portfolios.
+u are not making a gallery of mockups.
+u are making documents that demonstrate:
+
+1. **u can identify real problems** - not just implement requests.
+2. **u can structure tradeoffs** - in writing, clearly.
+3. **u can define measurable success** - not just describe features.
+4. **u can think at the right altitude** - not too tactical, not too vague.
+5. **u understand the full loop** - discovery through metrics, not just delivery.
+
+hiring bar: would i trust this person to own a product area?
+that means showing judgment.
+anyone can fill a PRD template.
+fewer people can write a PRD where the problem framing is actually correct.
+
+## what strong PM artifacts look like
 
 | Weak | Strong |
 |---|---|
-| "I'd add a dark mode" | "Here's the problem dark mode solves, for whom, the usage context that makes it high-priority, and the metric that would confirm it worked" |
-| Framework name-dropping | Showing the output of applying the framework (the RICE scorecard, the OKR set) |
-| Solutions with no problem | Problem statement first; solution emerges from it |
-| Vague success criteria | "40% of mobile users activate within the first session" |
-| One deliverable | 3–5 different artifact types showing range |
+| "Id add dark mode" | "Here is the problem dark mode solves, for whom, the usage context, and the metric confirming it worked" |
+| framework name-dropping | showing the RICE scorecard, OKR set, or roadmap rationale |
+| solution with no problem | problem statement first, solution emerges from it |
+| vague success criteria | "40% of mobile users activate within first session" |
+| one deliverable | 3-5 artifact types showing range |
 
----
+## the 6 portfolio artifacts
 
-## The 6 portfolio artifacts
+### 1. Product teardown
 
-### 1. Product Teardown
+structured analysis of a product u know well.
 
-A structured analysis of a product you know well. Covers:
-- What job is this product hired to do? Who is the primary user persona?
-- What does the product do well, and why (what PM decisions does that imply)?
-- Where does it fail users, and what's the likely root cause (prioritization choice? technical constraint? business model tradeoff?)
-- What one high-impact improvement would you recommend, and what metric would you move?
+cover:
 
-Length: 800–1,200 words + annotated screenshots or user flow diagrams. Tone: analytical, not a complaint list.
+- [ ] what job is this product hired to do?
+- [ ] who is the primary user persona?
+- [ ] what does the product do well, and what PM decisions does that imply?
+- [ ] where does it fail users, and whats the likely root cause?
+- [ ] what one high-impact improvement would u recommend, and what metric would move?
 
-**Why it works:** it shows you can observe a product like a PM — not as a user, not as a designer, but as someone thinking about tradeoffs and outcomes.
+length: 800-1,200 words plus annotated screenshots or user-flow diagrams.
+tone: analytical, not a complaint list.
 
-### 2. PRD (Product Requirements Document)
+### 2. PRD
 
-One full PRD for a real feature you'd build. Sections:
-- Problem statement (what, who, why now)
-- Goals and success metrics (North Star connection, specific numbers)
-- Non-goals
-- User stories with acceptance criteria
-- Open questions
-- Phasing / milestones
+one full Product Requirements Document for a real feature.
 
-Length: 600–1,000 words depending on feature complexity. Not a spec for a whole product — one focused feature.
+sections:
 
-**Pressure-test it:** hand it to a developer or designer (or post in a PM community) and ask "would this be enough to start scoping?" More than 2–3 clarifying questions means it needs more specificity.
+- [ ] problem statement: what, who, why now
+- [ ] goals and success metrics
+- [ ] non-goals
+- [ ] user stories with acceptance criteria
+- [ ] open questions
+- [ ] phasing / milestones
 
-### 3. Metrics Case Study
+length: 600-1,000 words depending on complexity.
+one focused feature, not a whole product.
 
-A diagnostic exercise. The prompt: *"DAU for your product dropped 15% over two weeks. Walk through how you'd diagnose it."*
+pressure-test it with a developer, designer, or PM community.
+ask: "would this be enough to start scoping?"
+more than 2-3 clarifying questions means it needs more specificity.
 
-Your answer should cover:
-- Data investigation (check data pipeline integrity first — is the drop real?)
-- Segmentation (which platforms? which user cohorts? which geographies?)
-- Funnel analysis (where in the funnel did behavior change?)
-- Timeline correlation (did anything ship? did a competitor make a move? did marketing channels change?)
-- Hypothesis generation and prioritization
-- Next step recommendation
+### 3. Metrics case study
 
-Length: 500–800 words. Include a decision tree or structured breakdown. This is one of the most common PM interview questions — having a written version makes it memorable.
+prompt: **"DAU for your product dropped 15% over two weeks. Walk through how youd diagnose it."**
 
-### 4. Opportunity Sizing and Estimation
+cover:
 
-Show you can scope opportunities with rough numbers. Pick one:
-- How many people in [market] would use [feature]? What's the revenue potential?
-- A competitor has shipped X feature. Is it worth building? At what size does it make sense?
-- If we improve onboarding by 10%, what's the impact on annual revenue?
+- [ ] data integrity first: is the drop real?
+- [ ] segmentation: platforms, cohorts, geographies
+- [ ] funnel analysis: where did behavior change?
+- [ ] timeline correlation: launches, competitors, marketing changes
+- [ ] hypothesis generation and prioritization
+- [ ] next step recommendation
 
-Structure: state assumptions explicitly, show the math, and give a range (not a point estimate). The goal is to demonstrate structured thinking under uncertainty, not precision.
+length: 500-800 words with decision tree or structured breakdown.
+this is a common PM interview question, so written practice helps.
 
-Length: 300–500 words + the arithmetic.
+### 4. Opportunity sizing and estimation
 
-**Why it works:** PMs who can size opportunities get faster "yes/no" on whether to invest. This skill is often tested via estimation questions ("estimate the number of Uber rides per day in London") — having a framework is what's being evaluated.
+show u can reason with rough numbers.
+pick one:
 
-### 5. Competitive Analysis
+- [ ] how many people in a market would use a feature?
+- [ ] a competitor shipped X. is it worth building?
+- [ ] if onboarding improves by 10%, whats annual revenue impact?
 
-A structured comparison of your chosen product against 2–3 competitors. Cover:
-- How each product positions itself (tagline + primary use case)
-- Feature matrix: 8–10 meaningful features, who has what
-- Where each product wins (for which user / use case / context)
-- The strategic implication: where is there a gap your product could exploit?
+structure: state assumptions, show math, give a range.
+the goal is structured uncertainty, not false precision.
 
-Format: a table plus a 300-word narrative. The narrative is the important part — the table is easy, the "so what" takes judgment.
+### 5. Competitive analysis
 
-### 6. Two-Quarter Roadmap with Prioritization Rationale
+compare your chosen product against 2-3 competitors.
 
-A prioritized 6-month roadmap (presented as H1/H2 or two sprints blocks) for your chosen product. Include:
-- 3–5 initiatives per quarter
-- For each: the problem it solves, the metric it moves, the rough effort tier (small/medium/large), and why it's this quarter (not next quarter)
-- At least one item you deliberately deferred to Q2 — and the rationale for deferring it
-- At least one item you chose not to build — and why not
+cover:
 
-Length: table + 400-word narrative. The rationale for what you *didn't* include is as important as the roadmap itself.
+- [ ] positioning: tagline + primary use case
+- [ ] feature matrix with 8-10 meaningful features
+- [ ] where each product wins, for which user/use case
+- [ ] strategic implication: what gap could your product exploit?
 
----
+format: table plus 300-word narrative.
+the "so what" matters more than the table.
 
-## Labs
+### 6. Two-quarter roadmap
 
-| Lab | Platform | What you do | Cost |
+create a prioritized 6-month roadmap for your chosen product.
+
+include:
+
+- [ ] 3-5 initiatives per quarter
+- [ ] problem solved, metric moved, rough effort tier
+- [ ] why each item is this quarter, not next quarter
+- [ ] at least one deferred item with rationale
+- [ ] at least one item cut entirely with rationale
+
+the rationale for what u did not build matters as much as the roadmap.
+
+## labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| Write a product teardown | Notion | Full teardown of your chosen product — publish it | **Free** |
-| Write and pressure-test a PRD | Notion + PM community | Full PRD for one feature; get 3 people to ask "but what about X?" | **Free** |
-| Metrics diagnostic exercise | Notion | Write your full DAU-drop diagnosis framework for your chosen product | **Free** |
-| Opportunity sizing exercise | Google Sheets + Notion | Size one hypothetical feature opportunity; show your math and assumptions | **Free** |
-| Competitive analysis | Notion | 3-competitor matrix + 300-word strategic narrative | **Free** |
-| Two-quarter roadmap | Notion or Productboard | Prioritized roadmap with rationale for what's in, deferred, and cut | **Free** / Productboard Spark |
+| Product teardown | Notion | full teardown of your chosen product, publish it | **Free** |
+| PRD pressure-test | Notion + PM community | full PRD for one feature; get 3 people to ask "but what about X?" | **Free** |
+| Metrics diagnostic | Notion | write full DAU-drop diagnostic framework | **Free** |
+| Opportunity sizing | Sheets + Notion | size one feature opportunity with math and assumptions | **Free** |
+| Competitive analysis | Notion | 3-competitor matrix + 300-word narrative | **Free** |
+| Two-quarter roadmap | Notion or Productboard | roadmap with whats in, deferred, and cut | **Free** / Productboard Spark |
 
----
+## what good looks like
 
-## What good looks like (the bar to clear)
+- [ ] every artifact starts with a problem, not a solution
+- [ ] metrics are specific, not "improve retention"
+- [ ] tradeoffs are acknowledged
+- [ ] writing is clear enough for a thoughtful non-PM colleague
+- [ ] artifacts connect: teardown identifies problem, PRD addresses it, roadmap schedules it, metrics case shows measurement
 
-A PM portfolio that gets past an interview screen:
-- **Every artifact starts with a problem, not a solution.** The reader can see you identify problems before proposing fixes.
-- **Metrics are specific.** Not "improve retention" — "increase Day-30 retention from 28% to 35% for mobile users acquired via organic search."
-- **Tradeoffs are acknowledged.** You note what you chose not to do and why.
-- **The writing is clear.** No PM jargon for its own sake. Could a thoughtful non-PM colleague follow your reasoning?
-- **The artifacts are interconnected.** Your teardown identifies a problem, your PRD addresses it, your roadmap schedules it, your metrics case study shows how you'd measure it. That coherence is powerful.
+## where to host it
 
----
+- [ ] **GitHub repository:** README linking to each artifact as Notion doc or PDF.
+- [ ] **Notion public page:** simplest option if artifacts already live there.
+- [ ] **Personal site:** optional. `yourname.com/work` is nice, not required for APM applications.
 
-## Where to host your portfolio
+## exit check
 
-- **GitHub repository:** clean README linking to each artifact as a Notion doc or PDF. Works and is easy to share.
-- **Notion public page:** your artifacts live in Notion anyway — publish the workspace as a portfolio site.
-- **Personal site:** optional, but a clean `yourname.com/work` with artifact links reads professionally. Not required for an APM program application.
+- [ ] product teardown published and shareable
+- [ ] full PRD pressure-tested by at least one person who can ask "what about X?"
+- [ ] metrics case study written with full diagnostic loop
+- [ ] opportunity sizing completed with assumptions and math
+- [ ] competitive analysis with strategic narrative completed
+- [ ] two-quarter roadmap with prioritization rationale completed
+- [ ] all artifacts linked from one public URL
 
----
-
-## Phase 4 exit checklist
-
-- [ ] Product teardown published and shareable
-- [ ] Full PRD pressure-tested by at least one person who can ask "what about X?"
-- [ ] Metrics case study written covering the full diagnostic loop
-- [ ] Opportunity sizing exercise completed with explicit assumptions and math
-- [ ] Competitive analysis with strategic narrative completed
-- [ ] Two-quarter roadmap with prioritization rationale completed
-- [ ] All artifacts linked from a single public URL (Notion, GitHub, or personal site)
-
-Next: [Phase 5 — Job Hunt →](05-job-hunt.md)
+[Next: Goal 5 - Breaking Into PM](05-job-hunt.md)

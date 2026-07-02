@@ -1,56 +1,65 @@
-# 🏁 Certifications — Software Development (2026)
+# Certifications - Software Development meow
 
-> Verified via official sources, June 2026. **Read this first: for software development, certs barely matter.**
+> verified via official sources, June 2026.
+> read this first: for software development, certs barely matter.
 
----
-
-## TL;DR — the honest truth
-
-**For general software development (web, full-stack, backend, frontend, mobile), certs are not a meaningful hiring signal.** Employers look at:
-
-1. Your **GitHub** and deployed projects
-2. Your performance in the **technical interview** (DSA + practical)
-3. **Referrals** and experience (internships count)
-
-A pile of certs won't get you a dev job. A strong portfolio will. **Spend your time building and shipping, not collecting credentials.**
-
-> This is the opposite of fields like cybersecurity or IT support, where certs are baseline filters. Don't carry that assumption into software dev.
+[Hub](README.md)
 
 ---
 
-## When a cert *is* worth it
+- [ ] **understand the cert reality**
+- [ ] **use certs only in narrow cases**
+- [ ] **choose project proof instead**
+- [ ] **treat deployed work as the real credential**
 
-There are narrow cases where a credential helps:
+## understand the cert reality
+
+for general software development - web, full-stack, backend, frontend, mobile - certs are not a meaningful hiring signal.
+
+employers look at:
+
+- [ ] your **GitHub** and deployed projects
+- [ ] your technical interview performance: DSA + practical work
+- [ ] referrals and experience, including internships
+
+a pile of certs wont get u a dev job. a strong portfolio can. spend your time building and shipping, not collecting badges meow.
+
+> this is different from cybersecurity or IT support, where certs can be baseline filters. dont carry that assumption into software dev.
+
+## use certs only in narrow cases
 
 | Situation | Useful cert | Why |
 |---|---|---|
-| Targeting **cloud / DevOps-adjacent** dev roles | **AWS Certified Developer – Associate (DVA-C02)** | Shows real cloud fluency; respected for cloud-heavy roles |
-| Same, AWS-curious beginner | **AWS Certified Cloud Practitioner (CLF-C02)** | Entry cloud literacy; cheap, foundational |
-| Heavy **Microsoft / .NET** shop | **Azure Developer Associate** | Relevant signal in Azure-centric enterprises |
-| **Kubernetes / platform** track later | **CKAD** (Certified Kubernetes Application Developer) | Genuine differentiator for platform roles |
-| Career-changer with **zero signal**, need structure | **Meta / Google career certificates** (Coursera) | Not a hiring signal, but provides curriculum + a finish line |
+| targeting **cloud / DevOps-adjacent** dev roles | **AWS Certified Developer - Associate (DVA-C02)** | shows real cloud fluency; respected for cloud-heavy roles |
+| same, AWS-curious beginner | **AWS Certified Cloud Practitioner (CLF-C02)** | entry cloud literacy; cheap, foundational |
+| heavy **Microsoft / .NET** shop | **Azure Developer Associate** | relevant signal in Azure-centric enterprises |
+| **Kubernetes / platform** track later | **CKAD** | genuine differentiator for platform roles |
+| career-changer with **zero signal**, need structure | **Meta / Google career certificates** (Coursera) | curriculum + finish line, not a hiring signal |
 
-> ⚠️ **AZ-204 (Azure Developer Associate, current code) — verify before enrolling.** Microsoft retires and renames developer exams regularly; an Azure dev exam was flagged for retirement around mid-2026. Always confirm the current code on Microsoft Learn before booking.
+> **AZ-204 (Azure Developer Associate, current code) - verify before enrolling.** Microsoft retires and renames developer exams regularly; an Azure dev exam was flagged for retirement around mid-2026. always confirm the current code on Microsoft Learn before booking.
 
----
+## choose project proof instead
 
-## What to do instead of certs
-
-| Instead of… | Do this |
+| Instead of... | Do this |
 |---|---|
-| Paying for a "Full-Stack Certificate" | Finish [The Odin Project](https://www.theodinproject.com/) or [Full Stack Open](https://fullstackopen.com/en/) (free) and **ship the projects** |
-| A "JavaScript Certification" | Build 3 deployed JS/TS apps and put them on GitHub |
-| A "Python Certificate" | Solve 100 problems on [Exercism](https://exercism.org/) + build a real API |
-| A generic "Web Dev Bootcamp" cert | Earn the **free** [freeCodeCamp](https://www.freecodecamp.org/) certifications (they're free and project-based) — but know they're a learning tool, not a hiring signal |
+| paying for a "Full-Stack Certificate" | finish [The Odin Project](https://www.theodinproject.com/) or [Full Stack Open](https://fullstackopen.com/en/) and **ship the projects** |
+| a "JavaScript Certification" | build 3 deployed JS/TS apps and put them on GitHub |
+| a "Python Certificate" | solve 100 problems on [Exercism](https://exercism.org/) + build a real API |
+| a generic "Web Dev Bootcamp" cert | earn the **free** [freeCodeCamp](https://www.freecodecamp.org/) certifications if useful, but treat them as learning tools |
 
-> **Free credentials worth doing** (for the learning + the finish line, not the badge): freeCodeCamp certifications, CS50x certificate (free from Harvard), Full Stack Open certificate (University of Helsinki). All free. None will get you hired alone — the *projects you build doing them* will.
+free credentials worth doing for learning + finish line: freeCodeCamp certifications, CS50x certificate, Full Stack Open certificate. none get u hired alone. the projects u build doing them matter.
+
+## the only credential that really matters
+
+- [ ] deployed
+- [ ] documented
+- [ ] tested where it should be
+- [ ] explainable in depth
+
+thats the credential in software development.
+
+build five proof pieces in [Goal 5](05-portfolio.md), then be able to explain every decision.
 
 ---
 
-## The only "certification" that matters
-
-A **deployed, documented, tested project you can explain in depth.** That's the credential in software development. Build five of them ([Phase 5](05-portfolio.md)).
-
----
-
-*Sources: AWS Certification, Microsoft Learn, Coursera — curl-verified June 2026. See `research/cert-analysis/software-development-2026.md` for raw findings.*
+*Sources: AWS Certification, Microsoft Learn, Coursera - curl-verified June 2026. See `research/cert-analysis/software-development-2026.md` for raw findings.*

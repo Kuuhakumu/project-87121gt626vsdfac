@@ -1,89 +1,107 @@
-# 🚀 Phase 0: Pre-Flight Setup
+# Goal 0: prep your PM setup meow
 
-> **Day 1 — non-negotiable.** Just sign up and install — no learning to finish, do it before Phase 1.
+> **Day 1 setup** - no learning gate yet.
+> sign up, choose your running product, and understand the PM entry reality before u invest months.
 
-[Hub](README.md) · [Next: Phase 1 — Foundations →](01-foundations.md)
+[Hub](README.md) - [Next: Goal 1](01-foundations.md)
 
 ---
 
-## The honest career reality (read this first)
+- [ ] **read the honest career reality**
+- [ ] **understand PM vs Product Owner**
+- [ ] **set up the core tools**
+- [ ] **pick one running product**
+- [ ] **exit check** - on-ramp chosen, tools ready, PM myths removed
 
-Product Management has a marketing problem bigger than almost any other tech field. LinkedIn influencers sell it as the most glamorous job in tech — "CEO of the product," fast-track to leadership, outsized pay from zero experience. Here's what's actually true in 2026:
+## the honest career reality
+
+Product Management has a marketing problem bigger than almost any other tech field.
+influencers sell it as glamorous: "CEO of the product," fast leadership track, outsized pay from zero experience.
+heres whats actually true in 2026:
 
 | Path | Reality |
 |---|---|
-| **APM / RPM program** (Google APM, Meta RPM, etc.) | The clearest structured zero-experience door. Highly competitive — think mid-level hiring bar, not "entry-level." Verify each company's current program status on their careers page; several programs paused after 2022–23 layoffs. |
-| **Internal transfer** (from eng, design, data, sales) | The **most common** real path. You have credibility, context, and relationships. If you're already at a company, this is your best lever. |
-| **PM-adjacent role first** | Product Analyst → PM, Business Analyst → PM, TPM → PM, Product Ops → PM, Customer Success → PM. Slower, but it works. |
-| **Startup** | Faster ownership, less mentorship, more chaos. Valid if you can tolerate the ambiguity. |
-| **MBA pipeline** | Enterprise and consulting companies hire MBAs directly into PM roles. Longer and more expensive, but a proven pipeline. |
-| **"Junior PM" cold application** | Most postings want 2–5 years of relevant experience. Cold applications without any of the above context succeed rarely. Don't anchor your strategy here. |
+| **APM / RPM program** | clearest structured zero-experience door. highly competitive, closer to mid-level bar than "easy entry." verify current status on company careers pages. |
+| **Internal transfer** | most common real path. u already have credibility, context, and relationships. best lever if youre already employed. |
+| **PM-adjacent role first** | Product Analyst -> PM, Business Analyst -> PM, TPM -> PM, Product Ops -> PM, Customer Success -> PM. slower, but works. |
+| **Startup** | faster ownership, less mentorship, more chaos. valid if u can tolerate ambiguity. |
+| **MBA pipeline** | enterprise and consulting companies hire MBAs into PM roles. longer and expensive, but proven. |
+| **"Junior PM" cold application** | most postings want 2-5 years of relevant experience. rarely works without another credibility signal. |
 
-> This guide is honest: **Product Management is not a true zero-to-job field at most companies.** Building the skills here is necessary but not sufficient — you also need a credible on-ramp. Use this guide to build the skills *while* pursuing one of the paths above.
+this guide is honest: **Product Management is not a true zero-to-job role at most companies.**
+the skills here are necessary, but not sufficient.
+use this guide while pursuing one on-ramp above.
 
-### Busting the "CEO of the product" myth
+## busting the CEO-of-product myth
 
-You'll hear this constantly. It's wrong in a way that sets new PMs up for failure.
+u will hear this constantly.
+its wrong in a way that sets new PMs up to fail.
 
-PMs have **influence without authority**. You can't tell engineers what to build. You can't force designers to change the interface. You can't override your VP's pet feature. Your job is to build enough shared context, trust, and evidence that the team *wants* to follow your direction. That takes communication, judgment, and humility — not the persona of a mini-CEO.
+PMs have **influence without authority**.
+u cant order engineers to build something.
+u cant force designers to change the interface.
+u cant override a VP's pet feature by title alone.
 
-### PM vs Product Owner: the Marty Cagan distinction
+your job is to build enough shared context, trust, and evidence that the team wants to follow your direction.
+that takes communication, judgment, and humility, not a mini-CEO persona.
 
-This distinction matters for your job search. Per the SVPG/Marty Cagan framework:
-- A **Product Manager** is responsible for **outcomes** — discovering what problems are worth solving, working with the team to find solutions, and ensuring the product creates real value.
-- A **Product Owner** in many organizations is a tactical role — writing tickets, running backlog grooming, attending Scrum ceremonies, translating pre-decided requirements into stories.
+## PM vs Product Owner
 
-Many job postings labeled "PM" are actually Product Owner roles in disguise. Neither is inherently bad, but you should know which one you're interviewing for. This guide teaches PM in the full discovery-and-strategy sense. The PO/execution layer is part of it too — but it's not the whole job.
+this distinction matters in job search.
+following the SVPG / Marty Cagan framing:
 
-> The trend to watch: AI tools (LLMs) are increasingly good at drafting tickets, specs, and acceptance criteria — the tactical PO layer. This makes the discovery and strategy core of PM more important, not less. The PM role is not going away, but the purely execution-focused PO flavor is more exposed to automation.
+- [ ] a **Product Manager** is responsible for **outcomes**: discovering what problems are worth solving, finding solutions with the team, and ensuring the product creates value.
+- [ ] a **Product Owner** is often tactical: writing tickets, grooming backlog, attending Scrum ceremonies, translating pre-decided requirements into stories.
 
----
+many "PM" postings are Product Owner roles in disguise.
+neither is automatically bad, but u should know what youre interviewing for.
+this guide teaches PM in the discovery-and-strategy sense.
+the PO/execution layer matters too, but its not the whole job.
 
-## Mindset
+AI tools are getting good at tickets, specs, and acceptance criteria.
+that makes discovery and strategy more important, not less.
 
-- **Communication is the core skill.** More than any framework, the ability to write clearly and speak precisely about messy problems is what separates effective PMs. Every piece of this guide connects back to it.
-- **Frameworks are tools, not answers.** RICE, MoSCoW, OKRs — these exist to structure thinking, not replace it. You'll be judged on your judgment, not your ability to recite acronyms.
-- **Credibility is earned, not given.** Engineers respect PMs who understand technical constraints. Designers respect PMs who understand users. Executives respect PMs who understand the business. You build credibility by learning those things, not by having "PM" in your title.
-- **Shipped > studied.** A real feature shipped in any context (side project, volunteer org, open source) is worth more than 10 hours of framework reading.
-- **This is a longer game.** If the data or software engineering guides in this repo are 6–9 months, PM is 12–24 months from zero to first role. Plan for that.
+## mindset
 
----
+- [ ] **communication is the core skill** - clear writing and precise speaking matter more than any framework.
+- [ ] **frameworks are tools, not answers** - RICE, MoSCoW, OKRs structure thinking. they dont replace judgment.
+- [ ] **credibility is earned** - engineers respect technical awareness, designers respect user awareness, execs respect business awareness.
+- [ ] **shipped beats studied** - a real feature shipped anywhere beats 10 hours of framework reading.
+- [ ] **this is a longer game** - from zero, PM can be 12-24 months to first role. plan for that.
 
-## Accounts and tools to set up (all free or free-tier)
+## accounts and tools to set up
 
 | Tool | Why | Setup |
 |---|---|---|
-| **Notion** | Write PRDs, specs, roadmaps; the standard PM doc tool | [notion.so](https://notion.so) — free personal plan |
-| **Jira** | Backlog management, sprints, user stories; industry standard | [atlassian.com/jira](https://www.atlassian.com/software/jira) — free up to 10 users |
-| **Trello** | Lightweight kanban for practice before Jira | [trello.com](https://trello.com) — free, unlimited cards |
-| **Amplitude** | Product analytics — funnels, retention, event tracking | [amplitude.com](https://amplitude.com) — free up to 10K MTUs/mo |
-| **Google Analytics 4** | Web analytics baseline; every PM needs to have seen it | [analytics.google.com](https://analytics.google.com) — free |
-| **Figma** | Read-only access to designs; PMs don't need to design but must read mocks | [figma.com](https://figma.com) — free viewer |
-| **GitHub** | Technical literacy + portfolio home for your PM artifacts | [github.com](https://github.com) — free |
-| **Google Sheets / Excel** | Estimation, sizing, metrics modeling — the PM's spreadsheet is real | Free with Google account |
+| **Notion** | PRDs, specs, roadmaps, notes. standard PM doc tool. | [notion.so](https://notion.so) free personal plan |
+| **Jira** | backlog management, sprints, user stories. | [Atlassian Jira](https://www.atlassian.com/software/jira) free up to 10 users |
+| **Trello** | lightweight kanban before Jira. | [trello.com](https://trello.com) free |
+| **Amplitude** | product analytics: funnels, retention, events. | [amplitude.com](https://amplitude.com) free up to 10K MTUs/mo |
+| **Google Analytics 4** | web analytics baseline. every PM should have seen it. | [analytics.google.com](https://analytics.google.com) free |
+| **Figma** | read designs. PMs dont need to be designers, but must read mocks. | [figma.com](https://figma.com) free viewer |
+| **GitHub** | technical literacy and portfolio home for PM artifacts. | [github.com](https://github.com) free |
+| **Google Sheets / Excel** | estimation, sizing, metrics modeling. | free with Google account |
 
-> **Don't install everything at once.** Start with Notion (you'll use it immediately for notes and your first PRD) and a Jira free-tier workspace. Add analytics tools when Phase 2 needs them.
+dont install everything at once.
+start with Notion and a Jira free-tier workspace.
+add analytics tools when Goal 2 needs them.
 
----
+## how to use this guide
 
-## How to use this guide
+1. Work the goals in order, bc each builds the next layer.
+2. **Write as u go.** every goal asks for a document or artifact. dont wait for the portfolio goal.
+3. **Use one running product.** pick one app or feature u use daily and teardown it, PRD it, roadmap it, and measure it through the guide.
+4. **Pick your on-ramp in parallel.** research APM programs, internal opportunities, or adjacent roles now.
+5. Connect exercises to a real professional context whenever possible. PM is a role, not an academic subject.
 
-1. Work phases in order — each builds on the last.
-2. **Write as you go.** Every phase asks you to produce a document or artifact. Don't defer to "the portfolio phase." Your first PRD draft in Phase 1 will be bad; that's expected.
-3. **Build a real product.** Pick one app or feature you use daily and use it as your running example throughout the guide — teardown it, write a PRD for it, build a roadmap for it.
-4. **Pick your on-ramp in parallel.** Start researching APM programs, identifying internal opportunities, or targeting adjacent roles *now*, not after you finish the guide.
-5. Connect the exercises here to a real professional context whenever possible. PM is a role, not an academic subject.
+## exit check
 
----
-
-## Phase 0 exit checklist
-
-- [ ] I understand why PM is not a true zero-to-job role and have identified my target on-ramp (APM program / internal transfer / adjacent role / startup)
-- [ ] I can explain the difference between a Product Manager and a Product Owner
+- [ ] i understand why PM is not a true zero-to-job role and have identified my target on-ramp
+- [ ] i can explain Product Manager vs Product Owner
 - [ ] Notion workspace created and ready for PRD drafting
 - [ ] Jira free-tier workspace set up
 - [ ] GitHub account created
-- [ ] I have picked one product to use as my running example throughout the guide
-- [ ] I understand that communication is the core skill, not frameworks
+- [ ] i picked one product to use as my running example
+- [ ] i understand communication is the core PM skill, not frameworks
 
-Next: [Phase 1 — Foundations →](01-foundations.md)
+[Next: Goal 1 - Foundations](01-foundations.md)

@@ -1,108 +1,106 @@
-# 🧮 Phase 3: Data Structures, Algorithms & Interview Prep
+# Goal 3: DSA and interview prep meow
 
-> **~100 hrs total** · your pace, no deadline
-> Goal: solve coding-interview problems with a clear method, and understand the formats you'll face. Run this **in parallel** with Phase 4/5 — don't wait until you're "done" learning.
+> **~100h total** - your pace, no deadline.
+> goal: solve coding-interview problems with a clear method and understand the formats youll face.
+> run this **in parallel** with Goals 4-5. dont wait until youre "done" learning.
 
-[← Phase 2](02-core.md) · [Hub](README.md) · [Next: Phase 4 →](04-specialization.md)
-
----
-
-## How much DSA do you actually need?
-
-Depends on where you apply:
-
-- **Big tech / well-funded startups:** heavy LeetCode-style screens. DSA is the gate. Budget the full 100 hours.
-- **Most mid-size & non-tech companies:** lighter algorithmic bar, more take-homes and practical questions. You still need the fundamentals, but not 300 LeetCode problems.
-
-> **The honest truth:** DSA grinding is a *filter-passing* skill, not your day job. Don't let it eat time you should spend building a portfolio (which is what actually gets most juniors hired). Aim for competent, not competitive-programmer.
+[Previous: Goal 2](02-core.md) - [Hub](README.md) - [Next: Goal 4](04-specialization.md)
 
 ---
 
-## Core data structures & complexity (~40 hrs)
+- [ ] **calibrate how much DSA u need** (~5h)
+- [ ] **core data structures + complexity** (~40h)
+- [ ] **trees, graphs, and patterns** (~40h)
+- [ ] **interview formats + mock practice** (~20h)
+- [ ] **exit check** - Big-O, Easy reliability, patterns, 3+ mocks, take-home explanation
 
-**Cover, in this order:**
-- **Big-O notation** — time & space complexity, why it matters. This underpins everything.
-- **Arrays & strings** — the most-tested category. Two pointers, sliding window.
-- **Hash tables / maps / sets** — extremely common; the answer to a huge share of "optimize this" questions.
-- **Stacks & queues** — including when a problem is secretly a stack problem.
-- **Linked lists** — traversal, reversal, cycle detection (fast/slow pointers).
-- **Recursion** — the call stack, base cases, and the recursion tree.
+## calibrate how much DSA u need (~5h)
 
-### Labs
+depends where u apply:
 
-| Lab | Platform | What you do | Cost |
+- **big tech / well-funded startups:** heavy LeetCode screens. DSA is the gate, so budget the full 100h.
+- **mid-size and non-tech companies:** lighter algorithm bar, more take-homes and practical questions. still learn fundamentals, but dont grind 300 problems.
+
+DSA grinding is a filter-passing skill, not your day job. dont let it eat the time u need for portfolio work. aim for competent, not competitive-programmer qwq.
+
+## core data structures and complexity (~40h)
+
+cover these in order:
+
+- [ ] **Big-O notation** - time and space complexity, why trade-offs matter.
+- [ ] **arrays and strings** - most-tested category; two pointers, sliding window.
+- [ ] **hash tables / maps / sets** - the answer to many "optimize this" questions.
+- [ ] **stacks and queues** - including problems secretly asking for a stack.
+- [ ] **linked lists** - traversal, reversal, cycle detection.
+- [ ] **recursion** - call stack, base cases, recursion tree.
+
+### labs
+
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
 | DSA roadmap | [roadmap.sh/datastructures-and-algorithms](https://roadmap.sh/datastructures-and-algorithms) | Visual ordered syllabus, mark topics done | **Free** |
-| Easy problem sets | [LeetCode](https://leetcode.com/) | Solve by category (Arrays → Hashing → Linked Lists) | Free tier (150+) |
-| Patterns practice | [HackerRank](https://www.hackerrank.com/) | Problem-Solving track, by topic | Free |
+| Easy problem sets | [LeetCode](https://leetcode.com/) | Solve by category: arrays -> hashing -> linked lists | Free tier |
+| Patterns practice | [HackerRank](https://www.hackerrank.com/) | Problem-solving track by topic | Free |
 | Mentored exercises | [Exercism](https://exercism.org/) | Practice with human feedback | **Free** |
 
-**Practice gate:** can explain the Big-O of your solution, and solve most LeetCode **Easy** array/hashing problems in under 25 minutes.
+**practice gate:** explain the Big-O of your solution and solve most LeetCode **Easy** array/hashing problems in under 25 minutes.
 
----
+## trees, graphs, and algorithmic patterns (~40h)
 
-## Trees, graphs & algorithmic patterns (~40 hrs)
+- [ ] **binary trees:** inorder/preorder/postorder, BFS vs DFS, depth/height.
+- [ ] **binary search:** arrays and answer-space search.
+- [ ] **graphs:** adjacency list/matrix, BFS/DFS traversal. Dijkstra is usually beyond entry level.
+- [ ] **sorting:** understand merge sort and quicksort conceptually; know your language built-in sort.
+- [ ] **dynamic programming:** entry forms only - Fibonacci, climbing stairs, coin change.
+- [ ] **heaps / priority queues:** top-K style problems.
 
-**Cover:**
-- **Binary trees** — traversals (inorder/preorder/postorder), BFS vs DFS, depth/height.
-- **Binary search** — on arrays *and* on an answer space (the part people miss).
-- **Graphs** — adjacency list/matrix, BFS/DFS traversal. (Dijkstra/advanced is usually beyond entry level.)
-- **Sorting** — understand merge sort & quicksort conceptually; know your language's built-in sort.
-- **Dynamic programming** — entry-level forms only: Fibonacci, climbing stairs, coin change. Recognize the pattern; don't fear it.
-- **Heaps / priority queues** — appears for "top-K" style problems.
+dont memorize 300 problems. learn the recurring patterns: two pointers, sliding window, fast/slow pointers, BFS/DFS, binary search, backtracking, top-K heap, dynamic programming.
 
-### The pattern-based approach
-
-Don't memorize 300 problems — learn the ~15 recurring **patterns** (two pointers, sliding window, fast/slow pointers, BFS/DFS, binary search, backtracking, top-K heap, dynamic programming). Most interview questions are a pattern in disguise.
-
-| Resource | What it gives you | Cost |
+| Resource | What it gives u | Cost |
 |---|---|---|
-| [Coding Interview University](https://github.com/jwasham/coding-interview-university) | The canonical free self-study syllabus (used to land FAANG with no degree) | **Free** |
+| [Coding Interview University](https://github.com/jwasham/coding-interview-university) | Canonical free self-study syllabus | **Free** |
 | [NeetCode](https://neetcode.io/) | Curated problem list grouped by pattern + video explanations | Free tier |
-| [LeetCode](https://leetcode.com/) | Work the patterns; aim for ~100–150 quality problems over quantity | Free tier |
+| [LeetCode](https://leetcode.com/) | Work the patterns; aim for ~100-150 quality problems | Free tier |
 
-**Practice gate:** comfortable with tree BFS/DFS, can implement binary search correctly from memory, and recognize when a problem is sliding-window or two-pointer.
+**practice gate:** comfortable with tree BFS/DFS, can implement binary search from memory, and can recognize sliding-window or two-pointer problems.
 
----
+## interview formats and mock practice (~20h)
 
-## Interview formats & mock practice (~20 hrs)
-
-### The formats you'll face
-
-| Format | Where it's common | How to prep |
+| Format | Where its common | How to prep |
 |---|---|---|
-| **Behavioral / HR screen** | Nearly universal, usually first | STAR-format stories (see [interview-prep.md](interview-prep.md)) |
-| **Live coding (DSA)** | Big tech, many startups | Talk out loud, clarify before coding, test your code |
-| **Take-home project** | Startups, mid-size | Treat as production: tests, README, clean commits |
-| **Technical phone screen** | Common second round | Often a medium DSA problem + light system questions |
-| **Pair programming** | Companies skeptical of LeetCode | Practice thinking aloud and collaborating |
-| **Junior system design** | Some mid+ roles | "Design a URL shortener / a todo API" — keep it concrete |
+| **Behavioral / HR screen** | nearly universal | STAR stories in [interview-prep.md](interview-prep.md) |
+| **Live coding (DSA)** | big tech, many startups | talk out loud, clarify before coding, test your code |
+| **Take-home project** | startups, mid-size | tests, README, clean commits |
+| **Technical phone screen** | common second round | medium DSA + light system questions |
+| **Pair programming** | companies skeptical of LeetCode | practice thinking aloud and collaborating |
+| **Junior system design** | some mid+ roles | design a URL shortener / todo API, keep it concrete |
 
-### Practice the *performance*, not just the answer
+live coding tests **communication under pressure**: clarify, state approach, narrate, test edge cases.
 
-What live coding really tests is **communication under mild pressure**: clarify the question, state your approach, narrate as you code, test edge cases. Practice this explicitly.
-
-| Tool | What you do | Cost |
+| Tool | What u do | Cost |
 |---|---|---|
-| [Pramp](https://www.pramp.com/) | Free peer-to-peer mock interviews | **Free** |
-| [LeetCode](https://leetcode.com/) | Timed mock assessments | Free tier |
-| [CodeSignal](https://codesignal.com/) | The assessment format many employers actually use | Free practice |
+| [Pramp](https://www.pramp.com/) | free peer-to-peer mock interviews | **Free** |
+| [LeetCode](https://leetcode.com/) | timed mock assessments | Free tier |
+| [CodeSignal](https://codesignal.com/) | practice the assessment format many employers use | Free practice |
 
-**Practice gate:** completed at least **3 mock interviews** (peer or self-recorded), and can walk through a medium problem out loud without freezing.
+**practice gate:** complete at least **3 mock interviews** (peer or self-recorded), and walk through a medium problem out loud without freezing.
 
----
+## AI tools in interviews
 
-## A note on AI tools in interviews
+u may use AI tools daily while learning, but most live interviews ban them and take-homes expect u to understand every line.
 
-You may use AI tools daily while learning — but **most live interviews ban them**, and take-homes expect you to understand every line. Practice solving problems *without* AI so the underlying skill is solid. The 2026 bar is explicitly "prove you understand what you wrote." See the [AI section in Phase 0](00-prep.md).
+- [ ] practice solving without AI
+- [ ] explain your own code out loud
+- [ ] keep the [AI section in Goal 0](00-prep.md) in mind
 
----
+the 2026 bar is: prove u understand what u wrote.
 
-## Phase 3 exit checklist
-- [ ] Can analyze time/space complexity of your own code
-- [ ] Solve LeetCode Easy reliably, many Mediums with effort
-- [ ] Know the ~15 core patterns and recognize them
-- [ ] Completed 3+ mock interviews
-- [ ] Can explain a take-home's design decisions out loud
+## exit check
 
-Next: [Phase 4 — Specialization Paths →](04-specialization.md)
+- [ ] can analyze time/space complexity of your own code
+- [ ] solve LeetCode Easy reliably, many Mediums with effort
+- [ ] know the ~15 core patterns and recognize them
+- [ ] completed 3+ mock interviews
+- [ ] can explain a take-home's design decisions out loud
+
+[Next: Goal 4 - Specialization Paths](04-specialization.md)

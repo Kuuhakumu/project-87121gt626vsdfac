@@ -1,98 +1,92 @@
-# 🧪 Lab Inventory — IT Support & Networking (2026)
+# Lab inventory - IT Support & Networking meow
 
-> Every lab below was **curl status-checked June 13, 2026**. ✅ live (200) · ⚠️ live but blocks automated checks (403/429) · ❌ dead.
-> Hands-on beats reading. In IT support, a **home lab** is the single biggest hireable signal — build it as you learn.
+> labs were curl status-checked June 13, 2026.
+> hands-on beats reading. in IT support, the home lab is the hireable signal.
+
+[Hub](README.md) - [Resources](resources.md)
 
 ---
 
-## Free training (theory + guided)
+- [ ] **use guided training**
+- [ ] **build networking labs**
+- [ ] **build home-lab virtualization**
+- [ ] **practice Microsoft/cloud/identity**
+- [ ] **practice PowerShell**
+- [ ] **use cert practice carefully**
+- [ ] **avoid dead old resources**
 
-| Resource | Platform | What you get | Cost | Status |
+## free training
+
+| Resource | Platform | What u get | Cost | Status |
 |---|---|---|---|---|
-| [Professor Messer](https://www.professormesser.com) | Web/YouTube | **Free, complete** A+, Network+, Security+ courses | Free | ✅ |
-| [Microsoft Learn](https://learn.microsoft.com/en-us/training/) | Microsoft | Free AZ-900/MD-102/M365 paths + sandboxes | Free | ✅ |
-| [Cisco Networking Academy](https://www.netacad.com/courses/packet-tracer) | Cisco | Free networking courses + Packet Tracer | Free | ✅ |
-| [CBT Nuggets](https://www.cbtnuggets.com) | Web | Polished cert video training | Paid | ✅ |
+| Professor Messer | Web/YouTube | A+, Network+, Security+ courses | Free | live - **⚠️ TODO verify exact course links** |
+| [Microsoft Learn](https://learn.microsoft.com/en-us/training/) | Microsoft | AZ-900/MD-102/M365 + sandboxes | Free | live |
+| [Cisco Networking Academy](https://www.netacad.com/courses/packet-tracer) | Cisco | networking + Packet Tracer | Free | live |
+| [CBT Nuggets](https://www.cbtnuggets.com) | Web | cert video training | Paid | live |
 
----
+## networking labs
 
-## Networking labs (the core skill)
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) | Cisco | Build/simulate switched & routed networks (CCNA prep) | Free | ✅ |
-| [GNS3](https://www.gns3.com) | Local | Emulate real network device images | Free | ✅ |
-| [Wireshark](https://www.wireshark.org) | Local | Capture & analyze real packets (DNS, DHCP, TCP) | Free | ✅ (v4.6) |
-| subnetting drills | subnetipv4.com / Professor Messer | Drill subnetting until automatic | Free | ✅ |
+| [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) | Cisco | switched/routed networks | Free | live |
+| [GNS3](https://www.gns3.com) | Local | emulate network devices | Free | live |
+| [Wireshark](https://www.wireshark.org) | Local | capture/analyze DNS, DHCP, TCP | Free | live |
+| subnetting drills | [subnetipv4.com](https://subnetipv4.com/) | drill subnet math | Free | live |
 
-> **Subnetting will trip you up if you haven't drilled it.** Practice daily until you can do it without a calculator.
+practice subnetting daily until it stops being scary.
 
----
+## home-lab platforms
 
-## Home-lab platforms (virtualization)
-
-| Tool | Platform | What you do | Cost | Status |
+| Tool | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [VirtualBox](https://www.virtualbox.org) | Local | Free hypervisor — run Windows Server + client VMs | Free | ✅ |
-| [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html) | Local | Free hypervisor (now Broadcom, still free for personal) | Free | ✅ |
-| [Proxmox VE](https://www.proxmox.com) | Local | Bare-metal hypervisor for a real home-lab server | Free | ✅ |
+| [VirtualBox](https://www.virtualbox.org) | Local | Windows Server + client VMs | Free | live |
+| [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html) | Local | personal hypervisor | Free | live |
+| [Proxmox VE](https://www.proxmox.com) | Local | bare-metal lab server | Free | live |
 
-**Core home-lab build:** Windows Server 2025 (eval) as a domain controller + a Windows 11 client joined to the domain. Practice Active Directory, Group Policy, DNS, DHCP.
+core build: Windows Server 2025 eval DC + Windows 11 client joined to domain.
 
----
+## Microsoft / cloud / identity
 
-## Microsoft / cloud / identity labs
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [M365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) | Microsoft | **Free M365 dev tenant** — practice Entra ID, Intune, admin center | Free | ✅ |
-| [Microsoft Learn sandboxes](https://learn.microsoft.com/en-us/training/) | Microsoft | Free Azure sandbox, no credit card | Free | ✅ |
-| [Azure Free Account](https://azure.microsoft.com/free/) | Microsoft | Real Azure resources, 12-mo free tier | Free tier | ✅ |
+| [M365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) | Microsoft | Entra ID, Intune, admin center | Free | live |
+| [Microsoft Learn sandboxes](https://learn.microsoft.com/en-us/training/) | Microsoft | Azure sandbox, no card | Free | live |
+| [Azure Free Account](https://azure.microsoft.com/free/) | Microsoft | real Azure resources | Free tier | live |
 
-> The **free M365 dev tenant** is underused by most learners — it's a full tenant where you can practice Entra ID users, groups, Intune enrollment, and Conditional Access.
+## PowerShell and scripting
 
----
-
-## PowerShell & scripting
-
-| Lab | Platform | What you do | Cost | Status |
+| Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|
-| [Microsoft Learn: PowerShell](https://learn.microsoft.com/en-us/training/) | Microsoft | Guided PowerShell from zero | Free | ✅ |
-| Your home-lab AD | Local | Bulk-create users, pull reports, automate tasks | Free | ✅ |
+| [Microsoft Learn: PowerShell](https://learn.microsoft.com/en-us/training/) | Microsoft | guided PowerShell | Free | live |
+| Your home-lab AD | Local | bulk users, reports, automation | Free | live |
 
----
+## cert practice exams
 
-## Cert practice exams
-
-| Tool | What you do | Cost | Status |
+| Tool | What u do | Cost | Status |
 |---|---|---|---|
-| [Boson ExSim](https://www.boson.com) | Highest-fidelity CompTIA/Cisco practice exams | Paid | ✅ |
-| Professor Messer practice exams | Free A+/Net+ question banks | Free | ✅ |
-| [TryHackMe](https://tryhackme.com) | Hands-on networking/security fundamentals | Freemium | ⚠️ (429 = live) |
+| [Boson ExSim](https://www.boson.com) | CompTIA/Cisco practice exams | Paid | live |
+| Professor Messer practice exams | A+/Net+ practice | Free | live - **⚠️ TODO verify exact current page** |
+| [TryHackMe](https://tryhackme.com) | networking/security fundamentals | Freemium | likely live |
 
----
-
-## Platform quick reference
+## platform quick reference
 
 | Platform | Best for | Cost |
 |---|---|---|
-| Professor Messer | Free A+/Net+/Sec+ video training | Free |
-| Packet Tracer / GNS3 | Network simulation & CCNA prep | Free |
-| Wireshark | Packet analysis | Free |
-| VirtualBox / Proxmox | Home-lab virtualization | Free |
-| M365 Dev Program | Entra ID / Intune / M365 admin practice | Free |
-| Boson | Exam-grade practice tests | Paid |
+| Professor Messer | A+/Net+/Sec+ video training | Free |
+| Packet Tracer / GNS3 | network simulation | Free |
+| Wireshark | packet analysis | Free |
+| VirtualBox / Proxmox | home lab | Free |
+| M365 Dev Program | Entra ID / Intune / M365 | Free |
+| Boson | exam-grade tests | Paid |
 
----
-
-## Dead / changed since 2021
+## dead / changed since 2021
 
 | Old resource | Status | Replacement |
 |---|---|---|
-| TestOut LabSim | acquired by CompTIA, folded into CertMaster | CompTIA CertMaster Labs |
-| Free VMware Workstation Player (old EULA) | now under Broadcom — still free personal use, new download path | vmware.com player page |
-| MD-100 / MD-101 separate labs | consolidated | MD-102 content |
+| TestOut LabSim | acquired by CompTIA | CompTIA CertMaster Labs |
+| old VMware Player EULA | Broadcom path changed | vmware.com player page |
+| MD-100 / MD-101 labs | consolidated | MD-102 content |
 
 ---
 
-*Sources: curl status-checked June 13, 2026. All primary targets returned 200 or 403/429 (live). Raw findings in `research/lab-inventory/it-support-networking-2026.md`.*
+*Sources: curl status-checked June 13, 2026. Raw findings in `research/lab-inventory/it-support-networking-2026.md`.*

@@ -1,127 +1,132 @@
-# 🚀 Beyond Entry-Level — Years 2+
+# Beyond entry-level: years 2+ meow
 
-> You're hired into your first design role. This is the map for what comes next — how the junior track opens into the rest of the field.
+> u got the first design role.
+> this is the map for what comes next: how junior work opens into the rest of UX.
 
-[← Job Hunt](05-job-hunt.md) · [Hub](README.md)
+[Previous: Goal 5](05-job-hunt.md) - [Hub](README.md)
 
 ---
 
-## The honest progression
+- [ ] **understand the progression**
+- [ ] **choose what senior means for your track**
+- [ ] **build compounding skills**
+- [ ] **watch the AI frontier without panicking**
+- [ ] **keep growing deliberately**
 
+## the honest progression
+
+most people start as **Junior Product Designer** or an equivalent junior design role.
+after 2-3 years, u branch based on what u actually like: systems, research, writing, management, or IC craft.
+
+```text
+entry roles:
+  Junior Product Designer
+  Junior UI Designer
+  UX Research Intern / Associate Researcher
+  Content Designer I
+
+mid/senior paths:
+  Product Designer (mid) -> Senior Product Designer -> Principal / Staff Designer
+  UX Designer (mid) -> Design Lead / Principal
+  UI Designer (mid) -> Senior UI / Visual Designer
+  Design Systems Designer / Engineer
+  UX Researcher -> Senior Researcher -> Research Lead
+  Content Designer -> Content Design Lead / UX Writing Lead
+  Design Manager -> VP / Head of Design
 ```
-Junior Product Designer  ────────────────────────────────────────────────┐
-Junior UI Designer                                                        │
-UX Research Intern / Assoc. Researcher                                   │
-Content Designer I                                                        │
-                                                                          ▼
-                                               Product Designer (mid)  ──────► Senior Product Designer
-                                               UX Designer (mid)               ► Design Lead / Principal
-                                               UI Designer (mid)               ► Design Manager
-                                                                                ► VP / Head of Design
-                                                    │
-                                                    ├──► Design Systems Designer / Engineer
-                                                    │
-                                                    ├──► UX Research (mid → Senior Researcher → Research Lead)
-                                                    │
-                                                    └──► Content Design Lead / UX Writing Lead
-```
 
-Most people start as a **Junior Product Designer** or equivalent and branch after 2–3 years once they know what they find most engaging: systems, research, writing, management, or IC craft.
+## junior to senior product designer
 
----
+the jump from junior to senior isnt "better Figma."
+its a shift from executing designs to owning problems.
 
-## Track-by-track: what "senior" adds
+- [ ] **owning the problem space** - define the problem with PM, identify research needs, set direction.
+- [ ] **cross-functional leadership** - run reviews, push back on scope creep, negotiate feasibility with engineering.
+- [ ] **quality at scale** - maintain design quality across complex products and teams.
+- [ ] **mentoring** - give useful feedback to juniors.
+- [ ] **strategic framing** - connect design choices to business outcomes and user metrics.
 
-### Junior → Senior Product Designer
+## design systems designer / engineer
 
-The jump from junior to senior isn't "better Figma." It's a shift from *executing designs* to *owning problems*.
+this specialty sits between design and engineering.
+its a clear path for designers who are precise, systems-minded, and comfortable with component APIs and tokens.
 
-- **Owning the problem space:** a senior doesn't wait for a brief — they define the problem alongside PM, identify what needs research, and set the design direction.
-- **Cross-functional leadership:** running design reviews, pushing back on scope creep, negotiating with engineers on feasibility.
-- **Quality at scale:** maintaining design quality across a complex product with many teams touching the same system.
-- **Mentoring:** giving useful feedback to juniors; your output multiplies through others.
-- **Strategic framing:** connecting design decisions to business outcomes and user metrics, not just to usability improvements.
+- [ ] semantic design tokens that map to code variables
+- [ ] component governance: what belongs in the system vs whats a one-off
+- [ ] cross-platform consistency across web, iOS, Android, email
+- [ ] component docs designers and developers can use without asking around
+- [ ] versioning and migration without breaking every product team
 
-### Design Systems Designer / Engineer
+## UX research lead / senior researcher
 
-The design systems specialty sits at the intersection of design and engineering. It's one of the clearest paths for designers who are precise, systems-minded, and comfortable with component APIs and tokens.
+the research track deepens in methodology and broadens in influence.
 
-What this role adds:
-- Semantic design tokens: a token taxonomy that maps to code variables
-- Component governance: deciding what belongs in the system vs what's a one-off
-- Cross-platform consistency: web, iOS, Android, email — one system serving multiple surfaces
-- Documentation: writing component docs so clearly that designers and developers don't need to ask questions
-- Versioning and migration: managing breaking changes without breaking every product team
+- [ ] complex mixed-methods studies: generative + evaluative, qual + quant
+- [ ] research operations: panels, recruiting infrastructure, tool standards
+- [ ] making findings change decisions, not just sit in reports
+- [ ] leading other researchers and setting standards
+- [ ] strategic research: longitudinal studies, segmentation, concept testing
 
-### UX Research Lead / Senior Researcher
+UX research roles are fewer but more AI-resilient than pure UI roles.
+generative tools are good at producing variations of things that already exist.
+they are not good at finding out what users actually need.
 
-The research track deepens in methodology and broadens in organizational influence.
+## content design lead / UX writing lead
 
-- Designing complex mixed-methods studies (generative + evaluative, qual + quant)
-- Research operations: building participant panels, recruiting infrastructure, tools standardization
-- Evangelizing research: making sure findings actually change decisions, not just sit in reports
-- Team leadership: managing other researchers, setting research standards
-- Strategic research: longitudinal studies, segmentation, large-scale concept testing
+- [ ] steward voice and tone across teams
+- [ ] own content strategy across product surfaces
+- [ ] write across UX, product, help docs, and internal comms
+- [ ] review other writers and set quality standards
 
-> UX research roles are fewer but more AI-resilient than pure UI roles. Generative AI tools are good at producing variations of things that already exist; they're not good at finding out what users actually need. Research depth compounds.
+## design management
 
-### Content Design Lead / UX Writing Lead
+management is a different job, not a trophy version of the same job.
+be honest with yourself about whether u want it.
 
-- Voice and tone stewardship: owning and evolving the product's language across teams
-- Content strategy at scale: information architecture across a whole product surface
-- Cross-functional writing: product writing, UX writing, internal comms, help documentation — often converging in a Lead role
-- Managing a content team: reviewing other writers' work, setting quality standards
+- [ ] people management: 1:1s, career development, performance reviews, hiring
+- [ ] process: how design work gets done across the team
+- [ ] organizational politics: budget, headcount, cross-functional alignment
+- [ ] less hands-on design after 2-3 years of managing
 
-### Design Management
+many senior designers stay on the IC track as Principal or Staff Designer instead.
+both paths are real.
+Principal means senior technical expert.
+Manager means multiplying a team.
 
-Management is a different job, not a promotion of the same job. Worth being honest with yourself about whether you actually want it.
+## skills that compound
 
-What design management involves:
-- People management: 1:1s, career development, performance reviews, hiring
-- Process: how design work gets done across the team, not just in your own work
-- Organizational politics: budget, headcount, cross-functional alignment
-- Less hands-on design: most design managers stop doing individual contribution within 2–3 years of managing
-
-> A lot of senior designers prefer staying on the IC (individual contributor) track as a Principal or Staff Designer rather than moving into management. Both are legitimate. The "Principal" path means you're the most senior technical expert; the "Manager" path means you multiply the team. Neither is better — they're just different.
-
----
-
-## Skills that compound
-
-| Skill | Why it pays off long-term |
+| Skill | Why it pays off long term |
 |---|---|
-| **Storytelling and communication** | The thing that separates senior designers from junior ones — can you get a room to agree on a direction? |
-| **Research fluency** | Every design track benefits from being able to plan and run at least a usability test. Research-literate designers make better decisions. |
-| **Design systems thinking** | As products scale, consistency becomes a hard engineering problem. Designers who understand token systems and component APIs become very valuable. |
-| **Cross-functional trust** | Relationships with PMs, engineers, and data teams. Collaboration skill compounds over years. |
-| **Writing** | Clear written communication (case studies, Figma annotations, design critiques, Slack) matters more as you grow. |
-| **WCAG / accessibility** | Organizations increasingly have legal and ethical accessibility obligations. Designers with genuine WCAG knowledge are rare. |
+| **Storytelling and communication** | senior designers get rooms aligned on a direction. |
+| **Research fluency** | every design track benefits from usability testing and evidence. |
+| **Design systems thinking** | consistency becomes an engineering problem as products scale. |
+| **Cross-functional trust** | relationships with PMs, engineers, and data teams compound over years. |
+| **Writing** | case studies, annotations, critiques, and async decisions all depend on clear writing. |
+| **WCAG / accessibility** | designers with genuine WCAG knowledge are still rare. |
 
----
+## the AI frontier
 
-## The AI frontier (where this is heading)
+by the time youre 2+ years in, expect these to be normal:
 
-By the time you're 2+ years in, expect these to be normal:
+- [ ] **Generative UI tools** like Figma AI and Framer AI for first-draft layouts.
+- [ ] **Research synthesis assistance** from LLMs summarizing qualitative data.
+- [ ] **AI-assisted content** for microcopy drafts, validated by a content designer.
+- [ ] **Prototype-to-code** tools like Framer, Locofy, and Builder.io.
 
-- **Generative UI tools** (like Figma's AI features, Framer AI) that produce first-draft layouts from prompts. The junior skill of "make this screen" is increasingly assisted. The senior skill — evaluating whether the generated design is *right* — is not.
-- **Research synthesis assistance:** LLMs summarizing qualitative data. Still requires a researcher who can spot when the synthesis is wrong or incomplete.
-- **AI-assisted content:** LLM-drafted microcopy, validated by a content designer who owns voice and quality.
-- **Prototype-to-code:** tools like Framer, Locofy, and Builder.io generating real code from Figma. Designers who understand enough frontend to validate the output become more valuable.
+no reliable 2026 figure exists for AI's impact on junior UX hiring.
+the direction is still clear: generative tools raise the floor on visual production, which puts more pressure on juniors to show research, strategy, and decision-making depth.
+the designers who stay useful are the ones AI helps, not the ones pretending it isnt there.
 
-> No reliable 2026 figure exists for AI's impact on junior UX hiring. The direction is clear though: generative tools raise the floor on visual production, which puts more pressure on juniors to show research, strategy, and decision-making depth — not just execution. The designers who stay employed are the ones AI is helping, not the ones it's replacing.
+## how to keep growing
 
----
+- [ ] go deep on one product domain: fintech, healthcare, developer tools, consumer, or another space
+- [ ] read other designers case studies on Behance and Bootcamp on Medium, but read critically
+- [ ] give talks or write publicly, because teaching forces clarity
+- [ ] contribute to design communities: ADPList, r/UXDesign, local meetups
+- [ ] pick the next cert by track using [certifications.md](certifications.md)
 
-## How to keep growing
+tools churn: Sketch -> Figma -> whatever comes next.
+the durable skills are understanding users, making decisions under uncertainty, communicating clearly, and building things that work.
+invest there meow.
 
-- **Go deep on one product domain** — fintech, healthcare, developer tools, consumer — domain expertise compounds.
-- **Read other designers' case studies** — Behance and Bootcamp on Medium are full of them; read critically.
-- **Give conference talks or write publicly** — teaching something forces you to understand it.
-- **Contribute to design communities** — ADPList mentoring, r/UXDesign critique threads, local design meetups.
-- **Pick the next cert by track** (see [certifications.md](certifications.md)) — IxDF membership is the most useful ongoing investment; NN/g is worth pursuing for senior/consulting roles.
-
----
-
-> **The meta-skill:** tools churn (Sketch → Figma → whatever comes next). The underlying skills — understanding users, making decisions under uncertainty, communicating clearly, and building things that actually work — don't churn. Invest there.
-
-[← Job Hunt](05-job-hunt.md) · [Hub](README.md)
+[Previous: Goal 5](05-job-hunt.md) - [Hub](README.md)

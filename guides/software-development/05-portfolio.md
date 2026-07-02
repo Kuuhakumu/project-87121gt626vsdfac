@@ -1,118 +1,138 @@
-# 💼 Phase 5: Portfolio, Resume & Job Hunt
+# Goal 5: portfolio, resume, and job hunt meow
 
-> **~80 hrs total** · your pace, no deadline
-> Runs *in parallel* with Phase 4 — build the portfolio as you learn, don't wait.
+> **~80h total** - your pace, no deadline.
+> this runs **in parallel** with Goal 4.
+> build the portfolio as u learn, dont wait.
 
-[← Phase 4](04-specialization.md) · [Hub](README.md) · [Beyond Entry-Level →](beyond-entry.md)
-
----
-
-## The portfolio is everything here
-
-For software development, **your GitHub + deployed projects matter far more than any certificate.** Hiring managers look at what you've built and whether you can explain it. This phase turns your work into proof.
-
-### The brutal truth about 2026 portfolios
-
-- **To-do apps and tutorial clones are worthless** — every bootcamp grad has them.
-- **No live URL = doesn't exist.** Deploy everything.
-- **AI has flooded GitHub with vibe-coded repos.** A polished README means nothing if you can't explain every line in an interview. Judgment and understanding are the real bar now — not output volume.
-- **No README, no tests, no `.env.example`** = instant screen-out.
+[Previous: Goal 4](04-specialization.md) - [Hub](README.md) - [Beyond Entry-Level](beyond-entry.md)
 
 ---
 
-## The 3–5 project progression
+- [ ] **turn projects into proof** (~10h)
+- [ ] **build the 3-5 project progression** (~45h+)
+- [ ] **make GitHub readable** (~8h)
+- [ ] **write resume + online presence** (~10h)
+- [ ] **target roles without doom-scrolling** (~7h)
+- [ ] **interview prep loop** (ongoing)
 
-Build these in order. Each one demonstrates more than the last.
+## turn projects into proof (~10h)
 
-### Project 1 — Responsive component site / personal site
-**Demonstrates:** HTML semantics, accessibility, CSS layout (Flexbox/Grid), design detail, deployment.
-**Stand out with:** a visible Lighthouse score, dark mode, real content (not a tutorial clone).
+for software development, **GitHub + deployed projects matter far more than any certificate.**
 
-### Project 2 — Backend API with a database
-**Demonstrates:** schema design, HTTP semantics, auth, you can *write* backend code, not just consume it.
-**Stand out with:** OpenAPI/Swagger docs, Dockerized, pytest/Vitest tests, deployed.
+- [ ] no tutorial clones as centerpieces
+- [ ] every serious project has a live URL
+- [ ] every repo has a README, tests where appropriate, and `.env.example`
+- [ ] u can explain every important line and design decision
 
-### Project 3 — Full-stack app with auth, DB & deployment ⭐ the centerpiece
-A genuinely useful app: habit tracker, recipe manager, study scheduler, finance dashboard.
-**Demonstrates:** full-stack thinking, auth implementation, relational data modeling, CI/CD, UX judgment.
-**Stand out with:** real users (even 5), a feature you built because *you* needed it, a Loom walkthrough in the README.
+AI has flooded GitHub with vibe-coded repos. output volume isnt the bar anymore. judgment and understanding are the bar, dw.
 
-### Project 4 — Real API integration / data pipeline
-Connect to an external data source and do something interesting: a stats visualizer, a spending analyzer reading a CSV, a news aggregator.
-**Demonstrates:** navigating real API docs, data transformation, error handling (APIs fail and rate-limit), visualization.
-**Stand out with:** caching to respect quotas, a write-up of what was hard about the data.
+## the 3-5 project progression (~45h+)
 
-### Project 5 (optional) — Depth/specialization signal
-Pick one matching your target:
-- **AI/ML-adjacent:** a RAG or LLM-integration app with a real retrieval pipeline (not just one API call)
-- **DevOps-curious:** containerized multi-service app + GitHub Actions CI + a little Terraform
-- **Open source:** a merged PR to a real project (with a clear write-up of your process)
-- **Mobile:** an app actually published to a store
+build these in order. each one proves more than the last.
 
----
+### Project 1 - responsive component site / personal site
 
-## What a strong GitHub looks like
+**demonstrates:** HTML semantics, accessibility, CSS layout, design detail, deployment.
 
-- Pinned: your **4–6 best** repos (quality over quantity — one great Project 3 beats ten clones)
-- Each repo: real README (what/why/how-to-run/what's next), clean commit history (a story, not "fix", "fix2", "final"), tests, `.env.example`
-- A profile README that says who you are and what you're working on
-- Green-ish contribution graph (shows consistency, not obsession)
+**stand out with:** visible Lighthouse score, dark mode, real content.
 
----
+### Project 2 - backend API with a database
 
-## Resume & online presence
+**demonstrates:** schema design, HTTP semantics, auth, backend code.
 
-### Resume rules
-- **Lead with projects + skills**, not an objective statement
-- **Quantify and link:** "Built and deployed a full-stack habit tracker (Next.js, PostgreSQL, 40+ users) — [live] [code]"
-- **Mirror the posting's keywords** for ATS — if it says "React, TypeScript, REST", those exact words must appear
-- **One page** for entry level
-- List the stack you actually used per project
+**stand out with:** OpenAPI/Swagger docs, Docker, pytest/Vitest tests, deployment.
 
-### Online presence
-- A clear headline: `Junior Full-Stack Developer | React · TypeScript · Node · PostgreSQL`
-- Publish a short write-up of your centerpiece project — visibility compounds
-- Be findable: GitHub link everywhere, pinned projects current
+### Project 3 - full-stack app with auth, DB, and deployment
 
----
+this is the centerpiece: habit tracker, recipe manager, study scheduler, finance dashboard.
 
-## Job titles to search for
+**demonstrates:** full-stack thinking, auth, relational data modeling, CI/CD, UX judgment.
 
-Entry roles hide under many names. Search **all** of these:
-- Software Engineer I · SWE I · Software Engineer, New Grad
+**stand out with:** real users (even 5), a feature u built because u needed it, Loom walkthrough in the README.
+
+### Project 4 - real API integration / data pipeline
+
+connect to an external data source and do something interesting: stats visualizer, CSV spending analyzer, news aggregator.
+
+**demonstrates:** reading API docs, data transformation, error handling, rate-limit awareness, visualization.
+
+**stand out with:** caching to respect quotas and a write-up of what was hard about the data.
+
+### Project 5 - optional depth/specialization signal
+
+pick one matching your target:
+
+- [ ] **AI/ML-adjacent:** RAG or LLM-integration app with a real retrieval pipeline
+- [ ] **DevOps-curious:** containerized multi-service app + GitHub Actions CI + a little Terraform
+- [ ] **Open source:** merged PR to a real project with a process write-up
+- [ ] **Mobile:** app actually published to a store
+
+## make GitHub readable (~8h)
+
+- [ ] pin your **4-6 best** repos
+- [ ] each repo has what/why/how-to-run/whats-next in the README
+- [ ] commit history tells a story, not `fix`, `fix2`, `final`
+- [ ] tests and `.env.example` exist where relevant
+- [ ] profile README says who u are and what youre building
+- [ ] contribution graph shows consistency, not obsession
+
+## resume and online presence (~10h)
+
+### resume rules
+
+- [ ] lead with projects + skills, not an objective statement
+- [ ] quantify and link: "Built and deployed a full-stack habit tracker (Next.js, PostgreSQL, 40+ users) - [live] [code]"
+- [ ] mirror posting keywords: if it says "React, TypeScript, REST", those exact words appear
+- [ ] one page for entry level
+- [ ] list the stack u actually used per project
+
+### online presence
+
+- [ ] clear headline: `Junior Full-Stack Developer | React - TypeScript - Node - PostgreSQL`
+- [ ] short write-up of your centerpiece project
+- [ ] GitHub link everywhere, pinned projects current
+
+## target roles without doom-scrolling (~7h)
+
+entry roles hide under many names:
+
+- Software Engineer I / SWE I / Software Engineer, New Grad
 - Junior Software Engineer / Developer
 - Associate Software Engineer / Developer
-- Software Developer I · Entry-Level Software Engineer
-- Graduate Software Engineer / Developer (structured grad programs)
+- Software Developer I / Entry-Level Software Engineer
+- Graduate Software Engineer / Developer
 - Junior Frontend / Backend / Full-Stack Developer
-- Junior Web Developer · Application Developer (enterprise IT)
+- Junior Web Developer / Application Developer
 
-> **Tip:** also search "Associate", "Graduate", "New Grad", "I" / "Level 1". Many junior roles never use the word "junior".
+also search **Associate**, **Graduate**, **New Grad**, **I**, and **Level 1**. many junior roles never say junior.
 
----
+job boards are local, so use a strategy that works anywhere:
 
-## How to find and target roles (region-agnostic)
+- [ ] make a 20-40 company-direct target list
+- [ ] check careers pages directly
+- [ ] seek referrals through communities and open source
+- [ ] target internships, apprenticeships, or grad programs if early
+- [ ] filter by remote/timezone if local market is thin
+- [ ] tailor every application to the posting
 
-Job boards are mostly local, so instead of a list, use a strategy that works anywhere:
+entry-level SWE is competitive in 2026: layoffs returned experienced devs to the market and AI raised per-dev output. what gets u hired is a portfolio u can explain, clearing the technical screen, referrals, and targeted applications.
 
-1. **Company-direct.** Make a list of 20–40 companies you'd want to work at (any size, in your region or remote-friendly). Check their careers pages directly — many roles never hit aggregators.
-2. **Referrals beat applications.** The highest-conversion path into any company is a referral. Engage genuinely in communities, contribute to open source, and connect with people doing the work.
-3. **Internships / apprenticeships / grad programs** convert to full-time at high rates — target them explicitly if you're early.
-4. **Filter by remote** if your local market is thin — many companies hire remote-first within a timezone band.
-5. **Tailor every application.** Mirror the posting's language; attach the one project most relevant to that role.
+## interview prep loop
 
-> **The honest reality:** entry-level SWE is competitive in 2026 — layoffs returned experienced devs to the market and AI raised per-dev output. What gets you hired: a portfolio you can *explain*, clearing the technical screen, referrals, and targeting mid-size/startup/non-tech-company eng orgs (less crowded than big tech).
+see [interview-prep.md](interview-prep.md) for the full Q&A bank.
 
----
+- [ ] explain every line of every portfolio project
+- [ ] talk through problems out loud before coding
+- [ ] prepare 3-4 STAR stories
+- [ ] ask clarifying questions before writing code
 
-## Interview prep
+## exit check
 
-See the full **[Interview Prep Q&A bank →](interview-prep.md)** for DSA patterns, technical questions, and behavioral prompts.
+- [ ] 3-5 portfolio projects are live or clearly documented
+- [ ] centerpiece project has auth, DB, deployment, README, and tests where appropriate
+- [ ] GitHub pins show quality over quantity
+- [ ] resume links to live/code proof
+- [ ] target list exists and applications are tailored
+- [ ] u can explain the portfolio without notes
 
-### Quick hits
-- Be able to explain **every line** of every portfolio project
-- Practice talking through a problem **out loud** before coding (interviewers score your thinking)
-- Have 3–4 STAR stories ready (a bug you fixed, a project you shipped, something you learned fast)
-- Always ask clarifying questions before writing code
-
-Next: [Beyond Entry-Level — Years 2+ →](beyond-entry.md)
+[Beyond Entry-Level - Years 2+](beyond-entry.md)

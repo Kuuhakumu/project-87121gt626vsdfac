@@ -1,94 +1,98 @@
-# 🌐 Phase 2: Cloud Core & Containers
+# Goal 2: cloud core and containers meow
 
-> **~180 hrs total** · your pace, no deadline
-> Pick **one** cloud provider and go deep on it. Learn Docker alongside it. By the end of this phase you'll have your first cert and real deployable skills.
+> **~180h total** - your pace, no deadline.
+> pick **one** cloud provider and go deep.
+> learn Docker beside it. by the end, u have first cert readiness and real deployable skills.
 
-[← Phase 1: Foundations](01-foundations.md) · [Hub](README.md) · [Next: Phase 3 →](03-iac-cicd.md)
+[Previous: Goal 1](01-foundations.md) - [Hub](README.md) - [Next: Goal 3](03-iac-cicd.md)
 
 ---
 
-## Pick one cloud — don't spread thin
+- [ ] **pick one cloud** (~5h)
+- [ ] **cloud fundamentals + first cert** (~90h)
+- [ ] **Docker and containers** (~90h)
+- [ ] **exit check** - core cloud services, billing alarm, Dockerfile/Compose, multi-service app
 
-| Provider | Pick it if… | First cert |
+## pick one cloud (~5h)
+
+| Provider | Pick it if... | First cert |
 |---|---|---|
-| **AWS** | You want the most job openings & widest recognition (the default) | CLF-C02 → SAA-C03 |
-| **Azure** | You're targeting enterprise / Microsoft-heavy shops | AZ-900 → AZ-104 |
-| **GCP** | You're targeting data/ML-heavy or GCP-native companies | Cloud Digital Leader → ACE |
+| **AWS** | u want most openings and widest recognition | CLF-C02 -> SAA-C03 |
+| **Azure** | u target enterprise / Microsoft-heavy shops | AZ-900 -> AZ-104 |
+| **GCP** | u target data/ML-heavy or GCP-native companies | Cloud Digital Leader -> ACE |
 
-> **Most beginners should pick AWS** — it has the largest job market and the most learning material. The concepts (compute, storage, networking, IAM) transfer to any cloud, so you're not locked in. See [certifications.md](certifications.md) for full exam data.
+most beginners should pick AWS. concepts transfer: compute, storage, networking, IAM.
 
----
+## cloud fundamentals + first cert (~90h)
 
-## Cloud fundamentals + first cert (~90 hrs)
+AWS is the example path. Azure/GCP equivalents live in [certifications.md](certifications.md).
 
-Targeting **AWS** as the example (Azure/GCP equivalents in [certifications.md](certifications.md)).
+- [ ] **Compute:** EC2, AMIs, instance types, Lambda basics
+- [ ] **Storage:** S3, storage classes, versioning, EBS
+- [ ] **Networking:** VPC, public/private subnets, security groups, route tables, internet/NAT gateways, Elastic IPs
+- [ ] **Identity:** IAM users, groups, roles, policies, least privilege
+- [ ] **Databases:** RDS basics, DynamoDB awareness
+- [ ] **Monitoring:** CloudWatch metrics/logs/alarms, billing alarms
+- [ ] **big concepts:** regions, availability zones, shared responsibility, well-architected pillars
 
-### What to cover (the essential services)
-- **Compute:** EC2 (instances, AMIs, instance types), Lambda (serverless basics)
-- **Storage:** S3 (buckets, storage classes, versioning), EBS volumes
-- **Networking:** VPC, subnets (public/private), security groups, route tables, internet/NAT gateways, Elastic IPs
-- **Identity:** IAM (users, groups, roles, policies — **least privilege**), the difference between a role and a user
-- **Databases:** RDS basics, DynamoDB awareness
-- **Monitoring:** CloudWatch (metrics, logs, alarms), billing alarms (**set one immediately**)
-- **The big concepts:** regions & availability zones, the **shared responsibility model**, the well-architected pillars
+set a billing alarm on day one. a stopped-but-not-terminated instance or forgotten NAT gateway can still cost u.
 
-> 💰 **Set a billing alarm on day one** and use the free tier. It's easy to accidentally run up a bill — a stopped-but-not-terminated instance or a forgotten NAT gateway will cost you.
+### theory / courses
 
-### Theory / courses
-- [AWS Skill Builder](https://skillbuilder.aws/) — official, free tier (Cloud Practitioner Essentials)
-- freeCodeCamp AWS Cloud Practitioner full course (YouTube, free)
-- [Microsoft Learn](https://learn.microsoft.com/training/) (free, for Azure path) · [Google Cloud Skills Boost](https://www.cloudskillsboost.google/) (GCP path)
+- [ ] [AWS Skill Builder](https://skillbuilder.aws/) - official free tier; Cloud Practitioner Essentials.
+- [ ] freeCodeCamp AWS Cloud Practitioner full course on YouTube. **⚠️ TODO verify exact video before primary use.**
+- [ ] [Microsoft Learn](https://learn.microsoft.com/training/) for Azure.
+- [ ] [Google Cloud Skills Boost](https://www.cloudskillsboost.google/) for GCP.
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [AWS Free Tier](https://aws.amazon.com/free/) | AWS | Launch EC2, create an S3 bucket, set up a VPC, configure IAM | **Free** (12 mo) |
-| AWS Cloud Quest | [AWS Skill Builder](https://skillbuilder.aws/) | Gamified hands-on cloud role-play | Free tier |
-| [Microsoft Learn sandboxes](https://learn.microsoft.com/training/) | MS Learn | Free Azure sandbox environments (no card) | **Free** |
-| [Google Cloud Skills Boost](https://www.cloudskillsboost.google/) | Google | Qwiklabs-style hands-on GCP labs | Freemium |
+| [AWS Free Tier](https://aws.amazon.com/free/) | AWS | launch EC2, create S3, set up VPC, configure IAM | **Free** |
+| AWS Cloud Quest | [AWS Skill Builder](https://skillbuilder.aws/) | gamified hands-on cloud role-play | Free tier |
+| [Microsoft Learn sandboxes](https://learn.microsoft.com/training/) | MS Learn | free Azure sandbox environments | **Free** |
+| [Google Cloud Skills Boost](https://www.cloudskillsboost.google/) | Google | Qwiklabs-style GCP labs | Freemium |
 
-**Cert gate:** 85%+ on practice exams (Tutorials Dojo / Stephane Maarek on Udemy are the community standards) before booking CLF-C02, then SAA-C03.
+**cert gate:** 85%+ on practice exams before booking CLF-C02, then SAA-C03. Tutorials Dojo / Stephane Maarek are common standards, but verify current course/exam versions before buying.
 
----
+## Docker and containers (~90h)
 
-## Docker & containers (~90 hrs)
+containers are the unit of modern deployment. get fluent before Kubernetes.
 
-Containers are the unit of modern deployment. Get fluent here before moving to Kubernetes.
+- [ ] container vs VM
+- [ ] images vs containers; layer model
+- [ ] `Dockerfile`: `FROM`, `RUN`, `COPY`, `CMD`, `ENTRYPOINT`, `EXPOSE`, multi-stage builds
+- [ ] `docker build`, `run`, `ps`, `logs`, `exec`, `stop`, `rm`
+- [ ] volumes and bind mounts
+- [ ] container networking and port mapping
+- [ ] Docker Compose YAML
+- [ ] registries: Docker Hub, ECR/ACR/GCR
+- [ ] image optimization: cache, `.dockerignore`, small base images
 
-### What to cover
-- What a container is vs a VM (and why it matters)
-- Images vs containers; the image layer model
-- Writing a **Dockerfile** (`FROM`, `RUN`, `COPY`, `CMD` vs `ENTRYPOINT`, `EXPOSE`, multi-stage builds)
-- `docker build`, `run`, `ps`, `logs`, `exec`, `stop`, `rm`
-- Volumes (persistent data) and bind mounts
-- Container networking; port mapping
-- **Docker Compose** — define multi-container apps in YAML
-- Registries: pushing/pulling from Docker Hub or a cloud registry (ECR/ACR/GCR)
-- Image optimization: layer caching, `.dockerignore`, small base images (alpine, distroless)
+there is **no current Docker certification**. Docker DCA was discontinued. prove Docker through projects.
 
-> **2026 note:** there is **no current Docker certification** (the DCA was discontinued). Don't chase one — Docker skill is proven through projects and tested indirectly via the Kubernetes certs (CKAD/CKA). Current Docker Engine is v29.x; containerd is the underlying runtime.
+### theory
 
-### Theory
-- [Docker official getting-started](https://docs.docker.com/get-started/) · NetworkChuck Docker series · freeCodeCamp Docker course (YouTube)
+- [Docker official getting-started](https://docs.docker.com/get-started/)
+- NetworkChuck Docker series **⚠️ TODO verify exact video/playlist**
+- freeCodeCamp Docker course on YouTube **⚠️ TODO verify exact video**
 
-### Labs
+### labs
 
-| Lab | Platform | What you do | Cost |
+| Lab | Platform | What u do | Cost |
 |---|---|---|---|
-| [Play with Docker](https://labs.play-with-docker.com/) | Web | Full Docker playground in-browser, no install | **Free** |
-| [KillerCoda Docker scenarios](https://killercoda.com/) | Web | Guided Docker scenarios in a live terminal | **Free** |
-| Docker labs | [KodeKloud](https://kodekloud.com/) | Hands-on Docker + Dockerfile labs (free tier) | Freemium |
+| [Play with Docker](https://labs.play-with-docker.com/) | Web | full Docker playground in-browser | **Free** |
+| [KillerCoda Docker scenarios](https://killercoda.com/) | Web | guided Docker scenarios in live terminal | **Free** |
+| Docker labs | [KodeKloud](https://kodekloud.com/) | Docker + Dockerfile labs | Freemium |
 
-**Project:** containerize a small web app (any language) with a Dockerfile, then use Docker Compose to run it with a database (e.g. app + Postgres). Push the image to a registry. Put it on GitHub.
+**project gate:** containerize a small web app with a Dockerfile, use Docker Compose with a database, push image to a registry, and document it on GitHub.
 
----
+## exit check
 
-## Phase 2 exit checklist
-- [ ] One cloud provider's core services understood (compute, storage, networking, IAM, monitoring)
-- [ ] Cloud Practitioner-level cert passed (CLF-C02 / AZ-900 / CDL), ideally Associate (SAA-C03 / AZ-104 / ACE)
-- [ ] Billing alarm set; comfortable in the free tier
-- [ ] Can write a Dockerfile and a docker-compose.yml from scratch
-- [ ] Containerized a real multi-service app and pushed it to a registry
+- [ ] one cloud providers core services understood
+- [ ] Cloud Practitioner-level cert passed, ideally Associate started or passed
+- [ ] billing alarm set; comfortable in free tier
+- [ ] can write a Dockerfile and `docker-compose.yml` from scratch
+- [ ] containerized a real multi-service app and pushed it to a registry
 
-Next: [Phase 3 — IaC & CI/CD →](03-iac-cicd.md)
+[Next: Goal 3 - IaC & CI/CD](03-iac-cicd.md)
