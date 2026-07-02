@@ -8,18 +8,25 @@ Confidence: ✅ official/current page verified · ⚠️ price/store JS-gated or
 
 ---
 
-## TL;DR - what to actually get
+## TL;DR - how to use this file
 
-study the **topic** first.
-the cert is just the checkpoint after the mechanism clicks, not the thing that makes u good meow.
+dont start here.
+start in the goal files, pass the lab/CTF/project gates, then come back here only when u are asking "is an exam worth paying for now?" meow.
 
-- **Fundamentals checkpoint:** ISC2 **CC** - optional paid exam, about **$199 + $50/yr AMF**. the 1MCC voucher program closed to new enrollments on **2026-05-20**.
-- **The one that matters most for entry filters:** CompTIA **Security+ (SY0-701)** - about **$439 ⚠️**, and still the cleanest HR baseline.
-- **Networking floor:** CompTIA **Network+ (N10-009)** if subnetting, ports, routing, and troubleshooting still feel shaky.
-- **Support on-ramp only:** CompTIA **A+ (220-1201 / 220-1202)** if u have no IT background. skip the exam if real help-desk / IT experience already proves it.
-- **Then specialize:** Blue / SOC, Red / Pentest, Cloud, or GRC. pick the lane from Goal 4, then choose the matching cert.
-- **do not start AZ-500 now** unless an employer explicitly needs it before retirement. it retires **August 31, 2026**.
-- **Skip for most people:** CEH, PenTest+, Cloud+, CASP+/SecurityX, CISA/CISM at entry. wrong tier, weak ROI, or experience-gated.
+the path is:
+
+**mechanism explanation -> interactive lab / CTF / project gate -> `can u explain it?` -> optional cert checkpoint**
+
+certs do not replace the work.
+they are just outside checkpoints after the work is already visible.
+
+- **Support on-ramp checkpoint:** CompTIA **A+ (220-1201 / 220-1202)**, about **$274/exam ⚠️**. useful if u have no IT background; skip the paid exam if real support work already proves the floor.
+- **Networking floor checkpoint:** CompTIA **Network+ (N10-009)**, about **$399 ⚠️**. useful when subnetting, ports, routing, Wi-Fi, and troubleshooting still need an outside bar.
+- **Security fundamentals checkpoint:** ISC2 **CC**, about **$199 + $50/yr AMF**. optional now; the 1MCC free-voucher program closed to new enrollments on **2026-05-20**.
+- **Entry-filter checkpoint:** CompTIA **Security+ (SY0-701)**, about **$439 ⚠️**. still the cleanest HR baseline, but book it after the Goal 2 gates, not after a video binge.
+- **Specialization checkpoints:** Blue / SOC, Red / Pentest, Cloud, or GRC certs sit after the Goal 3/4 labs and reports.
+- **do not start AZ-500 now** unless an employer explicitly needs it before retirement. it retires **August 31, 2026**; use **SC-500** as the Microsoft cloud-security successor path.
+- **Skip for most beginners:** CEH, PenTest+, Cloud+, CASP+/SecurityX, CISA/CISM at entry. wrong tier, weak ROI, or experience-gated.
 
 ---
 
@@ -36,10 +43,11 @@ the cert is just the checkpoint after the mechanism clicks, not the thing that m
 | Microsoft SC-900 | **SC-900**; English update scheduled **2026-07-28** (agent ID / Entra agent identities) | ⚠️ ~$99 region-priced | MCQ+scenario, 45m, **700/1000** | no expiry | light Microsoft security/compliance/identity on-ramp |
 | Microsoft SC-200 | **SC-200**; English update scheduled **2026-07-28** (Security Copilot, Sentinel Data lake, Sentinel Graph) | ⚠️ ~$165 region-priced | MCQ+interactive, 100m, **700/1000** | 1 yr, renewal free | Microsoft Sentinel / Defender SOC signal |
 | Microsoft AZ-500 | **AZ-500** | ⚠️ region-priced | 100m, Microsoft role-based format | **retires 2026-08-31** | dont start it now; use the successor path after retirement |
+| Microsoft SC-500 | **SC-500**; beta/GA window **July 2026** | ⚠️ region-priced | Microsoft role-based, **700/1000** pass | Microsoft associate renewal pattern | AZ-500 successor: Cloud and AI Security Engineer Associate; re-check exam page after GA |
 | BTL1 (Centri) | [Blue Team Level 1](https://www.centri.org/certifications/blue-team-level-1) | **£399** (~$505) | 24h practical, **70%** pass | lifetime | practical SOC proof; good "can u actually investigate?" checkpoint |
-| INE eJPT | **eJPT v2** | ⚠️ ~$200 | practical, auto-graded | 3 yr | beginner red-team stepping stone |
+| INE eJPT | **eJPT v2** | ⚠️ ~$249 voucher; INE Fundamentals sub may bundle voucher | practical, auto-graded | 3 yr | beginner red-team stepping stone; PTS training is no longer free |
 | HTB CPTS | **CPTS** | ⚠️ ~$210 | practical engagement + report | no expiry | strong technical pentest signal; exact exam logistics JS-gated |
-| TCM PNPT | **PNPT** | $499 | 5-day practical + report/debrief | lifetime | practical AD/pentest report signal |
+| TCM PNPT | **PNPT** | $499; $399 sale noted through **2026-07-15** | 5-day practical + report/debrief | lifetime | practical AD/pentest report signal |
 | OffSec OSCP | **PEN-200 / OSCP** | ⚠️ ~$1,649 Learn One | 24h practical + report | no expiry | pentest baseline filter, later not entry |
 | Cisco CCNA | **200-301** | ⚠️ ~$330 | MCQ+sim, 120m | 3 yr | stronger networking signal than Network+ if u go deep |
 | GIAC GSEC | **GSEC** | ⚠️ ~$949 exam-only figure | CyberLive labs, 106q, 4h, **72%** | 4 yr | strong SANS brand; usually employer-sponsored |
@@ -48,7 +56,10 @@ the cert is just the checkpoint after the mechanism clicks, not the thing that m
 
 ---
 
-## employer-signal ranking
+## optional checkpoint signal ranking
+
+this ranking is not a todo list.
+it just tells u how employers tend to read the checkpoint **after** your labs, reports, and GitHub already show the skill qwq.
 
 ### baseline filters
 
@@ -96,75 +107,120 @@ for this map:
 - **Goal 3** = [Scripting, Logs & CTF](03-scripting-ctf.md): Python, PowerShell, KQL/SPL, regex, log parsing, CTF reps.
 - **Goal 4** = [Specialization](04-specialization.md): Blue / SOC lane, Red / pentest lane, Cloud security lane, and the GRC layer.
 
-| Cert checkpoint | do these topic groups, in order | u are ready when... |
+| Optional checkpoint | finish these lab/topic gates first | u are ready when... |
 |---|---|---|
-| **A+ 220-1201 / 220-1202** | [Goal 1](01-foundations.md) Blocks 1-4: hardware -> OS -> networking/security intro -> practice sprint | Core 1 + Core 2 practice gates pass, and u can explain hardware/OS/network basics unaided |
-| **Network+ N10-009** | Goal 1 Block 3 networking intro -> Goal 2 Block 1 networking floor -> Goal 2 Block 6 Network+ readiness sprint | subnetting `/26`-`/28` is automatic, troubleshooting tools make sense, and ExamCompass/Dion gates pass |
-| **ISC2 CC** | Goal 2 Block 2 security foundations -> Block 3 crypto + identity + access control -> Block 5 operations + IR + GRC -> Block 6 CC readiness | all 5 CC domains are explainable; if testing on/after **2026-09-01**, re-check the ISC2 outline first |
-| **Security+ SY0-701** | Goal 2 Block 1 networking floor -> Block 2 security foundations -> Block 3 crypto + identity + access control -> Block 4 attacks + CTF thread -> Block 5 operations + IR + GRC -> Block 6 Security+ readiness | 85%+ fresh SY0-701 practice gates pass and u can tell one full attack/detect/respond story |
-| **CySA+ CS0-004** | Security+ readiness -> Goal 3 Blocks 3-5 KQL/SPL/regex + log parsing -> Goal 4 Blue / SOC lane | u can triage alerts, query logs, explain vuln management, and write the report/comms side |
-| **BTL1 (Centri)** | Security+ readiness -> Goal 3 Blocks 3-6 log tooling + CTF reps -> Goal 4 Blue / SOC lane | u can complete blue-team cases, build timelines, and justify IR decisions under time pressure |
-| **SC-200** | Security+ readiness -> Goal 3 Block 3 KQL -> Goal 4 Blue / SOC lane, Microsoft-flavored | Sentinel/Defender incident flow, hunting, KQL, and detection tuning feel normal |
-| **eJPT v2** | Goal 2 Block 1 networking + Block 4 attacks -> Goal 3 Block 6 CTF level-up hub -> Goal 4 Red / pentest lane beginner boxes | u can enumerate services, get a shell legally, and explain what each step proved |
-| **HTB CPTS / PNPT** | eJPT-level comfort -> Goal 4 Red / pentest lane full report path | u can chain recon -> exploit -> privesc -> AD/pivoting -> report without living in walkthroughs |
-| **OSCP** | CPTS/PNPT-style report discipline -> more Red / pentest lane lab reps under time pressure | u can solve boxes consistently under time pressure and write clean evidence/remediation |
-| **SC-900** | Goal 4 Cloud security lane intro -> GRC layer basics | Entra, Defender, Sentinel, Purview, compliance, and identity terms are clear |
-| **Cloud security successor path** | Security+ -> SC-900 -> Goal 4 Cloud security lane | shared responsibility, IAM, CSPM, logging, and misconfig remediation are portfolio-visible |
-| **GRC / compliance path** | Security+ Domain 5 -> Goal 4 GRC layer | u can produce a risk register, control crosswalk, and evidence appendix; CISA/CISM wait until experience |
+| **A+ 220-1201 / 220-1202** | [Goal 1](01-foundations.md) Blocks 1-4: hardware -> OS -> networking/security intro -> practice sprint | Core 1 + Core 2 ExamCompass gates pass, and u can explain hardware/OS/network basics unaided |
+| **Network+ N10-009** | Goal 1 networking intro -> Goal 2 Block 1 networking floor -> subnetipv4 drills -> Wireshark / TryHackMe networking labs -> Block 6 Network+ readiness | subnetting `/26`-`/28` is automatic, troubleshooting tools make sense, and ExamCompass/Dion gates pass |
+| **ISC2 CC** | Goal 2 security foundations -> crypto + identity/access -> operations + IR + GRC -> CC practice quiz/flashcards | all 5 CC domains are explainable; if testing on/after **2026-09-01**, re-check the ISC2 outline first |
+| **Security+ SY0-701** | Goal 2 networking floor -> foundations -> crypto/IAM -> attacks + CTF thread -> operations/IR/GRC -> Security+ readiness | 85%+ fresh SY0-701 practice gates pass, the VM baseline/risk note/IR runbook exist, and u can tell one full attack/detect/respond story |
+| **CySA+ CS0-004** | Security+ readiness -> Goal 3 KQL/SPL/regex + log parsing -> Goal 4 Blue / SOC lane -> SOC reports | u can triage alerts, query logs, explain vuln management, and write the report/comms side |
+| **BTL1 (Centri)** | Security+ readiness -> Goal 3 log tooling + CTF reps -> Goal 4 Blue / SOC lane -> CyberDefenders/LetsDefend cases | u can complete blue-team cases, build timelines, and justify IR decisions under time pressure |
+| **SC-200** | Security+ readiness -> Goal 3 KQL -> Goal 4 Blue / SOC lane, Microsoft-flavored -> Sentinel/Defender labs | Sentinel/Defender incident flow, hunting, KQL, and detection tuning feel normal |
+| **eJPT v2** | Goal 2 networking + attacks -> Goal 3 CTF level-up hub -> Goal 4 Red lane beginner boxes -> PortSwigger/HTB/THM reps | u can enumerate services, get a shell legally, and explain what each step proved |
+| **HTB CPTS / PNPT** | eJPT-level comfort -> Goal 4 Red lane AD/privesc/pivoting -> full pentest report path | u can chain recon -> exploit -> privesc -> AD/pivoting -> report without living in walkthroughs |
+| **OSCP** | CPTS/PNPT-style report discipline -> more Red lane lab reps under time pressure | u can solve boxes consistently under time pressure and write clean evidence/remediation |
+| **SC-900** | Goal 4 Cloud intro -> GRC layer basics -> Microsoft Learn/practice-assessment checks | Entra, Defender, Sentinel, Purview, compliance, and identity terms are clear |
+| **Cloud security successor path** | Security+ -> SC-900 -> Goal 4 Cloud lane -> flaws.cloud + Prowler/ScoutSuite + before/after remediation evidence | shared responsibility, IAM, CSPM, logging, and misconfig remediation are portfolio-visible; use SC-500 for Microsoft cloud security and SCS-C03 for AWS |
+| **GRC / compliance path** | Security+ Domain 5 -> Goal 4 GRC layer -> risk register + control crosswalk + evidence appendix | u can produce a risk register, control crosswalk, and evidence appendix; CISA/CISM wait until experience |
 
 ---
 
-## recommended paths
+## lab-first checkpoint overlays by lane
 
-### universal beginner - cheapest security baseline
+this is the part to use when u are deciding what exam, if any, fits your next move.
+notice the order: labs first, explanation second, exam last.
 
-`CC/Security+ superset study` -> `CC exam only if u want the checkpoint (~$199 + $50 AMF)` -> `Google Cybersecurity Cert if u need a gentler ramp (~$294, optional)` -> `Security+ SY0-701 (~$439)`
+### universal beginner - security core
 
-**Total:** about **$439-$982** depending which optional checkpoints u pay for.
-Security+ only is ~$439.
-Security+ + Google is ~$733.
-Security+ + paid CC first-year cost is ~$688.
-all three is ~$982.
+**do the work first:**
+- [ ] [Goal 0](00-prep.md): set up notes + lab accounts, then start the beginner CTF thread with OverTheWire Bandit and picoCTF/CyLab style reps.
+- [ ] [Goal 1](01-foundations.md): pass the A+ Core 1/Core 2 practice gates and explain hardware, OS, accounts, malware basics, and troubleshooting unaided.
+- [ ] [Goal 2](02-core.md): complete the networking and security mechanism blocks, including TryHackMe Intro to Networking, Wireshark packet labels, subnet drills, a VM baseline, an IR runbook, and a risk note.
 
-if u also sit **A+** and **Network+**, add about **$548** and **$399**.
-dont pay those unless they solve a real on-ramp problem for u meow.
+**measurable gate:** current-code ExamCompass gates pass, subnet drills pass, networking labs are complete, and the VM baseline / IR runbook / risk note artifacts exist.
+
+**can u explain it?** ✅ - unaided, narrate one normal system -> attack -> detection -> response chain: DNS/TCP/TLS, identity/authz, logging, SIEM signal, IR containment, and risk/control update.
+
+**after these gates, optional checkpoints become realistic:**
+- **A+ 220-1201 / 220-1202** only if u need the support-role on-ramp signal.
+- **Network+ N10-009** only if networking is still the thing employers will question.
+- **ISC2 CC** only if u want the paid fundamentals checkpoint and understand it is **~$199 + $50/yr AMF**, not free.
+- **Security+ SY0-701** when the Goal 2 merged-study gates pass and u can tell one attack -> detect -> respond story without notes.
 
 ### blue team / SOC
 
-`Security+ (~$439)` -> `BTL1 (~$505)` -> `SC-200 (~$165)` **or** `CySA+ CS0-004 (~$464)` -> later `GSEC` only if employer-sponsored
+**do the work first:**
+- [ ] [Goal 3](03-scripting-ctf.md): Python, PowerShell, regex, KQL, SPL, and log parsing gates pass.
+- [ ] [Goal 4 Blue / SOC](04-specialization.md): complete LetsDefend SOC Fundamentals or SOC Analyst path work, CyberDefenders DanaBot, a bigger blue scenario like Lockdown, Wazuh/Splunk/KC7/Kusto practice, and one Sigma -> SPL/KQL detection writeup.
+- [ ] portfolio proof exists: alert -> evidence -> timeline -> verdict -> detection improvement.
 
-optional before Security+: `CC (~$199 + $50 AMF)` if u want the fundamentals checkpoint.
+**measurable gate:** DanaBot answers are correct, at least one larger blue scenario or LetsDefend alert case is complete, and the Sigma + SPL/KQL detection artifact is saved.
 
-**Total:** about **$1,109-$1,408** without CC, or **$1,358-$1,657** with paid CC first-year cost.
+**can u explain it?** ✅ - unaided, walk one alert from raw log -> parsed fields -> correlation rule -> enrichment -> triage verdict -> ATT&CK technique -> detection improvement.
+
+**after these gates, optional checkpoints become realistic:**
+- **BTL1 (Centri)** if u want a 24h practical SOC checkpoint.
+- **CySA+ CS0-004** if vendor-neutral SOC, vulnerability management, reporting, or DoD language matters.
+- **SC-200** if the target shop uses Microsoft Sentinel / Defender XDR and KQL.
+
+quick caveat: no verified Savill cram exists for this exam.
+use Microsoft Learn + Sentinel/Defender labs instead.
 
 ### red team / pentest
 
-`eJPT v2 (~$200)` -> `HTB CPTS (~$210)` **or** `PNPT ($499)` -> `Security+ (~$439, for HR)` -> `OSCP (~$1,649)` when lab-ready
+**do the work first:**
+- [ ] [Goal 2](02-core.md): network/security controls and attack-mechanism clusters pass.
+- [ ] [Goal 4 Red / pentest](04-specialization.md): HTB Starting Point **Meow**, **Fawn**, and **Dancing** are rooted; PortSwigger Apprentice SQLi/XSS/access-control labs are solved; Kioptrix Level 1 is rooted; a pentest report exists.
+- [ ] CTF/project proof exists: recon -> exploit -> privesc -> evidence -> remediation, with permission and scope written down.
 
-**Total before OSCP:** about **$849-$1,138**.
-**Total with OSCP later:** about **$2,498-$2,787**.
+**measurable gate:** the HTB boxes are complete, PortSwigger Apprentice labs are solved, Kioptrix reaches root, and the report includes scope, evidence, impact, and remediation.
+
+**can u explain it?** ✅ - unaided, read an `nmap -sV` result and name next enumeration steps; then explain reverse shell vs bind shell, one privesc vector, and why the report is the actual deliverable.
+
+**after these gates, optional checkpoints become realistic:**
+- **eJPT v2** as the beginner methodology checkpoint. INE PTS is not free anymore; use TryHackMe Jr Pentester + PortSwigger + HTB Starting Point as the free prep stack.
+- **HTB CPTS** if u want the broadest technical path plus a graded report.
+- **PNPT** if u want the AD chain, 5-day assessment, 2-day report, and live debrief.
+- **OSCP** later, when boxes and reports are already normal under time pressure.
 
 red usually isnt the first job.
-thats not gatekeeping; its just how hiring works rn.
-do SOC/IT/cloud/GRC as a bridge if u need one.
+thats not gatekeeping; its just hiring reality rn.
+SOC, IT, cloud, or GRC can be the bridge while u keep the CTF/report thread alive.
 
 ### cloud security
 
-`SC-900 (~$99)` -> `Security+ (~$439)` -> `SC-200 (~$165)` -> current cloud-security successor path after AZ-500 retirement, or AWS Security Specialty if AWS is your lane
+**do the work first:**
+- [ ] [Goal 4 Cloud security](04-specialization.md): flaws.cloud levels 1-3 are clear, ScoutSuite or Prowler has scanned an account u own, one finding is remediated and re-scanned, and the before/after evidence is saved.
+- [ ] optional attack-side proof: one CloudGoat scenario is completed in an account u control, then deleted so it does not keep billing.
+- [ ] detection proof exists: Sentinel/KQL or GuardDuty/CloudTrail flow is explained from log source -> alert -> triage.
 
-optional before Security+: `CC (~$199 + $50 AMF)`.
+**measurable gate:** flaws.cloud levels 1-3 are complete, one ScoutSuite/Prowler finding is fixed and absent on re-scan, and the before/after evidence is saved.
 
-**Total before the role-specific cloud cert:** about **$703** without CC, or **$952** with paid CC first-year cost.
+**can u explain it?** ✅ - unaided, draw the shared-responsibility line, explain one public-storage or open-security-group exposure, name the exact fix, and trace one cloud log source into an alert.
+
+**after these gates, optional checkpoints become realistic:**
+- **SC-900** for Microsoft security/compliance/identity fundamentals.
+- **SC-500** for the Microsoft cloud + AI security successor path after AZ-500.
+- **AWS Security Specialty SCS-C03** if AWS is the lane.
+- **SC-200** only if the job is more SOC/Sentinel than cloud posture.
 
 do **not** start AZ-500 now unless an employer explicitly requires it before **2026-08-31**.
+do **not** study from old **SCS-C02** PDFs; **SCS-C03** is current.
 
 ### GRC / compliance
 
-`Security+ (~$439)` -> `SC-900 (~$99)` -> Goal 4 **GRC layer** artifacts -> `CISA` / `CISM` only after the experience requirement is real
+**do the work first:**
+- [ ] [Goal 2 Cluster H](02-core.md): Security+ Domain 5 mechanisms pass: risk, policy/standard/procedure, BIA, third-party risk, audits, awareness.
+- [ ] [Goal 4 GRC layer](04-specialization.md): produce the NIST SP 800-30 risk register, 5 CSF Reference Tool mappings, and a control/evidence appendix from a blue/red/cloud lab.
+- [ ] if cloud evidence exists, map 3 Prowler/ScoutSuite findings to CIS or NIST control IDs.
 
-optional before Security+: `CC (~$199 + $50 AMF)`.
+**measurable gate:** the risk register has at least 3 assets, 5 controls are mapped in the CSF Reference Tool, and the evidence appendix ties a lab finding to a control and remediation.
 
-**Total for entry-friendly checkpoints:** about **$538** without CC, or **$787** with paid CC first-year cost.
+**can u explain it?** ✅ - unaided, compute ALE from AV/EF/ARO, then walk requirement -> control -> evidence -> finding -> remediation without hiding behind framework names.
+
+**after these gates, optional checkpoints become realistic:**
+- **Security+ SY0-701 Domain 5** and **SC-900** are the entry-friendly checkpoints.
+- **CISA / CISM** are later-career. they require years of experience to hold, so dont build an entry study plan around them.
 
 GRC is not "less technical."
 it asks whether the technical control matches risk, whether evidence proves it works, and whether the business decision is defensible.
@@ -216,10 +272,16 @@ book when u are hitting **85%+ on fresh attempts** and can explain why the answe
 
 primary research files used for this rewrite:
 
+- `research/_working/RC1-secfund-study-path.md` - merged CC + Security+ study order and practice sources.
+- `research/_working/RC2-aplus-study-path.md` - A+ 220-1201/220-1202 topic map, practice gates, and current resources.
+- `research/_working/RC3-networkplus-study-path.md` - Network+ N10-009 topic map, subnetting gates, and practice resources.
 - `research/_working/RC4-practice-tests-logistics.md` - July 2026 logistics/practice-test fix list.
 - `research/_working/R6-cert-ladder-domains.md` - cert domain -> topic map.
 - `research/_working/R2-isc2-cc-domains.md` - CC outline, $199 exam fee, $50 AMF, 1MCC closure.
-- `research/_working/RC1-secfund-study-path.md` - merged CC + Security+ study order and practice sources.
+- `research/_working/RD1-blueteam-study-path.md` - SOC/blue-team optional checkpoints: CySA+ CS0-004, SC-200, BTL1.
+- `research/_working/RD2-redteam-study-path.md` - red-team optional checkpoints: eJPT v2, HTB CPTS, PNPT.
+- `research/_working/RD3-cloud-study-path.md` - cloud optional checkpoints: SC-900, SC-500, AWS SCS-C03, AZ-500 retirement.
+- `research/_working/RD4-grc-study-path.md` - GRC framework/artifact path and experience-gated CISA/CISM framing.
 
 official pages spot-checked:
 
