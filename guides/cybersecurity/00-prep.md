@@ -12,7 +12,7 @@
 
 - [ ] **mindset + honest expectations** - cybersecurity is a specialization, not an entry point (~1h read)
 - [ ] **build your lab** - hypervisor + 2 VMs, isolated network (~8h)
-- [ ] **free on-ramp** - pick one beginner course to get your bearings (~6h)
+- [ ] **interactive on-ramp** - pick one beginner lab path to get your bearings (~6h)
 - [ ] **plug into the community + tooling** - notes system, communities, current tool map (~5h)
 - [ ] ✅ **exit check** - lab boots, notes ready, CTF account created
 
@@ -26,7 +26,7 @@
 
 heres the *why* tho: an attack is just someone abusing a system thats working exactly as designed. so if u dont know how the system works normally (how a TCP handshake goes, how the OS hands out memory, what a cookie is), u literally cant tell whats abuse and whats normal. thats why **fundamentals first** - if u already cleared the [Shared Foundations](../../start-here/foundations.md) (command line, networking, Git), youre golden. if not, go do that now and come back. this guide assumes u can already navigate a terminal, explain how DNS→TCP→TLS→HTTP works, and push to GitHub meow
 
-**the market is real, but the bottom is crowded.** the usual path is *help desk / NOC → SOC analyst*, not *cert dump → SOC*. build something u can actually show: a GitHub with CTF writeups, a home lab, real troubleshooting stories. see [job market notes](05-job-hunt.md) for the honest version.
+**the market is real, but the bottom is crowded.** the usual path is *help desk / NOC -> SOC analyst*, not *badge dump -> SOC*. build something u can actually show: a GitHub with CTF writeups, a home lab, real troubleshooting stories. see [job market notes](05-job-hunt.md) for the honest version.
 
 **consistency beats intensity.** two focused hours a day beats a 14-hour weekend once a month. dw if 2h/day sounds like a lot - the guide is measured in study hours, not weeks, so it works at any pace. total to job-ready: **~500-700 hours**.
 
@@ -36,7 +36,7 @@ heres the *why* tho: an attack is just someone abusing a system thats working ex
 | Part-time (recommended) | 10-15 | 12-18 months |
 | Full-time | 20-30 | 8-12 months |
 
-**curiosity beats memorization.** learn *why* a tool works and *what footprint it leaves*, not just which button to click. thats the instinct that actually transfers to new situations meow
+**curiosity beats memorization.** learn *why* a tool works and *what footprint it leaves*, instead of only which button to click. thats the instinct that transfers to new situations meow
 
 ---
 
@@ -65,10 +65,10 @@ dw if "break stuff" sounds scary rn - the first challenge is literally just `ls`
 u dont need to buy hardware - a free hypervisor on your existing machine is enough to start.
 
 **do this:**
-1. **install a hypervisor:** [VirtualBox](https://www.virtualbox.org/) (**free**) or VMware Workstation Player (**free** for personal use)
+1. **install a hypervisor:** [VirtualBox](https://www.virtualbox.org/) (**free**) or [VMware Workstation Pro / Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) (**free**, no support entitlement)
 2. **import two VMs:**
    - [Kali Linux](https://www.kali.org/get-kali/) - the attacker / tooling VM (download the VirtualBox `.ova` or `.vbox` image)
-   - [Windows 10/11 Evaluation ISO](https://www.microsoft.com/en-us/evalcenter/) - the target VM (90-day eval, **free**)
+   - [Windows 11 Enterprise Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) - the target VM ISO (90-day eval, **free**)
 3. **isolate the network:** put both VMs on the same **Host-Only** or **Internal** network so nothing leaks to your home LAN or the internet. [VirtualBox network guide](https://www.virtualbox.org/manual/ch06.html) shows how.
 
 ```
@@ -86,15 +86,19 @@ u dont need to buy hardware - a free hypervisor on your existing machine is enou
 
 ---
 
-## free on-ramp course (~6h)
+## interactive on-ramp (~6h)
 
-pick ONE to get your bearings before the deep topics. these are gentle, structured, beginner-first intros:
+pick ONE interactive path to get your bearings before the deep topics.
+default to labs first; videos and certificates can support the work, but they dont replace doing it qwq
 
-- [HTB Academy - "Introduction to Cybersecurity" module](https://academy.hackthebox.com/) - **free tier**, covers the big-picture roles + basic concepts. ✅ verified live July 2026
 - [TryHackMe - "Pre-Security" path](https://tryhackme.com/path/outline/presecurity) - **free**, in-browser, maximum hand-holding. teaches networking + Linux + web basics with guided rooms. ⚠️ (site rate-limits bots but loads fine in browser)
-- [Google Cybersecurity Professional Certificate (Coursera)](https://www.coursera.org/professional-certificates/google-cybersecurity) - **~$49/mo** (financial aid available), structured 6-course sequence. covers SOC analyst foundations. ✅ verified live
+- [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) levels **0-5** - **free**, pure CTF on-ramp for SSH, files, hidden files, and basic command-line confidence. ✅ verified live
 
-**do this:** complete at least ONE of the above. doesnt matter which - theyre all good on-ramps. the goal is "i know what a SOC analyst / pentester / IR analyst does, and i can name the 5 main security domains (IAM, network sec, app sec, incident response, governance)."
+**structured-course extra:** [Google Cybersecurity Professional Certificate (Coursera)](https://www.coursera.org/professional-certificates/google-cybersecurity) can help if u want a slower SOC-flavored course wrapper, but dont treat the certificate as the gate. the gate is still lab/account setup + explanation.
+
+**explore more ->** [HTB Academy module catalog](https://academy.hackthebox.com/modules) has beginner modules too, but dont use it as the primary gate here because exact module pages are login-gated and move around.
+
+**do this:** complete at least ONE interactive on-ramp above. the goal is "i know what a SOC analyst / pentester / IR analyst does, and i can name the 5 main security domains (IAM, network sec, app sec, incident response, governance)." if u choose Bandit first, also write a tiny role note from the intro section so the career map isnt fuzzy.
 
 **measurable gate:** finish the chosen course and be able to name, out loud, **3 cybersecurity job roles** (e.g. SOC analyst, pentester, security engineer) and what each one does day-to-day. no memorizing - just "i read about it and it stuck" meow
 
@@ -103,7 +107,7 @@ pick ONE to get your bearings before the deep topics. these are gentle, structur
 ## plug into the community + tooling (~5h)
 
 **notes system (do this first):**
-set up [Obsidian](https://obsidian.md/) (**free**) or OneNote now. youll build a personal knowledge base for the next year - many practical exams (Security+, PenTest+, later OSCP) are open-book, and good notes are the difference between pass and fail. structure: one folder per topic (networking, web-exploitation, incident-response), one note per technique/tool. link liberally.
+set up [Obsidian](https://obsidian.md/) (**free**) or OneNote now. youll build a personal knowledge base for the next year. good notes matter because labs, reports, investigations, and interviews all ask "what did u see, what did u try, why did it work?" dont assume any exam lets u use notes; check exam rules before booking anything paid. structure: one folder per topic (networking, web-exploitation, incident-response), one note per technique/tool. link liberally.
 
 **join communities:**
 - [r/cybersecurity](https://www.reddit.com/r/cybersecurity/) + [r/ITCareerQuestions](https://www.reddit.com/r/ITCareerQuestions/) - read the wikis/megathreads FIRST before posting (the "breaking in" questions are answered there)
@@ -130,26 +134,26 @@ ull start hitting these in the next goal (Foundations), so getting accounts now 
 this is your **"whats my next challenge?"** spine - each rung maps to a study goal, so u always have a CTF at your level. dont rush the rungs; stay on easy till easy is boring, THEN climb mhm
 
 ### rung 0 - absolute beginner (week 1, alongside "what even is a terminal")
-- **OverTheWire Bandit 0 → 5** - SSH in, `ls`, `cat`, `file`, hidden files, `find` by size/type. this is the single best day-one on-ramp. ✅
-- **CyLab (picoCTF) "General Skills" beginner** - e.g. *"Obedient Cat," "Wave a flag," "strings it"*-style challenges (pure "learn to use the tools"). ✅
+- **[OverTheWire Bandit 0 → 5](https://overthewire.org/wargames/bandit/)** - SSH in, `ls`, `cat`, `file`, hidden files, `find` by size/type. this is the single best day-one on-ramp. ✅
+- **[CyLab (picoCTF) "General Skills" beginner](https://cylabacademy.org/)** - catalog/login-driven; start with *"Obedient Cat," "Wave a flag," "strings it"*-style challenges (pure "learn to use the tools"). ✅
 
 ### rung 1 - beginner (weeks 2-5, as Linux + networking + HTTP land)
-- **Bandit 6 → 20** - permissions, `grep`, `sort|uniq`, `nc`, SSH keys, basic scripting ✅
-- **CyLab General Skills (rest) + first Forensics** - `strings`, `binwalk`, metadata ✅
-- **CyLab Cryptography beginner** - base64/ROT13/XOR "decode me" challenges ✅
-- **OverTheWire Natas 0 → 6** - browser-only server-side web (view source, HTTP auth, cookies) ✅
+- **[Bandit 6 → 20](https://overthewire.org/wargames/bandit/)** - permissions, `grep`, `sort|uniq`, `nc`, SSH keys, basic scripting ✅
+- **[CyLab General Skills](https://cylabacademy.org/) (rest) + first Forensics** - catalog/login-driven; `strings`, `binwalk`, metadata ✅
+- **[CyLab Cryptography beginner](https://cylabacademy.org/)** - catalog/login-driven; base64/ROT13/XOR "decode me" challenges ✅
+- **[OverTheWire Natas 0 → 6](https://overthewire.org/wargames/natas/)** - browser-only server-side web (view source, HTTP auth, cookies) ✅
 
 ### rung 2 - beginner→intermediate (weeks 6-12, web + crypto + first exploitation)
-- **PortSwigger Web Security Academy - Apprentice labs** - SQLi (retrieve hidden data, login bypass) + XSS (reflected/stored) ✅
-- **Natas 7 → 15** - LFI, command injection, SQLi in a wargame ✅
-- **CryptoHack - "Introduction to CryptoHack" + "Modular Arithmetic" courses** ✅
-- **CyLab Web Exploitation + Reverse Engineering beginner** ✅
-- **TryHackMe OWASP Top 10 room** - one exploit per Top-10 category ⚠️
+- **PortSwigger Web Security Academy - Apprentice labs** - [SQLi](https://portswigger.net/web-security/sql-injection) (retrieve hidden data, login bypass) + [XSS](https://portswigger.net/web-security/cross-site-scripting) (reflected/stored) ✅
+- **[Natas 7 → 15](https://overthewire.org/wargames/natas/)** - LFI, command injection, SQLi in a wargame ✅
+- **CryptoHack - [Introduction to CryptoHack](https://cryptohack.org/courses/intro/) + [Modular Arithmetic](https://cryptohack.org/courses/modular/) courses** ✅
+- **[CyLab Web Exploitation + Reverse Engineering beginner](https://cylabacademy.org/)** - catalog/login-driven ✅
+- **[TryHackMe OWASP Top 10 room](https://tryhackme.com/room/owasptop102021)** - one exploit per Top-10 category ⚠️
 
 ### rung 3 - intermediate (stretch goals, the "keep going" pointer)
-- **pwn.college "Start Here"** → binary exploitation dojos ✅
-- **OverTheWire Krypton (crypto), Leviathan → Narnia (RE → binary)** ✅
-- **Hack The Box - Starting Point + machines** ⚠️
+- **[pwn.college Start Here](https://pwn.college/welcome/welcome/)** → binary exploitation dojos ✅
+- **OverTheWire [Krypton](https://overthewire.org/wargames/krypton/) (crypto), [Leviathan](https://overthewire.org/wargames/leviathan/) → [Narnia](https://overthewire.org/wargames/narnia/) (RE → binary)** ✅
+- **[Hack The Box - Starting Point](https://app.hackthebox.com/starting-point) + machines** ⚠️
 
 **the anti-stall rules (important - this is where beginners quit):**
 1. **the 20-30 min rule** - if one challenge eats >25 min with zero progress, its above your rung. read a writeup, learn the trick, move on. reading a writeup after a real attempt is still learning (its "worked-example" study). no shame, no grinding qwq
@@ -165,7 +169,7 @@ this is your **"whats my next challenge?"** spine - each rung maps to a study go
 
 by now u have:
 - [ ] a working isolated lab (2 VMs ping each other, cant reach internet), OR youve confirmed the in-browser labs work for u
-- [ ] finished one on-ramp course (HTB Intro / TryHackMe Pre-Security / Google Coursera) and can name 3 security job roles
+- [ ] finished one interactive on-ramp (HTB Intro / TryHackMe Pre-Security / Bandit 0-5) and can name 3 security job roles
 - [ ] a notes system running (Obsidian/OneNote with ≥1 test note)
 - [ ] joined ≥1 community (reddit/Discord)
 - [ ] CTF accounts created (OverTheWire, CyLab, PortSwigger)

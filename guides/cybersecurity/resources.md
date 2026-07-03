@@ -1,33 +1,31 @@
-# Resources
+# resources meow
 
 this page is a menu, not a second roadmap meow.
 
 use the guide files first. come here when a topic says "pick a source" or when u need a backup explanation. every item below says what to do with it and why it matters, bc "subscribe to this channel" is not a learning plan.
 
-paid books and paid bundles are optional extras. the required path stays free/freemium sources + real labs.
+paid books are optional extras. paid cert/practice bundles live in [certifications.md](certifications.md), where the exam context is clear. the required path stays free/freemium sources + real labs.
 
-[<- Hub](README.md)
+[<- hub](README.md)
 
 ---
 
 ## video and course teachers
 
-### Professor Messer - CompTIA spine
+### Professor Messer - CompTIA topic language meow
 
-**use it for:** A+ 220-1201/220-1202, Network+ N10-009, and Security+ SY0-701.
+**use it for:** hardware, OS, networking, troubleshooting, and security vocabulary when the goal file says those words matter.
 
-**do this:** use the exact course index that matches the cert/topic you are studying:
+**do this:** use the exact course index that matches the topic u are studying:
 
 - [A+ Core 1 220-1201 training course](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/) - hardware, mobile, networking, virtualization, troubleshooting. **free**
 - [A+ Core 2 220-1202 training course](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) - OS, security, software, operations. **free**
 - [Network+ N10-009 training course](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) - Sections 1-5 map cleanly to Network+ domains. **free**
 - [Security+ SY0-701 training course](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) - use by weak domain, not as a binge. **free**
 
-**why it matters:** Messer is the cleanest free cert-aligned explanation layer. it gives u exam vocabulary after the guide teaches the mechanism, so u can recognize the same idea in CompTIA wording.
+**why it matters:** Messer is a clean free explanation layer for the names exams use. use it after the mechanism starts making sense, so the wording feels familiar instead of random. practice bundles and booking gates are in [certifications.md](certifications.md#practice-test-sources-that-are-current).
 
-**paid optional:** if u buy Messer practice, use the current per-course Success Bundles: [A+ Core 1](https://www.professormesser.com/220-1201-success-bundle/), [A+ Core 2](https://www.professormesser.com/220-1202-success-bundle/), [Network+](https://www.professormesser.com/n10-009-success-bundle/), [Security+](https://www.professormesser.com/sy0-701-success-bundle/). dont use the old `/practice-exams/` page; R5 found it dead/soft-404.
-
-### Practical Networking + NetworkChuck - subnetting support
+### Practical Networking + NetworkChuck - subnetting support meow
 
 **use it for:** IPv4 subnetting when `/26`, `/27`, `/28` still feel like magic.
 
@@ -35,7 +33,7 @@ paid books and paid bundles are optional extras. the required path stays free/fr
 
 **why it matters:** subnetting is not a trivia trick. it is how u know which hosts can talk directly, where routing begins, and why segmentation works.
 
-### PowerCert Animated Videos - visual networking and hardware
+### PowerCert animated videos - visual networking and hardware meow
 
 **use it for:** the first visual pass on concepts that are hard to picture.
 
@@ -43,7 +41,7 @@ paid books and paid bundles are optional extras. the required path stays free/fr
 
 **why it matters:** these are diagram-first. they help u name the layers and parts before the deeper labs make u troubleshoot them.
 
-### Branch Education - physical computer mechanisms
+### Branch Education - physical computer mechanisms meow
 
 **use it for:** CPU, storage, and hardware foundations when A+ vocab feels disconnected from reality.
 
@@ -51,23 +49,23 @@ paid books and paid bundles are optional extras. the required path stays free/fr
 
 **why it matters:** security sits on machines that physically fetch instructions, store bits, and move data. the animations make that floor less abstract qwq.
 
-### Prabh Nair - GRC day-job bridge
+### Prabh Nair - GRC day-job bridge meow
 
 **use it for:** governance, risk, compliance, audits, and policy work.
 
 **do this:** start with [GRC Practical Approach Part 1: Introduction](https://www.youtube.com/watch?v=mq_vSLHm4r0), then [Part 2: Governance](https://www.youtube.com/watch?v=Zfq3eJNvZdY). use the [GRC playlist](https://www.youtube.com/playlist?list=PL0hT6hgexlYz1Usn1Nrnur6OzVoz59zyl) as the ordered spine, and [GRC Analyst Masterclass](https://www.youtube.com/watch?v=JswwHeEqBIc) before vendor-risk or audit-evidence projects.
 
-**why it matters:** Security+ teaches the words; Prabh shows the analyst workflow: risk register, policies, evidence, audit language, and stakeholder translation.
+**why it matters:** Security+ teaches the words. Prabh shows the analyst workflow: risk register, policies, evidence, audit language, and stakeholder translation.
 
-### John Hammond - malware and CTF workflow
+### John Hammond - malware and CTF workflow meow
 
 **use it for:** seeing how an experienced analyst thinks through malware and CTF problems.
 
 **do this:** after u have Linux + basic scripting, work through one video from John Hammond's [Malware playlist](https://www.youtube.com/playlist?list=PL1H1sBF1VAKWMn_3QPddayIypbbITTGZv). write a tiny behavior summary: initial clue -> tool used -> finding -> defensive lesson.
 
-**why it matters:** the value is not "copy the tool." its watching the investigation loop: form a guess, test it, revise, document. thats the SOC/DFIR muscle.
+**why it matters:** the value is not "copy the tool." watch the investigation loop: form a guess, test it, revise, document. thats the SOC/DFIR muscle.
 
-### The Cyber Mentor / TCM - ethical hacking and reports
+### The Cyber Mentor / TCM - ethical hacking and reports meow
 
 **use it for:** red-team survey, methodology, and report writing.
 
@@ -75,9 +73,9 @@ paid books and paid bundles are optional extras. the required path stays free/fr
 
 **why it matters:** real pentesting is methodology + evidence + remediation. the report is the product, not a cute afterthought.
 
-**paid optional:** TCM Academy moved off old Teachable URLs. use current pages like [Practical Ethical Hacking](https://tcm-sec.com/academy/practical-ethical-hacking/) or [PNPT](https://certifications.tcm-sec.com/pnpt/) only if u are buying training/exam prep. the free guide path does not require it.
+**optional paid course:** TCM Academy moved off old Teachable URLs. use [Practical Ethical Hacking](https://tcm-sec.com/academy/practical-ethical-hacking/) only if u want a paid methodology/reporting course after the free labs. cert logistics live in [certifications.md](certifications.md), and the free guide path does not require buying it.
 
-### 13Cubed - Windows forensics and memory forensics
+### 13Cubed - Windows forensics and memory forensics meow
 
 **use it for:** DFIR after u know basic Windows, logs, and incident response.
 
@@ -149,7 +147,7 @@ no paid book is a gate in this guide. if a book costs money, treat it as a deepe
 
 ---
 
-## practice platforms - what u actually do there
+## practice platforms - what u actually do there meow
 
 ### web exploitation
 
@@ -165,7 +163,7 @@ do Natas 0-10 after HTTP basics. why it matters: it teaches view-source, cookies
 do Bandit 0-15 during foundations. why it matters: SSH, files, permissions, pipes, `grep`, `find`, and keys become muscle memory instead of flashcards.
 
 **[CyLab Security Academy](https://cylabacademy.org/) - free**
-this is the new home for picoCTF-style beginner challenges. start with General Skills, then beginner Forensics/Cryptography. why it matters: low-stakes flags turn passive reading into "can i actually do this?" dw, easy flags count :3
+this is the new home for picoCTF-style beginner challenges. start with General Skills, then beginner Forensics/Cryptography. the challenge catalog is login-driven, so use named categories instead of unverified deep links. why it matters: low-stakes flags turn passive reading into "can i actually do this?" dw, easy flags count :3
 
 **TryHackMe - freemium**
 use specific rooms/paths, not the homepage: [Linux Fundamentals 1](https://tryhackme.com/room/linuxfundamentalspart1), [Windows Fundamentals 1](https://tryhackme.com/room/windowsfundamentals1xbx), [Intro to Networking](https://tryhackme.com/room/introtonetworking), [Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics), [SOC Level 1](https://tryhackme.com/path/outline/soclevel1), and [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester). why it matters: guided browser VMs keep beginners from getting lost while still making u touch real systems. TryHackMe rate-limits bots; `429` during checks usually means alive.
@@ -203,12 +201,11 @@ start with the beginner/on-ramp dojo, then save program security and binary expl
 **Microsoft Learn - free**
 use exact learning paths: [SC-900 course](https://learn.microsoft.com/en-us/training/courses/sc-900t00), [SC-200 KQL for Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/), [Configure Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/), and [Create detections and investigations](https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/). why it matters: official sandboxes let u learn cloud/Sentinel without inventing a lab from scratch.
 
-**[AWS Skill Builder Security Specialty exam-prep plan](https://skillbuilder.aws/exam-prep/security-specialty) - free/freemium**
-use it for current AWS Security Specialty SCS-C03 prep and official practice questions. why it matters: AWS changed from SCS-C02 to SCS-C03, so old PDF guides can be stale.
+AWS checkpoint links live in [certifications.md](certifications.md#practice-test-sources-that-are-current). for learning, use the cloud labs in [labs.md](labs.md#cloud-security): flaws.cloud, CloudGoat, ScoutSuite, Prowler, and real cloud sandboxes with budget alerts.
 
 ---
 
-## tools to install or keep ready
+## tools to install or keep ready meow
 
 **[VirtualBox](https://www.virtualbox.org/) - free hypervisor**
 install this first if u are not using VMware/Hyper-V. why it matters: isolated VMs let u break lab machines without touching your real OS.
@@ -216,7 +213,7 @@ install this first if u are not using VMware/Hyper-V. why it matters: isolated V
 **[Kali Linux](https://www.kali.org/get-kali/) - attacker VM**
 use the VM image, not a bare-metal install. why it matters: u get Nmap, Burp helpers, wordlists, and common tools without turning your daily computer into a lab.
 
-**[Windows Evaluation ISOs](https://www.microsoft.com/en-us/evalcenter/) - target/log source**
+**[Windows 11 Enterprise Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) - target/log source**
 build at least one Windows target. why it matters: SOC, PowerShell, Event Viewer, Sysmon, Defender, and Active Directory all need Windows reps.
 
 **[Wireshark](https://www.wireshark.org/download.html) - packet analysis**
@@ -239,7 +236,7 @@ use budget alerts and tear down resources after labs. why it matters: cloud secu
 
 ---
 
-## frameworks and references - current versions
+## frameworks and references - current versions meow
 
 these are not bedtime reading. use them when a lab/report asks "what category is this?" or "what control does this map to?"
 
@@ -272,7 +269,7 @@ pick one recurring source and write a 3-line note for one story per week: what h
 
 ---
 
-## GitHub lists - explore more, not the path
+## GitHub lists - explore more, not the path meow
 
 **[Awesome Security](https://github.com/sbilly/awesome-security)** - use after u know the term u are searching for. why it matters: it is a catalog, not a curriculum.
 
@@ -293,8 +290,8 @@ dont resurrect these in future edits meow:
 | old subnetting drill site | dead/rotted to a staging host | [subnetipv4.com](https://subnetipv4.com/) + [Subnetting Mastery](https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE) |
 | old Linux Journey domain as fully free | moved to LabEx and is now freemium | [LabEx Linux Journey](https://labex.io/linuxjourney), tagged **freemium** |
 | old TCM Practical Help Desk Teachable URL | old Teachable URL redirects | [TCM Practical Help Desk](https://tcm-sec.com/academy/practical-help-desk/) |
-| old Professor Messer generic practice-exams page and old "~$15" wording | dead/soft-404; bundles moved | current per-course Success Bundles linked above |
+| cert/practice-test traps | moved out of this resources page | [certifications.md](certifications.md#whats-dated-in-a-2021-era-list) |
 
 ---
 
-last checked against R5/R7/RC/RD research notes in July 2026. re-check prices, tiers, and cert pages before booking anything paid.
+last checked against R5/R7/RC/RD research notes in July 2026. re-check prices, tiers, and vendor pages before paying for anything.

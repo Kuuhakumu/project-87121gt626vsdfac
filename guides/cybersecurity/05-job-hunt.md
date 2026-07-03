@@ -40,7 +40,7 @@ fork the repo, or copy this checklist into Obsidian/OneNote, if u want boxes u c
 the real progress signal is still:
 
 1. **measurable gate** - a repo, report, target list, resume draft, or interview story exists and can be inspected.
-2. **can u explain it?** - u can walk the reasoning unaided, not just point at a file.
+2. **can u explain it?** - u can walk the reasoning unaided, instead of only pointing at a file.
 
 both must pass before a box means anything meow.
 
@@ -113,15 +113,15 @@ thats not vanity; its portable proof that u can communicate under messy conditio
 
 ## the 8 concrete builds meow
 
-pick one lane and go deep, but build **Project 1** no matter what if u can.
-the AD attack+detect lab is the T-shape showpiece because it proves u understand the environment security actually runs in, not just one tool.
+pick one lane and go deep, but build **project 1** no matter what if u can.
+the AD attack+detect lab is the best first anchor because it proves u understand the environment security actually runs in, instead of only one tool.
 
 u do **not** need all 8 before applying.
-aim for Project 1 plus 3-5 more that match your lane.
+aim for project 1 plus 3-5 more that match your lane.
 
 ### project 1 - home AD lab: attack and detect it (~15-25h)
 
-- [ ] **build the showpiece:** stand up a small Active Directory lab, run one realistic attack chain, then detect the same activity from the blue side.
+- [ ] **build the anchor project:** stand up a small Active Directory lab, run one realistic attack chain, then detect the same activity from the blue side.
 
 **what it proves** - enterprise environment fluency, both-sides thinking, Windows/AD basics, attack chain reasoning, log visibility, and detection mapping.
 
@@ -178,7 +178,7 @@ stretch: open a PR upstream if the rule is genuinely useful.
 
 ### project 4 - documented HTB/TryHackMe writeup series (~2-4h each, ongoing)
 
-- [ ] **build methodology proof:** write 5-10 permitted CTF/lab writeups that show how u think, not just commands.
+- [ ] **build methodology proof:** write 5-10 permitted CTF/lab writeups that show how u think, instead of only commands.
 
 **what it proves** - recon discipline, enumeration, exploitation logic, remediation thinking, and communication.
 
@@ -264,7 +264,7 @@ say that in the writeup.
 
 **ship** - repo with polished docs, a risk register or gap matrix, and an executive summary.
 for GRC, the writing quality is the skill being demonstrated.
-the executive summary is the writeup here: it should explain the risk story in plain language, not just attach a spreadsheet.
+the executive summary is the writeup here: explain the risk story in plain language instead of attaching a spreadsheet and calling it done.
 
 **measurable gate:** at least 3 assets/risks or 5 control gaps are documented, each with owner, evidence, remediation, and status.
 
@@ -275,10 +275,10 @@ the executive summary is the writeup here: it should explain the risk story in p
 ## resume + ATS targeting meow (~12h)
 
 **the idea** - dont write one generic resume and pray.
-for each role type, map the words in the role description to the projects and certs that prove u can do that work.
+for each role type, map the words in the role description to the projects, labs, reports, and only-relevant checkpoints that prove u can do that work.
 
 **how/why it actually works** - an Applicant Tracking System (ATS) often parses resumes before a human reads them.
-it matches tokens from the role description against your resume: tools, certs, frameworks, task verbs, and acronyms.
+it matches tokens from the role description against your resume: tools, frameworks, task verbs, acronyms, and sometimes cert names.
 if the description says `SIEM`, `EDR`, `MITRE ATT&CK`, `Splunk`, `KQL`, and `incident response`, those terms need to appear **in context** on your resume.
 not as a fake keyword pile.
 as proof-linked bullets.
@@ -287,14 +287,14 @@ the reusable engine is the **NICE Framework**.
 NICE work-role Task/Knowledge/Skill statements are the vocabulary job descriptions are built from.
 so the loop is:
 
-1. **pull nouns + verbs** - highlight tools, frameworks, certs, and task verbs in the role description.
-2. **match each to proof** - Project 2 for SIEM triage, Project 3 for detection engineering, Project 6 for incident reporting, Project 8 for GRC.
+1. **pull nouns + verbs** - mark tools, frameworks, required certs, and task verbs in the role description.
+2. **match each to proof** - project 2 for SIEM triage, project 3 for detection engineering, project 6 for incident reporting, project 8 for GRC.
 3. **phrase the bullet in NICE/JD language and quantify it** - "Wrote 5 Sigma detection rules mapped to MITRE ATT&CK and converted one to Splunk SPL" beats "worked on detections."
 
 **words u gotta be able to say**
 
 - **ATS** - parser matching resume text to role text
-- **keyword** - tool, framework, cert, noun, or task verb
+- **keyword** - tool, framework, required cert, noun, or task verb
 - **NICE work role** - standardized cyber role definition
 - **Task / Knowledge / Skill** - work actions, concepts, abilities
 - **proof-linked bullet** - resume line tied to evidence
@@ -311,9 +311,9 @@ so the loop is:
 use this loop per application:
 
 1. copy the role description into your notes.
-2. highlight tools, frameworks, certs, and task verbs.
+2. mark tools, frameworks, required certs, and task verbs.
 3. open the closest NICE work role.
-4. map each major keyword to one project/cert/lab u actually have.
+4. map each major keyword to one project, lab, report, or relevant cert u actually have.
 5. rewrite bullets so the wording matches the role without lying.
 
 **example bullets**
@@ -330,14 +330,14 @@ use this loop per application:
 - spell out acronyms once: `Security Information and Event Management (SIEM)`.
 - use a text-based PDF or `.docx`, not a flattened scan.
 - one page for entry level.
-- lead with certs + projects if u dont have security job experience yet.
+- lead with projects, labs, and reports if u dont have security job experience yet. put certs there too only when they match the role.
 - link GitHub and your writeup/blog landing page.
 
 **resume-resource note:** im not linking a random "security resume template" here because no free resume guide met the guide's exact verification bar for this rewrite.
 use NICE for the vocabulary and Google Technical Writing for clarity.
 thats stronger than a weak template anyway meow.
 
-**measurable gate:** for 3 target role descriptions from company-direct pages, u have a targeted resume version where every major keyword maps to a truthful project, cert, or lab.
+**measurable gate:** for 3 target role descriptions from company-direct pages, u have a targeted resume version where every major keyword maps to a truthful project, lab, report, or relevant cert.
 
 **can u explain it?** ✅ - pick any resume bullet and point to the artifact that proves it.
 then say which NICE task it maps to and which role keyword it answers.
@@ -472,11 +472,12 @@ same facts, different language.
 entry is competitive.
 the big "unfilled jobs" headline usually means experienced people, not "any cert-only beginner can walk in tomorrow."
 
-certs help, but certs alone are thin.
+certs can help, but certs alone are thin.
 what separates u is:
 
 - a demonstrable home lab.
 - documented projects.
+- CTF/writeup evidence.
 - scripting ability.
 - cloud fundamentals.
 - clear writing.
@@ -517,7 +518,7 @@ these are the exact resources this file relies on, checked in the R10 research p
 | [NICE - Digital Forensics](https://niccs.cisa.gov/tools/nice-framework/work-role/digital-forensics) | DFIR task/keyword engine | **free** |
 | [CyberSeek Career Pathway](https://www.cyberseek.org/pathway.html) | feeder-role and transition map | **free**; ignore its US pay overlay |
 | [GitHub Docs - Managing your profile README](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme) | profile landing-page setup | **free** |
-| [GOAD - Game of Active Directory](https://github.com/Orange-Cyberdefense/GOAD) | AD attack+detect showpiece | **free** |
+| [GOAD - Game of Active Directory](https://github.com/Orange-Cyberdefense/GOAD) | AD attack+detect anchor project | **free** |
 | [Wazuh Quickstart](https://documentation.wazuh.com/current/quickstart.html) | home SOC setup | **free** |
 | [MITRE ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/) | technique coverage mapping | **free** |
 | [SigmaHQ/sigma](https://github.com/SigmaHQ/sigma) | real Sigma rules and optional PR target | **free** |
@@ -530,7 +531,7 @@ these are the exact resources this file relies on, checked in the R10 research p
 
 - [ ] u pinned 4-6 strong repos, not every repo u have.
 - [ ] every pinned repo has a security-impact line, evidence, and a writeup.
-- [ ] at least one project is the AD attack+detect showpiece, or u have a clear reason it comes next.
+- [ ] at least one project is the AD attack+detect anchor project, or u have a clear reason it comes next.
 - [ ] u have one targeted resume version for each role type u are applying to.
 - [ ] each major resume bullet points to proof: repo, writeup, cert, lab, or report.
 - [ ] u built a 15-20 employer target tracker by employer type, not by job-board scrolling.

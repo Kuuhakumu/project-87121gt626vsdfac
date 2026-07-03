@@ -1,4 +1,4 @@
-# Beyond entry-level meow (years 2+)
+# beyond entry-level meow (years 2+)
 
 once u land the first role and get 1-2 years of real incidents, tickets, alerts, users, audits, or production systems under your hands, the game changes.
 
@@ -37,7 +37,7 @@ the real gate is: can u point to work evidence and explain the judgment behind i
 - enterprise identity and endpoint architecture: Entra ID, Conditional Access, EDR, network segmentation.
 - incident command: timeline, containment decision, stakeholder update, lessons learned.
 
-**specific resources / certs**
+**specific resources + optional checkpoints**
 
 - [Centri - Blue Team Level 2](https://www.centri.org/certifications/blue-team-level-2) - advanced blue-team training/cert covering malware analysis, threat hunting, vulnerability management, advanced SIEM, and emulation. **paid; employer-sponsor if possible**
 - [GIAC GCIH](https://www.giac.org/certifications/certified-incident-handler-gcih) - incident handling, attacker techniques, detection/response. **paid/expensive**
@@ -61,7 +61,7 @@ if u cant say why u contained that way, keep building reps.
 - web app depth beyond OWASP basics: auth logic, SSRF, deserialization, business logic flaws.
 - report writing and live debriefs. the report is the product, not the afterthought meow.
 
-**specific resources / certs**
+**specific resources + optional checkpoints**
 
 - [OffSec PEN-200 / OSCP](https://www.offsec.com/courses/pen-200/) - the classic pentest filter; do it after the red-chain in Goal 4 feels normal. **paid/expensive**
 - [OffSec Learn One](https://www.offsec.com/products/learn-one/) - current subscription-style training bundle; compare before buying.
@@ -86,7 +86,7 @@ if u can hack it but cant explain the fix, ur not done yet qwq.
 - cloud detection: CloudTrail/GuardDuty/Security Hub, Sentinel/Defender, logs -> alert -> response.
 - DevSecOps: embed scans in GitHub Actions/GitLab CI and turn findings into fixable tickets.
 
-**specific resources / certs**
+**specific resources + optional checkpoints**
 
 - [AWS Certified Security - Specialty](https://aws.amazon.com/certification/certified-security-specialty/) - current AWS security-specialty landing page.
 - [AWS SCS-C03 official exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) - use this, not stale SCS-C02 PDFs.
@@ -116,7 +116,7 @@ bonus: say how the same control differs between AWS IAM and Entra/Azure RBAC.
 - third-party risk: questionnaires, SOC 2 report review, evidence requests, remediation tracking.
 - translating technical risk into business decisions without watering it down.
 
-**specific resources / certs**
+**specific resources + optional checkpoints**
 
 - [ISACA CISA](https://www.isaca.org/credentialing/cisa) - audit-focused credential. not entry-level; experience-gated.
 - [CISA certification requirements](https://www.isaca.org/credentialing/cisa/get-cisa-certified) - check the five-year experience rule before planning it.
@@ -135,7 +135,7 @@ thats the GRC muscle mhm.
 ## the principle
 
 pick **one** track for depth.
-go deep enough that your work artifacts have judgment in them, not just tools.
+go deep enough that your work artifacts show judgment, rather than only tools.
 
 advanced certs should answer a real question:
 

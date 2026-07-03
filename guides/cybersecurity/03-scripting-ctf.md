@@ -4,7 +4,7 @@
 >
 > **pace:** ~100 hours total ~= 7 weeks at 2h/day. CTF is woven through the work, not saved for the end.
 >
-> **cert checkpoint:** no new cert here. this goal makes **CC/Security+ operations**, SOC labs, and later blue/red specialization actually usable.
+> **practice note:** this goal quietly strengthens the automation/logging knowledge that exams and SOC labs both assume, but the work is scripts, queries, logs, and CTF reps.
 
 [<- Goal 2: Networking & Security Core](02-core.md) | [Back to hub](README.md) | [Next: Specialization Paths ->](04-specialization.md)
 
@@ -57,21 +57,20 @@ a checkbox alone doesnt mean anything meow
 
 ---
 
-## optional checkpoint map so u know why this exists
+## why this exists meow
 
-this goal is mostly skill-building, but it still maps to exam domains so ur not wondering why it matters.
+this goal is mostly skill-building.
+it turns theory into "i can automate it, query it, parse it, and explain what happened."
 
-| Study cluster | Cert / domain tie-in | why it matters |
-|---|---|---|
-| Python scanners + parsers | ISC2 CC D4/D5, Security+ SY0-701 D4, Network+ N10-009 D5 | scanning, troubleshooting, automation, and log review |
-| PowerShell | ISC2 CC D5, Security+ SY0-701 D4 | Windows operations, event logs, admin automation, attacker tradecraft |
-| KQL | ISC2 CC D5, Security+ SY0-701 D4 | Microsoft Sentinel / Defender log hunting |
-| SPL | ISC2 CC D5, Security+ SY0-701 D4 | Splunk SIEM searching, reporting, investigation |
-| regex + log parsing | ISC2 CC D5, Security+ SY0-701 D4 | signatures, field extraction, IOC hunting |
-| CTF practice | all later specialization paths | turns passive study into "can i actually do it?" |
+that matters in every lane:
 
-learn the topic because its real.
-the exam points are just downstream of understanding it mhm
+- Python glues tools together and makes scanning/parsing less manual.
+- PowerShell is how Windows admins, defenders, and attackers all touch Windows systems.
+- KQL and SPL are how SOC work turns raw logs into answers.
+- regex is how messy text becomes fields u can search.
+- CTF keeps the "can i actually do it?" thread alive while the tooling grows.
+
+for now, learn the thing because its real mhm
 
 ---
 
@@ -121,7 +120,7 @@ thats why a tiny script can turn 10,000 auth lines into "these 5 IPs failed logo
 
 **measurable gate:** both scripts run clean on fresh input, the repo has a README with usage examples, and the scanner never targets systems u dont own or have permission to test.
 
-**CTF thread:** solve **OverTheWire Bandit level 24** from [Bandit](https://overthewire.org/wargames/bandit/) by scripting the repeated network interaction. then solve 3 **picoCTF / CyLab Security Academy** General Skills or scripting-style challenges at [cylabacademy.org](https://cylabacademy.org/). picoCTF is now hosted as CyLab Security Academy, but the name still matters because most writeups and teachers still call it picoCTF.
+**CTF thread:** solve **OverTheWire Bandit level 24** from [Bandit](https://overthewire.org/wargames/bandit/) by scripting the repeated network interaction. then solve 3 **picoCTF / CyLab Security Academy** General Skills or scripting-style challenges at [cylabacademy.org](https://cylabacademy.org/) (catalog/login-driven). picoCTF is now hosted as CyLab Security Academy, but the name still matters because most writeups and teachers still call it picoCTF.
 
 **can u explain it?** ✅ - unaided, explain what your scanner does when it hits an open port vs a closed port:
 what function asks the OS for the socket, what packet handshake happens, what result your code sees, and why timeout does not mean the same thing as "closed."
@@ -290,7 +289,7 @@ adjust index/sourcetype to the tutorial data u loaded.
 
 ---
 
-## Block 5 - regex + log parsing (~5h)
+## block 5 - regex + log parsing meow (~5h)
 
 ### regex as the pattern engine meow (~5h)
 
@@ -343,7 +342,7 @@ then re-implement the same extraction in Python `re` and output JSON.
 
 ---
 
-## Block 6 - CTF level-up hub (~25h running thread)
+## block 6 - CTF level-up hub meow (~25h running thread)
 
 ### why CTF stays beside the study meow
 
@@ -372,6 +371,7 @@ dont skip just because a harder platform looks cooler.
 | **3 - intermediate stretch** | after the guide, not required to proceed | [pwn.college Start Here](https://pwn.college/welcome/welcome/) -> [Program Security](https://pwn.college/program-security/program-security/); [OverTheWire Krypton](https://overthewire.org/wargames/krypton/), [Leviathan](https://overthewire.org/wargames/leviathan/), and [Narnia](https://overthewire.org/wargames/narnia/); [CryptoHack Symmetric Cryptography](https://cryptohack.org/courses/symmetric/) + [Public-Key Cryptography](https://cryptohack.org/courses/public-key/) courses; [Microcorruption](https://microcorruption.com/) for embedded reversing; [HTB Academy](https://academy.hackthebox.com/) tiered modules and non-Starting-Point Hack The Box machines as freemium explore-more. |
 
 **picoCTF note:** use the name "picoCTF" in your notes because the ecosystem still does, but start from [CyLab Security Academy](https://cylabacademy.org/). CMU moved picoCTF into CyLab Security Academy, with the same beginner-friendly, free challenge style.
+CyLab challenge entries are catalog/login-driven; use the named category and challenge examples instead of trusting unverified direct challenge URLs.
 
 ### topic -> challenge map
 

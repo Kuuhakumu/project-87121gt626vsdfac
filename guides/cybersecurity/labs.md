@@ -1,7 +1,7 @@
 # cybersecurity verified lab index meow (July 2026)
 
 > this is the lab shelf for the cyber guide.
-> use the goal files as the roadmap; use this page when u need the exact lab, drill, practice-test source, or current replacement link.
+> use the goal files as the roadmap; use this page when u need the exact lab, drill, or current replacement link.
 >
 > rule stays the same: never "open a VM and look around." every primary item below names the exact thing to do, what it proves, and whether it is free/freemium/paid.
 
@@ -14,7 +14,7 @@
 - **Start from the goal file first.** `01-foundations.md` through `05-job-hunt.md` tell u the order. this file is the verified index behind those tasks.
 - **A lab is done only when the gate passes.** "i opened the site" does not count. pass the named level, score, alert, report, or artifact.
 - **Write the explanation too.** after the measurable gate, do the `can u explain it?` check from the goal file. both pass or the topic isnt done yet qwq
-- **Paid cert training is optional.** the free/freemium lab path is the default. paid bundles are listed only so u dont buy stale or wrong things.
+- **Cert/practice-test stuff belongs in `certifications.md`.** this page keeps the lab/CTF/practical shelf. use [certifications.md](certifications.md) only after the gates pass and u are deciding whether an outside checkpoint is worth paying for.
 
 ---
 
@@ -23,11 +23,7 @@
 | Old link / claim | Current status | Use this instead |
 |---|---|---|
 | old subnetting drill site | broken / rotted to unrelated staging host | [subnetipv4.com](https://subnetipv4.com/) plus [Practical Networking - Subnetting Mastery](https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE) |
-| old Professor Messer generic practice-exams page and "~$15 exams" | dead/soft-404; products moved | current per-course Professor Messer Success Bundles: [A+ Core 1](https://www.professormesser.com/220-1201-success-bundle/), [A+ Core 2](https://www.professormesser.com/220-1202-success-bundle/), [Network+](https://www.professormesser.com/n10-009-success-bundle/), [Security+](https://www.professormesser.com/sy0-701-success-bundle/) |
-| `securityblue.team` / old BTL1 URLs | redirects after rebrand | [Centri - Blue Team Level 1](https://www.centri.org/certifications/blue-team-level-1) |
-| "AZ-500 successor TBA" | stale | Azure security path is now [SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500); AZ-500 retires 2026-08-31 |
-| AWS Security `SCS-C02` PDFs | retired / stale | [AWS Certified Security - Specialty exam page](https://aws.amazon.com/certification/certified-security-specialty/) and [official SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) |
-| "INE PTS/eJPT training is free" | stale; PTS is paywalled behind INE subscription | use [INE eJPT v2 cert page](https://ine.com/security/certifications/ejpt-certification/) only for cert logistics; free prep is TryHackMe Jr Pentester + PortSwigger + HTB Starting Point |
+| cert practice pages, exam retirements, voucher claims, and paid cert bundles | moved out of the lab shelf | use [certifications.md](certifications.md) so exam logistics stay in one place |
 
 last checked from R5/RC/RD research notes in July 2026. re-check paid prices before buying anything.
 
@@ -43,31 +39,19 @@ last checked from R5/RC/RD research notes in July 2026. re-check paid prices bef
 | [TryHackMe - Intro to Networking](https://tryhackme.com/room/introtonetworking) | freemium/free room | OSI/TCP/IP, packets, routing basics | finish room, then explain DNS -> TCP -> HTTP in order |
 | [TryHackMe - Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics) | freemium/free room | load PCAPs, filter, inspect traffic | identify one TCP handshake and one HTTP request in a capture |
 | [subnetipv4.com](https://subnetipv4.com/) | free | generate IPv4 subnet drills | solve `/26`, `/27`, `/28` network ID, broadcast, usable range, host count in under 60s each |
-| [CyLab Security Academy](https://cylabacademy.org/) | free | picoCTF-style beginner General Skills / Forensics / Crypto | solve 10 beginner challenges and write 3 short notes on what command/tool solved each |
+| [CyLab Security Academy](https://cylabacademy.org/) | free; catalog/login-driven | picoCTF-style beginner General Skills / Forensics / Crypto | solve 10 beginner challenges and write 3 short notes on what command/tool solved each |
 | [OverTheWire Natas](https://overthewire.org/wargames/natas/) | free | browser web basics: source, cookies, auth, injection | clear Natas 0-6 before PortSwigger, then 7-15 as a stretch |
 
 TryHackMe may return `429` to automated checks; that usually means the room is alive but bot-limited. use a browser.
 
 ---
 
-## practice-test gates and cert-aligned drills
+## exam practice and paid checkpoint links
 
-these are not "labs" in the VM sense, but they are still objective gates. use them when a goal asks for a real score.
+exam practice, paid bundles, retirements, voucher changes, and booking rules live in [certifications.md](certifications.md#practice-test-sources-that-are-current).
 
-| Exact resource | Cost | Use it for | Gate |
-|---|---:|---|---|
-| [ExamCompass A+ practice tests](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-practice-tests) | free | A+ Core 1/2 topic checks | 80%+ on 3 fresh current-code attempts for the domain u just studied |
-| [ExamCompass Network+ practice tests](https://www.examcompass.com/comptia/network-plus-certification/free-network-plus-practice-tests) | free | N10-009 networking checks | 85%+ on 3 fresh N10-009 attempts; ignore retired legacy sets |
-| [ExamCompass Security+ practice tests](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests) | free | SY0-701 security checks | 85%+ on 3 fresh SY0-701 attempts; ignore retired SY0-601 sets |
-| [ISC2 CC Practice Quiz](https://cloud.connect.isc2.org/cc-quiz) | free, lead-gated | CC-style fundamentals checkpoint | pass the quiz, then use the guide's `can u explain it?` gates as the real free fundamentals checkpoint before any paid CC exam |
-| [ISC2 CC Flash Cards](https://cloud.connect.isc2.org/cc-flashcards) | free, lead-gated | CC vocab reinforcement | only use after mechanisms make sense; dont memorize first |
-| [Messer A+ Core 1 Success Bundle](https://www.professormesser.com/220-1201-success-bundle/) | paid optional | paid A+ Core 1 practice exams | 85%+ on 3 fresh attempts before booking |
-| [Messer A+ Core 2 Success Bundle](https://www.professormesser.com/220-1202-success-bundle/) | paid optional | paid A+ Core 2 practice exams | 85%+ on 3 fresh attempts before booking |
-| [Messer Network+ Success Bundle](https://www.professormesser.com/n10-009-success-bundle/) | paid optional | paid N10-009 practice exams | 85%+ on 3 fresh attempts before booking |
-| [Messer Security+ Success Bundle](https://www.professormesser.com/sy0-701-success-bundle/) | paid optional | paid SY0-701 practice exams | 85%+ on 3 fresh attempts before booking |
-| [Microsoft SC-900 official practice assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-900/practice/assessment?assessment-type=practice&assessmentId=25) | free | Microsoft security/compliance/identity fundamentals | 80%+ across 2 fresh runs before booking |
-| [Microsoft SC-200 official practice assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-200/practice/assessment?assessment-type=practice&assessmentId=59) | free | Sentinel/Defender SOC checkpoint | 80%+ after finishing the SC-200 Learn paths |
-| [AWS Skill Builder - Security Specialty exam-prep plan](https://skillbuilder.aws/exam-prep/security-specialty) | free/freemium | current AWS Security Specialty `SCS-C03` practice | 80%+ on official practice questions before booking |
+the learner still studies theory here through the goal files and sources.
+the passive part is exam readiness: while they do labs, CTFs, reports, and explain gates, the exam-shaped knowledge quietly stacks up in the background meow.
 
 ---
 
@@ -105,7 +89,6 @@ these are not "labs" in the VM sense, but they are still objective gates. use th
 | [Microsoft Learn - Create queries for Sentinel using KQL](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/) | free | KQL for Sentinel | write one KQL query that finds brute-force-like behavior |
 | [Microsoft Learn - Create detections and investigations](https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/) | free | analytics rules, investigations, playbooks | build one test analytics rule and map it to ATT&CK |
 | [Microsoft Learn - Perform threat hunting in Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) | free | hunting with KQL/search/notebooks | produce one hunt query and explain hypothesis -> result |
-| [Centri - Blue Team Level 1](https://www.centri.org/certifications/blue-team-level-1) | paid optional | practical BTL1 course/labs/exam | buy only when free SOC/DFIR labs feel comfortable and u want the 24h practical checkpoint |
 
 ---
 
@@ -113,18 +96,15 @@ these are not "labs" in the VM sense, but they are still objective gates. use th
 
 | Exact resource | Cost | What u do | Gate |
 |---|---:|---|---|
-| [TryHackMe - Jr Penetration Tester path](https://tryhackme.com/path/outline/jrpenetrationtester) | freemium | guided recon, web, enum, privesc basics | complete the beginner modules that match eJPT-level prep |
-| [TryHackMe - Offensive Pentesting path](https://tryhackme.com/path/outline/offensivepentesting) | freemium | AD, buffer overflow, harder offensive rooms | use after Jr Pentester; finish AD/pivot rooms before PNPT/CPTS-style work |
+| [TryHackMe - Jr Penetration Tester path](https://tryhackme.com/path/outline/jrpenetrationtester) | freemium | guided recon, web, enum, privesc basics | complete the beginner modules after networking and web basics |
+| [TryHackMe - Offensive Pentesting path](https://tryhackme.com/path/outline/offensivepentesting) | freemium | AD, buffer overflow, harder offensive rooms | use after Jr Pentester; finish AD/pivot rooms before harder report-based work |
 | [Hack The Box - Starting Point intro](https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point) | freemium | Tier 0 boxes: Meow, Fawn, Dancing, etc. | complete Meow, Fawn, Dancing without walkthroughs |
-| [HTB Academy - Penetration Tester path preview](https://academy.hackthebox.com/path/preview/penetration-tester) | freemium/paid | CPTS-aligned modules from methodology through report | use as the deep paid/offensive track if CPTS is your checkpoint |
+| [HTB Academy - Penetration Tester path preview](https://academy.hackthebox.com/path/preview/penetration-tester) | freemium/paid | modules from methodology through report writing | use as a deeper paid/offensive track after the free HTB/PortSwigger/VulnHub gates |
 | [PortSwigger Web Security Academy](https://portswigger.net/web-security/all-labs) | free | offensive web practice | Apprentice SQLi + XSS + access control before any paid web module |
 | [VulnHub - Kioptrix series](https://www.vulnhub.com/series/kioptrix,8/) | free | classic vulnerable VMs | root Kioptrix Level 1 and write a short report |
 | [VulnHub - Kioptrix Level 1](https://www.vulnhub.com/entry/kioptrix-level-1-1,22/) | free | first full recon -> exploit -> root VM | root it and document commands/evidence/remediation |
 | [VulnHub - Stapler 1](https://www.vulnhub.com/entry/stapler-1,150/) | free | next-rung enumeration/privesc practice | root it after Kioptrix |
 | [VulnHub - FristiLeaks 1.3](https://www.vulnhub.com/entry/fristileaks-13,133/) | free | web foothold + privesc practice | root it after Kioptrix |
-| [TCM Practical Ethical Hacking](https://tcm-sec.com/academy/practical-ethical-hacking/) | paid optional | PEH methodology, AD, web, reporting | use if buying PNPT prep; current URL replaces old Teachable links |
-| [TCM PNPT certification](https://certifications.tcm-sec.com/pnpt/) | paid optional | 5-day AD pentest + 2-day report + live debrief | only after u can write a clean report from free labs |
-| [INE eJPT v2 certification](https://ine.com/security/certifications/ejpt-certification/) | paid optional | entry practical pentest exam logistics | do not present INE PTS as free; free prep is THM + PortSwigger + HTB Starting Point |
 
 ---
 
@@ -132,15 +112,6 @@ these are not "labs" in the VM sense, but they are still objective gates. use th
 
 | Exact resource | Cost | What u do | Gate |
 |---|---:|---|---|
-| [Microsoft Learn SC-900 course](https://learn.microsoft.com/en-us/training/courses/sc-900t00) | free | Microsoft security/compliance/identity fundamentals | finish the 4 SC-900 learning paths and score 80%+ on official practice |
-| [SC-900 - Security/compliance/identity concepts](https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/) | free | shared responsibility, Zero Trust, encryption basics | finish path and explain shared responsibility |
-| [SC-900 - Microsoft Entra](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-identity-access/) | free | identity, access, MFA, Conditional Access | explain user vs role vs policy |
-| [SC-900 - Microsoft security solutions](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-security-solutions/) | free | Defender, Sentinel, secure score | explain SIEM vs XDR vs CSPM |
-| [SC-900 - Microsoft Purview and privacy](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/) | free | DLP, classification, retention | explain data classification -> policy -> evidence |
-| [Microsoft SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) | free | current Azure/AI cloud-security objectives | use as syllabus after SC-900; dedicated SC-500 learning path was still pending in RD3 |
-| [AWS Certified Security - Specialty page](https://aws.amazon.com/certification/certified-security-specialty/) | free page / paid exam | current AWS Security Specialty overview | confirm it says `SCS-C03` before booking |
-| [AWS SCS-C03 official exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) | free | current domains/weights | map weak topics to labs; do not use old SCS-C02 PDFs |
-| [AWS Skill Builder - Security Specialty exam-prep plan](https://skillbuilder.aws/exam-prep/security-specialty) | free/freemium | official SCS-C03 prep and practice questions | 80%+ on practice questions before booking |
 | [Azure free account](https://azure.microsoft.com/en-us/free/) | free trial / card required | Azure sandbox for Defender/Sentinel/IAM | set budget alerts; tear down resources |
 | [AWS Free Tier](https://aws.amazon.com/free/) | free tier / card required | AWS sandbox for IAM, S3, GuardDuty, Config | set budget alerts; tear down resources |
 | [flaws.cloud](http://flaws.cloud/) | free | classic AWS S3/IAM misconfiguration walkthrough | clear levels 1-3 unaided; intentionally HTTP-only origin |
@@ -167,11 +138,7 @@ these are not "labs" in the VM sense, but they are still objective gates. use th
 | Resource | Status | Use instead |
 |---|---|---|
 | old subnetting drill site | broken | [subnetipv4.com](https://subnetipv4.com/) |
-| old Professor Messer generic practice-exams page | soft-404 / page-not-found | per-course Success Bundles listed above |
-| `securityblue.team` / old BTL1 pages | redirected after rebrand | [Centri BTL1](https://www.centri.org/certifications/blue-team-level-1) |
-| INE Penetration Testing Student as "free" | stale; paywalled | free prep stack: [TryHackMe Jr Pentester](https://tryhackme.com/path/outline/jrpenetrationtester), [PortSwigger labs](https://portswigger.net/web-security/all-labs), [HTB Starting Point](https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point) |
-| SCS-C02 exam guide PDFs | retired | [SCS-C03 HTML exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) |
-| AZ-500 as a new learner target | retires 2026-08-31 | [SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) |
+| cert/practice-test traps | moved out of this lab index | [certifications.md](certifications.md#whats-dated-in-a-2021-era-list) |
 | Old SC-200 guessed "Microsoft Sentinel" slugs | some 404; old slug names still resolve | use the exact SC-200 Learn path URLs in the SOC section |
 | Cybrary free labs | gutted/restricted since older guides | LetsDefend, CyberDefenders, BTLO, KC7 |
 | SANS CyberAces | discontinued | TryHackMe Pre-Security, HTB free modules, Bandit |

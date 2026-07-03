@@ -4,7 +4,7 @@
 >
 > **pace:** ~160 hours total ~= 11-12 weeks at 2h/day. this is **not** 160h per lane. do the chooser, pick one primary depth lane, then add the GRC layer beside it.
 >
-> **cert checkpoint:** certs sit on top of the topic. learn the craft first; the exam is the byproduct, not the reason.
+> **checkpoint note:** exam translation lives in [certifications.md](certifications.md) after the lane labs pass. this file is about choosing a lane, doing the labs, and building the artifact.
 
 [<- Goal 3: Scripting, Logs & CTF Level-Up](03-scripting-ctf.md) | [Back to hub](README.md) | [Next: Portfolio & Job Hunt ->](05-job-hunt.md)
 
@@ -61,21 +61,18 @@ a checkbox alone doesnt mean anything meow
 
 ---
 
-## optional cert checkpoints after the labs
+## how checkpoints fit without stealing the wheel
 
-dont start here.
+dont start with a cert table here.
 start with the interactive labs and project gates below.
-this table just tells u which exam becomes realistic **after** the lane feels normal meow.
 
-| Lane | Optional checkpoints layered on top | what the lab path proves first |
-|---|---|---|
-| **Blue / SOC** | BTL1 (Centri), CySA+ **CS0-004**, SC-200 | u can investigate alerts, query logs, map detections, and write IR notes |
-| **Red / pentest** | eJPT v2, HTB CPTS, PNPT; OSCP later | u can follow the attack chain and write the report |
-| **Cloud security** | SC-900 -> **SC-500**; AWS Security Specialty **SCS-C03** | u can secure customer-side cloud config and prove posture improved |
-| **GRC layer** | Security+ **SY0-701** Domain 5, SC-900 compliance; CISA/CISM later after experience | u can turn technical facts into risk, controls, evidence, and decisions |
+the quiet trick is:
 
-heads up: **AZ-500 retires August 31, 2026**, so if youre starting Azure security now, use **SC-500** as the Microsoft cloud-security target.
-for AWS, use **SCS-C03**. **SCS-C02 is retired**, and old SCS-C02 PDFs are stale.
+**study source + theory -> lab / CTF -> artifact -> explain gate -> outside checkpoint translation**
+
+by the time a lane feels normal, the exam topics are not mysterious anymore.
+u were still learning the theory the whole time; the labs just made it practical before the exam name mattered.
+then [certifications.md](certifications.md) can translate what u already know into current exam names, domains, costs, and booking rules.
 
 ---
 
@@ -120,20 +117,15 @@ that signal beats a personality quiz because depth beats breadth, and youll only
 
 ---
 
-## Blue / SOC lane meow (~120-140h if primary)
+## blue / SOC lane meow (~120-140h if primary)
 
 ### SIEM detection and incident triage meow (~120-140h)
 
 **the idea** - blue team work is turning messy telemetry into a defensible answer: "is this an attacker, what happened, and what do we do next?"
 
-**certs later, learning first** - BTL1, CySA+ **CS0-004**, and SC-200 all sit on top of this same SOC craft.
-dont aim at the exam first.
-do the labs, write the reports, build the detection muscle, and only then decide which checkpoint is worth paying for.
-
-heads up: CySA+ checks more vulnerability management and reporting.
-SC-200 checks Microsoft Sentinel / Defender / KQL.
-BTL1 checks whether u can actually investigate under a 24h practical exam.
-same craft, different checkpoint.
+**learn the craft first** - dont aim at an exam first.
+do the labs, write the reports, build the detection muscle, and only then decide whether any outside checkpoint is worth paying for.
+outside checkpoint choices can wait until the artifact exists.
 
 **how/why it actually works** - a SIEM does not magically "know bad."
 it runs a pipeline:
@@ -153,7 +145,7 @@ a converter turns that same logic into SPL, KQL, Elastic, or another SIEM query.
 the tactic is the attacker goal, like Persistence or Lateral Movement.
 the technique is the method, like `T1110` Brute Force or `T1059.001` PowerShell.
 mapping detections to ATT&CK shows what u can see and what blind spots still exist.
-thats why blue team is not just "watch alerts"; its building a visibility map meow.
+blue team means more than watching alerts; u are building the visibility map meow.
 
 **words u gotta be able to say**
 
@@ -197,25 +189,11 @@ if u cant say why it is a true positive or false positive, the block isnt done y
 
 **the idea** - red team / pentest work is a legal, scoped simulation of an attacker: find the way in, prove impact, and write the fix clearly enough that defenders can act.
 
-**certs later, learning first** - eJPT v2, HTB CPTS, and PNPT sit on top of this attack-chain practice.
-eJPT proves the beginner methodology under low pressure.
-CPTS goes broad and deep technically.
-PNPT is Active Directory plus report plus live debrief.
-OSCP is later, when this whole chain already feels normal.
-
-heads up: the report is the real product.
-eJPT is auto-graded and has no report.
-CPTS grades a report.
-PNPT makes u defend the report out loud.
-thats not extra; thats the job.
-
-**checkpoint map** - after the labs, this is what each optional cert checks:
-
-| cert | domains / modules this block serves |
-|---|---|
-| **eJPT v2** | Assessment Methodologies, Host and Network Pentesting, Host and Networking Auditing, Web App Pentesting |
-| **HTB CPTS** | Nmap/enumeration, common services, web attacks, AD enumeration/attacks, privesc, pivoting, reporting |
-| **PNPT** | OSINT -> external -> internal AD -> Domain Controller compromise -> report -> live debrief |
+**learn the craft first** - the report is the real product.
+recon without evidence is not enough.
+root without remediation is not enough.
+an exploit chain only becomes useful when u can explain scope, impact, proof, and fix.
+outside checkpoints can wait until this chain feels normal.
 
 **how/why it actually works** - the attack chain repeats until scope ends:
 
@@ -281,22 +259,9 @@ then explain why a reverse shell beats a bind shell through NAT, and explain Ker
 
 **the idea** - cloud security is mostly securing the customer's half of the cloud: identity, data, network exposure, logging, and configuration at scale.
 
-**certs later, learning first** - SC-900 -> **SC-500** for Microsoft cloud security, and AWS Security Specialty **SCS-C03** for AWS sit on top of this cloud-lab path.
-SC-900 is fundamentals.
-SC-500 is the Azure/AI cloud-security successor path.
-SCS-C03 is the current AWS Security Specialty.
-
-do **not** start AZ-500 now unless an employer explicitly requires it before retirement.
-it retires **August 31, 2026**.
-do **not** study from SCS-C02 exam guides; SCS-C02 is retired, and **SCS-C03** is current.
-
-**checkpoint map** - after the labs, this is what each optional cert checks:
-
-| cert | domains / modules this block serves |
-|---|---|
-| **SC-900** | Microsoft security/compliance/identity fundamentals: Entra, Defender, Sentinel, Purview concepts |
-| **SC-500** | identity/access/governance; secure storage/databases/networking; secure compute incl. AI; manage and monitor posture |
-| **AWS SCS-C03** | Detection, Incident Response, Infrastructure Security, IAM, Data Protection, Security Foundations and Governance |
+**learn the craft first** - cloud security is not "memorize provider product names."
+its shared responsibility, IAM, public exposure, logging, posture scanning, and fixing misconfigurations with proof.
+provider product names change; the mechanism is what keeps the lane readable.
 
 **how/why it actually works** - the first mechanism is **shared responsibility**.
 the provider secures **of the cloud**: data centers, hardware, hypervisor, managed-service backplane.
@@ -343,7 +308,7 @@ shift-left is the same loop before deploy, scanning Terraform/CloudFormation so 
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite) - open-source multi-cloud posture audit reports. **free**
 - [Prowler](https://github.com/prowler-cloud/prowler) - open-source AWS/Azure/GCP security benchmark scanner. **free**
 - [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat) - vulnerable-by-design AWS scenarios in your own account. **free tool, cloud usage may cost**
-- [Microsoft SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) - official current Microsoft cloud/AI security objectives. **free**
+- [Microsoft Learn - Security, compliance, and identity fundamentals](https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/) - Microsoft cloud security concepts without starting from exam logistics. **free**
 
 **do this** - clear [flaws.cloud](http://flaws.cloud/) through at least **level 3** unaided.
 then run ScoutSuite or Prowler against a cloud account u own, remediate one real finding, and re-scan to prove it is gone.
@@ -358,29 +323,19 @@ then explain a public-S3 exposure: what setting exposed it, why IAM/resource pol
 
 ---
 
-## GRC Layer meow (~25-40h beside any lane, ~100h if GRC-first)
+## GRC layer meow (~25-40h beside any lane, ~100h if GRC-first)
 
 ### risk, SLE/ALE, and control crosswalks meow (~25-40h)
 
 **the idea** - GRC is the layer that asks: are we doing the right controls, can we prove they work, and does the cost match the risk?
 
-**certs later, learning first** - Security+ **SY0-701** Domain 5 and SC-900 compliance sit on top of this risk/evidence work.
-CISA/CISM are later-career signals because they require years of experience to hold.
-dont try to shortcut that with study time.
-for entry, the signal is framework fluency plus clean risk/evidence artifacts.
+**learn the craft first** - for entry, the signal is framework fluency plus clean risk/evidence artifacts.
+the skill here is requirement -> control -> evidence -> finding -> remediation.
 
 GRC is a **layer**, not a box off to the side.
 blue uses it when an incident becomes a risk and a control improvement.
 red uses it when a finding becomes a business-prioritized remediation.
 cloud uses it when a CSPM finding maps to CIS/NIST/ISO evidence.
-
-**checkpoint map** - after the artifacts, this is what each optional cert checks:
-
-| cert | domains / modules this block serves |
-|---|---|
-| **Security+ SY0-701** | Domain 5.0 Security Program Management and Oversight |
-| **SC-900** | compliance, privacy, risk, Microsoft Purview, and security/compliance concepts |
-| **CISA/CISM later** | the same audit/management topics, but experience-gated; not an entry checkpoint |
 
 **how/why it actually works** - the first mechanism is risk assessment.
 risk is **likelihood * impact** on an asset.
@@ -465,7 +420,7 @@ then explain the difference between a framework, a control catalog, and an ISMS,
   - [ ] Cloud: flaws.cloud level 1-3 + CSPM scan + one remediated finding + re-scan.
   - [ ] GRC-first: SP 800-30 risk register + 5 CSF Reference Tool mappings.
 - [ ] u added the GRC layer to your primary lane: risk, control, evidence, remediation.
-- [ ] u can explain the mechanism of your lane unaided, not just list tools.
+- [ ] u can explain the mechanism of your lane unaided, instead of only listing tools.
 - [ ] u have one portfolio-ready artifact for Goal 5:
   - [ ] Blue: alert timeline + Sigma/KQL/SPL detection writeup.
   - [ ] Red: pentest report with evidence and remediation.
@@ -474,7 +429,7 @@ then explain the difference between a framework, a control catalog, and an ISMS,
 
 **final can u explain it?** - unaided, tell this story:
 
-> "i chose this lane because the day-job loop fits me. here is the mechanism: raw signal or finding -> analysis -> decision -> artifact -> remediation. here is the lab i passed, here is the evidence that proves i understand why it works, and only after that, here is the cert checkpoint i might take if it helps."
+> "i chose this lane because the day-job loop fits me. here is the mechanism: raw signal or finding -> analysis -> decision -> artifact -> remediation. here is the lab i passed, here is the evidence that proves i understand why it works, and only after that, here is the optional checkpoint i might take if it helps."
 
 if u can do that, ur ready for [Portfolio & Job Hunt](05-job-hunt.md).
 if not, the part u stumble on tells u exactly which block to redo.
