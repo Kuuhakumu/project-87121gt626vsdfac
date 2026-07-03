@@ -7,6 +7,29 @@
 
 ---
 
+## why this field is still worth choosing meow
+
+quick comfort before the hard stuff:
+if ur worried AI makes every tech path feel shaky, cyber is one of the calmer bets rn.
+
+AI helps here. a lot.
+it can summarize logs, draft queries, review code, enrich alerts, and speed up boring first passes.
+
+but security is adversarial meow.
+someone is trying to abuse a real system, inside a real org, with messy logs, legal scope, business risk, weird configs, and humans making mistakes.
+AI can help with pieces of that.
+it still cannot own the judgment: what happened, what matters, what to fix first, what risk to explain.
+
+thats why this guide makes u learn theory **and** touch labs/CTFs/projects.
+u get the names and mechanisms from study sources, then u get practical experience from doing the thing.
+and quietly, without making the exam the whole personality, that same knowledge makes exam questions less scary later.
+
+so dw.
+the tools will change.
+the need to understand systems, evidence, attackers, and risk is not going away that easily.
+
+---
+
 ## the path at a glance
 
 ```mermaid

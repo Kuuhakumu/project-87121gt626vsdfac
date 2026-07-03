@@ -26,6 +26,8 @@
 
 heres the *why* tho: an attack is just someone abusing a system thats working exactly as designed. so if u dont know how the system works normally (how a TCP handshake goes, how the OS hands out memory, what a cookie is), u literally cant tell whats abuse and whats normal. thats why **fundamentals first** - if u already cleared the [Shared Foundations](../../start-here/foundations.md) (command line, networking, Git), youre golden. if not, go do that now and come back. this guide assumes u can already navigate a terminal, explain how DNS→TCP→TLS→HTTP works, and push to GitHub meow
 
+**tiny good news before u panic about AI:** cyber is one of the calmer tech bets rn. AI can help u move faster, but the job is still evidence, systems context, attacker behavior, business risk, and messy logs. u still need to understand the mechanism before u can decide what happened. thats why theory + labs + CTF is such a good combo here.
+
 **the market is real, but the bottom is crowded.** the usual path is *help desk / NOC -> SOC analyst*, not *badge dump -> SOC*. build something u can actually show: a GitHub with CTF writeups, a home lab, real troubleshooting stories. see [job market notes](05-job-hunt.md) for the honest version.
 
 **consistency beats intensity.** two focused hours a day beats a 14-hour weekend once a month. dw if 2h/day sounds like a lot - the guide is measured in study hours, not weeks, so it works at any pace. total to job-ready: **~500-700 hours**.
