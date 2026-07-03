@@ -28,14 +28,14 @@ each level shifts what u are accountable for: process, function, strategy, then 
 
 ## what each level adds
 
-### Team Lead -> IT Manager
+### team lead -> IT manager
 
 - [ ] own a function end to end: services, budget, risk posture
 - [ ] first real budget ownership
 - [ ] stop being best technician and start making the team effective
 - [ ] avoid the trap of staying too technical and doing the work instead of managing it
 
-### IT Manager -> Senior Manager / Service Delivery Manager
+### IT manager -> senior manager / service delivery manager
 
 - [ ] larger team or multiple teams
 - [ ] vendor governance at scale: QBRs, contracts, SLA enforcement
@@ -43,7 +43,7 @@ each level shifts what u are accountable for: process, function, strategy, then 
 - [ ] Major Incident Manager responsibility
 - [ ] financial fluency becomes the gating skill
 
-### Senior Manager -> IT Director / Head of IT
+### senior manager -> IT director / head of IT
 
 - [ ] whole IT function, not one slice
 - [ ] annual IT roadmap and leadership-table defense

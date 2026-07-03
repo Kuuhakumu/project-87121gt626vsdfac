@@ -1,4 +1,4 @@
-# Interview prep: IT Management & Strategy (2026) meow
+# interview prep: IT management & strategy (2026) meow
 
 > IT management interviews are behavioral-heavy and scenario-driven.
 > they probe judgment, communication, people leadership, and pressure handling, because thats the job.

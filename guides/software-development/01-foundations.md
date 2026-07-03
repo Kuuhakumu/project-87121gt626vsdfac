@@ -1,4 +1,4 @@
-# Goal 1: foundations - first language, CLI, Git meow
+# goal 1: foundations - first language, CLI, Git meow
 
 > **~140h total** - your pace, no deadline.
 > goal: real fluency in one language, comfort in the terminal, and Git as second nature.

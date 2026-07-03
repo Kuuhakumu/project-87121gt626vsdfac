@@ -1,4 +1,4 @@
-# Interview prep - Data, AI & Analytics meow
+# interview prep - data, AI & analytics meow
 
 > question bank + format guide.
 > every track screens for SQL, so drill that first.
@@ -49,7 +49,7 @@ practice on [DataLemur](https://datalemur.com), [StrataScratch](https://www.stra
 - [ ] dashboard design: start from decision, not available data
 - [ ] DAX or LOD calculation u built and why
 
-## Analytics Engineer questions
+## analytics engineer questions
 
 - [ ] dbt staging vs marts
 - [ ] what `ref()` does and why not hardcode table names
@@ -59,7 +59,7 @@ practice on [DataLemur](https://datalemur.com), [StrataScratch](https://www.stra
 - [ ] why run `dbt test` in CI
 - [ ] idempotency in transformations
 
-## Data Engineer questions
+## data engineer questions
 
 - [ ] design daily API ingestion into a warehouse
 - [ ] batch vs streaming
@@ -68,7 +68,7 @@ practice on [DataLemur](https://datalemur.com), [StrataScratch](https://www.stra
 - [ ] pipeline fails halfway - recovery plan
 - [ ] partitioning a large table
 
-## Data Science questions
+## data science questions
 
 - [ ] why accuracy lies on imbalanced data
 - [ ] precision vs recall

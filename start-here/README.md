@@ -1,4 +1,4 @@
-# Start here: never touched IT? read this first meow
+# start here: never touched IT? read this first meow
 
 > u dont need to know what field u want yet.
 > thats what this section is for.
@@ -26,9 +26,9 @@ its whether u can pass the foundation gates and explain what u learned without n
 
 | Step | File | Time | What u get |
 |---|---|---|---|
-| 1 | [What Each Field Actually Is](what-is-each-field.md) | 1-2 hrs | plain-language tour of all 8 paths: day-to-day, remote fit, math/coding, downsides |
-| 2 | [Career-Match Quiz](career-quiz.md) | 15 min | ~12 questions about interests and work style, pointing at 1-2 fields to inspect first |
-| 3 | [Shared Foundations](foundations.md) | 30-40 hrs | the base every IT worker needs: computers, internet, CLI, Git |
+| 1 | [what each field actually is](what-is-each-field.md) | 1-2 hrs | plain-language tour of all 8 paths: day-to-day, remote fit, math/coding, downsides |
+| 2 | [career-match quiz](career-quiz.md) | 15 min | ~12 questions about interests and work style, pointing at 1-2 fields to inspect first |
+| 3 | [shared foundations](foundations.md) | 30-40 hrs | the base every IT worker needs: computers, internet, CLI, Git |
 
 after step 3, ull have enough context and hands-on experience to pick a field with more confidence.
 then open that field guide and start **Goal 0**.
@@ -56,4 +56,4 @@ full breakdown: [what-is-each-field.md](what-is-each-field.md).
 
 ---
 
-*Next: [What Each Field Actually Is](what-is-each-field.md)*
+*Next: [what each field actually is](what-is-each-field.md)*

@@ -1,4 +1,4 @@
-# Goal 5: Portfolio, Resume & Job Hunt meow (~100h)
+# goal 5: portfolio, resume & job hunt meow (~100h)
 
 > **goal:** turn the work u already did into proof a hiring team can understand fast: pinned projects, clear writeups, a targeted resume, and a region-agnostic role-search system.
 >
@@ -119,7 +119,7 @@ the AD attack+detect lab is the T-shape showpiece because it proves u understand
 u do **not** need all 8 before applying.
 aim for Project 1 plus 3-5 more that match your lane.
 
-### Project 1 - Home AD lab: attack and detect it (~15-25h)
+### project 1 - home AD lab: attack and detect it (~15-25h)
 
 - [ ] **build the showpiece:** stand up a small Active Directory lab, run one realistic attack chain, then detect the same activity from the blue side.
 
@@ -138,7 +138,7 @@ then ship logs into [Wazuh Quickstart](https://documentation.wazuh.com/current/q
 
 **can u explain it?** ✅ - explain why AD makes this attack possible, what log source showed each step, and which detection would have caught it earlier. dw, this is the one that makes the rest of the portfolio feel real meow.
 
-### Project 2 - Home SOC with Wazuh + your own rules (~12-18h)
+### project 2 - home SOC with Wazuh + your own rules (~12-18h)
 
 - [ ] **build the blue baseline:** stand up Wazuh, ingest logs from 2-3 endpoints, and write detections that are yours.
 
@@ -156,7 +156,7 @@ add one short writeup about the false positive u tuned, bc noise reduction is th
 
 **can u explain it?** ✅ - take one alert from raw event -> parsed fields -> rule condition -> alert -> triage verdict -> tuning decision.
 
-### Project 3 - Publish 5 Sigma rules mapped to ATT&CK (~8-12h)
+### project 3 - publish 5 Sigma rules mapped to ATT&CK (~8-12h)
 
 - [ ] **build detection-engineering proof:** write portable Sigma rules and convert at least one into a SIEM query.
 
@@ -176,7 +176,7 @@ stretch: open a PR upstream if the rule is genuinely useful.
 
 **can u explain it?** ✅ - explain the exact behavior each rule detects, what log source it needs, and why the ATT&CK technique tag fits.
 
-### Project 4 - Documented HTB/TryHackMe writeup series (~2-4h each, ongoing)
+### project 4 - documented HTB/TryHackMe writeup series (~2-4h each, ongoing)
 
 - [ ] **build methodology proof:** write 5-10 permitted CTF/lab writeups that show how u think, not just commands.
 
@@ -193,7 +193,7 @@ model structure on [0xdf HTB writeups](https://0xdf.gitlab.io/), but write your 
 
 **can u explain it?** ✅ - pick one writeup and narrate the path from first scan to root/admin, then say how a defender could detect or prevent the same path.
 
-### Project 5 - Python or PowerShell security tool (~8-15h)
+### project 5 - Python or PowerShell security tool (~8-15h)
 
 - [ ] **build automation proof:** turn one annoying security task into a small CLI tool.
 
@@ -215,7 +215,7 @@ add a short writeup explaining the security problem, why automation helps, and w
 
 **can u explain it?** ✅ - explain the input, parsing logic, output, failure cases, and one security workflow it saves time in.
 
-### Project 6 - SOC investigation report from Splunk BOTS v3 (~10-15h)
+### project 6 - SOC investigation report from Splunk BOTS v3 (~10-15h)
 
 - [ ] **build analyst-job proof:** investigate a real dataset and write the kind of report someone could hand to a stakeholder.
 
@@ -231,7 +231,7 @@ use [TCM Security Sample Pentest Report](https://github.com/hmaverickadams/TCM-S
 
 **can u explain it?** ✅ - walk the incident from first suspicious event -> timeline -> impact -> containment/remediation.
 
-### Project 7 - Cloud IAM / misconfig audit writeup (~10-15h)
+### project 7 - cloud IAM / misconfig audit writeup (~10-15h)
 
 - [ ] **build cloud-security proof:** find and fix cloud misconfiguration in an account u own.
 
@@ -251,7 +251,7 @@ say that in the writeup.
 
 **can u explain it?** ✅ - explain the IAM/resource policy or configuration that caused the exposure, why the scanner caught it, and what exact change fixed it.
 
-### Project 8 - Mock risk assessment / framework gap analysis (~10-15h)
+### project 8 - mock risk assessment / framework gap analysis (~10-15h)
 
 - [ ] **build GRC proof:** turn a fictional org into a risk/control/evidence artifact.
 

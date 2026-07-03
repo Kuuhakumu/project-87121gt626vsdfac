@@ -1,4 +1,4 @@
-# Certifications - Software Development meow
+# certifications - software development meow
 
 > verified via official sources, June 2026.
 > read this first: for software development, certs barely matter.

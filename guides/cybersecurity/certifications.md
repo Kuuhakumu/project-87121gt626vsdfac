@@ -1,4 +1,4 @@
-# Certification Guide - Cybersecurity meow (July 2026)
+# certification guide - cybersecurity meow (July 2026)
 
 > Verified via official sources + repo research, July 2026.
 > prices are USD unless noted.

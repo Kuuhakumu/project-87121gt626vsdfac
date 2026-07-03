@@ -1,4 +1,4 @@
-# Goal 3: Infrastructure as Code and CI/CD meow
+# goal 3: infrastructure as code and CI/CD meow
 
 > **~120h total** - your pace, no deadline.
 > this is the heart of DevOps: stop clicking in consoles, start defining everything as code.
@@ -12,7 +12,7 @@
 - [ ] **CI/CD pipelines** (~50h)
 - [ ] **exit check** - modules, remote state, GitHub Actions, end-to-end pipeline
 
-## Infrastructure as Code - Terraform / OpenTofu (~70h)
+## infrastructure as code - Terraform / OpenTofu (~70h)
 
 IaC means your infrastructure is defined in version-controlled files, not hand-built by clicking around a console.
 its reproducible, reviewable, and the backbone of DevOps work.

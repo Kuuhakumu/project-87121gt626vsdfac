@@ -1,4 +1,4 @@
-# Resources - Data, AI & Analytics meow
+# resources - data, AI & analytics meow
 
 > curated, current, mostly free.
 > quality over quantity. u dont need 40 tabs open.

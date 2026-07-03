@@ -1,4 +1,4 @@
-# Interactive lab inventory: UI/UX Design (2026) meow
+# interactive lab inventory: UI/UX design (2026) meow
 
 > every lab was verified live in June 2026.
 > free-first. no "go figure it out."

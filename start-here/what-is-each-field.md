@@ -1,4 +1,4 @@
-# What each field actually is meow
+# what each field actually is meow
 
 > a plain-language tour of all 8 IT career paths.
 > no hype, no jargon wall.
@@ -8,7 +8,7 @@ for each field, look at: what u do all day, who u work with, remote fit, coding/
 
 ---
 
-## 1. Software Development & Engineering
+## 1. software development & engineering
 
 **what u do all day:** write code that builds apps, websites, and services.
 read other peoples code, fix bugs, add features, review work, sit in planning.
@@ -29,7 +29,7 @@ a lot of the job is reading code and figuring out why something breaks, not just
 
 ---
 
-## 2. Cybersecurity
+## 2. cybersecurity
 
 **what u do all day:** depends on side.
 blue team watches alerts, investigates suspicious activity, responds to incidents, hardens systems.
@@ -54,7 +54,7 @@ shift work is common in SOCs.
 
 ---
 
-## 3. Cloud & DevOps
+## 3. cloud & DevOps
 
 **what u do all day:** build and run infrastructure that apps live on: servers, networks, databases, deployment pipelines, mostly AWS/Azure/GCP.
 automate with Infrastructure as Code.
@@ -78,7 +78,7 @@ surface area is huge.
 
 ---
 
-## 4. Data, AI & Analytics
+## 4. data, AI & analytics
 
 **what u do all day:** depends on role.
 Data Analyst writes SQL, builds dashboards, answers business questions.
@@ -103,7 +103,7 @@ titles are inconsistent.
 
 ---
 
-## 5. IT Support & Networking
+## 5. IT support & networking
 
 **what u do all day:** keep people and systems working.
 help desk fixes user computer/account/software problems.
@@ -127,7 +127,7 @@ sometimes treated as a stepping stone, but thats also its strength.
 
 ---
 
-## 6. UI/UX Design
+## 6. UI/UX design
 
 **what u do all day:** research users, sketch and prototype interfaces in Figma, test designs, iterate after feedback, maintain design systems, write specs for engineers.
 less "make it pretty," more solve usability problems with evidence.
@@ -149,7 +149,7 @@ AI raises the visual floor, so juniors need research and strategy depth.
 
 ---
 
-## 7. Product Management
+## 7. product management
 
 **what u do all day:** decide what to build and why.
 talk to users, write PRDs, prioritize features, define success metrics, coordinate engineers and designers.
@@ -173,7 +173,7 @@ accountability without authority can be rough.
 
 ---
 
-## 8. IT Management & Strategy
+## 8. IT management & strategy
 
 **what u do all day:** lead IT teams, manage budgets and vendors, align technology with business goals, handle risk and compliance.
 less hands-on tech, more people, process, planning, and communication.
@@ -214,4 +214,4 @@ security, cloud, product, and management are often second jobs, so plan a steppi
 
 ---
 
-*Next: [Career-Match Quiz](career-quiz.md) or [Shared Foundations](foundations.md)*
+*Next: [career-match quiz](career-quiz.md) or [shared foundations](foundations.md)*

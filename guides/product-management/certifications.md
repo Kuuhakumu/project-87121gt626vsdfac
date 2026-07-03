@@ -1,4 +1,4 @@
-# Certification guide: Product Management (2026) meow
+# certification guide: product management (2026) meow
 
 > verified via official sources and community data, June 2026.
 > prices are in USD. confirm on the official site before booking, bc codes and prices shift.

@@ -1,4 +1,4 @@
-# Lab inventory - Cloud & DevOps meow
+# lab inventory - Cloud & DevOps meow
 
 > platform status was curl-checked on 2026-06-13.
 > free-first. u can do most of this roadmap without spending money.

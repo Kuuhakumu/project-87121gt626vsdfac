@@ -26,14 +26,14 @@ most people enter as Analyst or Analytics Engineer and branch after 1-2 years on
 
 ## what senior adds by track
 
-### Analyst -> Senior Analyst / Analytics Lead
+### analyst -> senior analyst / analytics lead
 
 - owning a metric/domain end to end
 - defining metrics and single source of truth
 - mentoring juniors and influencing decisions
 - experiment design, not just reading A/B tests
 
-### Analytics Engineer -> Senior AE
+### analytics engineer -> senior AE
 
 - data modeling at scale
 - semantic layers, large dbt projects, performance tuning
@@ -41,14 +41,14 @@ most people enter as Analyst or Analytics Engineer and branch after 1-2 years on
 - warehouse cost optimization
 - team conventions and model reviews
 
-### Data Engineer -> Senior DE -> Data Architect
+### data engineer -> senior DE -> data architect
 
 - streaming systems beyond batch
 - distributed systems depth
 - platform design: ingestion -> storage -> serving
 - reliability: freshness SLAs, lineage, observability, data contracts
 
-### Data Scientist -> Senior DS -> ML Engineer
+### data scientist -> senior DS -> ML engineer
 
 - productionizing models
 - deployment, monitoring, drift detection

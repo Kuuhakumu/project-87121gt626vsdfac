@@ -1,4 +1,4 @@
-# Software Development — Job Market & Interviews (2026)
+# Software Development - Job Market & Interviews (2026)
 
 > Research date: 2026-06-13. Curl-verified (WebSearch/WebFetch down). Confidence: ✅ verified (curl 200, data in page) · ⚠️ partial (page live, inferred) · ⛔ unverified (blocked/training).
 > POLICY: This guide shows **no salary figures** and **no job-board lists** (too region-local). Not collected.
@@ -11,7 +11,7 @@
 
 **Nice-to-have:** CI/CD (GitHub Actions) · Docker depth · GraphQL · Redis · system design (mid+) · open-source contributions · WCAG/accessibility · Kubernetes (rarely expected at junior).
 
-## Interview formats (entry level — ⚠️ rough prevalence)
+## Interview formats (entry level - ⚠️ rough prevalence)
 | Format | Prevalence | Notes |
 |---|---|---|
 | Behavioral / HR screen | ~90%+ | Nearly universal, usually first |
@@ -23,11 +23,11 @@
 
 **DSA actually tested at entry:** arrays/strings (two-pointer, sliding window), hash maps (very common), stacks/queues, linked lists (reversal, cycle), binary trees (traversals, BFS/DFS), binary search, simple recursion/memoization, simple DP (Fibonacci, coin change, climbing stairs). Lighter: graphs, heaps, tries, advanced DP. Interview language: Python or Java recommended. (Source: github.com/jwasham/coding-interview-university ✅)
 
-## Entry-level job titles (titles only — no boards)
+## Entry-level job titles (titles only - no boards)
 Software Engineer I / SWE-I · Junior Software Engineer · Junior Developer · Associate Software Engineer · Software Developer I · Entry-Level SWE · Graduate Software Engineer · SWE Intern (pre-entry) · Junior Frontend/Backend/Full-Stack Developer · Junior Web Developer · Application Developer · Software Engineer, New Grad.
 
 ## The degree question (honest, 2026)
-- CS degree **not required** but **helps a lot at large companies** (resume screening at hyperscalers). roadmap.sh backend FAQ: degree "not always necessary" — networking, portfolio, internships matter. ✅
+- CS degree **not required** but **helps a lot at large companies** (resume screening at hyperscalers). roadmap.sh backend FAQ: degree "not always necessary" - networking, portfolio, internships matter. ✅
 - Portfolio/bootcamp/self-taught **viable**, mainly at startups/SMBs, via strong portfolio + referrals. ✅ (Coding Interview University author hired at Amazon self-taught.)
 - AI era wrinkle: GitHub flooded with low-quality AI repos → demonstrated *understanding* (explain choices, debug live) matters more than a polished README. ⚠️
 - Bootcamp note: pure-frontend market more saturated; backend/systems depth → better outcomes. ⚠️
@@ -41,6 +41,6 @@ Software Engineer I / SWE-I · Junior Software Engineer · Junior Developer · A
 ## Hiring reality 2026
 - Harder for entry-level than 2020-22 (layoffs returned seniors to market, hiring freezes, AI raising per-dev output, bootcamp grad surge). ⚠️
 - AI/LLM impact (most significant shift): raises the floor (fewer juniors for same output) AND creates new expectation (use AI well, review its output, know when it's wrong). SO survey added an AI-tools section. ✅
-- **What gets people hired:** (1) portfolio you can genuinely explain — not a to-do app; (2) passing the technical screen; (3) referrals (highest conversion); (4) internship→FT pipeline; (5) demonstrated ability to learn; (6) communication (STAR); (7) targeting mid-size/startups/enterprise/non-tech eng orgs, not only big tech. ✅⚠️
+- **What gets people hired:** (1) portfolio you can genuinely explain - not a to-do app; (2) passing the technical screen; (3) referrals (highest conversion); (4) internship→FT pipeline; (5) demonstrated ability to learn; (6) communication (STAR); (7) targeting mid-size/startups/enterprise/non-tech eng orgs, not only big tech. ✅⚠️
 
 Sources: survey.stackoverflow.co/2024 & /2025, roadmap.sh (frontend/backend/full-stack/DSA/mobile raw MD), github.com/jwasham/coding-interview-university, GitHub Octoverse 2024, TIOBE Jun 2026. BLS blocked.

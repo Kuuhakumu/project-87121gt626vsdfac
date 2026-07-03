@@ -1,4 +1,4 @@
-# Certification guide - Data, AI & Analytics meow
+# certification guide - data, AI & analytics meow
 
 > verified via official sources, June 2026.
 > prices in USD; confirm on the official site before booking bc codes and prices shift.

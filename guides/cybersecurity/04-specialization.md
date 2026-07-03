@@ -1,4 +1,4 @@
-# Goal 4: Specialization Paths meow (~160h)
+# goal 4: specialization paths meow (~160h)
 
 > **goal:** pick one primary security lane, build the signature skill for that lane, and add the GRC layer that keeps the work tied to risk.
 >
@@ -191,7 +191,7 @@ if u cant say why it is a true positive or false positive, the block isnt done y
 
 ---
 
-## Red / Pentest lane meow (~140-160h if primary)
+## red / pentest lane meow (~140-160h if primary)
 
 ### the attack chain and the report meow (~140-160h)
 
@@ -275,7 +275,7 @@ then explain why a reverse shell beats a bind shell through NAT, and explain Ker
 
 ---
 
-## Cloud Security lane meow (~120-140h if primary)
+## cloud security lane meow (~120-140h if primary)
 
 ### shared responsibility and CSPM meow (~120-140h)
 

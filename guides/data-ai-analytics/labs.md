@@ -1,4 +1,4 @@
-# Interactive lab inventory - Data, AI & Analytics meow
+# interactive lab inventory - data, AI & analytics meow
 
 > labs were curl-verified live on 2026-06-13.
 > free-first. no "go figure it out."
@@ -73,7 +73,7 @@ Power BI Desktop is free on Windows. Tableau Public is free for portfolio dashbo
 | [Start Data Engineering](https://www.startdataengineering.com) | Blog | pipeline walkthroughs | Free | live |
 | [KillerCoda](https://killercoda.com) | Web | Docker/Spark scenarios | Free | live |
 
-## ML / Data Science
+## ML / data science
 
 | Lab | Platform | What u do | Cost | Status |
 |---|---|---|---|---|

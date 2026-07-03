@@ -1,4 +1,4 @@
-# Software Development Career Roadmap: zero to first job meow
+# software development career roadmap: zero to first job meow
 
 > hour-based, research-backed (June 2026), region-agnostic.
 > every topic points at a specific free/freemium lab or platform when the old guide had one.

@@ -1,4 +1,4 @@
-# Beyond entry-level - Cloud & DevOps meow
+# beyond entry-level - Cloud & DevOps meow
 
 > youre hired into a cloud/ops role.
 > this is the next-few-years map.
@@ -29,28 +29,28 @@ the throughline: u shift from **running things** to **building the systems other
 
 ## major tracks
 
-### Site Reliability Engineering
+### site reliability engineering
 
 reliability as engineering: SLOs/SLIs, error budgets, incident command, postmortems, capacity planning, and code to eliminate toil.
 
 - [ ] **learn:** Google SRE books, OpenTelemetry, Prometheus, Grafana, chaos engineering
 - [ ] **signal:** define an SLO, run an incident, write a blameless postmortem
 
-### Platform Engineering
+### platform engineering
 
 build the internal developer platform so product teams can self-serve. this is the shift from "DevOps does everything" to "we build paved roads."
 
 - [ ] **learn:** Backstage, golden-path templates, self-service provisioning, developer experience
 - [ ] **signal:** developers ship without filing u a ticket
 
-### Cloud Architecture
+### cloud architecture
 
 design the whole system: multi-account strategy, networking, cost, security, well-architected trade-offs.
 
 - [ ] **learn:** professional-level cloud certs, well-architected frameworks, FinOps
 - [ ] **signal:** justify cost, reliability, and security trade-offs to leadership
 
-### DevSecOps / Cloud Security
+### DevSecOps / cloud security
 
 shift security left: scanning in pipelines, supply-chain security, secrets, policy-as-code, runtime security.
 

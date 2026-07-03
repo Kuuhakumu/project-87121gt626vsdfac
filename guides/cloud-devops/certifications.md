@@ -1,4 +1,4 @@
-# Certification guide - Cloud & DevOps meow
+# certification guide - Cloud & DevOps meow
 
 > verified via official sources, June 2026.
 > prices in USD; confirm on the official site before booking bc codes and prices shift.

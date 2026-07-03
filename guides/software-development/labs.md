@@ -1,4 +1,4 @@
-# Lab and platform inventory - Software Development meow
+# lab and platform inventory - software development meow
 
 > every platform here was verified live via curl in June 2026.
 > free-first; paid items have a free alternative listed where the old guide had one.

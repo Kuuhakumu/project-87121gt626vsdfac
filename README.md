@@ -1,10 +1,10 @@
-# IT Career Guides: zero to first job meow
+# IT career guides: zero to first job meow
 
 > soft, hour-based learning paths for complete beginners.
 > start with shared foundations, then pick a field.
 > no job-board lists, no salary tables, no vague "just practice" advice.
 
-[License: CC BY-SA 4.0](LICENSE) | [Contributing](CONTRIBUTING.md)
+[License: CC BY-SA 4.0](LICENSE) | [contributing](CONTRIBUTING.md)
 
 ---
 
@@ -28,8 +28,8 @@ the real progress signal is always the gate inside the guide: a measured task pa
 
 ```mermaid
 graph TD
-    A[Start Here<br/>field tour + quiz] --> B[Shared Foundations<br/>computers - CLI - internet - Git<br/>~40h]
-    B --> C[Pick one guide]
+    A[start here<br/>field tour + quiz] --> B[shared foundations<br/>computers - CLI - internet - Git<br/>~40h]
+    B --> C[pick one guide]
     C --> D[Cybersecurity<br/>todo-tree + mechanism-depth rewrite<br/>~500-700h]
     C --> E[Other career guides<br/>todo-tree + voice conversion<br/>~300-750h]
     D --> F[Portfolio + job hunt proof]

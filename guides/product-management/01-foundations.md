@@ -1,4 +1,4 @@
-# Goal 1: foundations - role, lifecycle, Agile, writing meow
+# goal 1: foundations - role, lifecycle, Agile, writing meow
 
 > **~120h total** - your pace, no deadline.
 > goal: understand what PM actually is, how products get built, and why writing is the job.

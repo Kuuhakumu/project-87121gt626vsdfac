@@ -1,4 +1,4 @@
-# Certification guide: IT Management & Strategy (2026) meow
+# certification guide: IT management & strategy (2026) meow
 
 > verified via official cert-body pages, June 2026.
 > prices are in USD where available. confirm on official sites before booking, bc codes and prices shift.

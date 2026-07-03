@@ -1,4 +1,4 @@
-# Interview prep: UI/UX Design meow
+# interview prep: UI/UX design meow
 
 > design interviews almost always include a portfolio walkthrough.
 > nail that first, then drill app critique, process questions, take-homes, and behavioral prompts.

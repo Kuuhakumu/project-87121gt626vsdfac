@@ -33,7 +33,7 @@ hiring managers want a clear lane.
 pick the row whose question u want to own.
 read all five once, then commit your hours to one.
 
-## Track 1: IT Service Management
+## track 1: IT service management
 
 **u will like this if:** process, predictability, and continual improvement feel satisfying.
 its turning chaos into a reliable service.
@@ -61,7 +61,7 @@ u own service-desk health, major incidents, vendor SLAs, continual-improvement b
 
 **practice gate:** u can walk through the ITIL 4 service value chain on a real service and explain how configuration data enables safe change management.
 
-## Track 2: IT Project & Program Management
+## track 2: IT project & program management
 
 **u will like this if:** deadlines, defined outcomes, and shipping complex change give u energy.
 
@@ -89,7 +89,7 @@ u run steering committees and connect IT delivery to business sponsors.
 
 **practice gate:** u can choose waterfall vs Agile for a project and explain how earned value reveals trouble before deadline slip.
 
-## Track 3: IT Governance & Strategy
+## track 3: IT governance & strategy
 
 **u will like this if:** big-picture questions pull u in: IT spend, business goals, enterprise risk, technology capability.
 
@@ -117,7 +117,7 @@ u report risk/value to leadership, own multi-year roadmap, and make build-vs-buy
 
 **practice gate:** u can explain COBIT governance vs management and sketch how architecture connects a business goal to IT capabilities.
 
-## Track 4: People & Engineering Management
+## track 4: people & engineering management
 
 **u will like this if:** growing people and building a healthy team feels better than any individual technical win.
 
@@ -150,7 +150,7 @@ u write little code or config, and thats the point.
 
 **practice gate:** u can describe the IC->manager shift and explain how u would structure a 1:1 and fair hiring loop.
 
-## Track 5: IT Operations
+## track 5: IT operations
 
 **u will like this if:** keeping systems reliable, fast, and secure feels satisfying.
 

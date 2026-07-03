@@ -1,4 +1,4 @@
-# Cybersecurity Lab & Platform Inventory — 2026
+# Cybersecurity Lab & Platform Inventory - 2026
 
 > Research date: 2026-06-13. Verified via `curl` (WebFetch/WebSearch were down). Status key: ✅ live (HTTP 200) · ⚠️ alive but bot-blocked (429/403) · ❌ dead/moved · 🔒 free tier removed.
 
@@ -6,7 +6,7 @@
 
 | Platform | Best For | Cost | Status |
 |---|---|---|---|
-| [PortSwigger Web Security Academy](https://portswigger.net/web-security) | Web app security (SQLi, XSS, SSRF, IDOR) — 250+ labs | **100% Free** | ✅ |
+| [PortSwigger Web Security Academy](https://portswigger.net/web-security) | Web app security (SQLi, XSS, SSRF, IDOR) - 250+ labs | **100% Free** | ✅ |
 | [HTB Academy](https://academy.hackthebox.com/) | Structured modules, live targets, offensive + defensive | Freemium (many free modules) | ✅ |
 | [CyberDefenders](https://cyberdefenders.org/) | DFIR, packet/memory forensics, blue-team scenarios | Mostly Free | ✅ |
 | [LetsDefend](https://app.letsdefend.io/) | SOC alert-queue simulation, phishing, log analysis | Freemium | ✅ |
@@ -34,7 +34,7 @@
 | SIEM (Splunk) | Splunk Fundamentals 1 + BOTS | Splunk / CyberDefenders | Free |
 | SIEM (Sentinel/KQL) | Kusto Detective Agency + KC7 | Microsoft / KC7 | Free |
 | SIEM (home lab) | Wazuh 4.9.2 self-host + THM Wazuh room | wazuh.com / TryHackMe | Free |
-| Log analysis | KC7 modules 1–5 | KC7 | Free |
+| Log analysis | KC7 modules 1-5 | KC7 | Free |
 | Phishing / SOC triage | SOC Analyst path | LetsDefend | Freemium |
 | DFIR | 100+ blue-team labs | CyberDefenders | Free |
 | Vuln scanning | Info Gathering / Vuln Assessment | HTB Academy | Freemium |
@@ -51,11 +51,11 @@
 |---|---|---|
 | docs.wazuh.com interactive start | ❌ DNS fail | wazuh.com + THM Wazuh room |
 | SC-200 direct path URLs | ❌ 404 (restructured) | MS Learn browse + KC7/Kusto |
-| Cybrary free labs | 🔒 gutted ~2022–23 | LetsDefend, CyberDefenders, BTLO |
+| Cybrary free labs | 🔒 gutted ~2022-23 | LetsDefend, CyberDefenders, BTLO |
 | SANS CyberAces | ❌ discontinued ~2022 | THM Pre-Security, HTB free modules |
 | RangeForce Community | 🔒 degraded | LetsDefend, KC7, CyberDefenders |
 
 ## Notes
 - TryHackMe & HTB Academy module deep-links redirect to login; link to room/catalog roots. THM `tryhackme.com/room/<slug>` URLs are valid.
-- Don't hardcode Microsoft SC-200 path URLs — use the browse page with a `sentinel` filter (stable).
-- PortSwigger is the single best free web-security resource — prioritize it.
+- Don't hardcode Microsoft SC-200 path URLs - use the browse page with a `sentinel` filter (stable).
+- PortSwigger is the single best free web-security resource - prioritize it.

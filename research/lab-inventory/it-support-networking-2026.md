@@ -1,4 +1,4 @@
-# IT Support & Networking — Lab Inventory (2026)
+# IT Support & Networking - Lab Inventory (2026)
 
 > curl-verified 2026-06-13. ✅ live (200) · ⚠️ likely live (403/429 curl-blocked) · ❌ dead.
 
@@ -10,7 +10,7 @@
 | Cisco Packet Tracer | NetAcad | netacad.com/courses/packet-tracer | Build & simulate networks (CCNA-grade) | Free (w/ account) | ✅ |
 | GNS3 | GNS3 | gns3.com | Emulate real network device images | Free | ✅ |
 | Professor Messer N+ | Professor Messer | professormesser.com | Full free Network+ video course | Free | ✅ |
-| Subnetting practice | subnetipv4.com | — | Drill subnet math | Free | ✅ |
+| Subnetting practice | subnetipv4.com | - | Drill subnet math | Free | ✅ |
 
 ### Help desk / OS troubleshooting / home lab
 | Lab | Platform | URL | What you do | Free | Status |
@@ -24,7 +24,7 @@
 | Lab | Platform | URL | What you do | Free | Status |
 |---|---|---|---|---|---|
 | M365 Developer Program | Microsoft | developer.microsoft.com/microsoft-365/dev-program | Free M365 dev tenant (Intune, Entra ID) | Free | ✅ |
-| AD in VMs | Self-host (VirtualBox) | — | Build Server 2022 DC + Win 11 client | Free | ✅ |
+| AD in VMs | Self-host (VirtualBox) | - | Build Server 2022 DC + Win 11 client | Free | ✅ |
 | Azure Fundamentals path | MS Learn | learn.microsoft.com/training | Free AZ-900 learning path + sandbox | Free | ✅ |
 
 ### Cert prep / practice exams

@@ -49,7 +49,7 @@ prep like a top-company engineering process: intensively, with broad application
 
 ## 2. internal transfer
 
-this is the most common first-PM path overall.
+this is the most common first-PM path.
 engineers, designers, analysts, and customer success people become PMs from inside the company.
 
 u already have:

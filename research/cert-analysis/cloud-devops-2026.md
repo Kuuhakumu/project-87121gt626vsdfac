@@ -1,4 +1,4 @@
-# Cloud & DevOps Certification Analysis — 2026
+# Cloud & DevOps Certification Analysis - 2026
 
 > Research date: 2026-06-13. Verified via `curl` against official sources. Confidence: ✅ VERIFIED (curl 200, data in page) · ⚠️ PARTIAL (page live, data JS-rendered) · ⛔ UNVERIFIED (blocked).
 
@@ -24,9 +24,9 @@
 | CNCF CKS | CKS | $445 | performance, **CKA req** | 67% | 2 yr | ✅ |
 | CompTIA Linux+ | XK0-006 | ~$370 | MCQ+PBQ | 720/900 | 3 yr CE | ⚠️ |
 | CompTIA Cloud+ | CV0-004 | ~$370 | MCQ+PBQ | 750/900 | 3 yr CE | ⚠️ |
-| Docker DCA | — | — | **DISCONTINUED** | — | — | ✅ (absent) |
+| Docker DCA | - | - | **DISCONTINUED** | - | - | ✅ (absent) |
 
-Notes: AWS scaled 100-1000. CKA/CKAD/CKS are live-cluster performance exams (kubectl in browser) — high signal, can't fake. CKA+CKAD bundle saves ~$100. Azure uses annual FREE online renewal. Terraform 003→004 (003 retired; 003 URL now redirects to 004). OpenTofu fork has NO cert yet.
+Notes: AWS scaled 100-1000. CKA/CKAD/CKS are live-cluster performance exams (kubectl in browser) - high signal, can't fake. CKA+CKAD bundle saves ~$100. Azure uses annual FREE online renewal. Terraform 003→004 (003 retired; 003 URL now redirects to 004). OpenTofu fork has NO cert yet.
 
 ## Employer-signal ranking (entry-level cloud/devops)
 
@@ -35,7 +35,7 @@ Notes: AWS scaled 100-1000. CKA/CKAD/CKS are live-cluster performance exams (kub
 🟡 **Nice-to-have:** AWS DVA-C02 · GCP CDL · KCNA (stepping stone) · CompTIA Linux+/Cloud+
 ⛔ **Skip (entry):** AWS SOA (overlaps SAA) · AWS DOP (pro tier, premature) · AZ-204 (retiring) · AZ-400 (flagged) · CKS (needs CKA, niche) · Docker DCA (dead)
 
-> Cloud/DevOps is far more cert-friendly than pure SWE — certs are a genuine resume filter here.
+> Cloud/DevOps is far more cert-friendly than pure SWE - certs are a genuine resume filter here.
 
 ## Recommended paths
 
@@ -57,4 +57,4 @@ Notes: AWS scaled 100-1000. CKA/CKAD/CKS are live-cluster performance exams (kub
 | no K8s fundamentals cert | KCNA added (~2022) |
 | Terraform = only IaC | OpenTofu fork exists (no cert yet) |
 
-Sources: aws.amazon.com/certification/*, learn.microsoft.com/credentials/*, cloud.google.com/learn/certification/*, developer.hashicorp.com/certifications, training.linuxfoundation.org/certification/*, comptia.org — curl-verified 2026-06-13. AZ-204 retirement + Docker DCA absence confirmed.
+Sources: aws.amazon.com/certification/*, learn.microsoft.com/credentials/*, cloud.google.com/learn/certification/*, developer.hashicorp.com/certifications, training.linuxfoundation.org/certification/*, comptia.org - curl-verified 2026-06-13. AZ-204 retirement + Docker DCA absence confirmed.

@@ -1,4 +1,4 @@
-# Cloud & DevOps Technology Stack — 2026 Research Report
+# Cloud & DevOps Technology Stack - 2026 Research Report
 *For: Zero-to-First-Job Career Guide | Date: June 2026*
 
 ---
@@ -6,23 +6,23 @@
 ## How to Read This Document
 
 Every factual claim carries a confidence tag:
-- ✅ **VERIFIED** — confirmed via direct curl of authoritative source (GitHub Releases API, official project site)
-- ⚠️ **PARTIAL** — inferred from adjacent verified data or reliable secondary source
-- ⛔ **UNVERIFIED** — could not be confirmed via curl (Cloudflare-blocked or no public API)
+- ✅ **VERIFIED** - confirmed via direct curl of authoritative source (GitHub Releases API, official project site)
+- ⚠️ **PARTIAL** - inferred from adjacent verified data or reliable secondary source
+- ⛔ **UNVERIFIED** - could not be confirmed via curl (Cloudflare-blocked or no public API)
 
 Sources cited as `[GitHub API: org/repo]` were queried via `https://api.github.com/repos/{org}/{repo}/releases/latest`.
 
 ---
 
-## 1. Cloud Providers — Market Position & Beginner Pick
+## 1. Cloud Providers - Market Position & Beginner Pick
 
 ### Current Standing (2026)
 
 The three-tier cloud hierarchy has been stable for years and remains intact in 2026:
 
-- **AWS** — market leader, widest service catalog (~200+ services), most job postings reference AWS skills ⚠️ PARTIAL (market share data not curl-verifiable)
-- **Azure** — #2, dominant in enterprises with Microsoft/Office 365 footprints, strongest in hybrid/on-premises scenarios ⚠️ PARTIAL
-- **GCP** — #3, strongest in data engineering, ML/AI workloads (Vertex AI), Kubernetes (GCP invented it) ⚠️ PARTIAL
+- **AWS** - market leader, widest service catalog (~200+ services), most job postings reference AWS skills ⚠️ PARTIAL (market share data not curl-verifiable)
+- **Azure** - #2, dominant in enterprises with Microsoft/Office 365 footprints, strongest in hybrid/on-premises scenarios ⚠️ PARTIAL
+- **GCP** - #3, strongest in data engineering, ML/AI workloads (Vertex AI), Kubernetes (GCP invented it) ⚠️ PARTIAL
 
 The AWS/Azure/GCP tier gap below them (Oracle Cloud, IBM Cloud, Alibaba Cloud) remains large for general DevOps hiring.
 
@@ -41,10 +41,10 @@ Azure is the right second pick for anyone targeting enterprise/Microsoft environ
 - Storage: S3, EBS
 - Networking: VPC, Route 53, CloudFront
 - Database: RDS, DynamoDB
-- IAM (identity & access — foundational for everything)
+- IAM (identity & access - foundational for everything)
 - EKS (Elastic Kubernetes Service) for containers
 
-⚠️ PARTIAL — CNCF survey data at `cncf.io` and Stack Overflow Developer Survey at `survey.stackoverflow.co` returned Cloudflare 403; market position based on consistent industry consensus.
+⚠️ PARTIAL - CNCF survey data at `cncf.io` and Stack Overflow Developer Survey at `survey.stackoverflow.co` returned Cloudflare 403; market position based on consistent industry consensus.
 
 ---
 
@@ -70,11 +70,11 @@ In August 2023, HashiCorp changed Terraform's license from MPL 2.0 to BSL (Busin
 ### The Teaching Decision: OpenTofu vs Terraform
 
 For a beginner guide, **teach OpenTofu as the default, with a clear note that the HCL syntax is ~99% identical to Terraform**. Reasoning:
-- OpenTofu is MIT/MPL-licensed — no commercial restrictions, safe to use in any context
+- OpenTofu is MIT/MPL-licensed - no commercial restrictions, safe to use in any context
 - HCL syntax is nearly identical; skills transfer directly
 - Enterprise teams are actively migrating (Fidelity being a public example)
 - OpenTofu 1.8+ added features Terraform hasn't shipped (ephemeral values, write-only attributes)
-- However: Terraform still has larger market install base in established enterprises — acknowledge this
+- However: Terraform still has larger market install base in established enterprises - acknowledge this
 
 **Practical approach for guide:** Teach OpenTofu syntax. Show Terraform equivalence. Note BSL implications.
 
@@ -82,7 +82,7 @@ For a beginner guide, **teach OpenTofu as the default, with a clear note that th
 
 | Tool | Status 2026 | Teach? |
 |------|-------------|--------|
-| **Pulumi** | Strong growth — uses real languages (Python, TypeScript, Go) instead of HCL | Teach as "IaC for developers" differentiator |
+| **Pulumi** | Strong growth - uses real languages (Python, TypeScript, Go) instead of HCL | Teach as "IaC for developers" differentiator |
 | **CloudFormation** | AWS-native, JSON/YAML, still widely used in AWS-only shops | Mention; don't lead with it |
 | **Bicep** | Azure-native ARM template replacement, Azure-specific | Teach only in Azure track |
 | **Ansible** | Config management + ad-hoc provisioning, not declarative IaC | Still relevant for server config; covers a different use case |
@@ -96,7 +96,7 @@ For a beginner guide, **teach OpenTofu as the default, with a clear note that th
 
 ### Docker Engine
 
-✅ VERIFIED — Latest stable: **v29.5.3** (released 2026-06-03)
+✅ VERIFIED - Latest stable: **v29.5.3** (released 2026-06-03)
 - Moby project (Docker Engine open source) still actively maintained
 - Notable: Docker 29.x ships with containerd v2.2.4 as the default image store backend
 - Source: `[GitHub API: moby/moby]`
@@ -105,10 +105,10 @@ For a beginner guide, **teach OpenTofu as the default, with a clear note that th
 
 ### containerd
 
-✅ VERIFIED — Latest stable: **v2.3.1** (released 2026-05-20)
+✅ VERIFIED - Latest stable: **v2.3.1** (released 2026-05-20)
 - containerd is the CNCF-graduated low-level container runtime that Docker Engine wraps
 - Kubernetes uses containerd directly (not Docker) since the dockershim removal in K8s 1.24 (2022)
-- Beginners don't interact with containerd directly — it's infrastructure knowledge
+- Beginners don't interact with containerd directly - it's infrastructure knowledge
 - Source: `[GitHub API: containerd/containerd]`
 
 **Teaching note:** Explain the layering (OCI spec → containerd → Docker Engine) conceptually, but don't make students operate containerd directly.
@@ -123,12 +123,12 @@ For a beginner guide, **teach OpenTofu as the default, with a clear note that th
 
 ### Kubernetes
 
-✅ VERIFIED — via `kubernetes.io/releases` + `[GitHub API: kubernetes/kubernetes]`
+✅ VERIFIED - via `kubernetes.io/releases` + `[GitHub API: kubernetes/kubernetes]`
 
 **Current supported releases (as of June 2026):**
 | Version | Latest Patch | EOL |
 |---------|-------------|-----|
-| **1.36** | 1.36.2 (2026-05-13) — **current latest** | 2027-06-28 |
+| **1.36** | 1.36.2 (2026-05-13) - **current latest** | 2027-06-28 |
 | 1.35 | 1.35.5 (2026-05-12) | 2027-02-28 |
 | 1.34 | 1.34.8 (2026-05-12) | 2026-10-27 |
 | 1.33 | 1.33.12 (2026-05-12) | 2026-06-28 |
@@ -139,45 +139,45 @@ K8s 1.37 release is in planning phase as of June 2026.
 - Core objects: Pod, Deployment, Service, ConfigMap, Secret, Namespace, Ingress
 - `kubectl` commands for the 20 scenarios that matter
 - YAML manifest writing and Helm chart consumption
-- Do **not** teach cluster installation from scratch (kubeadm) as a primary skill — use managed services (EKS/GKE/AKS) or local alternatives
+- Do **not** teach cluster installation from scratch (kubeadm) as a primary skill - use managed services (EKS/GKE/AKS) or local alternatives
 
 **Local Kubernetes for learning:**
-- **kind** (Kubernetes IN Docker) — preferred for CI and fast iteration ⚠️ PARTIAL
-- **k3s** (Rancher Labs, lightweight K8s) — good for Raspberry Pi / resource-constrained environments ⚠️ PARTIAL
-- **minikube** — original local K8s tool, still works, somewhat heavier ⚠️ PARTIAL
-- **Docker Desktop** includes a K8s option — easiest for absolute beginners
+- **kind** (Kubernetes IN Docker) - preferred for CI and fast iteration ⚠️ PARTIAL
+- **k3s** (Rancher Labs, lightweight K8s) - good for Raspberry Pi / resource-constrained environments ⚠️ PARTIAL
+- **minikube** - original local K8s tool, still works, somewhat heavier ⚠️ PARTIAL
+- **Docker Desktop** includes a K8s option - easiest for absolute beginners
 
 Teach **kind** as the default local environment for course exercises.
 
 ### Helm
 
-✅ VERIFIED — Latest stable: **v4.2.1** (released 2026-06-12)
+✅ VERIFIED - Latest stable: **v4.2.1** (released 2026-06-12)
 - Helm 4.x is the current major version (breaking changes from Helm 3 are minimal for basic usage)
 - Source: `[GitHub API: helm/helm]`
-- Helm is the de-facto Kubernetes package manager — teach chart consumption first, chart authoring second
+- Helm is the de-facto Kubernetes package manager - teach chart consumption first, chart authoring second
 
 ---
 
 ## 4. CI/CD
 
-### Current Landscape
+### Current tool state
 
 **GitHub Actions** has become the dominant CI/CD platform for new projects and the default reference implementation for beginner education. ⚠️ PARTIAL (no curl-verifiable market share data, but consistent with community consensus)
 
 **Teaching priority order:**
 
-1. **GitHub Actions** — Teach first. YAML-based, free for public repos, massive marketplace of reusable actions, tightly integrated with the largest code hosting platform. Every beginner already has a GitHub account.
+1. **GitHub Actions** - Teach first. YAML-based, free for public repos, massive marketplace of reusable actions, tightly integrated with the largest code hosting platform. Every beginner already has a GitHub account.
 
-2. **GitLab CI** — Teach as second. Very similar YAML DSL, dominant in enterprise self-hosted Git deployments. Good to cover because many enterprise jobs use GitLab.
+2. **GitLab CI** - Teach as second. Very similar YAML DSL, dominant in enterprise self-hosted Git deployments. Good to cover because many enterprise jobs use GitLab.
 
-3. **ArgoCD** (GitOps) — Teach as a distinct paradigm shift (pull-based vs push-based). See section 6.
+3. **ArgoCD** (GitOps) - Teach as a distinct paradigm shift (pull-based vs push-based). See section 6.
 
-4. **Jenkins** — Mention as legacy context only. Huge installed base in enterprises, but it's maintenance burden, not a growth skill. Don't lead a 2026 curriculum with Jenkins.
+4. **Jenkins** - Mention as legacy context only. Huge installed base in enterprises, but it's maintenance burden, not a growth skill. Don't lead a 2026 curriculum with Jenkins.
 
-5. **CircleCI / TeamCity** — Brief mention. Niche market share; skills transfer from GitHub Actions.
+5. **CircleCI / TeamCity** - Brief mention. Niche market share; skills transfer from GitHub Actions.
 
-**GitOps tools — Flux:**
-✅ VERIFIED — Flux v2 latest: **v2.8.8** (released 2026-05-20)
+**GitOps tools - Flux:**
+✅ VERIFIED - Flux v2 latest: **v2.8.8** (released 2026-05-20)
 - Source: `[GitHub API: fluxcd/flux2]`
 - Flux and ArgoCD are the two dominant GitOps controllers; both are CNCF graduated projects
 
@@ -187,21 +187,21 @@ Teach **kind** as the default local environment for course exercises.
 
 ### Prometheus
 
-✅ VERIFIED — Latest stable: **v3.12.0** (released 2026-05-28)
+✅ VERIFIED - Latest stable: **v3.12.0** (released 2026-05-28)
 - Prometheus 3.x is the current major version (3.0 released late 2024 with breaking changes from 2.x)
 - Source: `[GitHub API: prometheus/prometheus]`
 - Prometheus is the de-facto metrics standard in Kubernetes environments; teach it as the baseline
 
 ### Grafana
 
-✅ VERIFIED — Latest stable: **v13.0.2** (released 2026-06-09)
+✅ VERIFIED - Latest stable: **v13.0.2** (released 2026-06-09)
 - Grafana 13.x is the current major version
 - Grafana Labs is a CNCF member; the Grafana stack (Loki, Tempo, Mimir, Pyroscope) confirmed in CNCF landscape ✅ VERIFIED via `[GitHub API: cncf/landscape]` raw YAML
 - Source: `[GitHub API: grafana/grafana]`
 
 ### OpenTelemetry (OTel)
 
-✅ VERIFIED — OTel Collector latest: **v1.60.0 / v0.154.0** (released 2026-06-08)
+✅ VERIFIED - OTel Collector latest: **v1.60.0 / v0.154.0** (released 2026-06-08)
 - Source: `[GitHub API: open-telemetry/opentelemetry-collector]`
 - OTel specification versioning confirmed at `opentelemetry.io/status`
 - **OpenTelemetry is the rising unification standard** for traces, metrics, and logs. It replaces vendor-specific SDKs (Jaeger client, Zipkin client, etc.) with a single, vendor-neutral instrumentation layer.
@@ -215,14 +215,14 @@ Teach **kind** as the default local environment for course exercises.
 ### The Grafana LGTM Stack
 
 The open-source observability stack increasingly taught alongside Prometheus:
-- **L**oki — log aggregation (lightweight alternative to Elasticsearch for logs) ✅ VERIFIED (CNCF landscape)
-- **G**rafana — dashboards ✅ VERIFIED
-- **T**empo — distributed tracing ✅ VERIFIED (CNCF landscape)
-- **M**imir — long-term Prometheus metrics storage ✅ VERIFIED (CNCF landscape)
+- **L**oki - log aggregation (lightweight alternative to Elasticsearch for logs) ✅ VERIFIED (CNCF landscape)
+- **G**rafana - dashboards ✅ VERIFIED
+- **T**empo - distributed tracing ✅ VERIFIED (CNCF landscape)
+- **M**imir - long-term Prometheus metrics storage ✅ VERIFIED (CNCF landscape)
 
 ### ELK Stack
 
-- Elasticsearch + Logstash + Kibana — still widely deployed, especially for centralized log management
+- Elasticsearch + Logstash + Kibana - still widely deployed, especially for centralized log management
 - OpenSearch (AWS fork of Elasticsearch) is the open-source alternative since the Elastic license change
 - ⚠️ PARTIAL: ELK remains in production at many enterprises but Loki is the lighter-weight default for new K8s deployments
 - **Teach Loki first for logs in a K8s context; mention ELK/OpenSearch as enterprise context**
@@ -239,20 +239,20 @@ The open-source observability stack increasingly taught alongside Prometheus:
 
 ### Is "Platform Engineering" Replacing "DevOps"?
 
-⚠️ PARTIAL — This is a real and observable trend. The framing is shifting:
+⚠️ PARTIAL - This is a real and observable trend. The framing is shifting:
 
-- **Old framing (2015-2022):** "DevOps engineer" — a person who bridges dev and ops, automates everything
-- **New framing (2023-2026):** "Platform engineer" — builds the internal developer platform (IDP) that enables dev teams to self-serve infrastructure
+- **Old framing (2015-2022):** "DevOps engineer" - a person who bridges dev and ops, automates everything
+- **New framing (2023-2026):** "Platform engineer" - builds the internal developer platform (IDP) that enables dev teams to self-serve infrastructure
 
 The distinction matters for curriculum framing:
 - DevOps: focus on CI/CD pipelines, automation, cultural practices
-- Platform Engineering: focus on building and operating the platform itself — developer portals, golden paths, self-service tooling
+- Platform Engineering: focus on building and operating the platform itself - developer portals, golden paths, self-service tooling
 
 For a **zero-to-first-job** guide, "DevOps" remains the correct job title target. Platform Engineering is a growth path for mid/senior level.
 
 ### Backstage (Internal Developer Portal)
 
-✅ VERIFIED — Latest stable: **v1.51.2** (released 2026-06-10)
+✅ VERIFIED - Latest stable: **v1.51.2** (released 2026-06-10)
 - Source: `[GitHub API: backstage/backstage]`
 - Confirmed as CNCF member project ✅ VERIFIED via CNCF landscape YAML
 - Backstage is the Spotify-originated Internal Developer Platform (IDP) framework
@@ -260,9 +260,9 @@ For a **zero-to-first-job** guide, "DevOps" remains the correct job title target
 
 **Teaching recommendation:** Mention Backstage as the leading IDP tool; don't build a course module around it at beginner level. It's a differentiator to name-drop and understand conceptually.
 
-### GitOps — ArgoCD
+### GitOps - ArgoCD
 
-✅ VERIFIED — Latest stable: **v3.4.3** (released 2026-05-28)
+✅ VERIFIED - Latest stable: **v3.4.3** (released 2026-05-28)
 - Source: `[GitHub API: argoproj/argo-cd]`
 - ArgoCD is a CNCF graduated project; confirmed in CNCF landscape ✅ VERIFIED
 - ArgoCD 3.x is the current major version
@@ -280,7 +280,7 @@ For a **zero-to-first-job** guide, "DevOps" remains the correct job title target
 
 ### What's Real for Juniors in 2026
 
-⚠️ PARTIAL — No single authoritative source; synthesis from project release notes and community direction.
+⚠️ PARTIAL - No single authoritative source; synthesis from project release notes and community direction.
 
 **Real and usable today:**
 - **IaC generation:** GitHub Copilot, Claude, ChatGPT can generate Terraform/OpenTofu modules, Kubernetes manifests, Dockerfile content, GitHub Actions workflows. This is genuinely useful and accelerates beginners.
@@ -289,8 +289,8 @@ For a **zero-to-first-job** guide, "DevOps" remains the correct job title target
 - **Incident summarization:** Tools like PagerDuty and Datadog now offer AI-assisted incident summaries.
 
 **Still mostly hype for juniors:**
-- "Autonomous AIOps" that self-heals production incidents — requires deep training data from your specific environment; not plug-and-play at junior level
-- AI-generated runbooks that are actually production-safe — useful for drafts, not trustworthy without expert review
+- "Autonomous AIOps" that self-heals production incidents - requires deep training data from your specific environment; not plug-and-play at junior level
+- AI-generated runbooks that are actually production-safe - useful for drafts, not trustworthy without expert review
 
 **What to teach:**
 - Using AI tools as productivity accelerators, not replacements for understanding
@@ -304,23 +304,23 @@ For a **zero-to-first-job** guide, "DevOps" remains the correct job title target
 
 ### HashiCorp Vault
 
-✅ VERIFIED — Latest stable: **v2.0.2** (released 2026-06-05)
+✅ VERIFIED - Latest stable: **v2.0.2** (released 2026-06-05)
 - Vault 2.0 is a major version milestone (breaking change: removed `cap_ipc_lock` for container compatibility)
 - Source: `[GitHub API: hashicorp/vault]`
 - Vault is still the industry-standard self-hosted secrets manager; widely deployed in enterprises
-- BSL license (same as Terraform) — same caveats apply
+- BSL license (same as Terraform) - same caveats apply
 
 ### Cloud-Native Secret Managers
 
-⚠️ PARTIAL — teach these alongside Vault:
-- **AWS Secrets Manager** + **AWS Parameter Store** — AWS-native; integrated with IAM
-- **Azure Key Vault** — Azure-native
-- **GCP Secret Manager** — GCP-native
-- **Kubernetes Secrets** — native but base64-encoded (not encrypted at rest by default) — teach the limitation and how to fix it (Sealed Secrets, External Secrets Operator)
+⚠️ PARTIAL - teach these alongside Vault:
+- **AWS Secrets Manager** + **AWS Parameter Store** - AWS-native; integrated with IAM
+- **Azure Key Vault** - Azure-native
+- **GCP Secret Manager** - GCP-native
+- **Kubernetes Secrets** - native but base64-encoded (not encrypted at rest by default) - teach the limitation and how to fix it (Sealed Secrets, External Secrets Operator)
 
 **Teaching approach:** Teach cloud-native secret managers for cloud-specific tracks. Teach Vault for platform-agnostic / multi-cloud scenarios. Always teach "never put secrets in code or environment variables in plain text" as a foundational principle.
 
-**External Secrets Operator** — worth a mention: bridges K8s with external secret backends (Vault, AWS Secrets Manager, etc.). Common in production K8s setups.
+**External Secrets Operator** - worth a mention: bridges K8s with external secret backends (Vault, AWS Secrets Manager, etc.). Common in production K8s setups.
 
 ---
 
@@ -346,7 +346,7 @@ For a **zero-to-first-job** guide, "DevOps" remains the correct job title target
 
 ---
 
-## 10. "Teach This / Cut That" — Three-Tier Summary
+## 10. "Teach This / Cut That" - Three-Tier Summary
 
 ### ✅ MUST TEACH (Baseline for Employment)
 
@@ -374,7 +374,7 @@ These are the skills hiring managers expect at entry level in 2026. A candidate 
 - Understanding Ingress, namespaces, RBAC basics
 
 **IaC**
-- OpenTofu (or Terraform — syntax identical): write and apply a basic infrastructure module
+- OpenTofu (or Terraform - syntax identical): write and apply a basic infrastructure module
 - Remote state, workspaces, variable files
 - At least one cloud provider module (e.g., `aws_instance`, `aws_vpc`)
 
@@ -384,7 +384,7 @@ These are the skills hiring managers expect at entry level in 2026. A candidate 
 - Container image build and push to a registry (GHCR, ECR, Docker Hub)
 
 **Version Control**
-- Git: branch, merge, PR workflow — the foundation everything else builds on
+- Git: branch, merge, PR workflow - the foundation everything else builds on
 - Git as source of truth for infrastructure (GitOps mindset)
 
 **Observability Basics**
@@ -398,7 +398,7 @@ These are the skills hiring managers expect at entry level in 2026. A candidate 
 
 ---
 
-### 🚀 TEACH AS DIFFERENTIATOR (Growth Path)
+### TEACH AS DIFFERENTIATOR (Growth Path)
 
 These skills move a candidate from "entry level" to "strong hire." Not required day one, but teach them to create standout portfolios.
 
@@ -441,7 +441,7 @@ These skills move a candidate from "entry level" to "strong hire." Not required 
 
 ---
 
-### ✂️ CUT or DE-EMPHASIZE (Dated — Don't Lead With These)
+### CUT or DE-EMPHASIZE (Dated - Don't Lead With These)
 
 These tools have large installed bases but are declining as first-hire expectations, and leading a 2026 curriculum with them signals outdated focus.
 
@@ -454,7 +454,7 @@ These tools have large installed bases but are declining as first-hire expectati
 | **Manual `kubectl apply` in production** | Not reproducible; unsafe | GitOps (ArgoCD/Flux) |
 | **Puppet / Chef** | Configuration management tools from pre-container era; niche survival | Ansible (simpler), or fully container-based (no server config needed) |
 | **Docker Swarm** | Effectively deprecated in favor of Kubernetes | Kubernetes (or k3s for lighter workloads) |
-| **VM-centric operations** (SSH into servers to fix things) | "Pet vs cattle" — immutable infrastructure is the modern approach | Containers + K8s + GitOps |
+| **VM-centric operations** (SSH into servers to fix things) | "Pet vs cattle" - immutable infrastructure is the modern approach | Containers + K8s + GitOps |
 | **Helm 2** | Tiller was removed in Helm 3; Helm 4 is current | Helm 4 |
 | **Terraform as the only IaC option** (ignoring BSL) | Students need to understand the license split | Teach OpenTofu as default, note Terraform equivalence |
 
@@ -462,9 +462,9 @@ These tools have large installed bases but are declining as first-hire expectati
 
 ## 11. Portfolio Project Ideas
 
-These are projects that demonstrate real hiring signal — they show the full DevOps loop, not just individual tools.
+These are projects that demonstrate real hiring signal - they show the full DevOps loop, not just individual tools.
 
-### Project 1 — "The Full Stack" (Core Portfolio Piece)
+### Project 1 - "The Full Stack" (Core Portfolio Piece)
 **Deploy a 3-tier web app with full IaC + CI/CD + monitoring**
 
 Components:
@@ -477,7 +477,7 @@ Components:
 
 *Why it impresses:* Shows the complete automation loop. Every piece is something a real team does.
 
-### Project 2 — "GitOps Delivery" (Differentiator)
+### Project 2 - "GitOps Delivery" (Differentiator)
 **Multi-environment GitOps deployment with ArgoCD**
 
 Components:
@@ -489,7 +489,7 @@ Components:
 
 *Why it impresses:* GitOps is the #1 differentiator skill in 2026 K8s job descriptions. Most candidates can't demo it.
 
-### Project 3 — "Observability First" (Differentiator)
+### Project 3 - "Observability First" (Differentiator)
 **Instrument, collect, and visualize with the full OTel stack**
 
 Components:
@@ -501,7 +501,7 @@ Components:
 
 *Why it impresses:* Observability is a senior skill in many orgs; showing OTel fluency at entry level is rare and noticed.
 
-### Project 4 — "Secure by Default" (Security-Focused)
+### Project 4 - "Secure by Default" (Security-Focused)
 **A Kubernetes deployment with security hardening**
 
 Components:
@@ -514,7 +514,7 @@ Components:
 
 *Why it impresses:* Security is the gap most bootcamp grads have. Demonstrating it at junior level is a strong differentiator.
 
-### Project 5 — "Mini Platform" (Advanced / Platform Engineering)
+### Project 5 - "Mini Platform" (Advanced / Platform Engineering)
 **A simple Internal Developer Platform using Backstage**
 
 Components:
@@ -545,6 +545,6 @@ Components:
 | Backstage v1.51.2 | `https://api.github.com/repos/backstage/backstage/releases/latest` | ✅ VERIFIED |
 | HashiCorp Vault v2.0.2 | `https://api.github.com/repos/hashicorp/vault/releases/latest` | ✅ VERIFIED |
 | CNCF landscape members (Argo, Flux, Grafana stack, Backstage, OTel) | `https://raw.githubusercontent.com/cncf/landscape/master/landscape.yml` | ✅ VERIFIED |
-| Cloud provider market share (AWS #1, Azure #2, GCP #3) | cncf.io, survey.stackoverflow.co — Cloudflare 403 | ⛔ UNVERIFIED via curl |
+| Cloud provider market share (AWS #1, Azure #2, GCP #3) | cncf.io, survey.stackoverflow.co - Cloudflare 403 | ⛔ UNVERIFIED via curl |
 | GitHub Actions market dominance | No curl-accessible survey data | ⚠️ PARTIAL |
 | OpenTofu Fidelity migration story | `https://opentofu.org/blog/` (October 2025 entry) | ✅ VERIFIED |

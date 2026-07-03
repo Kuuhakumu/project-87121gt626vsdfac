@@ -1,4 +1,4 @@
-# Goal 2: Networking & Security Core meow (~180h)
+# goal 2: networking & security core meow (~180h)
 
 > **goal:** build the network floor, then learn the security mechanisms on top of it: CIA, crypto/TLS, identity, access control, attacks, operations, IR, and risk.
 >
@@ -241,7 +241,7 @@ that order is on purpose: foundations first, then network/security controls, the
 - [ ] **Cluster G - Incident Response, BC/DR & Resilience** (~12h)
 - [ ] **Cluster H - GRC & Security Program Management** (~14h)
 
-### Cluster A - Security Foundations & Governance Concepts meow (~15h)
+### cluster A - security foundations & governance concepts meow (~15h)
 
 **optional checkpoint map** - CC **D1 Security Principles**; SY0-701 **1.0 General Security Concepts** + **5.0 Security Program Management & Oversight**.
 
@@ -282,7 +282,7 @@ that order is on purpose: foundations first, then network/security controls, the
 
 **can u explain it?** ✅ - say out loud the difference between a *vulnerability*, *threat*, and *risk* with one concrete example each. then name which CIA property is being protected by encryption, a hash, and a failover cluster.
 
-### Cluster D - Networking & Network Security meow (~14h)
+### cluster D - networking & network security meow (~14h)
 
 **optional checkpoint map** - CC **D4 Network Security**; SY0-701 **3.2 Security Architecture** + **4.5 Security Operations**.
 
@@ -321,7 +321,7 @@ that order is on purpose: foundations first, then network/security controls, the
 
 **can u explain it?** ✅ - explain why a stateful firewall can allow the return traffic of an outbound connection but block an unsolicited inbound one. then say why segmentation reduces blast radius but does not encrypt traffic.
 
-### Cluster B - Cryptography & PKI meow (~14h)
+### cluster B - cryptography & PKI meow (~14h)
 
 **optional checkpoint map** - CC **D5 Security Operations**; SY0-701 **1.4 Cryptographic Solutions** + **3.3 Data Protection**.
 
@@ -360,7 +360,7 @@ that order is on purpose: foundations first, then network/security controls, the
 
 **can u explain it?** ✅ - walk the PKI chain: root CA -> intermediate CA -> leaf certificate -> signature checks -> browser trust decision. then say what OCSP/CRL are checking and why a hash alone is not encryption.
 
-### Cluster C - Access Control & Identity (IAM) meow (~16h)
+### cluster C - access control & identity (IAM) meow (~16h)
 
 **optional checkpoint map** - CC **D3 Access Controls** + **D1 AAA**; SY0-701 **4.6 Identity and Access Management** + **1.2 Physical Security**.
 
@@ -398,7 +398,7 @@ federation and SSO move trust between systems: one identity provider authenticat
 
 **can u explain it?** ✅ - explain when youd choose RBAC vs MAC vs DAC and why, with a one-line real scenario each. then take one RBAC scenario and add time/device/location conditions until it becomes ABAC.
 
-### Cluster E - Threats, Attacks, Vulnerabilities & Malware meow (~16h)
+### cluster E - threats, attacks, vulnerabilities & malware meow (~16h)
 
 **optional checkpoint map** - CC **D4 Network Security** + **D5 Security Operations**; SY0-701 **2.0 Threats, Vulnerabilities, and Mitigations**.
 
@@ -436,7 +436,7 @@ federation and SSO move trust between systems: one identity provider authenticat
 
 **can u explain it?** ✅ - explain in one breath how a buffer overflow can hand control to an attacker. then explain how phishing can lead to a valid login that still becomes a security incident.
 
-### Cluster F - Security Operations (monitoring, hardening, automation) meow (~14h)
+### cluster F - security operations (monitoring, hardening, automation) meow (~14h)
 
 **optional checkpoint map** - CC **D5 Security Operations**; SY0-701 **4.0 Security Operations**.
 
@@ -475,7 +475,7 @@ federation and SSO move trust between systems: one identity provider authenticat
 
 **can u explain it?** ✅ - describe what a SIEM does that plain log files dont, and name one thing a secure baseline removes from a fresh OS install.
 
-### Cluster G - Incident Response, BC/DR & Resilience meow (~12h)
+### cluster G - incident response, BC/DR & resilience meow (~12h)
 
 **optional checkpoint map** - CC **D2 BC/DR & Incident Response**; SY0-701 **4.8 Incident Response**, **3.4 Resilience**, and **5.2 Risk Metrics**.
 
@@ -513,7 +513,7 @@ containment stops spread. eradication removes the cause. recovery restores servi
 
 **can u explain it?** ✅ - given an incident scenario, name which PICERL phase youre in and the next action. then say what evidence u preserve before changing the affected system.
 
-### Cluster H - GRC & Security Program Management meow (~14h)
+### cluster H - GRC & security program management meow (~14h)
 
 **optional checkpoint map** - CC **D1 Security Principles**; SY0-701 **5.0 Security Program Management & Oversight**.
 

@@ -1,10 +1,10 @@
-# Data, AI & Analytics Lab Inventory — 2026
+# Data, AI & Analytics Lab Inventory - 2026
 
 > curl-verified 2026-06-13 (main thread, own internet). ✅ live (200) · ⚠️ likely live (403/429 curl-blocked, anti-bot) · ❌ dead/tombstone.
 
 ## Master lab inventory by topic
 
-### SQL (foundation — do first, all tracks)
+### SQL (foundation - do first, all tracks)
 | Lab | Platform | URL | What you do | Free | Status |
 |---|---|---|---|---|---|
 | SQLBolt | SQLBolt | sqlbolt.com | Interactive lessons, in-browser, zero setup | Free | ✅ |
@@ -64,7 +64,7 @@
 ### Tooling (local)
 | Tool | URL | Use | Status |
 |---|---|---|---|
-| DuckDB | duckdb.org | "SQL on your laptop" — fast analytics on CSV/Parquet | ✅ |
+| DuckDB | duckdb.org | "SQL on your laptop" - fast analytics on CSV/Parquet | ✅ |
 | Polars | pola.rs | Fast DataFrame library (differentiator) | ✅ |
 | DBeaver | dbeaver.io | Free universal SQL client | ✅ |
 

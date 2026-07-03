@@ -1,4 +1,4 @@
-# Product Management Career Roadmap: zero to first job meow
+# product management career roadmap: zero to first job meow
 
 > hour-based, research-backed (June 2026), region-agnostic.
 > every topic links to a specific free/freemium resource where the old guide had one.

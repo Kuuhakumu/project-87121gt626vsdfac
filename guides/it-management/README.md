@@ -1,4 +1,4 @@
-# IT Management & Strategy Career Roadmap: zero to first job meow
+# IT management & strategy career roadmap: zero to first job meow
 
 > hour-based, research-backed (June 2026), region-agnostic.
 > every topic points to a specific free/freemium resource where the old guide had one.

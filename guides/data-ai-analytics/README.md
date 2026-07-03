@@ -1,4 +1,4 @@
-# Data, AI & Analytics Career Roadmap: zero to first data role meow
+# data, AI & analytics career roadmap: zero to first data role meow
 
 > hour-based, research-backed (June 2026), region-agnostic.
 > built for complete beginners with no degree.

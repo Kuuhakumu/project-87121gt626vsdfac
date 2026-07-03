@@ -35,7 +35,7 @@ good news: the on-ramps are clear, and u can start building the skills and artif
 
 ## the four on-ramps
 
-### on-ramp 1: Service / Operations
+### on-ramp 1: service / operations
 
 ```text
 Service Desk Analyst / IT Support Technician
@@ -67,7 +67,7 @@ u hand off the result and move to the next one.
 
 **key early credential:** CAPM or CompTIA Project+. PMP comes later because it requires experience.
 
-### on-ramp 3: Technical / Architecture
+### on-ramp 3: technical / architecture
 
 ```text
 Systems Administrator / Engineer / Network Engineer

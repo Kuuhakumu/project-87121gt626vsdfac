@@ -1,4 +1,4 @@
-# Interview prep - IT Support & Networking meow
+# interview prep - IT support & networking meow
 
 > technical + behavioral question bank for help desk, NOC, desktop, junior network, and junior sysadmin roles.
 

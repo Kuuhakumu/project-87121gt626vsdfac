@@ -49,7 +49,7 @@ the choice usually becomes real at the Senior -> Staff/Group PM fork.
 - [ ] **technical credibility:** push back on estimates or architecture with enough understanding to be useful.
 - [ ] **mentoring:** help junior PMs before u have a formal lead title.
 
-### Senior PM -> Group PM / PM Lead
+### senior PM -> group PM / PM lead
 
 - [ ] own a portfolio of products or product areas
 - [ ] hire, onboard, and develop junior PMs
@@ -57,7 +57,7 @@ the choice usually becomes real at the Senior -> Staff/Group PM fork.
 - [ ] connect team OKRs to company objectives
 - [ ] represent product in executive conversations
 
-### Group PM -> Director -> VP/CPO
+### group PM -> director -> VP/CPO
 
 CPO work is different from senior IC PM work.
 its organizational design, resource allocation, culture-setting, and executive partnership.

@@ -1,4 +1,4 @@
-# Interactive lab inventory: Product Management (2026) meow
+# interactive lab inventory: product management (2026) meow
 
 > every lab was verified in June 2026.
 > free-first. concrete actions, not "explore the tool."

@@ -1,4 +1,4 @@
-# Cloud & DevOps Career Roadmap: zero to first cloud role meow
+# cloud & DevOps career roadmap: zero to first cloud role meow
 
 > [!IMPORTANT]
 > **read this first: "DevOps" is rarely a true entry-level job.**

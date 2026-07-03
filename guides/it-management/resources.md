@@ -1,4 +1,4 @@
-# Resources: IT Management & Strategy (2026) meow
+# resources: IT management & strategy (2026) meow
 
 > curated, current, mostly free.
 > deep work with a few canonical sources beats skimming dozens.

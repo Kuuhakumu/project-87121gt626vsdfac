@@ -28,7 +28,7 @@ like "DevOps," the "Data Scientist" title inflates entry expectations. most peop
 
 recommendation for most beginners: start on **Data Analyst**. every other track builds on the same SQL + Python foundation.
 
-## Track A: Data / BI Analyst
+## track A: data / BI analyst
 
 **goal:** answer business questions with data and communicate findings clearly.
 
@@ -47,7 +47,7 @@ recommendation for most beginners: start on **Data Analyst**. every other track 
 
 **cert:** Google Data Analytics + PL-300.
 
-## Track B: Analytics Engineer
+## track B: analytics engineer
 
 **goal:** build clean, tested, documented data models - the bridge between raw data and analysts.
 
@@ -66,7 +66,7 @@ recommendation for most beginners: start on **Data Analyst**. every other track 
 
 **cert:** dbt Analytics Engineering Certification ($200) + SnowPro Core if Snowflake-focused.
 
-## Track C: Data Engineer
+## track C: data engineer
 
 **goal:** build reliable pipelines that move and transform data at scale.
 
@@ -87,7 +87,7 @@ recommendation for most beginners: start on **Data Analyst**. every other track 
 
 **cert:** AWS Data Engineer Associate (DEA-C01) or Databricks Data Engineer Associate.
 
-## Track D: Data Scientist long game
+## track D: data scientist long game
 
 **goal:** model, predict, and explain - but expect to come through the Analyst door first.
 

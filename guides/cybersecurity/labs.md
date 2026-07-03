@@ -1,4 +1,4 @@
-# Cybersecurity verified lab index meow (July 2026)
+# cybersecurity verified lab index meow (July 2026)
 
 > this is the lab shelf for the cyber guide.
 > use the goal files as the roadmap; use this page when u need the exact lab, drill, practice-test source, or current replacement link.

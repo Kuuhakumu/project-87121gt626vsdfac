@@ -1,4 +1,4 @@
-# Resources - Cloud & DevOps meow
+# resources - Cloud & DevOps meow
 
 > free-first, current as of June 2026.
 > no paid course is required to get hired; the free path covers the roadmap.

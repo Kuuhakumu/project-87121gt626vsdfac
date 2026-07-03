@@ -1,4 +1,4 @@
-# Goal 2: core PM skills - discovery, priority, PRDs, metrics meow
+# goal 2: core PM skills - discovery, priority, PRDs, metrics meow
 
 > **~160h total** - your pace, no deadline.
 > goal: practice the skills PM interviews and real PM work both test: discovery, tradeoffs, writing, metrics, and stakeholders.
@@ -182,9 +182,9 @@ example:
 
 **practice gate:** u can write a PRD a developer could begin scoping from: clear problem, success metrics, non-goals, and testable acceptance criteria.
 
-## metrics, North Star, and OKRs (~20h)
+## metrics, north star, and OKRs (~20h)
 
-### North Star metric
+### north star metric
 
 a North Star metric is the single metric that best captures whether users are getting value.
 it should connect team work to product value.

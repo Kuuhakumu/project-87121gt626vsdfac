@@ -1,4 +1,4 @@
-# Interview prep - Cloud & DevOps meow
+# interview prep - Cloud & DevOps meow
 
 > technical + behavioral question bank for entry cloud/DevOps roles.
 > dont memorize answers. understand them well enough to talk through out loud.

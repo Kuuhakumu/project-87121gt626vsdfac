@@ -1,4 +1,4 @@
-# Interview prep - Software Development meow
+# interview prep - software development meow
 
 question bank for entry-level SWE interviews.
 covers coding/DSA, language + web fundamentals, practical/take-home, and behavioral.

@@ -1,4 +1,4 @@
-# Interview prep: Product Management meow
+# interview prep: product management meow
 
 > PM interviews assess judgment, not correctness.
 > structure, tradeoffs, and honest reasoning matter more than guessing the interviewer's favorite answer.

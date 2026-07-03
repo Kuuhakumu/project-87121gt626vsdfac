@@ -28,7 +28,7 @@ for most beginners, start on **Product Designer**.
 its the broadest first-job opening.
 the other tracks branch from there, and u can pivot sideways after your first role once u know what u prefer.
 
-## Track A: Product Designer
+## track A: product designer
 
 **what it is:** the generalist UX role.
 product designers own the end-to-end design process for a feature or product area: research, final UI, and developer handoff.
@@ -57,7 +57,7 @@ the story behind the decisions matters as much as the screens.
 
 **practice gate:** u can walk through a complete case study verbally: problem, research method, key insight, design decision, outcome, in under 5 minutes.
 
-## Track B: UI / Visual Designer
+## track B: UI / visual designer
 
 **what it is:** a craft-focused role centered on visual execution: layouts, typography, iconography, motion, and brand systems.
 common in agencies, studios, and companies with a strong design brand.
@@ -86,7 +86,7 @@ publish it to Behance with before/after comparisons.
 
 **practice gate:** u can describe the grid, type scale, color, and motion principles of your current project, and identify 3 places where u deliberately bent a rule.
 
-## Track C: UX Researcher
+## track C: UX researcher
 
 **what it is:** a specialist role focused on understanding users: planning studies, running research, synthesizing findings, and communicating insights.
 larger companies have this role more often.
@@ -118,7 +118,7 @@ long-term demand is solid because this is the hardest part to automate.
 
 **practice gate:** u can write a research report a PM or designer could act on, with clear method, 5 supported insights, and explicit recommendations.
 
-## Track D: Content Designer / UX Writer
+## track D: content designer / UX writer
 
 **what it is:** a writing-focused UX role.
 content designers write the words inside products: button labels, empty states, error messages, onboarding flows, tooltips, microcopy.

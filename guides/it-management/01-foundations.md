@@ -1,4 +1,4 @@
-# Goal 1: foundations - IT management map, ITIL, Agile, communication meow
+# goal 1: foundations - IT management map, ITIL, Agile, communication meow
 
 > **~120h total** - your pace, no deadline.
 > goal: understand what IT management is, which track fits u, and why communication is the real core skill.
@@ -13,7 +13,7 @@
 - [ ] **communication** (~25h)
 - [ ] **exit check** - five tracks, ITIL basics, sprint vocabulary, executive comms
 
-## what IT Management & Strategy actually is (~25h)
+## what IT management & strategy actually is (~25h)
 
 IT Management & Strategy is an umbrella over five related disciplines.
 understanding the split matters because it determines your on-ramp, certs, and [Goal 3](03-specialization.md) specialization.

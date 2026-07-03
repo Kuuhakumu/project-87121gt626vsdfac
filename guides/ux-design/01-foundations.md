@@ -1,4 +1,4 @@
-# Goal 1: foundations - visual design, color, type, Figma meow
+# goal 1: foundations - visual design, color, type, Figma meow
 
 > **~130h total** - your pace, no deadline.
 > goal: learn the visual grammar before u try to build serious UX case studies.

@@ -1,4 +1,4 @@
-# Certification guide: UI/UX Design (2026) meow
+# certification guide: UI/UX design (2026) meow
 
 > verified via official sources, June 2026.
 > prices are in USD. confirm on the official site before booking, bc prices shift.

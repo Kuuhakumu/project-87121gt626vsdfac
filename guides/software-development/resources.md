@@ -1,4 +1,4 @@
-# Resources - Software Development meow
+# resources - software development meow
 
 YouTube channels, books, roadmaps, communities, and tools referenced throughout this guide.
 

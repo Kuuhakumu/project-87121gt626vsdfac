@@ -1,4 +1,4 @@
-# Goal 4: Kubernetes and specialization meow
+# goal 4: Kubernetes and specialization meow
 
 > **~160h total** - your pace, no deadline.
 > learn Kubernetes, then go deep on **one** track.
@@ -48,30 +48,30 @@ dont stand up a full cloud cluster on day one. learn locally with **k3d**, **kin
 
 go deep on one track. breadth got u here; depth gets u hired.
 
-### Track 1 - Cloud Engineer
+### track 1 - cloud engineer
 
 - [ ] **focus:** deep AWS/Azure/GCP services, networking, IAM, cost optimization
 - [ ] **cert:** AWS SAA-C03, AZ-104, or GCP ACE
 - [ ] **signature project:** deploy a multi-tier app via console, then rebuild it entirely in IaC
 
-### Track 2 - Platform / IaC Engineer
+### track 2 - platform / IaC engineer
 
 - [ ] **focus:** Terraform/OpenTofu modules, Ansible, reusable infrastructure, Backstage
 - [ ] **cert:** Terraform Associate (TA-004)
 - [ ] **signature project:** provision a full K8s cluster + app on cloud using only IaC
 
-### Track 3 - CI/CD and Release Engineering
+### track 3 - CI/CD and release engineering
 
 - [ ] **focus:** pipeline design, GitHub Actions/GitLab CI, artifact management, GitOps, ArgoCD, deployment strategies
 - [ ] **signature project:** lint -> test -> build -> push -> deploy to staging -> smoke test -> promote to prod with ArgoCD doing deploy
 
-### Track 4 - SRE / Observability
+### track 4 - SRE / observability
 
 - [ ] **focus:** Prometheus, Grafana, OpenTelemetry, SLOs/SLIs, alerting, incident response, post-mortems
 - [ ] **reality:** hardest track to enter cold; usually reached through 2-3 years cloud ops
 - [ ] **signature project:** OTel -> Prometheus -> Grafana + alertmanager for a sample app, with SLO and alert
 
-### Track 5 - DevSecOps
+### track 5 - DevSecOps
 
 - [ ] **focus:** IAM least privilege, secret management, Trivy/Snyk, compliance-as-code
 - [ ] **signature project:** pipeline with secret scanning, container image scanning, SAST, and managed secrets

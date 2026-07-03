@@ -1,4 +1,4 @@
-# Career-match quiz meow
+# career-match quiz meow
 
 > 12 questions, about 2 minutes.
 > grab paper or open notes and tally your letters.
@@ -166,4 +166,4 @@ start there and the choice usually gets clearer meow.
 
 ---
 
-*Next: [Shared Foundations](foundations.md)*
+*Next: [shared foundations](foundations.md)*

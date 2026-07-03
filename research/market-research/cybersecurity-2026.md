@@ -1,8 +1,8 @@
-# Cybersecurity Job Market — 2026
+# Cybersecurity Job Market - 2026
 
 > Research date: 2026-06-13. Salary bands are TRAINING-anchored (BLS/CyberSeek/Glassdoor block curl bots); cross-check live before relying on them. Skills tiers grounded in NICE Framework (niccs.cisa.gov, verified live).
 
-## Entry-Level Salary Bands (0–2 yrs, cert-holding, no degree premium)
+## Entry-Level Salary Bands (0-2 yrs, cert-holding, no degree premium)
 
 ### US (USD)
 | Role | Low | Mid | High |
@@ -13,7 +13,7 @@
 | Cloud Security (entry) | 65,000 | 80,000 | 95,000 |
 | IT Security / Helpdesk→Security | 42,000 | 55,000 | 68,000 |
 
-### UK (GBP) — London +15–20%
+### UK (GBP) - London +15-20%
 | Role | Low | Mid | High |
 |---|---|---|---|
 | SOC Analyst T1 | 25,000 | 32,000 | 40,000 |
@@ -21,7 +21,7 @@
 | GRC / Compliance | 28,000 | 35,000 | 45,000 |
 | Cloud Security (entry) | 32,000 | 42,000 | 52,000 |
 
-### EU (EUR) — DE/NL reference; Eastern EU lower
+### EU (EUR) - DE/NL reference; Eastern EU lower
 | Role | Low | Mid | High |
 |---|---|---|---|
 | SOC Analyst T1 | 32,000 | 42,000 | 52,000 |
@@ -42,19 +42,19 @@
 
 ## Real Entry-Level Job Titles
 SOC Analyst I / Tier 1 · Junior Information Security Analyst · Cybersecurity Analyst I · Information Security Associate · Security Monitoring Analyst · Junior Penetration Tester · Associate GRC / Compliance Analyst · Junior Cloud Security Engineer · IT Security Technician · IAM Analyst · Vulnerability Management Analyst (entry).
-> Search "Analyst I", "Associate Security", "Junior Security", "Security Support" — not just "Cybersecurity Analyst".
+> Search "Analyst I", "Associate Security", "Junior Security", "Security Support" - not just "Cybersecurity Analyst".
 
 ## Interview Format (typical 4 stages)
 1. Recruiter screen (motivation, certs, auth, salary).
-2. Technical screening — take-home / HackerRank; SOC: log-analysis scenario; pentest: mini-CTF; GRC: scenario; cloud: IAM misconfig review.
-3. Technical panel — see interview-prep.md question bank.
+2. Technical screening - take-home / HackerRank; SOC: log-analysis scenario; pentest: mini-CTF; GRC: scenario; cloud: IAM misconfig review.
+3. Technical panel - see interview-prep.md question bank.
 4. Behavioral (STAR). Practical components increasingly common: live PCAP, SPL/KQL challenge, mock incident report review.
 
 ## Hiring Reality 2026
 - Entry tier is genuinely competitive; the "millions of unfilled jobs" framing applies to *experienced* roles, not juniors.
-- Most reliable path: Help Desk/IT Support (6–18mo) → optional NOC/sysadmin → SOC T1. Or degree+internship → direct entry.
+- Most reliable path: Help Desk/IT Support (6-18mo) → optional NOC/sysadmin → SOC T1. Or degree+internship → direct entry.
 - MSSPs/MDRs are the most consistent entry-level hirers (volume + structured training).
-- GRC is underrated entry path — NIS2 (EU, Oct 2024) + DORA (EU finance, Jan 2025) created compliance hiring demand.
+- GRC is underrated entry path - NIS2 (EU, Oct 2024) + DORA (EU finance, Jan 2025) created compliance hiring demand.
 - Remote-friendly: GRC & cloud high; SOC mixed; pentest hybrid-heavy.
 
 ## Top Hiring Sectors

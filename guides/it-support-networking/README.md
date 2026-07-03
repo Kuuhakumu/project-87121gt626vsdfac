@@ -1,4 +1,4 @@
-# IT Support & Networking Career Roadmap: zero to first job meow
+# IT support & networking career roadmap: zero to first job meow
 
 > hour-based, research-backed (June 2026), region-agnostic.
 > written for complete beginners with no degree.

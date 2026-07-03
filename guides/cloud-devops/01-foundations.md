@@ -1,4 +1,4 @@
-# Goal 1: foundations - Linux, networking, Git, scripting meow
+# goal 1: foundations - Linux, networking, Git, scripting meow
 
 > **~140h total** - your pace, no deadline.
 > goal: Linux shell comfort, networking mental model, Git fluency, and one scripting language.

@@ -1,4 +1,4 @@
-# Goal 1: Foundations - A+ hardware, OS, networking meow (~140h)
+# goal 1: foundations - A+ hardware, OS, networking meow (~140h)
 
 > **goal:** build the IT floor security sits on: hardware, operating systems, networking, basic security, and troubleshooting. the A+ exam is optional; the knowledge is not qwq
 

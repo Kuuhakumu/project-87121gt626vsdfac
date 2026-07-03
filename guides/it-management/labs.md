@@ -1,4 +1,4 @@
-# Interactive lab and tool inventory: IT Management (2026) meow
+# interactive lab and tool inventory: IT management (2026) meow
 
 > every platform was verified June 2026.
 > IT management practice means producing artifacts and running processes in real tools, not just reading.

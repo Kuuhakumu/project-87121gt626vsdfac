@@ -29,7 +29,7 @@ specialization is depth: enough evidence that u can be hired into that flavor of
 u dont have to pick one forever.
 specializations are where u start, not where u stay.
 
-## Track A: Growth PM
+## track A: growth PM
 
 ### what it is
 
@@ -69,7 +69,7 @@ prioritize by ICE and include a measurement plan.
 
 **practice gate:** u can build a funnel in Amplitude, identify top drop-off, write a growth hypothesis, and explain what sample size u need to detect a 5% lift with 95% confidence.
 
-## Track B: Technical PM
+## track B: technical PM
 
 ### what it is
 
@@ -109,7 +109,7 @@ if u have engineering background, this is your natural track.
 
 **practice gate:** u can read a basic architecture diagram, identify 3 product-relevant tradeoffs, and write a technical spec a senior engineer would not need to rewrite.
 
-## Track C: B2B / Enterprise PM
+## track C: B2B / enterprise PM
 
 ### what it is
 

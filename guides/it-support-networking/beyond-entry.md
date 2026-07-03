@@ -1,4 +1,4 @@
-# Beyond entry-level - IT Support & Networking meow
+# beyond entry-level - IT support & networking meow
 
 > youre in the door: help desk, desktop, or NOC.
 > this is where the field branches.
@@ -63,7 +63,7 @@ networking is increasingly software-defined and automated. scripting matters.
 - [ ] see [Cybersecurity guide](../cybersecurity/README.md)
 - [ ] certs: Security+ -> CySA+ / blue-team training
 
-## Track 5: automation / DevOps
+## track 5: automation / DevOps
 
 **path:** PowerShell scripting -> infrastructure automation -> DevOps.
 

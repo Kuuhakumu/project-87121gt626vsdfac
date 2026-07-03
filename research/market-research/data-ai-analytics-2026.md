@@ -13,9 +13,9 @@ Sources fetched via curl (BLS blocks bots; fallbacks used):
 - StrataScratch (interview prep platform structure)
 
 Claim confidence:
-- ✅ VERIFIED — directly extracted from fetched source
-- ⚠️ PARTIAL — inferred from partial/nav-only page content
-- ⛔ UNVERIFIED — synthesis from multiple weak signals, no single authoritative source
+- ✅ VERIFIED - directly extracted from fetched source
+- ⚠️ PARTIAL - inferred from partial/nav-only page content
+- ⛔ UNVERIFIED - synthesis from multiple weak signals, no single authoritative source
 
 ---
 
@@ -28,8 +28,8 @@ Claim confidence:
 | **Data Analyst** | ✅ Yes | SQL + one viz tool + a portfolio project | Junior SWE |
 | **BI Analyst** | ✅ Yes | SQL + BI tool (Power BI / Tableau) + business domain | Junior SWE |
 | **Analytics Engineer** | ⚠️ Partial | SQL mastery + dbt + data warehouse concepts | Mid-junior SWE |
-| **Data Scientist** | ⚠️ Partial | Stats + ML fundamentals + Python; fresh grads hired but bar is higher in non-tech industries | Like "junior DevOps" — exists but competitive |
-| **Data Engineer** | ⛔ Rarely entry | Python + SQL + pipeline concepts needed; most postings want 1–2 yrs; intern → DE is the main on-ramp | Like DevOps: rarely day-1 entry |
+| **Data Scientist** | ⚠️ Partial | Stats + ML fundamentals + Python; fresh grads hired but bar is higher in non-tech industries | Like "junior DevOps" - exists but competitive |
+| **Data Engineer** | ⛔ Rarely entry | Python + SQL + pipeline concepts needed; most postings want 1-2 yrs; intern → DE is the main on-ramp | Like DevOps: rarely day-1 entry |
 | **ML Engineer** | ⛔ Not entry-level | Requires SWE fundamentals + ML + MLOps; most postings expect prior DE or SWE experience | Senior DevOps equivalent in rarity |
 
 **Source:** Interview Query career path article (March 2026) ✅; roadmap.sh Data Analyst & Data Engineer roadmaps ✅; DataCamp career track catalog ⚠️
@@ -41,12 +41,12 @@ Interview Query explicitly states:
 
 The same pattern is even more pronounced for DE and MLE. Data Analyst and BI Analyst consistently appear as the lowest-friction first jobs because:
 1. The skill set (SQL, Excel/Sheets, one BI tool) has mass training resources and is learnable in months.
-2. Employers expect to train business context — they don't expect you to arrive knowing their domain.
+2. Employers expect to train business context - they don't expect you to arrive knowing their domain.
 3. The role exists in virtually every industry (not just tech), creating a wider funnel of openings.
 
 **Analytics Engineer** is increasingly appearing in postings as a distinct track (Fishtown Analytics/dbt ecosystem). It sits between DA and DE: you own the transformation layer. It's achievable early-career but requires SQL at a level above basic and familiarity with version-controlled SQL (dbt). Treat it as a "level 1.5" role.
 
-**Data Scientist** entry-level is real in tech companies (especially FAANG adjacents), where fresh grad hiring is common. Outside tech — healthcare, finance, government — 1–2 years experience is typically expected before the title applies. ✅ Interview Query confirms this split.
+**Data Scientist** entry-level is real in tech companies (especially FAANG adjacents), where fresh grad hiring is common. Outside tech - healthcare, finance, government - 1-2 years experience is typically expected before the title applies. ✅ Interview Query confirms this split.
 
 ---
 
@@ -55,62 +55,62 @@ The same pattern is even more pronounced for DE and MLE. Data Analyst and BI Ana
 ### Track A: Data Analyst / BI Analyst
 
 ```
-Entry (0–2 yrs):    Junior/Associate Data Analyst / BI Analyst
+Entry (0-2 yrs):    Junior/Associate Data Analyst / BI Analyst
                     → SQL queries, dashboards, ad hoc reports, stakeholder presentations
                     → Tools: SQL, Excel, Power BI or Tableau, basic Python/R
 
-Mid (2–4 yrs):      Data Analyst / Senior BI Analyst
+Mid (2-4 yrs):      Data Analyst / Senior BI Analyst
                     → Owns analytical projects end-to-end, defines metrics
                     → Mentors juniors, partners with product/finance/marketing
                     → Tools: Advanced SQL, Python (pandas), dbt awareness, Looker/Mode
 
-Senior (4–7 yrs):   Senior Data Analyst / Analytics Manager / Head of Analytics
+Senior (4-7 yrs):   Senior Data Analyst / Analytics Manager / Head of Analytics
                     → Sets analytics strategy, builds data culture, manages team
                     → May fork into Analytics Engineering or Data Science at this point
 ```
 
-⚠️ PARTIAL — synthesized from Interview Query career path article + roadmap.sh DA roadmap
+⚠️ PARTIAL - synthesized from Interview Query career path article + roadmap.sh DA roadmap
 
 ### Track B: Data Scientist
 
 ```
-Entry (0–2 yrs):    Junior/Associate Data Scientist (intern → DS common in tech)
+Entry (0-2 yrs):    Junior/Associate Data Scientist (intern → DS common in tech)
                     → Predefined tasks: churn queries, simple ML models, dashboards
                     → Regular check-ins with senior; SQL + Python/R + viz required
                     → Tools: Python, scikit-learn, SQL, Jupyter, Tableau
 
-Mid (2–4 yrs):      Data Scientist
+Mid (2-4 yrs):      Data Scientist
                     → Ambiguous problems with wider scope; autonomous technical work
                     → Builds ML models + ETL pipelines; advanced SQL + ML frameworks
                     → Tools: PyTorch/TensorFlow, MLflow, Spark (aware), Airflow
 
-Senior (4–7 yrs):   Senior Data Scientist / Staff DS / DS Manager
+Senior (4-7 yrs):   Senior Data Scientist / Staff DS / DS Manager
                     → Defines scope from business problem; owns A/B testing systems,
                       model architecture, cross-team influence
                     → Finance/healthcare may need 6+ yrs to reach this level
 ```
 
-✅ VERIFIED — Interview Query article (March 2026 update, authored by Jay Feng)
+✅ VERIFIED - Interview Query article (March 2026 update, authored by Jay Feng)
 Source: https://www.interviewquery.com/blog/data-science-career-path
 
 ### Track C: Data Engineer
 
 ```
-Entry (0–2 yrs):    Junior Data Engineer (rare as direct hire; more common via intern or
+Entry (0-2 yrs):    Junior Data Engineer (rare as direct hire; more common via intern or
                     internal transfer from DA/SWE)
                     → Pipeline maintenance, schema changes, basic Airflow DAGs
                     → Tools: Python, SQL, one cloud (AWS/GCP/Azure), git
 
-Mid (2–4 yrs):      Data Engineer
+Mid (2-4 yrs):      Data Engineer
                     → Designs pipelines, owns data warehouse tables, writes dbt models
                     → Tools: Spark, Kafka or Kinesis, Airflow/Prefect, Snowflake/BigQuery,
                       Terraform (basic), Docker
 
-Senior (4–8 yrs):   Senior DE / Lead DE / Data Architect
+Senior (4-8 yrs):   Senior DE / Lead DE / Data Architect
                     → Platform decisions, cost optimization, data mesh/lakehouse design
 ```
 
-⚠️ PARTIAL — roadmap.sh Data Engineer roadmap (structural content confirmed); ⛔ UNVERIFIED for specific year ranges
+⚠️ PARTIAL - roadmap.sh Data Engineer roadmap (structural content confirmed); ⛔ UNVERIFIED for specific year ranges
 
 ### Track D: Analytics Engineer
 
@@ -128,7 +128,7 @@ Senior:            Staff AE / Analytics Engineering Manager
                     → Platform-level decisions, tooling selection, data contracts
 ```
 
-⛔ UNVERIFIED for specifics — synthesized from dbt Labs community descriptions + DataCamp course catalog signals
+⛔ UNVERIFIED for specifics - synthesized from dbt Labs community descriptions + DataCamp course catalog signals
 
 ### Track E: ML Engineer
 
@@ -146,7 +146,7 @@ Mid MLE:           Designs training pipelines, owns model lifecycle
 Senior MLE:        ML platform decisions, LLM fine-tuning, distributed training
 ```
 
-⛔ UNVERIFIED — synthesized; no direct source confirming MLE entry-level hire rates
+⛔ UNVERIFIED - synthesized; no direct source confirming MLE entry-level hire rates
 
 ---
 
@@ -169,13 +169,13 @@ These are table-stakes filters. Missing any of them gets your resume screened ou
 ✅ Stack Overflow 2024 Survey confirms: Python (51% all devs, 47% professional devs), SQL (54% professional devs) are the two dominant data-oriented languages. PostgreSQL #1 database (52% professional devs), BigQuery and Snowflake present in data-heavy roles.
 Source: https://survey.stackoverflow.co/2024/technology
 
-⚠️ PARTIAL for role-specific breakdowns — tool popularity from SO survey is general dev population, not data roles only.
+⚠️ PARTIAL for role-specific breakdowns - tool popularity from SO survey is general dev population, not data roles only.
 
 ### Differentiators (separate shortlisted from screened candidates)
 
 | Differentiator | Role | Signal strength |
 |---|---|---|
-| **dbt** (data build tool) | AE, DE, DA | Strong — rapidly mainstream in modern data stack |
+| **dbt** (data build tool) | AE, DE, DA | Strong - rapidly mainstream in modern data stack |
 | **Spark / PySpark** | DE, DS | Strong for DE; moderate for DS |
 | **Airflow or Prefect** | DE | Strong |
 | **MLflow / model registries** | MLE, DS (mid+) | Moderate |
@@ -199,10 +199,10 @@ Must-have:   SQL (intermediate), Python (basic-intermediate), Excel/Google Sheet
 Nice-to-have: R, dbt awareness, one cloud platform (any), Looker, Jupyter notebooks
 
 Differentiator: domain certifications (Google DA cert, Microsoft PL-300),
-                public portfolio with 2–3 end-to-end projects
+                public portfolio with 2-3 end-to-end projects
 ```
 
-⛔ UNVERIFIED as a specific count — synthesized from curriculum signals across DataCamp, roadmap.sh, and Interview Query content
+⛔ UNVERIFIED as a specific count - synthesized from curriculum signals across DataCamp, roadmap.sh, and Interview Query content
 
 ---
 
@@ -215,9 +215,9 @@ Differentiator: domain certifications (Google DA cert, Microsoft PL-300),
    - Some companies add "business logic" questions (e.g., calculate 7-day rolling retention)
 
 2. **Take-home analysis**
-   - Given a CSV dataset, answer 3–5 business questions
+   - Given a CSV dataset, answer 3-5 business questions
    - Expected: data cleaning, SQL or Python analysis, clear visualizations, written narrative
-   - Typically 2–4 hours; submitted as a notebook or slide deck
+   - Typically 2-4 hours; submitted as a notebook or slide deck
 
 3. **Dashboard/BI tool exercise**
    - Build a dashboard from a provided dataset in Tableau/Power BI
@@ -227,7 +227,7 @@ Differentiator: domain certifications (Google DA cert, Microsoft PL-300),
    - "Walk me through a time you translated data to a non-technical audience"
    - Increasingly includes a "present your take-home" to a panel
 
-⚠️ PARTIAL — StrataScratch platform confirms SQL + take-home as primary formats; source page returned navigation-only HTML
+⚠️ PARTIAL - StrataScratch platform confirms SQL + take-home as primary formats; source page returned navigation-only HTML
 
 ### Data Scientist
 
@@ -270,7 +270,7 @@ Source: https://www.interviewquery.com/blog/data-science-career-path
 5. **Take-home pipeline project**
    - Build an end-to-end pipeline: ingest → transform → load to a table → document it
 
-⛔ UNVERIFIED for frequency data — synthesized from DataCamp DE curriculum + roadmap.sh DE roadmap
+⛔ UNVERIFIED for frequency data - synthesized from DataCamp DE curriculum + roadmap.sh DE roadmap
 
 ### Analytics Engineer
 
@@ -286,7 +286,7 @@ Source: https://www.interviewquery.com/blog/data-science-career-path
 4. **Stakeholder communication**
    - How would you work with a DA who disagrees with your model design?
 
-⛔ UNVERIFIED — synthesized from dbt Labs community documentation and DataCamp AE course structure
+⛔ UNVERIFIED - synthesized from dbt Labs community documentation and DataCamp AE course structure
 
 ### ML Engineer
 
@@ -303,7 +303,7 @@ Source: https://www.interviewquery.com/blog/data-science-career-path
 4. **MLOps concepts**
    - Model monitoring, A/B testing models, canary deployments
 
-⛔ UNVERIFIED — synthesized; no direct source fetched for MLE-specific interview formats
+⛔ UNVERIFIED - synthesized; no direct source fetched for MLE-specific interview formats
 
 ---
 
@@ -314,11 +314,11 @@ Source: https://www.interviewquery.com/blog/data-science-career-path
 **Data Analyst** has the highest raw volume of entry-level postings across all industries. It is the widest funnel because:
 - Every company with data has DA-shaped needs (not just tech companies)
 - The role does not require infrastructure knowledge or production system ownership
-- The hiring bar for tooling is achievable with ~3–6 months of focused study
+- The hiring bar for tooling is achievable with ~3-6 months of focused study
 
 **BI Analyst** is functionally equivalent in many companies; sometimes the same role under a different title depending on whether the org uses a dedicated BI platform.
 
-**Analytics Engineer** is growing fast (dbt ecosystem expansion) but the absolute number of entry openings is lower — most companies hire AEs from existing DA/DE talent.
+**Analytics Engineer** is growing fast (dbt ecosystem expansion) but the absolute number of entry openings is lower - most companies hire AEs from existing DA/DE talent.
 
 **Data Scientist** entry openings are concentrated in tech, consulting, and large enterprises. Graduate programs (e.g., rotational DS programs) are the primary vehicle. Outside these channels, expectations often include a Master's degree in statistics/ML/CS.
 
@@ -326,29 +326,29 @@ Source: https://www.interviewquery.com/blog/data-science-career-path
 
 **ML Engineer** entry roles are uncommon in the broader market. They exist primarily at AI-native companies and large tech firms as part of grad programs. Practically speaking, this is not a first-job track for most people.
 
-⚠️ PARTIAL — demand signal inferred from DataCamp career track volume, roadmap.sh community stats (6th most starred GitHub project, 2.8M registered users — suggests very high interest in these paths), and Interview Query role coverage breadth
+⚠️ PARTIAL - demand signal inferred from DataCamp career track volume, roadmap.sh community stats (6th most starred GitHub project, 2.8M registered users - suggests very high interest in these paths), and Interview Query role coverage breadth
 
 ### Factors that compress time-to-first-job
 
-1. **Portfolio projects** — the single biggest lever for zero-experience candidates
-   - 2–3 end-to-end projects (not tutorials) that show data acquisition → cleaning → analysis → insight → communication
+1. **Portfolio projects** - the single biggest lever for zero-experience candidates
+   - 2-3 end-to-end projects (not tutorials) that show data acquisition → cleaning → analysis → insight → communication
    - Published on GitHub with README, and/or as a live Tableau Public / Streamlit app
 
-2. **SQL fluency** — the universal filter; most first interviews are SQL screens
+2. **SQL fluency** - the universal filter; most first interviews are SQL screens
    - StrataScratch, LeetCode (database section), Mode SQL tutorial are standard prep resources
 
-3. **Domain adjacency** — a candidate with 2 years in marketing who learns SQL gets hired as a marketing analyst faster than a generic applicant
+3. **Domain adjacency** - a candidate with 2 years in marketing who learns SQL gets hired as a marketing analyst faster than a generic applicant
 
 4. **Certifications as signal** (not gatekeepers)
-   - Google Data Analytics Certificate (Coursera) — widely recognized as a credible beginner signal
-   - Microsoft PL-300 (Power BI) — strong for BI Analyst roles
+   - Google Data Analytics Certificate (Coursera) - widely recognized as a credible beginner signal
+   - Microsoft PL-300 (Power BI) - strong for BI Analyst roles
    - These do not replace portfolio work but reduce recruiter friction
 
 5. **Company size targeting**
-   - Mid-size companies (100–1000 employees) often have a single "data person" role that is broader and more accessible than enterprise data teams where you compete with hundreds of applicants
+   - Mid-size companies (100-1000 employees) often have a single "data person" role that is broader and more accessible than enterprise data teams where you compete with hundreds of applicants
    - Startups hire generalist data folks early; the title may be "data analyst" but the work spans DE, DS, and DA
 
-⛔ UNVERIFIED for quantitative claims — synthesized from Interview Query career advice content + DataCamp learning path structure
+⛔ UNVERIFIED for quantitative claims - synthesized from Interview Query career advice content + DataCamp learning path structure
 
 ---
 
@@ -365,14 +365,14 @@ Moderate opening     → Analytics Engineer (SQL-strong DAs pivot here)
                             ↓
 Narrower, grad-heavy → Data Scientist (tech companies, grad programs)
                             ↓
-Experience-required  → Data Engineer (1–2 yr minimum de facto)
+Experience-required  → Data Engineer (1-2 yr minimum de facto)
                             ↓
 Senior-adjacent      → ML Engineer (SWE + ML background required)
 ```
 
 This is the opposite of what bootcamp marketing suggests. The term "data scientist" gets 10x the Google searches of "data analyst," but data analyst is far more accessible as a first job and is a legitimate on-ramp to data science, not a consolation prize.
 
-### The AI effect on entry-level (2024–2026)
+### The AI effect on entry-level (2024-2026)
 
 ✅ Stack Overflow 2024: Hugging Face Transformers (4.5% all devs), PyTorch (10.6%), TensorFlow (10.1%), and MLflow (1.2%) signal that ML tooling is mainstream among professional developers but not yet dominant at the entry tier.
 
@@ -381,13 +381,13 @@ The "AI engineer" title is emerging but ill-defined at entry level. In practice,
 - Not yet creating dedicated "AI Analyst" or "AI Engineer" entry titles in volume
 - Expecting candidates to bring these skills as differentiators on top of a DA/DS foundation
 
-⚠️ PARTIAL — inferred from SO survey data + DataCamp course catalog growth in LLM/AI courses
+⚠️ PARTIAL - inferred from SO survey data + DataCamp course catalog growth in LLM/AI courses
 
 ### The dbt inflection point for Analytics Engineering
 
 The dbt ecosystem has created a new entry point that bridges DA and DE: candidates who know SQL deeply + dbt + one cloud warehouse (BigQuery, Snowflake, Redshift) are increasingly in demand. This is achievable without a CS degree and without infrastructure knowledge, making it a viable alternative path to DE for SQL-strong analysts.
 
-⚠️ PARTIAL — roadmap.sh DE roadmap includes dbt as a core skill; DataCamp has a dedicated dbt course
+⚠️ PARTIAL - roadmap.sh DE roadmap includes dbt as a core skill; DataCamp has a dedicated dbt course
 
 ---
 
@@ -410,9 +410,9 @@ The dbt ecosystem has created a new entry point that bridges DA and DE: candidat
 
 | Source | URL | Used for | Fetch status |
 |---|---|---|---|
-| Interview Query — DS Career Path | https://www.interviewquery.com/blog/data-science-career-path | Career ladder, interview formats, entry barriers | ✅ Content retrieved |
-| roadmap.sh — Data Analyst | https://roadmap.sh/data-analyst | DA role definition, skill roadmap | ✅ Content retrieved (nav-heavy) |
-| roadmap.sh — Data Engineer | https://roadmap.sh/data-engineer | DE role definition, skill roadmap | ✅ Content retrieved (nav-heavy) |
+| Interview Query - DS Career Path | https://www.interviewquery.com/blog/data-science-career-path | Career ladder, interview formats, entry barriers | ✅ Content retrieved |
+| roadmap.sh - Data Analyst | https://roadmap.sh/data-analyst | DA role definition, skill roadmap | ✅ Content retrieved (nav-heavy) |
+| roadmap.sh - Data Engineer | https://roadmap.sh/data-engineer | DE role definition, skill roadmap | ✅ Content retrieved (nav-heavy) |
 | Stack Overflow Developer Survey 2024 | https://survey.stackoverflow.co/2024/technology | Language/tool popularity, professional dev profile | ✅ Content retrieved |
 | DataCamp course catalog | https://www.datacamp.com | Skill signal via curriculum structure | ⚠️ Nav/catalog only |
 | StrataScratch blog | https://www.stratascratch.com/blog | Interview format signal | ⛔ Blocked (JS challenge) |

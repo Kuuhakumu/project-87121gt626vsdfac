@@ -1,4 +1,4 @@
-# Certification guide - IT Support & Networking meow
+# certification guide - IT support & networking meow
 
 > verified via official sources, June 2026.
 > prices in USD; confirm on official sites before booking.

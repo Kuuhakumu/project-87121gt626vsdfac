@@ -1,4 +1,4 @@
-# Software Development — Learning Platforms & Labs (2026)
+# Software Development - Learning Platforms & Labs (2026)
 
 > Research date: 2026-06-13. All curl-verified live (✅ HTTP 200) unless noted. Verify freemium tiers before citing.
 

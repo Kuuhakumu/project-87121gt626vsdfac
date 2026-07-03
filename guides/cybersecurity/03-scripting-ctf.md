@@ -1,4 +1,4 @@
-# Goal 3: Scripting, Logs & CTF Level-Up meow (~100h)
+# goal 3: scripting, logs & CTF level-up meow (~100h)
 
 > **goal:** get automation-literate, learn how defenders query logs, and turn CTF into your running practice hub.
 >
@@ -75,7 +75,7 @@ the exam points are just downstream of understanding it mhm
 
 ---
 
-## Block 1 - Python for security (~40h)
+## block 1 - Python for security (~40h)
 
 ### Python as security glue meow (~40h)
 
@@ -128,7 +128,7 @@ what function asks the OS for the socket, what packet handshake happens, what re
 
 ---
 
-## Block 2 - PowerShell for Windows security (~15h)
+## block 2 - PowerShell for Windows security (~15h)
 
 ### PowerShell object pipeline meow (~15h)
 
@@ -179,7 +179,7 @@ then clear **Under the Wire Century levels 0-10** unaided.
 
 ---
 
-## Block 3 - KQL for Microsoft Sentinel / Defender / ADX (~8h)
+## block 3 - KQL for Microsoft Sentinel / Defender / ADX (~8h)
 
 ### KQL log hunting meow (~8h)
 
@@ -236,7 +236,7 @@ adjust table/column names to the dataset u are using.
 
 ---
 
-## Block 4 - SPL for Splunk (~7h)
+## block 4 - SPL for Splunk (~7h)
 
 ### SPL search pipeline meow (~7h)
 
@@ -321,7 +321,7 @@ be careful with greedy `.*`; it grabs as much as possible and is the classic "wh
 **study sources (pick what fits your style)**
 
 - [RegexOne](https://regexone.com/) - step-by-step interactive lessons. **free**
-- [regex101](https://regex101.com/) - live regex tester with token explanations and match highlighting. **free**
+- [regex101](https://regex101.com/) - live regex tester with token explanations and a match view. **free**
 - [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) - use the grep/search levels as real noisy-text practice. **free**
 - [Ryan John - "Python for Hackers FULL Course"](https://www.youtube.com/watch?v=XWuP5Yf5ILI) - revisit the parsing sections when u connect regex back to Python scripts. **free**
 

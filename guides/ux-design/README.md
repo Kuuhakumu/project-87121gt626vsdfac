@@ -1,4 +1,4 @@
-# UI/UX Design Career Roadmap: zero to first job meow
+# UI/UX design career roadmap: zero to first job meow
 
 > hour-based, research-backed (June 2026), region-agnostic.
 > every topic points at a specific free/freemium tool, lab, or practice task when the old guide had one.

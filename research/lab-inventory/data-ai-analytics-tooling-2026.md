@@ -24,9 +24,9 @@ Policy: No salary figures. No local job-board lists. Region-agnostic.
 | Prefect | 3.7.4 | 2026-06-05 | GitHub: PrefectHQ/prefect ✅ VERIFIED |
 | Dagster | 1.13.9 | 2026-06-11 | GitHub: dagster-io/dagster ✅ VERIFIED |
 
-**Python version guidance:** Teach Python 3.13 (long-term stable through 2029). Python 3.14 exists but is very new — beginners should stay on 3.13. Python 3.10 reaches EOL October 2026; avoid teaching it for new learners.
+**Python version guidance:** Teach Python 3.13 (long-term stable through 2029). Python 3.14 exists but is very new - beginners should stay on 3.13. Python 3.10 reaches EOL October 2026; avoid teaching it for new learners.
 
-**Airflow note:** The new `airflow-ctl` CLI (0.1.5) suggests active architectural evolution. Core Airflow 2.x remains the production standard. ⚠️ PARTIAL — exact Airflow 2.x minor version not confirmed via API due to rate limiting; known to be 2.9+ as of 2025.
+**Airflow note:** The new `airflow-ctl` CLI (0.1.5) suggests active architectural evolution. Core Airflow 2.x remains the production standard. ⚠️ PARTIAL - exact Airflow 2.x minor version not confirmed via API due to rate limiting; known to be 2.9+ as of 2025.
 
 ---
 
@@ -43,7 +43,7 @@ SQL remains the single most universal skill across ALL data roles in 2026. It is
 
 ✅ VERIFIED (industry consensus, consistent across all major job posting analyses through 2025-2026)
 
-**What SQL to teach:** Standard ANSI SQL + one dialect. BigQuery SQL (Standard SQL) or PostgreSQL are the best choices — both transfer well across warehouses. Teach window functions, CTEs, aggregations, and JOINs as non-negotiable fundamentals.
+**What SQL to teach:** Standard ANSI SQL + one dialect. BigQuery SQL (Standard SQL) or PostgreSQL are the best choices - both transfer well across warehouses. Teach window functions, CTEs, aggregations, and JOINs as non-negotiable fundamentals.
 
 ---
 
@@ -68,17 +68,17 @@ Three tools now occupy overlapping space. Understanding the distinction matters:
 - Still the default for data manipulation in Python across most production codebases.
 - Massive ecosystem, Stack Overflow coverage, tutorial availability.
 - pandas 3.x introduced Copy-on-Write semantics and a cleaner API.
-- Teach pandas as the baseline — it is still what most jobs use day-to-day.
+- Teach pandas as the baseline - it is still what most jobs use day-to-day.
 
 **Polars 1.41.2** ✅ VERIFIED
 - Rust-based, dramatically faster than pandas for large datasets.
 - Lazy evaluation API enables query optimization.
-- Growing rapidly — already used in production at many data-forward companies.
+- Growing rapidly - already used in production at many data-forward companies.
 - Teach as a differentiator for learners who progress past basics. Not yet a replacement for pandas in most job descriptions, but trending strongly upward.
 - Syntax is different enough from pandas that teaching both too early causes confusion.
 
 **DuckDB 1.5.3** ✅ VERIFIED
-- In-process analytical SQL engine — runs SQL directly on DataFrames, Parquet files, CSVs.
+- In-process analytical SQL engine - runs SQL directly on DataFrames, Parquet files, CSVs.
 - Extremely fast for analytical queries on local/moderate-scale data.
 - Perfect for "SQL-native" analysts who want to avoid pandas entirely.
 - The tool that most democratizes analytics: if you know SQL, DuckDB makes Python data work accessible.
@@ -94,7 +94,7 @@ Three tools now occupy overlapping space. Understanding the distinction matters:
 
 ### BI Tools: Power BI vs Tableau vs Looker
 
-⚠️ PARTIAL — version/market share figures based on 2024-2025 industry reports; directionally stable into 2026.
+⚠️ PARTIAL - version/market share figures based on 2024-2025 industry reports; directionally stable into 2026.
 
 **Power BI**
 - Microsoft ecosystem dominance; most widely deployed in enterprise.
@@ -124,7 +124,7 @@ Three tools now occupy overlapping space. Understanding the distinction matters:
 
 ### Cloud Data Warehouses
 
-⚠️ PARTIAL — market positioning based on 2024-2025 analyst reports; no real-time pricing/feature data verified.
+⚠️ PARTIAL - market positioning based on 2024-2025 analyst reports; no real-time pricing/feature data verified.
 
 **Snowflake**
 - Cloud-agnostic (runs on AWS, Azure, GCP).
@@ -138,7 +138,7 @@ Three tools now occupy overlapping space. Understanding the distinction matters:
 - Best "free tier" for learning: $300 free credit + always-free tier with generous query limits.
 - Native integration with Looker, Vertex AI, dbt.
 - Standard SQL dialect.
-- **Best warehouse to learn on for free** — strong recommendation for beginner portfolios.
+- **Best warehouse to learn on for free** - strong recommendation for beginner portfolios.
 
 **Databricks**
 - Built on Apache Spark (now Spark 4.1) + Delta Lake.
@@ -158,7 +158,7 @@ Three tools now occupy overlapping space. Understanding the distinction matters:
 - Start with BigQuery (free, accessible, great docs) for all beginner portfolio work.
 - Introduce Snowflake concepts (virtual warehouses, time travel) for anyone targeting analyst/engineer roles.
 - Databricks for Data Engineer / ML Engineer track learners.
-- Redshift as "FYI" — the concepts transfer from the above.
+- Redshift as "FYI" - the concepts transfer from the above.
 
 ---
 
@@ -172,13 +172,13 @@ dbt (data build tool) has become the standard for the Analytics Engineering role
 
 **Why it matters:**
 - The shift from ETL → ELT (Extract, Load, Transform) puts transformation *inside* the warehouse.
-- dbt is the "T" layer — it replaces custom Python transformation scripts for most analytics use cases.
+- dbt is the "T" layer - it replaces custom Python transformation scripts for most analytics use cases.
 - dbt + a cloud warehouse (BigQuery, Snowflake) + a BI tool is the complete modern analytics stack.
 - The "Analytics Engineer" role is specifically built around this pattern.
 
 **dbt Cloud vs dbt Core:**
 - dbt Core: open-source, CLI-based, free.
-- dbt Cloud: SaaS product with IDE, scheduling, CI/CD — paid but has a free developer tier.
+- dbt Cloud: SaaS product with IDE, scheduling, CI/CD - paid but has a free developer tier.
 
 **Teach:** dbt Core (open-source). It's a strong portfolio differentiator that separates candidates who understand modern data pipelines from those who only know SQL + BI tools.
 
@@ -216,9 +216,9 @@ dbt (data build tool) has become the standard for the Analytics Engineering role
 
 **The old ETL world (de-emphasize):**
 - Custom ETL scripts loading into on-prem databases
-- Informatica, SSIS, DataStage — expensive enterprise tools
-- Hadoop/MapReduce — effectively dead for new workloads (see section 4)
-- On-prem data warehouses (Oracle, Teradata) — still exist but declining
+- Informatica, SSIS, DataStage - expensive enterprise tools
+- Hadoop/MapReduce - effectively dead for new workloads (see section 4)
+- On-prem data warehouses (Oracle, Teradata) - still exist but declining
 
 **The Modern Data Stack (2026 standard):**
 ```
@@ -235,7 +235,7 @@ Semantic Layer / BI (Looker, Power BI, Tableau, Metabase)
 Orchestration (Airflow / Prefect / Dagster)  ← schedules and monitors everything
 ```
 
-**Key insight for beginners:** You don't need to build ETL from scratch anymore. Fivetran/Airbyte handle data movement. dbt handles transformation. The skill is knowing how to configure, model, test, and maintain this stack — not writing low-level pipeline code.
+**Key insight for beginners:** You don't need to build ETL from scratch anymore. Fivetran/Airbyte handle data movement. dbt handles transformation. The skill is knowing how to configure, model, test, and maintain this stack - not writing low-level pipeline code.
 
 ---
 
@@ -251,31 +251,31 @@ The GenAI wave (2023-2026) has changed the tooling and expectations for data rol
 **How AI is changing the Data Analyst role:**
 - AI-assisted analysis is now table stakes: GitHub Copilot, ChatGPT/Claude for SQL generation, Jupyter AI for notebook assistance.
 - The bottleneck has shifted from "writing queries" to "asking the right question and validating the answer."
-- Judgment, domain knowledge, and critical thinking are MORE valuable, not less — because AI-generated code/analysis needs a human who can spot when it's wrong.
+- Judgment, domain knowledge, and critical thinking matter MORE, not less - because AI-generated code/analysis needs a human who can spot when it's wrong.
 - Junior analysts who treat AI as a crutch (without understanding the fundamentals) will produce incorrect outputs and get caught. Juniors who use AI as an accelerator (with strong SQL/Python foundations) will be highly productive.
 
 **Practical AI knowledge for entry-level data roles:**
 1. Using LLMs for SQL generation and debugging (pragmatic, immediate value)
 2. AI-assisted EDA (exploratory data analysis) in notebooks
-3. Basic RAG (Retrieval-Augmented Generation) concepts — because data engineers are increasingly asked to build or support RAG pipelines
-4. Vector databases (Chroma, Pinecone, Weaviate, pgvector) — conceptual understanding of embeddings and similarity search
-5. Prompt engineering basics — knowing how to get useful output from LLMs
+3. Basic RAG (Retrieval-Augmented Generation) concepts - because data engineers are increasingly asked to build or support RAG pipelines
+4. Vector databases (Chroma, Pinecone, Weaviate, pgvector) - conceptual understanding of embeddings and similarity search
+5. Prompt engineering basics - knowing how to get useful output from LLMs
 
 **What juniors can safely skip/defer:**
 - Fine-tuning LLMs from scratch (expensive, specialized, not an entry role)
 - Training custom foundation models (research-level)
-- Deep LLMOps infrastructure (MLflow, model registries for LLMs — learn after getting a job)
+- Deep LLMOps infrastructure (MLflow, model registries for LLMs - learn after getting a job)
 - LangChain deep internals (the abstraction changes rapidly; understand the concepts, don't memorize the API)
 
 ### Is "AI Engineer" a Real Entry Role in 2026?
 
-⚠️ PARTIAL — based on 2024-2025 job market analysis; directionally validated.
+⚠️ PARTIAL - based on 2024-2025 job market analysis; directionally validated.
 
 **Short answer: Yes, but not as a pure first job for most people.**
 
 "AI Engineer" as a title has proliferated since 2023. In 2026:
 - There are genuine entry AI Engineer roles, but they typically require: strong Python, API integration skills, some understanding of embeddings/vector search, and software engineering fundamentals.
-- Most "AI Engineer" openings at the entry level are really "ML-adjacent software engineers who work with LLM APIs" — they need SWE skills more than data science skills.
+- Most "AI Engineer" openings at the entry level are really "ML-adjacent software engineers who work with LLM APIs" - they need SWE skills more than data science skills.
 - A more realistic path: get a data or software engineering job first, then specialize into AI engineering after 12-18 months.
 - The most accessible entry point: ML Engineer track (see section 5) or a data engineering role at an AI-first company.
 
@@ -283,7 +283,7 @@ The GenAI wave (2023-2026) has changed the tooling and expectations for data rol
 
 The "data layer for AI" is real work now:
 - **RAG pipelines** (Retrieval-Augmented Generation) require storing embeddings in vector databases and querying them for context injection into LLM prompts.
-- Common vector DBs: **pgvector** (PostgreSQL extension — lowest barrier), **Chroma** (open-source, easy local dev), **Pinecone** (managed cloud), **Weaviate** (open-source, production-ready).
+- Common vector DBs: **pgvector** (PostgreSQL extension - lowest barrier), **Chroma** (open-source, easy local dev), **Pinecone** (managed cloud), **Weaviate** (open-source, production-ready).
 - A junior data engineer who understands how to build and maintain a RAG pipeline (chunking, embedding, indexing, retrieval) is a genuine differentiator in 2026.
 - Teach pgvector first (SQL-native, no new infrastructure), then Chroma for local LLM projects.
 
@@ -291,7 +291,7 @@ The "data layer for AI" is real work now:
 
 ## 4. MUST TEACH / TEACH AS DIFFERENTIATOR / CUT-DE-EMPHASIZE
 
-### MUST TEACH (Baseline — Every Track)
+### MUST TEACH (Baseline - Every Track)
 
 | Skill | Reason |
 |-------|--------|
@@ -347,19 +347,19 @@ The "data layer for AI" is real work now:
 
 ### Track 1: Data Analyst
 
-**Project 1 — End-to-End Dashboard (foundational)**
+**Project 1 - End-to-End Dashboard (foundational)**
 - Dataset: A publicly available dataset (e.g., public health, economic, sports, environmental data)
 - Stack: SQL (BigQuery free tier) → Python/pandas for cleaning → Power BI or Tableau Public for visualization
 - Deliverable: Published Tableau Public dashboard OR Power BI report with GitHub repo containing documented SQL queries and Python cleaning scripts
 - What it shows: SQL, data cleaning, visualization, storytelling ability
 
-**Project 2 — dbt Analytics Project (differentiator)**
+**Project 2 - dbt Analytics Project (differentiator)**
 - Dataset: E-commerce or finance open dataset (many available on Kaggle)
 - Stack: DuckDB or BigQuery + dbt Core + simple BI layer
 - Deliverable: dbt project in GitHub with models, tests, documentation, and a README explaining the data model
 - What it shows: Understanding of modern analytics engineering, dbt, data modeling, testing
 
-**Project 3 — AI-Assisted Analysis (2026 differentiator)**
+**Project 3 - AI-Assisted Analysis (2026 differentiator)**
 - Any business dataset
 - Stack: Jupyter + pandas/DuckDB + use of LLM API (Claude or OpenAI) to generate hypotheses and SQL, with documented validation of AI outputs
 - Deliverable: Notebook demonstrating critical evaluation of AI-generated analysis
@@ -369,24 +369,24 @@ The "data layer for AI" is real work now:
 
 ### Track 2: Data Engineer
 
-**Project 1 — Automated ELT Pipeline (foundational)**
-- Source: A public API (weather, finance, sports — any data with regular updates)
+**Project 1 - Automated ELT Pipeline (foundational)**
+- Source: A public API (weather, finance, sports - any data with regular updates)
 - Stack: Python → cloud storage (GCS or S3) → BigQuery or DuckDB → dbt transformation → scheduled with Prefect
 - Deliverable: GitHub repo with Dockerfile, Prefect flow, dbt models, README with architecture diagram
 - What it shows: Full pipeline construction, orchestration, transformation, infrastructure thinking
 
-**Project 2 — Batch + Incremental Loading (differentiator)**
+**Project 2 - Batch + Incremental Loading (differentiator)**
 - Extend Project 1 to handle incremental loads (only process new data)
 - Add dbt incremental models, basic data quality tests
-- What it shows: Production thinking — not just "it runs" but "it runs correctly every day"
+- What it shows: Production thinking - not just "it runs" but "it runs correctly every day"
 
-**Project 3 — Modern Data Stack Mini-Replica (flagship)**
+**Project 3 - Modern Data Stack Mini-Replica (flagship)**
 - Simulate a full MDS: Airbyte Community Edition (free) for ingestion → DuckDB or BigQuery → dbt → Metabase (free, open-source BI)
 - All containerized with Docker Compose
 - Deliverable: Full repo, architecture diagram, walkthrough README
 - What it shows: End-to-end MDS knowledge; this is what many junior interviews ask about
 
-**Project 4 — RAG Data Pipeline (2026 AI differentiator)**
+**Project 4 - RAG Data Pipeline (2026 AI differentiator)**
 - Build a pipeline that chunks and embeds a document corpus into pgvector or Chroma
 - Expose a simple query interface
 - What it shows: AI-adjacent data engineering; immediately relevant to companies building LLM products
@@ -395,24 +395,24 @@ The "data layer for AI" is real work now:
 
 ### Track 3: ML Engineer / Data Scientist
 
-**Project 1 — End-to-End ML Project (foundational)**
+**Project 1 - End-to-End ML Project (foundational)**
 - Dataset: Structured tabular data (classification or regression problem)
 - Stack: Python + pandas + scikit-learn + MLflow for experiment tracking + FastAPI for a simple prediction endpoint
 - Deliverable: GitHub repo with notebooks (EDA → feature engineering → modeling), trained model, API endpoint, README with results
 - What it shows: Full ML workflow, not just a Kaggle notebook
 
-**Project 2 — Kaggle Competition Writeup (differentiator)**
+**Project 2 - Kaggle Competition Writeup (differentiator)**
 - Participate in an active or past Kaggle competition
 - Write a detailed Medium/blog post or README explaining your approach, feature engineering decisions, and what you'd do differently
 - What it shows: Competitive ML thinking + communication (underrated by most applicants)
 
-**Project 3 — LLM Application (2026 differentiator)**
+**Project 3 - LLM Application (2026 differentiator)**
 - Build a RAG application: ingest a document set, embed with sentence-transformers, store in Chroma/pgvector, query with an LLM API
 - Stack: Python + LangChain (or raw API) + Chroma/pgvector + Gradio or Streamlit for UI
 - Deliverable: Working demo, GitHub repo, documented architecture
 - What it shows: Practical AI engineering; directly mirrors what many ML teams are building
 
-**Project 4 — Reproducible Research Replication (flagship for DS track)**
+**Project 4 - Reproducible Research Replication (flagship for DS track)**
 - Pick a published ML paper with public data and replicate the key results using PyTorch
 - Document deviations, what worked, what didn't
 - What it shows: Research literacy, PyTorch proficiency, intellectual rigor
@@ -422,27 +422,27 @@ The "data layer for AI" is real work now:
 ## 6. CROSS-CUTTING 2026 INSIGHTS
 
 ### The "Full Stack Data" Trend
-The lines between Analyst, Engineer, and Scientist are blurring at smaller companies. Entry-level hires are increasingly expected to do more end-to-end work. This is an opportunity: a candidate who can write SQL, build a basic pipeline, train a simple model, AND visualize results is highly employable — even if not expert in all areas.
+The lines between Analyst, Engineer, and Scientist are blurring at smaller companies. Entry-level hires are increasingly expected to do more end-to-end work. This is an opportunity: a candidate who can write SQL, build a basic pipeline, train a simple model, AND visualize results is highly employable - even if not expert in all areas.
 
 ### SQL-Native Tools Are Winning
-DuckDB, dbt, Malloy (emerging), SDF (emerging) — the trend is toward SQL as the primary interface for data work, with Python as the glue language. This validates teaching SQL deeply and early.
+DuckDB, dbt, Malloy (emerging), SDF (emerging) - the trend is toward SQL as the primary interface for data work, with Python as the glue language. This validates teaching SQL deeply and early.
 
 ### The Notebook vs. Production Code Gap
 A common interview flag: candidates who only know Jupyter notebooks but have never written Python modules, used classes, or thought about production code structure. Portfolio projects should include `.py` files, not just `.ipynb` files.
 
 ### Cloud Certifications vs. Tool Certifications
 For data roles in 2026:
-- **Google Professional Data Engineer** — strong signal for data engineering roles
-- **dbt Certified Developer** — niche but meaningful in analytics engineering interviews
-- **Databricks Certified Associate Developer for Apache Spark** — valuable for data engineering
-- **SnowPro Core** — recognized in Snowflake-heavy shops
-- **AWS Data Analytics Specialty** — valuable in AWS-dominant organizations
+- **Google Professional Data Engineer** - strong signal for data engineering roles
+- **dbt Certified Developer** - niche but meaningful in analytics engineering interviews
+- **Databricks Certified Associate Developer for Apache Spark** - useful for data engineering
+- **SnowPro Core** - recognized in Snowflake-heavy shops
+- **AWS Data Analytics Specialty** - useful in AWS-dominant organizations
 Cloud certs are more useful than tool certs for engineering roles; tool certs (dbt, Databricks) are more meaningful for analytics/data roles than generic cloud certs.
 
 ### Open Source Tooling Dominance
 The most in-demand skills in 2026 are almost entirely open-source or have free tiers:
-- Python, SQL, pandas, scikit-learn, PyTorch, dbt Core, DuckDB, Polars, Jupyter, Prefect, Airflow — all free
-- BigQuery, Databricks, Snowflake — cloud services with free tiers for learning
+- Python, SQL, pandas, scikit-learn, PyTorch, dbt Core, DuckDB, Polars, Jupyter, Prefect, Airflow - all free
+- BigQuery, Databricks, Snowflake - cloud services with free tiers for learning
 This means the guide can recommend a completely free learning stack with no meaningful compromises.
 
 ---

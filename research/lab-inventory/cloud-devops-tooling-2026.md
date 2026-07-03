@@ -1,4 +1,4 @@
-# Cloud & DevOps Tooling & Trends — 2026
+# Cloud & DevOps Tooling & Trends - 2026
 
 > curl + GitHub API verified 2026-06-13. ✅ VERIFIED · ⚠️ PARTIAL · ⛔ UNVERIFIED.
 
@@ -21,11 +21,11 @@
 
 ## Big calls
 
-**Cloud provider to learn first:** AWS (#1 market share) — most jobs, most cert recognition. Azure #2 (enterprise/Microsoft shops), GCP #3 (data/ML). Market-share ordering ⚠️ PARTIAL (Gartner/SO survey behind paywall/403) but consensus-solid. Start with ONE, AWS unless targeting a Microsoft shop.
+**Cloud provider to learn first:** AWS (#1 market share) - most jobs, most cert recognition. Azure #2 (enterprise/Microsoft shops), GCP #3 (data/ML). Market-share ordering ⚠️ PARTIAL (Gartner/SO survey behind paywall/403) but consensus-solid. Start with ONE, AWS unless targeting a Microsoft shop.
 
 **IaC:** Teach Terraform (still dominant, enterprise) AND mention OpenTofu (open MPL-2 fork, CNCF, at parity). OpenTofu is the principled open default; Terraform is what most jobs still use. HCL skills transfer 1:1 between them.
 
-**Containers/orchestration:** Docker for build/local. Kubernetes v1.36 — but teach LOCAL clusters first (k3s, kind, minikube), NOT full cloud clusters day one. containerd is the runtime under the hood. Helm v4 (warn learners off stale v3 tutorials).
+**Containers/orchestration:** Docker for build/local. Kubernetes v1.36 - but teach LOCAL clusters first (k3s, kind, minikube), NOT full cloud clusters day one. containerd is the runtime under the hood. Helm v4 (warn learners off stale v3 tutorials).
 
 **CI/CD:** GitHub Actions = dominant default to teach. GitLab CI = strong alternative. Jenkins = legacy (still in enterprise, teach awareness not depth). 
 **GitOps:** ArgoCD v3 primary (CNCF graduated), Flux as k8s-native alt.
@@ -34,7 +34,7 @@
 
 **Secrets:** Teach cloud-native first (AWS Secrets Manager, Azure Key Vault). Vault v2.0 as self-hosted/enterprise option.
 
-**Platform Engineering:** Real framing shift — "internal developer platforms" (Backstage v1.5x) replacing "DevOps team does everything". Worth a dedicated section.
+**Platform Engineering:** Real framing shift - "internal developer platforms" (Backstage v1.5x) replacing "DevOps team does everything". Worth a dedicated section.
 
 **AI in DevOps/AIOps:** Real for IaC generation, log/incident summarization, pipeline assist. For a junior in 2026: use AI to generate/explain config, but be able to read and debug it. Judgment > generation. Don't over-teach.
 
@@ -53,4 +53,4 @@
 4. Full observability stack on a sample app: OTel instrumentation → Prometheus → Grafana dashboard → alert on an SLO breach.
 5. DevSecOps: add Trivy image scanning + secret scanning + SAST to a pipeline; Vault for secrets.
 
-Sources: GitHub releases API (per-tool repos), opentofu.org, kubernetes.io, cncf.io — curl-verified 2026-06-13.
+Sources: GitHub releases API (per-tool repos), opentofu.org, kubernetes.io, cncf.io - curl-verified 2026-06-13.

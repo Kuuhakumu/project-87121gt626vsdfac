@@ -1,4 +1,4 @@
-# Resources: Product Management (2026) meow
+# resources: product management (2026) meow
 
 > curated, current, mostly free.
 > going deep on a few sources beats skimming 30 tabs.

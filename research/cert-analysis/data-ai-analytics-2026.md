@@ -1,4 +1,4 @@
-# Data, AI & Analytics Certifications — Research Notes (June 2026)
+# Data, AI & Analytics Certifications - Research Notes (June 2026)
 
 > Verified via curl against official pages. Prices in USD. No salary data.
 > Tiers: 🔴 baseline filter · 🟠 differentiator · 🟡 nice-to-have · ⛔ skip for entry-level
@@ -10,8 +10,8 @@
 
 | Cert | Code | Price | Format | Passing | Validity | Tier | Status |
 |---|---|---|---|---|---|---|---|
-| Google Data Analytics Prof. Cert | — | ~$49/mo (Coursera) | 8-course online | N/A (completion) | No expiry | 🔴 | ✅ |
-| Google Advanced Data Analytics Prof. Cert | — | ~$49/mo (Coursera) | 7-course online | N/A (completion) | No expiry | 🟠 | ✅ |
+| Google Data Analytics Prof. Cert | - | ~$49/mo (Coursera) | 8-course online | N/A (completion) | No expiry | 🔴 | ✅ |
+| Google Advanced Data Analytics Prof. Cert | - | ~$49/mo (Coursera) | 7-course online | N/A (completion) | No expiry | 🟠 | ✅ |
 | Microsoft PL-300 | PL-300 | ~$165 USD (region-based) | 100 min, proctored | ~700/1000 | 12 mo (free renewal) | 🟠 | ✅ |
 | Microsoft DP-203 | DP-203 | N/A | N/A | N/A | Retired 03/31/2025 | ⛔ | ⛔ RETIRED |
 | Microsoft DP-100 | DP-100 | ~$165 USD | 100 min, proctored | ~700/1000 | Retired | ⛔ | ⛔ RETIRED |
@@ -19,16 +19,16 @@
 | Microsoft DP-700 Fabric Data Engineer | DP-700 | ~$165 USD | 100 min, proctored | ~700/1000 | 12 mo (free renewal) | 🟡 | ✅ |
 | AWS Data Engineer Associate | DEA-C01 | $150 USD | 130 min, 65 Qs | Not published | 3 years | 🟠 | ✅ |
 | AWS ML Engineer Associate | MLA-C01 | $150 USD | ~130 min | Not published | 3 years | 🟠 | ✅ |
-| AWS ML Specialty | MLS-C01 | $300 USD | — | — | Retired 03/31/2026 | ⛔ | ⛔ RETIRED |
-| Databricks Data Engineer Associate | — | $200 USD | 90 min, 45 Qs MC | 70% | 2 years | 🟠 | ✅ |
-| Databricks Data Analyst Associate | — | $200 USD | 90 min, 45 Qs MC | 70% | 2 years | 🟡 | ✅ |
-| Databricks ML Associate | — | $200 USD | 90 min, 45 Qs MC | 70% | 2 years | 🟡 | ✅ |
-| Tableau Desktop Specialist | — | ~$250 USD | Online proctored | 75% | 2 years | 🟡 | ✅ |
-| Tableau Certified Data Analyst | — | ~$250 USD | Online proctored | 75% | 2 years | 🟡 | ✅ |
+| AWS ML Specialty | MLS-C01 | $300 USD | - | - | Retired 03/31/2026 | ⛔ | ⛔ RETIRED |
+| Databricks Data Engineer Associate | - | $200 USD | 90 min, 45 Qs MC | 70% | 2 years | 🟠 | ✅ |
+| Databricks Data Analyst Associate | - | $200 USD | 90 min, 45 Qs MC | 70% | 2 years | 🟡 | ✅ |
+| Databricks ML Associate | - | $200 USD | 90 min, 45 Qs MC | 70% | 2 years | 🟡 | ✅ |
+| Tableau Desktop Specialist | - | ~$250 USD | Online proctored | 75% | 2 years | 🟡 | ✅ |
+| Tableau Certified Data Analyst | - | ~$250 USD | Online proctored | 75% | 2 years | 🟡 | ✅ |
 | SnowPro Core | COF-C02 | $175 USD | 100 min, 100 Qs | ~750/1000 | 2 years | 🟡 | ✅ |
-| dbt Analytics Engineering | — | $200 USD | Online proctored | Not published | 2 years | 🟡 | ✅ |
-| IBM Data Science Prof. Cert | — | ~$49/mo (Coursera) | 12-course online | N/A (completion) | No expiry | 🟡 | ✅ |
-| IBM Data Analyst Prof. Cert | — | ~$49/mo (Coursera) | 11-course online | N/A (completion) | No expiry | 🟡 | ✅ |
+| dbt Analytics Engineering | - | $200 USD | Online proctored | Not published | 2 years | 🟡 | ✅ |
+| IBM Data Science Prof. Cert | - | ~$49/mo (Coursera) | 12-course online | N/A (completion) | No expiry | 🟡 | ✅ |
+| IBM Data Analyst Prof. Cert | - | ~$49/mo (Coursera) | 11-course online | N/A (completion) | No expiry | 🟡 | ✅ |
 
 ---
 
@@ -37,9 +37,9 @@
 ### 1. Google Data Analytics Professional Certificate ✅ 🔴
 - **Full name:** Google Data Analytics Professional Certificate
 - **Issuer:** Google / Coursera
-- **Exam/version code:** No exam code — completion-based certificate
-- **Price:** Coursera subscription ~$49 USD/month; typically completable in 3–6 months. Financial aid available (free).
-- **Format:** 8 courses, self-paced online; no proctored exam — graded quizzes and projects
+- **Exam/version code:** No exam code - completion-based certificate
+- **Price:** Coursera subscription ~$49 USD/month; typically completable in 3-6 months. Financial aid available (free).
+- **Format:** 8 courses, self-paced online; no proctored exam - graded quizzes and projects
 - **Passing score:** No single exam score; course grades must pass each module
 - **Validity:** No stated expiry (perpetual badge)
 - **Skills covered:** Spreadsheets, SQL, Tableau, R basics, data cleaning, data storytelling
@@ -51,7 +51,7 @@
 ### 2. Google Advanced Data Analytics Professional Certificate ✅ 🟠
 - **Full name:** Google Advanced Data Analytics Professional Certificate
 - **Issuer:** Google / Coursera
-- **Exam/version code:** No exam code — completion-based
+- **Exam/version code:** No exam code - completion-based
 - **Price:** Same Coursera subscription (~$49/month); ~6 months at 10 hrs/week
 - **Format:** 7 courses, self-paced; includes Python statistical analysis, regression, machine learning
 - **Passing score:** N/A (completion-based)
@@ -62,71 +62,71 @@
 
 ---
 
-### 3. Microsoft PL-300 — Power BI Data Analyst Associate ✅ 🟠
+### 3. Microsoft PL-300 - Power BI Data Analyst Associate ✅ 🟠
 - **Full name:** Microsoft Certified: Power BI Data Analyst Associate
 - **Exam code:** PL-300
 - **Last updated:** 04/20/2026
-- **Price:** ~$165 USD (region-based pricing — check https://learn.microsoft.com/certifications/exam-faq)
+- **Price:** ~$165 USD (region-based pricing - check https://learn.microsoft.com/certifications/exam-faq)
 - **Format:** 100 minutes, proctored (online or test center), interactive components possible
 - **Passing score:** ~700/1000 (Microsoft uses a scaled score; 700 is standard threshold)
-- **Validity:** 12 months — free annual renewal via online assessment on Microsoft Learn (no fee to renew)
+- **Validity:** 12 months - free annual renewal via online assessment on Microsoft Learn (no fee to renew)
 - **Skills covered:** Power Query, DAX, data modeling, visualizations, Power BI service, row-level security
 - **Entry-level verdict:** Strong differentiator for analyst roles at Microsoft-stack organizations. Power BI is the dominant BI tool in enterprise. The 12-month validity with free renewal keeps it cost-effective long-term. Pairs well with the Google Data Analytics cert as a credentials stack.
-- **Retirement date:** None — active as of June 2026
+- **Retirement date:** None - active as of June 2026
 - **Source:** https://learn.microsoft.com/certifications/power-bi-data-analyst-associate/
 
 ---
 
-### 4. Microsoft DP-203 — Azure Data Engineer Associate ⛔ RETIRED
+### 4. Microsoft DP-203 - Azure Data Engineer Associate ⛔ RETIRED
 - **Full name:** Microsoft Certified: Azure Data Engineer Associate (DP-203)
 - **Exam code:** DP-203
-- **Retirement date:** **March 31, 2025** — CONFIRMED RETIRED
+- **Retirement date:** **March 31, 2025** - CONFIRMED RETIRED
 - **Replacement:** Microsoft Fabric certs (DP-600, DP-700) have absorbed the relevant skills
-- **Entry-level verdict:** ⛔ DO NOT pursue. Any 2021–2023 guide listing DP-203 is outdated. Employers familiar with Microsoft certs will know it's retired. Study Fabric certs instead.
+- **Entry-level verdict:** ⛔ DO NOT pursue. Any 2021-2023 guide listing DP-203 is outdated. Employers familiar with Microsoft certs will know it's retired. Study Fabric certs instead.
 - **Source:** https://learn.microsoft.com/certifications/azure-data-engineer/ (shows retirement notice)
 
 ---
 
-### 5. Microsoft DP-100 — Azure Data Scientist Associate ⛔ RETIRED
+### 5. Microsoft DP-100 - Azure Data Scientist Associate ⛔ RETIRED
 - **Full name:** Microsoft Certified: Azure Data Scientist Associate (DP-100)
 - **Exam code:** DP-100
 - **Last updated on source:** 04/11/2025
-- **Retirement:** Confirmed retired — page shows warning: "This certification and the renewal assessment are retired."
+- **Retirement:** Confirmed retired - page shows warning: "This certification and the renewal assessment are retired."
 - **Entry-level verdict:** ⛔ DO NOT pursue. Was a solid ML cert while active. Replaced in practice by DP-600/DP-700 (Fabric) and Azure AI Engineer (AI-102) paths.
 - **Source:** https://learn.microsoft.com/certifications/azure-data-scientist/
 
 ---
 
-### 6. Microsoft DP-600 — Fabric Analytics Engineer Associate ✅ 🟠
+### 6. Microsoft DP-600 - Fabric Analytics Engineer Associate ✅ 🟠
 - **Full name:** Microsoft Certified: Fabric Analytics Engineer Associate
 - **Exam code:** DP-600
 - **Last updated:** 04/20/2026
 - **Price:** ~$165 USD (region-based)
 - **Format:** 100 minutes, proctored; interactive components possible
 - **Passing score:** ~700/1000
-- **Validity:** 12 months — free annual renewal on Microsoft Learn
+- **Validity:** 12 months - free annual renewal on Microsoft Learn
 - **Skills covered:** Microsoft Fabric lakehouses, warehouses, semantic models (Power BI), data pipelines, OneLake, DAX, KQL basics
 - **Entry-level verdict:** The most important new Microsoft cert for analytics/data engineering in 2026. Microsoft Fabric is the strategic unification of Azure Synapse, Power BI, and Data Factory. Learning Fabric = learning where Microsoft's entire data platform is heading. Pairs naturally after PL-300 for a Power BI analyst wanting to grow into engineering.
 - **Source:** https://learn.microsoft.com/certifications/fabric-analytics-engineer-associate/
 
 ---
 
-### 7. Microsoft DP-700 — Fabric Data Engineer Associate ✅ 🟡
+### 7. Microsoft DP-700 - Fabric Data Engineer Associate ✅ 🟡
 - **Full name:** Microsoft Certified: Fabric Data Engineer Associate
 - **Exam code:** DP-700
 - **Last updated:** 04/20/2026
 - **Price:** ~$165 USD (region-based)
 - **Format:** 100 minutes, proctored
 - **Passing score:** ~700/1000
-- **Validity:** 12 months — free annual renewal
+- **Validity:** 12 months - free annual renewal
 - **Skills covered:** Data loading patterns, data architectures, orchestration, ingesting/transforming data in Fabric, security, monitoring, optimization
 - **Entry-level verdict:** 🟡 Nice-to-have alongside DP-600. More engineering-focused (pipelines, ingestion, orchestration) vs. DP-600's analytics/modeling focus. Good for someone targeting data engineering specifically on the Microsoft stack, but DP-600 has broader appeal for first jobs.
 - **Source:** https://learn.microsoft.com/certifications/fabric-data-engineer-associate/
 
 ---
 
-### 8. AWS Certified Data Engineer — Associate ✅ 🟠
-- **Full name:** AWS Certified Data Engineer – Associate
+### 8. AWS Certified Data Engineer - Associate ✅ 🟠
+- **Full name:** AWS Certified Data Engineer - Associate
 - **Exam code:** DEA-C01
 - **Price:** **$150 USD**
 - **Format:** 130 minutes, 65 questions (multiple choice or multiple response)
@@ -138,8 +138,8 @@
 
 ---
 
-### 9. AWS Certified Machine Learning Engineer — Associate ✅ 🟠
-- **Full name:** AWS Certified Machine Learning Engineer – Associate
+### 9. AWS Certified Machine Learning Engineer - Associate ✅ 🟠
+- **Full name:** AWS Certified Machine Learning Engineer - Associate
 - **Exam code:** MLA-C01
 - **Price:** **$150 USD**
 - **Format:** ~130 minutes
@@ -152,19 +152,19 @@
 ---
 
 ### 10. AWS Certified Machine Learning Specialty (MLS-C01) ⛔ RETIRED
-- **Full name:** AWS Certified Machine Learning – Specialty
+- **Full name:** AWS Certified Machine Learning - Specialty
 - **Exam code:** MLS-C01
-- **Retirement date:** **March 31, 2026** — CONFIRMED RETIRED
+- **Retirement date:** **March 31, 2026** - CONFIRMED RETIRED
 - **Price was:** $300 USD
 - **Replacement:** MLA-C01 (Machine Learning Engineer Associate) at $150 USD
-- **Entry-level verdict:** ⛔ DO NOT pursue. Any 2021–2024 guide recommending MLS-C01 is now outdated. The Specialty tier was also a poor first-cert choice (too expensive, too narrow for entry roles).
+- **Entry-level verdict:** ⛔ DO NOT pursue. Any 2021-2024 guide recommending MLS-C01 is now outdated. The Specialty tier was also a poor first-cert choice (too expensive, too narrow for entry roles).
 - **Source:** https://aws.amazon.com/certification/certified-machine-learning-specialty/ (retirement banner confirmed)
 
 ---
 
 ### 11. Databricks Certified Data Engineer Associate ✅ 🟠
 - **Full name:** Databricks Certified Data Engineer Associate
-- **Exam code:** No numeric code — referred to by full name
+- **Exam code:** No numeric code - referred to by full name
 - **Price:** **$200 USD**
 - **Format:** 90 minutes, 45 scored questions, multiple choice, proctored (online or test center)
 - **Passing score:** 70%
@@ -208,10 +208,10 @@
 - **Format:** Online proctored
 - **Passing score:** 75%
 - **Validity:** 2 years
-- **Skills covered:** Tableau Desktop — connecting data, creating charts/dashboards, calculations, filters, mapping
+- **Skills covered:** Tableau Desktop - connecting data, creating charts/dashboards, calculations, filters, mapping
 - **Entry-level verdict:** 🟡 Validates Tableau fundamentals. Tableau remains popular in analytics/BI roles, but Power BI has overtaken it in enterprise market share. Worth pursuing if your target industry (healthcare, marketing, nonprofits) is Tableau-heavy. Otherwise PL-300 covers a larger addressable market.
 - **Note:** Tableau's certification page (tableau.com/learn/certification) blocks automated access (403). Verify current pricing at https://www.tableau.com/learn/certification before registering.
-- **Source:** https://www.tableau.com/learn/certification ⚠️ (verify directly — access blocked in research)
+- **Source:** https://www.tableau.com/learn/certification ⚠️ (verify directly - access blocked in research)
 
 ---
 
@@ -221,7 +221,7 @@
 - **Format:** Online proctored, includes hands-on performance tasks
 - **Passing score:** 75%
 - **Validity:** 2 years
-- **Skills covered:** Advanced Tableau — LOD calculations, table calcs, blending, advanced dashboards
+- **Skills covered:** Advanced Tableau - LOD calculations, table calcs, blending, advanced dashboards
 - **Entry-level verdict:** 🟡 Step up from Desktop Specialist. The performance-task format (actually building dashboards under exam conditions) is respected by hiring managers. But it's harder to justify over PL-300 unless you're in a Tableau-primary org.
 - **Source:** https://www.tableau.com/learn/certification ⚠️ (verify directly)
 
@@ -236,7 +236,7 @@
 - **Passing score:** ~750/1000 (scaled)
 - **Validity:** 2 years
 - **Skills covered:** Snowflake architecture (virtual warehouses, micro-partitioning, clustering), data loading/unloading, SQL on Snowflake, security, performance tuning, semi-structured data (JSON/Parquet)
-- **Entry-level verdict:** 🟡 Snowflake is ubiquitous in modern data stacks. The SnowPro Core signals hands-on familiarity with the platform. However, Snowflake knowledge is often tested in interviews rather than used as a resume filter — most hiring managers prefer portfolio projects. Good 2nd or 3rd cert once fundamentals are covered.
+- **Entry-level verdict:** 🟡 Snowflake is ubiquitous in modern data stacks. The SnowPro Core signals hands-on familiarity with the platform. However, Snowflake knowledge is often tested in interviews rather than used as a resume filter - most hiring managers prefer portfolio projects. Good 2nd or 3rd cert once fundamentals are covered.
 - **Source:** https://www.snowflake.com/certifications/
 
 ---
@@ -248,7 +248,7 @@
 - **Format:** Online proctored exam
 - **Passing score:** Not published
 - **Validity:** 2 years
-- **Skills covered:** dbt Core and dbt Cloud — models, tests, documentation, sources, seeds, snapshots, macros, Jinja templating, project structure
+- **Skills covered:** dbt Core and dbt Cloud - models, tests, documentation, sources, seeds, snapshots, macros, Jinja templating, project structure
 - **Entry-level verdict:** 🟡 dbt has become the standard transformation tool in modern data stacks. The certification validates genuine dbt proficiency. However, dbt knowledge is usually evaluated through portfolio (GitHub repos showing dbt projects) more than the cert itself. Worth pursuing if you've completed a real dbt project and want formal validation. The Fivetran/dbt merger bears watching for potential cert changes.
 - **Source:** https://www.getdbt.com/certifications/analytics-engineering-certification-exam
 
@@ -257,12 +257,12 @@
 ### 18. IBM Data Science Professional Certificate ✅ 🟡
 - **Full name:** IBM Data Science Professional Certificate
 - **Issuer:** IBM / Coursera
-- **Price:** ~$49/month (Coursera subscription); ~4–6 months at 10 hrs/week
+- **Price:** ~$49/month (Coursera subscription); ~4-6 months at 10 hrs/week
 - **Format:** 12 courses, completion-based (no proctored exam)
 - **Passing score:** N/A
 - **Validity:** No expiry
 - **Skills covered:** Python, pandas, NumPy, matplotlib, SQL, machine learning (scikit-learn), IBM Watson, data visualization, capstone project
-- **Entry-level verdict:** 🟡 Comprehensive Python-first curriculum. Good for someone who wants structured learning but the IBM branding is less recognized by employers than Google's certs in this space. The capstone project is the more valuable signal. Skip if you've already completed Google's Advanced Data Analytics cert — overlap is significant. Useful if you prefer the IBM pedagogical style or are targeting IBM-partner ecosystems.
+- **Entry-level verdict:** 🟡 Comprehensive Python-first curriculum. Good for someone who wants structured learning but the IBM branding is less recognized by employers than Google's certs in this space. The capstone project carries more signal. Skip if you've already completed Google's Advanced Data Analytics cert - overlap is significant. Useful if you prefer the IBM pedagogical style or are targeting IBM-partner ecosystems.
 - **Source:** https://www.coursera.org/professional-certificates/ibm-data-science
 
 ---
@@ -275,12 +275,12 @@
 - **Passing score:** N/A
 - **Validity:** No expiry
 - **Skills covered:** Excel, SQL, Python (pandas), Power BI, IBM Cognos Analytics, Tableau basics, data visualization, capstone
-- **Entry-level verdict:** 🟡 More analyst-focused than the IBM Data Science cert. Covers Excel and Power BI alongside Python, which is useful for business analyst roles. However, Google Data Analytics Professional Certificate covers similar ground with stronger employer name recognition. Choose one or the other — don't do both.
+- **Entry-level verdict:** 🟡 More analyst-focused than the IBM Data Science cert. Covers Excel and Power BI alongside Python, which is useful for business analyst roles. However, Google Data Analytics Professional Certificate covers similar ground with stronger employer name recognition. Choose one or the other - don't do both.
 - **Source:** https://www.coursera.org/professional-certificates/ibm-data-analyst
 
 ---
 
-## Deprecated / Retired Certs — Warn Against
+## Deprecated / Retired Certs - Warn Against
 
 | Cert | Code | Retired | Notes |
 |---|---|---|---|
@@ -295,24 +295,24 @@
 ## Certification Stacks by Role
 
 ### Data Analyst track (cheapest path to first job)
-1. **Google Data Analytics Prof. Cert** — Free (financial aid) or ~$49/mo × 3 mo = ~$150. Foundation credential.
-2. **Microsoft PL-300** — ~$165. Enterprise BI differentiator. Study with free Microsoft Learn + free Power BI Desktop.
+1. **Google Data Analytics Prof. Cert** - Free (financial aid) or ~$49/mo × 3 mo = ~$150. Foundation credential.
+2. **Microsoft PL-300** - ~$165. Enterprise BI differentiator. Study with free Microsoft Learn + free Power BI Desktop.
 3. **Optional:** SnowPro Core ($175) if targeting cloud-native analytics teams.
 
-**Total minimum: ~$315–$490**
+**Total minimum: ~$315-$490**
 
 ### Data Engineer track
-1. **Google Advanced Data Analytics Prof. Cert** — ~$49/mo × 6 mo = ~$300 (or free via aid). Python/ML foundation.
-2. **AWS DEA-C01** — $150. Cloud data engineering. Use AWS Free Tier for hands-on labs.
-3. **Databricks Data Engineer Associate** — $200. Lakehouse/Delta Lake validation.
+1. **Google Advanced Data Analytics Prof. Cert** - ~$49/mo × 6 mo = ~$300 (or free via aid). Python/ML foundation.
+2. **AWS DEA-C01** - $150. Cloud data engineering. Use AWS Free Tier for hands-on labs.
+3. **Databricks Data Engineer Associate** - $200. Lakehouse/Delta Lake validation.
 4. **Optional:** DP-700 Fabric Data Engineer (~$165) for Microsoft-stack roles.
 
 **Total minimum: ~$650**
 
 ### ML / AI Engineer track
-1. **Google Advanced Data Analytics Prof. Cert** — ~$300 (or free). Python + ML foundations.
-2. **AWS MLA-C01** — $150. MLOps/deployment on AWS.
-3. **Databricks ML Associate** — $200. MLflow + Databricks ML.
+1. **Google Advanced Data Analytics Prof. Cert** - ~$300 (or free). Python + ML foundations.
+2. **AWS MLA-C01** - $150. MLOps/deployment on AWS.
+3. **Databricks ML Associate** - $200. MLflow + Databricks ML.
 
 **Total minimum: ~$650**
 
@@ -320,27 +320,27 @@
 
 ## Top Differentiators (2026)
 
-1. **PL-300** — Largest addressable market (Power BI dominance in enterprise). Free renewals. Most efficient $/signal ratio for analyst roles.
-2. **AWS DEA-C01** — 3-year validity, $150, covers the full modern AWS data stack. Strong for data engineering.
-3. **DP-600 Fabric Analytics Engineer** — Forward-looking Microsoft cert. Fabric is where Azure Synapse + Power BI Premium is going. Early movers have an advantage.
-4. **Databricks Data Engineer Associate** — Databricks is now standard in enterprise data teams. The cert validates actual platform work.
+1. **PL-300** - Largest addressable market (Power BI dominance in enterprise). Free renewals. Most efficient $/signal ratio for analyst roles.
+2. **AWS DEA-C01** - 3-year validity, $150, covers the full modern AWS data stack. Strong for data engineering.
+3. **DP-600 Fabric Analytics Engineer** - Forward-looking Microsoft cert. Fabric is where Azure Synapse + Power BI Premium is going. Early movers have an advantage.
+4. **Databricks Data Engineer Associate** - Databricks is now standard in enterprise data teams. The cert validates actual platform work.
 
 ## What to Skip / Avoid
 
-- ⛔ **DP-203** — Retired March 2025. Do not list on resume.
-- ⛔ **DP-100** — Retired ~2025. Do not pursue.
-- ⛔ **MLS-C01** — Retired March 31, 2026. $300 wasted. Pursue MLA-C01 instead.
-- ⛔ **Any Specialty-tier cert as a first cert** — They were designed for 2+ years of experience. Premature for entry-level.
-- ⚠️ **Duplicate Coursera certs** — Don't stack IBM + Google when they cover the same ground. Pick one platform.
+- ⛔ **DP-203** - Retired March 2025. Do not list on resume.
+- ⛔ **DP-100** - Retired ~2025. Do not pursue.
+- ⛔ **MLS-C01** - Retired March 31, 2026. $300 wasted. Pursue MLA-C01 instead.
+- ⛔ **Any Specialty-tier cert as a first cert** - They were designed for 2+ years of experience. Premature for entry-level.
+- ⚠️ **Duplicate Coursera certs** - Don't stack IBM + Google when they cover the same ground. Pick one platform.
 
 ---
 
 ## Notes on Pricing
 
 - Microsoft exam prices are region-based and set by the local Pearson VUE/Certiport partner. Roughly $165 USD in North America; may be lower in other regions.
-- Coursera subscription grants access to all Professional Certificates on the platform — if pursuing multiple, one subscription period is efficient.
-- Databricks exams: retake policy — if you fail, you must wait 14 days before retaking (up to 3 attempts per year).
-- AWS exams: if you hold one AWS cert, you get a 50% discount voucher for the next exam — DEA-C01 → MLA-C01 effectively costs $75.
+- Coursera subscription grants access to all Professional Certificates on the platform - if pursuing multiple, one subscription period is efficient.
+- Databricks exams: retake policy - if you fail, you must wait 14 days before retaking (up to 3 attempts per year).
+- AWS exams: if you hold one AWS cert, you get a 50% discount voucher for the next exam - DEA-C01 → MLA-C01 effectively costs $75.
 
 ---
 

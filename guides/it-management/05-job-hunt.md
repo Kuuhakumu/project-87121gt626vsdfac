@@ -28,7 +28,7 @@ companies want evidence before handing over accountability.
 the path is predictable.
 u dont "break in" cold as much as **build toward** the role from one of four on-ramps.
 
-## on-ramp 1: Service / Operations
+## on-ramp 1: service / operations
 
 ```text
 Service Desk Analyst / IT Support Technician
@@ -63,7 +63,7 @@ fits delivery-minded people.
 get onto a project team, learn the methodology, ask to own a small workstream.
 CAPM signals intent while u build PMP experience months.
 
-## on-ramp 3: Technical / Architecture
+## on-ramp 3: technical / architecture
 
 ```text
 Sysadmin / Developer / Network Engineer
@@ -77,7 +77,7 @@ technical ICs move into people management or architecture/governance.
 take tech-lead responsibilities before the title: mentoring, design review, planning.
 if governance pulls u, start with COBIT and TOGAF overview.
 
-## on-ramp 4: Business / Graduate
+## on-ramp 4: business / graduate
 
 MBA, consulting, or business analyst into IT governance, vendor management, or strategy.
 lighter on deep technical work, heavier on portfolio management.

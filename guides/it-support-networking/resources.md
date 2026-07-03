@@ -1,4 +1,4 @@
-# Resources - IT Support & Networking meow
+# resources - IT support & networking meow
 
 > curated, current, mostly free.
 > cert codes and tools verified June 2026.

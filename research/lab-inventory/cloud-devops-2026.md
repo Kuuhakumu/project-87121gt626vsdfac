@@ -1,4 +1,4 @@
-# Cloud & DevOps Lab Inventory — 2026
+# Cloud & DevOps Lab Inventory - 2026
 
 > curl-verified 2026-06-13. ✅ live (200) · ⚠️ likely live (403/429 curl-blocked) · ❌ dead/tombstone.
 
@@ -53,7 +53,7 @@
 ### Git
 | Lab | Platform | URL | What you do | Free | Status |
 |---|---|---|---|---|---|
-| Learn Git Branching | — | learngitbranching.js.org | Visual git puzzles | Free | ✅ |
+| Learn Git Branching | - | learngitbranching.js.org | Visual git puzzles | Free | ✅ |
 
 ## Platform quick reference
 | Platform | Best for | Cost |

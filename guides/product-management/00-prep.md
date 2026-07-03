@@ -45,7 +45,7 @@ u cant override a VP's pet feature by title alone.
 your job is to build enough shared context, trust, and evidence that the team wants to follow your direction.
 that takes communication, judgment, and humility, not a mini-CEO persona.
 
-## PM vs Product Owner
+## PM vs product owner
 
 this distinction matters in job search.
 following the SVPG / Marty Cagan framing:

@@ -71,7 +71,7 @@ dont overclaim. this is awareness, not pretending to be an ML platform engineer.
 | [UCI ML Repository](https://archive.ics.uci.edu/) | classic ML datasets | **Free** |
 | Public APIs | pipeline projects | **Free** |
 
-avoid Titanic/Iris as your only showcase. fine for learning, weak as a final signal.
+avoid Titanic/Iris as your only portfolio proof. fine for learning, weak as a final signal.
 
 ## make it visible
 

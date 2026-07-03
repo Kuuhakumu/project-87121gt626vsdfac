@@ -1,4 +1,4 @@
-# Lab inventory - IT Support & Networking meow
+# lab inventory - IT support & networking meow
 
 > labs were curl status-checked June 13, 2026.
 > hands-on beats reading. in IT support, the home lab is the hireable signal.
