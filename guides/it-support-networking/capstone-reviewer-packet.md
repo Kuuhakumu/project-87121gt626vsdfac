@@ -1,6 +1,6 @@
-# capstone reviewer packet meow
+# capstone reviewer and solo-randomizer packet meow
 
-this capstone support file is reserved and is not ready to use until task W4.5R is accepted.
+this capstone support file is reserved and is not ready to use until task W4.5R is Sol-accepted.
 
 [Hub](README.md) - [Capstone in Goal 4](04-homelab-portfolio.md)
 

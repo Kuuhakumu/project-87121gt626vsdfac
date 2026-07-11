@@ -1,6 +1,6 @@
-# optional branch B: systems and identity meow
+# systems and identity specialization meow
 
-this specialization branch is reserved and is not ready to study until task W4.9 is accepted.
+this specialization branch is reserved and is not ready to study until task W4.9 is Sol-accepted.
 
 [Branch Chooser](06-specialization.md) - [Hub](README.md)
 
