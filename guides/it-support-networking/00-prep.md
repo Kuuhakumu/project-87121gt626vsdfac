@@ -4,7 +4,7 @@
 > preflight your environment, learn what u can and cant touch, and practice the one habit that keeps data safe: test rollback before trusting a change meow
 
 **Time:** ~12h total (~6 days at 2 h/day)  
-[Previous: Shared Foundations](../../start-here/foundations.md) · [Hub](README.md) · [Next: B1 - Foundations](01-foundations.md)
+[Previous: Shared Foundations](../../start-here/foundations.md) · [Hub](README.md) · [Next: B1 - endpoint + OS support](01-foundations.md)
 
 ---
 
@@ -12,7 +12,9 @@
 
 if u just cleared [Shared Foundations](../../start-here/foundations.md) (or tested out with its cold-case evidence), ur ready for B0. this short 12h block is the actual start of IT Support work - not generic computing, but the safe lab setup, professional boundaries, and evidence habits every support role depends on.
 
-**the honest career ladder:** most IT Support careers start at Help Desk or Service Desk (first-line support, L1), handling user inquiries, standard requests, guided troubleshooting, and documentation within approved procedures. the next step is typically Desktop Support or NOC (Network Operations Center) roles that own endpoint repair, local troubleshooting, and network evidence gathering with more independence. from there, junior systems or network positions work on production infrastructure under change authority. B0 teaches the safety, scope, and evidence floor that every level depends on. later blocks (C01-C03 cumulative revisits in B1-B3) return to these boundaries inside real mixed scenarios.
+**the honest career ladder:** Help Desk or Service Desk is the normal first step. u handle user questions, standard requests, guided troubleshooting, and clean notes inside an approved scope. Desktop Support or a NOC usually comes next, with deeper endpoint repair or network evidence work. junior systems and network roles touch shared infrastructure under change authority.
+
+B0 teaches the floor all of them share: know what u can touch, preserve the state before changing it, and leave enough evidence for the next person to continue.
 
 **test-out option:** if u already have Desktop Support or NOC experience, u may attempt B0 test-out. pass the SF-XFER cold case (if skipping Shared Foundations), then submit C01 artifacts 8/8, C02 classification 10/10, C03 safety triage 11/12 with every mandatory stop correct, plus one B0-EXIT form and 7/8 explanations. a cert or job title permits the attempt but waives nothing. any gate failure routes to the exact failed cluster - no shortcuts.
 
@@ -64,26 +66,66 @@ if u get stuck after 20-30 min of real blocked effort, move to the next help lev
 
 ## artifact envelope and evidence requirements
 
-every artifact you create must contain these exact elements:
+the artifact rules look bigger than the lab... dw, u mostly fill them as u work.
 
-**Common artifact envelope:**
-- **Artifact ID** - unique identifier (e.g., `C01-LAB-A-evidence`, `C03-SAFE-A-triage`)
-- **Date and timestamp** - UTC or local with timezone (e.g., `2026-07-15T14:30:00Z`)
-- **Aid level** - exactly one: `A0`, `A1`, `A2`, or `A3`
-- **Evidence tier** - one of: `live` (performed action on real system), `simulation` (supplied case/reasoning), `case-analysis` (reasoning from supplied evidence without live execution)
-- **Cloud/access tier** (where applicable) - `none`, `simulation-supplied`, `Entra Free`, `eligible developer sandbox`, `Intune trial`, `M365 business trial`, or `owned paid tenant`
+the point is simple: another tech should be able to tell what u actually saw, what u changed, what the result proves, and where the claim stops. open the exact fields when ur ready to build the first packet meow
 
-**Evidence-log requirements:**
-- separate **observed** facts (what you saw/measured) from **inferred** conclusions (what you concluded)
-- label each assertion as `reported` (user statement), `observed` (your direct evidence), `inferred` (your reasoning), or `changed` (action taken)
-- record **before state**, **action**, and **after state** for every change
-- include **rollback evidence** where applicable
-- redact real environment identifiers (company names, real user names, real domain names, production IPs) beyond synthetic examples like `corp.example`, `192.0.2.x`, or `RITN-USER1`
+<details>
+<summary><strong>exact artifact fields + redaction rules</strong></summary>
 
-**Integrity fields for B0 and beyond:**
-- **Commit ID or timestamp** - when you committed your answer before revealing oracle
-- **Oracle revealed** - timestamp when you opened the truth
-- **Pass/repair decision** - did you pass at A0, or does this require repair and changed retry?
+keep these field names even if u represent them as Markdown front matter, JSON, CSV columns, or a visible table:
+
+| Required field | Contract |
+|---|---|
+| `artifact_id` | Stable synthetic ID, unique within your evidence repository. |
+| `artifact_type` | One value from the artifact schema used by the task. |
+| `case_id` / `cluster_ids` | Exact case form and owning C-cluster(s). |
+| `created_at_utc` / `updated_at_utc` | ISO 8601 UTC timestamp. |
+| `author_role` / `reviewer_role` | Synthetic role, not a personal name. Use `self-review` where applicable. |
+| `aid_level` | `A0`, `A1`, `A2`, or `A3`, plus the exact aid used. |
+| `evidence_tier` | Exactly one of `live-owned`, `live-authorized-lab`, `simulation-supplied`, or `case-analysis`; add the product entitlement label where relevant. |
+| `environment` | OS/tool/version, topology or tenant label, runtime, and disposable/owned/authorized boundary. |
+| `source_refs` | Exact guide/source/case references and version/check date. |
+| `commit_before_oracle` | Commit ID and timestamp, or `not_applicable` with a reason for a platform-only attempt. |
+| `result` | `pass`, `repair`, or `fail`, with numeric gates and critical-error state. |
+| `redaction_status` | `checked`, checker/date, and findings count. |
+| `integrity` | SHA-256 for files/config exports where stable; otherwise an explicit reason it is not meaningful. |
+
+each observation or action row in the evidence log also uses these exact fields:
+
+`event_id`, `artifact_id`, `timestamp_utc`, `case_id`, `actor_or_source`, `claim_class` (`reported|observed|inferred|changed`), `question_or_hypothesis`, `command_or_action`, `exact_scope`, `raw_result_reference`, `exit_code_or_status`, `interpretation`, `what_it_proves`, `what_it_does_not_prove`, `next_decision`, `authorization_reference`, `aid_level`, `evidence_tier`, `redaction_note`.
+
+copy commands exactly, including parameters and targets. give every screenshot a timestamp, caption, and text transcription of the decisive field; when exportable text or state exists, a screenshot cannot be the only evidence.
+
+put this visible claim block in every live or supplied artifact:
+
+```text
+evidence_tier: live-owned | live-authorized-lab | simulation-supplied | case-analysis
+platform: <product and version or supplied case version>
+entitlement: <none, license, developer sandbox, trial, paid tenant, hardware>
+performed_actions: <exact actions actually performed>
+observed_only: <outputs/cards supplied rather than generated>
+claims_supported: <finite claims this artifact proves>
+claims_not_supported: <live/physical/admin claims it cannot prove>
+expires_or_checked_at: <UTC date or not applicable>
+```
+
+mixed artifacts label each component separately. live VirtualBox work plus a supplied Packet Tracer trace is not `live Packet Tracer`, mhm.
+
+**secret + PII boundary:** never retain or commit passwords; MFA/OTP/recovery codes; bearer/access/ID/refresh tokens; session cookies; private keys; client secrets; API keys; connection strings; password hashes; wireless PSKs; real names, personal email/phone/address, government/health/payment identifiers; real customer domains; raw production ticket text; device serial/IMEI/MAC tied to a person; unapproved internal IP/hostname; or raw consent records.
+
+use this redaction method every time:
+
+1. generate synthetic fixtures first (`RITN-USER1`, `DC1.corp.example`, RFC 5737 addresses) rather than collecting real data
+2. export the minimum fields; for tokens, retain only nonsecret redacted claims needed by the case (`iss`, synthetic `tid`, `aud`, `exp`, scopes/roles), never the serialized token
+3. replace sensitive values with typed markers such as `[REDACTED-TOKEN]` or a stable synthetic mapping; remove originals from Git history, image metadata, terminal captures, hidden columns, JSON, logs, and archives
+4. crop/redact screenshots before commit, remove EXIF/metadata, and run a text/OCR review; use opaque removal, not reversible blur
+5. search the final tree and commit diff for secret patterns, personal identifiers, private-key headers, JWT-shaped strings, cloud credentials, and lab passwords; inspect every positive and every image
+6. if a secret was committed, revoke/rotate it first, use the maintainer-approved history process, then record the incident without reproducing the value; deleting only the current file is insufficient
+
+redaction must preserve reproducibility: keep synthetic IDs stable, retain the timestamps/status/field names the oracle needs, and state what was removed. fabricating evidence to fill a redacted field is a critical error.
+
+</details>
 
 these rules apply to every C01-C03 artifact and carry forward through B1-B5. clean evidence hygiene now prevents capstone rejection later meow
 
@@ -96,39 +138,27 @@ these rules apply to every C01-C03 artifact and carry forward through B1-B5. cle
 - [ ] **C03 - safety and evidence isolation** (~5h)
 - [ ] ✅ **B0 exit check** - C01 8/8, C02 10/10, C03 11/12, one exit form
 
+these public-repo boxes dont save ur progress. fork the repo, copy this list into Obsidian/OneNote, or print it if u want boxes u can actually mark. the real progress signal is still both gates, no matter where ur list lives meow
+
 ---
 
 ## C01 · preflight, access, and rollback (~5h)
 
-**the idea** - a support lab needs two things a production system never gets: reversible mistakes and independent proof u can actually recover. if u cant roll back a bad change or prove evidence survives host failure, ur practicing on borrowed trust - and borrowed trust ends the first time something breaks for real.
+**the idea** - make ur first lab recoverable before u use it for anything harder. a snapshot should undo one bad guest change, and a fresh import should prove the exported copy really boots.
 
-**how/why it actually works** - oki so this is the part where we set up the safety net before doing anything risky...
+**how/why it actually works** - this is ur safety net, so build it before u start breaking things on purpose...
 
-a **VM (virtual machine)** is a simulated computer running as an application on your physical **host**. the host OS uses a **hypervisor** (like VirtualBox) to create isolated **guest** environments. each guest has virtual CPU, RAM, storage, and network adapters. the guest thinks its a normal computer; the hypervisor translates guest operations into host operations and enforces isolation boundaries.
+a **VM (virtual machine)** is a guest computer presented by a **hypervisor** on a physical **host**. the hypervisor supplies virtual CPU, RAM, disk, firmware, and network devices, then schedules or translates guest work onto host resources. that boundary makes the guest disposable, but it is not magic containment: shared folders, bridged networking, host resource exhaustion, and hypervisor defects can still cross or weaken it.
 
-why isolation matters: the guest is **disposable**. if u break the Windows registry, delete system files, corrupt the boot loader, or install something that wont uninstall - u delete the VM and start over. no reinstall media hunt, no data-recovery panic.
+network mode chooses a failure boundary. VirtualBox **NAT** normally lets the guest start outbound connections through a virtual router and keeps unsolicited LAN inbound traffic from reaching it unless u add forwarding. that does **not** mean the guest can reach a service bound only to the host's loopback. `127.0.0.1` inside the guest means the guest itself; host loopback needs an intentionally exposed host address/path. **host-only** joins the host and selected guests without external routing, while **bridged** places the guest on the physical LAN and needs explicit authorization.
 
-**what the hypervisor isolates:**
-- guest processes cannot directly access host files (unless u explicitly share folders)
-- guest cannot normally execute host binaries or read host memory
-- guest network adapters can be NAT'd (guest sees internet but not host) or host-only (guest + host private network)
-- guest storage is one or more files on the host; deleting the VM folder deletes the guest
+three recovery objects do different jobs:
 
-**what isolation doesnt prevent:**
-- shared folders bridged from host become guest-writable unless read-only
-- bridged network mode puts the guest directly on the host's physical LAN (can affect other systems)
-- hypervisor bugs or VM-escape exploits (rare but possible - keep VirtualBox updated)
-- host resource exhaustion if u allocate more RAM/CPU than the host has available
+1. a **snapshot** records VM state and redirects later disk writes into a dependent chain. restore can remove one bad lab change fast, but the base disk, snapshot metadata, and host storage can fail together.
+2. an **OVA/OVF export** packages the current VM state, not its snapshot tree. importing it into a new directory/name with the original VM powered off proves the imported copy no longer depends on the original VM registration or folder. it does **not** prove compatibility with every other host, and a same-disk export still shares the host's failure domain.
+3. an **independent backup** is a recoverable copy on a separate protected failure domain. the copy only earns that claim after a restore/import and acceptance test succeed.
 
-three critical mechanisms protect ur work:
-
-1. **snapshots** - capture guest state (disk, optionally RAM/CPU registers) at one moment. rolling back to a snapshot restores that exact state in seconds. snapshots are *not* independent backups - theyre stored inside the VM folder on the host. if the host drive fails or the folder is deleted, every snapshot is gone. snapshots let u experiment within one host, but they dont survive catastrophic host failure.
-
-2. **export (OVA/OVF)** - flattens the VM's current disk state into a portable `.ova` file. **exports do not preserve snapshots** - they capture only the current running state. exporting creates a host-independent copy that can be imported on a different machine, stored offline, or kept as recovery insurance. export proves ur baseline can be recreated elsewhere, but u lose the snapshot tree when u export.
-
-3. **independent backup** - a copy stored on a **separate failure domain** (different physical disk, external drive, cloud storage, or another machine). same-host export is a lab convenience copy; its not resilient backup bc host failure destroys both the original and the export. true backup requires the copy to survive when the host does not.
-
-the safe workflow is: baseline -> snapshot before the marker -> create marker -> experiment -> rollback and verify marker is gone -> then export the working baseline to independent storage (not the same host disk).
+so the chain is baseline -> snapshot -> marker/change -> restore -> prove marker absent -> export -> fresh import -> acceptance test. each arrow has evidence. dw, this feels fussy once and saves hours later ;w;
 
 **words u gotta be able to say:**
 
@@ -136,37 +166,38 @@ the safe workflow is: baseline -> snapshot before the marker -> create marker ->
 - **guest / VM** - the simulated computer running inside the hypervisor
 - **hypervisor** - software that creates and manages VMs (VirtualBox, VMware, Hyper-V)
 - **snapshot** - point-in-time guest state capture; fast rollback but stored with the VM on the same host
-- **export** - portable VM copy (`.ova`/OVF format); can be imported on a different machine
+- **export** - portable VM package independent of the original registration/folder after a successful fresh import
 - **`.ova` / OVF** - Open Virtualization Format; standard portable VM package
 - **baseline** - known-good starting state before experiments
 - **rollback** - restore to an earlier snapshot
 - **disposable** - can be deleted and recreated without data loss
 - **isolation** - guest changes dont affect the host (within hypervisor limits)
-- **NAT network mode** - guest sees internet through host translation; guest not directly visible to LAN
+- **NAT network mode** - guest starts outbound connections through a virtual router; host loopback is still a separate boundary
 - **host-only mode** - private network between host and guest(s); no external network
 - **bridged mode** - guest appears as separate device on host's physical LAN (lab risk)
 - **independent backup** - copy on a separate failure domain (different disk/machine/cloud)
 
 **study sources (pick what fits your style):**
 
-- **[VirtualBox First Steps (official manual)](https://www.virtualbox.org/manual/ch01.html)** - creating a VM, snapshots, and export workflow; this is the primary path bc it walks the exact recovery loop. free, verified 2026-07-11
-- **no video** - the manual plus the actual preflight give u the full loop; a demo would just show the same buttons
-- **[VirtualBox Networking (official manual)](https://www.virtualbox.org/manual/ch06.html)** - reference for NAT, host-only, and bridged modes when u need to look up the exact isolation boundary
-- **[Packet Tracer Getting Started](https://www.netacad.com/courses/packet-tracer)** - account setup and first simulation; ull need this for network preflight. free tier, may require Cisco account, verified 2026-07-11
+- **[VirtualBox First Steps (official manual)](https://www.virtualbox.org/manual/ch01.html)** - **free**, no account; use the VM, snapshot, import, and export sections for the recovery loop.
+- **rather watch:** no video for this one. the buttons are less useful than doing the restore yourself, meow
+- **[VirtualBox Networking (official manual)](https://www.virtualbox.org/manual/ch06.html)** - **free**, no account; check NAT, host-only, internal, bridged, and port-forwarding boundaries here.
+- **[Cisco Packet Tracer training/download](https://www.netacad.com/courses/packet-tracer)** - **free**, with a Cisco account/download flow that may apply; use it for the small switch-and-PC preflight.
+- **[Microsoft Learn - Using Hyper-V checkpoints](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/checkpoints)** - **free** reference; the checkpoint warning makes the snapshot-versus-backup boundary concrete.
 
-**do this - C01-LAB-A (three connected proofs):**
+**do this - C01-LAB-A (preferred live route):**
 
-you'll create a recoverable lab environment, prove snapshot/export independence, test Packet Tracer, and record cloud access tier. commit all evidence before checking the acceptance oracle.
+use VirtualBox plus Packet Tracer when ur host and access allow it. no Extension Pack is required. commit the eight-result packet before opening either oracle.
 
 **required artifacts (8/8):**
 
-1. **host report** - CPU/RAM (at least 8 GiB RAM, 40 GiB free storage recommended), OS, VirtualBox version/license (base package is GPLv3)
-2. **VM boot** - one disposable Windows VM using [Windows 11 Enterprise 90-day evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) or legitimate media, boots successfully
+1. **host report** - actual CPU/RAM/free storage, OS, VirtualBox version, base-package license, and whether the planned guest fits without starving the host
+2. **VM boot** - one disposable small VM using legitimate media boots; Windows is optional
 3. **network mode** - record NAT or host-only (not bridged for lab safety)
 4. **snapshot-before** - baseline snapshot named `B0-baseline` created **before** making the marker file
-5. **marker changed** - create test marker file `C:\LAB-MARKER-A.txt` containing a synthetic learner ID and UTC date **after** the baseline snapshot, take a second snapshot
+5. **marker changed** - after the baseline, create `C:\LAB-MARKER-A.txt` on Windows or `/tmp/LAB-MARKER-A.txt` on Linux with a synthetic learner ID and UTC date, then take a second snapshot
 6. **marker absent after restore** - roll back to `B0-baseline`, boot, verify marker file does not exist (proves rollback works and that snapshot was taken before marker creation)
-7. **export validation** - export the baseline VM to `.ova` in a new directory, record file size and SHA-256 hash. **validate the export:** power off (do not delete) the original VM, import the `.ova` to a new directory with a different name (e.g., `B0-baseline-imported`), boot the imported VM, run one acceptance test (e.g., marker absent, expected OS), record import timestamp. This proves the export is independent and bootable. (Note: OVA export flattens current VM state and does not preserve snapshots.)
+7. **export validation** - export to `.ova`, record size and SHA-256, power off the original, import into a new directory/name, boot, and pass the marker/expected-OS acceptance test. claim only independence from the original registration/folder; record host compatibility and whether storage is a separate failure domain
 8. **Packet Tracer test** - complete the network preflight case below
 
 **Packet Tracer network preflight case (C01-PT-A):**
@@ -178,35 +209,47 @@ if u have Packet Tracer installed, build this exact topology and prove ping:
 - **test:** ping from PC1 to PC2; verify success in simulation mode or realtime
 - **evidence:** save as `C01-network-test.pkt`; record ping result (success/reply count)
 
-**if Packet Tracer account/download unavailable:** this is the case-analysis simulation route (no installation claim):
+**C01-PT-A supplied fallback prompt (if account/download is unavailable):**
 
 - **supplied scenario:** two PCs (`PC1` at `192.168.1.10/24`, `PC2` at `192.168.1.11/24`) connected to one switch; switch ports Fa0/1 and Fa0/2 are up/up
-- **observed:** `ping 192.168.1.11` from PC1 returns "Reply from 192.168.1.11: bytes=32 time<1ms TTL=128" (4/4 replies)
-- **questions:** (1) what layer-2 address does PC1 need to send the frame? (2) how does PC1 discover it? (3) after ARP, what destination MAC appears in the frame? (4) what does the switch do with the frame?
-- **truth:** (1) PC2's MAC; (2) ARP request broadcast; (3) PC2's MAC from ARP reply; (4) learns source MAC on Fa0/1, floods broadcast, learns PC2 MAC on Fa0/2, forwards future frames directly
-- **evidence tier:** `case-analysis` (reasoning only)
-- **claims not supported:** installed or used Packet Tracer
-
-**cloud tier label:** record exactly one: `none` (no M365/Entra/Intune access attempted), `simulation-supplied` (case evidence only), `Entra Free`, `eligible developer sandbox`, `Intune trial`, `M365 business trial`, or `owned paid tenant`. for B0, `none` or `simulation-supplied` is normal and expected - no tenant is required.
-
-**measurable gate:** all 8 artifacts pass. commit evidence packet (host specs, boot screenshot, network mode, snapshot names/timestamps, marker absent proof, export hash/size, import timestamp, Packet Tracer ping result or case-analysis answers, cloud tier) before comparing with the truth oracle below.
+- **supplied event cards:** PC1 begins with no ARP entry; the first frame is an ARP request to `ff:ff:ff:ff:ff:ff`; PC2 returns an ARP reply; four ICMP replies follow; the switch table begins empty
+- **commit these decisions:** the address PC1 needs, how it learns that address, the first broadcast/forwarding behavior, the learned port entries, and why the later ICMP frame is directed
+- **claim boundary:** label this component `simulation-supplied`; it supports Packet Tracer/network reasoning, not installation, live device, or physical cabling claims
 
 <details>
-<summary><strong>truth oracle (click to reveal after commitment)</strong></summary>
+<summary><strong>C01-PT-A oracle - open only after commitment</strong></summary>
 
-- snapshot taken **before** creating the marker; rollback restores to that prior state (marker does not exist after restore)
-- export creates a portable copy independent of the original VM folder (import to new directory/name succeeds with original VM powered off)
-- **OVA/OVF export flattens current VM state and does not preserve snapshots**
-- same-host export is a lab copy, not resilient backup (both original and export on same disk = single failure domain)
-- validation test: power off original, import to new name/directory, boot and verify one acceptance check
-- Packet Tracer: same-subnet ping between .10 and .11 uses ARP discovery, switch learns MACs, ping succeeds
-- case-analysis simulation: PC1 ARPs for PC2 MAC, switch floods/learns, directed forwarding follows
-- `none` cloud tier is acceptable for B0 - no tenant is required or claimed
-- marker content uses synthetic learner ID and UTC date, not real personal information
+PC1 needs PC2's MAC, broadcasts ARP, learns the MAC from PC2's reply, then sends the ICMP Ethernet frame to that destination. the switch learns PC1 on Fa0/1 from the source MAC, floods the broadcast, learns PC2 on Fa0/2 from the reply, and directs later frames by its MAC table. four replies satisfy the supplied Packet Tracer test.
 
 </details>
 
-**changed retry:** if any artifact fails, repair and take **C01-LAB-B** - same 8 requirements but use marker `C:\LAB-MARKER-B.txt` with synthetic learner ID, different VM name `B0-baseline-B`, host-only network mode (if A used NAT), import to a different directory/name after powering off original, and Packet Tracer topology with PC1 `10.0.0.5/24` and PC2 `10.0.0.6/24` (or case-analysis variant with those addresses). same truth applies.
+**access-limited route:**
+
+if ur machine cannot run a VM or legitimate media is unavailable, use supplied cards to rehearse the decisions and label them `simulation-supplied`. that practice does **not** replace the live snapshot, restore, export, or fresh-import proof. dont invent a timestamp, hash, address, or live/admin result to fill a blank one. come back to C01 when u have an authorized host/media route; buying hardware or opening a cloud tenant is not required.
+
+the Packet Tracer item is the exception: its event-card fallback above can satisfy the network-reasoning part when account/download access is blocked, as long as the artifact says `simulation-supplied`.
+
+`none` cloud access is accepted. the cloud label is inventory, not a tenant gate.
+
+**C01 measurable gate:** all **8/8** items pass, with live evidence for the VM/snapshot/restore/export chain and either live or honestly labelled supplied evidence for the Packet Tracer item.
+
+<details>
+<summary><strong>C01-LAB-A oracle - open only after the eight-item commitment</strong></summary>
+
+1. the report must state actual access/capacity or the supplied access limits; neither missing hardware nor missing media is failure.
+2. `Running` plus the expected console state supports boot; a supplied console supports no live-install/admin claim.
+3. name the selected network mode and its boundary. NAT normally supports guest-originated outbound traffic without unsolicited LAN inbound; host-only normally gives host/guest local reachability without an automatic external route. guest `127.0.0.1` is always the guest itself.
+4. the baseline snapshot must predate the marker.
+5. the marker is the controlled changed state.
+6. marker absent plus baseline match proves rollback to the recorded point; it does not prove backup.
+7. fresh import with the original powered off proves independence from its registration/folder and a working import on the tested host. it does not prove other-host compatibility or separate-failure-domain recovery; same-disk storage is a lab copy.
+8. the Packet Tracer truth is in its separately opened oracle above. `none` cloud access is accepted.
+
+</details>
+
+**changed retry - C01-LAB-B:** commit a fresh **8/8** form at `A0`. the B form changes the marker, VM name, network-mode question, export directory/name, and Packet Tracer addresses. use the values on that form, not guesses from the A form.
+
+the B oracle keeps the same boundaries: the access/tier claim stays bounded, the baseline precedes the marker, restore removes the marker, the fresh import proves only original-registration/folder independence on the tested host, and same-failure-domain storage is still a lab copy rather than resilient backup. the changed Packet Tracer trace still needs the ARP, switch-learning, and directed-forwarding decisions.
 
 **critical errors (override numeric score):**
 - calling snapshot or same-host export "independent backup" (they share host failure domain)
@@ -222,23 +265,23 @@ if u have Packet Tracer installed, build this exact topology and prove ping:
 
 the near-transfer probe changes one fact: what if the host disk fails completely - does the snapshot survive? does the same-host export survive? what would constitute true independent backup? full credit requires revising the isolation/backup boundaries, not repeating the original baseline explanation.
 
-dw if the evaluation expires in 90 days - ur building disposable lab skills, not a permanent workstation. when the eval ends, u export final evidence, delete the VM, and create a fresh one for the next block. same workflow, new baseline meow
+if ur VM media has an expiry or license boundary, write that in the artifact and keep the lab disposable. the recovery decisions stay the same meow
 
 ---
 
 ## C02 · support role scope and escalation (~2h)
 
-**the idea** - not every ticket is urs to fix. recognizing the boundary between first-line support, escalation, and production authority is the skill that keeps u employed and keeps systems safe. diving beyond ur approved scope - even with good intent - creates liability, destroys audit trails, and breaks trust.
+**the idea** - scope tells u which actions belong to u and which need a clean handoff. a technically correct fix can still be wrong when u lack authorization or leave nobody owning the user update.
 
 **how/why it actually works** - real talk: the hardest support skill isnt technical, its knowing when to stop...
 
-every organization defines **scope** differently, but the universal pattern is: first-line support handles known procedures, standard requests, and guided troubleshooting within a documented baseline. anything beyond that - production changes, privilege escalation, security incidents, vendor escalation, architectural decisions, or emergency policy exceptions - requires explicit **authorization** and usually a different team.
+every organization draws **scope** a lil differently. first-line support normally handles known procedures, standard requests, and guided troubleshooting inside a documented baseline. shared production changes, higher privilege, security incidents, vendor repair, and policy exceptions need explicit **authorization** and usually another owner.
 
-the reason this boundary exists: **evidence and rollback**. a help-desk ticket can say "i reset the service and it worked" bc the service restart is documented and reversible. a first-line tech cannot say "i modified the firewall rule, patched the domain controller, or granted admin rights" without a change record, peer review, rollback plan, and authorized approval - bc those actions affect shared systems, accumulate risk, and cant be undone with ctrl+z.
+why the boundary? shared changes need **evidence and rollback**. restarting one approved local service may be documented and reversible. changing a firewall rule, patching a domain controller, or granting admin rights affects other people, so it needs a change record, approval, a way back, and someone with that authority.
 
 **escalation** transfers work or authority to a team with broader capability, while the original owner retains **responsibility** for tracking, user updates, and validation until closure. escalation is not "throw it over the wall and forget." a good handoff contains: record ID, symptom in user's words, scope, timeline, evidence collected, tests run, actions taken, exact reason for escalation, and requested next action.
 
-the **seven-step operational loop** (current Network+ wording; A+ uses six by combining steps 4-5):
+the operational loop has seven useful moves:
 
 1. identify the problem
 2. establish a theory of probable cause
@@ -266,12 +309,13 @@ this method becomes real when u update theories from evidence: reported symptom 
 - **L2 / Desktop Support / NOC** - endpoint repair, local troubleshooting, network evidence gathering
 - **L3 / Systems / Network** - production infrastructure changes under change authority
 
-**study sources:**
+**study sources (pick what fits your style):**
 
 - **Guide-owned:** the mechanism above and the O*NET role-boundary practical below define scope. no external playlist owns this topic.
-- **[O*NET Computer User Support Specialists](https://www.onetonline.org/link/details/15-1232.00)** - exact task list; this is the classification source. free, verified 2026-07-11
-- **[O*NET Computer Network Support Specialists](https://www.onetonline.org/link/details/15-1231.00)** - network support task list for comparison. free, verified 2026-07-11
-- optional background: [Atlassian: What is ITSM?](https://www.atlassian.com/itsm) and [Incident vs. Service Request](https://www.atlassian.com/itsm/service-request-management/incident-vs-service-request) - explains incident/request/problem/change workflows. free, verified. dw, u dont need to memorize Atlassian/ServiceNow/Jira wording - every org uses different terms. the idea (classify work and know who owns it) is universal.
+- **[O*NET OnLine - Computer User Support Specialists, 15-1232.00](https://www.onetonline.org/link/details/15-1232.00)** - **free**, no account; use the task list for the first-line side of the classification case.
+- **[O*NET OnLine - Computer Network Support Specialists, 15-1231.00](https://www.onetonline.org/link/details/15-1231.00)** - **free**, no account; compare which tasks need network authority.
+- **[Atlassian - What is a service request?](https://www.atlassian.com/itsm/service-request-management)** - **free** reference; useful when incident, request, problem, and change start blurring together. local policy still owns the workflow.
+- **[Google SRE - Effective Troubleshooting](https://sre.google/sre-book/effective-troubleshooting/)** - **free** text; read the hypothesis and evidence parts when u catch urself jumping at the first plausible cause.
 
 
 **do this - C02-ROLE-A:**
@@ -284,7 +328,7 @@ you'll classify ten O*NET tasks under a supplied authority matrix, then provide 
 - **Service Desk must gather evidence and escalate (retaining user-update ownership):** major product faults, network diagnosis/change, and security-breach indicators
 - **Network Support owns (under change authority):** router/switch configuration and fiber repair
 
-**ten tasks from current [O*NET Computer User Support Specialists](https://www.onetonline.org/link/details/15-1232.00) and [Network Support Specialists](https://www.onetonline.org/link/details/15-1231.00):**
+**ten exact current task quotations from the two O*NET occupation pages above:**
 
 For each task, classify as: `L1 perform`, `L1 gather/escalate`, `network support`, or `later admin`. Then state: **evidence** needed, **owner** of execution, **user-update** duty, and **trigger** for escalation.
 
@@ -322,7 +366,7 @@ Core truth: escalation transfers technical authority, not ticket ownership by de
 </details>
 
 
-**changed retry:** if <10/10 or boundary questions miss authority/escalation, take **C02-ROLE-B** using these ten different current O*NET tasks and regional authority matrix:
+**changed retry:** if <10/10 or boundary questions miss authority/escalation, take **C02-ROLE-B** using ten supplied case-local task summaries based on the same occupation families. these are deliberately labelled paraphrases, not exact O*NET quotations:
 
 **supplied authority matrix for C02-ROLE-B:**
 
@@ -330,7 +374,7 @@ Core truth: escalation transfers technical authority, not ticket ownership by de
 - **Service Desk must gather evidence and escalate:** performance evaluation decisions, network backup execution, wireless configuration, network documentation approval
 - **Network Support owns (under change authority):** network backup execution, LAN/WAN performance evaluation and decisions, network change documentation approval, wireless equipment installation/configuration
 
-**ten tasks from current O*NET pages:**
+**ten supplied paraphrases for this B case:**
 
 For each task, classify as: `L1 perform`, `L1 gather/escalate`, `network support`, or `later admin`. Then state: **evidence** needed, **owner** of execution, **user-update** duty, and **trigger** for escalation.
 
@@ -382,25 +426,22 @@ Core truth: escalation transfers technical authority, not ticket ownership by de
 
 **the idea** - a wrong troubleshooting decision can destroy data, void warranty, cause injury, or turn one symptom into three faults. the skill that separates safe support from reckless support is recognizing **stop-work conditions** and preserving evidence before testing theories.
 
-**how/why it actually works** - oki so this is the safety contract that every field tech, help desk agent, and sysadmin lives by...
+**how/why it actually works** - **ESD** is charge equalizing between objects at different electrical potential. a grounded mat and resistor-limited wrist strap keep u, the de-energized chassis, and the work surface near the same potential. the strap protects components; it is never protection from live mains.
 
-support work touches three overlapping risk categories:
+unplugging a PC and holding its power button can drain some low-voltage rails, but it does not make a sealed PSU, UPS power section, display high-voltage section, or laser-printer power area safe. capacitors can retain energy. a hot fuser routes through power-down, the vendor-specified cooling time, and the vendor procedure - never touching it or continuing around it while hot.
 
-1. **physical safety** - swollen batteries, exposed mains voltage inside PSUs or UPS cabinets, hot components, and heavy equipment can cause fire, chemical exposure, electric shock, or injury. some repairs require licensed electricians, qualified technicians, or vendor-authorized procedures. the moment u see a safety red flag, u stop work, secure the area, and escalate to the safety-qualified owner. "it still works" is not permission to continue.
+lithium-ion swelling means gas has formed inside a damaged cell. stop charging, do not press/puncture/bend it, isolate it from heat and combustibles, then use the manufacturer and local hazardous-waste route. toner and cleaning products follow the product label and **SDS (Safety Data Sheet)**; an unknown chemical is a stop, not a guessing game.
 
-2. **data and evidence preservation** - a user's report, error message, log timestamp, or failed-component state is evidence. overwriting logs, power-cycling without capturing state, or replacing parts without testing destroys the chain that proves causality. if the first fix attempt makes diagnosis harder or creates a second fault, u just turned a 20-minute ticket into a two-day investigation.
-
-3. **authorization and scope** - production systems, shared infrastructure, warranty-sealed components, regulated data, and any action outside documented baseline require explicit **authorization**. good intent does not grant authority. even when u know the fix, if its outside scope, the correct action is document -> handoff -> wait for authorized execution.
-
-the safe troubleshooting pattern is: recognize stop triggers -> preserve current state -> gather least-risky evidence -> escalate or execute only within scope -> validate the fix didnt create a second fault -> document the chain.
+after the hazard screen, troubleshooting becomes evidence control: record scope/baseline -> form a falsifiable hypothesis -> predict evidence -> change one safe variable -> compare the result -> validate the original function -> document or roll back. safety, data, privacy, and authorization can stop that chain before technical diagnosis starts.
 
 **words u gotta be able to say:**
 
 - **stop-work condition** - observed hazard, missing authorization, or evidence-destroying risk that requires immediate halt
 - **swollen / bulging battery** - lithium cell damage; mandatory power-down and isolation (fire/thermal runaway risk)
-- **hot component** - fuser, power supply under load, or thermally failing part; assess whether temperature is operational or a fault signature
-- **mains voltage / line voltage** - AC power from the wall outlet (120V/240V); requires qualified technician or licensed electrician for internal PSU or UPS work
-- **ESD (electrostatic discharge)** - static electricity damaging sensitive components; use grounded wrist strap on bare metal chassis ground (not mains ground pin)
+- **hot fuser** - printer hazard requiring power-down, vendor cooling time, and vendor procedure
+- **mains voltage / line voltage** - AC power from the building supply; internal PSU or UPS work needs the qualified, authorized route
+- **ESD (electrostatic discharge)** - charge equalization that can damage semiconductor gates
+- **potential equalization** - bringing technician, chassis, and mat near the same electrical potential
 - **Safety Data Sheet (SDS)** - hazard/handling info for toner, cleaning agents, compressed air, or any chemical; replaces legacy term MSDS
 - **proper ventilation** - adequate airflow when using aerosol cleaners, handling toner, or working with chemical solvents
 - **two-person lift** - heavy equipment (UPS, server, large printer) requires coordinated lift to prevent back injury
@@ -410,12 +451,14 @@ the safe troubleshooting pattern is: recognize stop triggers -> preserve current
 - **evidence-destroying action** - step that overwrites logs, changes timestamps, or removes the ability to prove what failed (power cycle that clears volatile error state, reinstall that wipes logs, part replacement before testing)
 
 
-**study sources:**
+**study sources (pick what fits your style):**
 
 - **Guide-owned:** the safety triage below and the exact stop triggers are the primary learning material. no external safety video can substitute for recognizing the exact mandatory stops in the assessment.
-- **[Professor Messer, Safety Procedures 220-1202](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/safety-procedures-220-1202/)** - covers ESD, electrical safety, physical hazards, and proper handling. free, verified 2026-07-11
-- **[iFixit, What to do with a swollen battery](https://www.ifixit.com/Wiki/What_to_do_with_a_swollen_battery)** - swollen battery recognition and safe handling procedure. free, verified 2026-07-11
-- optional regulatory context: [OSHA electrical safety](https://www.osha.gov/electrical) establishes regulatory baseline for electrical work
+- **[Professor Messer - Managing Electrostatic Discharge](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/managing-electrostatic-discharge-220-1202/)** - **free** video/transcript; see what the mat and strap protect, and what they do not.
+- **[Professor Messer - Safety Procedures 220-1202](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/safety-procedures-220-1202/)** - **free** video/transcript; use for electrical, lifting, laser, and PPE breadth.
+- **[iFixit - What to do with a swollen battery](https://www.ifixit.com/Wiki/What_to_do_with_a_swollen_battery)** - **free** reference; use it for the battery stop-work boundary.
+- **[OSHA - Electrical](https://www.osha.gov/electrical)** - **free U.S. reference**; use it for electrical context, then follow ur local authority and site procedure.
+- **[US EPA - Electronics Donation and Recycling](https://www.epa.gov/recycle/electronics-donation-and-recycling)** - **free U.S. reference**; use it for the electronics handoff, not as a universal local disposal rule.
 
 **do this - C03-SAFE-A (12-case safety triage):**
 
@@ -425,20 +468,20 @@ you'll classify twelve support scenarios into one of three exact classes, then c
 
 - **proceed with controls** - safe to continue with documented precautions (ESD protection, proper tools, two-person lift, ventilation, or baseline/rollback prep)
 - **power down and isolate** - immediate stop, power off, disconnect from mains/charging, secure area, inform affected users, escalate to qualified owner
-- **stop and escalate** - halt work without touching the system further, preserve evidence/error state, document observation, escalate to specialized team (safety officer, vendor, security, qualified technician, licensed electrician)
+- **stop and escalate** - halt work without touching the system further, preserve evidence/error state, document the observation, and escalate to the named qualified or safety owner
 
 **twelve scenarios:**
 
 1. Desktop tower power supply is open for inspection. AC mains cable is disconnected.
 2. Laptop battery is visibly swollen and the case is slightly separated. User says it still charges.
 3. User reports "computer wont start." You open the case and find one RAM stick unplugged; others are seated.
-4. Laser printer fuser area is hot to touch after a long print job; temperature feels consistent with previous observations during operation.
-5. Sealed OEM toner cartridge arrived in original packaging with manufacturer installation instructions.
-6. Rack-mounted server needs to be moved to a different rack position. Estimated weight 35 kg.
-7. USB-C cable jacket is frayed, exposing internal wires near the connector. Cable carries data and 60W PD.
+4. Laser printer has just finished a long job; the fuser area is still hot. a ticket asks u to clear paper beside it now.
+5. A small toner spill came from a known cartridge; its product label, current SDS, and vendor cleanup procedure are available.
+6. A heavy UPS must be moved after a normal shutdown and disconnection; its cabinet will remain closed.
+7. A USB-C cable jacket is frayed near the connector. the supplied label gives no capability beyond the cable being damaged.
 8. User spilled water on a laptop keyboard 10 minutes ago. Laptop was immediately powered off and unplugged; visible moisture remains.
 9. Cleaning agent bottle on the tech bench has no label. Another tech says "its just the usual screen cleaner."
-10. Spare lithium-ion battery in storage has visible swelling and a dented case.
+10. A dead, intact lithium-ion battery must be discarded; the ticket does not name an approved recycler or local disposal procedure.
 11. Workspace bench has a grounded ESD mat; wrist strap is connected to mat ground point; device is unplugged.
 12. Desktop case fan intake is blocked by dust buildup; system runs but is warmer than baseline.
 
@@ -452,18 +495,18 @@ you'll classify twelve support scenarios into one of three exact classes, then c
 <details>
 <summary><strong>truth oracle (click to reveal after commitment)</strong></summary>
 
-1. **stop and escalate** - open PSU exposes mains voltage (120V/240V AC); **mandatory stop** even when disconnected; requires qualified technician or licensed electrician; do not probe internal PSU components
+1. **stop and escalate** - a disconnected open PSU can retain hazardous energy; **mandatory stop**. do not touch or probe it; hand off to the qualified/vendor route
 2. **power down and isolate** - swollen battery is **mandatory stop**; thermal runaway/fire risk; immediate power-down, stop charging, isolate, notify safety team
 3. **proceed with controls** - RAM reseat is safe; ESD precaution (grounded wrist strap on bare chassis ground), power disconnected, baseline snapshot if applicable
-4. **proceed with controls** - operational heat during/after use is expected; observe/compare with baseline; fuser is not user-serviceable but external temperature assessment during normal operation is safe
-5. **proceed with controls** - sealed toner with manufacturer guide; follow installation procedure; use proper handling and ventilation per manufacturer SDS
-6. **proceed with controls** - heavy equipment requires **two-person lift**, proper grip, clear path, coordinated movement; no solo lift for 35 kg server
-7. **proceed with controls** - frayed low-voltage cable (USB-C max 20V/5A for PD) can be replaced; inspect for short, replace cable, document; no internal PSU work required
+4. **power down and isolate** - do not touch or work around the hot fuser. power down, wait the vendor-specified cooling time, then follow the vendor jam/service procedure
+5. **proceed with controls** - use the named vendor cleanup, SDS, ventilation, and PPE; do not improvise with compressed air or an ordinary vacuum
+6. **proceed with controls** - keep the UPS closed and use the approved team-lift/move procedure after shutdown/disconnection; internal UPS work is out of scope
+7. **power down and isolate** - stop using the damaged cable and replace it with a compatible undamaged cable. the supplied label does not prove any wider capability
 8. **power down and isolate** - liquid exposure is **mandatory stop** until completely dry; continued power risks short/corrosion; requires minimum dry time per vendor manual, inspection before re-power
 9. **stop and escalate** - unknown chemical is **mandatory stop**; cannot assume safety without SDS; escalate to supervisor/safety officer for identification and proper SDS
-10. **power down and isolate** - swollen/damaged lithium battery is **mandatory stop**; swelling + dent = potential internal short or leakage; isolate, do not charge/use, escalate to approved battery disposal procedure
-11. **proceed with controls** - grounded ESD mat + strap connected to mat ground; power disconnected; proper ESD path established; proceed with component work
-12. **proceed with controls** - dust removal requires proper ventilation and short bursts of compressed air per manufacturer SDS, or manufacturer-approved vacuum method where specified; restores airflow and prevents thermal fault
+10. **stop and escalate** - do not use general waste. identify the battery and hand it to the manufacturer/local approved hazardous-waste or recycling route
+11. **proceed with controls** - the supplied grounded mat and strap provide potential equalization for this de-energized device; keep that setup intact
+12. **proceed with controls** - shut down/disconnect as the service manual requires, preserve the baseline, and use only the vendor-approved cleaning method before retesting airflow/temperature
 
 **Four mandatory stops that override the 11/12 count:**
 - Scenario 1 (open PSU with mains voltage exposure)
@@ -476,42 +519,68 @@ Missing any mandatory stop is a **critical error** and requires C03-SAFE-B retry
 </details>
 
 
-**changed retry:** if <11/12 or any mandatory stop incorrect, take **C03-SAFE-B** with twelve changed scenarios:
+**changed retry:** if <11/12 or any mandatory stop is wrong, commit **C03-SAFE-B** before opening its oracle:
 
-1. Live UPS cabinet (mains-powered, 120V/240V internal) requires internal battery inspection during business hours.
-2. Smartphone battery pack is warm and slightly expanded; user reports faster-than-normal battery drain.
+1. A live UPS cabinet requires internal inspection while it remains connected to mains.
+2. A disconnected battery pack is leaking and the area around it is not yet isolated.
 3. M.2 SSD is disconnected; no other components were touched; system is powered off and unplugged.
-4. Laser printer just completed warmup cycle; temperature feels normal for post-warmup state; no error codes or unusual smell.
+4. A laser printer is powered down, its vendor cooling time has elapsed, and the external inspection area is cool.
 5. Sealed OEM toner cartridge arrived in original packaging; manufacturer installation instructions included.
-6. Multi-function printer needs to be relocated 4 meters. Estimated weight 50 kg.
-7. Laptop charger cable (low-voltage DC, 19V 3.42A) has visible wire strands near the barrel connector.
-8. Laptop was powered off immediately after liquid exposure; device has been drying in a ventilated area for 72 hours; no visible moisture remains; vendor manual specifies 72h minimum dry time before inspection.
+6. A heavy multi-function printer must move a short distance; the vendor move procedure and a trained two-person team are available.
+7. A laptop charger cable has visible wire strands near its connector.
+8. A laptop was powered off immediately after liquid exposure, has dried for the vendor-specified interval, and has no visible moisture. the next step is the vendor inspection, not automatic power-on.
 9. Aerosol electronics cleaner has manufacturer label intact and current SDS available in the work area.
-10. Approved lithium battery recycling bin is labelled and available; replacement battery is intact, non-swollen, and within expiration date.
+10. A dead, intact lithium battery and a labelled approved battery-recycling container are available under the local procedure.
 11. ESD-safe work mat is grounded to building ground; wrist strap is connected to mat ground point; device power is disconnected.
 12. Desktop intake vents show dust accumulation; system boots and runs; internal temperatures are slightly elevated but within manufacturer thermal limits.
 
-Same three classes; same mandatory-stop rule. **Four new mandatory stops:** live UPS internal work without qualified technician/licensed electrician, swollen/expanded battery pack, wet device before minimum vendor-specified dry time, and unknown/unlabelled chemical without SDS. Truth table changes but patterns remain: recognize mains voltage boundaries, distinguish operational heat from thermal faults, verify manufacturer procedures, apply two-person lift for heavy equipment, require SDS for chemicals, and follow vendor-specified safety procedures.
+same three classes. the dry laptop and labelled cleaner are deliberately changed facts, so classify the evidence u received instead of repeating A.
+
+**C03-SAFE-B measurable gate:** at least **11/12**, with every mandatory stop present in B correct. any mandatory-stop miss voids the numeric score; the separately hidden packet identifies them when u score.
+
+<details>
+<summary><strong>C03-SAFE-B truth packet - open only after commitment</strong></summary>
+
+1. **stop and escalate** - **mandatory stop**; do not open/touch live UPS internals. isolate access and route to the qualified/vendor electrical owner.
+2. **power down and isolate** - **mandatory stop**; keep people/ignition away, do not touch or clean the leaking pack, and invoke the approved battery/emergency procedure.
+3. **proceed with controls** - de-energized SSD reseat under verified ESD and service-manual controls.
+4. **proceed with controls** - the printer is powered down, cool, and within the vendor inspection procedure; touching a hot fuser would still fail.
+5. **proceed with controls** - install the sealed known toner only under its manufacturer instructions/SDS.
+6. **proceed with controls** - use the trained team, clear path, and vendor move procedure; do not improvise or open it.
+7. **power down and isolate** - stop using the damaged low-voltage lead and replace it with the correct undamaged part; do not infer a capability the supplied card does not state.
+8. **proceed with controls** - continue only to the vendor inspection after the stated drying interval; the evidence does not authorize blind power-on.
+9. **proceed with controls** - verify the label/SDS, ventilation, PPE, material compatibility, and vendor method before use.
+10. **proceed with controls** - place the dead intact battery in the approved labelled route exactly as local procedure permits; record disposition.
+11. **proceed with controls** - the device is de-energized and the verified mat/strap supplies potential equalization.
+12. **proceed with controls** - power down/disconnect as required, use the vendor-approved dust method, then compare temperature/airflow with baseline.
+
+score all twelve against this packet. only cases 1 and 2 are mandatory-stop overrides on B.
+
+</details>
 
 **critical errors:**
-- missing any mandatory stop (open PSU with mains exposure, swollen/expanded battery, wet device before vendor-specified dry time, unlabelled chemical without SDS, or live UPS/mains work without qualified technician/licensed electrician)
+- missing any mandatory stop identified by the selected form's scoring packet
 - treating ESD wrist strap as protection against mains voltage (strap grounds chassis, not live mains)
-- claiming sealed components or warranty seals are optional (breaking seal may void warranty and require vendor-only repair path)
+- touching or continuing work around a hot fuser instead of power-down, vendor cooling time, and vendor procedure
 - bypassing vendor-specified dry time or safety procedures
 - disposing batteries, toner, or electronics in general waste without following approved disposal procedures
 
 **can u explain it?** ✅ - score 7/8:
 
-*"Explain why a swollen laptop battery requires immediate power-down and isolation, even if the device still charges and runs. Include the words thermal runaway, fire risk, and mandatory stop. Then explain the difference between chassis ground (where the ESD wrist strap connects) and mains ground, and why the strap does not protect against AC line voltage. Finally, describe one scenario where u have the technical skill to fix the problem but authorization requires escalation, and what evidence the receiving team needs."*
+*"Explain why a swollen laptop battery requires immediate power-down and isolation, even if the device still charges and runs. Include the words thermal runaway, fire risk, and mandatory stop. Then explain what potential equalization does for a de-energized chassis, why that is different from live mains protection, and why the strap cannot make AC work safe. Finally, describe one scenario where u have the technical skill to fix the problem but authorization requires escalation, and what evidence the receiving team needs."*
 
 ---
 
 ## shared-foundation test-out (if skipping foundations)
 
-if u have prior experience and want to skip Shared Foundations, u must pass the **SF-XFER-A** cold case below. a cert or job title permits the attempt but waives nothing - u still need the evidence. passing this lets u enter B0 directly.
+if u have prior experience and want to skip Shared Foundations, try the **SF-XFER-A** cold case when ur ready. a cert, course, or job title permits the attempt but waives nothing. pass its practical and explain gates, then enter B0. if one layer misses, the re-entry table sends u back to that exact Shared Foundations block.
 
 <details>
-<summary><strong>SF-XFER-A - Northstar kiosk evidence failure (click to reveal)</strong></summary>
+<summary><strong>open the SF-XFER-A test-out case</strong></summary>
+
+### SF-XFER-A - Northstar kiosk evidence failure
+
+read the prompt and supplied cards now. commit all eight decisions and the explanation before opening the separate oracle.
 
 **scenario:**
 
@@ -543,7 +612,8 @@ You are supporting an isolated training kiosk named `SUP-01`; all names and addr
 
 **critical errors:** unsafe elevation or broad permission; disabling TLS verification; editing shared/production DNS; claiming a snapshot is backup; including a password/token/PII; fabricating a command/result; or treating a Git screenshot/uncommitted file as reproducible evidence.
 
-**truth oracle (commit before revealing):**
+<details>
+<summary><strong>SF-XFER-A oracle - open only after commitment</strong></summary>
 
 1. Memory pressure (1.55 GiB / 2 GiB); stopping `reporter` frees memory
 2. Process loads from storage into RAM; scheduler allocates CPU time slices
@@ -554,7 +624,23 @@ You are supporting an isolated training kiosk named `SUP-01`; all names and addr
 7. Diagnosis separates reported/observed/inferred/changed; no real hostnames/IPs beyond RFC 5737 examples
 8. `git add diagnosis.md; git commit -m "SF-XFER-A diagnosis"; git status` shows clean with commit ID
 
-**changed retry SF-XFER-B:** 4 GiB host with CPU-bound `collector` and normal memory; script is executable but invokes missing command bc noninteractive `PATH` omits `/opt/lab/bin` (exit 127); DNS correct but server cert is for `old-kb.lab.example`; repo has staged secret-like test string that must be removed before commit. Same eight claims and rubric apply.
+</details>
+
+**changed retry SF-XFER-B prompt:** a 4 GiB host has a CPU-bound `collector` with normal memory; the script is executable but its noninteractive `PATH` omits `/opt/lab/bin`, so its command lookup fails with exit 127; DNS is correct but the server certificate is for `old-kb.lab.example`; the repository has a staged secret-like test string. commit a new eight-decision packet at A0 using the same mechanism layers and safe boundaries before opening B truth.
+
+<details>
+<summary><strong>SF-XFER-B oracle - open only after the changed commitment</strong></summary>
+
+1. CPU, not memory, is the constrained execution resource; normal commit means the A-form memory repair must be rejected.
+2. trace stored program -> process in RAM -> CPU scheduling, then cite CPU evidence without claiming storage or memory pressure.
+3. executable permission is already present; exit 127 points to command lookup failure in the noninteractive environment.
+4. preserve least privilege and correct the owned test environment/path or invoke the exact approved executable; capture stdout, stderr, and status separately.
+5. DNS reaches the intended address and TCP can connect, but TLS hostname validation fails on `old-kb.lab.example`.
+6. do not use `-k`, replace trust material blindly, or edit shared DNS; route the wrong certificate/name binding to its owner.
+7. remove the staged secret-like fixture from both the file/staging area before committing, record the redaction check, and never reproduce a real secret.
+8. commit only the redacted diagnosis/evidence on the named case branch and show clean status plus commit ID.
+
+</details>
 
 **re-entry if failed:**
 - execution/memory fail → Shared Foundations Block 1, then SF-XFER-B execution card
@@ -569,93 +655,189 @@ You are supporting an isolated training kiosk named `SUP-01`; all names and addr
 
 ## B0 exit case
 
-**B0-EXIT-A - constrained host and unsafe battery:**
+normal route uses A. B is the parallel repair form. for a test-out, calculate `SHA256(learner_id + UTC date + "B0")`; the low bit selects A/B and the next bit selects the C01 marker set. record the seed, selected form, aid level, and commit **before** opening that form's truth.
 
-youve completed C01-C03 and are ready to start B1. your host has 8 GiB RAM, 11 GiB free storage, a valid VirtualBox base install (no Extension Pack), and a working Packet Tracer simulation. a spare laptop battery from the storage room is visibly swollen; a manager asks u to "just keep it charging so we can use the laptop for one more day." ur planned B1 work will need two simultaneous 4 GiB VMs and 35 GiB storage.
+### B0-EXIT-A - constrained host and unsafe battery
 
-**required decisions (8/8):**
+ur host has 8 GiB RAM, 11 GiB free storage, a valid VirtualBox base install without the Extension Pack, a supplied Packet Tracer form, and cloud/access tier `none`. a pictured spare laptop pack is swollen; a fictional manager asks u to keep charging it. the intended B1 live plan needs two simultaneous 4 GiB VMs and 35 GiB storage.
 
-1. identify the capacity conflict between current host resources and B1 requirements
-2. choose the valid route: run VMs sequentially, reduce VM allocations, upgrade storage, or accept supplied-case tier for capacity-limited scenarios
-3. refuse battery use and charging; explain fire/thermal-runaway risk
-4. name the safety-qualified owner who decides battery disposition (safety team, disposal procedure, qualified vendor)
-5. distinguish snapshot (same-host, fast rollback) from export (portable VM copy) from independent backup (separate failure domain)
-6. record cloud tier as `none` without treating it as a failure or deficiency (no tenant required for B0)
-7. classify two O*NET support/admin tasks using a supplied local matrix
-8. state owner and next-update commitment for any ticket requiring handoff
+the supplied local authority matrix says Service Desk owns approved documentation and user updates; Network Support owns router changes under change authority. classify these two tasks: `Document help desk requests and resolutions.` and `Configure wide area network (WAN) or local area network (LAN) routers or related equipment.`
 
-**hidden truth:** the safe no-hardware/simulation route preserves learning; buying hardware or obtaining a cloud tenant is not required. B1 has complete supplied-case alternatives for every capacity, tenant, Mac, or hardware gate.
+commit **8/8** decisions: capacity conflict; viable continuation route; battery action; safety/disposal owner; snapshot/export/independent-backup distinction; cloud-tier interpretation; both task owners; and retained owner/next update.
 
-**parallel B0-EXIT-B:** 16 GiB RAM but insufficient free storage; exported VM exists only on the same host disk; Packet Tracer account unavailable; unlabelled cleaning fluid found on bench. Same decision matrix: storage remediation first, recognize same-disk export limitation, accept supplied `.pkt` route, and chemical stop/SDS escalation.
+<details>
+<summary><strong>B0-EXIT-A truth - open only after the selected-form commitment</strong></summary>
+
+1. **capacity:** two 4 GiB guests leave no RAM for the host, and 11 GiB free is below the 35 GiB plan.
+2. **route:** use sequential/smaller VMs or the supplied-case tier; storage can be remediated if available. buying hardware is not required.
+3. **battery:** refuse use/charging, power down if safe, isolate from heat/combustibles, and invoke the approved battery procedure.
+4. **owner:** the named local safety/facilities/vendor/disposal owner decides handling; Service Desk documents and hands off.
+5. **recovery:** snapshot is dependent rollback; fresh import proves export independence only from the original registration/folder; independent backup needs tested recovery on a separate protected failure domain.
+6. **access:** `none` is accurate and not a failure; no B0 tenant is required.
+7. **tasks:** documentation is `L1 perform`; router configuration is `network support` under change authority.
+8. **ownership:** Service Desk retains user communication unless policy explicitly transfers it and gives a concrete next-update time.
+
+</details>
+
+### B0-EXIT-B - limited storage and unknown cleaner
+
+ur host has 16 GiB RAM but insufficient free storage. the only exported VM sits on the same physical disk as the original. Packet Tracer account/download is unavailable, a complete supplied `.pkt`/trace form is available, cloud/access tier is `none`, and an unlabelled cleaning fluid sits on the bench.
+
+the supplied local matrix says Service Desk owns bounded telephone-connectivity support and user updates; Network Support owns LAN/WAN performance decisions. classify these supplied B-form paraphrases: `Provide telephone connectivity support for a user.` and `Evaluate LAN/WAN performance data and decide capacity needs.`
+
+commit **8/8** decisions: storage conflict; safe continuation/remediation; Packet Tracer evidence route/claim; export failure-domain limit; chemical action/owner; cloud-tier interpretation; both task owners; and retained owner/next update.
+
+<details>
+<summary><strong>B0-EXIT-B truth - open only after the selected-form commitment</strong></summary>
+
+1. **capacity:** RAM is not the current blocker; insufficient storage is. do not start/grow the VM until space and rollback are safe.
+2. **route:** free/relocate verified storage or use the supplied-case tier; no purchase is required.
+3. **Packet Tracer:** the complete supplied form preserves the network decisions at `simulation-supplied`; it supports no install/live-device/physical claim.
+4. **recovery:** a same-disk export can prove a fresh import but shares disk failure with the original, so it is not resilient independent recovery.
+5. **chemical:** stop and escalate without using or smelling it; secure the area and route identification/SDS/disposal to the local safety owner.
+6. **access:** `none` remains accepted; no cloud tenant is required.
+7. **tasks:** bounded telephone support is `L1 perform`; LAN/WAN performance/capacity decision is `network support`.
+8. **ownership:** Service Desk records evidence, handoff target, requested action, and the next user-update owner/time.
+
+</details>
 
 **completion gate:** C01 artifacts 8/8, C02 classifications 10/10, C03 triage 11/12 with all mandatory stops, one exit form 8/8, and all explain gates 7/8. when all pass, B1 is unlocked meow
+
+### repair only what failed
+
+| Failed evidence | Required re-entry | Return test |
+|---|---|---|
+| C01 | B0 C01 only | Rebuild preflight and repeat snapshot/export/restore acceptance with a changed marker. |
+| C02 | B0 C02 only | Reclassify ten changed O*NET-derived tasks with ownership and escalation triggers. |
+| C03 | B0 C03 only | Repeat twelve changed safety/evidence cases; every mandatory stop present on that form must pass. |
+| Explanation below `7/8` or causal chain below `2` | Owning mechanism only | Make one specific repair, then give the changed near-transfer explanation at `A0`. |
+| Any critical error | Owning safety, authorization, or redaction boundary | Record the repair, then take the changed full form; the prior numeric score is void. |
+
+### where these skills come back
+
+- before every **destructive, update, and domain lab**, C01 returns as an access/recovery recheck: baseline, rollback, independent recovery, and available access tier
+- at **portfolio exit**, C02 returns as a task-to-artifact remap of the same ten tasks; remove the two claims ur artifacts cannot support
+- C03 returns as a safety/data/authorization distractor in **printer, laptop, update, remote-support, and capstone** work; stop before technical diagnosis whenever the boundary requires it
 
 ---
 
 ## optional: how does this connect to certifications?
 
-dw, u dont need a cert to do B0 - the gates above are the actual requirements. but if ur heading toward CompTIA A+ later, this work covers parts of these current objectives (A+ 220-1201 Core 1 and 220-1202 Core 2):
+dw, none of this is required to pass B0. only open it **after** the owning practical and explain gates pass, and only if A+ helps ur situation.
 
-**Core 1 (220-1201) Domain 4 - Virtualization and Cloud Computing:**
-- **4.2 Summarize aspects of client-side virtualization** - purpose of virtual machines, resource requirements (CPU/RAM/storage), emulator requirements, security requirements, network requirements (internal vs external), hypervisor (Type 1 vs Type 2)
+- **A+ Core 1 220-1201 Domain 4:** virtualization is **4.1**. C01 builds its VM/resource/network/snapshot boundary. cloud is **4.2** and is learned later; B0 does not teach those comparison cards.
+- **A+ Core 2 220-1202 Domain 2:** the optional F3 cards below translate physical-control names after C03. they do not change the safety learning order.
+- **A+ Core 2 220-1202 Domain 4:** C03 supports safety **4.4** and the bounded SDS/environment portion of **4.5**. C02/artifact work begins documentation **4.1**, which is assessed more fully in later operations work.
+- **late wording note:** Network+ writes the troubleshooting loop as seven steps. A+ combines planning and implementation into a six-step version. same job mechanism, slightly different exam wording.
 
-**Core 2 (220-1202) Domain 4 - Operational Procedures:**
-- **4.1 Implement best practices associated with documentation and support systems information management** - ticketing systems (user information, device information, description of problems, categories, severity, escalation levels, clear/concise written communication), asset management (inventory lists, database system, asset tags and IDs, procurement life cycle, warranty and licensing), types of documents (network topology diagrams, knowledge base/articles, incident documentation), use of documentation (to find services, policies, procedures, and updates)
-- **4.4 Explain common safety procedures** - electrostatic discharge (ESD) straps, ESD mats, equipment grounding, proper power handling, proper component handling and storage, antistatic bags, compliance with government regulations, personal safety (disconnect power before repairing PC, lifting techniques, electrical fire safety, safety goggles, air filtration mask)
-- **4.5 Summarize environmental impacts and local environmental controls** - material safety data sheet (MSDS)/documentation for handling and disposal (proper battery disposal, proper toner disposal, proper PC/monitor disposal), temperature/humidity-level awareness and proper ventilation, power surges/under-voltage events/power failures (battery backup, surge suppressor)
+### optional F3 - physical-control placement (15/15)
 
-**Post-gate optional bridge content (family F3 - recognition cards):**
+after C03 passes, commit a purpose and local-policy owner for every card. use this supplied local matrix: **Facilities** owns perimeter/structure/lighting; **Physical Security Engineering** owns access hardware; **Security Operations** owns monitoring/response/screening; **IT Asset Custodian** owns device/equipment restraints.
 
-after passing C03, u may complete the **F3** physical-control recognition cards. these cover the A+ Core 2 objective **2.1 Summarize various security measures and their purposes** - specifically the physical-control portion (15 cards total; the remaining 10 logical-control cards appear after C29 in B3).
+1. bollard at a vehicle approach
+2. access vestibule at a restricted entrance
+3. badge reader at a staff door
+4. video surveillance covering an entry
+5. intrusion alarm
+6. motion sensor in a restricted room
+7. choose among door, equipment, and cable locks for the named asset/boundary
+8. security guard at a controlled entrance
+9. perimeter fence
+10. key fob
+11. smart card
+12. mobile device used as a key
+13. biometric reader
+14. perimeter/entry lighting
+15. magnetometer at a screened entrance
+
+**gate:** **15/15** cards name the primary deterrence/detection/prevention claim and the supplied local-policy owner. commit before truth.
+
+**changed retry `BR-A2-2.1-PHYS-B`:** use the same four-owner matrix and classify these exact changed placements at A0: loading-bay bollard; data-centre vestibule; lab badge reader; warehouse camera; after-hours door alarm; archive motion sensor; door/equipment/cable locks for a server room, rack, and laptop; lobby guard; yard fence; contractor key fob; employee smart card; phone-based visitor key; fingerprint reader; car-park lighting; event-entry magnetometer. commit all fifteen before opening B truth.
 
 <details>
-<summary><strong>F3 physical controls (15/15) - optional post-C03</strong></summary>
+<summary><strong>F3 A truth - open only after the A-form commitment</strong></summary>
 
-For each physical security control, state its **primary purpose** (deterrence/detection/prevention) and **local policy owner** (who decides placement/configuration):
+1. bollard - prevention/deterrence; Facilities
+2. vestibule - access prevention; Physical Security Engineering
+3. badge reader - access prevention/verification; Physical Security Engineering
+4. video surveillance - detection/evidence; Security Operations
+5. alarm - detection/response trigger; Security Operations
+6. motion sensor - detection; Security Operations
+7. door lock - boundary prevention / Physical Security Engineering; equipment or cable lock - asset prevention / IT Asset Custodian
+8. guard - verification/prevention/response; Security Operations
+9. fence - deterrence/prevention; Facilities
+10. key fob - access prevention/verification; Physical Security Engineering
+11. smart card - access prevention/verification; Physical Security Engineering
+12. mobile key - access prevention/verification; Physical Security Engineering
+13. biometric - access prevention/verification; Physical Security Engineering
+14. lighting - deterrence/detection support; Facilities
+15. magnetometer - screening/detection; Security Operations
 
-1. Bollards (concrete/steel posts blocking vehicle access to building perimeter)
-2. Access control vestibule (mantrap / double-door airlock requiring one door to close before the next opens)
-3. Badge reader (RFID/NFC card reader at entry points)
-4. Video surveillance (CCTV cameras recording entry/exit and sensitive areas)
-5. Alarm systems (intrusion detection triggering audible alarm and security response)
-6. Motion sensors (passive infrared or microwave detecting movement in restricted areas)
-7. Door locks (physical key, electronic, or biometric access control)
-8. Equipment locks (cable locks, locking cabinets, or rack locks for hardware)
-9. Cable locks (securing mobile devices, laptops, or peripherals to fixed points)
-10. Security guard (physical human presence for access verification and response)
-11. Fencing (perimeter barrier controlling access to facility grounds)
-12. Key fob (electronic transmitter for wireless access control)
-13. Smart card (chip-embedded card for access or authentication)
-14. Mobile device as key (phone/app-based access credential)
-15. Biometric locks (fingerprint, iris, facial recognition for access control)
-
-**Recognition truth:** bollards/fencing = perimeter deterrence + prevention (physical security or facilities owner); mantrap/badge/biometric/guard = access prevention + verification (security/access-control owner); cameras/alarms/motion = detection (security operations); locks = equipment/access prevention (IT/physical security depending on asset). No control is foolproof alone; defense in depth combines layers.
-
-**Pass:** 15/15 correctly classified with purpose and policy owner. This satisfies the A+ 2.1 physical-control recognition requirement.
+these are claims under the supplied matrix, not universal ownership titles.
 
 </details>
 
-**Post-gate optional bridge content (family F4 - legacy labels):**
-
-after passing C03, u may complete the **F4** legacy terminology cards. these recognize outdated terms still present in some A+ materials but replaced by current practice.
-
 <details>
-<summary><strong>F4 legacy labels (4 cards) - optional post-C03</strong></summary>
+<summary><strong>F3 B truth - open only after the changed-form commitment</strong></summary>
 
-1. **MSDS (Material Safety Data Sheet)** - legacy term; now called **SDS (Safety Data Sheet)** under globally harmonized system (GHS). Modern references use SDS; MSDS appears in older A+ materials.
-2. **Inverter (CCFL backlight)** - legacy laptop display technology using cold-cathode fluorescent lamp with inverter; modern laptops use **LED backlight** (no inverter). Inverter replacement was common pre-2010; current repair is LED strip or panel.
-3. **Legacy video connectors (VGA, DVI-I, S-Video)** - analog or transitional connectors largely replaced by **HDMI, DisplayPort, USB-C with DisplayPort Alt Mode**. VGA/DVI still appear in legacy equipment and A+ objectives but are not preferred for new installations.
-4. **Format vs sanitize distinction** - "format" suggests making a drive reusable (quick format leaves data recoverable); **sanitization** or **secure erase** (ATA Secure Erase, cryptographic erase, or approved multi-pass overwrite per NIST SP 800-88) is the correct term for data destruction before disposal or repurposing. A+ may use "format" loosely; real disposal policy requires sanitization verification.
-5. **Lighting and magnetometer for physical security** - adequate lighting (deterrence/detection at perimeter/entry) and magnetometer/metal detector (contraband detection at controlled entry) belong to the physical-control set. Lighting owner is typically facilities/physical security; magnetometer owner is security operations. Both support defense in depth but do not constitute complete perimeter security alone.
-6. **Vendor-specific compressed-air and vacuum cautions** - while compressed air is a common cleaning method, always follow the manufacturer SDS for proper ventilation and short-burst technique. Some manufacturers specify ESD-safe vacuum methods for certain components; others prohibit vacuum use. Never assume universal application without checking vendor guidance.
+1. loading-bay bollard - prevention/deterrence; Facilities
+2. data-centre vestibule - access prevention; Physical Security Engineering
+3. lab badge reader - access prevention/verification; Physical Security Engineering
+4. warehouse camera - detection/evidence; Security Operations
+5. after-hours alarm - detection/response trigger; Security Operations
+6. archive motion sensor - detection; Security Operations
+7. server-room door lock - boundary prevention / Physical Security Engineering; rack/laptop equipment or cable locks - asset prevention / IT Asset Custodian
+8. lobby guard - verification/prevention/response; Security Operations
+9. yard fence - deterrence/prevention; Facilities
+10. contractor key fob - access prevention/verification; Physical Security Engineering
+11. employee smart card - access prevention/verification; Physical Security Engineering
+12. phone-based visitor key - access prevention/verification; Physical Security Engineering
+13. fingerprint reader - access prevention/verification; Physical Security Engineering
+14. car-park lighting - deterrence/detection support; Facilities
+15. event-entry magnetometer - screening/detection; Security Operations
 
-**Recognition truth:** all cards recognize legacy/insufficient terms or vendor-specific boundaries and state the current alternative or proper scope. MSDS→SDS is purely naming; inverter→LED is technology shift; legacy connectors are capability-limited; format≠sanitization is a security/disposal distinction; lighting/magnetometer recognize the physical-control breadth; compressed-air/vacuum respect manufacturer boundaries.
-
-**Pass:** 6/6 correctly updated with modern term or practice noted.
+these remain claims under the supplied B matrix; the site labels do not create universal owner titles.
 
 </details>
 
-the difference: A+ asks "what is a hypervisor?" or "what does ESD stand for?" after separate study. this guide teaches hypervisor isolation through rollback proof and safety through real triage with mandatory stops. u learn the mechanism, pass measurable + explain gates, then find urself casually handling A+ recall questions bc u already used the thing qwq
+### optional dated local-rule lookup
+
+after C03, look up the official authority for **ur actual jurisdiction** and record the URL, page title, jurisdiction, `checked_at_utc`, and the stated battery/electronics/toner route. this is the only A+ 4.4 regulation bridge in B0. it is a dated policy lookup, not a second practical and not permission to treat OSHA/EPA wording as worldwide law.
+
+### optional F4 - SDS + vendor cleaning boundaries (4/4)
+
+commit the action for all four supplied cards:
+
+1. an old procedure asks for an `MSDS`; name the current document u must retrieve
+2. Vendor Card A permits compressed air only after power-down, outdoors/in specified ventilation, can upright, with short bursts; choose the compliant action
+3. Vendor Card B prohibits an ordinary household vacuum and permits only its named ESD-safe service vacuum; choose the compliant action
+4. the product SDS requires ventilation and a named local hazardous-waste route; choose the document, ventilation control, and disposal handoff
+
+**gate:** **4/4**. no generic cleaning habit overrides the supplied vendor card or SDS.
+
+**changed retry `BR-A2-4.5-B`:** (1) a legacy ticket requests an `MSDS`; (2) changed Vendor Card A says `do not use compressed air or any aerosol; disconnect power and use the supplied lint-free tool`; (3) changed Vendor Card B says `after disconnection, use only Model ESD-4 antistatic service vacuum; household vacuums prohibited`; (4) the changed SDS requires local exhaust ventilation and handoff to the named municipal hazardous-household-waste program. commit all four actions at A0 before B truth.
+
+<details>
+<summary><strong>F4 A truth - open only after commitment</strong></summary>
+
+1. retrieve the current **SDS (Safety Data Sheet)**; `MSDS` is the legacy label.
+2. power down/disconnect as directed, use the stated ventilation, keep the can upright, and use short bursts only because this exact vendor card permits them.
+3. do not use the household vacuum; use only the named ESD-safe service vacuum and procedure.
+4. use the SDS-specified ventilation and local hazardous-waste/disposal handoff; do not generalize one product's rule.
+
+</details>
+
+<details>
+<summary><strong>F4 B truth - open only after the changed commitment</strong></summary>
+
+1. `MSDS` still maps to current `SDS`.
+2. disconnect power and use the supplied lint-free tool; compressed air/aerosol is prohibited on this form.
+3. after disconnection, use only Model ESD-4; an ordinary vacuum fails.
+4. use local exhaust ventilation and the named municipal hazardous-household-waste handoff, record the local owner/date, and make no universal claim.
+
+</details>
+
+the difference is simple: the job mechanism and gates come first; these bounded cards only translate what u already proved into exam wording qwq
 
 **the order stays mechanism → lab → explain → optional checkpoint translation**. ur not studying for the exam - ur learning the actual job, and exam readiness is the side effect meow
 
@@ -672,12 +854,12 @@ without opening this file, answer these cold prompts from B0:
 2. classify "evaluate LAN/WAN performance and recommend changes" under a Help Desk vs Network Support authority matrix
 3. **changed safety micro-case:** a desktop UPS (uninterruptible power supply) is beeping and showing a red "replace battery" indicator. The UPS is plugged into mains power and currently supporting two monitors and a desk phone. What is your **classification** (proceed/power-down/stop-escalate), **immediate action**, and **who owns** the battery replacement?
 
-**truth for retrieval 3:** **power down and isolate** - UPS contains mains voltage (120V/240V) and lead-acid or lithium battery; internal work requires qualified technician or vendor-authorized technician (some UPS systems require licensed electrician). Immediate action: document the error, safely power down supported devices using normal shutdown, unplug UPS from mains once devices are off, label as faulty, and escalate to qualified technician or vendor. Service Desk does not open or service internal UPS components.
-
 <details>
-<summary><strong>hidden B0 exit truth (click to reveal after all C01-C03 and exit form completion)</strong></summary>
+<summary><strong>retrieval oracle - open only after committing all three answers</strong></summary>
 
-The safe no-hardware/simulation route preserves learning. Buying hardware or obtaining a cloud tenant is not required. B1 has complete supplied-case alternatives for every capacity, tenant, Mac, or hardware gate. Recording `none` as your cloud tier is accurate and acceptable. Sequential VMs, smaller allocations, or supplied-case evidence are all valid continuation paths.
+1. a hypervisor separates guest CPU/memory/device state and virtual disks/networks; shared folders, bridged LAN exposure, host resource pressure, and the shared host failure domain limit that boundary.
+2. under the supplied B0 matrix, Service Desk gathers/retains communication while Network Support owns the LAN/WAN performance decision.
+3. **power down and isolate** - preserve the indicator, shut down the supported devices normally, disconnect the UPS from mains only when that can be done safely, label/secure it, and route battery service to the qualified/vendor owner. Service Desk does not open the UPS. local policy decides whether further electrical authority is required.
 
 </details>
 
@@ -703,8 +885,8 @@ test-out exists bc some learners already have this foundation. but if u skip the
 - [ ] one B0-EXIT form 8/8
 - [ ] all explain gates pass 7/8 with causal chain = 2
 
-when the checkboxes are real (not just checked bc u read the page), [B1 - Foundations](01-foundations.md) is the next file. if any gate isnt solid, stay here and fix it. B1 will not slow down to reteach snapshot/export/stop-work patterns meow
+when both gates are real in ur own tracker, [B1 - Foundations](01-foundations.md) is the next file. if any gate isnt solid, stay here and fix it. B1 will not slow down to reteach snapshot/export/stop-work patterns meow
 
 ---
 
-*This block verified 2026-07-11. VirtualBox 7.2.12 base package GPLv3; Windows 11 Enterprise evaluation 90 days; Packet Tracer free tier may require Cisco account; no M365/Entra/Intune tenant required for B0. Sources resolve; test procedures reproduce. Report dead links or incorrect facts to the maintainer.*
+*This block was last verified 2026-07-11. VirtualBox 7.2.12 base package GPLv3; Packet Tracer's free route may require a Cisco account; no M365/Entra/Intune tenant is required for B0.*
